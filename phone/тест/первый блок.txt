@@ -1,0 +1,10 @@
+color: #ffffff;
+font-family: "MADE Good Time Grotesk";
+font-size: 108px;
+font-weight: 400;
+line-height: 95.01px;
+/* Text style for "С, овремен" */
+letter-spacing: -4.33px;
+
+
+

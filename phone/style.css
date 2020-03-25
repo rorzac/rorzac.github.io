@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background: black;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+footer {
+    height: 100vh;
+    width: 100%;
+}
+
+.section__one {
+  
+    background: #f3f3f3;
+}
+
+.section__two {
+    
+    background: black;
+}
+
+.section__three {
+   
+    background: #f3f3f3;
+}
+
+footer {
+   
+    background: black;
+}
+
+.text {
+
+}
+
+.logo__fixed {
+    padding-left: 50px;
+    padding-top: 40px;
+    position: fixed;
+}
+
+.header__main h1 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: 1.3em;
+    font-size: 8em;
+    letter-spacing: 7px;
+    padding-left: 10%;
+    padding-top: 140px;
+    
+}
+
+.micro {
+    
+    position: absolute;
+    left: 70%;
+    top: 34.5%;
+    z-index: 2;
+
+   
+    
+}
+
+.plohadki {
+    width: 100%;
+    height: 100%;
+}
+
+
+.more {
+    font-size: 25px;
+    color: white;
+   padding-top: 15px;
+   text-align: center;
+   font-family: sans-serif;
+    
+}
+
+.niz {
+    position: absolute;
+    bottom: 9%;
+    left: 12%;
+}
+
+
+
+
+
+.text__section__one {
+    padding-left: 50px;
+}
+
+
+.text__section__one .title {
+    color: black;
+    padding-left: 30px;
+    letter-spacing: 2px;
+    line-height: 1em;
+    font-size: 75px;
+}
+
+.text__section__one span {
+    font-size: 55px;
+    padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
