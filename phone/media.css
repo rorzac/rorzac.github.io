@@ -23,11 +23,20 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1600px){
+    .header__main h1 {
+        font-size: 7em;
+        font-weight: bold;
+    line-height: 1.3em;
+    
+    letter-spacing: 3px;
+    }
+
+
     .micro {
-        width: 60%;
+        
         height: 60%;
         object-fit: contain;
-        left: 57%;
+        right: 3%;
         top: 42%;
         
     }
@@ -52,33 +61,34 @@
 
 
     .header__main h1 {
-        font-size: 7.2em;
+        font-size: 7em;
         font-weight: bold;
-    line-height: 1em;
+    line-height: 1.2em;
     
     letter-spacing: 3px;
     }
 
     .micro {
-        width: 50%;
-        height: 50%;
+     
+        height: 42%;
         object-fit: contain;
-        left: 59%;
-        top: 50%;
+        left: 65%;
+        top: 60%;
         
     }
 
     .niz {
         position: absolute;
-        bottom: 12%;
-        left: 7%;
+        bottom: 18%;
+        left: 5%;
         
     }
 
     .plohadki {
-        width: 80%;
-        height: 80%;
-        object-fit: contain;
+        width: 73%;
+        height: 73%;
+        object-fit: cover;
+        z-index: 1;
     }
 
 }
@@ -92,29 +102,29 @@
     }
 
     .header__main h1 {
-        font-size: 5.2em;
+        font-size: 5em;
         font-weight: bold;
-    line-height: 1em;
+    line-height: 1.2em;
     
     letter-spacing: 3px;
     }
 
     .micro {
-        width: 40%;
+       
         height: 40%;
         object-fit: contain;
-        left: 63%;
+        left: 72%;
         top: 40%;
         
     }
     .plohadki {
-        width: 70%;
-        height: 70%;
+        width: 67%;
+        height: 67%;
         object-fit: contain;
     }
     .niz {
         position: absolute;
-        bottom: 32%;
+        bottom: 35%;
         left: 5%;
         
     }
@@ -128,19 +138,19 @@
     }
 
     .header__main h1 {
-        font-size: 3.2em;
+        font-size: 3.5em;
         font-weight: bold;
-    line-height: 1em;
+    line-height: 1.2em;
     
     letter-spacing: 3px;
     }
 
     .micro {
-        width: 30%;
+      
         height: 30%;
         object-fit: contain;
-        left: 15%;
-        top: 35.5%;
+        left: 75%;
+        top: 35.2%;
         
     }
     .plohadki {
@@ -150,7 +160,7 @@
     }
     .niz {
         position: absolute;
-        bottom: 52%;
+        bottom: 45%;
         left: 5%;
         
     }
@@ -162,5 +172,51 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+  
+    
+
+    .header__main h1 {
+        font-size: 2.2em;
+        font-weight: bold;
+    line-height: 1.4em;
+    padding-top: 70px;
+    letter-spacing: 5px;
+    }
+
+
+    .micro {
+      
+        height: 25%;
+        object-fit: contain;
+        left: 68%;
+        top: 40%;
+        
+    }
+    .plohadki {
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+    }
+    .niz {
+        position: absolute;
+        bottom: 45%;
+        left: 5%;
+        
+    }
+
+    .more {
+        font-size: 10px;
+    }
+
+    .logo__fixed {
+        padding-left: 10px;
+        padding-top: 20px;
+        width: 90px;
+        height: 50px;
+        object-fit: contain;
+       
+       
+    }
+
 
 }

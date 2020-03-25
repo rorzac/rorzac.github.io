@@ -6,7 +6,7 @@
 
 body {
     width: 100%;
-    overflow-x: hidden;
+    
 }
 
 
@@ -47,14 +47,12 @@ footer {
     background: black;
 }
 
-.text {
-
-}
 
 .logo__fixed {
     padding-left: 50px;
     padding-top: 40px;
     position: fixed;
+   
 }
 
 .header__main h1 {
@@ -74,7 +72,7 @@ footer {
     position: absolute;
     left: 70%;
     top: 34.5%;
-    z-index: 2;
+   z-index: 2;
 
    
     
