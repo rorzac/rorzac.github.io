@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "iphone"; 
+    src: url("fonts/iphone.otf"); 
+     
+   }
+
 *{
     margin: 0;
     padding: 0;
@@ -52,18 +58,25 @@ footer {
     padding-left: 50px;
     padding-top: 40px;
     position: fixed;
-   
+   z-index: 10;
 }
 
 .header__main h1 {
     color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    line-height: 1.3em;
+    font-family: 'iphone', sans-serif;
+    font-weight: 400;
+
+    
+    line-height: 1.2em;
     font-size: 8em;
-    letter-spacing: 7px;
+    
     padding-left: 10%;
     padding-top: 140px;
+    
+}
+
+.header__main span {
+    padding-left: 100px;
     
 }
 
@@ -71,8 +84,8 @@ footer {
     
     position: absolute;
     left: 70%;
-    top: 34.5%;
    z-index: 2;
+   bottom: 0;
 
    
     
@@ -99,9 +112,14 @@ footer {
     left: 12%;
 }
 
-
-
-
+.mobile_music
+{
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    width: 70%;
+    height: 70%;
+}
 
 .text__section__one {
     padding-left: 50px;
@@ -117,8 +135,312 @@ footer {
 }
 
 .text__section__one span {
-    font-size: 55px;
+    
+    padding-left: 150px;
+}
+
+.section__one 
+{
+    position: relative;
+}
+
+.section__one .text
+{
+    color: black;
+    font-family: 'iphone', sans-serif;
+    font-weight: 400;
+    line-height: 1.2em;
+    font-size: 82px;
+    padding-left: 6%;
+    padding-top: 80px;
+}
+
+.img_nayshniki
+{
+    
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.section__one .text_m
+{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 25px;
+    padding-left: 18%;
+    padding-top: 5%;
+}
+
+.section__one .text_m :last-child
+{
+    padding-top: 40px;
+}
+
+.section__one .text_m span
+{
+    font-family: 'iphone', sans-serif;
+    color: #ff7d7d;
+    font-size: 100px;
+    padding: 0;
+    
+}
+
+.section__one .pole
+{
+    padding-left: 18%;
+    padding-top: 5%;
+    
+}
+
+
+
+.section__one .pole .bord
+{
+    border-bottom: solid 2px #a1a1a1;
+    width: 350px;
+    font-size: 15px;
+}
+
+.section__one .btn_img img
+{
+    padding-top: 57px;
+    width: 6%;
+}
+
+.section__one .btn_img img:hover
+{
+    box-shadow: 1px 5px 10px black;
+}
+
+.section__one .pole .bord a
+{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.section__one .pole label
+{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 20px;
+}
+
+.section__one .pole input
+{
+    font-family: 'Myriad Pro', sans-serif;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 20px;
+}
+
+.section__one .pole input:focus
+{
+    outline: none;
+}
+
+.btn {
+  
+   padding-left: 100%;
+   padding-bottom: 2%;
+}
+
+.main__block{
+    font-family: 'iphone', sans-serif;
+    
+}
+
+
+.main__block h1{
+    font-size: 90px;
+    color: #ff7d7d;
+    padding-left: 100px;
+    padding-top: 80px;
+}
+
+.main__block h2{
+    font-size: 50px;
+    color: white;
+    padding-left: 100px;
+    padding-top: 60px;
+}
+
+.main__block p{
+    font-size: 19px;
+    color: white;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 200;
+    padding-top: 75px;
+    padding-left: 215px;
+}
+
+.kolonki {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    z-index: 5;
+}
+
+.section__two {
+    position: relative;
+}
+
+.section__three__main h1 {
+    font-family: 'iphone', sans-serif;
+    font-size: 90px;
+    padding-top: 120px;
+    padding-left: 110px;
+}
+
+.section__three__main span {
+    font-family: 'iphone', sans-serif;
+    font-size: 90px;
+    padding-top: 120px;
     padding-left: 50px;
+}
+
+.p{
+    font-size: 27px;
+    font-family: 'Myrial Pro', sans-serif;
+    font-weight: 400;
+  
+    padding-top: 90px;
+    text-align: center;
+}
+
+.middle {
+    
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* footer */
+
+
+.footer__header h1 {
+    font-family: 'iphone', sans-serif;
+    font-size: 90px;
+    padding-top: 120px;
+    color: white;
+    padding-left: 110px;
+}
+
+.footer__header span {
+    padding-left: 70px;
+}
+
+.footer__text {
+    color: #fff;
+    padding-left: 70px;
+    font-size: 20px;
+    font-family: 'Myrial Pro', sans-serif;
+    font-weight: 400;
+}
+
+.zarab {
+    font-family: 'iphone', sans-serif;
+    font-size: 90px;
+    color: #ff7d7d;
+}
+
+
+.footer__middle p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Myrial Pro', sans-serif;
+    font-weight: 400;
+    padding-top: 70px;
+    padding-left: 215px;
+}
+
+
+.footer__center {
+    padding-top: 55px;
+    position: relative;
+    
+}
+
+.rigth__footer{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.btn {
+    position: relative;
+}
+
+
+
+
+/* кнопка первая */
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: flex;
+    position: absolute;
+    bottom: 7px;
+    padding: 5px;
+}
+
+
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+/* конец кнопки */
+
+/* btn */
+i{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    padding: 5px;
+}
+
+/* end */
+
+
+#main {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 140px;
+}
+
+.textt p {
+    color: white;
+    font-size: 17px;
+}
+
+.money {
+    padding-top: 7px;
+   display: flex;
+   justify-content: space-between;
+}
+
+
+
+.text__niz p {
+    padding-top: 7px;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+
+.cozial {
+    padding-top: 7px;
+}
+
+.cozial a
+{
+    margin-left: 10px;
 }
 
 
@@ -127,6 +449,91 @@ footer {
 
 
 
+.img_click:focus{
+    color: black;
+}
+
+.img_click:hover{
+    transform: scale(1.1);
+    transition: 150ms linear;
+    
+    cursor: pointer;
+
+}
 
 
 
+.text__icon {
+    font-family: 'iphone', sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 30px;
+}
+
+
+
+.rigth__footer .bord
+{
+    border-bottom: solid 2px #ff7d7d;
+    width: 350px;
+    font-size: 15px;
+}
+
+.rigth__footer label
+{
+    
+    font-family: 'Myriad Pro', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.rigth__footer input
+{
+    font-family: 'Myriad Pro', sans-serif;
+    border: none;
+    background-color: black;
+    font-size: 20px;
+    outline: none;
+    color: white;
+}
+
+
+
+
+/* icons */
+.middle {
+    display: block;
+}
+.tabs {
+width: 100%;
+margin: 30px auto;
+}
+
+.tabs-header {
+display: flex;
+justify-content: space-around;
+}
+
+.tabs-header__item {
+padding: 10px 20px;
+
+margin-right: 3px;
+cursor: pointer;
+}
+
+.tabs-header__item.active {
+border-color: red;
+}
+
+
+
+.tabs-content__item {
+display: none;
+text-align: center;
+padding-top: 70px;
+}
+
+.tabs-content__item.active {
+display: block;
+}
+/* end */

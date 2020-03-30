@@ -1,4 +1,22 @@
-@media (min-width: 1200px) and (max-width: 1919px){
+@media (min-width: 1921px) and (max-width: 10000px){
+
+
+
+    .mobile_music
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px){
+   
+
+  
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1920px){
     .header__main h1 {
         font-size: 8em;
         font-weight: bold;
@@ -19,7 +37,14 @@
         height: 100%;
         object-fit: contain;
     }
+
+    .mobile_music
+    {
+        display: none;
+    }
    
+    
+
 }
 
 @media (min-width: 1200px) and (max-width: 1600px){
@@ -37,7 +62,7 @@
         height: 60%;
         object-fit: contain;
         right: 3%;
-        top: 42%;
+        
         
     }
     .niz {
@@ -52,6 +77,94 @@
         height: 100%;
         object-fit: contain;
     }
+
+    .mobile_music
+    {
+        display: none;
+    }
+
+    .img_nayshniki
+    {
+        height: 60%;
+        object-fit: contain;
+        right: 3%;
+    }
+
+    .section__one .text_m
+    {
+        padding-left: 6%;
+        padding-top: 4%;
+    }
+
+    .section__one .pole
+    {
+        padding-left: 6%;
+        padding-top: 4%;
+    }
+    
+    .kolonki {
+        width: 400px;
+        right: 5%;
+    }
+
+
+    .footer__header h1 {
+       
+        font-size: 70px;
+        padding-top: 120px;
+      
+        padding-left: 110px;
+    }
+    
+    .footer__header span {
+        padding-left: 70px;
+        font-size: 70px;
+    }
+
+    .footer__middle p{
+
+        font-size: 30px;
+
+        font-weight: 400;
+        padding-top: 70px;
+        padding-left: 200px;
+    }
+
+    .textt p {
+    color: white;
+    font-size: 17px;
+}
+
+.money {
+    padding-top: 7px;
+   display: flex;
+   justify-content: space-between;
+}
+
+
+
+.text__niz p {
+    padding-top: 7px;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+
+.cozial {
+    padding-top: 7px;
+}
+
+.cozial a
+{
+    margin-left: 10px;
+}
+
+
+.textt p{
+    font-size: 15px;
+}
+        
 }
 
 
@@ -60,12 +173,14 @@
 @media (min-width: 992px) and (max-width: 1199px) {
 
 
+
+
     .header__main h1 {
         font-size: 7em;
         font-weight: bold;
     line-height: 1.2em;
     
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     }
 
     .micro {
@@ -73,7 +188,6 @@
         height: 42%;
         object-fit: contain;
         left: 65%;
-        top: 60%;
         
     }
 
@@ -90,6 +204,81 @@
         object-fit: cover;
         z-index: 1;
     }
+
+    .mobile_music
+    {
+        display: none;
+    }
+
+    .img_nayshniki img
+    {
+        width: 450px;
+        padding-top: 100px;
+    }
+
+    .section__one .text_m
+    {
+        padding-left: 2%;
+        padding-top: 10%;
+    }
+
+    .section__one .pole
+    {
+        padding-left: 2%;
+        padding-top: 4%;
+    }
+    .section__one .text_m span
+    {
+        font-size: 75px;
+    }
+
+    .section__one .text
+    {
+    font-weight: 400;
+    line-height: 1.2em;
+    font-size: 74px;
+    padding-left: 4%;
+    padding-top: 60px;
+    }
+
+    .main__block h1{
+        padding-left: 80px;
+    }
+    
+    .main__block h2{
+        padding-left: 80px;
+        font-size: 40px;
+    }
+    
+    .kolonki {
+        width: 370px;
+        right: 4%;
+    }
+
+    .footer__header h1 {
+       
+        font-size: 50px;
+        padding-top: 120px;
+      
+        padding-left: 110px;
+    }
+    
+    .footer__header span {
+        padding-left: 70px;
+        font-size: 50px;
+    }
+    .footer__middle p{
+
+        font-size: 25px;
+
+        font-weight: 400;
+        padding-top: 70px;
+        padding-left: 200px;
+    }
+
+    .textt p{
+        font-size: 15px;
+    } 
 
 }
 
@@ -113,7 +302,7 @@
        
         height: 40%;
         object-fit: contain;
-        left: 72%;
+        left: 70%;
         top: 40%;
         
     }
@@ -128,6 +317,101 @@
         left: 5%;
         
     }
+
+    .mobile_music 
+    {
+        display: none;
+    }
+
+    .img_nayshniki img
+    {
+        width: 400px;
+        padding-top: 60px;
+    }
+
+    .section__one .text_m
+    {
+        padding-left: 1%;
+        padding-top: 6%;
+    }
+
+    .section__one .pole
+    {
+        padding-left: 1%;
+        padding-top: 6%;
+    }
+    .section__one .text_m span
+    {
+        font-size: 50px;
+    }
+
+    .section__one .text
+    {
+    font-weight: 400;
+    line-height: 1.2em;
+    font-size: 65px;
+    padding-left: 3%;
+    padding-top: 50px;
+    }
+
+    .main__block h1{
+        font-size: 70px;
+        padding-left: 60px;
+        padding-top: 60px;
+    }
+    
+    .main__block h2{
+        font-size: 30px;
+        padding-left: 60px;
+        padding-top: 45px;
+    }
+    
+    .main__block p{
+        font-size: 15px;
+        padding-top: 55px;
+        padding-left: 140px;
+    }
+    
+    .kolonki {
+        width: 300px;
+        right: 2%;
+    }
+
+    .tabs-header__item
+    {
+        padding: 0;
+    }
+
+    .tabs-header .img_click
+    {
+        width: 80%;
+    }
+
+    .footer__header h1 {
+       
+        font-size: 40px;
+        padding-top: 120px;
+      
+        padding-left: 110px;
+    }
+    
+    .footer__header span {
+        padding-left: 70px;
+        font-size: 40px;
+    }
+    .footer__middle p{
+
+        font-size: 20px;
+
+        font-weight: 400;
+        padding-top: 70px;
+        padding-left: 200px;
+    }
+
+    .textt p{
+        font-size: 13px;
+    } 
+
 }
 
 /* Landscape phones and portrait tablets */
@@ -149,7 +433,7 @@
       
         height: 30%;
         object-fit: contain;
-        left: 75%;
+        left: 70%;
         top: 35.2%;
         
     }
@@ -165,9 +449,145 @@
         
     }
 
+    .niz 
+    {
+        display: none;
+    }
+
     .more {
         font-size: 20px;
     }
+
+    .img_nayshniki img
+    {
+        width: 350px;
+        padding-top: 50px;
+    }
+
+    .section__one .text_m
+    {
+        padding-left: 1%;
+        padding-top: 4%;
+        font-size: 20px;
+    }
+
+    .section__one .pole
+    {
+        padding-left: 1%;
+        padding-top: 4%;
+        font-size: 20px;
+    }
+    .section__one .text_m span
+    {
+        font-size: 45px;
+    }
+
+    .section__one .text
+    {
+        font-weight: 400;
+        line-height: 1.0em;
+        font-size: 45px;
+        padding-left: 2%;
+        padding-top: 30px;
+    }
+
+    .section__one .pole label
+    {
+        font-size: 15px;
+    }
+
+    .section__one .pole input
+    {
+        font-size: 15px;
+    }
+
+    .section__one .pole .bord
+    {
+        width: 300px;
+    }
+
+    .main__block h1{
+        font-size: 65px;
+        padding-left: 60px;
+        padding-top: 60px;
+    }
+    
+    .main__block h2{
+        font-size: 28px;
+        padding-left: 60px;
+        padding-top: 45px;
+    }
+    
+    .main__block p{
+        font-size: 15px;
+        padding-top: 70px;
+        padding-left: 30px;
+    }
+    
+    .kolonki {
+        width: 300px;
+        right: 2%;
+    }
+
+    .tabs-header .img_click
+    {
+        width: 70%;
+    }
+
+    .section__three__main span {
+        font-size: 32px;
+        padding-top: 100px;
+        padding-left: 40px;
+    }
+
+    .tabs-header__item
+    {
+        padding: 0;
+    }
+
+    .section__three__main h1 {
+        font-size: 30px;
+    }
+
+    .section__three__main span
+    {
+        font-size: 28px;
+    }
+
+    .text__icon {
+        font-size: 19px;
+    }
+
+    .footer__header h1 {
+       
+        font-size: 30px;
+        padding-top: 120px;
+      
+        padding-left: 110px;
+    }
+    
+    .footer__header span {
+        padding-left: 70px;
+        font-size: 30px;
+    }
+    .footer__middle p{
+
+        font-size: 15px;
+
+        font-weight: 400;
+        padding-top: 60px;
+        padding-left: 200px;
+    }
+    
+    .textt p{
+        font-size: 11px;
+    } 
+
+    #main {
+
+        padding-top: 150px;
+    }
+
 }
 
 /* Landscape phones and smaller */
@@ -176,11 +596,11 @@
     
 
     .header__main h1 {
-        font-size: 2.2em;
+        font-size: 2.1em;
         font-weight: bold;
     line-height: 1.4em;
     padding-top: 70px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     }
 
 
@@ -190,7 +610,6 @@
         object-fit: contain;
         left: 68%;
         top: 40%;
-        
     }
     .plohadki {
         width: 70%;
@@ -201,7 +620,11 @@
         position: absolute;
         bottom: 45%;
         left: 5%;
-        
+    }
+
+    .niz 
+    {
+        display: none;
     }
 
     .more {
@@ -218,5 +641,169 @@
        
     }
 
+    .img_nayshniki
+    {
+        object-fit: contain;
+        left: 18%;
+        bottom: 0;
+    }
 
+    .img_nayshniki img
+    {
+        width: 212px;
+    }
+
+    .section__one .text_m
+    {
+        padding-left: 1%;
+        padding-top: 6%;
+        font-size: 16px;
+    }
+
+    .section__one .pole
+    {
+        padding-left: 1%;
+        padding-top: 2%;
+        font-size: 16px;
+    }
+    .section__one .text_m span
+    {
+        font-size: 40px;
+    }
+
+    .section__one .text
+    {
+        font-weight: 400;
+        line-height: 1.0em;
+        font-size: 35px;
+        padding-left: 2%;
+        padding-top: 30px;
+    }
+
+    .section__one .pole label
+    {
+        font-size: 14px;
+    }
+
+    .section__one .pole input
+    {
+        font-size: 14px;
+    }
+
+    .section__one .pole .bord
+    {
+        width: 250px;
+    }
+
+    .text__section__one {
+        padding-left: 30px;
+    }
+
+    .main__block h1{
+        font-size: 31px;
+        padding-left: 35px;
+        padding-top: 35px;
+    }
+    
+    .main__block h2{
+        font-size: 20px;
+        padding-left: 35px;
+        padding-top: 35px;
+    }
+    
+    .main__block p{
+        font-size: 14px;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+    
+    .kolonki {
+        width: 235px;
+        left: 20%;
+    }
+
+    .footer__header h1 {
+       
+        font-size: 20px;
+        padding-top: 120px;
+      
+        padding-left: 70px;
+    }
+    
+    .footer__header span {
+        padding-left: 30px;
+        font-size: 20px;
+       
+    }
+
+    .footer__middle p{
+
+        font-size: 10px;
+
+        font-weight: 400;
+        padding-top: 60px;
+        padding-left: 100px;
+    }
+
+}
+
+@media (max-width: 360px)
+{
+    .img_nayshniki img
+    {
+        width: 200px;
+    }
+
+    .main__block h1{
+        font-size: 28px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    
+    .main__block h2{
+        font-size: 15px;
+        padding-left: 30px;
+        padding-top: 35px;
+    }
+    
+    .main__block p{
+        font-size: 10px;
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    
+    .kolonki {
+        width: 200px;
+        left: 20%;
+    }
+
+    .tabs-header__item
+    {
+        padding: 0;
+    }
+    .footer__middle p{
+
+        font-size: 15px;
+
+        font-weight: 400;
+        padding-top: 60px;
+        padding-left: 80px;
+    }
+
+    .header__main h1 {
+        font-size: 26px;
+    }
+
+    .text h1 {
+        font-size: 24px;
+        
+    }
+
+    .img_nayshniki img {
+        width: 162px;
+    }
+
+    #main {
+        padding-top: 50px;
+    }
 }
