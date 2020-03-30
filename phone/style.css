@@ -454,7 +454,7 @@ i{
 }
 
 .img_click:hover{
-    transform: scale(1.1);
+  
     transition: 150ms linear;
     
     cursor: pointer;
@@ -537,3 +537,72 @@ padding-top: 70px;
 display: block;
 }
 /* end */
+
+
+
+
+
+/* btn */
+.d5 {
+    background: white;
+    border: 3px solid gray;
+    width:  310px;
+}
+.d5 input, .d5 button {
+  outline: none;
+  background: white;
+  border:none;
+}
+.d5 input {
+  height: 43px;
+  padding-left: 15px;
+  width: 250px;
+
+}
+
+.d5 i
+{
+  width: 30px;
+ border: none;
+}
+
+.d5:focus
+{
+    border: 2px solid black;
+ 
+}
+
+.d5:focus
+{
+  border: 5px solid black;
+ 
+ 
+}
+
+.d5 button {
+  
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: gray;
+  padding: 0;
+}
+.d5 button:hover {
+  color: #ff7d7d;
+}
+.d5:focus {
+  border-color: #ff7d7d;
+}
+
+.fa-angle-right::before {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+}
+/* btn end */
+
+
+.center {
+    padding-top: 90px;
+    position: relative;
+}

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="img/logotype.png"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/7132afec3a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:900i&display=swap" rel="stylesheet">
     <title>Visual Cartel</title>
 </head>
@@ -48,15 +48,16 @@
 
                     <div class="center">
 
-                        <div class="pole">
-                            <div class="bord">
-                                <label for="">vk.com/</label>
-                                <input type="text"  placeholder="id_страницы">
-                                <div class="btn">
-                                    <button type="submit"> <p><i class="arrow right"></i></p></button>
-                                </div>
+
+
+                    <div class="d5">
+                            <form action="mail.php" method="post">
+                            <input  name="email" type="text" placeholder="vk.com/id_страницы">
+                            <button type="submit"> 
+                                <i class="fas fa-angle-right"></i>
+                                </button>
+                            </form>
                             </div>
-                        </div>
 
                     
                         
@@ -103,32 +104,45 @@
                 <div class="tabs-header">
  
                     <div class="delete tabs-header__item js-tab-trigger" data-tab="1">
-                      <img class="img_click" src="img/1.png" alt="">
+                      <img class="img_click" src="img/1.png" alt="Скорость"  title="Скорость">
                     </div>
                     <div class="delete tabs-header__item js-tab-trigger" data-tab="2">
-                        <img class="img_click" src="img/2.png" alt="">
+                        <img class="img_click" src="img/2.png" alt="" title="Простота">
                     </div>
                     <div class="delete tabs-header__item js-tab-trigger" data-tab="3">
-                        <img class="img_click" src="img/3.png" alt="">
+                        <img class="img_click" src="img/3.png" alt="" title="Подробная статистика релиза">
                     </div>
                     <div class="delete tabs-header__item js-tab-trigger" data-tab="4">
-                        <img class="img_click" src="img/4.png" alt="">
+                        <img class="img_click" src="img/4.png" alt="" title="Моментальная поддержка">
                     </div>
                     <div class="delete tabs-header__item js-tab-trigger" data-tab="5">
-                        <img class="img_click" src="img/5.png" alt="">
+                        <img class="img_click" src="img/5.png" alt="" title="Гарантированное роялти">
                     </div>
                  </div>
               
               <div class="tabs-content">
                     <div class="tabs-content__item active js-tab-content" data-tab="1">
-                        <h1 class="show text__icon">Скорость — С нами вам потребуется всего 2 минуты чтобы начать<br>зарабатывать на своей музыке
+                        <h1 class="show text__icon"> С нами вам потребуется всего 2 минуты чтобы начать<br>зарабатывать на своей музыке
                         </h1>
                     </div>
                    
-                    <div class="tabs-content__item js-tab-content" data-tab="2"><h1 class="text__icon">Простота — От вас требуется лишь прислать материал,<br>остальное мы берем на себя</h1></div>
-                    <div class="tabs-content__item js-tab-content" data-tab="3"><h1 class="text__icon">Подробная статистика релиза — Мы регулярно присылаем отчеты по релизам нашим исполнителям,<br> там они могут наблюдать за нарастающей прибылью</h1></div>
-                    <div class="tabs-content__item js-tab-content" data-tab="4"><h1 class="text__icon">Моментальная поддержка — Наш агент поможет по любым интересующим вопросам<br>даже в половину третьего ночи</h1></div>
-                    <div class="tabs-content__item js-tab-content" data-tab="5"><h1 class="text__icon">Гарантированное роялти — Наша система продуманна с заботой о исполнителях и их заработке, поэтому<br>наш лейбл регулярно присылает выплаты по релизам, <br>а самое главное, делает это в срок</h1></div>
+                    <div class="tabs-content__item js-tab-content" data-tab="2"><h1 class="text__icon">От вас требуется лишь прислать материал,<br>остальное мы берем на себя</h1></div>
+                    <div class="tabs-content__item js-tab-content" data-tab="3"><h1 class="text__icon">Мы регулярно присылаем отчеты по релизам нашим исполнителям,<br> там они могут наблюдать за нарастающей прибылью</h1></div>
+                    <div class="tabs-content__item js-tab-content" data-tab="4"><h1 class="text__icon">Наш агент поможет по любым интересующим вопросам<br>даже в половину третьего ночи</h1></div>
+                    <div class="tabs-content__item js-tab-content" data-tab="5"><h1 class="text__icon">Наша система продуманна с заботой о исполнителях и их заработке, поэтому<br>наш лейбл регулярно присылает выплаты по релизам, <br>а самое главное, делает это в срок</h1></div>
+                 </div>
+
+
+                 <div class="tabs-content__mobile">
+                    <div class="tabs-content__item active js-tab-content" data-tab="1">
+                        <h1 class="show text__icon"> С нами вам потребуется всего 2 минуты чтобы начать<br>зарабатывать на своей музыке
+                        </h1>
+                    </div>
+                   
+                    <div class="tabs-content__item js-tab-content" data-tab="2"><h1 class="text__icon">Скорость. От вас требуется лишь прислать материал,<br>остальное мы берем на себя</h1></div>
+                    <div class="tabs-content__item js-tab-content" data-tab="3"><h1 class="text__icon">Простота.Мы регулярно присылаем отчеты по релизам нашим исполнителям,<br> там они могут наблюдать за нарастающей прибылью</h1></div>
+                    <div class="tabs-content__item js-tab-content" data-tab="4"><h1 class="text__icon">Наш агент поможет по любым интересующим вопросам<br>даже в половину третьего ночи</h1></div>
+                    <div class="tabs-content__item js-tab-content" data-tab="5"><h1 class="text__icon">Наша система продуманна с заботой о исполнителях и их заработке, поэтому<br>наш лейбл регулярно присылает выплаты по релизам, <br>а самое главное, делает это в срок</h1></div>
                  </div>
 
 
@@ -152,16 +166,20 @@
             <div class="footer__center">
        
                 <div class="rigth__footer">
-                    <div class="bord">
-                    <form action="send.php" method="post">
-                        <label for="">vk.com/</label>
-                        <input name="email" type="text" placeholder="id_страницы">
-                       
-                    </div>
-                             <div class="btn btn__white">
-                                    <button type="submit"> <i class="arrow right"></i></button>
-                                </div>
-                   </form>
+
+
+                    <div class="d5">
+                        <form>
+                        <input type="text" placeholder="vk.com/id_страницы">
+                        <button type="submit"> 
+                            <i class="fas fa-angle-right"></i>
+                            </button>
+                        </form>
+                        </div>
+
+
+
+
                 </div>
             </div>
             <div class="footer__end">
