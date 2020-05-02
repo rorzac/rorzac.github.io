@@ -1,0 +1,37 @@
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .section__text h1 {
+        font-size: 18px;
+}
+}
+
+
+
+
+
+@media (max-width: 650) {
+    .section__text h1 {
+        font-size: 18px;
+}
+.center__block {
+    display: block;
+  
+    margin-top: 15%;
+}
+
+
+}
