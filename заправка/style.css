@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -21,13 +22,12 @@ header {
 .main__header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+
 }
 
 .one {
     margin-left: 50px;
     margin-top: 35%;
-    
 }
 
 .two, .three {
@@ -126,16 +126,12 @@ header {
 }
 
 .center__block {
-    display: flex;
+    display: inline-block;
     justify-content: space-around;
     margin-top: 15%;
 }
 
 .center__block img{
-    width: 370px;
-    height: 315px;
-    object-fit: contain;
-    
 }
 
 #container {
@@ -183,24 +179,54 @@ header {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.section__two img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+    width: 50%;
+    height: 50vh;
 }
 
 
 
 .section__three {
-    width: 100%;
-    height: 100vh;
+}
+
+.img-1 {
+    width: 100%
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
 }
 
 .img {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
 
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.left__two h1 {
+    font-size: 24px;
+}
+
+.left__three img {
+    width: 100%;
+    height: 100%;
+}
+
+.left__one img {
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -210,7 +236,7 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
 }
 
 
@@ -218,7 +244,7 @@ header {
     width: 100%;
     height: 30vh;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .section__four h1 {
