@@ -47,7 +47,7 @@ header {
 }
 
 .block__first, .left  {
-	width: 70px;
+	width: 30px;
 	height: 30px;
 	background: #fff;
 }
@@ -124,6 +124,7 @@ header {
 }
 
 .btn__header a {
+
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
@@ -143,8 +144,8 @@ header {
 /*SECTION*/
 
 .fon__section {
-		background-image: url(img/water.png);
-	background-position: center;
+	background-image: url(img/water.png);
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -368,6 +369,14 @@ header {
 	-ms-align-items: center;
 	align-items: center;
 }
+
+.block__center img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+
 
 
 .text {
