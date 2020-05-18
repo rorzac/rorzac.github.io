@@ -48,7 +48,7 @@
   $('#portfolio').magnificPopup({
     delegate: 'a',
     type: 'image',
-    tLoading: 'Loading image #%curr%...',
+    tLoading: 'Загрузка изображения #%curr%...',
     mainClass: 'mfp-img-mobile',
     gallery: {
       enabled: true,
