@@ -1,0 +1,3 @@
+[10308:13236:0601/103951.120:46950828:WARNING:network_impl_win.cc(225)] [AU] Failed to resolve proxy auto config for https://autoupdate.geo.opera.com/ Err: 12006
+[10308:13236:0601/103952.053:46951765:WARNING:update_check_handler_impl_win.cc(75)] [AU] Task failure count : 0
+[10308:13236:0601/103952.053:46951765:INFO:protocol_impl.cc(831)] Main update resource available: false
