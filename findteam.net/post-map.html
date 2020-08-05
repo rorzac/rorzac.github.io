@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Motor</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/zabuto_calendar.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/ion.rangeSlider.css">
+<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+
+
+<!-- Header - start -->
+<div class="header">
+
+	<!-- Navmenu Mobile Toggle Button -->
+	<a href="#" class="header-menutoggle" id="header-menutoggle">Menu</a>
+
+	<div class="header-info">
+
+		<!-- Personal Menu -->
+		<div class="header-personal">
+			<a href="#" class="header-gopersonal"></a>
+			<ul>
+				<li>
+					<a href="message.html">Messages <span>12</span></a>
+				</li>
+				<li>
+					<a href="#">Bookmarks <span>6</span></a>
+				</li>
+				<li>
+					<a href="cart.html">Shopping Cart <span>5</span></a>
+				</li>
+				<li class="header-order">
+					<a href="orders.html">Order Status</a>
+				</li>
+				<li>
+					<a href="#">Settings</a>
+				</li>
+				<li>
+					<a href="#">Log out</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Small Cart -->
+		<a href="cart.html" class="header-cart">
+			<div class="header-cart-inner">
+				<p class="header-cart-count">
+					<img src="img/cart.png" alt="">
+					<span>3</span>
+				</p>
+				<p class="header-cart-summ">$300</p>
+			</div>
+		</a>
+
+		<a href="#" class="header-compare"></a>
+		<a href="#" class="header-favorites"></a>
+
+		<!-- Search Form -->
+		<a href="#" class="header-searchbtn" id="header-searchbtn"></a>
+		<form action="#" class="header-search" id="header-search">
+			<input type="text" placeholder="Search parts or vehicles">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+
+	</div>
+
+	<!-- Logotype -->
+	<p class="header-logo">
+		<a href="index.html"><img src="img/logo.png" alt=""></a>
+	</p>
+
+	<!-- Navmenu - start -->
+	<nav id="top-menu">
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li class="has-child">
+				<a href="catalog.html">Catalog</a>
+				<i class="fa fa-angle-down"></i>
+				<ul>
+					<li><a href="catalog.html">Catalog: List Mode</a></li>
+					<li><a href="catalog-gallery.html">Catalog: Gallery Mode</a></li>
+					<li><a href="product.html">Product: Standart</a></li>
+					<li><a href="product-vehicle.html">Product: Vehicle</a></li>
+				</ul>
+			</li>
+			<li class="has-child">
+				<a href="#">Pages</a>
+				<i class="fa fa-angle-down"></i>
+				<ul>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="err404.html">Error 404</a></li>
+				</ul>
+			</li>
+			<li class="has-child active">
+				<a href="blog.html">Blog</a>
+				<i class="fa fa-angle-down"></i>
+				<ul>
+					<li><a href="blog.html">Blog: Standart</a></li>
+					<li><a href="blog-full.html">Blog: Full Width</a></li>
+					<li><a href="blog-left.html">Blog: Left Sidebar</a></li>
+					<li><a href="post.html">Single Post: Standart</a></li>
+					<li class="active"><a href="post-map.html">Single Post: With a Map</a></li>
+					<li><a href="post-video.html">Single Post: Video</a></li>
+					<li><a href="post-slider.html">Single Post: Slider</a></li>
+					<li><a href="post-sidebar.html">Single Post: Sidebar</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="contacts.html">Contacts</a>
+			</li>
+			<li class="has-child">
+				<a href="orders.html">Orders</a>
+				<i class="fa fa-angle-down"></i>
+				<ul>
+					<li><a href="orders.html">Orders</a></li>
+					<li><a href="message.html">Messages</a></li>
+					<li><a href="cart.html">Shopping Cart</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<!-- Navmenu - end -->
+
+</div>
+<!-- Header - end -->
+
+<!-- Main Content - start -->
+<main>
+
+<!-- Breadcrumbs -->
+<div class="b-crumbs-wrap b-crumbs-wrap2">
+	<div class="cont b-crumbs">
+		<ul>
+			<li>
+				<a href="index.html">Motor</a>
+			</li>
+			<li>
+				<a href="blog.html">Blog</a>
+			</li>
+			<li>
+				<span>Mauris semper laoreet metus</span>
+			</li>
+		</ul>
+		<div class="b-crumbs-menu">
+			<a id="b-crumbs-menu" href="#"></a>
+			<ul class="b-crumbs-menulist">
+				<li><a href="post.html">Single Post: Standart</a></li>
+				<li><a href="post-map.html">Single Post: With a Map</a></li>
+				<li><a href="post-video.html">Single Post: Video</a></li>
+				<li><a href="post-slider.html">Single Post: Slider</a></li>
+				<li><a href="post-sidebar.html">Single Post: Sidebar</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="maincont">
+
+	<!-- Post Map -->
+	<div class="post-map" id="post-map1"></div>
+
+	<div class="cont">
+
+		<!-- Post Content - start -->
+		<div class="post">
+			<div class="post-info">
+				<a href="#">News</a>
+				<h1>Post with a Map</h1>
+				<time datetime="2016-04-07 12:00"><span>20</span> may</time>
+			</div>
+			<div class="post-video">
+				<iframe src="https://www.youtube.com/embed/L1bruVSY8LE?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+			</div>
+			<p>Sed egestas mollis eros sed lacinia. Praesent nunc elit, suscipit non consequat a, congue fermentum velit. Fusce rhoncus orci non ipsum pellentesque efficitur. Donec aliquet magna ut lorem tempor pharetra. Mauris pulvinar sapien quis metus ornare pellentesque. Ut et augue id sem aliquam rhoncus ut vel justo. Phasellus ultricies quam id ante iaculis auctor. Pellentesque ac ligula tellus. Nam eget ligula accumsan eros vulputate hendrerit nec nec ex. Praesent tempor luctus enim.</p>
+			<p>Sed condimentum id eros vitae vehicula. Pellentesque nisi turpis, vulputate in faucibus ac, volutpat molestie lectus. Vestibulum laoreet non nunc ac efficitur. Cras consectetur elit quis luctus consequat. Fusce eu lorem at sem interdum fermentum. Curabitur blandit elementum lacus, ac hendrerit leo condimentum ac. Cras ornare magna at maximus interdum.</p>
+			<p>Pellentesque sit amet velit sed ligula suscipit posuere. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ornare libero in enim semper lacinia. Sed in ipsum mollis, hendrerit est nec, tempus neque. Proin in turpis vel quam ullamcorper tristique. Fusce elit erat, consequat eget rhoncus eget, facilisis quis leo. Mauris vestibulum magna mollis erat placerat, quis interdum arcu porttitor. Sed ornare nisi libero, gravida finibus erat pellentesque sit amet. Cras dignissim dapibus est et imperdiet. Vestibulum vestibulum pellentesque lorem, sed posuere dui interdum eget.</p>
+
+			<!-- Social Share -->
+			<ul class="post-share">
+				<li>
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-vk"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-google-plus"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-pinterest-p"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-share"></i>
+					</a>
+				</li>
+			</ul>
+
+			<!-- Post Comments - start -->
+			<div class="post-comments">
+				<form action="#" class="post-addcomment-form" id="post-addcomment-form">
+					<p class="post-addcomment-ttl">Add Comment</p>
+					<input type="text" placeholder="Name">
+					<input type="text" placeholder="E-mail">
+					<textarea placeholder="Comment"></textarea>
+					<input type="submit" value="Add Comment">
+				</form>
+				<h3>Comments</h3>
+				<a href="#" class="post-comments-add" id="post-comments-add">Add a comment</a>
+				<ul>
+					<li class="post-comment">
+						<p class="post-comment-img">
+							<img src="http://placehold.it/80x80" alt="">
+						</p>
+						<h4>Steve Ellis</h4>
+						<p>Nullam porta ex varius, pellentesque tellus eu, lobortis nulla. Fusce dictum placerat neque, vel venenatis neque faucibus quis <br>Proin laoreet ullamcorper ligula, ut mattis dui rhoncus vulputate.</p>
+					</li>
+					<li class="post-comment">
+						<p class="post-comment-img">
+							<img src="http://placehold.it/80x80" alt="">
+						</p>
+						<h4>Darlene Peterson</h4>
+						<p>Etiam eget ligula vitae augue tempus commodo. Proin quis mi ultrices, tempus urna dictum, scelerisque nunc. Cras vitae luctus urna. <br>Integer at augue mauris. In fringilla, massa a tincidunt varius</p>
+					</li>
+					<li>
+						<ul class="post-comment-reply">
+							<li class="post-comment">
+								<p class="post-comment-img">
+									<img src="http://placehold.it/80x80" alt="">
+								</p>
+								<h4>Ruby Mitchelle</h4>
+								<p>Pellentesque facilisis commodo posuere. Phasellus semper consectetur pharetra. Nullam cursus nulla ac enim consectetur volutpat. <br>In pharetra euismod ante vitae eleifend. Nunc nec dolor facilisis, ullamcorper metus sed, vulputate leo. Nunc dui nulla, hendrerit vel feugiat quis, hendrerit eu diam. Pellentesque turpis libero, efficitur et risus sit amet, finibus sagittis nisi.</p>
+							</li>
+							<li>
+								<ul class="post-comment-reply">
+									<li class="post-comment">
+										<p class="post-comment-img">
+											<img src="http://placehold.it/80x80" alt="">
+										</p>
+										<h4>Lee Ramos</h4>
+										<p>Proin vehicula pulvinar risus. Praesent aliquam leo massa, et bibendum mauris gravida ut. <br>Curabitur mollis lobortis ligula, id maximus lectus pulvinar eget.</p>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="post-comment">
+						<p class="post-comment-img">
+							<img src="http://placehold.it/80x80" alt="">
+						</p>
+						<h4>Jeffery Robertson</h4>
+						<p>Pellentesque facilisis commodo posuere. Phasellus semper consectetur pharetra. Nullam cursus nulla ac enim consectetur volutpat. <br>In pharetra euismod ante vitae eleifend. Nunc nec dolor facilisis, ullamcorper metus sed, vulputate leo.</p>
+					</li>
+				</ul>
+				<p class="post-comments-more">
+					<a href="#">show more</a>
+				</p>
+			</div>
+			<!-- Post Comments - end -->
+
+		</div>
+		<!-- Post Content - end -->
+
+	</div>
+</div>
+
+</main>
+<!-- Main Content - end -->
+
+
+<!-- Footer - start -->
+<footer class="footer">
+	<div class="cont footer-top">
+
+		<!-- Footer Menu -->
+		<div class="footer-menu">
+			<p>Company</p>
+			<ul>
+				<li><a href="#">Shipping</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+		</div>
+		<div class="footer-menu">
+			<p>Information</p>
+			<ul>
+				<li><a href="#">Affiliate Program</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Site Map</a></li>
+				<li><a href="#">Search Terms</a></li>
+			</ul>
+		</div>
+		<div class="footer-menu">
+			<p>Account & Orders</p>
+			<ul>
+				<li><a href="#">My Account</a></li>
+				<li><a href="#">My Garage</a></li>
+				<li><a href="#">Shopping Cart</a></li>
+				<li><a href="#">Order Status</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-info">
+			<p class="footer-msg">Our online support is available <a class="callback" href="#">Send us a message</a></p>
+			<ul class="footer-social">
+				<li>
+					<a rel="nofollow" target="_blank" href="http://facebook.com">
+						<i class="fa fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="mailto:email@email.com">
+						<i class="fa fa-paper-plane"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="http://pinterest.com">
+						<i class="fa fa-pinterest-p"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="http://youtube.com">
+						<i class="fa fa-youtube-play"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="http://twitter.com">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="http://google.com">
+						<i class="fa fa-google-plus"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="http://twitter.com">
+						<i class="fa fa-share-alt"></i>
+					</a>
+				</li>
+			</ul>
+			<form action="#" class="form-validate">
+				<input data-required="text" data-required-email="email" type="text" placeholder="Email address" name="email1">
+				<input type="submit" value="Subscribe">
+			</form>
+		</div>
+
+	</div>
+	<div class="copyright">
+		<p class="cont">© 2016 Stockware All Right Received</p>
+	</div>
+</footer>
+<!-- Footer - end -->
+
+
+<!-- Modal Form -->
+<div id="modal-form" class="modal-form">
+	<p class="modal-form-ttl">Contact Us</p>
+	<form action="#" class="form-validate">
+		<input data-required="text" type="text" placeholder="Name" name="name2">
+		<input data-required="text" type="text" placeholder="Phone" name="phone2">
+		<input data-required="text" data-required-email="email" type="text" placeholder="Email" name="email2">
+		<textarea placeholder="Your message" name="mess2"></textarea>
+		<input type="submit" value="Send">
+	</form>
+</div>
+
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/fancybox/fancybox.js"></script>
+<script src="js/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+
+<script src="js/zabuto_calendar.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+"use strict";
+function initialize() {
+	var mapOptions = {
+		zoom: 15,
+		scrollwheel: false,
+		center: new google.maps.LatLng(40.440128, -79.974326)
+	};
+	var map = new google.maps.Map(document.getElementById('post-map1'),
+		mapOptions);
+	var marker = new google.maps.Marker({
+		position: map.getCenter(),
+		icon: 'img/marker.png',
+		map: map
+	});
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script> 
+
+</body>
+</html>

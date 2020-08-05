@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Motor</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/zabuto_calendar.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/ion.rangeSlider.css">
+<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+
+
+<!-- Header - start -->
+<div class="header">
+
+	<!-- Navmenu Mobile Toggle Button -->
+	<a href="#" class="header-menutoggle" id="header-menutoggle">Menu</a>
+
+	<div class="header-info">
+
+		<!-- Personal Menu -->
+		<div class="header-personal">
+			<a href="#" class="header-gopersonal"></a>
+			<ul>
+				<li>
+					<a href="message.html">Messages <span>12</span></a>
+				</li>
+				<li>
+					<a href="#">Bookmarks <span>6</span></a>
+				</li>
+				<li>
+					<a href="cart.html">Shopping Cart <span>5</span></a>
+				</li>
+				<li class="header-order">
+					<a href="orders.html">Order Status</a>
+				</li>
+				<li>
+					<a href="#">Settings</a>
+				</li>
+				<li>
+					<a href="#">Log out</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Small Cart -->
+		<a href="cart.html" class="header-cart">
+			<div class="header-cart-inner">
+				<p class="header-cart-count">
+					<img src="img/cart.png" alt="">
+					<span>3</span>
+				</p>
+				<p class="header-cart-summ">$300</p>
+			</div>
+		</a>
+
+		<a href="#" class="header-compare"></a>
+		<a href="#" class="header-favorites"></a>
+
+		<!-- Search Form -->
+		<a href="#" class="header-searchbtn" id="header-searchbtn"></a>
+		<form action="#" class="header-search" id="header-search">
+			<input type="text" placeholder="Search parts or vehicles">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+
+	</div>
+
+	<!-- Logotype -->
+	<p class="header-logo">
+		<a href="index.html"><img src="img/logo.png" alt=""></a>
+	</p>
+
+	<!-- Navmenu - start -->
+	<nav id="top-menu">
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li class="has-child active">
+				<a href="catalog.html">Catalog</a>
+				<i class="fa fa-angle-down"></i>
+				<ul>
+					<li><a href="catalog.html">Catalog: List Mode</a></li>
+					<li><a href="catalog-gallery.html">Catalog: Gallery Mode</a></li>
+					<li><a href="product.html">Product: Standart</a></li>
+					<li class="active"><a href="product-vehicle.html">Product: Vehicle</a></li>
+				</ul>
+			</li>
+			<li class="has-child">
+				<a href="#">Pages</a>
+				<i class="fa fa-angle-down"></i>
+				<ul>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="err404.html">Error 404</a></li>
+				</ul>
+			</li>
+			<li class="has-child">
+				<a href="blog.html">Blog</a>
+				<i class="fa fa-angle-down"></i>
+				<ul>
+					<li><a href="blog.html">Blog: Standart</a></li>
+					<li><a href="blog-full.html">Blog: Full Width</a></li>
+					<li><a href="blog-left.html">Blog: Left Sidebar</a></li>
+					<li><a href="post.html">Single Post: Standart</a></li>
+					<li><a href="post-map.html">Single Post: With a Map</a></li>
+					<li><a href="post-video.html">Single Post: Video</a></li>
+					<li><a href="post-slider.html">Single Post: Slider</a></li>
+					<li><a href="post-sidebar.html">Single Post: Sidebar</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="contacts.html">Contacts</a>
+			</li>
+			<li class="has-child">
+				<a href="orders.html">Orders</a>
+				<i class="fa fa-angle-down"></i>
+				<ul>
+					<li><a href="orders.html">Orders</a></li>
+					<li><a href="message.html">Messages</a></li>
+					<li><a href="cart.html">Shopping Cart</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<!-- Navmenu - end -->
+
+</div>
+<!-- Header - end -->
+
+<!-- Main Content - start -->
+<main>
+
+<!-- Breadcrumbs -->
+<div class="b-crumbs-wrap">
+	<div class="cont b-crumbs">
+		<ul>
+			<li>
+				<a href="index.html">Motor</a>
+			</li>
+			<li>
+				<a href="catalog.html">Catalog</a>
+			</li>
+			<li>
+				<a href="catalog.html">Helmets</a>
+			</li>
+			<li>
+				<span>Motorcycle sport helmet</span>
+			</li>
+		</ul>
+		<div class="b-crumbs-menu">
+			<a id="b-crumbs-menu" href="#"></a>
+			<ul class="b-crumbs-menulist">
+				<li><a href="product.html">Product: Standart</a></li>
+				<li><a href="product-vehicle.html">Product: Vehicle</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="cont maincont">
+
+	<h1><span>enzo w750kk</span></h1>
+	<span class="maincont-line1"></span>
+	<span class="maincont-line2"></span>
+
+	<!-- Product - start -->
+	<div class="prodv">
+		<div class="prodv-props">
+			<div class="prodv-prop-wrap">
+				<p>Manufacturer</p>
+				<p class="prodv-prop">Enzo</p>
+			</div>
+			<div class="prodv-prop-wrap">
+				<p>Model Year</p>
+				<p class="prodv-prop">2016</p>
+			</div>
+			<div class="prodv-prop-wrap">
+				<p>Displacement</p>
+				<p class="prodv-prop">599 <span>CC</span></p>
+			</div>
+			<div class="prodv-prop-wrap">
+				<p>Top Speed</p>
+				<p class="prodv-prop">265 <span>km/h</span></p>
+			</div>
+			<div class="prodv-prop-wrap">
+				<p>Price</p>
+				<p class="prodv-prop">14 790 <span>USD</span></p>
+			</div>
+		</div>
+		<div class="prodv-rating">
+			<p>Rating</p>
+			<p class="prod-rating">
+				<i class="fa fa-star-o" title="5"></i><i class="fa fa-star-o" title="4"></i><i class="fa fa-star-o" title="3"></i><i class="fa fa-star-o" title="2"></i><i class="fa fa-star-o" title="1"></i>
+			</p>
+		</div>
+		<div class="prodv-colors">
+			<p>Color</p>
+			<ul>
+				<li class="active"><span style="background: #46c1df;"></span></li>
+				<li><span style="background: #34538f;"></span></li>
+				<li><span style="background: #8f6eed;"></span></li>
+				<li><span style="background: #3ded52;"></span></li>
+				<li><span style="background: #f6bb60;"></span></li>
+				<li><span style="background: #ed3d3d;"></span></li>
+			</ul>
+		</div>
+		<a href="#" class="prodv-add">Buy Now</a>
+
+		<!-- Product Image -->
+		<p class="prodv-img">
+			<img src="http://placehold.it/619x417" alt="">
+		</p>
+
+		<p class="prodv-model">W750KK</p>
+
+	</div>
+	<!-- Product - end -->
+
+	<!-- Product Tabs - start -->
+	<div class="prod-tabs-wrap">
+		<ul class="prod-tabs">
+			<li data-prodtab-num="1" id="prod-desc" class="active">
+				<a data-prodtab="#prod-tab-1" href="#">Description</a>
+			</li>
+			<li data-prodtab-num="2" id="prod-props">
+				<a data-prodtab="#prod-tab-2" href="#">Features</a>
+			</li>
+			<li data-prodtab-num="3" id="prod-reviews">
+				<a data-prodtab="#prod-tab-3" href="#">Reviews <span>36</span></a>
+			</li>
+			<li class="prod-tabs-addreview">Add a review</li>
+		</ul>
+		<div class="prod-tab-cont">
+			<p data-prodtab-num="1" class="prod-tab-mob active" data-prodtab="#prod-tab-1">Description</p>
+			<div class="prod-tab prod-tab-desc" id="prod-tab-1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, debitis, autem, aspernatur sapiente velit minus vitae tempora nemo optio possimus necessitatibus ex earum aperiam illum soluta obcaecati reprehenderit provident facere.</p>
+				<p>Celit minus vitae tempora nemo optio possimus necessitatibus ex earum aperiam illum soluta obcaecati reprehenderit provident facere.</p>
+				<p>Atque, neque, dolorum dolore est distinctio omnis architecto vel. Quis, ratione, neque, maiores quas facilis nam laborum fuga odio a deserunt error iure facere exercitationem dolorem numquam reprehenderit assumenda pariatur quidem deleniti ducimus porro labore quod veniam. Dolore, totam sunt architecto possimus consectetur consequuntur.</p>
+			</div>
+			<p data-prodtab-num="2" class="prod-tab-mob" data-prodtab="#prod-tab-2">Features</p>
+			<div class="prod-tab" id="prod-tab-2">
+				<dl class="prod-tab-props">
+					<dt>Stroke</dt>
+					<dd>4 Stroke</dd>
+					<dt>Max Power</dt>
+					<dd>62kW/6000 (r/min)</dd>
+					<dt>Cylinders</dt>
+					<dd>2 Cylinder</dd>
+					<dt>Max Torque</dt>
+					<dd>101N·m/5000 (r/min)</dd>
+					<dt>Displacement (ml)</dt>
+					<dd>1000CC</dd>
+				</dl>
+			</div>
+			<p data-prodtab-num="3" class="prod-tab-mob" data-prodtab="#prod-tab-3">Reviews</p>
+			<div class="prod-tab prod-reviews" id="prod-tab-3">
+				<form action="#" class="prod-addreview-form" id="prod-addreview-form">
+					<p class="prod-tab-addreview">Add Your Review</p>
+					<p class="prod-rating">
+						<i class="fa fa-star-o" title="5"></i><i class="fa fa-star-o" title="4"></i><i class="fa fa-star-o" title="3"></i><i class="fa fa-star-o" title="2"></i><i class="fa fa-star-o" title="1"></i>
+					</p>
+					<input type="text" placeholder="Name">
+					<input type="text" placeholder="E-mail">
+					<textarea placeholder="Message"></textarea>
+					<input type="submit" value="Add Review">
+				</form>
+				<div class="prod-review">
+					<h3>Douglas Harrison</h3>
+					<p class="prod-review-rating">
+						<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+					</p>
+					<p>Praesent libero dui, consequat nec placerat id, cursus at metus. <br>Donec semper velit eget ex ultrices, eu lacinia nunc scelerisque. <br>Ut tincidunt magna sit amet felis dictum efficitur.</p>
+				</div>
+				<div class="prod-review">
+					<h3>Douglas Harrison</h3>
+					<p class="prod-review-rating">
+						<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+					</p>
+					<p>Praesent libero dui, consequat nec placerat id, cursus at metus. <br>Donec semper velit eget ex ultrices, eu lacinia nunc scelerisque. <br>Ut tincidunt magna sit amet felis dictum efficitur.</p>
+				</div>
+				<div class="prod-review">
+					<h3>Douglas Harrison</h3>
+					<p class="prod-review-rating">
+						<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+					</p>
+					<p>Praesent libero dui, consequat nec placerat id, cursus at metus. <br>Donec semper velit eget ex ultrices, eu lacinia nunc scelerisque. <br>Ut tincidunt magna sit amet felis dictum efficitur.</p>
+				</div>
+				<div class="prod-review">
+					<h3>Douglas Harrison</h3>
+					<p class="prod-review-rating">
+						<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+					</p>
+					<p>Praesent libero dui, consequat nec placerat id, cursus at metus. <br>Donec semper velit eget ex ultrices, eu lacinia nunc scelerisque. <br>Ut tincidunt magna sit amet felis dictum efficitur.</p>
+				</div>
+				<p class="prod-review-more">
+					<a href="#">show more</a>
+				</p>
+			</div>
+			<p class="prod-tabs-addreview prod-tabs-addreview-mob">Add a review</p>
+		</div>
+	</div>
+	<!-- Product Tabs - end -->
+	
+</div>
+
+</main>
+<!-- Main Content - end -->
+
+
+<!-- Footer - start -->
+<footer class="footer">
+	<div class="cont footer-top">
+
+		<!-- Footer Menu -->
+		<div class="footer-menu">
+			<p>Company</p>
+			<ul>
+				<li><a href="#">Shipping</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+		</div>
+		<div class="footer-menu">
+			<p>Information</p>
+			<ul>
+				<li><a href="#">Affiliate Program</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Site Map</a></li>
+				<li><a href="#">Search Terms</a></li>
+			</ul>
+		</div>
+		<div class="footer-menu">
+			<p>Account & Orders</p>
+			<ul>
+				<li><a href="#">My Account</a></li>
+				<li><a href="#">My Garage</a></li>
+				<li><a href="#">Shopping Cart</a></li>
+				<li><a href="#">Order Status</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-info">
+			<p class="footer-msg">Our online support is available <a class="callback" href="#">Send us a message</a></p>
+			<ul class="footer-social">
+				<li>
+					<a rel="nofollow" target="_blank" href="http://facebook.com">
+						<i class="fa fa-facebook"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="mailto:email@email.com">
+						<i class="fa fa-paper-plane"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="http://pinterest.com">
+						<i class="fa fa-pinterest-p"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="http://youtube.com">
+						<i class="fa fa-youtube-play"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="http://twitter.com">
+						<i class="fa fa-twitter"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="http://google.com">
+						<i class="fa fa-google-plus"></i>
+					</a>
+				</li>
+				<li>
+					<a rel="nofollow" target="_blank" href="http://twitter.com">
+						<i class="fa fa-share-alt"></i>
+					</a>
+				</li>
+			</ul>
+			<form action="#" class="form-validate">
+				<input data-required="text" data-required-email="email" type="text" placeholder="Email address" name="email1">
+				<input type="submit" value="Subscribe">
+			</form>
+		</div>
+
+	</div>
+	<div class="copyright">
+		<p class="cont">© 2016 Stockware All Right Received</p>
+	</div>
+</footer>
+<!-- Footer - end -->
+
+
+<!-- Modal Form -->
+<div id="modal-form" class="modal-form">
+	<p class="modal-form-ttl">Contact Us</p>
+	<form action="#" class="form-validate">
+		<input data-required="text" type="text" placeholder="Name" name="name2">
+		<input data-required="text" type="text" placeholder="Phone" name="phone2">
+		<input data-required="text" data-required-email="email" type="text" placeholder="Email" name="email2">
+		<textarea placeholder="Your message" name="mess2"></textarea>
+		<input type="submit" value="Send">
+	</form>
+</div>
+
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/fancybox/fancybox.js"></script>
+<script src="js/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
