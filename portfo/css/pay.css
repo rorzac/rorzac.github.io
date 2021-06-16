@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  font-family: sans-serif;
 }
 
 .container {
@@ -20,3 +21,5 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
