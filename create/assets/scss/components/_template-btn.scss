@@ -1,0 +1,103 @@
+/*======= Template Btn =======*/
+.template-btn {
+    display: inline-block;
+    color: $color-white;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: $color-primary;
+    border: none;
+    padding: 15px 35px;
+    font: {
+        size: 18px;
+        weight: 700;
+    }
+    line-height: 1.4;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    i {
+        margin-left: 6px;
+        position: relative;
+        top: 1px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: $color-secondary;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &:hover {
+        color: $color-white;
+
+        &::before {
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &.btn-hover-white-bg {
+        &::before {
+            background-color: $color-white;
+        }
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    &.bg-primary-10 {
+        background-color: $color-primary-10;
+        color: $color-secondary;
+
+        &::before {
+            background-color: $color-primary;
+        }
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &.bordered-btn {
+        padding: 13px 35px;
+        border: 2px solid $color-secondary-10;
+        background-color: transparent;
+        color: $color-secondary;
+
+        &::before {
+            background-color: $color-primary;
+        }
+
+        &:hover {
+            border-color: var(--color-primary);
+            color: $color-white;
+        }
+
+        &.bordered-white {
+            border-color: $color-white;
+            color: $color-white;
+
+            &::before {
+                background-color: $color-white;
+            }
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+}

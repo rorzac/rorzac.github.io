@@ -1,0 +1,283 @@
+/*======= Common =======*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700&family=Quicksand:wght@400;500;600;700&display=swap");
+
+:root {
+    @each $color, $value in $colors {
+        --#{$color}: #{$value};
+    }
+
+    @each $family, $value in $font-family {
+        --#{$family}: #{$value};
+    }
+}
+
+body {
+    color: $color-body;
+    font-family: $font-nunito-sans;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 2;
+    overflow-x: hidden !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-quicksand;
+    font-weight: 700;
+    line-height: 1.3;
+    color: $color-secondary;
+    margin: 0px;
+
+    a {
+        color: $color-secondary;
+    }
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    display: inline-block;
+    transition: all 0.3s ease-out 0s;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+/*======= Common Classes =======*/
+.bg-color-primary {
+    background-color: $color-primary !important;
+}
+
+.bg-color-primary-7 {
+    background-color: $color-primary-7 !important;
+}
+
+.bg-color-secondary {
+    background-color: $color-secondary !important;
+}
+
+.bg-color-off-white {
+    background-color: $color-off-white !important;
+}
+
+.color-primary {
+    color: $color-primary !important;
+}
+
+.color-secondary {
+    color: $color-secondary !important;
+}
+
+.color-tertiary {
+    color: $color-tertiary !important;
+}
+
+.color-off-white {
+    color: $color-off-white !important;
+}
+
+.color-white-70 {
+    color: $color-white-70 !important;
+}
+
+.bg-cover-center {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*======= Slick Dots =======*/
+.slick-dots {
+    display: flex;
+    line-height: 1;
+    margin-top: 55px;
+    margin-left: 5px;
+
+    li {
+        margin-right: 15px;
+        line-height: 1;
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        cursor: pointer;
+        position: relative;
+        transition: 0.3s;
+
+        &::before {
+            position: absolute;
+            content: "";
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 3px solid $color-primary;
+            transition: 0.3s;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &.slick-active {
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    button {
+        display: none;
+    }
+}
+
+/*======= Custom Container Width =======*/
+.container-1450 {
+    max-width: 1450px;
+}
+
+.container-1550 {
+    max-width: 1550px;
+}
+
+.container-1600 {
+    max-width: 1600px;
+}
+
+.container-fluid {
+    &.fluid-p-70 {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+
+.custom-container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: calc(((100% - 1200px) / 2) + 30px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*======= Spacing =======*/
+.section-gap {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.section-gap-top {
+    padding-top: 130px;
+}
+
+.section-gap-top-less {
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.section-gap-bottom {
+    padding-bottom: 130px;
+}
+
+.content-l-spacing {
+    padding-left: 70px;
+}
+
+.content-r-spacing {
+    padding-right: 70px;
+}
+
+.content-x-spacing {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-35 {
+    margin-bottom: 35px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}

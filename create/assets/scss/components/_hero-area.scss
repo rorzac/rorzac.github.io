@@ -1,0 +1,233 @@
+/*======= Hero Area One =======*/
+.hero-area-one {
+    padding-top: 300px;
+    padding-bottom: 180px;
+    position: relative;
+    z-index: 2;
+
+    .hero-content {
+        .hero-title {
+            font-size: 85px;
+            line-height: 1.06;
+            margin-bottom: 45px;
+        }
+
+        p {
+            font: {
+                size: 18px;
+                weight: 600;
+                family: $font-nunito;
+            }
+            color: $color-secondary;
+            line-height: 1.8;
+            margin-top: 35px;
+            padding-right: 70px;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        background: {
+            image: url(../img/hero/hero-bg-one.png);
+            position: right bottom;
+            size: cover;
+            repeat: no-repeat;
+        }
+    }
+
+    .hero-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        text-align: right;
+        max-width: 50%;
+        z-index: -1;
+    }
+}
+
+/*======= Hero Area Two =======*/
+.hero-area-two {
+    position: relative;
+    z-index: 2;
+
+    .hero-content {
+        text-align: center;
+        padding-top: 170px;
+        padding-bottom: 95px;
+
+        .tagline {
+            font: {
+                size: 20px;
+                weight: 700;
+                family: $font-nunito;
+            }
+            line-height: 1.4;
+            color: $color-primary;
+            background-color: $color-primary-10;
+            padding: 7px 20px;
+            border-radius: 5px;
+            margin-bottom: 32px;
+        }
+
+        .hero-title {
+            font-size: 75px;
+            letter-spacing: -2px;
+            line-height: 1.07;
+        }
+
+        p {
+            font: {
+                size: 18px;
+                family: $font-nunito;
+            }
+            line-height: 1.8;
+            max-width: 80%;
+            margin: 25px auto 30px;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: {
+            image: url(../img/hero/hero-bg-two.png);
+            position: center;
+            size: cover;
+            repeat: no-repeat;
+        }
+    }
+
+    .animate-icons {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            position: absolute;
+            z-index: -1;
+        }
+
+        .icon {
+            &-one {
+                right: 8%;
+                top: 22%;
+            }
+
+            &-two {
+                right: 5%;
+                bottom: 44%;
+            }
+
+            &-three {
+                top: 20%;
+                left: 7%;
+            }
+
+            &-four {
+                bottom: 10%;
+                left: 11%;
+            }
+
+            &-five {
+                left: 17%;
+                top: 38%;
+            }
+
+            &-six {
+                left: 3%;
+                bottom: 26%;
+            }
+
+            &-seven {
+                right: 32%;
+                bottom: 48%;
+            }
+        }
+    }
+}
+
+/*======= Hero Area Three =======*/
+.hero-area-three {
+    position: relative;
+    z-index: 2;
+    background: {
+        image: url(../img/hero/hero-bg-three.jpg);
+        position: left center;
+        size: cover;
+        repeat: no-repeat;
+    }
+
+    .hero-content {
+        padding-top: 310px;
+        padding-bottom: 200px;
+
+        .hero-title {
+            font-size: 70px;
+            line-height: 1.06;
+            margin-bottom: 35px;
+            text-transform: capitalize;
+            letter-spacing: -3px;
+        }
+
+        p {
+            font: {
+                size: 18px;
+                weight: 600;
+                family: $font-nunito;
+            }
+            color: $color-secondary;
+            line-height: 1.8;
+        }
+
+        .hero-btns {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+
+            .video-btn {
+                width: 55px;
+                height: 55px;
+                background-color: $color-secondary;
+                color: $color-white;
+                font-size: 15px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+
+
+    .hero-img {
+        img {
+            margin-right: -90px;
+        }
+    }
+}

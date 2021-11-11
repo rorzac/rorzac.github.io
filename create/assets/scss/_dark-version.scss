@@ -1,0 +1,297 @@
+/*======= Dark Version =======*/
+%white-bg {
+    background-color: $color-white;
+}
+
+%white-color {
+    color: $color-white;
+}
+
+%dark-body-color {
+    color: $color-white-60;
+}
+
+%deep-dark-color {
+    color: $color-deep-dark;
+}
+
+%deep-dark-bg {
+    background-color: $color-deep-dark;
+}
+
+.dark-version {
+    background-color: $color-dark;
+    @extend %dark-body-color;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        &,
+        a {
+            @extend %white-color;
+        }
+    }
+
+    .template-header {
+        .nav-menu li a {
+            @extend %white-color;
+        }
+
+        .off-canvas-btn span {
+            @extend %white-bg;
+        }
+
+        &.sticky-header.sticky-on {
+            @extend %deep-dark-bg;
+            box-shadow: none;
+        }
+
+        .navbar-toggler {
+            border-color: $color-white;
+
+            span {
+                background-color: $color-white;
+            }
+        }
+    }
+
+    .hero-area-two {
+        background-color: $color-primary-7;
+
+        &::before {
+            background: {
+                image: url(../img/hero/hero-bg-two-dark.jpg);
+                position: center;
+                size: cover;
+            }
+        }
+
+        .hero-content {
+            .tagline,
+            .hero-title,
+            p {
+                @extend %white-color;
+            }
+
+            .tagline {
+                background-color: $color-white-10;
+                color: $color-primary;
+            }
+
+            .hero-title span {
+                color: $color-primary;
+            }
+        }
+    }
+
+    .section-heading {
+        .title,
+        .tagline {
+            @extend %white-color;
+        }
+
+        .title span {
+            color: $color-primary;
+        }
+    }
+
+    .iconic-box {
+        @extend %deep-dark-bg;
+    }
+
+    .portfolio-filter ul li {
+        @extend %white-color;
+
+        &.active,
+        &:hover {
+            @extend %white-bg;
+            color: $color-primary;
+        }
+    }
+
+    .portfolio-items-two .categories a {
+        @extend %white-color;
+    }
+
+    .testimonial-item {
+        .content {
+            border-color: #383839;
+            @extend %white-color;
+        }
+
+        .author-photo {
+            &::before {
+                background-color: $color-dark;
+                border-color: #383839;
+            }
+        }
+
+        .author .title {
+            @extend %dark-body-color;
+        }
+    }
+
+    .slick-current {
+        .testimonial-item {
+            .content {
+                @extend %deep-dark-bg;
+                color: rgba(#fff, 0.6);
+                border-color: transparent;
+            }
+
+            .author-photo {
+                &::before {
+                    @extend %deep-dark-bg;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+
+    .content-boxed {
+        @extend %deep-dark-bg;
+        box-shadow: none;
+    }
+
+    .section-blob-bg-two::after {
+        background-image: url(../img/shape/blob-shape-2-2-dark.png);
+    }
+
+    .accordion {
+        .accordion-item {
+            &,
+            .accordion-content,
+            .accordion-title {
+                background-color: #141415;
+            }
+
+            .accordion-title {
+                color: $color-white;
+
+                &::before,
+                &::after {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+    .pricing-table {
+        @extend %deep-dark-bg;
+        border-color: transparent;
+
+        .plan-price {
+            color: $color-primary;
+        }
+
+        .feature-list li {
+            @extend %dark-body-color;
+        }
+
+        .template-btn.bordered-btn {
+            border-color: #383839;
+            color: $color-white;
+        }
+
+        &.featured-plan .template-btn,
+        &:hover .template-btn {
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
+    }
+
+    .latest-news-section {
+        .container {
+            padding-top: 130px;
+            border-top: 1px solid $color-white-10;
+        }
+    }
+
+    .latest-post-box {
+        &.thumbnail-left .post-content {
+            @extend %deep-dark-bg;
+        }
+
+        .post-meta a {
+            @extend %dark-body-color;
+        }
+
+        .template-btn {
+            background-color: #161516;
+            color: $color-white;
+        }
+    }
+
+    .section-blob-bg {
+        &::before {
+            opacity: 1;
+            background-image: url(../img/shape/blob-shape-dark.png);
+        }
+    }
+
+    .consultation-section {
+        max-width: 1450px;
+        background: #0b0b0b;
+        margin: auto;
+        margin-bottom: 130px;
+
+        &.have-blob-image .blob-image {
+            display: none;
+        }
+    }
+
+    .consultation-form {
+        input,
+        select,
+        .nice-select {
+            @extend %deep-dark-bg;
+            color: $color-white;
+        }
+
+        .nice-select .list {
+            color: $color-body;
+        }
+
+        &,
+        &::before {
+            background-color: #151516;
+            box-shadow: none;
+        }
+    }
+
+    .call-to-action {
+        max-width: 1600px;
+        margin: auto;
+        border: none;
+
+        &.style-two .cta-shape {
+            opacity: 0.03;
+        }
+
+        .cta-content .title span {
+            color: $color-primary;
+        }
+    }
+
+    .triangle-pattern-right {
+        &::before {
+            background-image: url(../img/shape/triangle-pattern-2-dark.png);
+            opacity: 0.2;
+        }
+    }
+
+    .template-footer {
+        &.bg-color-secondary {
+            background-color: transparent !important;
+        }
+
+        .footer-cta-area {
+            .container {
+                @extend %deep-dark-bg;
+            }
+        }
+    }
+}

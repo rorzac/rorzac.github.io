@@ -1,0 +1,103 @@
+/*======= Call To Action =======*/
+.call-to-action {
+    padding: 70px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .cta-shape {
+        position: absolute;
+        left: 8%;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0.1;
+    }
+
+    .title {
+        font-size: 45px;
+        color: $color-white;
+        letter-spacing: -1px;
+        margin-bottom: 15px;
+    }
+
+    .subtitle {
+        display: block;
+        font: {
+            size: 18px;
+            family: $font-nunito;
+            weight: 600;
+        }
+        line-height: 1.4;
+        color: $color-tertiary;
+    }
+
+    .cta-note {
+        display: block;
+        position: relative;
+        z-index: 1;
+        padding-left: 35px;
+        color: $color-white;
+        margin-top: 35px;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 20px;
+            width: 20px;
+            border-radius: 20px;
+            background-color: transparent;
+            border: 2px solid #ffb900;
+        }
+
+        &::after {
+            left: 6px;
+            height: 8px;
+            width: 8px;
+            background-color: #ffb900;
+        }
+    }
+
+    .template-btn {
+        margin-top: 20px;
+
+        &::before {
+            background-color: $color-white;
+        }
+
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    &.style-two {
+        padding: 80px 0;
+
+        .cta-note {
+            &::before,
+            &::after {
+                border: 2px solid $color-tertiary;
+            }
+
+            &::after {
+                background-color: $color-tertiary;
+            }
+        }
+
+        .subtitle {
+            color: $color-white;
+        }
+
+        .cta-shape {
+            left: 45%;
+            transform: translateX(-50%);
+        }
+
+        .cta-note {
+            margin-top: 0;
+        }
+    }
+}

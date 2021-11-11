@@ -1,0 +1,55 @@
+/*======= Tilke Video =======*/
+.tilke-video {
+    width: 100%;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background: {
+        size: cover;
+        position: center;
+        color: $color-secondary;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: $color-secondary;
+        opacity: 0.7;
+    }
+
+    .video-popup {
+        position: relative;
+        z-index: 1;
+        height: 90px;
+        width: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-white;
+        border-radius: 50%;
+        font-size: 15px;
+        color: $color-primary;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: $color-white;
+            opacity: 0.1;
+            border-radius: 50%;
+            animation: pulse-border 1500ms ease-out infinite;
+        }
+    }
+}

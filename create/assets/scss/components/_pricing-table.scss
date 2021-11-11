@@ -1,0 +1,174 @@
+/*======= Pricing Table =======*/
+.pricing-table {
+    padding: 45px;
+    border: 1px solid $color-secondary;
+    border-radius: 7px;
+    background-color: $color-white;
+    position: relative;
+
+    &,
+    & > * {
+        transition: all 0.3s ease-out;
+    }
+
+    .plan-name {
+        font-size: 24px;
+        letter-spacing: -0.3px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .plan-price {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 10px;
+        margin-bottom: 35px;
+        font: {
+            size: 55px;
+            family: $font-quicksand;
+            weight: 500;
+        }
+        color: $color-secondary;
+        line-height: 1;
+        letter-spacing: -0.3px;
+
+        .currency {
+            font-size: 24px;
+            position: relative;
+            top: 8px;
+            margin-right: 8px;
+        }
+    }
+
+    .template-btn {
+        padding: 13px 30px;
+        margin-bottom: 30px;
+    }
+
+    .feature-list {
+        li {
+            display: block;
+            font: {
+                size: 16px;
+                weight: 600;
+                family: $font-nunito;
+            }
+            line-height: 1.4;
+            color: $color-primary;
+
+            i {
+                margin-right: 5px;
+                color: $color-primary;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            &.disabled {
+                color: $color-body;
+            }
+        }
+    }
+
+    .featured-label {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #ff9600;
+        font : {
+            size: 15px;
+            weight: 700;
+            family: $font-quicksand;
+        }
+        line-height: 1;
+        color: $color-white;
+        text-transform: uppercase;
+        padding: 6px 15px 6px 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10px 50%);
+    }
+
+    &.featured-plan,
+    &:hover {
+        border-color: transparent;
+        box-shadow: 0px 20px 100px 0px rgba(58, 65, 111, 0.1);
+
+        .template-btn {
+            color: $color-white;
+            border-color: $color-primary;
+
+            &::before {
+                width: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &.pricing-table-two {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+
+        .feature-list {
+            li {
+                color: $color-body;
+
+                i {
+                    color: $color-secondary;
+                }
+            }
+        }
+
+        &.featured-plan {
+            box-shadow: 0px 20px 100px 0px rgba(58, 65, 111, 0.1);
+            z-index: 2;
+        }
+    }
+}
+
+/*======= Pricing Tab =======*/
+.pricing-tab-nav {
+    display: flex;
+    justify-content: center;
+
+    .nav-tabs {
+        border: none;
+        border-radius: 7px;
+        background-color: $color-white;
+        box-shadow: 0px 10px 60px 0px rgba(38, 103, 255, 0.1);
+        padding: 5px;
+        justify-content: center;
+
+        .nav-item {
+            padding: 5px;
+        }
+
+        .nav-link {
+            padding: 10px 25px;
+            margin: 0;
+            border: none;
+            border-radius: 5px;
+            background-color: $color-secondary;
+            color: $color-white;
+            font: {
+                size: 15px;
+                weight: 700;
+            }
+            line-height: 1.4;
+
+            i {
+                position: relative;
+                top: 1px;
+                margin-left: 5px;
+            }
+
+            &.active {
+                background-color: $color-primary;
+            }
+        }
+    }
+}

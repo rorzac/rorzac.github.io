@@ -1,0 +1,107 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Tilke - Marketing Agency HTML Template
+    Author: WebTend
+    Author URI:  https://webtend.net/
+    Version: 1.0
+
+    Note: This is Main Style CSS File.
+-----------------------------------------------------------------------------------
+	CSS INDEX
+	===================
+    #. Common
+    #. Input field
+    #. Keyframes & Animation
+    #. Components
+        ##. Preloader
+        ##. Template Btn
+        ##. Section Heading
+        ##. Hero Area
+            ##. Hero Area One
+            ##. Hero Area Two
+        ##. Call To Action
+        ##. Fancy Iconic Box
+        ##. Fancy Step Icon Box
+        ##. Testimonial
+        ##. Portfolio
+            ###. Portfolio Item One
+            ###. Portfolio Item Two
+            ###. Portfolio Filter
+        ##. Consultation Form
+        ##. Latest Post Box
+        ##. Simple Icon Box
+        ##. Iconic Box
+        ##. Accordion
+        ##. Pricing Table
+        ##. Counter
+        ##. Team
+            ###. Team Member
+            ###. Team Details
+        ##. Progress Items
+        ##. Icon Bordered Box
+        ##. Fancy Image Gallery
+        ##. Process boxes
+        ##. Page Title
+        ##. Contact
+            ###. Contact Info Box
+            ###. Contact Map
+            ###. Contact Form
+        ##. Check List
+        ##. Content Boxed
+        ##. Tilke Video
+    #. Section
+        ##. Section With Animate Icons
+        ##. Section Doted Bg
+        ##. Section Wave Shape
+        ##. Counter Boxed
+        ##. Blob Image
+        ##. Section Blob Bg
+        ##. Section Triangle Pattern
+        ##. Pricing Section Line
+        ##. Service With Team
+    #. Footer
+    #. Dark Version
+-----------------------------------------------------------------------------------*/
+@import "abstracts/mixin";
+@import "abstracts/variables";
+@import "base/common";
+@import "base/input-field";
+@import "base/keyframes-animation";
+@import "header/header";
+@import "components/preloader";
+@import "components/template-btn";
+@import "components/section-heading";
+@import "components/hero-area";
+@import "components/cta";
+@import "components/fancy-iconic-box";
+@import "components/fancy-step-boxes";
+@import "components/testimonial";
+@import "components/portfolio";
+@import "components/consultation-form";
+@import "components/latest-post-box";
+@import "components/simple-icon-box";
+@import "components/iconic-box";
+@import "components/accordion";
+@import "components/pricing-table";
+@import "components/counter";
+@import "components/team-member";
+@import "components/progress-bar";
+@import "components/fancy-image-gallery";
+@import "components/icon-bordered-list";
+@import "components/process-boxes";
+@import "components/page-title-area";
+@import "components/contact";
+@import "components/check-list";
+@import "components/content-boxed";
+@import "components/tilke-video";
+@import "components/brand";
+@import "components/image-content-box";
+@import "blog/blog-post";
+@import "blog/blog-details";
+@import "blog/pagination";
+@import "blog/sidebar";
+@import "shop/product-loop";
+@import "shop/product-details";
+@import "shop/sidebar";
+@import "sections/section";
+@import "footer/footer";
+@import "dark-version";

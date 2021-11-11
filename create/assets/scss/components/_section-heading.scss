@@ -1,0 +1,25 @@
+/*======= Section Heading =======*/
+.section-heading {
+    .title {
+        font-size: 45px;
+        letter-spacing: -0.5px;
+    }
+
+    .tagline {
+        font: {
+            family: $font-nunito;
+            size: 18px;
+            weight: 600;
+        }
+        color: $color-primary;
+        margin-top: 12px;
+        line-height: 1.4;
+    }
+
+    &.heading-white {
+        .title,
+        .tagline {
+            color: $color-white;
+        }
+    }
+}

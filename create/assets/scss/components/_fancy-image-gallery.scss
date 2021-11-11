@@ -1,0 +1,73 @@
+/*======= Fancy Image Gallery =======*/
+.fancy-image-gallery {
+    overflow: hidden;
+    text-align: right;
+
+    .images-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin: -15px;
+    }
+
+    .image {
+        &-one,
+        &-two,
+        &-three,
+        &-four {
+            padding: 15px;
+        }
+
+        &-one {
+            flex: 0 0 58%;
+            max-width: 58%;
+
+            img {
+                border-radius: 0 157.5px 157.5px 157.5px;
+            }
+        }
+
+        &-two {
+            flex: 0 0 42%;
+            max-width: 42%;
+            align-self: flex-end;
+        }
+
+        &-three {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        &-four {
+            flex: 0 0 28%;
+            max-width: 28%;
+
+            img {
+                border-radius: 90.5px 90.5px 0 90.5px;
+            }
+        }
+    }
+}
+
+.fancy-image-gallery-two {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -10%;
+        width: 120%;
+        height: 110%;
+        z-index: -1;
+        background: {
+            image: url(../img/shape/blob-shape-4.png);
+            repeat: no-repeat;
+            size: contain;
+            position: center;
+        }
+        opacity: 0.07;
+    }
+}

@@ -1,0 +1,28 @@
+/*======= Preloader =======*/
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $color-secondary;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #loading-center {
+        width: 200px;
+        height: 200px;
+    }
+
+    #object {
+        width: 80px;
+        height: 80px;
+        background-color: $color-white;
+        animation: preloader 1.2s infinite ease-in-out;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 60px;
+    }
+}

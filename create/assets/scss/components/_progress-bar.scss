@@ -1,0 +1,45 @@
+/*======= Progress Items =======*/
+.progress-bar-item {
+    .progress-bar-top {
+        position: relative;
+        z-index: 1;
+
+        .title {
+            font-size: 20px;
+            letter-spacing: -0.05px;
+        }
+
+        .counter {
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            transform: translate(-100%, -50%);
+            font: {
+                size: 20px;
+                weight: 700;
+                family: $font-quicksand;
+            }
+            line-height: 1;
+            letter-spacing: -0.05px;
+            color: $color-secondary;
+        }
+    }
+
+    .progress-line {
+        width: 100%;
+        height: 4px;
+        position: relative;
+        overflow: hidden;
+        background-color: $color-white;
+        margin-top: 15px;
+
+        .line {
+            position: absolute;
+            white-space: nowrap;
+            background-color: $color-primary;
+            transition: 0.8s linear;
+            height: 100%;
+            width: 0;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+/*======= Check List =======*/
+.circle-list {
+    li {
+        position: relative;
+        z-index: 1;
+        padding-left: 40px;
+        font: {
+            size: 18px;
+            weight: 700;
+        }
+        color: $color-secondary;
+
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+
+        &::before{
+            content: "\f00c";
+            position: absolute;
+            left: 0;top: 50%;
+            transform: translateY(-50%);
+            height: 25px;
+            width: 25px;
+            background-color: $color-primary;
+            color: $color-white;
+            font-size: 13px;
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+    }
+}

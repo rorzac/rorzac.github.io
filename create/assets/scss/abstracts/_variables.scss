@@ -1,0 +1,56 @@
+// Font Family
+$font-family: (
+    font-nunito: "'Nunito', sans-serif",
+    font-nunito-sans: "'Nunito Sans', sans-serif",
+    font-quicksand: "'Quicksand', sans-serif",
+);
+
+$font-nunito: var(--font-nunito);
+$font-nunito-sans: var(--font-nunito-sans);
+$font-quicksand: var(--font-quicksand);
+
+// Color
+$colors: (
+    color-primary: #2667ff,
+    color-secondary: #0b1460,
+    color-tertiary: #6ef1b2,
+    color-body: #5c6185,
+    color-white: #fff,
+    color-black: #000000,
+    color-off-white: #f6f9fb,
+    color-primary-7: rgba(#2667ff, 0.07),
+    color-primary-10: rgba(#2667ff, 0.1),
+    color-secondary-10: rgba(#0b1460, 0.1),
+    color-white-10: rgba(#fff, 0.1),
+    color-white-60: rgba(#fff, 0.6),
+    color-white-70: rgba(#fff, 0.7),
+    color-dark: #151516,
+    color-deep-dark: #0b0b0b,
+);
+
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-tertiary: var(--color-tertiary);
+$color-body: var(--color-body);
+$color-white: var(--color-white);
+$color-black: var(--color-black);
+$color-off-white: var(--color-off-white);
+$color-primary-7: var(--color-primary-7);
+$color-primary-10: var(--color-primary-10);
+$color-secondary-10: var(--color-secondary-10);
+$color-white-10: var(--color-white-10);
+$color-white-60: var(--color-white-60);
+$color-white-70: var(--color-white-70);
+$color-dark: var(--color-dark);
+$color-deep-dark: var(--color-deep-dark);
+
+// Breakpoints.
+$breakpoints: (
+    xs: 425px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    c1400: 1400px,
+    c1600: 1600px,
+);

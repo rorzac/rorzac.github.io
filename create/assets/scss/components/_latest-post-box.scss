@@ -1,0 +1,106 @@
+/*======= Latest Post Box =======*/
+.latest-post-box {
+    .post-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .post-meta {
+        margin-bottom: 30px;
+
+        a {
+            color: $color-body;
+            font-weight: 700;
+
+            i {
+                margin-right: 10px;
+                color: $color-primary;
+            }
+        }
+    }
+
+    .post-thumb {
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .template-btn {
+        margin-top: 25px;
+    }
+
+    &.thumbnail-left {
+        display: flex;
+
+        .post-thumb {
+            margin: 0;
+            max-width: 47.369%;
+            flex: 0 0 47.369%;
+            position: relative;
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top center;
+            }
+        }
+
+        .post-content {
+            padding: 60px 30px;
+            background-color: $color-white;
+
+            .post-title {
+                letter-spacing: -0.5px;
+            }
+
+            .post-meta {
+                margin-bottom: 20px;
+            }
+
+            .template-btn {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/*======= Latest Post Bordered =======*/
+.latest-post-bordered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .post-bordered-item {
+        max-width: 29.5%;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        &:nth-child(3n + 2) {
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                left: -35px;
+                top: 0;
+                width: 1px;
+                height: 100%;
+                background-color: $color-secondary;
+                opacity: 0.1;
+            }
+
+            &::after {
+                left: auto;
+                right: -35px;
+            }
+        }
+    }
+}

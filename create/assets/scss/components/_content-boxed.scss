@@ -1,0 +1,20 @@
+/*======= Content Boxed =======*/
+.content-boxed {
+    background-color: $color-white;
+    box-shadow: 0px 10px 60px 0px rgba(38, 103, 255, 0.1);
+    padding: 100px 60px 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .content-left {
+        width: 100%;
+        max-width: 60%;
+        margin-left: -160px;
+    }
+
+    .content-right {
+        max-width: 45%;
+        flex: 0 0 60%;
+    }
+}

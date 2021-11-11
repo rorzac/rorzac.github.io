@@ -1,0 +1,78 @@
+/*======= Fancy Iconic Box =======*/
+.fancy-iconic-box {
+    font-family: $font-nunito;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 55px 30px;
+    text-align: center;
+    border-radius: 22px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+
+    .icon {
+        font-size: 75px;
+        color: $color-primary;
+        line-height: 0.5;
+        margin-bottom: 30px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-white;
+        z-index: -1;
+        border-radius: 22px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease-in-out;
+        transform: perspective(1000px) rotateX(0deg) rotateY(-10deg);
+    }
+
+    &:hover {
+        &::before {
+            border-color: $color-primary;
+            box-shadow: 0px 10px 60px 0px rgba(38, 103, 255, 0.43);
+        }
+    }
+
+    &.no-hover-effect {
+        &::before {
+            border: none;
+            box-shadow: none;
+        }
+    }
+
+    &.color-1 {
+        &::before {
+            background-color: rgba(#f0ae00, 0.04);
+        }
+    }
+
+    &.color-2 {
+        &::before {
+            background-color: rgba(#f13800, 0.04);
+        }
+    }
+
+    &.color-3 {
+        &::before {
+            background-color: rgba(#ff32ab, 0.04);
+        }
+    }
+
+    &.color-4 {
+        &::before {
+            background-color: rgba(#7800ff, 0.04);
+        }
+    }
+}

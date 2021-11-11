@@ -1,0 +1,233 @@
+/*======= Product Details =======*/
+.product-details-wrapper {
+    .product-summary-area {
+        padding: 0 40px 80px 40px;
+
+        .product-summery-wrapper {
+            padding-left: 20px;
+
+            .summery-top-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                line-height: 1;
+                padding-bottom: 20px;
+                margin-bottom: 40px;
+                border-bottom: 1px solid $color-secondary-10;
+            }
+
+            .summery-top-left {
+                max-width: 80%;
+                flex: 0 0 80%;
+            }
+
+            .summery-top-right {
+                max-width: 20%;
+                flex: 0 0 20%;
+                text-align: right;
+            }
+
+            .title {
+                font: {
+                    size: 30px;
+                }
+                margin-bottom: 8px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+                line-height: 1.4;
+            }
+
+            .price {
+                font: {
+                    family: $font-quicksand;
+                    size: 30px;
+                    weight: 700;
+                }
+            }
+
+            .rating {
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                margin-top: 8px;
+
+                i {
+                    font-size: 15px;
+                    color: #ffaa17;
+                }
+
+                span {
+                    color: $color-secondary;
+                    margin-left: 5px;
+                    font: {
+                        size: 14px;
+                        weight: 600;
+                    }
+                }
+            }
+
+            .product-meta {
+                margin-top: 45px;
+                display: flex;
+                justify-content: space-between;
+
+                .product-categories,
+                .product-tags {
+                    width: 50%;
+                    flex: 0 0 50%;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .product-tags {
+                    justify-content: flex-end;
+                    padding-left: 20px;
+                }
+
+                .product-categories,
+                .product-tags {
+                    font-size: 17px;
+                    line-height: 1;
+
+                    span {
+                        color: $color-secondary;
+                        font-weight: 700;
+                        margin-right: 5px;
+                    }
+
+                    a {
+                        color: $color-body;
+
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+
+            .product-cart-form {
+                margin-top: 30px;
+
+                form {
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        height: 50px;
+                        border-color: $color-primary-7;
+                        width: 105px;
+                        padding: 0 10px;
+                        text-align: center;
+                        background-color: transparent;
+
+                        font: {
+                            size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .template-btn {
+                        height: 50px;
+                        padding: 0px 30px;
+                        margin: 0px 10px;
+                    }
+
+                    .wishlist {
+                        a {
+                            height: 50px;
+                            width: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: $color-secondary;
+                            font-size: 15px;
+                            border: 2px solid $color-primary-7;
+                            border-radius: 5px;
+
+                            &:hover {
+                                background-color: $color-primary;
+                                color: $color-white;
+                                border-color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .product-gallery-wrapper {
+        img {
+            width: 100%;
+        }
+
+        .product-thumb-gallery {
+            padding-top: 30px;
+
+            .single-thumb {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .product-details-tab {
+        .nav-tabs {
+            border: none;
+            justify-content: center;
+            margin-bottom: 45px;
+
+            .nav-item {
+                padding: 5px;
+
+                .nav-link {
+                    margin: 0;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: $color-primary-10;
+                    color: $color-secondary;
+                    font: {
+                        size: 20px;
+                        family: $font-quicksand;
+                        weight: 700;
+                    }
+                    line-height: 1.3;
+                    padding: 15px 55px;
+
+                    &.active,
+                    &:hover {
+                        background-color: $color-primary;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            .tab-title {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+/*======= Related Product =======*/
+.related-product-wrap {
+    padding-top: 100px;
+    margin-top: 100px;
+    border-top: 2px solid $color-primary-7;
+
+    .related-product-title {
+        font-size: 42px;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    .related-product-slider {
+        .single-product {
+            margin: 0;
+        }
+    }
+}

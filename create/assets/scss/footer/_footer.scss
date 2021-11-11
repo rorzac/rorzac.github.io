@@ -1,0 +1,259 @@
+/*======= Footer =======*/
+.template-footer {
+    .footer-widgets-area {
+        padding-top: 80px;
+        padding-bottom: 30px;
+
+        &,
+        a {
+            color: $color-body;
+        }
+
+        a:hover {
+            color: $color-primary;
+        }
+
+        .widget {
+            margin-bottom: 50px;
+
+            .widget-title {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+
+            &.contact-widget {
+                .phone-number {
+                    margin-bottom: 10px;
+
+                    span {
+                        color: $color-secondary;
+                        font: {
+                            size: 18px;
+                            weight: 700;
+                        }
+                        line-height: 1;
+                        margin-bottom: 8px;
+                        display: block;
+                    }
+
+                    a {
+                        color: $color-primary;
+                        font: {
+                            size: 20px;
+                            weight: 700;
+                        }
+                        letter-spacing: -0.5px;
+                        line-height: 1;
+
+                        i {
+                            margin-right: 5px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                img {
+                    margin-top: 20px;
+                }
+            }
+
+            &.nav-widget {
+                ul {
+                    li {
+                        line-height: 1;
+                        margin-bottom: 12px;
+
+                        a {
+                            font: {
+                                family: $font-nunito;
+                                size: 16px;
+                            }
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+
+            .newsletter-form {
+                margin-top: 15px;
+
+                form {
+                    position: relative;
+                }
+
+                input {
+                    background-color: transparent;
+                    border: 2px solid $color-secondary-10;
+                    border-radius: 7px;
+                    padding-left: 30px;
+                    padding-right: 145px;
+                    height: 65px;
+                    font: {
+                        size: 16px;
+                        weight: 600;
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    z-index: 2;
+                    right: 10px;
+                    bottom: 10px;
+                    top: 10px;
+                    border: none;
+                    background-color: $color-primary;
+                    color: $color-white;
+                    font: {
+                        size: 18px;
+                        weight: 600;
+                    }
+                    line-height: 1;
+                    padding: 0 20px;
+                    border-radius: 5px;
+                    transition: 0.3s;
+
+                    i {
+                        position: relative;
+                        top: 1px;
+                        margin-left: 5px;
+                    }
+
+                    &:hover {
+                        background-color: $color-secondary;
+                    }
+                }
+            }
+
+            .social-links {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                line-height: 1;
+
+                li {
+                    span {
+                        font: {
+                            size: 20px;
+                            weight: 700;
+                            family: $font-quicksand;
+                        }
+                        color: $color-secondary;
+                        margin-right: 15px;
+                    }
+
+                    a {
+                        font-size: 24px;
+                        margin-right: 10px;
+                        color: $color-secondary;
+
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright-box {
+        text-align: center;
+        margin-bottom: 40px;
+        background-color: $color-off-white;
+        padding: 14px;
+        color: $color-secondary;
+        font: {
+            size: 16px;
+            weight: 600;
+        }
+
+        a {
+            color: $color-primary;
+        }
+    }
+
+    .copyright-area {
+        padding: 15px 0;
+        text-align: center;
+        border-top: 1px solid $color-primary-10;
+        color: $color-secondary;
+    }
+
+    &.text-white-version {
+        .footer-widgets-area {
+            &,
+            a,
+            .widget .widget-title {
+                color: $color-white;
+            }
+
+            a:hover {
+                color: $color-white;
+            }
+
+            .widget {
+                &.contact-widget {
+                    .phone-number {
+                        span,
+                        a {
+                            color: $color-white;
+                        }
+                    }
+                }
+
+                .newsletter-form {
+                    input {
+                        border-color: $color-white-10;
+                        color: $color-white;
+                    }
+
+                    button {
+                        &:hover {
+                            background-color: $color-white;
+                            color: $color-secondary;
+                        }
+                    }
+                }
+
+                .social-links {
+                    li {
+                        span {
+                            color: $color-white;
+                        }
+
+                        a {
+                            color: $color-white;
+
+                            &:hover {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .copyright-area {
+            border-color: $color-white-10;
+
+            &,
+            a {
+                color: rgba(#fff, $alpha: 0.5);
+            }
+        }
+    }
+
+    .footer-cta-area {
+        padding-top: 80px;
+
+        .container {
+            padding: 50px 70px;
+            border-radius: 7px;
+            background-color: $color-white;
+        }
+
+        .cta-title {
+            font-size: 35px;
+        }
+    }
+}

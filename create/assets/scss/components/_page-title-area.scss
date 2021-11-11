@@ -1,0 +1,47 @@
+/*======= Page Title =======*/
+.page-title-area {
+    padding-top: 220px;
+    padding-bottom: 120px;
+    background: {
+        color: $color-primary-7;
+        image: url(../img/page-title-bg.jpg);
+        size: cover;
+        position: center;
+    }
+
+    .page-title {
+        font-size: 60px;
+        line-height: 1.1;
+    }
+
+    .breadcrumb-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        li {
+            font-size: 22px;
+            font-weight: 700;
+            color: $color-secondary;
+            line-height: 1;
+
+            &:not(:last-child) {
+                padding-right: 40px;
+                position: relative;
+
+                &::after {
+                    content: "\f178";
+                    position: absolute;
+                    top: 50%;
+                    right: 12px;
+                    transform: translateY(-50%);
+                    font: {
+                        family: "Font Awesome 5 Pro";
+                        size: 20px;
+                        weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
