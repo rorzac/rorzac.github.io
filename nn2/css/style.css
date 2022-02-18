@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Ribeye&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  font-family: "Ribeye", cursive;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header__text h1 {
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 98px;
+  -webkit-text-stroke: 3px blue;
+  color: #ffc700;
+}
+
+@media only screen and (max-width: 600px) {
+    .header__text {
+        font-size: 45px;
+        -webkit-text-stroke: 1px blue;
+    }
+        .header__text h1{
+        font-size: 45px;
+        -webkit-text-stroke: 1px blue;
+    }
+}
