@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/change.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="header-nav">
+        <div id="container">
+            <div class="nav__menu">
+                <ul class="menu__link">
+                    <li class="link">
+                        <div class="logo">CoinExchange</div>
+                    </li>
+                    <li class="link">
+                        <div class="icon-nav">
+                            <img src="img/time.svg" alt="">
+                        </div>
+                        <h1>Automate change 24/7</h1>
+                    </li>
+                    <li class="link">
+                        <div class="icon-nav">
+                            <img src="img/upgrate.svg" alt="">
+                        </div>
+                        <h1>Upgrate coin</h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="change-main">
+        <div class="box">
+            <div class="box-container">
+                <div class="change-info">
+                    <h1>Обмен:<span> Cardano -> Qiwi</span></h1>
+
+                </div>
+                <div class="coin-info">
+                    <h1>Cardano</h1>
+                    <div class="block-info">
+                        <div class="text-info">1 ADA</div>
+                    </div>
+                </div>
+                <div class="coin-info">
+                    <h1>Qiwi</h1>
+                    <div class="block-info position">
+                        <div class="text-info">96.75 RUB</div>
+                    </div>
+                </div>
+                <div class="form-main">
+                    <div class="email-form">
+                        <input class="input-let" id="inputdol" oninput="moneyConverter(this.value)" type="text"
+                            onchange="moneyConverter(this.value)" placeholder="Количевство монет (ADA)">
+                        <p class="min-text">Минимальное количевство монет: 15</p>
+                    </div>
+                    <div class="email-form">
+                        <input class="input-email" type="text" placeholder="Ваш Email">
+
+                    </div>
+                    <div class="email-form">
+                        <input class="input-payment" type="text" placeholder="Qiwi Кошелек">
+                    </div>
+                    <div class="converter">
+                        <div class="text-converter">
+                            <p>Сумма в рублях</з>
+                                <span id="outputrub"> 0 </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="myBtn" class="btn">
+                <div class="button">
+                    <a href="#">Обменять</a>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">×</span>
+                    <p style="font-weight: bold;">Если платеж не проходит, то отключите VPN или попробуйте произвести
+                        оплату в другом браузере.</p>
+                    <br>
+                    <h1>После получения 20 подтверждений сети Ethereum система найдет ваш платеж и заявка отправится в
+                        обработку. В случае, если
+                        за время жизни заявки перевод дойти не успел вы сможете продлить поиск транзакции нажав на
+                        соответствующую появившуюся
+                        кнопку.</h1>
+                    <div>Вы должны отправить: <span class="out-let"></span> Cardano(ADA) на адресс снизу</div>
+                    <div>На ваш Email: <span class="out-email"></span> придет письмо после транзакции и чек</div>
+                    <div>На этот кошелек будут зачисленны средства: <span class="out-payment"></span></div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <script>
+        function moneyConverter(valNum) {
+            document.getElementById("outputrub").innerHTML = valNum * 96.75;
+        }
+
+        document.querySelector('.btn a').onclick = myClick;
+
+        function myClick() {
+
+            let a = document.querySelector('.input-let').value;
+            console.log(a);
+            document.querySelector('.out-let').innerHTML = a;
+            let b = document.querySelector('.input-email').value;
+            console.log(b);
+            document.querySelector('.out-email').innerHTML = b;
+            let c = document.querySelector('.input-payment').value;
+            console.log(c);
+            document.querySelector('.out-payment').innerHTML = c;
+           
+        }
+
+
+
+
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+#container {
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+.header-nav {
+}
+.nav__menu {
+  height: 75px;
+}
+
+.menu__link {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  display: flex;
+}
+
+.link h1 {
+  padding-left: 7px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #0a0b0d;
+}
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #0052ff;
+}
+.icon {
+  padding-top: 2px;
+}
+
+.header-content {
+  min-height: 100%;
+  background: #f7f7f8;
+}
+
+.main__box {
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-between;
+}
+
+.box {
+  width: 340px;
+  height: 500px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px 4px rgba(151, 150, 150, 0.25);
+  border-radius: 15px;
+}
+
+.box-container {
+  padding-left: 22px;
+  padding-top: 26px;
+}
+
+.box-container h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 12px;
+  color: #0a0b0d;
+}
+
+.box-container input {
+  padding-left: 10px;
+  width: 230px;
+  height: 30px;
+  border: 0.7px solid #c9c9c9;
+  border-radius: 5px;
+}
+
+.coin-box {
+  padding-top: 30px;
+}
+.coin-element {
+  padding-top: 15px;
+}
+
+.active {
+      background: #ffffff;
+  width: 242px;
+  height: 30pxrgb(151, 37, 37)
+  justify-content: left;
+  align-items: center;
+  display: flex;
+ 
+}
+
+.coin-bg {
+  background: #ffffff;
+  width: 242px;
+  height: 30pxrgb(151, 37, 37)
+  justify-content: left;
+  align-items: center;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+}
+
+.coin-bg:hover {
+  background: #f7f7f8;
+  cursor: pointer;
+}
+
+.coin-img {
+  padding-left: 10px;
+  padding-right: 7px;
+}
+.name-coin {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+  color: #0a0b0d;
+}
+.active-block {
+}
+
+.change-info {
+}
+
+.change-info h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0a0b0d;
+}
+
+.change-info h1 span {
+  font-size: 14px;
+}
+
+.coin-info {
+  display: flex;
+}
+
+.block-info {
+  width: 120px;
+  height: 15px;
+  margin-left: 25px;
+  padding-top: 5px;
+  background: #0052ff;
+  text-align: center;
+}
+.text-info {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.position {
+  margin-left: 55px;
+}
+.money-info {
+}
+.form-main {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.form-main p {
+  font-weight: 400;
+  color: #0052ff;
+  font-size: 13px;
+  padding-right: 22px;
+}
+.email-form {
+  padding-bottom: 15px;
+}
+.payment-form {
+  padding-bottom: 25px;
+
+}
+.final-form {
+  display: flex;
+}
+
+.final-form a {
+   color: #0052ff;
+   text-decoration: underline;
+}
+
+.final-form input {
+  width: 15px;
+  height: 15px;
+  background: #0052ff;
+}
+
+.final-text {
+  padding-top: 2px;
+  padding-left: 5px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 12px;
+
+  color: #0a0b0d;
+}
+.btn {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  width: 120px;
+  height: 26px;
+
+  background: #0052ff;
+}
+
+.btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+}
+
+
+section {
+    width: 100%;
+    height: 100vh;
+    background: red;
+}
+
+
+
+@media (max-width: 1130px) { 
+
+header {
+    height: 100%;
+}
+.main__box {
+    display: block;
+    padding-top: 40px
+}
+
+
+
+.box {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.link h1 {
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.logo {
+    font-size: 14px;
+}
+
+}
+ }
+
+
+
+
+
+
+
+
+
+
