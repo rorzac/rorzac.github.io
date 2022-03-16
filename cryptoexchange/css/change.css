@@ -23,6 +23,11 @@ header {
 
 .header-nav {
 }
+
+.update-course {
+  padding-top: 3px;
+}
+
 .nav__menu {
   height: 75px;
 }
@@ -39,6 +44,7 @@ header {
 
 .link h1 {
   padding-left: 7px;
+  padding-top: 2px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -252,6 +258,24 @@ header {
 }
 
 
+.input-wallet {
+  width: 420px;
+  height: 30px;
+  border: 0.7px solid #c9c9c9;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.button-wallet {
+  outline: none;
+   border: none;
+   padding: 10px;
+    color: #fff;
+    background: #0052ff;
+    text-align: center;
+}
+
+
 
 
 @media (max-width: 1130px) {
@@ -295,6 +319,10 @@ header {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+}
+
+.modal-content h1 {
+  line-height: 17px;
 }
 
 /* The Close Button */

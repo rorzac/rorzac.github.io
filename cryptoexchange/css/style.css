@@ -25,6 +25,10 @@ header {
 
 .header-nav {
 }
+.update-course {
+  padding-top: 3px;
+}
+
 .nav__menu {
   height: 75px;
 }
@@ -42,6 +46,7 @@ header {
 .link h1 {
   padding-left: 7px;
   font-style: normal;
+  padding-top: 2px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;

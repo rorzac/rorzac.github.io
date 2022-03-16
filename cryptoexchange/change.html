@@ -17,19 +17,19 @@
             <div class="nav__menu">
                 <ul class="menu__link">
                     <li class="link">
-                        <div class="logo">CoinExchange</div>
+                        <a href="index.html" class="logo">CoinExchange</a>
                     </li>
                     <li class="link">
                         <div class="icon-nav">
                             <img src="img/time.svg" alt="">
                         </div>
-                        <h1>Automate change 24/7</h1>
+                        <h1>Automatic exchange 24/7</h1>
                     </li>
                     <li class="link">
                         <div class="icon-nav">
                             <img src="img/upgrate.svg" alt="">
                         </div>
-                        <h1>Upgrate coin</h1>
+                        <a class="update-course" href="index.html">Update coin</a>
                     </li>
                 </ul>
             </div>
@@ -95,21 +95,28 @@
                     <p style="font-weight: bold;">Если платеж не проходит, то отключите VPN или попробуйте произвести
                         оплату в другом браузере.</p>
                     <br>
-                    <h1>После получения 20 подтверждений сети Ethereum система найдет ваш платеж и заявка отправится в
+                    <h1>После получения подтверждений сети система найдет ваш платеж и заявка отправится в
                         обработку. В случае, если
                         за время жизни заявки перевод дойти не успел вы сможете продлить поиск транзакции нажав на
                         соответствующую появившуюся
                         кнопку.</h1>
-                    <div>Вы должны отправить: <span class="out-let"></span> Cardano(ADA) на адресс снизу</div>
+                        <br>
+                        <hr>
+                    <div>Вы должны отправить: <span class="out-let"></span> Cardano(ADA) по адрессу внизу</div>
+                    <hr>
                     <div>На ваш Email: <span class="out-email"></span> придет письмо после транзакции и чек</div>
+                    <hr>
                     <div>На этот кошелек будут зачисленны средства: <span class="out-payment"></span></div>
+                    <hr>
                     
                     <br>
+                    <h1>Сделайте перевод по реквизитам</h1>
+                    <br>
                     <!-- The text field -->
-                    <input type="text" value="fdsfdsfdsfdsfdsfdsfdsfdsfdsfdsl" id="myInput">
+                    <input class="input-wallet" type="text" value="fdsfdsfdsfdsfdsfdsfdsfdsfdsfdsl" id="myInput">
                     
                     <!-- The button used to copy the text -->
-                    <button onclick="myFunction()">Скопировать текст</button>
+                    <button class="button-wallet" onclick="myFunction()">Скопировать текст</button>
                 </div>
 
             </div>
@@ -183,7 +190,7 @@
                 navigator.clipboard.writeText(copyText.value);
 
                 /* Alert the copied text */
-                alert("Copied the text: " + copyText.value);
+                
             }
 
 
