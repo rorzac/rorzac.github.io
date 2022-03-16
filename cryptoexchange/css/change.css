@@ -295,6 +295,9 @@ header {
         font-size: 11px;
         padding-top: 3px;
     }
+    .input-wallet {
+      width: 280px;
+    }
 }
 
 
@@ -346,4 +349,6 @@ header {
     font-size: 12px;
     padding-top: 3px;
 }
+
+
 
