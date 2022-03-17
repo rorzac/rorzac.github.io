@@ -282,6 +282,53 @@ section {
   border: 1px solid red;
 }
 
+.header-faq {
+ 
+text-align: center;
+font-weight: 700;
+font-size: 22px;
+line-height: 26px;
+
+color: #000000;
+}
+
+.hr {
+  border: 2px solid #000000;
+  width: 226px;
+height: 0px;
+}
+
+.main-faq {
+  padding-top: 50px;
+  
+
+}
+
+.main-faq h1{
+
+
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+
+color: #000000;
+
+} 
+.main-faq p {
+padding-top: 22px;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+padding-bottom: 22px;
+color: #595959;
+}
+
+
+.buy-crypto-1 {
+}
+
 @media (max-width: 1130px) {
   header {
     height: 100%;
