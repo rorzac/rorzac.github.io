@@ -351,3 +351,9 @@ color: #595959;
     font-size: 14px;
   }
 }
+
+@media (max-width: 500px) {
+  .img-lisense img {
+    width: 90%;
+  }
+}
