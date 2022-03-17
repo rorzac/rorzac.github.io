@@ -8,8 +8,6 @@ a {
   text-decoration: none;
 }
 
-
-
 #container {
   max-width: 1120px;
   margin-right: auto;
@@ -66,7 +64,7 @@ header {
 }
 
 .header-content {
-  min-height: 100%;
+  height: 100%;
   background: #f7f7f8;
 }
 
@@ -114,19 +112,18 @@ header {
 }
 
 .active {
-      background: #ffffff;
+  background: #ffffff;
   width: 242px;
-  height: 30pxrgb(151, 37, 37)
+  height: 30pxrgb (151, 37, 37);
   justify-content: left;
   align-items: center;
   display: flex;
- 
 }
 
 .coin-bg {
   background: #ffffff;
   width: 242px;
-  height: 30pxrgb(151, 37, 37)
+  height: 30pxrgb (151, 37, 37);
   justify-content: left;
   align-items: center;
   display: flex;
@@ -204,15 +201,14 @@ header {
 }
 .payment-form {
   padding-bottom: 25px;
-
 }
 .final-form {
   display: flex;
 }
 
 .final-form a {
-   color: #0052ff;
-   text-decoration: underline;
+  color: #0052ff;
+  text-decoration: underline;
 }
 
 .final-form input {
@@ -249,52 +245,62 @@ header {
   align-items: center;
   width: 100%;
   height: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
+.upgrate-img {
+  padding-right: 5px;
+  padding-top: 2px;
+}
 
 section {
-    width: 100%;
-    height: 100vh;
-    background: red;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
 }
 
+.lisense-text {
+  padding-top: 38px;
+  padding-bottom: 50px;
+}
 
+.lisense-text h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
 
-@media (max-width: 1130px) { 
+  color: #000000;
+}
 
-header {
+.img-lisense {
+  display: flex;
+  justify-content: center;
+}
+
+.img-lisense img {
+  border: 1px solid red;
+}
+
+@media (max-width: 1130px) {
+  header {
     height: 100%;
-}
-.main__box {
+  }
+  .main__box {
     display: block;
-    padding-top: 40px
-}
+    padding-top: 40px;
+  }
 
-
-
-.box {
+  .box {
     width: 100%;
     margin-bottom: 50px;
-}
-.link h1 {
+  }
+  .link h1 {
     font-size: 12px;
     padding-top: 4px;
-}
+  }
 
-.logo {
+  .logo {
     font-size: 14px;
+  }
 }
-
-}
- }
-
-
-
-
-
-
-
-
-
-
