@@ -217,10 +217,10 @@ header {
   justify-content: center;
 }
 .button {
-  width: 120px;
-  height: 26px;
-
-  background: #0052ff;
+  width: 135px;
+  height: 40px;
+  background: #0d6efd;
+  border-radius: 5px
 }
 
 .btn a {
