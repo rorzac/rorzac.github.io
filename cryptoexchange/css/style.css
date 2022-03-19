@@ -98,7 +98,7 @@ header {
 
 .box-container input {
   padding-left: 10px;
-  width: 230px;
+  width: 85%;
   height: 30px;
   border: 0.7px solid #c9c9c9;
   border-radius: 5px;
@@ -112,9 +112,9 @@ header {
 }
 
 .active {
-  background: #ffffff;
-  width: 242px;
-  height: 30pxrgb (151, 37, 37);
+  background: #dddfdb;
+  width: 90%;
+  height: 35px;
   justify-content: left;
   align-items: center;
   display: flex;
@@ -123,7 +123,7 @@ header {
 .coin-bg {
   background: #ffffff;
   width: 242px;
-  height: 30pxrgb (151, 37, 37);
+ 
   justify-content: left;
   align-items: center;
   display: flex;

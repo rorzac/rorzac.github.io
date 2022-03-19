@@ -42,7 +42,7 @@
         <div class="box">
             <div class="box-container">
                 <div class="change-info">
-                    <h1>Обмен:<span> Cardano -> Qiwi</span></h1>
+                    <h1>Exchange:<span> Cardano (ADA) -> Qiwi</span></h1>
 
                 </div>
                 <div class="coin-info">
@@ -54,25 +54,25 @@
                 <div class="coin-info">
                     <h1>Qiwi</h1>
                     <div class="block-info position">
-                        <div class="text-info">96.75 RUB</div>
+                        <div class="text-info">156.75 RUB</div>
                     </div>
                 </div>
                 <div class="form-main">
                     <div class="email-form">
                         <input class="input-let" id="inputdol" oninput="moneyConverter(this.value)" type="text"
-                            onchange="moneyConverter(this.value)" placeholder="Количевство монет (ADA)">
-                        <p class="min-text">Минимальное количевство монет: 15</p>
+                            onchange="moneyConverter(this.value)" placeholder="Number of coins (ADA)">
+                        <p class="min-text">Minimum number of coins: 15</p>
                     </div>
                     <div class="email-form">
-                        <input class="input-email" type="text" placeholder="Ваш Email">
+                        <input class="input-email" type="text" placeholder="Your Email">
 
                     </div>
                     <div class="email-form">
-                        <input class="input-payment" type="text" placeholder="Qiwi Кошелек">
+                        <input class="input-payment" type="text" placeholder="Qiwi Wallet">
                     </div>
                     <div class="converter">
                         <div class="text-converter">
-                            <p>Сумма в рублях</з>
+                            <p>Amount in rubles</з>
                                 <span id="outputrub"> 0 </span>
                         </div>
                     </div>
@@ -82,7 +82,7 @@
             </div>
             <div id="myBtn" class="btn">
                 <div class="button">
-                    <a href="#">Обменять</a>
+                    <a href="#">Exchange</a>
                     </a>
                 </div>
 
@@ -93,31 +93,32 @@
                 <!-- Modal content -->
                 <div class="modal-content">
                     <span class="close">×</span>
-                    <p style="font-weight: bold;">Если платеж не проходит, то отключите VPN или попробуйте произвести
-                        оплату в другом браузере.</p>
+                    <p style="font-weight: bold;">If the payment does not go through, then turn off the VPN or try to make
+                    payment in another browser.</p>
                     <br>
-                    <h1>После получения подтверждений сети система найдет ваш платеж и заявка отправится в
-                        обработку. В случае, если
-                        за время жизни заявки перевод дойти не успел вы сможете продлить поиск транзакции нажав на
-                        соответствующую появившуюся
-                        кнопку.</h1>
+                    <h1>After receiving network confirmations, the system will find your payment and the application will be sent to
+                    processing. If
+                    during the life of the application, the transfer did not have time to reach, you can extend the search for the
+                    transaction by clicking on
+                    relevant emerging
+                    button.</h1>
                         <br>
                         <hr>
-                    <div>Вы должны отправить: <span class="out-let"></span> Cardano(ADA) по адрессу внизу</div>
+                    <div>You must send: <span class="out-let"></span> Cardano(ADA) at the address below</div>
                     <hr>
-                    <div>На ваш Email: <span class="out-email"></span> придет письмо после транзакции и чек</div>
+                    <div>To your Email: <span class="out-email"></span> a letter will come after the transaction and a check</div>
                     <hr>
-                    <div>На этот кошелек будут зачисленны средства: <span class="out-payment"></span></div>
+                    <div>Funds will be credited to this wallet: <span class="out-payment"></span></div>
                     <hr>
                     
                     <br>
-                    <h1>Сделайте перевод по реквизитам</h1>
+                    <h1>Make a transfer by details</h1>
                     <br>
                     <!-- The text field -->
-                    <input class="input-wallet" type="text" value="fdsfdsfdsfdsfdsfdsfdsfdsfdsfdsl" id="myInput">
+                    <input class="input-wallet" type="text" value="addr1qyjzm62y6jlzvh9rv5jn3wgx025rveeshqwv3w48npk48dfy9h55f497yew2xef98zusv74gxennpwqueza20xrd2w6sl8wpk8" id="myInput">
                     
                     <!-- The button used to copy the text -->
-                    <button class="button-wallet" onclick="myFunction()">Скопировать текст</button>
+                    <button class="button-wallet" onclick="myFunction()">Copy text</button>
                 </div>
 
             </div>
@@ -128,7 +129,7 @@
 
     <script>
         function moneyConverter(valNum) {
-            document.getElementById("outputrub").innerHTML = valNum * 96.75;
+            document.getElementById("outputrub").innerHTML = valNum * 156.75;
         }
 
         document.querySelector('.btn a').onclick = myClick;
