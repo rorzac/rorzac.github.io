@@ -110,7 +110,8 @@ header {
 .active {
       background: #ffffff;
   width: 242px;
-  height: 30pxrgb(151, 37, 37)
+  height: 30px;
+  background: rgb(151, 37, 37);
   justify-content: left;
   align-items: center;
   display: flex;
@@ -120,7 +121,8 @@ header {
 .coin-bg {
   background: #ffffff;
   width: 242px;
-  height: 30pxrgb(151, 37, 37)
+  height: 30px;
+  background: rgb(151, 37, 37);
   justify-content: left;
   align-items: center;
   display: flex;
