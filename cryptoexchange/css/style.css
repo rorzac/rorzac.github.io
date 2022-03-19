@@ -139,6 +139,14 @@ header {
   padding-left: 10px;
   padding-right: 7px;
 }
+
+.coin-img img {
+  width: 26px;
+  height: 26px;
+
+}
+
+
 .name-coin {
   font-style: normal;
   font-weight: 700;
