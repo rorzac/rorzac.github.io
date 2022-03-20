@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.png">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/change.css">
+    <title>ExmoCoin</title>
+</head>
+
+<body>
+
+    <div class="header-nav">
+        <div id="container">
+            <div class="nav__menu">
+                <ul class="menu__link">
+                    <li class="link">
+                        <a href="../../index.html" class="logo">ExmoCoin</a>
+                    </li>
+                    <li class="link">
+                        <div class="icon-nav">
+                            <img src="../../img/time.svg" alt="">
+                        </div>
+                        <h1>Automatic exchange 24/7</h1>
+                    </li>
+                    <li class="link">
+                        <div class="icon-nav">
+                            <img class="upgrate-img" src="../../img/upgrate.png" alt="">
+                        </div>
+                        <a class="update-course" href="../../contact/send.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="change-main">
+        <div class="box">
+            <div class="box-container">
+                <div class="change-info">
+                    <h1>Exchange:<span> Bitcoin -> USD</span></h1>
+
+                </div>
+                <div class="coin-info">
+                    <h1>Bitcoin</h1>
+                    <!-- <div class="block-info">
+                        <div class="text-info"></div>
+                    </div> -->
+                </div>
+                <div class="coin-info">
+                    <h1>USD</h1>
+
+                </div>
+                <div class="form-main">
+                    <div class="email-form">
+                        <input class="input-let" id="inputdol" oninput="moneyConverter(this.value)" type="text"
+                            onchange="moneyConverter(this.value)" placeholder="Number of coins (Dogecoin)">
+                        <p class="min-text">Minimum price 15$</p>
+                    </div>
+                    <div class="email-form">
+                        <input class="input-email" type="text" placeholder="Your Email">
+
+                    </div>
+                    <div class="email-form">
+                        <input class="input-payment" type="text" placeholder="Your Wallet">
+                    </div>
+                    <div class="converter">
+                        <div class="text-converter">
+                            <p>Amount in USD/</p>
+                            <span id="outputrub"> 0 </span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="myBtn" class="btn">
+                <div class="button">
+                    <a href="#">Exchange</a>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">×</span>
+                    <p style="font-weight: bold;">If the payment does not go through, then turn off the VPN or try to
+                        make
+                        payment in another browser.</p>
+                    <br>
+                    <h1>After receiving network confirmations, the system will find your payment and the application
+                        will be sent to
+                        processing. If
+                        during the life of the application, the transfer did not have time to reach, you can extend the
+                        search for the
+                        transaction by clicking on
+                        relevant emerging
+                        button.</h1>
+                    <br>
+                    <hr>
+                    <div>You must send: <span class="out-let"></span> Cardano(ADA) at the address below</div>
+                    <hr>
+                    <div>To your Email: <span class="out-email"></span> a letter will come after the transaction and a
+                        check</div>
+                    <hr>
+                    <div>Funds will be credited to this wallet: <span class="out-payment"></span></div>
+                    <hr>
+
+                    <br>
+                    <h1>Make a transfer by details</h1>
+                    <br>
+                    <!-- The text field -->
+                    <input class="input-wallet" type="text"
+                        value="addr1qyjzm62y6jlzvh9rv5jn3wgx025rveeshqwv3w48npk48dfy9h55f497yew2xef98zusv74gxennpwqueza20xrd2w6sl8wpk8"
+                        id="myInput">
+
+                    <!-- The button used to copy the text -->
+                    <button class="button-wallet" onclick="myFunction()">Copy text</button>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <script>
+        function moneyConverter(valNum) {
+            document.getElementById("outputrub").innerHTML = valNum * 41352.30;
+        }
+
+        document.querySelector('.btn a').onclick = myClick;
+
+        function myClick() {
+
+            let a = document.querySelector('.input-let').value;
+            console.log(a);
+            document.querySelector('.out-let').innerHTML = a;
+            let b = document.querySelector('.input-email').value;
+            console.log(b);
+            document.querySelector('.out-email').innerHTML = b;
+            let c = document.querySelector('.input-payment').value;
+            console.log(c);
+            document.querySelector('.out-payment').innerHTML = c;
+
+        }
+
+
+
+
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+
+
+        //copied
+        function myFunction() {
+            /* Get the text field */
+            var copyText = document.getElementById("myInput");
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(copyText.value);
+
+            /* Alert the copied text */
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
