@@ -91,11 +91,11 @@ body{
     font-size: 24px;
     line-height: 36px;
     color: #FFFFFF;
-    transition: all 3s;
+    transition: border-bottom .3s ease-in-out;
 }
 
 .menu__list-link:hover{
-    border-bottom: 2px solid #E4E182;
+    border-bottom: 3px solid #E4E182;
 }          
 
 .header__btn{
