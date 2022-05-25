@@ -88,7 +88,7 @@ body{
 .menu__list-link{
     padding: 4px 2px;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 36px;
     color: #FFFFFF;
     transition: border-bottom .3s ease-in-out;
