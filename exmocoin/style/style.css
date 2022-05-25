@@ -1,0 +1,175 @@
+html{
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before{
+    box-sizing: inherit;
+  }
+  
+  ul[class],
+  ol[class] {
+    padding: 0;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul[class],
+  ol[class],
+  li,
+  figure,
+  figcaption,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  ul[class] {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+}
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header{
+    background-image: url('../images/headerbackfon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+}
+
+.container{
+     max-width: 1120px;
+     padding: 0 10px;
+     margin: 0 auto;
+}
+
+.header__top{
+    padding: 25px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__list{
+    display: flex;
+}
+
+.menu__list-item{
+    margin-left: 40px;
+}
+
+.menu__list-link{
+    padding: 4px 2px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    transition: all 3s;
+}
+
+.menu__list-link:hover{
+    border-bottom: 2px solid #E4E182;
+}          
+
+.header__btn{
+    padding: 13px 21px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #CE0927;
+    border-radius: 5px;
+}
+
+.header__btn:hover {
+    background-color: #f8072b;
+}
+
+.header__content{
+    padding-top: 74px;
+}
+
+.header__content{
+   position: relative;
+}
+
+.header__title{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 72px;
+    width: 469px;
+    color: #FFFFFF;
+}
+
+.header__title span{
+    color: #CE0927;
+}
+
+.header__text{
+    padding-top: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #959595;
+    width: 518px;
+    margin-bottom: 47px;
+}
+
+.button{
+    padding: 17px 88px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    background-color: #CE0927;
+    border-radius: 5px;
+    color: #FFFFFF;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: #f8072b;
+}
+
+.header__content-img{
+    position: absolute;
+    right: -49px;
+    bottom: -189px;
+}
+
+
+
+
+
+
+
+
+
+
+
