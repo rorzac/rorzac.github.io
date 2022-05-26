@@ -289,3 +289,159 @@ background-image: url('../images/choosedollar.png');
     right: -22px;
     bottom: 225px;
 }
+
+/* начало faq */
+
+.faq{
+  background-color: #21262A;
+  padding: 70px 0 170px;
+  width: 100%;
+}
+
+.title__about{
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFFFFF;
+  
+  margin-bottom: 18px;
+}
+
+.about__inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #959595;
+  margin-bottom: 54px;
+  width: 455px;
+  height: 63px;
+  text-align: center;
+}
+
+.container-accordion{
+  padding: 30px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.container-accordion .box{
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container-accordion .box .label{
+  position: relative;
+  padding: 20px;
+  background-color: #181C1F;;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container-accordion .box .label::after{
+  content: "+";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.container-accordion .box.active .label::after{
+  content: "\2014";
+}
+
+.container-accordion .box .content{
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s;
+
+} 
+
+.container-accordion .box .content p{
+  padding: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  color: #959595;
+}
+
+.footer{
+ background-image: url('../images/footerbg.jpg');
+ background-color: #000000;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: top center;
+}
+
+.footer__inner{
+  padding: 65px 0 80px;
+  display: flex;
+  justify-content: space-between;
+  }
+
+.footer-item{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer__logo-img{
+  margin-bottom: 15px;
+}
+
+.footer__logo-text{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #959595;
+}
+
+.footer__social-img + .footer__social-img{
+  padding-left: 10px;
+}
+
+
+
+.footer__logo-text{
+  width: 216px;
+  margin-bottom: 20px;
+}
+
+.footer__menu-title{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+  margin-bottom: 7px;
+}
+
+.footer__menu-link{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #959595;
+}
+
+.footer__copy{
+  padding: 16px 0 16px;
+  background-color: #000000;
+}
+
+.footer__copy-link{
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}

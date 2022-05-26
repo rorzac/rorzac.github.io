@@ -1,24 +1,129 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(180deg, #181C1F 0%, #0A314E 100%);
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #181c1f 0%, #0a314e 100%);
 }
 
 .container {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 10px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .register__item {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-reg {
+  width: 400px;
+  height: 440px;
+
+  padding: 15px 30px;
+  text-align: center;
+
+  background: #262c31;
+  border: 3px solid #ce0927;
+  border-radius: 20px;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.text-form__main {
+  text-align-last: left;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  color: #ffffff;
+  padding-bottom: 7px;
+  padding-top: 10px;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #959595;
+  padding-left: 7px;
+  width: 337px;
+  height: 40px;
+  outline: none;
+  background: #181c1f;
+  border: 1px solid #292e32;
+  border-radius: 5px;
+}
+
+.form-btn {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 30px;
+  background: #ce0927;
+  border-radius: 5px;
+}
+
+.subtitle {
+    text-align: left;
+    color: #959595;
+}
+
+.subtitle a {
+    color: #CE0927;
+}
+
+
+@media (max-width: 1130px) {
+    .register__item {
+        display: block;
+    }
+    .register__photo {
+        display: flex;
+        justify-content: center;
+    }
+    .register__form {
+       display: flex;
+       justify-content: center;
+    }
+    .form-reg {
+        width: 550px;
+    }
+    input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .register__form {
+        display: flex;
+        justify-content: center;
+     }
+     .register__photo {
+        width: 20%;
+    }
 }
