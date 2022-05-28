@@ -60,7 +60,14 @@
                 <div class="main__input">
                   <div class="left__menu">
                     <div class="name__val">Отдаете</div>
-                    <input placeholder="500" id="input-id" oninput="moneyConverter(this.value)" type="text" onchange="moneyConverter(this.value)" class="val" />
+                    <input
+                      placeholder="500"
+                      id="input-id"
+                      oninput="moneyConverter(this.value)"
+                      type="text"
+                      onchange="moneyConverter(this.value)"
+                      class="val"
+                    />
                   </div>
 
                   <div class="right__menu">
@@ -87,7 +94,11 @@
                   </div>
                   <div class="right__menu">
                     <div class="name__val">Номер карты</div>
-                    <input placeholder="Номер карты" type="text" class="val__num"/>
+                    <input
+                      placeholder="Номер карты"
+                      type="text"
+                      class="val__num"
+                    />
                   </div>
                 </div>
                 <div class="subtitle__text">
@@ -100,26 +111,54 @@
             </div>
             <hr />
             <div class="button">
-              <a href="#" class="btn">Exchange</a>
+              <a id="myBtn" href="#" class="btn">Exchange</a>
             </div>
           </div>
         </div>
       </div>
-          <div class="modal">
-        <div class="main__modal">
-            <div class="modal__inner"></div>
+
+      <div class="popup-box" id="myModal">
+        <div class="popup">
+          <div class="content">
+            <img src="images/close.svg" alt="" id="close" class="close" />
+
+            <h1 class="title">
+              If the payment does not go through, then turn off the VPN or try
+              to make payment in another browser.
+            </h1>
+            <p class="subtitle">After receiving network confirmations, the system will find your payment and the application will be sent to processing. If during the life of the application, the transfer did not have time to reach, you can extend the search for the transaction by clicking on relevant emerging button.</p>
+            <div class="main__info">
+                <div class="info__coin">You must send: 500 Atom at the address below</div>
+                <div class="info__email">To your Email: hfhfghfgh@gmail a letter will come after the transaction and a check</div>
+                <div class="info__card">Funds will be credited to this wallet: 454353534</div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     </header>
 
-
-
     <script>
-   function moneyConverter(valNum) {
-            document.getElementById("outputrub").innerHTML = valNum * 107.47;
-        }
+      function moneyConverter(valNum) {
+        document.getElementById("outputrub").innerHTML = valNum * 107.47;
+      }
 
- 
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      let btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      let span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
     </script>
   </body>
 </html>

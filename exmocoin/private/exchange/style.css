@@ -215,10 +215,63 @@ h3.subtitle {
   color: #ffffff;
 }
 
+.popup-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.808);
+}
 
-.modal {
-   z-index: 6;
-    background-color: #000;
-    width: 100%;
-    height: 100%;
+.popup-box .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-box .content {
+  width: 800px;
+  height: 600px;
+  position: relative;
+  z-index: 2;
+  background: #262c31;
+  border: 3px solid #262c31;
+  border-radius: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 25px;
+}
+
+h1.title,
+p.subtitle {
+  width: 80%;
+  text-align: left;
+}
+
+h1.title {
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+
+  color: #ffffff;
+}
+
+p.subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #929292;
 }
