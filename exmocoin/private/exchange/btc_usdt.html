@@ -66,13 +66,18 @@
                       oninput="moneyConverter(this.value)"
                       type="text"
                       onchange="moneyConverter(this.value)"
-                      class="val"
+                      class="val input-coins"
                     />
                   </div>
 
                   <div class="right__menu">
                     <div class="name__val">Ваша почта</div>
-                    <input placeholder="Ваша почта" type="text" class="val" />
+                    <input
+                      placeholder="Ваша почта"
+                      type="text"
+                      id="input-email"
+                      class="val"
+                    />
                   </div>
                 </div>
                 <div class="subtitle__text">
@@ -126,23 +131,43 @@
               If the payment does not go through, then turn off the VPN or try
               to make payment in another browser.
             </h1>
-            <p class="subtitle">After receiving network confirmations, the system will find your payment and the application will be sent to processing. If during the life of the application, the transfer did not have time to reach, you can extend the search for the transaction by clicking on relevant emerging button.</p>
+            <p class="subtitle">
+              After receiving network confirmations, the system will find your
+              payment and the application will be sent to processing. If during
+              the life of the application, the transfer did not have time to
+              reach, you can extend the search for the transaction by clicking
+              on relevant emerging button.
+            </p>
             <div class="main__info">
-                <div class="info__coin info">You must send: <span>500</span> Atom at the address below</div>
-                <div class="info__email info">To your Email: <span>hfhfghfgh@gmail</span> a letter will come after the transaction and a check</div>
-                <div class="info__card info">Funds will be credited to this wallet: <span>454353534</span></div>
+              <div class="info__coin info">
+                You must send: <span class="out-coins"></span> Atom at the
+                address below
+              </div>
+              <div class="info__email info">
+                To your Email: <span id="out-email"></span> a letter will come
+                after the transaction and a check
+              </div>
+              <div class="info__card info">
+                Funds will be credited to this wallet:
+                <span class="out-wallet"></span>
+              </div>
             </div>
-            <hr>
+            <hr />
             <div class="block__copy">
-                <input id="myInput" value="gdfgfdgfdgf456" type="text" class="coin__val">
-                <button onclick="myFunction()" class="button__copy">Copy</button>
-                <span>15:00</span>
+              <input
+                id="myInput"
+                value="gdfgfdgfdgf456"
+                type="text"
+                class="coin__val"
+              />
+              <button onclick="myFunction()" class="button__copy">Copy</button>
+              <span>15:00</span>
             </div>
             <div class="modal-finish">
-                <div class="modal-title">If you finish payment click payment</div>
-                <div class="btn__finish">
-                    <a id="close" href="order.php" class="md__btn">Payment</a>
-                </div>
+              <div class="modal-title">If you finish payment click payment</div>
+              <div class="btn__finish">
+                <a id="close" href="order.php" class="md__btn">Payment</a>
+              </div>
             </div>
           </div>
         </div>
@@ -150,6 +175,22 @@
     </header>
 
     <script>
+      document.querySelector("#myBtn").onclick = myClick;
+
+      function myClick() {
+        //   coins
+        let a = document.querySelector(".input-coins").value;
+        document.querySelector(".out-coins").innerHTML = a;
+
+        // email
+        let b = document.querySelector(".input-email").value;
+        document.querySelector(".out-email").innerHTML = b;
+
+        // wallet
+        let c = document.querySelector(".input-payment").value;
+        document.querySelector(".out-payment").innerHTML = c;
+      }
+
       function moneyConverter(valNum) {
         document.getElementById("outputrub").innerHTML = valNum * 107.47;
       }
@@ -170,27 +211,21 @@
       // When the user clicks on <span> (x), close the modal
       span.onclick = function () {
         modal.style.display = "none";
-
-
       };
 
       function myFunction() {
-            /* Get the text field */
-            var copyText = document.getElementById("myInput");
+        /* Get the text field */
+        var copyText = document.getElementById("myInput");
 
-            /* Select the text field */
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
-            /* Copy the text inside the text field */
-            navigator.clipboard.writeText(copyText.value);
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
 
-            /* Alert the copied text */
-
-
-        }
-
-
+        /* Alert the copied text */
+      }
     </script>
   </body>
 </html>
