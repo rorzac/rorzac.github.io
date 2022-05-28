@@ -12,32 +12,66 @@
   <body>
     <header class="header">
       <div class="container">
+        <div class="header__top">
+          <a class="header__logo" href="#">
+            <img
+              class="header__logo-img"
+              src="images/exmologo.svg"
+              alt="logo"
+            />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#"> Main </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#"> Home </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#"> Support</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#"> Blog </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__control">
+            <a class="header__btn" href="#"> Authorization </a>
+          </div>
+        </div>
         <div class="register__item">
           <div class="register__form">
-            <div class="form-reg">
-              <h1 class="title">Create Account</h1>
-              <div class="form-name">
-                <h3 class="text-form__main">Full name</h3>
-                <input type="text" class="input__text" />
+            <div class="rg__top">
+              <div class="rg__logo">
+                <img src="images/exmologo.svg" alt="" />
               </div>
-              <div class="form-email">
-                <h3 class="text-form__main">Email</h3>
-                <input type="text" class="input__text" />
+              <div class="rg__sec">
+                <img src="images/secure.svg" alt="" class="secure" />
+                <p>Secure</p>
               </div>
-              <div class="form-password">
-                <h3 class="text-form__main">Full name</h3>
-                <input type="text" class="input__text" />
-              </div>
-              <div class="form-btn">
-                <a href="" class="btn">Create New Account</a>
-              </div>
-              <p class="subtitle">
-                Already Have An Account? <a href="#">Sign In</a>
-              </p>
             </div>
-          </div>
-          <div class="register__photo">
-            <img src="images/register.png" alt="" class="register-photo" />
+            <div class="rg__title">
+              <a href="#">Login</a> or <span>Register</span>
+            </div>
+            <div class="main__input">
+              <div class="text__input">Full name</div>
+              <input type="text" class="form__input" />
+            </div>
+            <div class="main__input">
+              <div class="text__input">Email</div>
+              <input type="email" class="form__input" />
+            </div>
+            <div class="main__input">
+              <div class="text__input">Password</div>
+              <input type="password" class="form__input" />
+            </div>
+            <div class="main__btn">
+              <button>Create account</button>
+            </div>
           </div>
         </div>
       </div>

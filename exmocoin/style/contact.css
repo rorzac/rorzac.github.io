@@ -68,96 +68,44 @@ body {
   background-color: #f8072b;
 }
 
-/* Main */
-
-.register__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.register__form {
-  padding: 15px 25px;
-  margin-top: 50px;
-  background: #262c31;
-  border: 3px solid #ce0927;
-  border-radius: 10px;
-  width: 516px;
-  height: 417px;
-}
-
-.rg__top {
+.contact__item {
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
-}
-
-.rg__sec {
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.rg__sec p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  padding-left: 5px;
+.contact__form {
+  padding: 20px 30px;
+  width: 500px;
+  height: 400px;
+  background: #2f3235;
+  border: 3px solid #ce0927;
+  border-radius: 20px;
 }
 
-.rg__title {
+.main__form {
+}
+
+.contact__title {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.input {
   padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-  color: #959595;
 }
 
-.rg__title a {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 18px;
-
-  color: #959595;
-}
-
-.rg__title span {
-  color: #ce0927;
-}
-
-.rg__title a,
-.rg__title span {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.main__input {
-}
-
-.text__input {
-  padding-bottom: 5px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-
-  color: #ffffff;
-}
-
-.main__input input {
+input {
   width: 100%;
-  height: 36px;
-  left: 413px;
-  top: 268px;
-  margin-bottom: 10px;
-  background: #ffffff;
-  border-radius: 5px;
+  height: 40px;
+  color: #959595;
+  padding-left: 8px;
+  background: #2f3235;
+  border: 1px solid #959595;
+  border-radius: 10px;
   outline: none;
-  padding-left: 7px;
 }
 
 .main__btn {
@@ -167,10 +115,10 @@ body {
 }
 
 .main__btn button {
-  padding: 10px 15px;
-  cursor: pointer;
+  padding: 15px 25px;
   background: #ce0927;
   border-radius: 5px;
-  color: #fff;
   border: none;
+  cursor: pointer;
+  color: #fff;
 }
