@@ -275,3 +275,19 @@ p.subtitle {
   line-height: 24px;
   color: #929292;
 }
+
+.main__info {
+    padding-top: 15px;
+    color: #fff;
+
+}
+
+.main__info .info {
+    padding-bottom: 7px;
+}
+
+.main__info span {
+    background: #CE0927;
+    border-radius: 2px;
+    padding: 0.5px;
+}
