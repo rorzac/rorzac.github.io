@@ -126,7 +126,7 @@ h3.subtitle {
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 .title__block {
@@ -165,14 +165,24 @@ h3.subtitle {
   padding-left: 7px;
 }
 
-
-
 .val {
   width: 150px;
   height: 30px;
 
   border: 1px solid #ce0927;
   border-radius: 5px;
+}
+
+.val__num {
+  width: 150px;
+  height: 30px;
+  background: #ce0927;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-right: 15px;
 }
 
 .name__val {
@@ -187,11 +197,28 @@ h3.subtitle {
 .button {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .button a {
   padding: 20px 60px;
   background: #ce0927;
   border-radius: 5px;
+}
+
+.subtitle__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  padding-top: 7px;
+  color: #ffffff;
+}
+
+
+.modal {
+   z-index: 6;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
 }

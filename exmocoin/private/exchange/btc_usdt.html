@@ -46,8 +46,11 @@
         <div class="exchange__item">
           <div class="main__block">
             <h1 class="title">Обмен Privat 24 UAH на Visa/MasterCard UAH</h1>
-            <hr/>
-            <h3 class="subtitle">Обмен производится в автоматическом режиме и занимает от 5 до 30 минут</h3>
+            <hr />
+            <h3 class="subtitle">
+              Обмен производится в автоматическом режиме и занимает от 5 до 30
+              минут
+            </h3>
             <div class="block__exchange">
               <div class="from">
                 <div class="title__block">
@@ -57,12 +60,19 @@
                 <div class="main__input">
                   <div class="left__menu">
                     <div class="name__val">Отдаете</div>
-                    <input placeholder="500" type="text" class="val" />
+                    <input placeholder="500" id="input-id" oninput="moneyConverter(this.value)" type="text" onchange="moneyConverter(this.value)" class="val" />
                   </div>
+
                   <div class="right__menu">
                     <div class="name__val">Ваша почта</div>
                     <input placeholder="Ваша почта" type="text" class="val" />
                   </div>
+                </div>
+                <div class="subtitle__text">
+                  <p>
+                    Минимальная сумма обмена: 150.00 UAH <br />
+                    Максимальная сумма обмена: 185505.60 UAH
+                  </p>
                 </div>
               </div>
               <div class="to">
@@ -73,22 +83,43 @@
                 <div class="main__input">
                   <div class="left__menu">
                     <div class="name__val">Получаете</div>
-                    <input type="text" class="val" />
+                    <div class="val__num" id="outputrub">0</div>
                   </div>
                   <div class="right__menu">
                     <div class="name__val">Номер карты</div>
-                    <input placeholder="Номер карты" type="text" class="val" />
+                    <input placeholder="Номер карты" type="text" class="val__num"/>
                   </div>
+                </div>
+                <div class="subtitle__text">
+                  <p>
+                    Резерв: 199638.75186398 USDT <br />
+                    Курс обмена: 29.2549 UAH 1 USDT
+                  </p>
                 </div>
               </div>
             </div>
-            <hr>
+            <hr />
             <div class="button">
               <a href="#" class="btn">Exchange</a>
             </div>
           </div>
         </div>
       </div>
+          <div class="modal">
+        <div class="main__modal">
+            <div class="modal__inner"></div>
+        </div>
+    </div>
     </header>
+
+
+
+    <script>
+   function moneyConverter(valNum) {
+            document.getElementById("outputrub").innerHTML = valNum * 107.47;
+        }
+
+ 
+    </script>
   </body>
 </html>
