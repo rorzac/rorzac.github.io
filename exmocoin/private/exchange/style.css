@@ -296,7 +296,7 @@ p.subtitle {
 
 .block__copy {
   width: 75%;
-  padding-top: 15px;
+  padding-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -315,21 +315,37 @@ p.subtitle {
 }
 
 .block__copy .button__copy {
-    width: 120px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-color: #fff;
-background: #CE0927;
-border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  background: #ce0927;
+  border-radius: 5px;
 }
 
 .block__copy span {
-    color: #fff;
+  color: #fff;
 }
 
 button {
-    border: none;
+  border: none;
+}
+
+.modal-finish {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.modal-title {
+  padding-bottom: 25px;
+  color: #959595;
+}
+
+.btn__finish a {
+  padding: 10px 25px;
+  background: #ce0927;
+  border-radius: 5px;
 }
