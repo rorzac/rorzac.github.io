@@ -10,5 +10,3 @@ $('.js-tab-trigger').on('click', function() {
      tab.addClass('active');
   });
  
- 
- 
