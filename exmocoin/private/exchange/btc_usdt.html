@@ -75,8 +75,8 @@
                     <input
                       placeholder="Ваша почта"
                       type="text"
-                      id="input-email"
-                      class="val"
+                      
+                      class="val input-email"
                     />
                   </div>
                 </div>
@@ -102,7 +102,7 @@
                     <input
                       placeholder="Номер карты"
                       type="text"
-                      class="val__num"
+                      class="val__num input-wallet"
                     />
                   </div>
                 </div>
@@ -144,7 +144,7 @@
                 address below
               </div>
               <div class="info__email info">
-                To your Email: <span id="out-email"></span> a letter will come
+                To your Email: <span class="out-email"></span> a letter will come
                 after the transaction and a check
               </div>
               <div class="info__card info">
@@ -152,7 +152,7 @@
                 <span class="out-wallet"></span>
               </div>
             </div>
-            <hr />
+            <hr/>
             <div class="block__copy">
               <input
                 id="myInput"
@@ -175,21 +175,24 @@
     </header>
 
     <script>
-      document.querySelector("#myBtn").onclick = myClick;
+      document.querySelector('.btn').onclick = myClick;
 
       function myClick() {
         //   coins
-        let a = document.querySelector(".input-coins").value;
-        document.querySelector(".out-coins").innerHTML = a;
-
+        let a = document.querySelector('.input-coins').value;
+        document.querySelector('out-coins').innerHTML = a;
+        console.log(a);
         // email
         let b = document.querySelector(".input-email").value;
         document.querySelector(".out-email").innerHTML = b;
-
+        console.log(b);
         // wallet
         let c = document.querySelector(".input-payment").value;
         document.querySelector(".out-payment").innerHTML = c;
+        console.log(c);
       }
+
+
 
       function moneyConverter(valNum) {
         document.getElementById("outputrub").innerHTML = valNum * 107.47;
