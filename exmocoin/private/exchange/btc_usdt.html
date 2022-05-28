@@ -132,12 +132,13 @@
                 <div class="info__email info">To your Email: <span>hfhfghfgh@gmail</span> a letter will come after the transaction and a check</div>
                 <div class="info__card info">Funds will be credited to this wallet: <span>454353534</span></div>
             </div>
+            <hr>
             <div class="block__copy">
-                <input type="text" class="coin__val">
-                <div class="button__copy">Copy</div>
+                <input id="myInput" value="gdfgfdgfdgf456" type="text" class="coin__val">
+                <button onclick="myFunction()" class="button__copy">Copy</button>
                 <span>15:00</span>
             </div>
-            <hr>
+            
           </div>
         </div>
       </div>
@@ -165,6 +166,21 @@
       span.onclick = function () {
         modal.style.display = "none";
       };
+
+      function myFunction() {
+            /* Get the text field */
+            var copyText = document.getElementById("myInput");
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(copyText.value);
+
+            /* Alert the copied text */
+
+        }
     </script>
   </body>
 </html>
