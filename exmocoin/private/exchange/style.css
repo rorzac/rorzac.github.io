@@ -24,6 +24,16 @@ a {
   color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
@@ -90,9 +100,10 @@ body {
 .exchange__item {
   display: flex;
   justify-content: center;
+  padding-top: 50px;
 }
 
-.main__block {
+.item__box {
   width: 858px;
   height: 419px;
   background: #262c31;
@@ -102,43 +113,50 @@ body {
 }
 
 h1.title {
+  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
+
+  padding-bottom: 25px;
 }
 
 hr {
-  width: 100%;
-  border: 1px solid #ce0927;
+  border: 0.5px solid #ce0927;
 }
 
 h3.subtitle {
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   text-align: left;
   padding-top: 10px;
+  padding-bottom: 15px;
 }
 
-.block__exchange {
+.main__center-block {
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
-  padding-bottom: 30px;
 }
 
-.title__block {
+.right-menu,
+.left-menu {
+}
+
+.main-coins {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding-bottom: 10px;
+  align-items: center;
+  padding-bottom: 15px;
 }
 
-.crypto__name {
-  padding-left: 10px;
+.main-coins p {
+  padding-left: 7px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -146,128 +164,147 @@ h3.subtitle {
   color: #ffffff;
 }
 
-.left__menu,
-.right__menu {
-  display: block;
-}
-
 .main__input {
   display: flex;
+  justify-content: space-between;
 }
 
-.main__input input {
-  margin-right: 15px;
-  border: none;
-  background: #262c31;
-  border: 1px solid #ce0927;
-  border-radius: 5px;
-  outline: none;
-  color: #fff;
-  padding-left: 7px;
-}
-
-.val {
-  width: 150px;
-  height: 30px;
-
-  border: 1px solid #ce0927;
-  border-radius: 5px;
-}
-
-.val__num {
-  width: 150px;
-  height: 30px;
-  background: #ce0927;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  margin-right: 15px;
-}
-
-.name__val {
+.text-title {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  padding-bottom: 7px;
+
   color: #ffffff;
+  padding-bottom: 7px;
+}
+
+.main__input input {
+  width: 150px;
+  height: 30px;
+  background: #262c31;
+  border: 1px solid #ce0927;
+  border-radius: 3px;
+  color: #fff;
+
+  outline: none;
+  padding-left: 7px;
+}
+
+.value-coins {
+  width: 150px;
+  height: 30px;
+  background: #ce0927;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.bottom-text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
 }
 
 .button {
+  padding-top: 35px;
   display: flex;
   justify-content: center;
-  padding-top: 20px;
 }
 
 .button a {
-  padding: 20px 60px;
+  padding: 20px 50px;
   background: #ce0927;
   border-radius: 5px;
 }
 
-.subtitle__text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  padding-top: 7px;
-  color: #ffffff;
-}
+/* modal */
 
-.popup-box {
+/* Стили для подложки */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
   position: fixed;
-  display: none;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.808);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
 }
 
-.popup-box .popup {
-  position: absolute;
+/* Стили для модальных окон */
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
 }
 
-.popup-box .content {
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
   width: 800px;
   height: 600px;
-  position: relative;
 
   background: #262c31;
   border: 3px solid #262c31;
   border-radius: 20px;
 }
 
-.close {
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  width: 15px;
+  height: 15px;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 20px;
+  fill: rgb(255, 255, 255);
   cursor: pointer;
 }
 
-.content {
-  padding: 25px;
-}
-
-h1.title,
-p.subtitle {
-  width: 80%;
-  text-align: left;
+.modal__item {
+  padding: 15px;
 }
 
 h1.title {
-  padding-top: 10px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 33px;
-
-  color: #ffffff;
+  text-align: left;
 }
 
 p.subtitle {
@@ -275,77 +312,66 @@ p.subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  text-align: left;
   color: #929292;
 }
 
-.main__info {
-  padding-top: 15px;
-  color: #fff;
-  padding-bottom: 15px;
-}
-
-.main__info .info {
-  padding-bottom: 7px;
-}
-
-.main__info span {
-  background: #ce0927;
-  border-radius: 2px;
-  padding: 0.5px;
-}
-
-.block__copy {
-  width: 75%;
+.center-block {
+  text-align: left;
   padding-top: 30px;
+}
+
+.center-block p {
+  padding-top: 5px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
+
+.center-block span {
+  background: #ce0927;
+  padding: 0.5px;
+  border-radius: 2px;
+}
+
+.main-input {
+  width: 75%;
+  padding-top: 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.block__copy input {
+.main-input input {
   width: 351px;
-  height: 40px;
+  height: 51px;
   background: #262c31;
-  border: none;
-  outline: none;
-  border: 2px solid #ce0927;
+  border: 3px solid #d30909;
   border-radius: 5px;
-  color: #fff;
+  outline: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
   padding-left: 7px;
+
+  color: #ffffff;
 }
 
-.block__copy .button__copy {
-  width: 120px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-input button {
+  padding: 15px 40px;
+  background: #ce0927;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
   color: #fff;
-  background: #ce0927;
-  border-radius: 5px;
 }
 
-.block__copy span {
+.text-finish {
+  padding-top: 40px;
   color: #fff;
-}
-
-button {
-  border: none;
-}
-
-.modal-finish {
-  padding-top: 50px;
-  text-align: center;
-}
-
-.modal-title {
-  padding-bottom: 25px;
-  color: #959595;
-}
-
-.btn__finish a {
-  padding: 10px 25px;
-  background: #ce0927;
-  border-radius: 5px;
 }

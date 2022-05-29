@@ -43,178 +43,145 @@
             <a class="header__btn" href="#"> Exit </a>
           </div>
         </div>
+
         <div class="exchange__item">
-          <div class="main__block">
-            <h1 class="title">Обмен Privat 24 UAH на Visa/MasterCard UAH</h1>
+          <div class="item__box">
+            <h1 class="title">Exchange Privat 24 UAH to Visa/MasterCard UAH</h1>
             <hr />
             <h3 class="subtitle">
-              Обмен производится в автоматическом режиме и занимает от 5 до 30
-              минут
+              The exchange is carried out automatically and takes from 5 to 30
+              minutes
             </h3>
-            <div class="block__exchange">
-              <div class="from">
-                <div class="title__block">
-                  <img src="images/btc.png" alt="" class="crypto" />
-                  <div class="crypto__name">Bitcoin (BTC)</div>
+            <div class="main__center-block">
+              <div class="left-menu">
+                <div class="main-coins">
+                  <img src="images/btc.png" alt="" class="coins-img" />
+                  <p class="name-coins">Bitcoin</p>
                 </div>
                 <div class="main__input">
-                  <div class="left__menu">
-                    <div class="name__val">Отдаете</div>
+                  <div class="main__input-left">
+                    <div class="text-title">Отдаете</div>
                     <input
-                      placeholder="500"
-                      id="input-id"
+                      class="coins"
+                      id="input-coins"
                       oninput="moneyConverter(this.value)"
                       type="text"
                       onchange="moneyConverter(this.value)"
-                      class="val input-coins"
+                      placeholder="500"
                     />
                   </div>
-
-                  <div class="right__menu">
-                    <div class="name__val">Ваша почта</div>
+                  <div class="main__input-right">
+                    <div class="text-title">Ваша почта</div>
                     <input
-                      placeholder="Ваша почта"
-                      type="text"
-                      
-                      class="val input-email"
+                      type="email"
+                      class="email"
+                      id="input-email"
+                      placeholder="Your email"
                     />
                   </div>
                 </div>
-                <div class="subtitle__text">
-                  <p>
-                    Минимальная сумма обмена: 150.00 UAH <br />
-                    Максимальная сумма обмена: 185505.60 UAH
-                  </p>
+                <div class="bottom-text">
+                  <p>Минимальная сумма обмена: 150.00 UAH</p>
+                  <p>Максимальная сумма обмена: 185505.60 UAH</p>
                 </div>
               </div>
-              <div class="to">
-                <div class="title__block">
-                  <img src="images/btc.png" alt="" class="crypto" />
-                  <div class="crypto__name">Bitcoin (BTC)</div>
+              <div class="right-menu">
+                <div class="main-coins">
+                  <img src="images/btc.png" alt="" class="coins-img" />
+                  <p class="name-coins">Bitcoin</p>
                 </div>
                 <div class="main__input">
-                  <div class="left__menu">
-                    <div class="name__val">Получаете</div>
-                    <div class="val__num" id="outputrub">0</div>
+                  <div class="main__input-left">
+                    <div id="out" class="text-title">Получаете</div>
+                    <span id="out-coin" class="value-coins"> 0 </span>
                   </div>
-                  <div class="right__menu">
-                    <div class="name__val">Номер карты</div>
+                  <div class="main__input-right">
+                    <div class="text-title">Ваша карта</div>
                     <input
-                      placeholder="Номер карты"
-                      type="text"
-                      class="val__num input-wallet"
+                      type="email"
+                      class="email"
+                      id="input-wallet"
+                      placeholder="Your wallet"
                     />
                   </div>
                 </div>
-                <div class="subtitle__text">
-                  <p>
-                    Резерв: 199638.75186398 USDT <br />
-                    Курс обмена: 29.2549 UAH 1 USDT
-                  </p>
+                <div class="bottom-text">
+                  <p>Резерв: 199638.75186398 USDT</p>
+                  <p>Курс обмена: 29.2549 UAH 1 USDT</p>
                 </div>
               </div>
             </div>
             <hr />
             <div class="button">
-              <a id="myBtn" href="#" class="btn">Exchange</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="popup-box" id="myModal">
-        <div class="popup">
-          <div class="content">
-            <img src="images/close.svg" alt="" id="close" class="close" />
-
-            <h1 class="title">
-              If the payment does not go through, then turn off the VPN or try
-              to make payment in another browser.
-            </h1>
-            <p class="subtitle">
-              After receiving network confirmations, the system will find your
-              payment and the application will be sent to processing. If during
-              the life of the application, the transfer did not have time to
-              reach, you can extend the search for the transaction by clicking
-              on relevant emerging button.
-            </p>
-            <div class="main__info">
-              <div class="info__coin info">
-                You must send: <span class="out-coins"></span> Atom at the
-                address below
-              </div>
-              <div class="info__email info">
-                To your Email: <span class="out-email"></span> a letter will come
-                after the transaction and a check
-              </div>
-              <div class="info__card info">
-                Funds will be credited to this wallet:
-                <span class="out-wallet"></span>
-              </div>
-            </div>
-            <hr/>
-            <div class="block__copy">
-              <input
-                id="myInput"
-                value="gdfgfdgfdgf456"
-                type="text"
-                class="coin__val"
-              />
-              <button onclick="myFunction()" class="button__copy">Copy</button>
-              <span>15:00</span>
-            </div>
-            <div class="modal-finish">
-              <div class="modal-title">If you finish payment click payment</div>
-              <div class="btn__finish">
-                <a id="close" href="order.php" class="md__btn">Payment</a>
-              </div>
+              <a href="#" class="js-open-modal btn" data-modal="1">Exchange</a>
             </div>
           </div>
         </div>
       </div>
     </header>
 
+    <div class="modal" data-modal="1">
+      <!--   Svg иконка для закрытия окна  -->
+      <svg
+        class="modal__cross js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
+      </svg>
+      <div class="modal__item">
+        <h1 class="title">
+          If the payment does not go through, then turn off the VPN or try to
+          make payment in another browser.
+        </h1>
+        <p class="subtitle">
+          After receiving network confirmations, the system will find your
+          payment and the application will be sent to processing. If during the
+          life of the application, the transfer did not have time to reach, you
+          can extend the search for the transaction by clicking on relevant
+          emerging button.
+        </p>
+        <div class="center-block">
+          <p class="text-info">
+            You must send: <span id="out-coins"> </span> Atom at the address
+            below
+          </p>
+          <p class="text-info">
+            To your Email: <span id="out-email"> </span> a letter will come
+            after the transaction and a check
+          </p>
+          <p class="text-info">
+            Funds will be credited to this wallet:
+            <span id="out-wallet"> </span>
+          </p>
+        </div>
+        <div class="main-input">
+          <input id="myInput" type="text" value="sfdfdsfsfd5" />
+          <button onclick="myFunction()" class="copy">Copy</button>
+        </div>
+        <div class="text-finish">If you finish payment exit</div>
+      </div>
+    </div>
+
     <script>
-      document.querySelector('.btn').onclick = myClick;
+      document.querySelector(".btn").onclick = myClick;
 
       function myClick() {
-        //   coins
-        let a = document.querySelector('.input-coins').value;
-        document.querySelector('out-coins').innerHTML = a;
-        console.log(a);
-        // email
-        let b = document.querySelector(".input-email").value;
-        document.querySelector(".out-email").innerHTML = b;
-        console.log(b);
-        // wallet
-        let c = document.querySelector(".input-payment").value;
-        document.querySelector(".out-payment").innerHTML = c;
-        console.log(c);
+        let coins = document.querySelector("#input-coins").value;
+        document.querySelector("#out-coins").innerHTML = coins;
+
+        let email = document.querySelector("#input-email").value;
+        document.querySelector("#out-email").innerHTML = email;
+
+        let wallet = document.querySelector("#input-wallet").value;
+        document.querySelector("#out-wallet").innerHTML = wallet;
       }
-
-
 
       function moneyConverter(valNum) {
-        document.getElementById("outputrub").innerHTML = valNum * 107.47;
+        document.getElementById("out-coin").innerHTML = valNum * 107.47;
       }
-
-      var modal = document.getElementById("myModal");
-
-      // Get the button that opens the modal
-      let btn = document.getElementById("myBtn");
-
-      // Get the <span> element that closes the modal
-      let span = document.getElementsByClassName("close")[0];
-
-      // When the user clicks the button, open the modal
-      btn.onclick = function () {
-        modal.style.display = "block";
-      };
-
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
 
       function myFunction() {
         /* Get the text field */
@@ -229,6 +196,93 @@
 
         /* Alert the copied text */
       }
+
+      !(function (e) {
+        "function" != typeof e.matches &&
+          (e.matches =
+            e.msMatchesSelector ||
+            e.mozMatchesSelector ||
+            e.webkitMatchesSelector ||
+            function (e) {
+              for (
+                var t = this,
+                  o = (t.document || t.ownerDocument).querySelectorAll(e),
+                  n = 0;
+                o[n] && o[n] !== t;
+
+              )
+                ++n;
+              return Boolean(o[n]);
+            }),
+          "function" != typeof e.closest &&
+            (e.closest = function (e) {
+              for (var t = this; t && 1 === t.nodeType; ) {
+                if (t.matches(e)) return t;
+                t = t.parentNode;
+              }
+              return null;
+            });
+      })(window.Element.prototype);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        /* Записываем в переменные массив элементов-кнопок и подложку.
+      Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+        var modalButtons = document.querySelectorAll(".js-open-modal"),
+          overlay = document.querySelector(".js-overlay-modal"),
+          closeButtons = document.querySelectorAll(".js-modal-close");
+
+        /* Перебираем массив кнопок */
+        modalButtons.forEach(function (item) {
+          /* Назначаем каждой кнопке обработчик клика */
+          item.addEventListener("click", function (e) {
+            /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+            Нужно подстраховаться. */
+            e.preventDefault();
+
+            /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+            и будем искать модальное окно с таким же атрибутом. */
+            var modalId = this.getAttribute("data-modal"),
+              modalElem = document.querySelector(
+                '.modal[data-modal="' + modalId + '"]'
+              );
+
+            /* После того как нашли нужное модальное окно, добавим классы
+            подложке и окну чтобы показать их. */
+            modalElem.classList.add("active");
+            overlay.classList.add("active");
+          }); // end click
+        }); // end foreach
+
+        closeButtons.forEach(function (item) {
+          item.addEventListener("click", function (e) {
+            var parentModal = this.closest(".modal");
+
+            parentModal.classList.remove("active");
+            overlay.classList.remove("active");
+          });
+        }); // end foreach
+
+        document.body.addEventListener(
+          "keyup",
+          function (e) {
+            var key = e.keyCode;
+
+            if (key == 27) {
+              document
+                .querySelector(".modal.active")
+                .classList.remove("active");
+              document.querySelector(".overlay").classList.remove("active");
+            }
+          },
+          false
+        );
+
+        overlay.addEventListener("click", function () {
+          document.querySelector(".modal.active").classList.remove("active");
+          this.classList.remove("active");
+        });
+      }); // end ready
     </script>
   </body>
 </html>
