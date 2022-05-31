@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!$_SESSION['user']) {
+    header('Location: /');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,7 +47,7 @@
             </ul>
           </nav>
           <div class="header__control">
-            <a class="header__btn" href="#"> Exit </a>
+            <a class="header__btn" href="../php/logout.php"> Exit </a>
           </div>
         </div>
         <div class="exchange__item">

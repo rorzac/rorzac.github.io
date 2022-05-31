@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if ($_SESSION['user']) {
+        header('Location: private/exchange.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/normalize.css" />
-    <link rel="stylesheet" href="style/login.css" />
+    <link rel="stylesheet" href="style/register.css" />
     <link rel="stylesheet" href="fonts/fonts.css" />
     <title>Document</title>
   </head>
@@ -55,19 +62,29 @@
               </div>
             </div>
             <div class="rg__title">
-              <span>Login</span> or <a href="#">Register</a>
+              <a href="#">Login</a> or <span>Register</span>
             </div>
-            <div class="main__input">
-              <div class="text__input">Email</div>
-              <input type="email" class="form__input" />
-            </div>
-            <div class="main__input">
-              <div class="text__input">Password</div>
-              <input type="password" class="form__input" />
-            </div>
-            <div class="main__btn">
-              <button>Login</button>
-            </div>
+            <form action="php/signup.php" method="post" enctype="multipart/form-data">
+        <label>ФИО</label>
+        <input type="text" name="full_name" placeholder="Введите свое полное имя">
+        <label>Логин</label>
+        <input type="text" name="login" placeholder="Введите свой логин">
+        <label>Почта</label>
+        <input type="email" name="email" placeholder="Введите адрес своей почты">
+        <label>Изображение профиля</label>
+        <input type="file" name="avatar">
+        <label>Пароль</label>
+        <input type="password" name="password" placeholder="Введите пароль">
+        <label>Подтверждение пароля</label>
+        <input type="password" name="password_confirm" placeholder="Подтвердите пароль">
+        <button type="submit">Войти</button>
+
+        <?php
+            if ($_SESSION['message']) {
+                echo '<p class="msg"> ' . $_SESSION['message'] . ' </p>';
+            }
+            unset($_SESSION['message']);
+        ?>
           </div>
         </div>
       </div>

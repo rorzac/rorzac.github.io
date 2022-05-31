@@ -450,3 +450,11 @@ background-image: url('../images/choosedollar.png');
   line-height: 24px;
   color: #FFFFFF;
 }
+
+.msg {
+  border: 2px solid #ffa908;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}

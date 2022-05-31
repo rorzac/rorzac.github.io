@@ -37,7 +37,7 @@
             </ul>
           </nav>
           <div class="header__control">
-            <a class="header__btn" href="#"> Authorization </a>
+            <a class="header__btn" href="register.php"> Authorization </a>
           </div>
         </div>
         <div class="header__content">
