@@ -78,12 +78,19 @@ body {
 
 .register__form {
   padding: 15px 25px;
-  margin-top: 50px;
+  margin-bottom: 25px;
   background: #262c31;
   border: 3px solid #ce0927;
   border-radius: 10px;
   width: 516px;
-  height: 417px;
+  min-height: 417px;
+}
+
+.file {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 
 .rg__top {
