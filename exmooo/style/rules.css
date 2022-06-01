@@ -152,3 +152,65 @@ body {
 .text {
     padding-top: 12px;
 }
+
+
+.burger {
+display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+.navmenu {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px){
+  body {
+    overflow-x: hidden;
+  }
+  .header__control {
+    display: none;
+  }
+ .menu {
+   display: none;
+ }
+
+ .burger {
+   display: block;
+   cursor: pointer;
+ }
+ .header__top {
+   margin: 0 20px;
+ }
+
+ .navmenu {
+   position: absolute;
+   right: 0;
+   height: 100%;
+   background: red;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 50%;
+   
+  
+ }
+
+ #panel {
+   display: none;
+ }
+
+}
+
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  
+}
