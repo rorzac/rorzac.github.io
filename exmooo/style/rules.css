@@ -206,13 +206,26 @@ display: none;
 
  }
 
- .menu-link ul {
-   
+
+ .main-link {
+
+ }
+
+ .main-link {
+  background: red;
+  padding: 10px 50px;
+  margin: 10px 0;
+  width: 100%;
+
+ }
+
+ .main-link a {
+
  }
 
  .menu-link li{
    background: red;
-   padding: 10px 0;
+   padding: 10px;
    margin: 10px 0;
  }
 
