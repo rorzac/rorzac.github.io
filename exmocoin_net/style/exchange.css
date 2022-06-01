@@ -91,6 +91,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .main__block {
@@ -179,8 +180,6 @@ a {
 
   .main__block {
     width: 100%;
-  }
-  .header__top {
   }
 
   .exchange__item {

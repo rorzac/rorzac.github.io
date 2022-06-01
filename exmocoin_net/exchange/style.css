@@ -1,0 +1,535 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/headerbackfon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__top {
+  padding: 25px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item {
+  margin-left: 40px;
+}
+
+.menu__list-link {
+  padding: 4px 2px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffffff;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.menu__list-link:hover {
+  border-bottom: 3px solid #e4e182;
+}
+
+.header__btn {
+  padding: 13px 21px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #ce0927;
+  border-radius: 5px;
+}
+
+.header__btn:hover {
+  background-color: #f8072b;
+}
+
+.exchange__item {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.item__box {
+  width: 858px;
+  height: 419px;
+  background: #262c31;
+  border: 3px solid #ce0927;
+  border-radius: 20px;
+  padding: 25px 40px;
+}
+
+h1.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+
+  padding-bottom: 25px;
+}
+
+hr {
+  border: 0.5px solid #ce0927;
+}
+
+h3.subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.main__center-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-menu,
+.left-menu {
+}
+
+.main-coins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.main-coins p {
+  padding-left: 7px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.main__input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #ffffff;
+  padding-bottom: 7px;
+}
+
+.main__input input {
+  width: 150px;
+  height: 30px;
+  background: #262c31;
+  border: 1px solid #ce0927;
+  border-radius: 3px;
+  color: #fff;
+
+  outline: none;
+  padding-left: 7px;
+}
+
+.value-coins {
+  width: 150px;
+  height: 30px;
+  background: #ce0927;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.bottom-text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.button {
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.button a {
+  padding: 20px 50px;
+  background: #ce0927;
+  border-radius: 5px;
+}
+
+/* modal */
+
+/* Стили для подложки */
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+
+  /*  Установаем ширину окна  */
+  width: 100%;
+
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 800px;
+  height: 600px;
+
+  background: #262c31;
+  border: 3px solid #262c31;
+  border-radius: 20px;
+}
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.modal__item {
+  padding: 15px;
+}
+
+h1.title {
+  text-align: left;
+}
+
+p.subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #929292;
+}
+
+.center-block {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.center-block p {
+  padding-top: 5px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
+
+.center-block span {
+  background: #ce0927;
+  padding: 0.5px;
+  border-radius: 2px;
+}
+
+.main-input {
+  width: 75%;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-input input {
+  width: 351px;
+  height: 51px;
+  background: #262c31;
+  border: 3px solid #d30909;
+  border-radius: 5px;
+  outline: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 7px;
+
+  color: #ffffff;
+}
+
+.main-input button {
+  padding: 15px 40px;
+  background: #ce0927;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.text-finish {
+  padding-top: 40px;
+  color: #fff;
+}
+
+
+
+
+.burger {
+  display: none;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+  
+  .navmenu {
+    display: none;
+  }
+  
+  
+  @media screen and (max-width: 768px){
+
+    .header__control {
+      display: none;
+    }
+   .menu {
+     display: none;
+   }
+  
+   .burger {
+     display: block;
+     cursor: pointer;
+   }
+   .header__top {
+     margin: 0 20px;
+   }
+  
+   .navmenu {
+     position: absolute;
+     top: 70px;
+     right: 0;
+     height: 50%;
+     background: #262C31;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 70%;
+   }
+  
+   .nav-menu {
+  
+   }
+  
+  
+   .main-link {
+  
+   }
+  
+   .main-link {
+    background: red;
+    padding: 10px 50px;
+    margin: 10px 0;
+    width: 100%;
+  
+   }
+  
+   .main-link a {
+  
+   }
+  
+   .menu-link li{
+     background: red;
+     padding: 10px;
+     margin: 10px 0;
+   }
+  
+   .menu-link li a {
+     width: 100%;
+     height: 155px;
+   }
+  
+   #panel {
+     display: none;
+   }
+
+
+
+
+   .item__box {
+     width: 100%;
+     min-height: 800px;
+   }
+
+   h1.title {
+     text-align: center;
+     padding-bottom: 10px;
+   }
+
+   h3.subtitle {
+     font-size: 12px;
+     text-align: center;
+   }
+
+   .main__center-block {
+     display: block;
+   }
+
+   .main__input {
+     display: block;
+   }
+
+   .main__input input{
+     width: 100%;
+   }
+
+   .text-title {
+     padding-top: 12px;
+   }
+
+   .exchange__item {
+     padding-top: 0;
+   }
+
+   .main-coins {
+     padding-bottom: 0;
+   }
+
+   .value-coins {
+     width: 100%;
+   }
+
+
+   .modal {
+     width: 100%;
+     height: 800px;
+   }
+
+   .main-input {
+     width: 100%;
+   }
+
+   .main-input button {
+    margin-left: 10px
+   }
+
+   .center-block {
+    text-align: center;
+   }
+  
+  }
+  
+  
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    
+  }
