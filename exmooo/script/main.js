@@ -60,15 +60,8 @@ boxes.forEach((box) => {
   });
    
 
-const navSlide = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.navmenu');
-
-  burger.addEventListener('click',()=>{
-    nav.classList.toggle('.navactive');
+  $(document).ready(function () {
+    $("#flip").click(function () {
+      $("#panel").slideToggle("slow");
+    });
   });
-
-
-}
-
-navSlide();
