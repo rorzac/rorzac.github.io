@@ -191,15 +191,34 @@ display: none;
 
  .navmenu {
    position: absolute;
+   top: 70px;
    right: 0;
    height: 100%;
-   background: red;
+   background: #262C31;
+   border-radius: 10px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 50%;
+   width: 70%;
+ }
+
+ .nav-menu {
+
+ }
+
+ .menu-link ul {
    
-  
+ }
+
+ .menu-link li{
+   background: red;
+   padding: 10px 0;
+   margin: 10px 0;
+ }
+
+ .menu-link li a {
+   width: 100%;
+   height: 155px;
  }
 
  #panel {
