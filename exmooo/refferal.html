@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/refferal.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__logo" href="index.html">
+            <img
+              class="header__logo-img"
+              src="images/exmologo.svg"
+              alt="logo"
+            />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="index.html"> Main </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="order.html"> Order </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="refferal.html"> Refferal </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="rules.html"> Exchange rules </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__control">
+            <a class="header__btn" href="contact.php"> Contact </a>
+          </div>
+        </div>
+        <div class="refferal__item">
+          <div class="main-box">
+            <div class="invite-link box">
+              <h1 class="title">Реферальная программа</h1>
+              <p class="subtitle">
+                Зарабатывайте с нами. Как? Расскажите о нас, делитесь Вашей
+                индивидуальной ссылкой с друзьями, знакомыми, размещайте наш
+                рекламный материал на Ваших сайтах, и получайте проценты с
+                обменных операций приведённых пользователей.
+              </p>
+              <div class="block-link">
+                <input
+                  id="myInput"
+                  value="exmocoin.net/ref=3e64ccfa-3cce.html"
+                  type="text"
+                  class="copy-link"
+                />
+                <div class="btn-copy">
+                  <img onclick="myFunction()" src="images/copy.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="without box">
+              <h1 class="title">Вывести вознаграждение:</h1>
+              <div class="main-input">
+                <div class="wallet">crypto, uah, rub</div>
+                <br />
+                <input placeholder="Your wallet" type="text" class="wallet" />
+              </div>
+              <div class="main-btn">
+                <a href="" class="btn">Вывод</a>
+              </div>
+              <div class="text-finish">
+                Доступно для вывода: <br />
+                0 RUR / 0 USD / 0 BTC
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="script/exchange.js"></script>
+  </body>
+</html>
