@@ -71,6 +71,7 @@
  
         </div>
 
+        <!-- Валютные пары -->
         <div class="exchange__item">
           <div class="item__box">
             <h1 class="title">Exchange Bitcoin to USDT</h1>
@@ -107,11 +108,13 @@
                     />
                   </div>
                 </div>
+                <!-- Поставить min/max -->
                 <div class="bottom-text">
                   <p>Minimum exchange amount: 0.0010 btc</p>
                   <p>Maximum exchange amount: 0.5 btc</p>
                 </div>
               </div>
+              <!-- Сменить монету -->
               <div class="right-menu">
                 <div class="main-coins">
                   <img src="images/btc.png" alt="" class="coins-img" />
@@ -132,6 +135,7 @@
                     />
                   </div>
                 </div>
+                <!-- Сменить резерв -->
                 <div class="bottom-text">
                   <p>Reserve: 34.6435 BTC</p>
                 </div>
@@ -169,6 +173,7 @@
           can extend the search for the transaction by clicking on relevant
           emerging button.
         </p>
+        <!-- Сменить название монеты -->
         <div class="center-block">
           <p class="text-info">
             You must send: <span id="out-coins"> </span> Atom at the address
@@ -183,6 +188,7 @@
             <span id="out-wallet"> </span>
           </p>
         </div>
+        <!-- Поставить кошелек -->
         <div class="main-input">
           <input id="myInput" type="text" value="sfdfdsfsfd5" />
           <button onclick="myFunction()" class="copy">Copy</button>
@@ -210,6 +216,8 @@
         let wallet = document.querySelector("#input-wallet").value;
         document.querySelector("#out-wallet").innerHTML = wallet;
       }
+
+      // Поставить значения
 
       function moneyConverter(valNum) {
         document.getElementById("out-coin").innerHTML = valNum * btc_usd;
