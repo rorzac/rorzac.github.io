@@ -18,52 +18,48 @@ let trx_uah = 2.53;
 let trx_rub = 5.34;
 let trx_eur = 0.08;
 
-let xrp_usd = 
-let xrp_uah =
-let xrp_rub =
-let xrp_eur = 
+let xrp_usd = 0.40;
+let xrp_uah = 11.76;
+let xrp_rub = 24.83;
+let xrp_eur = 0.37;
 
-let zcash_usd = 
-let zcash_uah =
-let zcash_rub =
-let zcash_eur = 
+let zcash_usd = 90.29;
+let zcash_uah = 2669.84;
+let zcash_rub = 5637.69;
+let zcash_eur = 84.33;
 
-let ada_usd = 
-let ada_uah =
-let ada_rub =
-let ada_eur = 
+let ada_usd = 0.58;
+let ada_uah = 17.00;
+let ada_rub = 36.09;
+let ada_eur = 0.54;
 
-let ltc_usd = 
-let ltc_uah =
-let ltc_rub =
-let ltc_eur = 
+let ltc_usd = 63.58;
+let ltc_uah = 1877.80;
+let ltc_rub = 3974.29;
+let ltc_eur = 59.49;
 
-let bnb_usd = 
-let bnb_uah =
-let bnb_rub =
-let bnb_eur = 
+let bnb_usd = 305.03;
+let bnb_uah = 9013.08;
+let bnb_rub = 19084.70;
+let bnb_eur = 285.16;
 
-let polygon_usd = 
-let polygon_uah =
-let polygon_rub =
-let polygon_eur = 
+let polygon_usd = 0.61;
+let polygon_uah = 17.90;
+let polygon_rub = 37.92;
+let polygon_eur = 0.57;
 
-let sol_usd = 
-let sol_uah =
-let sol_rub =
-let sol_eur = 
+let sol_usd = 40.64;
+let sol_uah = 1201.64;
+let sol_rub = 2543.37;
+let sol_eur = 38.03;
 
-let sol_usd = 
-let sol_uah =
-let sol_rub =
-let sol_eur = 
 
-let atom_usd = 
-let atom_uah =
-let atom_rub =
-let atom_eur = 
+let atom_usd = 9.44;
+let atom_uah = 278.66;
+let atom_rub = 590.95;
+let atom_eur = 8.83;
 
 let usdt_usd = 1;
-let usdt_uah = 36;
-let usdt_rub = 68;
-let usdt_eur = 0.8;
+let usdt_uah = 29.48;
+let usdt_rub = 62.51;
+let usdt_eur = 0.93;
