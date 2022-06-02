@@ -64,7 +64,7 @@ body {
 }
 
 .container {
-  max-width: 1120px;
+  max-width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -112,11 +112,18 @@ body {
 }
 
 .header__content {
-  padding-top: 74px;
+ 
+ 
+}
+
+.header__content-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__content {
-  position: relative;
+  /* position: relative; */
 }
 
 .header__title {
@@ -156,11 +163,11 @@ body {
   background-color: #f8072b;
 }
 
-.header__content-img {
-  position: absolute;
+/* .header__content-img { */
+  /* position: absolute;
   right: -49px;
   bottom: -189px;
-}
+} */
 
 /* Тут начинается вторая секция рефка (Главное меню) */
 
@@ -227,7 +234,7 @@ body {
 
 .choose__inner{
     padding: 129px 0 109px;
-    position: relative;
+    
 }
 
 .choose__title{
@@ -244,6 +251,11 @@ body {
     color: #959595;
     margin-bottom: 48px;
     width: 469px;
+}
+
+.choose__inner{
+  display: flex;
+  justify-content: space-between;
 }
 
 .choose__info-item{
@@ -290,9 +302,7 @@ background-image: url('../images/choosedollar.png');
 }
 
 .choose__ikon{
-    position: absolute;
-    right: -22px;
-    bottom: 225px;
+  
 }
 
 /* начало faq */
@@ -451,3 +461,244 @@ background-image: url('../images/choosedollar.png');
   color: #FFFFFF;
 }
 
+.burger {
+  display: none;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+  
+  .navmenu {
+    display: none;
+  }
+  
+
+
+
+@media (max-width:1024px){
+  .header__content-inner {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choose__inner{
+  display: block;
+}
+
+
+
+
+}
+
+ 
+
+ @media (max-width:768px){
+   .menu{
+     display: none;
+
+   }
+
+   .header__btn{
+     display: none;
+   }
+
+   .header__title{
+    width: 100%;
+    text-align: center;
+    font-size: 33px;
+    line-height: 45px;
+   }
+
+   .header__text{
+    width: 100%;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+   }
+
+   .button__wrapper{
+    display: flex;	
+    justify-content: center;
+   }
+
+   .button{
+    padding: 16px 81px;
+    font-size: 14px;
+    line-height: 20px;
+   }
+
+
+   .ref__inner .title {
+    font-size: 25px;
+    line-height: 42px;
+   }
+
+   .ref__inner .text{
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 50px;
+   }
+
+
+   .btn a{
+    padding: 20px 56px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.choose__title{
+  font-size: 33px;
+  line-height: 55px;
+  text-align: center;
+  margin-bottom: 20px
+}
+  
+
+.choose__text{
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.choose__info-item{
+  width: 100%;
+}
+
+
+.title__about{
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.about__text{
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+}
+
+.container-accordion .box .label{
+  margin-top: 50px;
+  width: 100%;
+  font-size: 13px;
+}
+
+
+
+}
+  
+
+@media screen and (max-width: 768px){
+  body {
+    overflow-x: hidden;
+  }
+  .header__control {
+    display: none;
+  }
+ .menu {
+   display: none;
+ }
+
+ .burger {
+   display: block;
+   cursor: pointer;
+ }
+ .header__top {
+   margin: 0 20px;
+ }
+
+ .navmenu {
+   position: absolute;
+   top: 70px;
+   right: 0;
+   height: 55%;
+   background: #262C31;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 55%;
+   z-index: 999;
+ }
+
+ .nav-menu {
+
+ }
+
+
+ .main-link {
+
+ }
+
+ .main-link {
+  background: red;
+  padding: 10px 50px;
+  margin: 10px 0;
+  width: 100%;
+
+ }
+
+ .main-link a {
+
+ }
+
+ .menu-link li{
+   background: red;
+   padding: 10px;
+   margin: 10px 0;
+ }
+
+ .menu-link li a {
+   width: 100%;
+   height: 155px;
+ }
+
+ #panel {
+   display: none;
+ }
+
+ .footer-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.footer__logo-text {
+width: 100%;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.footer__menu-title{
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer__list{
+text-align: center;
+}
+
+.footer__copy-link{
+width: 100%;
+}
+
+}
+
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  
+}
+
+ 

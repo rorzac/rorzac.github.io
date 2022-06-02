@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сompetition</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <title>ExmoCoin - Сompetition</title>
     <link rel="stylesheet" href="style/competition.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
+            
             <div class="header__top">
                 <a class="header__logo" href="index.html">
                   <img
@@ -32,92 +34,142 @@
                       <a class="menu__list-link" href="refferal.html"> Refferal </a>
                     </li>
                     <li class="menu__list-item">
-                      <a class="menu__list-link" href="rules.html"> Exchange rules </a>
+                      <a class="menu__list-link" href="rules.html">
+                        Exchange rules
+                      </a>
                     </li>
                   </ul>
                 </nav>
                 <div class="header__control">
                   <a class="header__btn" href="contact.php"> Contact </a>
                 </div>
+                <div class="burger" id="flip">
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+                </div>
               </div>
+              <div class="navmenu" id="panel">
+               
+                  <div class="main-link">
+                    <a href="index.html">Main</a>
+                  </div>
+                  <div class="main-link">
+                    <a href="order.html">Order</a>
+                  </div>
+                  <div class="main-link">
+                    <a href="refferal.html">Refferal</a>
+                  </div>
+                  <div class="main-link">
+                    <a href="rules.html">Exchange rules</a>
+                  </div>
+                  <div class="main-link">
+                    <a href="contact.html">Contact</a>
+                  </div>
+                  <div class="main-link">
+                    <a href="exchange.html">Exchange</a>
+                  </div>
+       
+              </div>
+              
 
 
-
-            <section class="competition">
+            <div class="header__content">
                 <div class="container">
-                    <h2 class="competition__title">Конкурс от EXMOCOIN.NET</h2>
-                    <div class="competiteon__inner">
-                        <div class="competiteon__info">
-                            <h3 class="competiteon-bank competiteon-bank--design">
-                                Банк конкурса
-                                <span>4 BNB</span>
-                            </h3>
+                    <h2 class="competition__title">
+                        Конкурс от EXMOCOIN.NET
+                    </h2>
+                    <div class="competition-info__items">
+                        <div class="competition-info__item expertise__item--design">
+
+                            <p class="competition-info__text">Банк конкурса <span>4 BNB</span></p>
                         </div>
-                        <div class="time-count">
-                            <h2 class="time-count__title">До конца конкурса осталось:</h2>
-                            <div class="time-count__content">
-                                <div class="time-count__item time-count__days">
-                                    <div class="time-count__val">00</div>
-                                    <span class="time-count__text">дней</span>
-                                </div>
-                                <div class="time-count__sepparater">:</div>
-                                <div class="time-count__item time-count__hours">
-                                    <div class="time-count__val">00</div>
-                                    <span class="time-count__text">часов</span>
-                                </div>
-                                <div class="time-count__sepparater">:</div>
-                                <div class="time-count__item time-count__minutes">
-                                    <div class="time-count__val">00</div>
-                                    <span class="time-count__text">минут</span>
-                                </div>
-                                <div class="time-count__sepparater">:</div>
-                                <div class="time-count__item time-count__seconds">
-                                    <div class="time-count__val">00</div>
-                                    <span class="time-count__text">секунд</span>
+
+                        <div class="competition-info__item">
+                            <img class="competition-line__img" src="images/linecomp.png" alt="">
+                        </div>
+
+                        <div class="competition-ifno__item .expertise__item--dev">
+
+                            <div class="time-count">
+                                <h2 class="time-count__title">До конца конкурса осталось</h2>
+                                <div class="time-count__content">
+                                    <img class="time-img" src="images/comptime.png" alt="">
+                                    <div class="time-count__item time-count__days">
+                                        <div class="time-count__val">00</div>
+                                        <span class="time-count__text">дней</span>
+                                    </div>
+                                    <div class="time-count__separator">:</div>
+                                    <div class="time-count__item time-count__hours">
+                                        <div class="time-count__val">00</div>
+                                        <span class="time-count__text">часов</span>
+                                    </div>
+                                    <div class="time-count__separator">:</div>
+                                    <div class="time-count__item time-count__minutes">
+                                        <div class="time-count__val">00</div>
+                                        <span class="time-count__text">минут</span>
+                                    </div>
+                                    <div class="time-count__separator">:</div>
+                                    <div class="time-count__item time-count__seconds">
+                                        <div class="time-count__val">00</div>
+                                        <span class="time-count__text">секунд</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+    </header>
 
+      <section class="participation">
+        <div class="container">
+            <div class="participation__inner">
+                <div class="participation__item">
+                    <h4 class="participation__title">
+                        Для участия вам нужно:
+                    </h4>
 
-            <section class="participation">
-                <div class="container">
-                    <div class="participation__inner">
-                        <h4 class="participation__title">
-                            Для участия Вам нужно:
-                        </h4>
-                        <ul class="participation__list">
-                            <li class="participation__list-item">
-                                <img class="participation-ikon" src="images/partikon.svg" alt="">
-                                <a class="participation__list-link" href="#">
-                                    Благополучно завершить обмен
-                                </a>
-                            </li>
-                            <li class="participation__list-item">
-                                <img class="participation-ikon" src="images/partikon.svg" alt="">
-                                <a class="participation__list-link" href="#">
-                                    Подписаться на телеграмм канал @exmocoin_net
-                                </a>
-                            </li>
-                            <li class="participation__list-item">
-                                <img class="participation-ikon" src="images/partikon.svg" alt="">
-                                <a class="participation__list-link" href="#">
-                                    Проверить результаты розыгрыша можно будет в 18:00 в нашем телеграмм канале
-                                    @exmocoin_net
-                                </a>
-                            </li>
-                        </ul>
-                       <p class="participation__text">
-                        Участвуй и побеждай! Желаем удачи!
-                       </p>
+                    <div class="participation__text  partification--img">
+                        <p>Благополучно завершить обмен</p>
                     </div>
-                   
-                </div>
-            </section>
 
-            <script src="script/main.js"></script>
+                    <div class="participation__text partification--img">
+                        <p>Подписаться на телеграмм канал <span>@exmocoin_net</span></p>
+                    </div>
+
+                    <div class="participation__text partification--img">
+                        <p>Проверить результаты розыгрыша можно будет в 18:00 в нашем телеграмм канале
+                            <span>@exmocoin_net</span>
+                        </p>
+                    </div>
+                    <h6 class="participation__sub">
+                        Участвуй и побеждай! Желаем удачи!
+                    </h6>
+
+                </div>
+                
+                <div class="participation__item">
+                    <img class="participation-img" src="images/partbg.png" alt="">
+                </div>
+
+            </div>
+    </section>  
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+    
+
+
 </body>
 
 </html>

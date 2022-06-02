@@ -1,233 +1,554 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
+
+
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *::after,
-  *::before {
-    box-sizing: inherit;
-  }
-  
-  ul[class],
-  ol[class] {
-    padding: 0;
-  }
-  
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul[class],
-  ol[class],
-  li,
-  figure,
-  figcaption,
-  blockquote,
-  dl,
-  dd {
-    margin: 0;
-  }
-  
-  ul[class] {
-    list-style: none;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
-  input,
-  button,
-  textarea,
-  select {
-    font: inherit;
-  }
+  box-sizing: border-box;
+}
 
-  a {
-    text-decoration: none;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif;
-  }
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
 
-  .header{
-    background-color: #161D21;
-      
-  }
+ul[class],
+ol[class] {
+  padding: 0;
+}
 
-  .container {
-    max-width: 1120px;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
 
-  .header__top {
-    padding: 25px 0 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .menu__list {
-    display: flex;
-  }
-  
-  .menu__list-item {
-    margin-left: 40px;
-  }
-  
-  .menu__list-link {
-    padding: 4px 2px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 36px;
-    color: #ffffff;
-    transition: border-bottom 0.3s ease-in-out;
-  }
-  
-  .menu__list-link:hover {
-    border-bottom: 3px solid #e4e182;
-  }
-  
-  .header__btn {
-    padding: 13px 21px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #ffffff;
-    background-color: #ce0927;
-    border-radius: 5px;
-  }
-  
-  .header__btn:hover {
-    background-color: #f8072b;
-  }
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #161D21;
+  min-height: 100vh;  
+}
+
+.header{
+ 
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header__top {
+  padding: 25px 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item {
+  margin-left: 40px;
+}
+
+.menu__list-link {
+  padding: 4px 2px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffffff;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.menu__list-link:hover {
+  border-bottom: 3px solid #e4e182;
+}
+
+.header__btn {
+  padding: 13px 21px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #ce0927;
+  border-radius: 5px;
+}
+
+.header__btn:hover {
+  background-color: #f8072b;
+}
 
 
+.header__content{
 
-
+}
 
 .competition__title{
-    margin-bottom: 45px;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 36px;
-    color: #FFFFFF;
-    text-align: center;
-  }
+font-weight: 900;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+text-align: center;
+margin-bottom: 45px;
+}
+
+.competition-info__items{
+display: flex;
+justify-content: center;
+align-items: center;
+background: #FFFFFF;
+border: 3px solid #CE0927;
+border-radius: 20px;
+width: 100%;
+height: 198px;
+}
 
 
-  .competiteon__inner{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #FFFFFF;
-    border: 3px solid #CE0927;
-    border-radius: 20px;
-    padding: 60px 91px 76px 108px;
-    width: 1022px;
-    height: 191px;
-   margin-bottom: 200px;
-  }
-  
-  .competiteon-bank{
-    width: 183px;
-    position: relative;
-    padding-left: 85px;
-    margin-right: 153px;
-  }
-  
-  .competiteon-bank::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 71px;
-    height: 68px;
-  }
-  
-  .competiteon-bank--design{
-    background-image: url('../images/compdollar.png');
-    background-repeat: no-repeat;
-  }
-  
-  .time-count__title{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 47px;
-    color: #4D4D4D;
-  
-  }
-  
-  .time-count__content{
-    display: flex;
-    justify-content: center;
-   
-  }
-  
-  .time-count__item{
-    text-align: center;
-  }
-  
-  
-  .time-count__val{
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 46px;
-    color: #000000;
-  }
-  
-  .time-count__sepparater{
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 45px;
-    color: #000000;
-    margin: 0 20px;
-   
-  }
-  
-  .time-count__text{
-    font-weight: 300;
-    font-size: 17px;
-    line-height: 18px;
-    color: #000000;
-  }
-  
-  .participation__inner{
-    
-  }
-  
-  .participation__title{
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 36px;
-    color: #FFFFFF;
-    margin-bottom: 25px;
-  }
-  
-  .participation__list{
-   
-   
-  }
-  
-  .participation__list-item{
-   margin-bottom: 30px;
-  }
-  
-  .participation-ikon{
-    padding-right: 17px;
-  }
-  
-  .participation__list-link{
-    font-weight: 900; 
-    font-size: 18px;
-    line-height: 27px;
-    color: #959595; 
-  }
-  
-  
+.competition-info__img{
+padding-top: 61px;
+padding-bottom: 70px;
+padding-left: 76px;
+}
+
+.competition-info__text{
+font-weight: 900;
+font-size: 24px;
+line-height: 36px;
+color: #000000;
+margin-left: 10px;
+
+
+}
+
+.competition-info__text span{
+display: block;
+text-align: center;
+}
+
+
+.competition-time__img{
+
+}
+
+.competition-info__item{
+width: 184px;
+padding-left: 85px;
+position: relative;
+}
+
+.competition-info__item::before{
+content: "";
+position: absolute;
+top: 0;
+left: 24px;
+width: 71px;
+height: 68px;
+}
+
+.expertise__item--design::before{
+background-image: url('../images/compdollar.png')
+}  
+
+.time-count__content{
+display: flex;
+justify-content: center;
+
+}  
+
+
+.time-count__title{
+font-weight: bold;
+font-size: 18px;
+line-height: 0;
+margin: 0 21px;
+margin-bottom: 12px;
+}
+
+.timer-imeg{
+margin-right: 5px;
+}
+
+
+
+
+.time-count__val{
+font-weight: 900;
+font-size: 30px;
+line-height: 45px;
+color: #000000;
+
+}
+
+.time-count__separator{
+font-weight: 900;
+font-size: 30px;
+line-height: 45px;
+color: #000000;
+margin: 0 10px;
+}
+
+.time-count__text{
+font-weight: 300;
+font-size: 12px;
+line-height: 18px;
+color: #000000;
+
+}
+
+.participation{
+padding-bottom: 159px;
+position: relative;
+}
+
+.participation__title{
+padding-top: 114px;
+margin-bottom: 30px;
+font-weight: 900;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+
+
+.participation__inner{
+display: flex;
+justify-content: space-between;
+}
+
+.participation__text{
+margin-bottom: 30px;
+font-weight: 900;
+font-size: 18px;
+line-height: 27px;
+color: #959595;
+width: 518px;
+margin-bottom: 25px;
+padding-left: 37px;
+position: relative;
+
+}
+
+.participation__text::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0px;
+width: 20px;
+height: 20px;
+}
+
+.partification--img::before{
+background-image: url('../images/partikon.svg');
+}
+
+.participation__text span{
+color: #CE0927;
+}
+
+.participation__sub{
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+color: #FFFFFF;
+} 
+
+.burger {
+display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+.navmenu {
+  display: none;
+}
+
+
+
+
+@media (max-width:1024px){
+.competition-info__items{
+  width: 100%;
+}
+
+
+
+.participation__inner{
+  display: block;
+}
+
+
+}
+
+
+@media (max-width:768px){
+
+.menu{
+  display: none;
+}
+
+.header__btn{
+  display: none;
+}
+.competition-info__items{
+  width: 100%;
+  height: 265px;
+  display: block;
+}
+
+
+
+.competition-info__item {
+width: 100%;
+text-align: center;
+margin-bottom: 50px;
+padding-left: 0;
+}
+
+.competition-info__text{
+margin-left: 0;
+text-align: center;
+padding-top: 11px;
+font-size: 27px;
+}
+
+.time-count__title{
+text-align: center;
+}
+
+.time-count__val {
+font-size: 34px;
+}
+
+.competition-line__img{
+ display: none;
+}
+
+.time-img{
+ display: none;
+}
+
+.expertise__item--design::before{
+display:none
+}  
+
+.participation__title{
+text-align: center;
+}
+
+.participation__sub{
+text-align: center;
+}
+
+
+.participation__text{
+width: 100%;
+}
+
+body {
+overflow-x: hidden;
+}
+.header__control {
+display: none;
+}
+.menu {
+display: none;
+}
+
+.burger {
+display: block;
+cursor: pointer;
+}
+.header__top {
+margin: 0 20px;
+}
+
+.navmenu {
+position: absolute;
+top: 70px;
+right: 0;
+height: 100%;
+background: #262C31;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 70%;
+}
+
+.nav-menu {
+
+}
+
+
+.main-link {
+
+}
+
+.main-link {
+background: red;
+padding: 10px 50px;
+margin: 10px 0;
+width: 100%;
+
+}
+
+.main-link a {
+
+}
+
+.menu-link li{
+background: red;
+padding: 10px;
+margin: 10px 0;
+}
+
+.menu-link li a {
+width: 100%;
+height: 155px;
+}
+
+#panel {
+display: none;
+}
+
+
+
+
+#panel, #flip {
+padding: 5px;
+text-align: center;
+
+}
+}
+
+
+@media screen and (max-width: 768px){
+body {
+  overflow-x: hidden;
+}
+.header__control {
+  display: none;
+}
+.menu {
+ display: none;
+}
+
+.burger {
+ display: block;
+ cursor: pointer;
+}
+.header__top {
+ margin: 0 20px;
+}
+
+.navmenu {
+ position: absolute;
+ top: 70px;
+ right: 0;
+ height: 55%;
+ background: #262C31;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 55%;
+ z-index: 999;
+}
+
+.nav-menu {
+
+}
+
+
+.main-link {
+
+}
+
+.main-link {
+background: red;
+padding: 10px 50px;
+margin: 10px 0;
+width: 100%;
+
+}
+
+.main-link a {
+
+}
+
+.menu-link li{
+ background: red;
+ padding: 10px;
+ margin: 10px 0;
+}
+
+.menu-link li a {
+ width: 100%;
+ height: 155px;
+}
+
+#panel {
+ display: none;
+}
+
+}
+
+
+#panel, #flip {
+padding: 5px;
+text-align: center;
+
+}
