@@ -8,15 +8,15 @@ let eth_uah = 53893.23;
 let eth_rub = 112345.19;
 let eth_eur = 1703.44;
 
-let dash_usd = 
-let dash_uah =
-let dash_rub =
-let dash_eur =   
+let dash_usd = 59.24;
+let dash_uah = 1761.55;
+let dash_rub = 3713.88;
+let dash_eur = 55.70;
 
-let trx_usd = 
-let trx_uah =
-let trx_rub =
-let trx_eur = 
+let trx_usd = 0.08;
+let trx_uah = 2.53;
+let trx_rub = 5.34;
+let trx_eur = 0.08;
 
 let xrp_usd = 
 let xrp_uah =
