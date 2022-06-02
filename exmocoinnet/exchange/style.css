@@ -270,6 +270,11 @@ h3.subtitle {
   transition: 0.3s all;
 }
 
+.main-coins img {
+  width: 25px;
+  height: 25px;
+}
+
 /* Стили для активных классов подложки и окна */
 
 .modal.active,
@@ -502,6 +507,8 @@ p.subtitle {
    .main-coins {
      padding-bottom: 0;
    }
+
+ 
 
    .value-coins {
      width: 100%;

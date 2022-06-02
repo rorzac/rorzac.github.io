@@ -72,7 +72,7 @@
 
         <div class="exchange__item">
           <div class="item__box">
-            <h1 class="title">Exchange Privat 24 UAH to Visa/MasterCard UAH</h1>
+            <h1 class="title">Exchange Bitcoin to USDT</h1>
             <hr />
             <h3 class="subtitle">
               The exchange is carried out automatically and takes from 5 to 30
@@ -81,23 +81,23 @@
             <div class="main__center-block">
               <div class="left-menu">
                 <div class="main-coins">
-                  <img src="images/btc.png" alt="" class="coins-img" />
-                  <p class="name-coins">Bitcoin</p>
+                  <img src="../images/btc.svg" alt="" class="coins-img" />
+                  <p class="name-coins">Bitcoin (BTC)</p>
                 </div>
                 <div class="main__input">
                   <div class="main__input-left">
-                    <div class="text-title">Отдаете</div>
+                    <div class="text-title">From</div>
                     <input
                       class="coins"
                       id="input-coins"
                       oninput="moneyConverter(this.value)"
                       type="text"
                       onchange="moneyConverter(this.value)"
-                      placeholder="500"
+                      placeholder="Amount"
                     />
                   </div>
                   <div class="main__input-right">
-                    <div class="text-title">Ваша почта</div>
+                    <div class="text-title">Your email</div>
                     <input
                       type="email"
                       class="email"
@@ -107,8 +107,8 @@
                   </div>
                 </div>
                 <div class="bottom-text">
-                  <p>Минимальная сумма обмена: 150.00 UAH</p>
-                  <p>Максимальная сумма обмена: 185505.60 UAH</p>
+                  <p>Minimum exchange amount: 0,0010 btc</p>
+                  <p>Maximum exchange amount: 0,5 btc</p>
                 </div>
               </div>
               <div class="right-menu">
@@ -118,11 +118,11 @@
                 </div>
                 <div class="main__input">
                   <div class="main__input-left">
-                    <div id="out" class="text-title">Получаете</div>
+                    <div id="out" class="text-title">To</div>
                     <span id="out-coin" class="value-coins"> 0 </span>
                   </div>
                   <div class="main__input-right">
-                    <div class="text-title">Ваша карта</div>
+                    <div class="text-title">Your wallet</div>
                     <input
                       type="email"
                       class="email"
@@ -132,8 +132,7 @@
                   </div>
                 </div>
                 <div class="bottom-text">
-                  <p>Резерв: 199638.75186398 USDT</p>
-                  <p>Курс обмена: 29.2549 UAH 1 USDT</p>
+                  <p>Reserve: 34.6435 BTC</p>
                 </div>
               </div>
             </div>
@@ -191,7 +190,13 @@
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../script/pricecoin.js"></script>
     <script>
+
+
+
+
+
       document.querySelector(".btn").onclick = myClick;
 
       function myClick() {
@@ -206,7 +211,7 @@
       }
 
       function moneyConverter(valNum) {
-        document.getElementById("out-coin").innerHTML = valNum * 107.47;
+        document.getElementById("out-coin").innerHTML = valNum * btc_usd;
       }
 
       function myFunction() {
