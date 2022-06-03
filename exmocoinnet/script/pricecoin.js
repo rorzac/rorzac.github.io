@@ -1,7 +1,7 @@
 let btc_usd = 29942;
-let btc_uah = 883896.16;
-let btc_rub = 1840758.59;
-let btc_eur = 27923.98;
+let btc_uah = 883896;
+let btc_rub = 1840758;
+let btc_eur = 27923;
 
 let eth_usd = 1823.13;
 let eth_uah = 53893.23;
