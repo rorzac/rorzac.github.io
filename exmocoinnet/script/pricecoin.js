@@ -3,10 +3,10 @@ let btc_uah = 883896;
 let btc_rub = 1840758;
 let btc_eur = 27923;
 
-let eth_usd = 1823.13;
-let eth_uah = 53893.23;
-let eth_rub = 112345.19;
-let eth_eur = 1703.44;
+let eth_usd = 1823;
+let eth_uah = 53893;
+let eth_rub = 112345;
+let eth_eur = 1703;
 
 let dash_usd = 59.24;
 let dash_uah = 1761.55;

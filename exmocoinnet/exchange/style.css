@@ -318,7 +318,7 @@ p.subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
   color: #929292;
 }
 
@@ -483,6 +483,10 @@ p.subtitle {
    h3.subtitle {
      font-size: 12px;
      text-align: center;
+   }
+
+   p.subtitle {
+    text-align: center;
    }
 
    .main__center-block {
