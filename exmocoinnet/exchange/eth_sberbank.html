@@ -74,7 +74,7 @@
         <!-- Валютные пары -->
         <div class="exchange__item">
           <div class="item__box">
-            <h1 class="title">Exchange Ethereum (ETH) to Bank of America</h1>
+            <h1 class="title">Exchange Ethereum (ETH) to SberBank</h1>
             <hr />
             <h3 class="subtitle">
               The exchange is carried out automatically and takes from 5 to 30
@@ -110,15 +110,15 @@
                 </div>
                 <!-- Поставить min/max -->
                 <div class="bottom-text">
-                  <p>Minimum exchange amount: 500 usd</p>
-                  <p>Maximum exchange amount: 25.500 usd</p>
+                  <p>Minimum exchange amount: 2000 rub</p>
+                  <p>Maximum exchange amount: 75.000 rub</p>
                 </div>
               </div>
               <!-- Сменить монету -->
               <div class="right-menu">
                 <div class="main-coins">
-                  <img src="images/bank-of-america.png" alt="" class="coins-img" />
-                  <p class="name-coins">Bank of America</p>
+                  <img src="images/sberbank.svg" alt="" class="coins-img" />
+                  <p class="name-coins">SberBank</p>
                 </div>
                 <div class="main__input">
                   <div class="main__input-left">
@@ -137,7 +137,7 @@
                 </div>
                 <!-- Сменить резерв -->
                 <div class="bottom-text">
-                  <p>Reserve: 134.125 usd</p>
+                  <p>Reserve: 734.584 rub</p>
                 </div>
               </div>
             </div>
@@ -220,7 +220,7 @@
       // Поставить значения
 
       function moneyConverter(valNum) {
-        document.getElementById("out-coin").innerHTML = valNum * eth_usd;
+        document.getElementById("out-coin").innerHTML = valNum * eth_rub;
       }
 
       function myFunction() {
