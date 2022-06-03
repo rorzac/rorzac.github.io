@@ -2,6 +2,23 @@ html {
   box-sizing: border-box;
 }
 
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #00c6fb, #005bea);
+}
+
 *,
 *::after,
 *::before {
@@ -78,6 +95,10 @@ body {
 
 .menu__list {
   display: flex;
+}
+
+.main-link a{
+  color: #fff;
 }
 
 .menu__list-item {
@@ -497,107 +518,105 @@ background-image: url('../images/choosedollar.png');
 
  
 
- @media (max-width:768px){
-   .menu{
-     display: none;
 
-   }
+  
 
-   .header__btn{
-     display: none;
-   }
+@media screen and (max-width: 768px){
 
-   .header__title{
-    width: 100%;
-    text-align: center;
-    font-size: 33px;
-    line-height: 45px;
-   }
+  .menu{
+    display: none;
 
-   .header__text{
-    width: 100%;
-    font-size: 15px;
-    line-height: 24px;
-    text-align: center;
-   }
+  }
 
-   .button__wrapper{
-    display: flex;	
-    justify-content: center;
-   }
+  .header__btn{
+    display: none;
+  }
 
-   .button{
-    padding: 16px 81px;
-    font-size: 14px;
-    line-height: 20px;
-   }
+  .header__title{
+   width: 100%;
+   text-align: center;
+   font-size: 33px;
+   line-height: 45px;
+  }
 
+  .header__text{
+   width: 100%;
+   font-size: 15px;
+   line-height: 24px;
+   text-align: center;
+  }
 
-   .ref__inner .title {
-    font-size: 25px;
-    line-height: 42px;
-   }
+  .button__wrapper{
+   display: flex;	
+   justify-content: center;
+  }
 
-   .ref__inner .text{
-    width: 100%;
-    font-size: 16px;
-    line-height: 30px;
-    margin-bottom: 50px;
-   }
+  .button{
+   padding: 16px 81px;
+   font-size: 14px;
+   line-height: 20px;
+  }
 
 
-   .btn a{
-    padding: 20px 56px;
-    font-size: 14px;
-    line-height: 20px;
+  .ref__inner .title {
+   font-size: 25px;
+   line-height: 42px;
+  }
+
+  .ref__inner .text{
+   width: 100%;
+   font-size: 16px;
+   line-height: 30px;
+   margin-bottom: 50px;
+  }
+
+
+  .btn a{
+   padding: 20px 56px;
+   font-size: 14px;
+   line-height: 20px;
 }
 
 
 .choose__title{
-  font-size: 33px;
-  line-height: 55px;
-  text-align: center;
-  margin-bottom: 20px
+ font-size: 33px;
+ line-height: 55px;
+ text-align: center;
+ margin-bottom: 20px
 }
-  
+ 
 
 .choose__text{
-  font-size: 16px;
-  line-height: 24px;
-  width: 100%;
-  text-align: center;
+ font-size: 16px;
+ line-height: 24px;
+ width: 100%;
+ text-align: center;
 }
 
 
 
 .choose__info-item{
-  width: 100%;
+ width: 100%;
 }
 
 
 .title__about{
-  font-size: 22px;
-  line-height: 33px;
+ font-size: 22px;
+ line-height: 33px;
 }
 
 .about__text{
-  font-size: 16px;
-  line-height: 24px;
-  width: 100%;
+ font-size: 16px;
+ line-height: 24px;
+ width: 100%;
 }
 
 .container-accordion .box .label{
-  margin-top: 50px;
-  width: 100%;
-  font-size: 13px;
+ margin-top: 50px;
+ width: 100%;
+ font-size: 13px;
 }
 
-
-
-}
-  
-
-@media screen and (max-width: 768px){
   body {
     overflow-x: hidden;
   }
@@ -630,9 +649,7 @@ background-image: url('../images/choosedollar.png');
    z-index: 999;
  }
 
- .nav-menu {
 
- }
 
 
  .main-link {
@@ -664,6 +681,11 @@ background-image: url('../images/choosedollar.png');
 
  #panel {
    display: none;
+ }
+
+ .footer__inner {
+   display: block;
+   text-align: center;
  }
 
  .footer-item{

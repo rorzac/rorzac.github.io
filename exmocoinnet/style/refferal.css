@@ -213,3 +213,118 @@ body {
 
   color: #959595;
 }
+
+
+.burger {
+  display: none;
+  }
+  
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+  
+  .navmenu {
+    display: none;
+  }
+  
+  
+  @media screen and (max-width: 768px){
+    body {
+      overflow-x: hidden;
+    }
+    .header__control {
+      display: none;
+    }
+   .menu {
+     display: none;
+   }
+  
+   .burger {
+     display: block;
+     cursor: pointer;
+   }
+   .header__top {
+     margin: 0 20px;
+   }
+  
+   .navmenu {
+     position: absolute;
+     top: 70px;
+     right: 0;
+     height: 100%;
+     background: #262C31;
+     border-radius: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 70%;
+   }
+  
+   .nav-menu {
+  
+   }
+  
+  
+   .main-link {
+  
+   }
+  
+   .main-link {
+    background: red;
+    padding: 10px 50px;
+    margin: 10px 0;
+    width: 100%;
+  
+   }
+  
+   .main-link a {
+  
+   }
+  
+   .menu-link li{
+     background: red;
+     padding: 10px;
+     margin: 10px 0;
+   }
+  
+   .menu-link li a {
+     width: 100%;
+     height: 155px;
+   }
+  
+   #panel {
+     display: none;
+   }
+
+   .box {
+     width: 100%;
+     margin-bottom: 25px;
+   }
+
+   .main-box {
+     display: block;
+     padding-top: 5px;
+   }
+
+   .block-link {
+     display: flex;
+     justify-content: center;
+   }
+
+   .btn-copy img {
+     margin-left: 15px;
+     width: 100%;
+     height: 100%;
+   }
+  
+  }
+  
+  
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    
+  }
