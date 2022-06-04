@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon.png"
+    />
     <link rel="stylesheet" href="../../style/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../../fonts/fonts.css" />
@@ -30,7 +35,9 @@
                 <a class="menu__list-link" href="../order.html"> Order </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="../refferal.html"> Refferal </a>
+                <a class="menu__list-link" href="../refferal.html">
+                  Refferal
+                </a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="../rules.html">
@@ -48,33 +55,30 @@
             <div class="line3"></div>
           </div>
         </div>
-        <div class="navmenu" id="panel">
-         
-          <div class="main-link">
-            <a href="../index.html">Main</a>
-          </div>
-          <div class="main-link">
-            <a href="../order.html">Order</a>
-          </div>
-          <div class="main-link">
-            <a href="../refferal.html">Refferal</a>
-          </div>
-          <div class="main-link">
-            <a href="../rules.html">Exchange rules</a>
-          </div>
-          <div class="main-link">
-            <a href="../contact.php">Contact</a>
-          </div>
-          <div class="main-link">
-            <a href="../exchange.html">Exchange</a>
-          </div>
- 
-        </div>
+
+            <div class="main-link">
+              <a href="../index.html">Main</a>
+            </div>
+            <div class="main-link">
+              <a href="../order.html">Order</a>
+            </div>
+            <div class="main-link">
+              <a href="../refferal.html">Refferal</a>
+            </div>
+            <div class="main-link">
+              <a href="../rules.html">Exchange rules</a>
+            </div>
+            <div class="main-link">
+              <a href="../contact.php">Contact</a>
+            </div>
+            <div class="main-link">
+              <a href="../exchange.html">Exchange</a>
+            </div>
 
         <!-- Валютные пары -->
         <div class="exchange__item">
           <div class="item__box">
-            <h1 class="title">Exchange Bitcoin to Visa, Mastercard KZ</h1>
+            <h1 class="title">Exchange Zcash (ZEC) to Deutsche Bank</h1>
             <hr />
             <h3 class="subtitle">
               The exchange is carried out automatically and takes from 5 to 30
@@ -83,8 +87,8 @@
             <div class="main__center-block">
               <div class="left-menu">
                 <div class="main-coins">
-                  <img src="../images/btc.svg" alt="" class="coins-img" />
-                  <p class="name-coins">Bitcoin (BTC)</p>
+                  <img src="../images/zec.svg" alt="" class="coins-img" />
+                  <p class="name-coins">Zcash (ZEC)</p>
                 </div>
                 <div class="main__input">
                   <div class="main__input-left">
@@ -110,15 +114,19 @@
                 </div>
                 <!-- Поставить min/max -->
                 <div class="bottom-text">
-                  <p>Minimum exchange amount: 2000 rub</p>
-                  <p>Maximum exchange amount: 75.000 rub</p>
+                  <p>Minimum exchange amount: 500 euro</p>
+                  <p>Maximum exchange amount: 25.500 euro</p>
                 </div>
               </div>
               <!-- Сменить монету -->
               <div class="right-menu">
                 <div class="main-coins">
-                  <img src="images/visa.svg" alt="" class="coins-img" />
-                  <p class="name-coins">Visa, Mastercard KZ</p>
+                  <img
+                    src="images/deutsche-bank.svg"
+                    alt=""
+                    class="coins-img"
+                  />
+                  <p class="name-coins">Deutsche Bank</p>
                 </div>
                 <div class="main__input">
                   <div class="main__input-left">
@@ -137,7 +145,7 @@
                 </div>
                 <!-- Сменить резерв -->
                 <div class="bottom-text">
-                  <p>Reserve: 583.058 rub</p>
+                  <p>Reserve: 134.125 euro</p>
                 </div>
               </div>
             </div>
@@ -176,7 +184,7 @@
         <!-- Сменить название монеты -->
         <div class="center-block">
           <p class="text-info">
-            You must send: <span id="out-coins"> </span> btc at the address
+            You must send: <span id="out-coins"> </span> Zcash (ZEC) at the address
             below
           </p>
           <p class="text-info">
@@ -193,16 +201,12 @@
           <input class="input-value" id="myInput" type="text" value="sfdfdsfsfd5" />
           <button onclick="myFunction()" class="copy">Copy</button>
         </div>
-       
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../script/pricecoin.js"></script>
     <script>
-
-document.querySelector('.input-value').value = bitcoin;
-
-
+      document.querySelector(".input-value").value = bitcoin;
 
       document.querySelector(".btn").onclick = myClick;
 
@@ -220,7 +224,7 @@ document.querySelector('.input-value').value = bitcoin;
       // Поставить значения
 
       function moneyConverter(valNum) {
-        document.getElementById("out-coin").innerHTML = valNum * btc_rub;
+        document.getElementById("out-coin").innerHTML = valNum * zcash_eur;
       }
 
       function myFunction() {

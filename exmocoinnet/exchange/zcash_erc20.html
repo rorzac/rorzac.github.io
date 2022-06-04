@@ -74,7 +74,7 @@
         <!-- Валютные пары -->
         <div class="exchange__item">
           <div class="item__box">
-            <h1 class="title">Exchange Bitcoin to Visa, Mastercard KZ</h1>
+            <h1 class="title">Exchange Zcash (ZEC) to Tether ERC20</h1>
             <hr />
             <h3 class="subtitle">
               The exchange is carried out automatically and takes from 5 to 30
@@ -83,8 +83,8 @@
             <div class="main__center-block">
               <div class="left-menu">
                 <div class="main-coins">
-                  <img src="../images/btc.svg" alt="" class="coins-img" />
-                  <p class="name-coins">Bitcoin (BTC)</p>
+                  <img src="../images/zec.svg" alt="" class="coins-img" />
+                  <p class="name-coins">Zcash (ZEC)</p>
                 </div>
                 <div class="main__input">
                   <div class="main__input-left">
@@ -110,15 +110,15 @@
                 </div>
                 <!-- Поставить min/max -->
                 <div class="bottom-text">
-                  <p>Minimum exchange amount: 2000 rub</p>
-                  <p>Maximum exchange amount: 75.000 rub</p>
+                  <p>Minimum exchange amount: 20 usdt</p>
+                  <p>Maximum exchange amount: 16.500 usdt</p>
                 </div>
               </div>
               <!-- Сменить монету -->
               <div class="right-menu">
                 <div class="main-coins">
-                  <img src="images/visa.svg" alt="" class="coins-img" />
-                  <p class="name-coins">Visa, Mastercard KZ</p>
+                  <img src="images/usdt.svg" alt="" class="coins-img" />
+                  <p class="name-coins">Tether ERC20</p>
                 </div>
                 <div class="main__input">
                   <div class="main__input-left">
@@ -137,7 +137,7 @@
                 </div>
                 <!-- Сменить резерв -->
                 <div class="bottom-text">
-                  <p>Reserve: 583.058 rub</p>
+                  <p>Reserve: 134.125 usdt</p>
                 </div>
               </div>
             </div>
@@ -176,7 +176,7 @@
         <!-- Сменить название монеты -->
         <div class="center-block">
           <p class="text-info">
-            You must send: <span id="out-coins"> </span> btc at the address
+            You must send: <span id="out-coins"> </span> Zcash (ZEC) at the address
             below
           </p>
           <p class="text-info">
@@ -220,7 +220,7 @@ document.querySelector('.input-value').value = bitcoin;
       // Поставить значения
 
       function moneyConverter(valNum) {
-        document.getElementById("out-coin").innerHTML = valNum * btc_rub;
+        document.getElementById("out-coin").innerHTML = valNum * zcash_usd;
       }
 
       function myFunction() {
