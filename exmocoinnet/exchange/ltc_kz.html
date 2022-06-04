@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="../../style/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../fonts/fonts.css" />
+    <title>ExmoCoin - Exchange</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__logo" href="../index.html">
+            <img
+              class="header__logo-img"
+              src="../images/exmologo.svg"
+              alt="logo"
+            />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="../index.html"> Main </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="../order.html"> Order </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="../refferal.html"> Refferal </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="../rules.html">
+                  Exchange rules
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__control">
+            <a class="header__btn" href="contact.php"> Contact </a>
+          </div>
+          <div class="burger" id="flip">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+        <div class="navmenu" id="panel">
+         
+          <div class="main-link">
+            <a href="../index.html">Main</a>
+          </div>
+          <div class="main-link">
+            <a href="../order.html">Order</a>
+          </div>
+          <div class="main-link">
+            <a href="../refferal.html">Refferal</a>
+          </div>
+          <div class="main-link">
+            <a href="../rules.html">Exchange rules</a>
+          </div>
+          <div class="main-link">
+            <a href="../contact.php">Contact</a>
+          </div>
+          <div class="main-link">
+            <a href="../exchange.html">Exchange</a>
+          </div>
+ 
+        </div>
+
+        <!-- Валютные пары -->
+        <div class="exchange__item">
+          <div class="item__box">
+            <h1 class="title">Exchange Litecoin (LTC) to Visa, Mastercard KZ</h1>
+            <hr />
+            <h3 class="subtitle">
+              The exchange is carried out automatically and takes from 5 to 30
+              minutes
+            </h3>
+            <div class="main__center-block">
+              <div class="left-menu">
+                <div class="main-coins">
+                  <img src="../images/ltc.svg" alt="" class="coins-img" />
+                  <p class="name-coins">Litecoin (LTC)</p>
+                </div>
+                <div class="main__input">
+                  <div class="main__input-left">
+                    <div class="text-title">From</div>
+                    <input
+                      class="coins"
+                      id="input-coins"
+                      oninput="moneyConverter(this.value)"
+                      type="text"
+                      onchange="moneyConverter(this.value)"
+                      placeholder="Amount"
+                    />
+                  </div>
+                  <div class="main__input-right">
+                    <div class="text-title">Your email</div>
+                    <input
+                      type="email"
+                      class="email"
+                      id="input-email"
+                      placeholder="Your email"
+                    />
+                  </div>
+                </div>
+                <!-- Поставить min/max -->
+                <div class="bottom-text">
+                  <p>Minimum exchange amount: 2000 rub</p>
+                  <p>Maximum exchange amount: 75.000 rub</p>
+                </div>
+              </div>
+              <!-- Сменить монету -->
+              <div class="right-menu">
+                <div class="main-coins">
+                  <img src="images/visa.svg" alt="" class="coins-img" />
+                  <p class="name-coins">Visa, Mastercard KZ</p>
+                </div>
+                <div class="main__input">
+                  <div class="main__input-left">
+                    <div id="out" class="text-title">To</div>
+                    <span id="out-coin" class="value-coins"> 0 </span>
+                  </div>
+                  <div class="main__input-right">
+                    <div class="text-title">Your wallet</div>
+                    <input
+                      type="email"
+                      class="email"
+                      id="input-wallet"
+                      placeholder="Your wallet"
+                    />
+                  </div>
+                </div>
+                <!-- Сменить резерв -->
+                <div class="bottom-text">
+                  <p>Reserve: 583.058 rub</p>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="button">
+              <a href="#" class="js-open-modal btn" data-modal="1">Exchange</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="modal" data-modal="1">
+      <!--   Svg иконка для закрытия окна  -->
+      <svg
+        class="modal__cross js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
+      </svg>
+      <div class="modal__item">
+        <h1 class="title">
+          If the payment does not go through, then turn off the VPN or try to
+          make payment in another browser.
+        </h1>
+        <p class="subtitle">
+          After receiving network confirmations, the system will find your
+          payment and the application will be sent to processing. If during the
+          life of the application, the transfer did not have time to reach, you
+          can extend the search for the transaction by clicking on relevant
+          emerging button.
+        </p>
+        <!-- Сменить название монеты -->
+        <div class="center-block">
+          <p class="text-info">
+            You must send: <span id="out-coins"> </span> Litecoin (LTC) at the address
+            below
+          </p>
+          <p class="text-info">
+            To your Email: <span id="out-email"> </span> a letter will come
+            after the transaction and a check
+          </p>
+          <p class="text-info">
+            Funds will be credited to this wallet:
+            <span id="out-wallet"> </span>
+          </p>
+        </div>
+        <!-- Поставить кошелек -->
+        <div class="main-input">
+          <input class="input-value" id="myInput" type="text" value="sfdfdsfsfd5" />
+          <button onclick="myFunction()" class="copy">Copy</button>
+        </div>
+       
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../script/pricecoin.js"></script>
+    <script>
+
+document.querySelector('.input-value').value = bitcoin;
+
+
+
+      document.querySelector(".btn").onclick = myClick;
+
+      function myClick() {
+        let coins = document.querySelector("#input-coins").value;
+        document.querySelector("#out-coins").innerHTML = coins;
+
+        let email = document.querySelector("#input-email").value;
+        document.querySelector("#out-email").innerHTML = email;
+
+        let wallet = document.querySelector("#input-wallet").value;
+        document.querySelector("#out-wallet").innerHTML = wallet;
+      }
+
+      // Поставить значения
+
+      function moneyConverter(valNum) {
+        document.getElementById("out-coin").innerHTML = valNum * ltc_rub;
+      }
+
+      function myFunction() {
+        /* Get the text field */
+        var copyText = document.getElementById("myInput");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+
+        /* Alert the copied text */
+      }
+
+      !(function (e) {
+        "function" != typeof e.matches &&
+          (e.matches =
+            e.msMatchesSelector ||
+            e.mozMatchesSelector ||
+            e.webkitMatchesSelector ||
+            function (e) {
+              for (
+                var t = this,
+                  o = (t.document || t.ownerDocument).querySelectorAll(e),
+                  n = 0;
+                o[n] && o[n] !== t;
+
+              )
+                ++n;
+              return Boolean(o[n]);
+            }),
+          "function" != typeof e.closest &&
+            (e.closest = function (e) {
+              for (var t = this; t && 1 === t.nodeType; ) {
+                if (t.matches(e)) return t;
+                t = t.parentNode;
+              }
+              return null;
+            });
+      })(window.Element.prototype);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        /* Записываем в переменные массив элементов-кнопок и подложку.
+      Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+        var modalButtons = document.querySelectorAll(".js-open-modal"),
+          overlay = document.querySelector(".js-overlay-modal"),
+          closeButtons = document.querySelectorAll(".js-modal-close");
+
+        /* Перебираем массив кнопок */
+        modalButtons.forEach(function (item) {
+          /* Назначаем каждой кнопке обработчик клика */
+          item.addEventListener("click", function (e) {
+            /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+            Нужно подстраховаться. */
+            e.preventDefault();
+
+            /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+            и будем искать модальное окно с таким же атрибутом. */
+            var modalId = this.getAttribute("data-modal"),
+              modalElem = document.querySelector(
+                '.modal[data-modal="' + modalId + '"]'
+              );
+
+            /* После того как нашли нужное модальное окно, добавим классы
+            подложке и окну чтобы показать их. */
+            modalElem.classList.add("active");
+            overlay.classList.add("active");
+          }); // end click
+        }); // end foreach
+
+        closeButtons.forEach(function (item) {
+          item.addEventListener("click", function (e) {
+            var parentModal = this.closest(".modal");
+
+            parentModal.classList.remove("active");
+            overlay.classList.remove("active");
+          });
+        }); // end foreach
+
+        document.body.addEventListener(
+          "keyup",
+          function (e) {
+            var key = e.keyCode;
+
+            if (key == 27) {
+              document
+                .querySelector(".modal.active")
+                .classList.remove("active");
+              document.querySelector(".overlay").classList.remove("active");
+            }
+          },
+          false
+        );
+
+        overlay.addEventListener("click", function () {
+          document.querySelector(".modal.active").classList.remove("active");
+          this.classList.remove("active");
+        });
+      }); // end ready
+
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+  </body>
+</html>
