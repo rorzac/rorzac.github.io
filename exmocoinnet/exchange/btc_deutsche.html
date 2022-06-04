@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon.png"
+    />
     <link rel="stylesheet" href="../../style/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../../fonts/fonts.css" />
@@ -30,7 +35,9 @@
                 <a class="menu__list-link" href="../order.html"> Order </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="../refferal.html"> Refferal </a>
+                <a class="menu__list-link" href="../refferal.html">
+                  Refferal
+                </a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="../rules.html">
@@ -49,26 +56,24 @@
           </div>
         </div>
         <div class="navmenu" id="panel">
-         
-            <div class="main-link">
-              <a href="index.html">Main</a>
-            </div>
-            <div class="main-link">
-              <a href="order.html">Order</a>
-            </div>
-            <div class="main-link">
-              <a href="refferal.html">Refferal</a>
-            </div>
-            <div class="main-link">
-              <a href="rules.html">Exchange rules</a>
-            </div>
-            <div class="main-link">
-              <a href="contact.html">Contact</a>
-            </div>
-            <div class="main-link">
-              <a href="exchange.html">Exchange</a>
-            </div>
- 
+          <div class="main-link">
+            <a href="index.html">Main</a>
+          </div>
+          <div class="main-link">
+            <a href="order.html">Order</a>
+          </div>
+          <div class="main-link">
+            <a href="refferal.html">Refferal</a>
+          </div>
+          <div class="main-link">
+            <a href="rules.html">Exchange rules</a>
+          </div>
+          <div class="main-link">
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="main-link">
+            <a href="exchange.html">Exchange</a>
+          </div>
         </div>
 
         <!-- Валютные пары -->
@@ -117,7 +122,11 @@
               <!-- Сменить монету -->
               <div class="right-menu">
                 <div class="main-coins">
-                  <img src="images/deutsche-bank.svg" alt="" class="coins-img" />
+                  <img
+                    src="images/deutsche-bank.svg"
+                    alt=""
+                    class="coins-img"
+                  />
                   <p class="name-coins">Deutsche Bank</p>
                 </div>
                 <div class="main__input">
@@ -190,19 +199,15 @@
         </div>
         <!-- Поставить кошелек -->
         <div class="main-input">
-          <input id="myInput" type="text" value="sfdfdsfsfd5" />
+          <input class="input-value" id="myInput" type="text" value="sfdfdsfsfd5" />
           <button onclick="myFunction()" class="copy">Copy</button>
         </div>
-       
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../script/pricecoin.js"></script>
     <script>
-
-
-
-
+      document.querySelector(".input-value").value = bitcoin;
 
       document.querySelector(".btn").onclick = myClick;
 

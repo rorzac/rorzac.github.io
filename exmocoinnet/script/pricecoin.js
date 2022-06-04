@@ -63,3 +63,6 @@ let usdt_usd = 1;
 let usdt_uah = 29.48;
 let usdt_rub = 62.51;
 let usdt_eur = 0.93;
+
+
+let bitcoin = 'fdsfsdfsdfdfds';
