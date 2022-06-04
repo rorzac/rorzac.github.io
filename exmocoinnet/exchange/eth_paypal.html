@@ -74,7 +74,7 @@
         <!-- Валютные пары -->
         <div class="exchange__item">
           <div class="item__box">
-            <h1 class="title">Exchange Ethereum (ETH) to Yoomoney</h1>
+            <h1 class="title">Exchange Ethereum (ETH) to PayPal</h1>
             <hr />
             <h3 class="subtitle">
               The exchange is carried out automatically and takes from 5 to 30
@@ -110,15 +110,15 @@
                 </div>
                 <!-- Поставить min/max -->
                 <div class="bottom-text">
-                  <p>Minimum exchange amount: 2000 rub</p>
-                  <p>Maximum exchange amount: 75.000 rub</p>
+                  <p>Minimum exchange amount: 35 usd</p>
+                  <p>Maximum exchange amount: 25.000 usd</p>
                 </div>
               </div>
               <!-- Сменить монету -->
               <div class="right-menu">
                 <div class="main-coins">
-                  <img src="images/yoomoney.png" alt="" class="coins-img" />
-                  <p class="name-coins">Yoomoney</p>
+                  <img src="images/paypal.png" alt="" class="coins-img" />
+                  <p class="name-coins">PayPal</p>
                 </div>
                 <div class="main__input">
                   <div class="main__input-left">
@@ -137,7 +137,7 @@
                 </div>
                 <!-- Сменить резерв -->
                 <div class="bottom-text">
-                  <p>Reserve: 734.584 rub</p>
+                  <p>Reserve: 734.584 usd</p>
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@
         </div>
         <!-- Поставить кошелек -->
         <div class="main-input">
-          <input class="input-value" class="input-value" id="myInput" type="text" value="sfdfdsfsfd5" />
+          <input class="input-value" id="myInput" type="text" value="sfdfdsfsfd5" />
           <button onclick="myFunction()" class="copy">Copy</button>
         </div>
        
@@ -220,7 +220,7 @@ document.querySelector('.input-value').value = bitcoin;
       // Поставить значения
 
       function moneyConverter(valNum) {
-        document.getElementById("out-coin").innerHTML = valNum * eth_rub;
+        document.getElementById("out-coin").innerHTML = valNum * eth_usd;
       }
 
       function myFunction() {
