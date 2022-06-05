@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../images/favicon.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
     <link rel="stylesheet" href="../../style/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../../fonts/fonts.css" />
@@ -35,9 +30,7 @@
                 <a class="menu__list-link" href="../order.html"> Order </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__list-link" href="../refferal.html">
-                  Refferal
-                </a>
+                <a class="menu__list-link" href="../refferal.html"> Refferal </a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__list-link" href="../rules.html">
@@ -56,7 +49,7 @@
           </div>
         </div>
         <div class="navmenu" id="panel">
-
+         
           <div class="main-link">
             <a href="../index.html">Main</a>
           </div>
@@ -75,13 +68,13 @@
           <div class="main-link">
             <a href="../exchange.html">Exchange</a>
           </div>
-
+ 
         </div>
 
         <!-- Валютные пары -->
         <div class="exchange__item">
           <div class="item__box">
-            <h1 class="title">Exchange Polygon (MATIC) to Deutsche Bank</h1>
+            <h1 class="title">Exchange Polygon (MATIC) to Bank of America</h1>
             <hr />
             <h3 class="subtitle">
               The exchange is carried out automatically and takes from 5 to 30
@@ -117,19 +110,15 @@
                 </div>
                 <!-- Поставить min/max -->
                 <div class="bottom-text">
-                  <p>Minimum exchange amount: 500 euro</p>
-                  <p>Maximum exchange amount: 25.500 euro</p>
+                  <p>Minimum exchange amount: 500 usd</p>
+                  <p>Maximum exchange amount: 25.500 usd</p>
                 </div>
               </div>
               <!-- Сменить монету -->
               <div class="right-menu">
                 <div class="main-coins">
-                  <img
-                    src="images/deutsche-bank.svg"
-                    alt=""
-                    class="coins-img"
-                  />
-                  <p class="name-coins">Deutsche Bank</p>
+                  <img src="images/bank-of-america.png" alt="" class="coins-img" />
+                  <p class="name-coins">Bank of America</p>
                 </div>
                 <div class="main__input">
                   <div class="main__input-left">
@@ -148,7 +137,7 @@
                 </div>
                 <!-- Сменить резерв -->
                 <div class="bottom-text">
-                  <p>Reserve: 134.125 euro</p>
+                  <p>Reserve: 134.125 usd</p>
                 </div>
               </div>
             </div>
@@ -201,15 +190,19 @@
         </div>
         <!-- Поставить кошелек -->
         <div class="main-input">
-          <input class="input-value" id="myInput" type="text" value="sfdfdsfsfd5" />
+          <input class="input-value" class="input-value" id="myInput" type="text" value="sfdfdsfsfd5" />
           <button onclick="myFunction()" class="copy">Copy</button>
         </div>
+       
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../script/pricecoin.js"></script>
     <script>
-      document.querySelector(".input-value").value = bitcoin;
+      
+      document.querySelector('.input-value').value = bitcoin;
+
+
 
       document.querySelector(".btn").onclick = myClick;
 
@@ -227,7 +220,7 @@
       // Поставить значения
 
       function moneyConverter(valNum) {
-        document.getElementById("out-coin").innerHTML = valNum * polygon_eur;
+        document.getElementById("out-coin").innerHTML = valNum * polygon_usd;
       }
 
       function myFunction() {
