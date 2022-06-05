@@ -75,3 +75,5 @@ let cardano = 'sdfsd';
 let litecoin = 'sfdfsd';
 let bnb = 'dsfdsfs';
 let polygon = 'dsfds';
+let solana = 'fdsfs';
+let atom = 'sdfds';
