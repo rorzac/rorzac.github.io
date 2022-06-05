@@ -66,3 +66,12 @@ let usdt_eur = 0.93;
 
 
 let bitcoin = 'fdsfsdfsdfdfds';
+let ethereum = 'fdsfdfsfsd';
+let dash = 'fdgfdgfgd';
+let tron = 'fdsfdsfds';
+let ripple = 'fsdfsdf';
+let zcash = 'fdsfdsfds';
+let cardano = 'sdfsd';
+let litecoin = 'sfdfsd';
+let bnb = 'dsfdsfs';
+let polygon = 'dsfds';
