@@ -14,8 +14,8 @@ let dash_rub = 3713.88;
 let dash_eur = 55.70;
 
 let trx_usd = 0.08;
-let trx_uah = 2.53;
-let trx_rub = 5.34;
+let trx_uah = 4.53;
+let trx_rub = 7.34;
 let trx_eur = 0.08;
 
 let xrp_usd = 0.40;
@@ -68,7 +68,7 @@ let usdt_eur = 0.93;
 let bitcoin = 'fdsfsdfsdfdfds';
 let ethereum = 'fdsfdfsfsd1';
 let dash = 'fdgfdgfgd';
-let tron = 'fdsfdsfds';
+let tron = 'TSRwyqF9NXGxYU49YFceokz9YSe1uQKFFn';
 let ripple = 'fsdfsdf';
 let zcash = 'fdsfdsfds';
 let cardano = 'sdfsd';
