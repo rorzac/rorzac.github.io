@@ -89,7 +89,7 @@ body {
 .exchange__item {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  
   margin-top: 50px;
   margin-bottom: 50px;
 }
