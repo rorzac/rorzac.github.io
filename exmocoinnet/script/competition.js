@@ -49,10 +49,10 @@ boxes.forEach((box) => {
       minutesVal.textContent = minutes;
       secondsVal.textContent = seconds;
   
-      daysText.textContent = declOfNum(days, ['день', 'дня', 'дней']);
-      hoursText.textContent = declOfNum(hours, ['час', 'часа', 'часов']);
-      minutesText.textContent = declOfNum(minutes, ['минута', 'минуты', 'минут']);
-      secondsText.textContent = declOfNum(seconds, ['секунда', 'секунды', 'секунд']);
+      daysText.textContent = declOfNum(days, ['day', 'days', 'days']);
+      hoursText.textContent = declOfNum(hours, ['hour', 'hours', 'hours']);
+      minutesText.textContent = declOfNum(minutes, ['minute', 'minutes', 'minutes']);
+      secondsText.textContent = declOfNum(seconds, ['second', 'seconds', 'seconds']);
     };
   
     timeCount();
