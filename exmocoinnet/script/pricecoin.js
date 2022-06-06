@@ -66,7 +66,7 @@ let usdt_eur = 0.93;
 
 
 let bitcoin = 'fdsfsdfsdfdfds';
-let ethereum = 'fdsfdfsfsd';
+let ethereum = 'fdsfdfsfsd1';
 let dash = 'fdgfdgfgd';
 let tron = 'fdsfdsfds';
 let ripple = 'fsdfsdf';
