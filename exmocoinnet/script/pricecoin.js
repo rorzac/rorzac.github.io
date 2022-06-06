@@ -65,15 +65,15 @@ let usdt_rub = 62.51;
 let usdt_eur = 0.93;
 
 
-let bitcoin = 'fdsfsdfsdfdfds';
-let ethereum = 'fdsfdfsfsd1';
-let dash = 'fdgfdgfgd';
+let bitcoin = 'bc1qxfgdn2ktm97npzxzpawqmr0jqyftnrswv8lsgk';
+let ethereum = '0x5f564aCB57F6993ce73FBfe62669E8e882bebD6a';
+let dash = 'XxCbLWAnP8Bkv9iaTtZGJiEHx73kUENP2j';
 let tron = 'TSRwyqF9NXGxYU49YFceokz9YSe1uQKFFn';
-let ripple = 'fsdfsdf';
-let zcash = 'fdsfdsfds';
-let cardano = 'sdfsd';
-let litecoin = 'sfdfsd';
-let bnb = 'dsfdsfs';
-let polygon = 'dsfds';
-let solana = 'fdsfs';
-let atom = 'sdfds';
+let ripple = 'rpQkddwTZCczE1Y88fJSocG6s99bskyZR2';
+let zcash = 't1cxfFCdGmFtadayZXvqamSif83Cd5ZbDLV';
+let cardano = 'bnb1u5zjg8g3pz9yatrpg9ukq40yfczwj6prk7sk3d';
+let litecoin = 'ltc1qyhm9vkm90u9v3y3xwycy4m5q5z06y7p30cftnt';
+let bnb = 'bnb1u5zjg8g3pz9yatrpg9ukq40yfczwj6prk7sk3d';
+let polygon = '0x5f564aCB57F6993ce73FBfe62669E8e882bebD6a';
+let solana = 'ASoo8exUXukJzhoKwDNGURV4kJ9wKUfzC2q98DBPzLV9';
+let atom = 'cosmos1n68mnlhr6w2wvrkuphgw05prrvqmpycjw0luae';
