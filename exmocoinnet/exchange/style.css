@@ -103,6 +103,7 @@ body {
   padding-top: 50px;
 }
 
+
 .item__box {
   width: 858px;
   height: 419px;
@@ -467,6 +468,15 @@ p.subtitle {
      display: none;
    }
 
+   .main-input {
+     display: block;
+     
+   }
+   .main-input input {
+     width: 100%;
+     margin-bottom: 15px;
+   }
+
 
 
 
@@ -537,6 +547,7 @@ p.subtitle {
    .center-block {
     text-align: center;
    }
+
   
   }
   
@@ -545,4 +556,27 @@ p.subtitle {
     padding: 5px;
     text-align: center;
     
+  }
+
+  @media screen and (max-width: 450px) {
+    .modal__item {
+      padding: 0;
+    }
+
+    p.subtitle {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    .center-block p {
+      font-size: 12px;
+    }
+
+    .center-block {
+      padding-top: 5px;
+    }
+    h1.title {
+      line-height: 20px;
+      font-size: 16px;
+    }
+
   }

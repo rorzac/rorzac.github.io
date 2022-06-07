@@ -207,6 +207,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 15px;
+}
+
+.choose__item {
+  padding: 15px;
 }
 
 .ref__inner .title {
@@ -421,7 +426,7 @@ background-image: url('../images/choosedollar.png');
 }
 
 .footer__inner{
-  padding: 65px 0 80px;
+  padding: 65px 25px 80px;
   display: flex;
   justify-content: space-between;
   }
@@ -447,6 +452,9 @@ background-image: url('../images/choosedollar.png');
   padding-left: 10px;
 }
 
+.footer__social a {
+  margin-right: 10px;
+}
 
 
 .footer__logo-text{
