@@ -562,6 +562,9 @@ p.subtitle {
     .modal__item {
       padding: 0;
     }
+    .modal {
+      padding-top: 40px;
+    }
 
     p.subtitle {
       font-size: 12px;
