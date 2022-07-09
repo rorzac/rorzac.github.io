@@ -48,3 +48,8 @@ a {
     background: red;
     padding: 20px 50px;
 }
+
+.main-txt {
+    text-align: right;
+    padding: 15px;
+}
