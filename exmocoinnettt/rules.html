@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/rules.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__logo" href="index.html">
+            <img
+              class="header__logo-img"
+              src="images/exmologo.svg"
+              alt="logo"
+            />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="index.html"> Main </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="order.html"> Order </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="refferal.html"> Refferal </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="rules.html">
+                  Exchange rules
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__control">
+            <a class="header__btn" href="contact.php"> Contact </a>
+          </div>
+          <div class="burger" id="flip">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+        <div class="navmenu" id="panel">
+         
+            <div class="main-link">
+              <a href="index.html">Main</a>
+            </div>
+            <div class="main-link">
+              <a href="order.html">Order</a>
+            </div>
+            <div class="main-link">
+              <a href="refferal.html">Refferal</a>
+            </div>
+            <div class="main-link">
+              <a href="rules.html">Exchange rules</a>
+            </div>
+            <div class="main-link">
+              <a href="contact.html">Contact</a>
+            </div>
+            <div class="main-link">
+              <a href="exchange.html">Exchange</a>
+            </div>
+ 
+        </div>
+        
+        <div class="rules__inner">
+          <div class="main-box">
+            <h1 class="title">Правила обмена</h1>
+            <p class="subtitle">
+              This offer contains the main terms, conditions and rules, based on
+              which the onemoment.cc service provides services to its customers.
+              Before using the services of this service, the user must agree to
+              all of the following conditions. Only by accepting all conditions
+              without exception, the user can proceed to use the service. These
+              exchange rules are posted on the exmocoin.net resource in the
+              public domain.
+            </p>
+            <div class="rules-text">
+              Правила и условия предоставления услуг сервисом
+            </div>
+            <div class="main-text">
+              <p class="text">
+                <span>1.</span> Ключевые определения, понятия и термины
+              </p>
+              <p class="text">
+                <span>1.1.</span> Сервис onemoment.cc (далее - Сервис) – сервис,
+                который предоставляет услуги физическим и юридическим лицам в
+                части обмена, покупки либо продажи электронной валюты. Данные
+                услуги осуществляются посредством специального программного
+                комплекса, доступного по адресу https://exmocoin.net.
+              </p>
+              <p class="text">
+                <span>1.2.</span> Пользователь – это юридическое / физическое
+                лицо, которое безоговорочно приняло все условия данной оферты и
+                пользуется услугами сервиса onemoment.cc
+              </p>
+              <p class="text"></p>
+              <p class="text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+  </body>
+</html>
