@@ -1794,3 +1794,9 @@ END Blog Standard
 /*===========================
 END Blog Details
 ===========================*/
+
+
+.h5-text {
+    text-align: center;
+    padding-top: 10px;
+}
