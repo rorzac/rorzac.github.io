@@ -44,6 +44,7 @@
 /*google font*/
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 .clear {
     clear: both
@@ -113,6 +114,7 @@ html {
 body {
     background: #fff;
     font-weight: normal;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
     letter-spacing: 1.5px;
     color: #888;
