@@ -279,7 +279,10 @@ END Header Area
     padding-top: 80px;
 }
 
-.slider-img {}
+.slider-img {
+    display: flex;
+    justify-content: center;
+}
 
 .slider-img img {
     max-height: 100%;
