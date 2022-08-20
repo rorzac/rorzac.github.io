@@ -4,10 +4,10 @@
   /*============= preloader js css =============*/
   var cites = [];
   cites[0] =
-    "We design Banca for the readers, optimizing not for page views or engagement";
-  cites[1] = "Banca turns out that context is a key part of learning.";
-  cites[2] = "You can create any type of product documentation with Banca";
-  cites[3] = "Advanced visual search system powered by Ajax";
+    "We are always glad to see you";
+  cites[1] = "We are always glad to see you";
+  cites[2] = "We are always glad to see you";
+  cites[3] = "We are always glad to see you";
   var cite = cites[Math.floor(Math.random() * cites.length)];
   $("#preloader p").text(cite);
   $("#preloader").addClass("loading");
