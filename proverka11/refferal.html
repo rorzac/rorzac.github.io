@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/refferal.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <title>ExmoCoin - Refferal</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__logo" href="index.html">
+            <img
+              class="header__logo-img"
+              src="images/exmologo.svg"
+              alt="logo"
+            />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="index.html"> Main </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="order.html"> Order </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="refferal.html"> Refferal </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="rules.html">
+                  Exchange rules
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__control">
+            <a class="header__btn" href="contact.php"> Contact </a>
+          </div>
+          <div class="burger" id="flip">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+        <div class="navmenu" id="panel">
+         
+            <div class="main-link">
+              <a href="index.html">Main</a>
+            </div>
+            <div class="main-link">
+              <a href="order.html">Order</a>
+            </div>
+            <div class="main-link">
+              <a href="refferal.html">Refferal</a>
+            </div>
+            <div class="main-link">
+              <a href="rules.html">Exchange rules</a>
+            </div>
+            <div class="main-link">
+              <a href="contact.html">Contact</a>
+            </div>
+            <div class="main-link">
+              <a href="exchange.html">Exchange</a>
+            </div>
+ 
+        </div>
+
+
+
+
+        <div class="refferal__item">
+          <div class="main-box">
+            <div class="invite-link box">
+              <h1 class="title">Referral program</h1>
+              <p class="subtitle">
+                Earn with us! Tell us about us, share your individual link with friends, acquaintances, place it on your websites and get a percentage of the exchange transactions of attracted users.
+                <br>
+                3 people via referral link = $25
+                <br>
+                10 people via referral link = $70
+              </p>
+              <div class="block-link">
+                <input
+                  id="myInput"
+                  value="exmocoin.net/ref=3e64ccfa-3cce.html"
+                  type="text"
+                  class="copy-link"
+                />
+                <div class="btn-copy">
+                  <img onclick="myFunction()" src="images/copy.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="without box">
+              <h1 class="title">Withdraw reward:</h1>
+              <div class="main-input">
+                <div class="wallet">crypto, uah, rub</div>
+                <br />
+                <input placeholder="Your wallet" type="text" class="wallet" />
+              </div>
+              <div class="main-btn">
+                <a href="" class="btn">Conclusion</a>
+              </div>
+              <div class="text-finish">
+                Available for withdrawal: <br />
+                0 RUR / 0 USD / 0 BTC
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="script/exchange.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+  </body>
+</html>
