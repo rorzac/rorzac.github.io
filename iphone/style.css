@@ -1,0 +1,232 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    --transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.075);
+    perspective: 2400px;
+  }
+  body:after {
+    content: "Enter : Start // Arrow Keys : Move // Ctrl : Shoot // Space : Open Door";
+    color: #666;
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    transition: var(--transition);
+    transform: translateY(-50px);
+  }
+  body:before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: calc(50vh - 100px);
+    bottom: 0;
+    left: 0;
+    z-index: 12;
+    pointer-events: none;
+    background: linear-gradient(to top, #000, rgba(0, 0, 0, 0.01));
+  }
+  body.loaded .phone {
+    transform: translateY(0);
+    filter: brightness(1);
+  }
+  body #wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: transform 0.5s cubic-bezier(0.95, 0.84, 0.44, 1);
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) translateZ(0px);
+    transform-origin: 50% 75%;
+  }
+  body:hover #wrapper {
+    transform: rotateX(30deg) translateZ(0px) scale(1.015);
+  }
+  body:not(.active) .phone .island {
+    animation: pulse 10s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    90% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.01);
+    }
+    95% {
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.25);
+    }
+    100% {
+      box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.01);
+    }
+  }
+  body.active:after {
+    transform: translateY(0);
+    transition-delay: 0.5s;
+  }
+  body.active #wrapper {
+    transform: scale(1.25) translateZ(0px);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075);
+  }
+  body.active .phone .island:after {
+    transform: scaleX(3.5) scaleY(9.85) translateZ(0px);
+    border-radius: 6px / 2px;
+  }
+  body.active .phone:before {
+    filter: contrast(2);
+  }
+  body.active .phone .info {
+    width: 150%;
+    transition-delay: 0.05s;
+  }
+  body.active .framewrap {
+    transform: translate(-50%, calc(-50% - 15px)) scale(1) translateZ(0px);
+  }
+  body.active .framewrap iframe {
+    opacity: 1;
+  }
+  body .framewrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, calc(-50% - 15px)) scale(0) translateZ(0px);
+    transform-origin: 50% calc(50% - 100px);
+    width: 1000px;
+    height: 210px;
+    overflow: hidden;
+    transition: var(--transition);
+    z-index: 20;
+  }
+  body .framewrap:before {
+    content: "";
+    position: absolute;
+    width: 330px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0 5px #000, 0 0 0 5px #000;
+    z-index: 10;
+    pointer-events: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  body .phone {
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    background: url("https://assets.codepen.io/383755/wallpaper.jpg") 50% 50% / cover, #000;
+    border-radius: 50px;
+    left: calc(50% - 200px);
+    top: calc(50% - 160px);
+    transform: scale(1.25) translateY(100vh) rotateX(-10deg);
+    transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.075);
+    filter: brightness(1.5);
+  }
+  body .phone .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+  }
+  body .phone:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    left: 0;
+    top: 0;
+    box-shadow: inset 0 0 0 2px #666, inset 0 0 0 12.5px #000, 0 0 0 1px #fff;
+    z-index: 2;
+    transition: var(--transition);
+  }
+  body .phone:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background: #efefef;
+    left: -3px;
+    top: 125px;
+    box-shadow: 0 75px 0 #efefef, 0 100px 0 #efefef;
+  }
+  body .phone .info {
+    position: absolute;
+    width: calc(100% - 100px);
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    transition: 0.175s cubic-bezier(0.175, 0.885, 0.32, 1.075);
+    transition-delay: 0.3s;
+  }
+  body .phone .info span:not(#time):before, body .phone .info span:not(#time):after {
+    content: "";
+    position: absolute;
+    top: 0;
+  }
+  body .phone .info span:not(#time):before {
+    width: 25px;
+    height: 15px;
+    right: 20px;
+    background: linear-gradient(to right, #fff 3px, rgba(0, 0, 0, 0.01) 3px, rgba(0, 0, 0, 0.01) 10px) 0px 100% / 20px 5px no-repeat, linear-gradient(to right, #fff 3px, rgba(0, 0, 0, 0.01) 3px, rgba(0, 0, 0, 0.01) 10px) 5px 100% / 20px 7.5px no-repeat, linear-gradient(to right, #fff 3px, rgba(0, 0, 0, 0.01) 3px, rgba(0, 0, 0, 0.01) 10px) 10px 100% / 20px 10px no-repeat, linear-gradient(to right, #fff 3px, rgba(0, 0, 0, 0.01) 3px, rgba(0, 0, 0, 0.01) 10px) 15px 100% / 20px 12.5px no-repeat;
+  }
+  body .phone .info span:not(#time):after {
+    width: 22.5px;
+    height: 13px;
+    right: 0px;
+    background: radial-gradient(circle at bottom, #fff 2px, rgba(0, 0, 0, 0.01) 2px, rgba(0, 0, 0, 0.01) 5px, #fff 5px, #fff 7px, rgba(0, 0, 0, 0.01) 7px, rgba(0, 0, 0, 0.01) 10px, #fff 10px, #fff 12px, rgba(0, 0, 0, 0.01) 12px);
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+  }
+  body .phone .island {
+    width: 100px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 9;
+    border-radius: 50px;
+  }
+  body .phone .island:before, body .phone .island:after {
+    content: "";
+    position: absolute;
+  }
+  body .phone .island:before {
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 100%;
+    box-shadow: inset 0 0 2px 0.5px #333, 0 0 0 1px #111;
+    top: 5px;
+    right: 10px;
+    z-index: 2;
+    background: radial-gradient(circle at center, #222 1px, #000 1.5px) 1px 0px / 100% 100% no-repeat;
+  }
+  body .phone .island:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: #000;
+    top: 0;
+    left: 0;
+    transition: var(--transition);
+    transform-origin: top;
+  }
+  body iframe {
+    clip-path: polygon(10px 207px, 650px 207px, 650px 612px, 10px 612px);
+    height: 800px;
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(calc(-50% + 136.5px), calc(-50% - 5px)) scale(0.5);
+    opacity: 0;
+    transition: var(--transition);
+  }
