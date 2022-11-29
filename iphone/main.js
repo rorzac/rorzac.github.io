@@ -14,7 +14,7 @@ document.querySelector(".island").addEventListener("click", function () {
   
       setTimeout(() => {
         document.body.classList.add("loaded");
-      }, 2000);
+      }, 1000);
     },
     false
   );

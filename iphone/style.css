@@ -60,10 +60,7 @@ body {
       box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.01);
     }
   }
-  body.active:after {
-    transform: translateY(0);
-    transition-delay: 0.5s;
-  }
+  
   body.active #wrapper {
     transform: scale(1.25) translateZ(0px);
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.075);
