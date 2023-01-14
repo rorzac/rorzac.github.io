@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="input-box">
+        <i class="uil uil-search"></i>
+        <input type="text" placeholder="Search here...">
+        <button class="button">Search</button>
+    </div>
+
+    <script>
+        const button = document.querySelector(".button");
+
+        button.addEventListener("mousedown", () => button.classList.add("clicked"));
+        button.addEventListener("mouseup", () => button.classList.remove("clicked"));
+    </script>
+</body>
+</html>

@@ -15,7 +15,7 @@ $arr = array(
   'Телеграм: ' => $telegram,
   'Email:' => $email,
   'Страна:' => $country,
-  'Его сообщение:' => $message
+  'Сообщение:' => $message
 );
 
 foreach($arr as $key => $value) {
