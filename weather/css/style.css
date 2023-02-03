@@ -1,0 +1,26 @@
+@import './reset.css';
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700);
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px 50px;
+    background: linear-gradient(92.7deg, #4CB8C4 0%, #3CD3AD 100%), #232323;
+}
+
+.title {
+
+}
+
+.form {
+    
+}
+
+.input {
+    
+}
+
+.button {
+
+}
