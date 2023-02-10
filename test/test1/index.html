@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .clear-form {
+            display: none;
+        }
+        .balance {
+            display: none;
+        }
+        .balance-min {
+          display: none;
+        }
+        .balance-max {
+          display: none;
+        }
+    </style>
+  </head>
+  <body>
+
+   
+    <input type="number" value="100" min="100" max="10000" class="input" type="number" name="" id="">
+    <button>CLICK</button>
+
+    <div class="clear-form">
+        <h1>Поле пустое</h1>
+    </div>
+
+    <div class="balance">
+        <h1>Пополнить баланс <a href="#">Пополнить</a></h1>
+    </div>
+
+    <div class="balance-min">
+      <h1>Минимальный баланс 100 usd</a></h1>
+  </div>
+
+  <div class="balance-max">
+    <h1>Максимальный баланс 10000 usd</a></h1>
+</div>
+
+
+
+
+    
+
+    <script>
+      document.querySelector("button").onclick = myClick;
+
+  
+
+      function myClick() {
+        let input = document.querySelector("input").value;
+
+        if (input == "") {
+            document.getElementsByClassName('balance')[0].style.display = "none";
+            document.getElementsByClassName('clear-form')[0].style.display = "block";
+            document.getElementsByClassName('balance-max')[0].style.display = "none";
+            document.getElementsByClassName('balance-min')[0].style.display = "none";
+        } else if (input <= 99){
+            document.getElementsByClassName('clear-form')[0].style.display = "none";
+            document.getElementsByClassName('balance')[0].style.display = "none";
+            document.getElementsByClassName('balance-min')[0].style.display = "block";
+            document.getElementsByClassName('balance-max')[0].style.display = "none";
+        }
+         else if (input >= 10001){
+            document.getElementsByClassName('clear-form')[0].style.display = "none";
+            document.getElementsByClassName('balance')[0].style.display = "none";
+            document.getElementsByClassName('balance-min')[0].style.display = "none";
+            document.getElementsByClassName('balance-max')[0].style.display = "block";
+        }
+        else {
+          document.getElementsByClassName('clear-form')[0].style.display = "none";
+            document.getElementsByClassName('balance')[0].style.display = "block";
+            document.getElementsByClassName('balance-min')[0].style.display = "none";
+            document.getElementsByClassName('balance-max')[0].style.display = "none";
+        }
+      }
+
+
+
+
+ </script>
+  </body>
+</html>
