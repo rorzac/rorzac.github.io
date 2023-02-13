@@ -45,7 +45,9 @@
 
         <div class="btn">
           <div class="centering">
-            <a id="btn" class="btn-func" href="">Payment</a>
+            <a onclick="return false;" id="btn" class="btn-func" href="javascript:void(0)""
+              >Payment</a
+            >
           </div>
         </div>
       </div>
@@ -67,7 +69,7 @@
           <h1>Amount: <span id="out-coin"></span> XMR</h1>
         </div>
         <div class="section-input">
-          <input
+          <input id="myInput"
             type="text"
             value="48fpQuKvzJs7pspKipTDR3hKCyQgv8wj5RvPZz7Ch7D2Z9fNqGRbLteT2WR1LjN4HZX8Tg7CAWPxbfbMrUCpkbKfLwiRazX"
           />
@@ -80,6 +82,9 @@
     </section>
 
     <script>
+      // document.getSelection("a").on("click", function (e) {
+      //   e.preventDefault();
+      // });
       document.getElementById("btn").onclick = myClick;
 
       let btc = 174.11;
@@ -88,18 +93,35 @@
         let input = document.getElementById("input").value;
 
         if (input >= 100) {
-          alert("yraa");
-
           document.getElementById("out-coin").innerHTML = input * btc;
+
+          document.getElementById("section").style.display = "block";
 
            document.getElementById('header').style.display = "none";
           document.getElementById("section").style.display = "block";
-
-          return;
         } else {
           alert("Минимальная сумма 100");
         }
       }
+
+
+
+
+
+      function myFunction() {
+        /* Get the text field */
+        var copyText = document.getElementById("myInput");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+
+        /* Alert the copied text */
+      }
+
     </script>
   </body>
 </html>

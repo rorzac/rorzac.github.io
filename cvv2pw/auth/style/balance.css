@@ -297,7 +297,7 @@ section {
 .button button {
     width: 103px;
 height: 46.61px;
-
+cursor: pointer;
 
 background: linear-gradient(273.62deg, #002130 2.98%, #003A55 97.47%);
 
@@ -324,4 +324,8 @@ letter-spacing: -0.02em;
 
 color: #D6D9D9;
 
+}
+
+.button button:hover {
+  background: linear-gradient(273.62deg, #044867 2.98%, #003A55 97.47%);
 }
