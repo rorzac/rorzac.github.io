@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/balance.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div id="container">
+        <div class="home-page">
+          <a href="#">Home Page</a>
+        </div>
+        <div class="balance">
+          <h1>Your balance now:</h1>
+          <p>$0,00</p>
+        </div>
+        <div class="img-balance">
+          <img src="img/balance.svg" alt="" />
+        </div>
+        <div class="info-text">
+          We payment only crypto coin Monero (XMR) for your security
+        </div>
+        <div class="input-value">
+          <input
+            id="input"
+            class="input"
+            min="100"
+            max="1500"
+            type="number"
+            value="100"
+          />
+        </div>
+        <div class="input-text">you send</div>
+        <div class="info">
+          <div class="input-block">
+            <div class="content">
+              <img src="img/info.svg" alt="" />
+              <h1>Minimum amount 100 usd</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn">
+          <div class="centering">
+            <a id="btn" class="btn-func" href="">Payment</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="section" class="section">
+      <div class="section-container">
+        <div class="section-homepage">
+          <a href="">Home Page</a>
+        </div>
+        <div class="section-img">
+          <img src="img/send.svg" alt="" />
+        </div>
+        <div class="section-info">
+          As soon as we receive all confirmations, funds will appear on your
+          balance
+        </div>
+        <div class="amount">
+          <h1>Amount: <span id="out-coin"></span> XMR</h1>
+        </div>
+        <div class="section-input">
+          <input
+            type="text"
+            value="48fpQuKvzJs7pspKipTDR3hKCyQgv8wj5RvPZz7Ch7D2Z9fNqGRbLteT2WR1LjN4HZX8Tg7CAWPxbfbMrUCpkbKfLwiRazX"
+          />
+        </div>
+
+        <div class="button">
+          <button onclick="myFunction()">Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.getElementById("btn").onclick = myClick;
+
+      let btc = 174.11;
+
+      function myClick() {
+        let input = document.getElementById("input").value;
+
+        if (input >= 100) {
+          alert("yraa");
+
+          document.getElementById("out-coin").innerHTML = input * btc;
+
+           document.getElementById('header').style.display = "none";
+        //   document.getElementById("section").style.display = "block";
+
+          return;
+        } else {
+          alert("Минимальная сумма 100");
+        }
+      }
+    </script>
+  </body>
+</html>

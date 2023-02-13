@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  position: relative;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+
+  background: radial-gradient(50% 50% at 50% 50%, #001516 0%, #001011 100%);
+  padding: 100px 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.decor img {
+  position: absolute;
+  left: 200.67px;
+  top: 0px;
+}
+
+.main-title {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22.7638px;
+  line-height: 122.5%;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+
+  opacity: 0.6;
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 10px;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-title h1 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 125px;
+  line-height: 128%;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  background: radial-gradient(
+    84.53% 84.53% at 50% 36.86%,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.main-title h2 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 197.5%;
+  text-align: center;
+  letter-spacing: 1.62em;
+  background: radial-gradient(
+    84.53% 84.53% at 50% 36.86%,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-left: 60px;
+}
+
+.login {
+  z-index: 12000;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+.login-auth {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #d6d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-login {
+  z-index: 12000;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.title-login a {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 222.5%;
+  color: #9c9c9c;
+}
+
+section {
+  width: 100%;
+
+  background: radial-gradient(50% 50% at 50% 50%, #001516 0%, #001011 100%);
+}
+
+.main-section {
+  padding: 150px 0;
+}
+
+.img-text,
+.img-card {
+  display: flex;
+  justify-content: center;
+}
