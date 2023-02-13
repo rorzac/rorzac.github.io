@@ -31,3 +31,114 @@ header {
   letter-spacing: -0.02em;
   color: #414141;
 }
+
+.main-center {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 200px;
+  padding-bottom: 75px;
+}
+
+.main-form {
+  display: flex;
+  justify-content: center;
+}
+
+.login,
+.password {
+  display: flex;
+  align-items: center;
+}
+
+.login p,
+.password p {
+  padding-right: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 122.5%;
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+
+  opacity: 0.6;
+}
+
+.login input,
+.password input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 122.5%;
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+  border: none;
+  outline: none;
+  background: none;
+  opacity: 0.16;
+}
+
+.login input {
+  width: 80px;
+  height: 40px;
+}
+
+.password input {
+  width: 130px;
+  height: 40px;
+}
+
+.btn {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn button {
+  width: 155px;
+  height: 60px;
+  background: linear-gradient(273.62deg, #002130 2.98%, #003a55 97.47%);
+
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to right, #0082bb, #005c8500);
+  border-right-style: none;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36.0465px;
+  line-height: 122.5%;
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+
+  opacity: 0.6;
+
+  cursor: pointer;
+}
+
+.register {
+  padding-top: 12px;
+  text-align: center;
+}
+
+.register a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 122.5%;
+
+  letter-spacing: -0.02em;
+
+  color: #8e8e8e;
+}
