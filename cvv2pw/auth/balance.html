@@ -28,7 +28,6 @@
             id="input"
             class="input"
             min="100"
-            max="1500"
             type="number"
             value="100"
           />
@@ -79,7 +78,7 @@
           <button onclick="myFunction()">Copy</button>
         </div>
 
-
+<br><br>
         <hr>
         <br>
         <br>
@@ -87,7 +86,7 @@
         <div class="btn">
           <div class="centering">
             <a onclick="return false;" id="btn-home" class="btn-func" href="javascript:void(0)""
-              >Home</a
+              >Cancel</a
             >
           </div>
         </div>
@@ -101,20 +100,20 @@
       // });
       document.getElementById("btn").onclick = myClick;
 
-      let btc = 174.11;
+      let xmr = 0.006219;
 
       function myClick() {
         let input = document.getElementById("input").value;
 
         if (input >= 100) {
-          document.getElementById("out-coin").innerHTML = input * btc;
+          document.getElementById("out-coin").innerHTML = input * xmr;
 
           document.getElementById("section").style.display = "block";
 
            document.getElementById('header').style.display = "none";
           document.getElementById("section").style.display = "block";
         } else {
-          alert("Минимальная сумма 100");
+          alert("Minimum amount 100 usd!!!");
         }
       }
 
