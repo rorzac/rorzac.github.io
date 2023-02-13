@@ -78,6 +78,20 @@
         <div class="button">
           <button onclick="myFunction()">Copy</button>
         </div>
+
+
+        <hr>
+        <br>
+        <br>
+
+        <div class="btn">
+          <div class="centering">
+            <a onclick="return false;" id="btn-home" class="btn-func" href="javascript:void(0)""
+              >Home</a
+            >
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -102,6 +116,14 @@
         } else {
           alert("Минимальная сумма 100");
         }
+      }
+
+      document.getElementById("btn-home").onclick = HomeBtn;
+
+      function HomeBtn() {
+        document.getElementById("section").style.display = "none";
+
+           document.getElementById('header').style.display = "block";
       }
 
 
