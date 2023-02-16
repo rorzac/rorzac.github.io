@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.line {
+  margin: 10px 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #ffffff, #f2f2f200);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #001516;
+  font-family: "Ubuntu", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding {
+  /* padding: 15px; */
+}
+
+.block {
+  width: 50%;
+  height: 70%;
+  
+
+  display: flex;
+}
+
+.nav-block {
+  
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #01171f -17.11%,
+    rgba(0, 0, 0, 0) 567.91%,
+    rgba(0, 0, 0, 0) 567.91%
+  );
+}
+
+.main-block {
+ 
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(273.62deg, #002130 2.98%, #003a55 97.47%);
+}
+
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.title-main {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.balance a,
+.exit a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 93%;
+
+  letter-spacing: 0.035em;
+
+  color: #505050;
+}
+
+.exit {
+  margin-top: 10px;
+}
+
+.menu {
+  padding-top: 80px;
+}
+
+.menu a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 93%;
+  /* or 23px */
+
+  padding-left: 15px;
+  letter-spacing: 0.035em;
+
+  color: #d6d9d9;
+}
+
+.main-text a {
+    text-decoration: underline;
+}
+
+.main-text .active {
+    color: red;
+}
+
+/* Right block spart */
+
+.name {
+  padding-top: 10px;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.name p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 93%;
+  letter-spacing: 0.02em;
+  color: #d6d9d9;
+}
+
+.name span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 93%;
+  letter-spacing: 0.02em;
+  color: #d6d9d9;
+}
+
+.block-info {
+  width: 95%;
+  height: 43px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: linear-gradient(90deg, #161616 0%, #000000 100%);
+}
+
+.block-info p {
+display: flex;
+align-items: center;
+height: 100%;
+padding-left: 10px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 93%;
+  letter-spacing: 0.02em;
+  color: #a60000;
+
+ overflow: hidden;
+}
+
+.animate {
+    animation-duration: 12s;
+    animation-name: animate;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animate {
+    from {
+      padding-left: 30%;
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  
+    to {
+      padding-left: 1%;
+      opacity: 1;
+    }
+  }
+
+
+  .tab {
+
+  
+    margin: 15px 10px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to right, #0082bb, #005c8500);
+    border-right-style: none;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #006593 0%, rgba(4, 4, 4, 0) 100%);
+  }
+
+  .tab a {
+    padding-left: 15px;
+    color: #fff;
+  }
+
+
+  @media (max-width: 1500px) {
+    /* .name p {
+        font-size: 25px;
+    }
+
+    .block-info p {
+        font-size: 11px;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .balance a,
+    .exit a {
+        font-size: 15px;
+    } */
+
+    .block {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    /* .name p {
+        font-size: 25px;
+    }
+
+    .block-info p {
+        font-size: 11px;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .balance a,
+    .exit a {
+        font-size: 15px;
+    } */
+
+    .block {
+        width: 90%;
+    }
+}
+
+@media (max-width: 840px) {
+    .name p {
+        font-size: 20px;
+    }
+
+    .block-info p {
+        font-size: 11px;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .balance a,
+    .exit a {
+        font-size: 15px;
+    }
+
+    .block {
+        width: 90%;
+    }
+}
+
+@media (max-width: 540px) {
+    .name p {
+        font-size: 20px;
+    }
+
+    .block-info p {
+        font-size: 11px;
+    }
+
+    .main-text {
+        text-align: center;
+    }
+
+    .main-text a {
+        font-size: 12px;
+        padding-left: 0px;
+        
+    }
+
+    .balance a,
+    .exit a {
+        font-size: 12px;
+       
+    }
+
+    .tab a {
+        font-size: 10px;
+    }
+
+    .block {
+        width: 95%;
+    }
+}
