@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+a {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(50% 50% at 50% 50%, #001516 0%, #001011 100%);
+}
+
+.main-img {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-img img {
+width: 20%;
+
+}
+
+.login {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.login img {
+    width: 100%;
+}
+
+section {
+    background: radial-gradient(50% 50% at 50% 50%, #001516 0%, #001011 100%);
+    width: 100%;
+    height: 100vh;
+}
+
+.main-text {
+    padding-top: 90px;
+display: flex;
+justify-content: center;
+}
+
+.main-text img {
+width: 20%;
+height: 100%;
+}
+
+.card {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    width: 40%;
+    height: 100%;
+}
+
+@media (max-width: 1000px) {
+    
+.main-img img {
+    width: 50%;
+    
+    }
+
+    .login img {
+        width: 100%;
+    }
+
+    .main-text img {
+        width: 40%;
+        height: 100%;
+        }
+
+    .card img {
+        width: 60%;
+        height: 100%;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    
+    .main-img img {
+        width: 80%;
+        
+        }
+    
+        .login img {
+            width: 100%;
+        }
+
+
+        .main-text img {
+            width: 70%;
+            height: 100%;
+            }
+    
+        .card img {
+            width: 130%;
+            height: 100%;
+        }
+    }
