@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Арбитраж Крипты CRIPTOUP24</title>
+        <meta name="description" content="Научись зарабатывать на арбитраже крипты ✔ Качественное обучение ✔ Только с офф биржами ✔ Работай дистанционно">
+        <meta name="keywords" content="арбитраж крипты">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+        <link async rel="stylesheet" media="screen" type="text/css" href="main.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<style>
+        input[type=tel] {
+            padding-left: 95px !important;
+            width: 100%;
+        }
+        .iti {
+            width: 100%;
+        }
+        .iti__country-list {
+            z-index: 100 !important;
+        }
+	.modalDialog form input:disabled {
+  background: gray!important;
+}
+        .iti__selected-dial-code, .iti__country-name {
+            color: #999;
+        }
+	.modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		display: none;
+		pointer-events: none;
+	}
+
+	.modalDialog:target {
+		display: block;
+		pointer-events: auto;
+	}
+
+	.modalDialog > div {
+		width: 360px;
+		position: relative;
+		margin: 10% auto;
+		padding: 20px 20px 15px 20px;
+		border-radius: 14px;
+		background: #fff;
+        border: 1px solid #3c3c3c;
+	}
+
+    .modalDialog input {
+        border-radius: 18px;
+        max-width: 250px;
+        margin-bottom: 0;
+        padding: 2px 20px 2px 40px;
+        border: 1px solid #3c3c3c;
+        color: #3c3c3c;
+    }
+    .modalDialog input::placeholder {
+        color: #3c3c3c;
+    }
+
+    .iti {
+        margin-top: 10px;
+    }
+
+    .modalDialog form {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .modalDialog form img {
+        width: 25px;
+        position: absolute;
+        left: 18px;
+        top: 14px;
+    }
+
+    .modalDialog form label {
+        position: relative;
+    }
+
+	.close {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		top: -10px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+    .lab_text {
+        font-size: 11px;
+        max-width: 199px;
+        margin: 0 auto;
+        text-align: center;
+        color: #3c3c3c;
+        margin-bottom: 4px;
+    }
+    .or_phone {
+        font-size: 12px;
+        color: #000000;
+        font-weight: bold;
+        max-width: 250px;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .or_phone img {
+        position: relative!important;
+        left: unset!important;
+        width: 12px!important;
+    }
+    .left_arrow {
+        top: 3px!important;
+    }
+    .right_arrow {
+        top: unset!important;
+        bottom: 3px;
+    }
+    .tooltip_input {
+        position: absolute;
+        color: #3c3c3c;
+        z-index: 999;
+        max-width: 250px;
+        right: 10px;
+        bottom: 35px;
+        background: #ffffff;
+        border: 1px solid #3c3c3c;
+        border-radius: 4px;
+        width: auto;
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .modalDialog button {
+        max-width: 250px;
+        border-radius: 16px;
+        height: 32px;
+        background-color: #fd4e4b;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .hidden {
+        display: none;
+    }
+    .sen_lab {
+        margin-top: 0!important;
+    }
+    .modalDialog p {
+        margin-bottom: 0;
+    }
+    .send_text {
+        color: #fd4e4b;
+    }
+    @media (max-width: 430px) {
+        .modalDialog > div {
+            width: 340px;
+        }
+    }
+	.close:hover { background: #00d9ff; }
+	</style>
+        <link href="assets/landing/css/intlTelInput.css" rel="stylesheet" type="text/css">
+        <link href="assets/landing/css/landing.css" rel="stylesheet" type="text/css">	
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" /><style>
+.overlay-dcRe6afnge { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.8); z-index: 1000; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; overflow-y: auto; display: none; }
+.lds-spinner-dcRe6afnge { color: official; display: inline-block; position: relative; width: 80px; height: 80px; }
+.lds-spinner-dcRe6afnge div { transform-origin: 40px 40px; animation: lds-spinner-dcRe6afnge 1.2s linear infinite; }
+.lds-spinner-dcRe6afnge div:after { content: " "; display: block; position: absolute; top: 3px; left: 37px; width: 6px; height: 18px; border-radius: 20%; background: #fff; }
+.lds-spinner-dcRe6afnge div:nth-child(1) { transform: rotate(0deg); animation-delay: -1.1s; }
+.lds-spinner-dcRe6afnge div:nth-child(2) { transform: rotate(30deg); animation-delay: -1s; }
+.lds-spinner-dcRe6afnge div:nth-child(3) { transform: rotate(60deg); animation-delay: -0.9s; }
+.lds-spinner-dcRe6afnge div:nth-child(4) { transform: rotate(90deg); animation-delay: -0.8s; }
+.lds-spinner-dcRe6afnge div:nth-child(5) { transform: rotate(120deg); animation-delay: -0.7s; }
+.lds-spinner-dcRe6afnge div:nth-child(6) { transform: rotate(150deg); animation-delay: -0.6s; }
+.lds-spinner-dcRe6afnge div:nth-child(7) { transform: rotate(180deg); animation-delay: -0.5s; }
+.lds-spinner-dcRe6afnge div:nth-child(8) { transform: rotate(210deg); animation-delay: -0.4s; }
+.lds-spinner-dcRe6afnge div:nth-child(9) { transform: rotate(240deg); animation-delay: -0.3s; }
+.lds-spinner-dcRe6afnge div:nth-child(10) { transform: rotate(270deg); animation-delay: -0.2s; }
+.lds-spinner-dcRe6afnge div:nth-child(11) { transform: rotate(300deg); animation-delay: -0.1s; }
+.lds-spinner-dcRe6afnge div:nth-child(12) { transform: rotate(330deg); animation-delay: 0s; }
+@keyframes lds-spinner-dcRe6afnge {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
+.visible-dcRe6afnge { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+</style><!--[HEADER]--></head>
+    <body>
+        <div class="wrapper">
+            <header class="header" data-aos="fade-down" data-aos-duration="1500">
+                <div class="container">
+                    <div class="header__row">
+					    <a href="#openModal" class="header__subscribe">Подать заявку</a>
+                        <div class="header__menu menu">
+                            <ul>
+                                <li><a class="menu_a" href="#advantages">Преимущества</a></li>
+                                <li><a class="menu_a" href="#about">О нас</a></li>
+								 <li><a class="openModal" href="#openModal">Подать заявку</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section id="first" class="section first">
+                <div class="container">
+                    <div class="first__title title">
+                        <div class="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250">А<span class="decore decore-1"></span>РБИТРА<span class="decore decore-2"></span>Ж</div>
+                        <div class="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500"><span class="decore decore-3"></span>КРИПТЫ</div>
+						<div class="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="750">CRIPTOUP24<span class="decore decore-4"></span></div>
+						<br/>
+                    </div>
+                    <div class="first__line_main">
+                        <div class="first__line">
+                            <div class="js-marquee">
+                                <span>Научим зарабатывать на арбитраже крипты</span><span>Научим зарабатывать на арбитраже крипты</span><span>Научим зарабатывать на арбитраже крипты</span>
+                                <span>Научим зарабатывать на арбитраже крипты</span><span>Научим зарабатывать на арбитраже крипты</span><span>Научим зарабатывать на арбитраже крипты</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first__btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                        <a href="#openModal" class="btn btn_main">Подать заявку</a>
+                    </div>
+                    <div class="first__tab" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+                        <div class="first__tab-container">
+                            <div class="first__tab-digital first__tab-digital_1">100</div>
+                            <div class="first__tab-line">
+                                <div class="first__tab-progress"></div>
+                            </div>
+                            <div class="first__tab-digital first__tab-digital_2">$$$</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="first__line_back">
+                    <div class="first__line"></div>
+                </div>
+                <div class="first-decore first-decore_1 parallax-main" data-type="standart" data-speed="100">
+                    <img src="img/first-decore-top.png" />
+                </div>
+                <div class="first-decore first-decore_2 parallax-main" data-type="standart" data-speed="-100">
+                    <img src="img/first-decore-button.png" />
+                </div>
+            </section>
+            <section id="advantages" class="section advantages">
+                <div class="container">
+                    <div class="advantages__title title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="">Преимуще<span class="decore decore-1"></span>ства</div>
+                    <div class="advantages__list">
+                        <div class="advantages__column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+                            <div class="advantages__item advantages__item_1">
+                               <!-- <div class="advantages__item-img">
+                                    <img src="img/advantages-img-1.png">
+                                </div>-->
+                                <div class="advantages__item-number ">01</div>
+                                <div class="advantages__item-title">
+                                    Качественное обучение
+                                </div>
+                                <div class="advantages__item-description">
+                                    Научим тебя зарабатывать $ за 30 минут. <br/>Заработай свои кровные уже прямо сейчас!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <div class="advantages__item advantages__item_2">
+                                <!--<div class="advantages__item-img">
+                                    <img src="img/advantages-img-2.png">    
+                                </div>-->
+                                <div class="advantages__item-number">02</div>
+                                <div class="advantages__item-title">
+                                    Работай дистанционно
+                                </div>
+                                <div class="advantages__item-description">
+                                    Зарабатывай зеленные <br/>прямо не выходя из дому.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            <div class="advantages__item advantages__item_3">
+                                <!--<div class="advantages__item-img">
+                                    <img src="img/advantages-img-3.png">
+                                </div>-->
+                                <div class="advantages__item-number">03</div>
+                                <div class="advantages__item-title">
+                                    Только с офф биржами
+                                </div>
+                                <div class="advantages__item-description">
+                                    Производи все операции на проверенных <br/>и лицензированых биржах и кошельках.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                            <div class="advantages__item advantages__item_4">
+                                <!--<div class="advantages__item-img">
+                                    <img src="img/advantages-img-4.png">
+                                </div>-->
+                                <div class="advantages__item-number">04</div>
+                                <div class="advantages__item-title">
+                                    Воплоти свою мечту
+                                </div>
+                                <div class="advantages__item-description">
+                                    Получай кайф от процесса, <br/>улучши качество своей жизни, <br/>воплоти свою мечту.
+                                </div>
+                            </div>
+                        </div>
+                   <!--     <div class="advantages__column" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                            <div class="advantages__item advantages__item_5">
+                                <div class="advantages__item-img">
+                                    <img src="img/advantages-img-5.png">
+                                </div>
+                                <div class="advantages__item-number">05</div>
+                                <div class="advantages__item-title">
+                                    Снос конкурентов
+                                </div>
+                                <div class="advantages__item-description">
+                                    Куда ж без этого. У нас есть собственный <br/>софт по скликиванию <span>и репортингу <br/>конкурентов</span>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="section about">
+                <div class="container">
+                    <div class="about__title title" data-aos="fade-left" data-aos-duration="1000"><span class="decore decore-1"></span>О НАС</div>
+                    <div class="about__slider" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<ol style="text-align: center;">
+    <li style="text-align: center;">✔ Качественное обучение</li>
+    <li style="text-align: center;">✔ Поддержка 24/7</li>
+    <li style="text-align: center;">✔ Топовые схемы для наилучшего спреда</li>
+</ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="channel" class="section channel">
+                <div class="container">
+                    <div class="channel__row">
+                        <div class="channel__img">
+                            <img src="img/channel-decore.png" />
+                        </div>
+                        <div class="channel__main">
+                            <div class="channel__title" data-aos="fade-up" data-aos-duration="1000"><span class="decore decore-1"></span>Мы <br/>единственные</div>
+                            <div class="channel__description description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">
+                                Кто об этом открыто говорит и имеет такой <br/>широкий спектр инструментов. Получай <br/>бесплатно информацию в нашем Telegram- <br/>канале
+                            </div>
+                            <div class="channel__btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                                <a href="#openModal" class="btn btn_main">Подать заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section footer">
+                <div class="container">
+                    <div class="footer__main">
+                        <div class="footer__column">
+                            <div class="footer__contact">
+                                Связаться с нами:
+                                <a href="#first"">
+                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.84784 10.5451L7.517 15.0122C7.99034 15.0122 8.19535 14.817 8.44118 14.5827L10.6604 12.5467L15.2588 15.7794C16.1022 16.2306 16.6964 15.993 16.9239 15.0346L19.9423 1.45712L19.9431 1.45632C20.2106 0.259523 19.4923 -0.208475 18.6706 0.085124L0.928504 6.60589C-0.282359 7.05709 -0.264025 7.70508 0.722666 7.99868L5.25861 9.35308L15.7947 3.02431C16.2905 2.70911 16.7414 2.88351 16.3705 3.19871L7.84784 10.5451Z" fill="#DD4242"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__column">
+                            <div class="footer__title">Навигация</div>
+                            <div class="footer__menu menu">
+                                <ul>
+                                    <li><a href="#first">Главная</a></li>
+                                    <li><a href="#advantages">Преимущества</a></li>
+                                    <li><a href="#about">О нас</a></li>
+                                    <li><a href="#first">Наш канал</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">
+                        Все права защищены
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script type="text/javascript" src="assets/landing/js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.spincrement.min.js"></script>
+        <script type="text/javascript" src="js/aos.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.marquee.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Закрыть" class="close">X</a>
+		<h2><span style="color: #3c3c3c; font-size: 12.3pt;text-align: center;display: block;">Оставьте свои контактные данные</span></h2>
+        <span class="lab_text top_lab">Наш менеджер свяжется с Вами в течение дня!</span>
+		<form id="application" action="api.php?" method="post" name=" application "><input type="hidden" name="subid" value="{clickid}" />            <label class="label_input">Ваше имя
+                <img src="img/person.svg" alt=""/>
+                <input name="name" placeholder="Ваше имя" type="text" autocomplete="off" required>
+            </label>
+            <label class="label_input">Ваш номер телефона
+                <img src="img/phone.svg" alt=""/>
+                <input type="tel" name="phone" required placeholder autocomplete="off">
+            </label>
+            
+			<p style="text-align: center;"><button class="btns btn-reg" name="submit" type="submit"> Отправить </button></p>
+            <span class="lab_text sen_lab">Нажимая кнопку <span class="send_text">Отправить</span>, я даю согласие на обработку персональных данных</span>
+
+            <input type="hidden" name="country" value="ru" />
+            <input type="hidden" name="phonecc" value="" class="phonecc" />
+		</form>
+	</div>
+</div>		
+ 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+<script type="text/javascript">
+function intlTelSetGeoCode( code ) {
+	var geofields = document.querySelectorAll("input[name=country]");
+	for ( var gid = 0; gid < geofields.length; gid++ ) geofields[gid].value = code;
+}
+function intlTelSetPhoneCode( code ) {
+	var phonecode = document.querySelectorAll(".phonecc");
+	for ( var pid = 0; pid < phonecode.length; pid++ ) phonecode[pid].value = code;
+}
+var allthephonefields = document.querySelectorAll("input[name=phone]");
+var initialphonecc = 0;
+var initialphonegc = false;
+for ( var atpi = 0; atpi < allthephonefields.length; atpi++ ) {
+	var iti = window.intlTelInput( allthephonefields[atpi], {
+	initialCountry: "auto",
+	nationalMode: true,
+	autoPlaceholder: 'aggressive',
+	formatOnDisplay: true,
+	separateDialCode: true,
+	utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.js",
+    geoIpLookup: function ( setgeo ) {
+		fetch( "https://ipinfo.io", { headers: { 'Accept': 'application/json' } })
+		.then( response => response.json() )
+		.then( r => setgeo( ( r && r.country ) ? r.country : "ru" ) );
+    }
+});
+	var itg = iti.getSelectedCountryData();
+	if ( itg.dialCode ) initialphonecc = itg.dialCode;
+	if ( itg.iso2 ) initialphonegc = itg.iso2;
+	allthephonefields[atpi].addEventListener( "countrychange", function( event ) {
+		var iti = window.intlTelInputGlobals.getInstance( event.target );
+		if ( iti != undefined ) {
+			var geo = iti.getSelectedCountryData();
+			intlTelSetPhoneCode( geo.dialCode );
+			intlTelSetGeoCode( geo.iso2 );
+		}
+	});
+}
+if ( initialphonecc ) intlTelSetPhoneCode( initialphonecc );
+if ( initialphonegc ) intlTelSetGeoCode( initialphonegc );
+</script><div class="overlay-dcRe6afnge"><div class="lds-spinner-dcRe6afnge"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div><script>document.querySelectorAll('form').forEach( (e) => e.addEventListener('submit', () => document.querySelector('.overlay-dcRe6afnge').classList.add("visible-dcRe6afnge") ));</script></body>
+<style>
+    .top_lab {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .modalDialog form {
+        align-items: center;
+    }
+    .modalDialog input {
+        margin: 0;
+        margin-top: 4px;
+        padding: 2px 20px 2px 20px;
+    }
+    .modalDialog input::placeholder {
+        color: #bebebe;
+    }
+    .label_input {
+        font-size: 12px;
+        font-weight: 700;
+        color: #3c3c3c;
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 12px;
+    }
+    .iti {
+        margin-top: 4px;
+    }
+    .modalDialog form img {
+        left: unset;
+        right: 5px;
+        z-index: 100;
+        top: 23px;
+    }
+    .iti--separate-dial-code .iti__selected-dial-code {
+        color: #3c3c3c;
+        font-size: 14px;
+        margin-top: -1px;
+        border-right: 1px solid #d5d5d5;
+        padding-right: 10px;
+    }
+    .lab_text {
+        font-size: 10px;
+        max-width: 290px;
+    }
+    .telegram_input::placeholder {
+        font-size: 11px;
+    }
+</style>
+</html>
