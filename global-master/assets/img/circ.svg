@@ -48,8 +48,8 @@
 <stop offset="1" stop-color="#FFE600" stop-opacity="0"/>
 </radialGradient>
 <linearGradient id="paint5_linear_401_3" x1="354.5" y1="273" x2="354.5" y2="450" gradientUnits="userSpaceOnUse">
-<stop stop-color="white"/>
-<stop offset="1" stop-color="#17FF3C" stop-opacity="0"/>
+<stop stop-color="#1400FF"/>
+<stop offset="1" stop-color="#FF9900"/>
 </linearGradient>
 <radialGradient id="paint6_radial_401_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(186.838 183.26) rotate(90) scale(183.26 187.978)">
 <stop stop-color="white"/>
