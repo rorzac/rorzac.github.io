@@ -1,0 +1,604 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "IBM Plaxe Sans", sans-serif;
+  background: #080814;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  width: 100%;
+  min-height: 150vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(../image/bg.svg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar h1 {
+  padding-left: 15px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu li {
+  padding-left: 40px;
+  font-size: 20px;
+}
+
+.nav-menu a {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+
+  line-height: 111.9%;
+
+  color: #ffffff;
+}
+
+.logo-text .white {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 111.9%;
+}
+
+.logo-text .blue {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 111.9%;
+
+  background: linear-gradient(
+    90deg,
+    #a661ff 0.55%,
+    #4954ff 55.65%,
+    #11c9ff 115.54%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+  background: #0a0a18;
+}
+
+.language .lang {
+  padding-left: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 111.9%;
+
+  color: #ffffff;
+}
+
+.sign-in {
+  padding-left: 46px;
+  padding-right: 55px;
+}
+
+.sign-in a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 111.9%;
+
+  color: #ffffff;
+}
+
+.sign-up {
+  background: #4954ff;
+  box-shadow: 0px 0px 95.1711px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(24.0663px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 5.4696px;
+
+  padding: 15px 44px;
+}
+
+.sign-up a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 111.9%;
+  color: #ffffff;
+}
+
+.header__trust {
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__main-text {
+  padding-top: 25px;
+  position: relative;
+}
+
+.header__main-text h1 {
+  text-align: center;
+
+  /* Simple way to buy and sell cryptocurrency with */
+
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 71.134px;
+  line-height: 111.9%;
+
+  color: #ffffff;
+}
+
+.text-gradient {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 71.134px;
+  line-height: 111.9%;
+
+  background: linear-gradient(
+    90deg,
+    #a661ff 5.67%,
+    #4954ff 46.57%,
+    #11c9ff 91.02%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.header__subtitle {
+  padding-top: 25px;
+}
+
+.header__subtitle h1 {
+  font-family: "SF Pro Text", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 111.9%;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #353535;
+}
+
+.header__main-btn {
+  padding-top: 34px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-signup {
+  margin-right: 40px;
+  border: 1px solid #25446d;
+  padding: 23px 57px;
+
+  border-radius: 5.5px;
+
+  background: linear-gradient(180deg, #0b0a18 0%, #1c173c 100%);
+}
+
+.btn-signup a {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 111.9%;
+
+  color: #ffffff;
+}
+
+.btn-exchange {
+  padding: 23px 57px;
+  background: #4954ff;
+  border: 1px solid #4954ff;
+  border-radius: 5.5px;
+}
+
+.btn-exchange a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 111.9%;
+
+  color: #ffffff;
+}
+
+.header__logos {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-form {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 759px;
+  height: 551px;
+  background: #080814;
+  border: 2px solid #353535;
+  border-radius: 13px;
+  border-top: 0;
+}
+
+.button-form {
+  display: flex;
+}
+
+.left {
+  border-radius: 13px;
+  width: 50%;
+  height: 70px;
+  border: 0.5px solid #353535;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  cursor: pointer;
+}
+
+.left h1 {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 111.9%;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.right {
+  border-radius: 13px;
+  width: 50%;
+  height: 70px;
+  border: 0.5px solid #353535;
+
+  border-right: 0;
+  cursor: pointer;
+}
+
+.right h1 {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 111.9%;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.send-input {
+  margin: 30px 45px 0 45px;
+  border-radius: 13px;
+  height: 95px;
+  border: 1px solid #353535;
+
+  display: flex;
+}
+
+.get-input {
+  margin: 0px 45px 0 45px;
+  border-radius: 13px;
+  height: 95px;
+  border: 1px solid #353535;
+
+  display: flex;
+}
+
+.left-input {
+  width: 65%;
+}
+
+.left-input h1 {
+  /* You Send */
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 111.9%;
+
+  color: #353535;
+
+  padding-left: 23px;
+  padding-top: 16px;
+  padding-bottom: 2px;
+}
+
+.left-input input {
+  height: 40px;
+  padding-left: 23px;
+  background: #080814;
+  border: none;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 111.9%;
+  font-size: 35px;
+  outline: none;
+  color: #fff;
+}
+
+.right-input {
+  width: 45%;
+  border: 2px solid #353535;
+  border-radius: 13px;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.input-container .name {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.input-container .name h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 111.9%;
+
+  color: #ffffff;
+}
+
+.info-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-form h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 111.9%;
+  /* identical to box height, or 17px */
+
+  color: #ffffff;
+
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.left-form-wait {
+  padding-right: 0%;
+}
+
+.wait-photo {
+  display: flex;
+}
+
+.button {
+  margin: 34px 45px 0;
+
+  background: linear-gradient(
+    90deg,
+    #a661ff 0.55%,
+    #4954ff 55.65%,
+    #11c9ff 115.54%
+  );
+  border-radius: 13px;
+}
+
+.button h1 {
+  padding: 32px 274px;
+}
+
+.text-sub {
+  padding-top: 70px;
+  padding-bottom: 30px;
+
+  color: #353535;
+}
+
+.text-sub h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 111.9%;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+/* second section */
+
+.second {
+  width: 100%;
+  height: 100vh;
+  /* background: red; */
+  background-image: url(../image/section-second.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* finish second section */
+
+.bg-3 {
+  width: 100%;
+  height: 150vh;
+  /* background: red; */
+  background-image: url(../image/bg-3.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-4 {
+  width: 100%;
+  height: 709px;
+
+  background-image: url(../image/bg-4.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.menu {
+  display: none;
+}
+
+/*  */
+
+@media (max-width: 1600px) {
+  .nav-menu li {
+    padding-left: 15px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .nav-menu a {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 111.9%;
+    color: #ffffff;
+    font-size: 15px;
+  }
+
+  .sign-up {
+    padding: 10px 21px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sign-in {
+    padding-left: 25px;
+    padding-right: 30px;
+  }
+  .right-column {
+    display: none;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    width: 22px;
+    height: 19px;
+    background-image: url(../image/menu.svg);
+    cursor: pointer;
+  }
+
+  .menu {
+    border: 1px solid #0e0e35;
+    background: #080814;
+    position: absolute;
+    width: 40%;
+    height: 60vh;
+    right: 11%;
+    top: 15%;
+    z-index: 1000;
+    border: 1px solid #4954FF;
+  }
+
+  .main-link {
+    
+    padding: 10px 50px;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .main-link a {
+    color: #fff;
+
+ 
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 111.9%;
+
+
+
+  }
+}

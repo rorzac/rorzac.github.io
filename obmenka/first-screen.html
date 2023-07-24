@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/first-screen.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div class="header__nav">
+          <nav class="navbar">
+            <a href="" class="logo">
+              <img src="image/logo.svg" alt="" />
+            </a>
+            <div class="logo-text">
+              <h1>
+                <span class="white">Web</span> <br />
+                <span class="blue">Exchange</span>
+              </h1>
+            </div>
+          </nav>
+          <ul class="nav-menu">
+            <li><a href="" class="nav-link">Exchange</a></li>
+            <li><a href="" class="nav-link">Main Page</a></li>
+            <li><a href="" class="nav-link">Contact Us</a></li>
+            <li><a href="" class="nav-link">Support</a></li>
+          </ul>
+          <div class="right-column">
+            <div class="language">
+              <div class="flag">
+                <img src="image/flag-en.svg" alt="" />
+              </div>
+              <div class="lang">Eng</div>
+              <div class="click">
+                <img src="image/click.svg" alt="" />
+              </div>
+            </div>
+            <div class="sign-in">
+              <a href="">Sign in</a>
+            </div>
+            <div class="sign-up">
+              <a href="">Sign up</a>
+            </div>
+          </div>
+
+          <div class="burger" id="flip">
+            <div class="burger-btn"></div>
+          </div>
+        </div>
+
+        <div class="menu" id="panel">
+          <div class="main-link">
+            <a href="index.html">Main</a>
+          </div>
+          <div class="main-link">
+            <a href="order.html">Order</a>
+          </div>
+          <div class="main-link">
+            <a href="refferal.html">Refferal</a>
+          </div>
+          <div class="main-link">
+            <a href="rules.html">Exchange rules</a>
+          </div>
+          <div class="main-link">
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="main-link">
+            <a href="exchange.html">Exchange</a>
+          </div>
+        </div>
+
+        <div class="main-block">
+          <div class="main-form">
+            <div class="main-text">
+              <h1>Please fill in transaction details</h1>
+            </div>
+
+            <div class="block-btn">
+              <div class="first-btn">
+                <h1>Exchange Crypto</h1>
+              </div>
+              <div class="second-btn">
+                <h1>Buy / Sell Crypto</h1>
+              </div>
+            </div>
+
+            <div class="send-input">
+              <div class="left-input">
+                <h1>You Send</h1>
+                <input type="text" placeholder="0.001" />
+              </div>
+              <div class="right-input">
+                <div class="input-container">
+                  <div class="coin">
+                    <img src="image/btc.svg" alt="" />
+                  </div>
+                  <div class="name">
+                    <h1>BTC</h1>
+                  </div>
+                  <div class="click">
+                    <img src="image/click.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-form">
+              <div class="left-form-wait">
+                <div class="wait-photo">
+                  <img src="image/wait.svg" alt="" />
+                  <div class="text-form">
+                    <!-- <h1><span>No extra fees</span> <br> <br> <span>Estimated rate: 1 BTC ≈ 16.06612 ETH</span></h1> -->
+                    <div>
+                      <h1>No extra fees</h1>
+                    </div>
+                    <div>
+                      <h1>Estimated rate: 1 BTC ≈ 16.06612 ETH</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-form-change">
+                <img src="image/change.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="get-input">
+              <div class="left-input">
+                <h1>You Send</h1>
+                <input type="text" placeholder="0.001" />
+              </div>
+              <div class="right-input">
+                <div class="input-container">
+                  <div class="coin">
+                    <img src="image/btc.svg" alt="" />
+                  </div>
+                  <div class="name">
+                    <h1>MATIC</h1>
+                  </div>
+                  <div class="click">
+                    <img src="image/click.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="decor">
+              <img src="image/decor.svg" alt="" />
+              <h1>Sign up to get cashback ~ 4.676877 NOW</h1>
+            </div>
+
+
+            <div class="block-receipt-wallet">
+                <h1>Recipient Wallet</h1>
+                <input type="text" placeholder="Enter the ETH payout adress">
+            </div>
+
+            <div class="block-reff">
+                <h1>Enter your promo code</h1>
+                <input type="text" placeholder="#Web-Exchange">
+            </div>
+
+            <div class="button">
+                <h1>Exchange</h1>
+              </div>
+
+            <!--  -->
+          </div>
+          <div class="main-info">
+            <div class="text-info">
+                <h1>Enter Exchange Details</h1> 
+                <h1 class="center">Confirm the Exchange</h1> 
+                <h1>Complete the Exchange</h1>
+            </div>
+            <img src="image/check-1.svg" alt="" />
+          </div>
+
+          <!--  -->
+        </div>
+
+        <!--  -->
+      </div>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+  </body>
+</html>

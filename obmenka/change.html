@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/change.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div class="header__nav">
+          <nav class="navbar">
+            <a href="" class="logo">
+              <img src="image/logo.svg" alt="" />
+            </a>
+            <div class="logo-text">
+              <h1>
+                <span class="white">Web</span> <br />
+                <span class="blue">Exchange</span>
+              </h1>
+            </div>
+          </nav>
+          <ul class="nav-menu">
+            <li><a href="" class="nav-link">Exchange</a></li>
+            <li><a href="" class="nav-link">Main Page</a></li>
+            <li><a href="" class="nav-link">Contact Us</a></li>
+            <li><a href="" class="nav-link">Support</a></li>
+          </ul>
+          <div class="right-column">
+            <div class="language">
+              <div class="flag">
+                <img src="image/flag-en.svg" alt="" />
+              </div>
+              <div class="lang">Eng</div>
+              <div class="click">
+                <img src="image/click.svg" alt="" />
+              </div>
+            </div>
+            <div class="sign-in">
+              <a href="">Sign in</a>
+            </div>
+            <div class="sign-up">
+              <a href="">Sign up</a>
+            </div>
+          </div>
+
+          <div class="burger" id="flip">
+            <div class="burger-btn"></div>
+          </div>
+        </div>
+
+        <div class="menu" id="panel">
+          <div class="main-link">
+            <a href="index.html">Main</a>
+          </div>
+          <div class="main-link">
+            <a href="order.html">Order</a>
+          </div>
+          <div class="main-link">
+            <a href="refferal.html">Refferal</a>
+          </div>
+          <div class="main-link">
+            <a href="rules.html">Exchange rules</a>
+          </div>
+          <div class="main-link">
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="main-link">
+            <a href="exchange.html">Exchange</a>
+          </div>
+        </div>
+
+        
+
+
+      </div>
+    </header>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+
+
+  </body>
+</html>
