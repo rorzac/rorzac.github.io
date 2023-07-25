@@ -348,7 +348,8 @@ header {
 }
 
 .button h1 {
-  padding: 32px 274px;
+  padding: 32px 0px;
+  text-align: center;
 }
 
 .text-sub {
@@ -563,5 +564,49 @@ header {
     padding-top: 0px;
 }
 
+
+.input-container .name h1 {
+
+    font-size: 22px;
+   .button h1 {
+    padding: 32px 274px;
+}
+
+}
+
+.button h1 {
+    text-align: center;
+}
  
 }
+
+@media (max-width: 683px) {
+    .input-container .name {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .main-form {
+       
+        min-height: 1048px;
+        
+    }
+
+    .left-input {
+        width: 60%;
+    }
+    .right-input {
+        width: 50%;
+        
+    }
+
+    .left-input input {
+      
+        padding-left: 15px;
+        
+       
+        font-size: 30px;
+    
+    }
+}
+
