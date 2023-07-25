@@ -178,7 +178,7 @@ header {
   width: 751px;
   min-height: 1000px;
   background: #080814;
-  border: 0.3px solid #fff;
+  border: 1px solid #fff;
   border-radius: 13px;
   padding-left: 45px;
   padding-right: 45px;
@@ -555,6 +555,7 @@ header {
   }
 
   .main-form {
+    border: 1px solid #fff;
     width: 100%;
     margin-top: 70px;
 }
@@ -588,7 +589,7 @@ header {
     }
 
     .main-form {
-       
+        border: 1px solid #fff;
         min-height: 1048px;
         
     }
@@ -689,7 +690,7 @@ header {
     }
 
     .main-form {
-       
+        border: 1px solid #fff;
         min-height: 842px;
         padding-left: 15px;
         padding-right: 15px;
@@ -706,7 +707,7 @@ header {
    
         padding-left: 12px;
     
-        font-size: 12px;
+        font-size: 10px;
         
     }
 
