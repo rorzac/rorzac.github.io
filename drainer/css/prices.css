@@ -490,6 +490,12 @@ body {
 
 
 @media (max-width: 570px) {
+
+    #container {
+        max-width: 500px;
+      }
+
+
     .info__btn a {
         
         padding: 20px 70px;
@@ -504,6 +510,11 @@ body {
 
 
 @media (max-width: 400px) {
+    #container {
+        max-width: 350px;
+      }
+
+
     .info__btn a {
         
         padding: 20px 30px;
@@ -513,6 +524,19 @@ body {
       
         padding: 10px 30px;
      
+    }
+
+    .header__text-brand {
+        font-size: 35px;
+    }
+
+    .header__text-top {
+        font-size: 18px;
+    }
+
+    .header__text-cost {
+        font-size: 34px;
+       
     }
 }
 
