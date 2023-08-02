@@ -23,6 +23,46 @@
           <div class="nav-button">
             <a href="#">Buy Now</a>
           </div>
+
+
+    
+
+          <div class="burger" id="flip">
+            <img src="images/burger.svg" alt="" />
+          </div>
+          <div class="navmenu" id="panel">
+            <div class="nav-block">
+              <div class="nav-link">
+                <a href="#">MAIN</a>
+              </div>
+            </div>
+
+            <div class="nav-block">
+              <div class="nav-link">
+                <a href="#">MAIN</a>
+              </div>
+            </div>
+
+            <div class="nav-block">
+              <div class="nav-link">
+                <a href="#">MAIN</a>
+              </div>
+            </div>
+
+            <div class="nav-block">
+              <div class="nav-link">
+                <a href="#">MAIN</a>
+              </div>
+            </div>
+
+            <div class="nav-btn">
+              <a href="#">Buy Now</a>
+            </div>
+         
+            <div class="nav-btn">
+              <a href="#">More Details</a>
+            </div>
+          </div>
         </nav>
 
         <div class="header__title">Price List</div>
@@ -156,5 +196,15 @@
     </footer>
 
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+
   </body>
 </html>

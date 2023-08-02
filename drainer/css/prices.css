@@ -18,6 +18,14 @@ hr {
   background: #ffffff;
 }
 
+.burger {
+    display: none;
+  }
+  
+  .navmenu {
+    display: none;
+  }
+
 body {
   width: 100%;
   font-family: "Montserrat", sans-serif;
@@ -340,3 +348,94 @@ color: #FFFFFF;
 
 
 }
+
+@media (max-width: 1700px) {
+    #container {
+        max-width: 1400px;
+    }
+
+    .main__block {
+        display: block;
+        
+        text-align: center;
+    }
+
+    .info__blocks {
+        display: block;
+       
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .nav-list {
+      display: none;
+    }
+  
+    .nav-button {
+      display: none;
+    }
+  
+    .burger {
+      display: block;
+    }
+    .navmenu {
+      position: absolute;
+      width: 100%;
+      height: 95%;
+      border: 2px solid yellow;
+      content: "";
+      right: 0;
+      left: 0;
+      top: 80px;
+      background: #000;
+    }
+  
+    .nav-block {
+      margin-top: 30px;
+      width: 100%;
+      height: 70px;
+      background: #a661ff;
+    }
+  
+    .nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  
+    .nav-link a {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 44px;
+  
+      color: #ffffff;
+    }
+  
+    .nav-btn {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .nav-btn a {
+      padding: 10px 40px;
+  
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+  
+      color: #ffffff;
+  
+      background: linear-gradient(
+        90deg,
+        #a661ff 0.55%,
+        #4954ff 55.65%,
+        #11c9ff 115.54%
+      );
+    }
+  
+   
+  }

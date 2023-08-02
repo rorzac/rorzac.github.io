@@ -681,6 +681,7 @@ margin-bottom: 50px;
 @media (max-width: 575px) {
   .first-btn a, .second-btn a {
     padding: 15px 30px;
+    margin-right: 0;
   }
 }
 
@@ -688,6 +689,7 @@ margin-bottom: 50px;
 @media (max-width: 450px) {
   .first-btn a, .second-btn a {
     padding: 15px 20px;
+    margin-right: 0;
   }
 }
 
