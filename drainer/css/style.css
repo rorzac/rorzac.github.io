@@ -543,7 +543,7 @@ body {
     position: absolute;
     width: 100%;
     height: 95%;
-    border: 2px solid yellow;
+
     content: "";
     right: 0;
     left: 0;
@@ -603,12 +603,12 @@ body {
 
   .main__block {
     width: 100%;
-} 
+  }
 
-.subtitle__text {
- width: 100%;
- text-align: center;
-}
+  .subtitle__text {
+    width: 100%;
+    text-align: center;
+  }
 
   .main__text {
     width: 100%;
@@ -617,79 +617,86 @@ body {
 
   .buttons {
     display: flex;
- justify-content: center;
-}
+    justify-content: center;
+  }
 
-.min-text {
-  text-align: center;
-}
+  .min-text {
+    text-align: center;
+  }
 }
 
 @media (max-width: 1200px) {
+  .header__main {
+    margin-top: 1px;
+  }
   .main-blocks {
-display: block;
+    display: block;
+  }
 
-}
+  .block {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 
-.block {
-width: 80%;
-margin-right: auto;
-margin-left: auto;
+    margin-bottom: 50px;
+  }
 
+  .first-section,
+  .second-section {
+    display: block;
+  }
 
-margin-bottom: 50px;
-}
+  .left-text h2,
+  .right-text h2 {
+    padding-bottom: 25px;
+  }
 
-.first-section, .second-section {
-  display: block;
-}
-
-.left-text h2, .right-text h2 {
-  padding-bottom: 25px;
-}
-
-.footer__tilte {
-  font-size: 15px;
-}
-#container {
+  .footer__tilte {
+    font-size: 15px;
+  }
+  #container {
     max-width: 900px;
   }
 
   .about-info {
-   padding-top: 65px;
+    padding-top: 65px;
     display: flex;
     justify-content: center;
   }
-
-
 
   .about-section {
     padding-top: 30px;
     display: block;
     text-align: center;
-}
+  }
 
-.about-img {
-  margin-right: 0;
-}
-
-}
-
-
-
-
-@media (max-width: 575px) {
-  .first-btn a, .second-btn a {
-    padding: 15px 30px;
+  .about-img {
     margin-right: 0;
   }
 }
 
+@media (max-width: 1000px) {
+  .nav-block {
+    height: 40px;
+  }
+  .nav-link a {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .first-btn a,
+  .second-btn a {
+    padding: 15px 30px;
+    margin-right: 5px;
+  }
+}
 
 @media (max-width: 450px) {
-  .first-btn a, .second-btn a {
+  .first-btn a,
+  .second-btn a {
     padding: 15px 20px;
-    margin-right: 0;
+    margin-right: 5px;
   }
 }
 
