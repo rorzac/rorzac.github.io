@@ -1,0 +1,71 @@
+body {
+  background: ;
+}
+body #error-page {
+  min-height: 400px;
+  max-width: 650px;
+  padding: 0;
+  margin: 60px auto;
+}
+body #error-page >div {
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 3px;
+}
+body #error-page h1.error-code {
+  font-family: Impact;
+  font-size: 150px;
+  line-height: 180px;
+  color: #fff;
+  font-weight: 100;
+  padding-top: 30px;
+}
+body #error-page p.error-message {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #999;
+  text-shadow: 0 1px #fff;
+  margin-right: 10px;
+}
+body #error-page a {
+  text-decoration: none;
+  color: #44c5ef;
+}
+body #error-page a:hover {
+  text-decoration: none;
+  color: #62d3f8;
+}
+.error-content {
+  background: url(../images/404.png) no-repeat 215px;
+  padding: 50px 0;
+  margin-top: 130px;
+}
+#error-page p a {
+  color: ;
+  font-size: 20px;
+  text-transform: lowercase;
+  border-bottom: 2px solid ;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.error-content-text {
+  margin-top: 30px;
+}
+.error-content-text h2 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.error-content-text p {
+  font-size: 20px;
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+}
+.error-content-text-bottom p {
+  font-size: 20px;
+  color: #333;
+  font-weight: 300;
+}
