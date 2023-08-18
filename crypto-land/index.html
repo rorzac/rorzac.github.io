@@ -168,8 +168,8 @@
                     <a href="tel:+148126287560">+48 12 628 75 60</a>
                   </div>
                   <ul class="modal--options">
-                    <li><a href="#0">TG Channel</a></li>
-                    <li><a href="#0">TG Contact</a></li>
+                    <li><a href="#0">Наш канал</a></li>
+                    <li><a href="#0">Телеграм</a></li>
                     <li><a href="mailto:ouremail@gmail.com">Email</a></li>
                   </ul>
                 </div>
@@ -180,7 +180,7 @@
             <div class="hire">
               <h2>Чему хочешь научится?</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
+              <form action="telegram.php" method="POST" class="work-request">
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="opt-1" type="checkbox" value="app design">
@@ -249,11 +249,11 @@
                 </div>
                 <div class="work-request--information">
                   <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
+                    <input id="name" type="text" name="name" spellcheck="false">
                     <label for="name">Имя</label>
                   </div>
                   <div class="information-email">
-                    <input id="email" type="text" spellcheck="false">
+                    <input id="telegram" type="text" name="telegram" spellcheck="false">
                     <label for="email">Telegram</label>
                   </div>
                 </div>
@@ -269,7 +269,7 @@
     <li class="is-active">Главная</li>
     <li>Проект</li>
     <!-- <li>About</li> -->
-    <li>Конаткты</li>
+    <li>Контакты</li>
     <li>Заявка</li>
   </ul>
 </div>
