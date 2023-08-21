@@ -1,0 +1,71 @@
+/* =====================================
+
+========================================*/
+
+
+/* Tablet Screen */
+@media only screen and (min-width: 768px) and (max-width: 1990px) {
+
+
+.mainphoto {
+	display: none;
+}
+
+
+}
+/* Mobile Screen */
+@media only screen and (max-width: 767px) {
+	.main-text h1 {
+		font-size: 40px;
+	}
+	.main-text h1 span {
+		font-size: 40px;
+	}
+	.bot {
+		margin-bottom: 20px;
+	}
+	.hero {
+		background-image: none;
+	}
+	form {
+		margin-left: 0;
+	}
+	.forms {
+		padding: 30px;
+		margin-top: 0;
+	}
+
+	.main_btn {
+		width: 100%;
+	}
+	p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.menubtn {
+		display: none;
+	}
+	.navbar-nav {
+		padding-top: 30px;
+	}
+	.navbar-dark .navbar-nav .nav-link {
+    border-bottom: 1px solid #25628E;
+}
+
+}
+
+
+
+
+/* Mobile Screen */
+@media only screen and (max-width: 450px) {
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+
