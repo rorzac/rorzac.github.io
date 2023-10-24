@@ -5,8 +5,8 @@
 
 $name = $_POST['name'];
 $telegram = $_POST['telegram'];
-$token = "5892191579:AAFVoS2cwhyXM92S4tq5ly4eEixnZv0ksj4";
-$chat_id = "-847715415";
+$token = "5833572623:AAEK0UDzdXPucezQwgIW1mPBp3spqrmRfZQ";
+$chat_id = "-982359838";
 $arr = array(
   'Имя: ' => $name,
   'Телеграм: ' => $telegram,
