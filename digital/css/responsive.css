@@ -1,0 +1,2259 @@
+/******************************
+
+INDEX:
+
+******************************/
+
+body {
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1600px){
+	/* Modern Degital Agency */
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::before, 
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::after{
+		left: -547px;
+		top: -138px;
+	}
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::after{
+		left: auto;
+		right: -547px;
+	}
+	/* Web Design Solution */
+	.web-design-sol-testimonial .pbmit-col-right{
+		padding: 90px 135px 0px 180px;
+	}
+	/* Horizontal Project */
+	.horizontal-project-welcome .title-bg-line::before{
+		right: auto;
+		left: -60px;
+	}
+	/* About Us */
+	.about-us-testimonial .pbmit-col-right{
+		padding: 90px 135px 0px 180px;
+	}
+}
+
+@media (max-width: 1500px){
+	/* header */
+	.pbmit-burger-menu-area-inner{
+		margin: 0 140px;
+	}
+}
+
+@media (min-width: 1400px){
+	.widget .footer-social-links{
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 1400px){
+	/* Modern Degital Agency */
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::before, 
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::after{
+		height: 850px;
+    	width: 850px;
+		left: -600px;
+		top: -115px;
+	}
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::after{
+		right: -600px;
+		left: auto;
+	}
+}
+
+@media (max-width:1366px) {
+	/* Header */
+	.header-style-7 .pbmit-header-button{
+		display: none;
+	}
+	/* Digital Agency */
+	.digital-agency-split-slide{
+		background-image: none;
+	}
+	/* Digital Marketing */
+	.digital-marketing-about1 .pbmit-col-left{
+		padding-right: 100px;
+	}
+	.modern-agency-staticbox{
+		padding: 0 20px;
+	}
+	.web-agency-blog .pbmit-col-right{
+		padding: 130px 20px 130px 80px;
+	}
+	/* Modern Digital Agency */
+	.modern-digital-agency-about2 .spinner-7-wrap{
+		left: -3%;
+	}
+	/* Web Design Solution */
+	.web-design-sol-testimonial .pbmit-col-right{
+		padding: 80px 30px 0px 100px;
+	}
+	.web-design-sol-awardbox{
+		padding: 100px 20px;
+	}
+	/* Marketing Solution */
+	.marketing-sol-service{
+		padding: 80px 30px;
+	}
+	.marketing-sol-flipbox-inner{
+		padding: 80px 0;
+	}
+	/* Personal Portfolio 2 */
+	.personal-port-2-marquee-overtext .spinner-wrapper{
+		right: -15px;
+		bottom: -30px;
+	}
+	.horizontal-project-welcome{
+		padding: 200px 20px 0 ;
+	}
+	.horizontal-project-welcome .custom-heading-title{
+		font-size: 100px;
+    	line-height: 100px;
+	}
+	.horizontal-project-welcome .title-bg-line::before{
+		left: -25px;
+	}
+	/* About us 1 */
+	.about-us-about .image-wrap{
+		padding: 0 0 0 30px;
+	}
+	.about-us-about .second-image{
+		left: 0;
+	}
+	.about-us-testimonial .pbmit-col-right{
+		padding: 80px 30px 0px 100px;
+	}
+}
+
+@media (max-width: 1300px){
+	/* Style 10 */
+	.header-style-10 .pbmit-slider-area{
+		margin: 0 30px;
+	}
+}
+
+@media (min-width: 1201px){
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1194px;
+    }
+}
+
+@media (max-width: 1200px){
+	/* Header */
+	.sticky-header{
+		position: relative  !important;
+	}
+	.pbmit-burger-menu-area-inner{
+		padding-top: 100px;
+		margin: 0 80px;
+	}
+    /** Main menu resoposive **/
+	.pbmit-menu-wrap {
+		background-color: #fff;
+		position: fixed;
+		top: 0;
+		right: -400px;
+		z-index: 1000;
+		width: 300px;
+		height: 100%;
+		padding: 0;
+		display: block;
+		transition: all 600ms ease;
+		-moz-transition: all 600ms ease;
+		-webkit-transition: all 600ms ease;
+		-ms-transition: all 600ms ease;
+		-o-transition: all 600ms ease;
+		opacity: 0;
+		padding-top: 85px;
+	}
+	.active .pbmit-menu-wrap{
+		right: 0px;
+		visibility: visible;
+		opacity: 1;
+		overflow-y: scroll;
+		-webkit-transition-delay: 300ms;
+		-moz-transition-delay: 300ms;
+		-ms-transition-delay: 300ms;
+		-o-transition-delay: 300ms;
+		transition-delay: 300ms;
+		opacity: 1;
+	}
+	.pbmit-mobile-menu-bg {
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 0%;
+		height: 100%;
+		display: block;
+		z-index: 99;
+		background: rgba(0,0,0,.9);
+		-webkit-transform: translateX(101%);
+		-ms-transform: translateX(101%);
+		transform: translateX(101%);
+		transition: all 900ms ease;
+		-moz-transition: all 900ms ease;
+		-webkit-transition: all 900ms ease;
+		-ms-transition: all 900ms ease;
+		-o-transition: all 900ms ease;
+		-webkit-transition-delay: 300ms;
+		-moz-transition-delay: 300ms;
+		-ms-transition-delay: 300ms;
+		-o-transition-delay: 300ms;
+		transition-delay: 300ms;
+	}
+	.active .pbmit-mobile-menu-bg {
+		opacity: 1;
+		width: 100%;
+		visibility: visible;
+		transition: all 900ms ease;
+		-moz-transition: all 900ms ease;
+		-webkit-transition: all 900ms ease;
+		-ms-transition: all 900ms ease;
+		-o-transition: all 900ms ease;
+		-webkit-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		transform: translateX(0%);
+	}
+	.closepanel {
+		position: absolute;
+		z-index: 99;
+		right: 20px;
+		margin-left: -20px;
+		top: 30px;
+		display: block;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 50%;
+		text-align: center;
+		cursor: pointer;
+		font-size: 25px;
+		color: #000;
+		border: 0;
+		-webkit-transition: all 300ms ease;
+		transition: all 300ms ease;
+	}
+	.pbmit-menu-wrap .closepanel svg rect{
+		stroke: var(--pbmit-blackish-color);
+		stroke-width: 0.1px;
+	}
+	.pbmit-menu-wrap .closepanel:hover svg rect {
+		animation: pbmit-draw-animation .7s;
+	}
+	@keyframes pbmit-draw-animation {
+		0%,
+		100% {
+		  clip-path: inset(-1px 0 -1px 0);
+		  -webkit-clip-path: inset(-1px 0 -1px 0);
+		}
+		55% {
+		  clip-path: inset(-1px 0 -1px 100%);
+		  -webkit-clip-path: inset(-1px 0 -1px 100%);
+		}
+		56% {
+		  clip-path: inset(-1px 100% -1px 0);
+		  -webkit-clip-path: inset(-1px 100% -1px 0);
+		}
+	}
+	.pbmit-menu-wrap .closepanel svg rect {
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	.pbmit-menu-wrap .closepanel:hover svg rect:nth-of-type(2) {
+		animation-delay: .17s;
+	}
+    .navbar-toggler { 
+		border: none; 
+		font-size: 35px; 
+		line-height: 35px;
+		padding: 0; 
+		outline: none; 
+	}
+    .sticky-header .navbar-toggler { 
+		top: 10px; 
+	}
+    .navbar-toggler:hover, 
+	.navbar-toggler:focus { 
+		outline: none; 
+	}
+    .main-menu .navbar-collapse {
+		position: absolute;
+		width: 100%; left: 0;
+		background-color: #fff;
+		z-index: 99;
+		top: 82px; 
+	}
+    .sticky-header .navbar-collapse {
+		 top: 60px; 
+	}
+    .main-menu .navigation > li {
+		 float: none; 
+		 border-bottom: 1px solid rgba(9, 22, 42, 0.15); 
+	}
+    .site-header .site-navigation ul.navigation > li > a {
+		height: auto!important; 
+		line-height: inherit!important; 
+		padding: 15px 25px; 
+		margin: 0; 		
+	}
+	.main-menu .navigation li > ul > li{
+		padding: 15px 25px;
+	}
+	.main-menu .navigation li.dropdown ul > li.active > a, 
+	.main-menu .navigation li ul > li > a:hover{
+		padding: 0;
+	}
+	.main-menu .navigation li > ul > li:first-child,
+	.main-menu .navigation li > ul > li:last-child{
+		padding: 15px 25px;
+	}
+	.main-menu .navigation > li > ul a{
+		font-size: 15px;
+		text-transform: none;
+		line-height: 20px;
+		letter-spacing: 0.5px;
+		font-weight: normal !important;
+		font-style: normal;
+	}
+    .main-menu .navigation > li > ul,
+	.main-menu .navigation > li > ul > li > ul {
+		border: none; 
+		box-shadow: inherit !important; 
+		width: 100%;
+		display: none; 
+		position: inherit; 
+		-webkit-transform: translateY(0); 
+		-moz-transform: translateY(0); 
+		-ms-transform: translateY(0); 
+		-o-transform: translateY(0); 
+		transform: translateY(0); 
+	}
+    .main-menu .navigation > li > ul > li > ul { 
+		left: 0; 
+		top: 100%; 
+	}
+    .main-menu .navigation > li.dropdown > ul.open, 
+	.main-menu .navigation > li.dropdown > ul.open li.dropdown > ul.open {
+		display: block; 
+		opacity: 1; 
+		visibility: visible; 
+		padding-bottom: 10px;
+	}
+	.main-menu .navigation > li > ul li,
+	.main-menu .navigation > li > ul li a{
+		border: none;
+	}
+    .menu-right-box { 
+		position: relative; 
+		right: 30px; 
+		top: 10px; 
+	}
+	.site-header .righticon {
+		font-size: 22px; 
+		position: absolute;
+		z-index: 99;
+		right: 10px;
+		top: 0;  
+		display: block;
+		height: 45px; 
+		width: 45px; 
+		cursor: pointer; 
+		text-align: center; 
+		line-height: 45px;
+	}
+    .site-header .menu-right-box { 
+		display: none !important; 
+	}
+    .main-menu ul > li.dropdown > a:after{
+		display: none;
+	}
+	.site-header .righticon i{
+		font-size: 14px;
+	}
+    /** Header responsive **/
+    .site-header .header-button, 
+	.site-header .pre-header { 
+		display: none; 
+	}
+    .ipad-view-search {
+		 display: block; 
+	}
+    .site-header .site-header-menu { 
+		min-height: auto; 
+	}
+    .site-header .site-branding img { 
+		max-height: 50px; 
+	}
+    .site-header .sticky-header .site-branding img {
+		 max-height: 35px; 
+	}
+	.pbmit-search-outer{
+		position: absolute;
+		left: 50px;
+		right: 50px;
+	}
+	.navbar-header{
+		display: block;
+	}
+	.navbar-header .pbmit-base-icon-menu-1:before{
+		margin: 0;
+	}
+	.pbmit-nav-menu-toggle{
+		display: none;
+	}
+	.navbar-toggler{
+		height: 100px;
+	}
+	.main-menu .navigation > li:first-child{
+		position: relative;
+	}
+	.main-menu .navigation > li.dropdown:first-child > ul{
+		background-image: none;
+	}
+	.main-menu .navigation > li.dropdown:first-child > ul > li{
+		width: 100%;
+	}
+	.main-menu .navigation > li.dropdown:first-child > ul{
+		padding: 0;
+	}
+	.main-menu .navigation li ul li a{
+		color: var(--pbmit-blackish-color);
+	}
+	.main-menu .navigation > li > ul.open{
+		display: initial !important;
+	}
+	.main-menu .navigation > li:first-child > ul.open > li > ul{
+		display: initial !important;
+	}
+	.main-menu .navigation ul li.active a, .main-menu .navigation li ul li a:hover{
+		padding-left: 43px;
+	}
+	.main-menu .navigation ul li.active a::before, .main-menu .navigation li ul li a:hover::before{
+		background-color: var(--pbmit-global-color);
+	}
+	.site-header .site-navigation ul.navigation > li:hover > a{
+		color: var(--pbmit-blackish-color);
+	}
+	.site-header .righticon{
+		transform: rotate(180deg);
+		font-size: 15px;
+		font-weight: 800;
+	}
+	.main-menu .navigation > li > ul li{
+		position: relative;
+	}
+	.main-menu .navigation li ul.open > li > a.open{
+		padding: 15px 0;
+	}
+	.main-menu .navigation > li > ul.open > li > ul.open > li{
+		padding: 15px 0;
+	}
+	.main-menu .navigation > li.dropdown > ul.open > li.dropdown > ul.open{
+		padding-bottom: 0;
+	}
+	.main-menu .navigation > li > ul.open > li > ul.open > li:last-child{
+		padding: 15px 0 0;
+	}
+	.site-header ul.open > li > .righticon{
+		transform: rotate(90deg);
+	}
+	.site-header ul.open > li > .righticon i{
+		font-size: 10px;
+	}
+	.site-header ul.open > li > .righticon{
+		font-size: 10px;
+	}	
+	.site-header ul.open > li > .righticon{
+		font-size: 10px;
+	}
+	/* Style 1 */
+	.header-style-1 .pbmit-header-overlay{
+		padding: 0 30px;
+	}
+	.header-style-1 .main-menu ul > li.dropdown > a:after, 
+	.header-style-1 .site-navigation ul.navigation > li > a{
+		color: var(--pbmit-blackish-color);
+	}
+	.header-style-1 .pbmit-header-search-btn a{
+		padding-right: 20px;
+	}
+	/* Style 2 */
+	.header-style-2 .pbmit-header-overlay{
+		padding: 0 15px;
+	}
+	.header-style-2 .site-header-menu{
+		border: 0;
+	}
+	.header-style-2 .site-branding{
+		padding-left: 0px;
+	}
+	.pbmit-header-button,
+	.pbmit-header-button2{
+		display: none;
+	}
+	.header-style-2 .pbmit-header-search-btn{
+		padding-right: 25px;
+	}
+	.header-style-2 .main-menu ul > li.dropdown > a:after, 
+	.header-style-2 .site-navigation ul.navigation > li > a{
+		color: var(--pbmit-blackish-color);
+	}
+	/* Style 3 */
+	.header-style-3 .pbmit-header-overlay{
+		padding: 0 30px;
+	}
+	.header-style-3 .pbmit-social-links,
+	.header-style-3 .pbmit-header-button2{
+		display: none;
+	}
+	.header-style-3 .pbmit-header-search-btn{
+		padding-right: 25px;
+	}
+	.header-style-3 .main-menu ul > li.dropdown > a:after, 
+	.header-style-3 .site-navigation ul.navigation > li > a{
+		color: var(--pbmit-blackish-color);
+	}
+	/* Style 4 */
+	.header-style-4 .pbmit-header-search-btn{
+		padding-right: 25px;
+	}	
+	/* Style 5 */
+	.header-style-5 .pbmit-header-overlay{
+		padding: 0 30px;
+	}
+	.header-style-5 .pbmit-header-search-btn{
+		padding-right: 25px;
+	}
+	/* Style 6 */
+	.header-style-6 .main-menu ul > li.dropdown > a:after, .header-style-6 .site-navigation ul.navigation > li > a{
+		color: var(--pbmit-blackish-color);
+	}
+	.header-style-6 .pbmit-header-search-btn{
+		padding-right: 25px;
+	}
+	/* Style 7 */
+	.header-style-7 .pbmit-header-overlay{
+		padding: 0 30px;
+	}
+	.header-style-7.site-header .site-branding img{
+		max-height: 50px;
+	}
+	.header-style-7 .pbmit-header-search-btn{
+		padding-right: 25px;
+	}
+	.header-style-7 .navbar-header .navbar-toggler i{
+		color: var(--pbmit-blackish-color);
+	}
+	.header-style-7 .site-navigation{
+		order: 2;
+	}
+	.header-style-7 .pbmit-header-content{
+		order: 1;
+	}
+	.header-style-7 .pbmit-right-box{
+		order: 3;
+	}
+	/* Style 9 */
+	.header-style-9 .pbmit-header-overlay{
+		padding: 0 30px;
+	}
+	.header-style-9	 .pbmit-nav-menu-toggle{
+		display: initial;
+	}
+	.header-style-9 .pbmit-header-highlight-text{
+		display: none;
+	}
+	/* Style 10 */
+	.header-style-10 .pbmit-header-overlay{
+		padding: 0 30px;
+	}
+	.header-style-10 .pbmit-slider-area{
+		margin: 0;
+	}
+	/* Style 11 */
+	.header-style-11 .navbar-header .navbar-toggler{
+		padding: 0 20px;
+		background-color: var(--pbmit-blackish-color);
+		margin-left: 1px;
+	}
+	/* Style 12 */
+	.header-style-12 .pbmit-header-overlay{
+		padding: 0 0 0 40px;
+	}
+	.header-style-12 .pbmit-header-content{
+		order: 1;
+	}
+	.header-style-12 .pbmit-burger-menu-link{
+		order: 3;
+	}
+	.header-style-12 .pbmit-right-box{
+		order: 2;
+	}
+	/* Style 13 */
+	.header-style-13 .pbmit-header-overlay{
+		padding: 0 30px;
+	}
+	.header-style-13 .pbmit-nav-menu-toggle{
+		display: block;
+	}
+	/* Background image */
+	.pbmit-bg-image-hide{
+		background-image: none;
+	}
+	/** Digital Agency **/ 
+	.demo1-about-1 .pbmit-custom-heading{
+		padding: 0;
+	}
+	.demo1-about-1 .fidbox-wrapper{
+		padding: 0 15px;
+	}
+	.digital-agency-marquee.pbmit-element-marquee-effect-style-14 .pbmit-element-inner{
+		padding: 60px 0 90px;
+	}
+	.digital-agency-service{
+		padding: 130px 0 100px 0;
+		margin-top: -60px;
+	}
+	.digital-agency-team .pbmit-col-left{
+		padding: 60px 20px 60px 14px;
+	}
+	.digital-agency-testimonial{
+		padding: 0 15px;
+		padding-bottom: 120px;
+	}
+	.digital-agency-blog .pbmit-blog-column:nth-child(2) .pbmit-blog-style-9,
+	.digital-agency-blog .pbmit-blog-column:nth-child(3) .pbmit-blog-style-9{
+		margin-top: 0;
+	}
+	.digital-agency-blog .button-wrapper{
+		margin-top: 30px;
+	}
+	/* Digital Studio */
+	.digital-studio-about2 .imagre-wrapper{
+		text-align: start;
+	}
+	.digital-studio-about2 .spinner-11-wrap{
+		display: none;
+	}
+	.digital-studio-about2 .pbmit-col-right{
+		padding: 40px 14px 0;
+	}
+	.digital-studio-about2{
+		padding-bottom: 80px;
+	}
+	.digital-studio-iconheading{
+		padding: 0 14px;
+	}
+	.digital-studio-portfolio .pbmit-heading-subheading .pbmit-title{
+		font-size: 100px;
+		line-height: 110px;
+	}
+	.pbmit-dot-mask2{
+		background-color: var(--pbmit-blackish-color);
+	}
+	.pbmit-dot-mask2 .pbmit-heading-subheading .pbmit-subtitle{
+		color: var(--pbmit-global-color);
+	}
+	.pbmit-dot-mask2 .pbmit-heading-subheading .pbmit-title,
+	.pbmit-dot-mask2 .pbmit-ihbox-style-16 .pbmit-element-title,
+	.pbmit-dot-mask2 .accordion-button{
+		color: var(--pbmit-white-color);
+	}
+	.pbmit-dot-mask2 .pbmit-ihbox-style-16 .pbmit-heading-desc ul li{
+		color: rgba(255, 255, 255, 0.6);
+	}
+	.pbmit-dot-mask2 .pbmit-ihbox-style-16 .pbmit-heading-desc ul li::after{
+		border-color: rgba(255, 255, 255, 0.6);
+	}
+	.pbmit-dot-mask2 .accordion-body{
+		color: rgba(255, 255, 255, 0.7);
+	}
+	.digital-studio-testimonial .image-wrap{
+		text-align: center;
+	}
+	.digital-studio-testimonial .image-wrap .fidbox-12-wrapper{
+		left: 0;
+	}
+	.digital-studio-testimonial .pbmit-col-right{
+		padding: 0px 14px 80px;
+	}
+	.digital-studio-testimonial .row{
+		flex-direction: column-reverse;
+	}
+	.digital-studio-pricingtable .image-wrapper{
+		display: none;
+	}
+	.digital-studio-blog .pbmit-col-right{
+		padding-left: 0;
+	}
+	/* Digital Marketing */
+	.digital-marketing-welcome h1.big-title{
+		font-size: 170px;
+    	line-height: 180px;
+	}
+	.digital-marketing-welcome-inner{
+		padding: 200px 0px 125px 0px;
+	}
+	.digital-marketing-about1 .pbmit-col-left{
+		padding-right: 50px;
+	}
+	.digital-marketing-pricingtable .image-wrapper{
+		display: none;
+	}
+	.digital-marketing-pricingtable{
+		margin: 0;
+	}
+	.digital-marketing-testimonial{
+		margin-top: 80px;
+		padding-bottom: 0;
+	}
+	/* Modern Agency */
+	.modern-agency-team{
+		padding: 0 0 60px;
+	}
+	.modern-agency-testimonial .pbmit-col-left{
+		padding: 80px 0;
+	}
+	.modern-agency-marquee.pbmit-element-marquee-effect-style-14 .pbmit-element-inner{
+		padding: 58px 0 90px;
+	}
+	/* Creative Studio */
+	.creative-studio-welcome .pbmit-col-main .pbmit-contentbox .pbmit-title{
+		font-size: 150px;
+		line-height: 150px;
+	}
+	.creative-studio-welcome .first-image-wrapper,
+	.creative-studio-welcome .second-image-wrapper{
+		margin: 0;
+	}
+	/* Modern Degital Agency */
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::before, 
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::after{
+		height: 850px;
+    	width: 850px;
+		left: -700px;
+	}
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::after{
+		right: -700px;
+		left: auto;
+	}
+	.modern-digital-agency-testimonial-inner .animate-image{
+		display: none;
+	}
+	.modern-digital-agency-about2 .spinner-7-wrap{
+		left: -15px;
+	}
+	/* Web Agency */
+	.web-agency-form{
+		padding: 80px 0 100px;
+	}
+	.web-agency-blog .bg-blog-image{
+		height: 400px;
+	}
+	.web-agency-blog .pbmit-col-right{
+		padding: 50px 20px 80px 20px;
+	}
+	/* Development Agency */
+	.development-agency-team .pbmit-col-left{
+		padding: 0 0 50px 0;
+	}
+	.development-agency-team .pbmit-col-right{
+		padding-left: 30px;
+	}
+	/* Web Design Solution */
+	.web-design-sol-about1{
+		padding-top: 100px;
+	}
+	.web-design-sol-mask-video{
+		padding: 200px 0 30px;
+	}
+	/* Marketing Solution */
+	.marketing-sol-welcome h1.big-title{
+		font-size: 170px;
+    	line-height: 180px;
+	}
+	.marketing-sol-welcome-inner{
+		padding: 200px 0px 125px 0px;
+	}
+	.marketing-sol-welcome .pbmit-ihbox-style-4{
+		padding: 60px 0px 0px 70px;
+	}
+	.marketing-sol-welcome .pbmit-social-links-wrap{
+		display: none;
+	}
+	/* Web Development */
+	.web-development-tab .pbmit-content-wrapper{
+		padding-left: 0px;
+	}
+	.web-development-service .pbmit-col-left{
+		padding-right: 0;
+	}
+	.web-development-service .pbmit-col-right{
+		padding-left: 0;
+	}
+	.web-development-about1 .pbmit-col-right{
+		padding-left: 0;
+	}
+	/* Personal Portfolio 2 */
+	.pbmit-section-number::before{
+		display: none;
+	}
+	.personal-port-2-marquee-overtext{
+		padding: 30px 0 40px;
+	}
+	.personal-port-2-about1 .pbmit-custom-heading-wrap{
+		padding: 0;
+	}
+	/* Horizontal Project */
+	.horizontal-project-welcome .image-wrapper{
+		text-align: end;
+	}
+	.horizontal-project-welcome .title-bg-line{
+		display: inline-block;
+	}
+	.horizontal-project-welcome .pbmit-contentbox{
+		padding: 80px 0 70px;
+	}
+	.horizontal-project-welcome .client-wrapper{
+		padding-top: 30px;
+	}
+	.horizontal-project-welcome .pbmit-icon-wrap{
+		right: 7%;
+		bottom: 38%;
+	}
+	.horizontal-project-welcome .pbmit-col-right{
+		padding-left: 14px;
+	}
+	.horizontal-project-welcome .pbmit-col-right .custom-disc{
+		text-align: center;
+	}
+	.horizontal-project-welcome .title-bg-line::before{
+		left: -60px;
+	}
+	.horizontal-project-welcome .spinner-box-wrap{
+		padding-top: 0;
+	}
+	/* Blog Details */
+	.sidebar .pbmit-widget-ads{
+		padding: 50px 30px;
+	}
+	.post.blog-details .pbmit-blog-classic-inner .wp-block-columns{
+		display: block;
+	}
+	.post.blog-details .pbmit-blog-classic-inner .wp-block-column figure{
+		padding: 0;
+	}
+	.post.blog-details .pbmit-blog-classic-inner .wp-block-image img{
+		width: 100%;
+	}
+	.post.blog-details .pbmit-blog-classic-inner .wp-block-column:last-child figure{
+		padding: 30px 0 0;
+	}
+	/* Portfolio Detail */
+	.portfolio-single .portfolio-details .portfolio-page-infobox{
+		padding: 0;
+	}
+	.portfolio-single-style-9 .portfolio-col-left,
+	.portfolio-single-style-9 .portfolio-col-right{
+		padding: 0 19px;
+	}
+	/* Footer */
+	.pbmit-footer-widget-area .pbmit-footer-widget .widget_text h3{
+		padding-right: 80px;
+	}
+	/* footer style 1 */
+	.footer-style-1 .footer-wrap{
+		padding: 80px 0 00px;
+	}
+	.pbmit-footer-widget-area{
+		padding-top: 0px;
+	}
+	.footer-style-1 .pbmit-footer-widget-area{
+		padding-top: 40px;
+	}
+	/* style 4 */
+	.footer-style-4 .pbmit-footer-widget-area .pbmit-footer-widget .widget_text h3{
+		padding-right: 60px
+	}
+}
+
+@media(max-width:1199px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: none;
+    }
+	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+		padding-right: calc(var(--bs-gutter-x) * .8);
+		padding-left: calc(var(--bs-gutter-x) * .8);
+	}
+}
+
+@media(max-width:1024px) {
+	.section-lgx {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.section-lgt {
+		padding-top: 80px;
+	}
+	/* Header */
+	.pbmit-burger-menu-area{
+		overflow: auto;
+	}
+	/* Heading Subheading */
+	.pbmit-heading-subheading-style-1 .pbmit-subtitle{
+		font-size: 120px;
+	}
+	/*=== Revolution ===*/
+    .pbmit-slider-box .pbmit-element-title{
+        font-size:14px; 
+        font-weight:700; 
+        color:var(--pbmit-white-color); 
+        margin:0
+    }
+    .pbmit-slider-box .pbmit-icon-wrapper i{
+        font-size:35px
+    }
+    .pbmit-slider-box{
+        padding:10px 25px
+    }
+    .pbmit-slider-box .pbmit-icon-wrapper{
+        margin-right:5px
+    }
+	.pbmit-spin-text{
+        display:none
+    }
+	/** Digital Agency **/
+	.digital-agency-client .fid-style-wrapper{
+		display: none;
+	}
+	.digital-agency-service{
+		padding: 100px 0 80px;
+	}
+	.digital-studio-portfolio .pbmit-heading-subheading .pbmit-title{
+		font-size: 80px;
+		line-height: 90px;
+	}
+	/* Digital Marketing */
+	.digital-marketing-welcome h1.big-title{
+		font-size: 140px;
+    	line-height: 150px;
+	}
+	.digital-marketing-about1 .pbmit-col-left{
+		padding-right: 25px;
+	}
+	.digital-marketing-about2{
+		padding: 200px 0 150px;
+	}
+	/* Personal Portfolio 1 */
+	.personal-port-1-service{
+		padding-top: 120px;
+	}
+	.personal-port-1-testimonial .pbmit-line::before{
+		width: 102.5%;
+	}
+	/* Modern Digital Agency */
+	.modern-digital-agency-tween-effect-inner .pbmit-outline-btn{
+		display: none;
+	}
+	/* Web Agency */
+	.web-agency-about3{
+		padding: 200px 0 150px;
+	}
+	/* Web Design Solution */
+	.web-design-sol-about1{
+		padding-top: 150px;
+	}
+	.web-design-sol-awardbox{
+		padding: 60px 20px;
+	}
+	.web-design-sol-testimonial .image-wrap{
+		height: 700px;
+	}
+	.web-design-sol-marquee{
+		padding: 65px 0 40px;
+	}
+	/* Marketing Solution */
+	.marketing-sol-welcome h1.big-title{
+		font-size: 140px;
+    	line-height: 150px;
+	}
+	.marketing-sol-welcome .pbmit-down-aerrow-animation{
+		padding-top: 5px;
+		padding-left: 30px;
+	}
+	.marketing-sol-welcome .pbmit-ihbox-style-4{
+		padding: 0;
+	}
+	/* Web Development */
+	.web-development-tab .pbmit-content-wrapper .pbmit-svg-btn{
+		display: none;
+	}
+	.web-development-tab .pbmit-content-wrapper .d-flex{
+		display: block !important;
+	}
+	.web-development-tab .nav-contents .nav-link{
+		padding: 12px 20px;
+		margin-right: 10px;
+	}
+	/* Porsonal Portfolio 2 */
+	.personal-port-2-form-wrapper-inner{
+		padding: 0;
+	}
+	/* Horizontal Project */
+	.horizontal-project-welcome{
+		padding: 130px 20px 0;
+	}
+	/* About us 1 */
+	.about-us-about .image-wrap{
+		padding: 0 0 0 10px;
+	}
+	.about-us-testimonial .image-wrap{
+		height: 700px;
+	}
+	/* About us 2 */
+	.about-us-2-about1 .pbmit-col-right{
+		padding-left: 40px;
+	}
+	/* Footer */
+	.pbmit-footer-big-area .pbmit-footer-left-box h3{
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.pbmit-footer-widget-area .pbmit-footer-widget .widget_text h3{
+		padding-right: 50px;
+	}
+	/* style 3 */
+	.footer-style-3 .pbmit-footer-big-area .swiper-slide h3 a{
+		font-size: 70px;
+		line-height: 70px;
+	}
+	.footer-style-3 .pbmit-footer-big-area .swiper-slide h3 a:before{
+		font-size: 130px;
+		line-height: 130px;
+	}
+	/* style 4 */
+	.footer-style-4 .pbmit-footer-widget-area .pbmit-footer-widget .widget_text h3{
+		padding-right: 50px
+	}
+}
+
+@media(max-width:991px) {
+	.sidebar{
+		margin-top: 50px;
+	}
+    /** Section Padding **/
+	.section-md{
+		padding-top: 80px;
+    	padding-bottom: 60px;
+	}
+	.section-lg{ 
+		padding-top: 80px; 
+		padding-bottom:70px;
+	}
+	.section-lgx{ 
+		padding-top: 80px; 
+		padding-bottom:80px;
+	}
+	.section-lgt{ 
+		padding-top: 80px; 
+	}
+	.section-lgb{ 
+		padding-bottom:80px;
+	}
+	.section-mdb{
+		padding-bottom:50px;
+	}
+	.section-smb{
+		padding-bottom:30px;
+	}
+	.section-margin{
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+	.blog-grid-col{
+		padding: 80px 0 50px;
+	}
+    /** Section Title **/
+    .pbmit-heading-subheading h2.pbmit-title br{
+        display: none;
+    }
+	.service-left-col {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.service-right-col {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.portfolio-left-col{
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding: 0 15px;
+	}
+	.portfolio-right-col{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.portfolio-right-col.order-1{
+		padding: 0 15px;
+	}
+	/** Digital Agency **/
+	.demo1-about-1 .pbmit-custom-heading{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.demo1-about-1 .pbmit-about-column:nth-child(3){
+		border: 1px solid var(--pbmit-blackish-color);
+	}
+	.demo1-about-1 .pbmit-about-column:nth-child(4){
+		border: 0;
+	}
+	.digital-agency-team .pbmit-col-right-inner{
+		height: 500px;
+	}
+	.digital-agency-team .pbmit-col-left{
+		padding: 0px 14px 30px 14px;
+	}
+	.digital-agency-team .pbmit-col-right{
+		padding-left: 14px;
+	}
+	/* Digital Studio */
+	.digital-studio-about1 .pbmit-image-wrap{
+		text-align: start;
+		display: inline-block;
+		padding-top: 60px;
+	}
+	.digital-studio-about1 .first-image{
+		display: none;
+	}
+	.digital-studio-about1 .pbmit-col-left{
+		padding-left: 14px;
+	}
+	.digital-studio-about1 .pbmit-heading-subheading{
+		padding: 0;
+	}
+	.digital-studio-portfolio .pbmit-heading-subheading .pbmit-title{
+		font-size: 60px;
+		line-height: 70px;
+	}
+	.digital-studio-icon-heading{
+		padding-bottom: 80px;
+	}
+	.digital-studio-client .fid-style-wrapper{
+		display: none;
+	}
+	.digital-studio-pricingtable .pbmit-ptable-col.pbmit-pricing-table-featured-col .digital-studio-spinner-wrap{
+		display: none;
+	}
+	/* Digital Maketing */
+	.digital-marketing-pricingtable .pbmit-ptable-col.pbmit-pricing-table-featured-col .digital-mrkt-spinner-wrap{
+		display: none;
+	}
+	/* Modern Agency */
+	.modern-agency-flipbox .pbmit-heading-subheading{
+		margin-bottom: 30px;
+	}
+	.modern-agency-flipbox .pbmit-column-inner:nth-child(4){
+		display: none;
+	}
+	.modern-agency-client{
+		padding: 150px 0 170px;
+	}
+	/* Personal Portfolio 1 */
+	.personal-port-1-service{
+		padding-top: 120px;
+	}
+	.personal-port-1-testimonial .pbmit-line::before{
+		width: 100%;
+	}
+	/* Creative Studio */
+	.creative-studio-marqueeover{
+		padding-top: 40px;
+	}
+	.creative-studio-marqueeover .pbmit-marqueeover-text-inner{
+		padding: 120px 50px 0px 50px;
+	}
+	.creative-studio-flipbox{
+		padding: 0 0 80px 0;
+	}
+	/* Modern Digital Agency */
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner{
+		border-radius: 0;
+		padding: 80px 0;
+		margin: 0;
+		margin-top: 100px;
+	}
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::before, 
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::after {
+		height: 780px;
+		width: 780px;
+		left: -670px;
+	}
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner::after {
+		right: -640px;
+		left: auto;
+	}
+	.pbmit-element-portfolio-style-9 .star-image{
+		display: none;
+	}
+	.modern-digital-agency-about2 .imagre-wrapper{
+		text-align: center;
+	}
+	.modern-digital-agency-about2 .spinner-7-wrap{
+		left: 10%;
+	}
+	.modern-digital-agency-about2 .pbmit-col-right{
+		padding: 40px 14px 0;
+	}
+	.modern-digital-agency-testimonial{
+		padding: 80px 0 0;
+	}
+	.modern-digital-agency-blog .pbmit-col-right{
+		padding-left: 14px;
+		padding-top: 50px;
+	}
+	/* Web Agency */
+	.web-agency-about1 .pbmit-col-left{
+		padding-top: 80px;
+		padding-right: 0;
+	}
+	.web-agency-about1 .pbmit-col-right{
+		padding-top: 40px;
+	}
+	.web-agency-about1 .pbmit-col-right .image-wrap{
+		padding-top: 0;
+	}
+	.web-agency-about2 .pbmit-col-left{
+		padding-top: 0;
+		padding-right: 14px;
+		padding-bottom: 50px;
+	}
+	.web-agency-about2 .image-wrapper .pbmit-spinner-wrapper{
+		left: 0;
+	}
+	.web-agency-form{
+		padding: 20px 0 60px;
+	}
+	.web-agency-form .image2-wrap{
+		display: none;
+	}
+	.web-agency-form .pbmit-col-right{
+		padding-top: 50px;
+	}
+	.web-agency-blog .pbmit-col-right{
+		padding: 50px 20px 60px 20px;
+	}
+	/* Development Agency */
+	.development-agency-about1 .pbmit-about-column:nth-child(2){
+		border-width: 1px 1px 0px 1px;
+	}
+	.development-agency-about1 .pbmit-about-column:nth-child(3){
+		border-width: 0px 0px 1px 1px;
+	}
+	.development-agency-service{
+		padding: 150px 0 80px;
+	}
+	.development-agency-team .pbmit-col-right{
+		padding: 0;
+	}
+	.development-agency-team .pbmit-col-right-inner{
+		padding: 160px 0;
+	}
+	.development-agency-testimonial{
+		padding: 50px 0 80px;
+	}
+	.web-design-sol-about1 .pbmit-col-right{
+		padding: 70px 14px 0;
+	}
+	/* Web Design Solution */
+	.web-design-sol-about1{
+		padding-top: 150px;
+	}
+	.web-design-sol-iconheading .pbmit-svg-btn{
+		padding-left: 0;
+	}
+	.web-design-sol-testimonial .pbmit-col-right{
+		padding: 80px 20px;
+	}
+	.web-design-sol-blog .pbmit-col-left{
+		padding: 0 14px 60px;
+	}
+	/* Marketing Solution */
+	.marketing-sol-about1 .pbmit-col-right{
+		padding: 50px 0 0;
+	}
+	.marketing-sol-testimonial{
+		padding: 0 0 80px;
+	}
+	/* Web Development */
+	.web-development-tab .pbmit-content-wrapper{
+		padding-top: 50px;
+	}
+	.web-development-tab .pbmit-content-wrapper ul{
+		padding-bottom: 0;
+	}
+	.web-development-about1 .pbmit-col-right .pbmit-ihbox-style-12{
+		margin-bottom: 30px;
+    	padding-right: 0;
+	}
+	.web-development-about1 .pbmit-col-right{
+		padding-left: 14px;
+	}
+	.web-development-about1 .pbmit-col-right .pbmit-heading-desc{
+		padding-right: 0;
+	}
+	/* Personal Portfolio 2 */
+	.personal-port-2-ihboxheading .pbmit-about-column:nth-child(1){
+		border-width: 1px 0px 0px 1px;
+	}
+	.personal-port-2-ihboxheading .pbmit-about-column:nth-child(2){
+		border-width: 1px 1px 0px 1px;
+	}
+	/* About Us 1 */
+	.about-us-about .second-image{
+		display: none;
+	}
+	.about-us-about .pbmit-col-right{
+		padding-top: 70px;
+		padding-left: 14px;
+	}
+	/* About Us 2 */
+	.about-us-2-about1 .pbmit-col-right{
+		padding: 70px 14px 0;
+	}
+	.about-us-2-iconheading .pbmit-svg-btn{
+		padding-left: 0;
+	}
+	/* Our Team Member */
+	.our-team-member-about .our-team-member-progressbar{
+		padding: 0 0 30px;
+	}
+	/* Team single detail */
+	.pbmit-team-single-style-1 .pbmit-team-left-inner{
+		margin: 0;
+	}
+	.pbmit-team-single-style-1 .pbmit-entry-content{
+		padding-top: 60px;
+		padding-left: 0;
+		margin: 0;
+	}
+	/* Service Detail */
+	.service-right-col.order-1{
+		padding-left: 14px;
+	}
+	.blog-right-col{
+		flex: 0 0 100%;
+    	max-width: 100%;
+		padding-right: 14px;
+	}
+	.blog-left-col{
+		flex: 0 0 100%;
+    	max-width: 100%;
+	}
+	.blog-left-col .sidebar{
+		margin-top: 50px;
+	}
+	/* Portfolio Detail */
+	.portfolio-single-style-9 .portfolio-col-right{
+		padding-left: 14px;
+	}
+	.portfolio-col-right{
+		padding-left: 14px;
+	}
+	.portfolio-details{
+		margin-top: 50px;
+	}
+	.portfolio-single-style-7 .pbmit-portfolio-images .pbmit-col-left,
+	.portfolio-single-style-7 .pbmit-portfolio-images .pbmit-col-right{
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+	.portfolio-single-style-7 .pbmit-portfolio-images .pbmit-col-right{
+		padding-left: 0;
+	}
+	.portfolio-single-style-7 .pbmit-portfolio-images .pbmit-col-left img{
+		margin-bottom: 20px;
+	}
+	.portfolio-single-style-7 .pbmit-portfolio-images .pbmit-col-right img:first-child{
+		margin-bottom: 0;
+	}
+	.portfolio-single-style-8 .pbmit-portfolio-images .pbmit-col-left,
+	.portfolio-single-style-8 .pbmit-portfolio-images .pbmit-col-right{
+		flex: 0 0 100%;
+    	max-width: 100%;
+		text-align: center;
+	}
+	.portfolio-single-style-8 .pbmit-portfolio-images .pbmit-col-right{
+		padding-left: 0;
+	}
+	.portfolio-single-style-8 .pbmit-portfolio-images .pbmit-col-left img{
+		padding-bottom: 15px;
+	}
+	.portfolio-single-style-8 .pbmit-portfolio-images .pbmit-col-right img:first-child{
+		padding-bottom: 15px;
+	}
+	.portfolio-single-style-8 .pbmit-portfolio-images img{
+		display: block;
+		margin: auto;
+	}
+	.left-sidebar-view .blog-left-col{
+		padding-right: 14px;
+		padding-bottom: 50px;
+	}
+	.right-sidebar-view .blog-left-col{
+		padding-left: 14px;
+	}
+	/* Contact Us 2 */
+	.contact-section-style-2 .form-wrapper{
+		margin-top: 50px;
+	}
+	
+	/** Footer **/
+	.pbmit-footer-widget-area .pbmit-footer-widget.pbmit-footer-widget-col-1 {
+		flex: 50%;
+		max-width: 50%;
+		padding-right: calc(var(--bs-gutter-x) * .6);
+	}
+	.site-footer .pbmit-footer-widget.pbmit-footer-widget-col-2, 
+	.site-footer .pbmit-footer-widget.pbmit-footer-widget-col-3, 
+	.site-footer .pbmit-footer-widget.pbmit-footer-widget-col-4{
+		flex: 50%;
+		max-width: 50%;
+	}
+	.site-footer .widget{
+		padding-top: 0;
+	}
+	.pbmit-footer-text-area{
+		margin-top: 40px;
+    	padding: 40px 0 40px 0;
+	}
+	.pbmit-footer-big-area .pbmit-footer-left-box h3{
+		font-size: 40px;
+		line-height: 40px;
+	}
+	.site-footer .pbmit-footer-widget .widget ul>li{
+		width: 50%;
+		float: left;
+	}
+	.pbmit-footer-widget-area .pbmit-footer-widget .widget_text h3{
+		padding-right: 0;
+	}
+	/* Footer stye 1 */
+	.footer-style-1 .pbmit-footer-big-area .pbmit-footer-left-box h3{
+		font-size: 40px;
+		line-height: 40px;
+		padding-bottom: 30px;
+	}
+	.footer-style-1 .pbmit-footer-widget .widget ul>li{
+		width: 100%;
+	}
+	.footer-style-1 .pbmit-footer-widget .pbmit-two-column-menu.widget ul>li{
+		width: 50%;
+		float: left;
+	}
+	.footer-style-1 .pbmit-footer-widget .pbmit-contact-widget-line.pbmit-contact-widget-email{
+		margin-bottom: 10px;
+	}
+	/* style 3 */
+	.footer-style-3 .pbmit-footer-big-area .swiper-slide h3 a{
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.footer-style-3 .pbmit-footer-big-area .swiper-slide h3 a:before{
+		font-size: 120px;
+		line-height: 120px;
+	}
+	.footer-style-3 .pbmit-footer-widget .widget ul>li{
+		width: 100%;
+	}
+	/* style 4 */
+	.footer-style-4 .btn-arrow{
+		top: 40px;
+	}
+	.footer-style-4 .pbmit-footer-widget-area .pbmit-footer-widget .widget_text h3 {
+		padding-right: 30px;
+	}
+	.footer-style-4 .pbmit-footer-text-area{
+		margin: 0;
+	}
+}
+
+@media(max-width:767px) {
+	.blog-grid-col{
+		padding: 60px 0 30px;
+	}
+	/* Heading-subheading */
+	.pbmit-heading-subheading{
+		margin-bottom: 30px;
+	}
+	.pbmit-heading-subheading .pbmit-title{
+		font-size: 30px;
+    	line-height: 40px;
+	}
+	.pbmit-heading-subheading-style-1 .pbmit-subtitle{
+		font-size: 90px;
+		left: 0;
+	}
+	.pbmit-heading-subheading-style-1.pbmit-heading-subheading .pbmit-title{
+		font-size: 30px;
+    	line-height: 40px;
+		padding-left: 40px;
+	}
+	.pbmit-heading-subheading-style-1 .pbmit-subtitle::before{
+		top: 10px;
+		left: 0;
+	}
+	/** Section Padding **/ 
+	.section-md{
+		padding-top: 60px;
+		padding-bottom:40px;
+	}
+	.section-lg{ 
+		padding-top: 60px; 
+		padding-bottom:50px;
+	}
+	.section-lgt{ 
+		padding-top: 60px; 
+	}
+	.section-lgb{ 
+		padding-bottom:60px;
+	}
+	.section-lgx {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.section-mdb{
+		padding-bottom:30px;
+	}
+	.section-smb{
+		padding-bottom:10px;
+	}
+	.section-margin{
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	/* Titlebar */
+	.pbmit-title-bar-content-inner{
+		display: block;
+	}
+	.pbmit-breadcrumb{
+		padding-left: 15px;
+	}
+	/* header */
+	.pbmit-burger-menu-area-inner{
+		margin: 0 30px;
+	}
+	/** Pagination **/
+	.swiper-slider[data-dots="true"]{
+		padding: 0 !important;
+	}
+	.swiper-btn-custom{
+		display: none !important;
+	}
+	.swiper-pagination,
+	.swiper-buttons{
+		display: none;
+	}
+	.digital-agency-testimonial{
+		padding-bottom: 80px;
+	}
+	/* Digital Agency */
+	.demo1-about-1 .pbmit-custom-heading{
+		font-size: 36px;
+		line-height: 46px;
+	}
+	.demo1-about-1 .pbmit-about-column:nth-child(4){
+		border: 1px solid var(--pbmit-blackish-color);
+	}
+	.demo1-about-1 .pbmit-about-column:nth-child(3){
+		border: 0;
+	}
+	.digital-agency-marquee.pbmit-element-marquee-effect-style-14 .pbmit-element-inner{
+		padding: 0;
+	}
+	.digital-agency-service{
+		padding: 60px 0;
+		margin: 0;
+	}
+	.digital-agency-client{
+		padding: 50px 0;
+	}
+	/* Digital Studio */
+	.digital-studio-about1 .pbmit-about-fidbox{
+		border: 0;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+	.digital-studio-icon-heading{
+		padding-bottom: 60px;
+	}
+	.digital-studio-about2{
+		padding-bottom: 60px;
+	}
+	.digital-studio-service .pbmit-element-service-style-9{
+		text-align: center !important;
+	}
+	.digital-studio-about1 .pbmit-image-wrap img{
+		width: 100%;
+	}
+	.digital-studio-icon-heading .image-wrap {
+		margin-bottom: 50px;
+	}
+	.digital-studio-portfolio .pbmit-heading-subheading .pbmit-title{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.pbmit-element-miconheading-style-17 .pbmit-heading-subheading{
+		padding-bottom: 20px;
+	}
+	.digital-studio-testimonial .image-wrap img{
+		width: 100%;
+	}
+	.digital-studio-testimonial .image-wrap .fidbox-12-wrapper{
+		display: none;
+	}
+	.digital-studio-testimonial .pbmit-col-right{
+		padding: 0px 14px 60px;
+	}
+	/* Digital Marketing */
+	.digital-marketing-welcome-inner{
+		padding: 150px 0px 60px 0px;
+	}
+	.digital-marketing-welcome h1.big-title{
+		font-size: 100px;
+    	line-height: 110px;
+	}
+	.pbmit-down-aerrow-animation{
+		padding: 60px 0 0 100px;
+		margin-left: 0;
+	}
+	.pbmit-down-aerrow-animation a{
+		transform: rotate(-90deg) translateX(-9px);
+	}
+	.pbmit-down-aerrow-animation i{
+		margin-right: 0;
+		margin-left: -96px;
+	}
+	.digital-marketing-welcome .pbmit-ihbox-style-18{
+		padding-top: 95px;
+	}
+	.digital-marketing-welcome .pbmit-ihbox-style-18 .pbmit-ihbox-headingicon{
+		justify-content: left;
+	}
+	.digital-marketing-about2{
+		padding: 150px 0 100px;
+	}
+	.digital-marketing-testimonial{
+		margin-top: 60px;
+	}
+	.digital-mrkt-client .pbmit-column-inner{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	/* Modern Agency */
+	.modern-agency-about1 .line-image{
+		display: none;
+	}
+	.modern-agency-about1 .pbmit-col-left{
+		margin-bottom: 60px;
+	}
+	.modern-agency-about1 .spinner-9-wrapper{
+		right: 25px;
+    	bottom: -15px;
+	}
+	.modern-agency-marquee.pbmit-element-marquee-effect-style-14 .pbmit-element-inner{
+		padding: 0;
+	}
+	.modern-agency-service .pbmit-col-left{
+		padding-right: 14px;
+		padding-top: 0;
+	}
+	.modern-agency-service .pbmit-col-right{
+		padding-top: 40px;
+		padding-left: 14px;
+	}
+	.modern-agency-team{
+		padding: 0 0 60px;
+	}
+	.modern-agency-testimonial .pbmit-col-left{
+		padding: 0 0 60px;
+	}
+	.modern-agency-client .fid-style-wrapper{
+		display: none;
+	}
+	.modern-agency-client{
+		padding: 60px 0;
+	}
+	.modern-digital-agency-testimonial{
+		padding: 60px 0 0;
+	}
+	/* Personal Portfolio 1 */
+	.personal-port-1-about1 .pbmit-outline-btn{
+		transform: none;
+		padding-top: 40px;
+	}
+	.personal-port-1-service{
+		padding-top: 120px;
+	}
+	.personal-port-1-testimonial .pbmit-heading-subheading{
+		padding-bottom: 30px;
+	}
+	.personal-port-1-client{
+		padding: 0 0 60px;
+	}
+	.personal-port-1-client .fid-style-wrapper{
+		display: none;
+	}
+	/* Creative Studio */
+	.creative-studio-welcome{
+		padding: 120px 0 100px;
+	}
+	.creative-studio-welcome .pbmit-col-left{
+		padding: 0;
+	}
+	.creative-studio-welcome .pbmit-col-right::before, 
+	.creative-studio-welcome .pbmit-col-left::before{
+		width: 280px;
+		left: 130px;
+		top: -135px;
+	}
+	.creative-studio-welcome .pbmit-col-right::before{
+		left: auto;
+		top: auto;
+		right: 115px;
+		height: 430px;
+		width: 230px;
+		bottom: -100px;
+	}
+	.creative-studio-welcome .pbmit-col-main{
+		padding-top: 70px;
+	}
+	.creative-studio-welcome .pbmit-col-main .pbmit-contentbox{
+		margin: 0;
+	}
+	.creative-studio-welcome .pbmit-col-main .pbmit-contentbox .pbmit-title{
+		font-size: 38px;
+    	line-height: 38px;
+	}
+	.creative-studio-welcome .second-image-wrapper{
+		text-align: start;
+	}
+	.creative-studio-marqueeover .pbmit-marqueeover-text-inner{
+		padding: 60px 0px 0px 0px;
+	}
+	.creative-studio-marqueeover .pbmit-marqueeover-text-inner .pbmit-heading-subheading{
+		padding: 30px 0 0;
+	}
+	.creative-studio-marqueeover .pbmit-heading-subheading .pbmit-title{
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.creative-studio-portfolio .pbmit-svg-btn{
+		padding-top: 0;
+	}
+	.creative-studio-client .digital-studio-text{
+		padding-bottom: 30px;
+	}
+	.creative-studio-client .pbmit-column-inner{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.digital-studio-team .pbmit-col-left{
+		padding-right: 0;
+		padding-bottom: 50px;
+	}
+	.creative-studio-tween-effect-inner .pbmit-outline-btn{
+		display: none;
+	}
+	/* Modern Digital Agency */
+	.modern-digital-agency-welcome .modern-digital-agency-welcome-inner .pbmit-title{
+		font-size: 50px;
+		line-height: 51px;
+	}
+	.modern-digital-agency-client .pbmit-column-inner{
+		flex: 0 0 100%;
+    	max-width: 100%;
+	}
+	.modern-digital-agency-about1 .ihbox-style-13-wrap{
+		padding-left: 0;
+	}
+	.modern-digital-agency-about1 .image-wrapper{
+		padding-top: 60px;
+	}
+	.modern-digital-agency-about2 .spinner-7-wrap{
+		display: none;
+	}
+	.modern-digital-agency-about2 .progressbar-wrapper{
+		padding: 0;
+	}
+	.modern-digital-agency-blog .pbmit-col-right .pbmit-blog-style-7{
+		padding: 0 0 30px 0;
+	}
+	.modern-digital-agency-blog .pbmit-col-right .pbmit-blog-style-7:last-child{
+		padding: 0;
+	}
+	/* Web Agency */
+	.web-agency-about1 .pbmit-col-left{
+		padding-top: 60px;
+	}
+	.web-agency-about1 .pbmit-col-right .image-wrap{
+		padding-top: 30px;
+	}
+	.web-agency-client .fid-style-wrapper{
+		display: none;
+	}
+	.web-agency-client{
+		padding: 0;
+	}
+	.web-agency-about2 .image-wrapper .pbmit-spinner-wrapper{
+		display: none;
+	}
+	.web-agency-about3{
+		padding: 150px 0 100px;
+	}
+	.web-agency-form{
+		padding: 20px 0 30px;
+	}
+	.web-agency-blog .pbmit-col-right{
+		padding: 50px 20px 40px 20px;
+	}
+	/* Development Agency */
+	.development-agency-about1 .pbmit-about-column{
+		margin-bottom: 15px;
+	}
+	.development-agency-about1 .pbmit-about-column{
+		border-width: 1px !important;
+	}
+	.development-agency-service{
+		padding: 60px 0;
+	}
+	.reel-video-wrapper{
+		padding: 60px 20px 0;
+	}
+	.development-agency-testimonial{
+		padding: 30px 0 60px;
+	}
+	.development-agency-tween-effect .pbmit-element-title{
+		font-size: 70px;
+    	line-height: 80px;
+	}
+	.development-agency-marquee{
+		margin-top: -100px;
+	}
+	/** Web Design Solution **/
+	.web-design-sol-mask-video{
+		padding: 170px 0 30px;
+		position: relative;
+	}
+	.web-design-sol-mask-video .pbmit-spinner-wrap{
+		display: none;
+	}
+	.web-design-sol-about1 .image-wrap img{
+		transform: initial;
+	}
+	.web-design-sol-about1 .pbmit-col-right{
+		padding: 40px 14px 0;
+	}
+	.web-design-sol-iconheading .pbmit-svg-btn{
+		padding-top: 30px;
+	}
+	.web-design-sol-marquee{
+		padding: 55px 0 30px;
+	}
+	.web-design-sol-awardbox{
+		padding: 60px 20px 30px;
+	}
+	.web-design-sol-testimonial .image-wrap{
+		height: 500px;
+	}
+	.web-design-sol-testimonial .pbmit-col-right{
+		padding: 60px 20px;
+	}
+	/* Marketing Solution */
+	.marketing-sol-welcome-inner{
+		padding: 150px 0px 60px 0px;
+	}
+	.marketing-sol-welcome h1.big-title{
+		font-size: 100px;
+    	line-height: 110px;
+	}
+	.marketing-sol-welcome .pbmit-down-aerrow-animation{
+		padding-top: 40px;
+    	padding-left: 95px;
+	}
+	.marketing-sol-welcome .pbmit-ihbox-style-4{
+		padding-top: 95px;
+	}
+	.marketing-sol-about1 .pbmit-heading-subheading{
+		display: inline;
+	}
+	.marketing-sol-flipbox-inner{
+		padding: 60px 0;
+	}
+	.marketing-sol-testimonial{
+		padding: 0 0 60px;
+	}
+	.marketing-sol-about1 .pbmit-col-main{
+		padding-top: 50px;
+		padding-left: 0;
+	}
+	/* Web development */
+	.web-development-service .pbmit-col-left{
+		padding-right: 14px;
+		padding-bottom: 30px;
+	}
+	.web-development-service .pbmit-col-right{
+		padding-left: 14px;
+	}
+	.nav-item{
+		margin-top: 5px;
+		padding: 5px 0;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+	}
+	.nav-item,
+	.web-development-tab .nav-contents .nav-link{
+		width: 100%;
+	}
+	.web-development-tab .nav-contents{
+		padding-bottom: 50px;
+	}
+	/* Personal Portfolio 2 */
+	.personal-port-2-marquee-overtext{
+		padding: 40px 0 0;
+	}
+	.personal-port-2-marquee-overtext .spinner-wrapper{
+		display: none;
+	}
+	.personal-port-2-ihboxheading .pbmit-about-column{
+		border-width: 1px !important;
+		margin-bottom: 15px;
+	}
+	.horizontal-project-welcome .custom-heading-title{
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.horizontal-project-welcome .title-bg-line::before,
+	.horizontal-project-welcome .pbmit-icon-wrap{
+		display: none;
+	}
+	.verticle-split-slider-portfolio{
+		padding: 120px 20px 60px;
+	}
+	/* About Us */
+	.about-us-about .pbmit-col-right{
+		padding-top: 50px;
+	}
+	.about-us-testimonial .image-wrap{
+		height: 500px;
+	}
+	.about-us-testimonial .pbmit-col-right{
+		padding: 60px 20px;
+	}
+	/* About Us 2 */
+	.about-us-2-timeline .pbmit-heading-subheading{
+		padding: 0;
+		margin: 0;
+	}
+	.about-us-2-about1 .image-wrap{
+		width: auto;
+	}
+	.about-us-2-about1 .image-wrap img{
+		transform: initial;
+	}
+	.about-us-2-about1 .pbmit-col-right{
+		padding: 40px 14px 0;
+	}
+	.about-us-2-client .pbmit-client-title{
+		margin-bottom: 45px;
+	}
+	.pbmit-element-client-style-1::before,
+	.pbmit-element-client-style-1::after{
+		display: none;
+	}
+	/**  Title Bar  **/
+	.pbmit-title-bar-content{
+		min-height: 400px;
+	}
+	.pbmit-title-bar-content .pbmit-tbar-title {
+		font-size: 40px;
+		line-height: 50px;
+	}
+	/* Detail Pages */
+
+	/* Team single detail */
+	.pbmit-team-single-style-1 .pbmit-team-detail{
+		padding: 45px 25px;
+	}
+	.pbmit-entry-content .pbmit-element-posts-wrapper {
+		margin-bottom: 30px;
+	}
+	.pbmit-team-single-style-1 .pbmit-entry-content{
+			padding-top: 40px;
+	}
+	/* Service Detail */
+	.service-right-col .pbmit-images-wrapper .ihbox-wrapper{
+		display: none;
+	}
+	/* Style 9 */
+	.portfolio-single-style-9 .portfolio-col-left, 
+	.portfolio-single-style-9 .portfolio-col-right{
+		flex: 0 0 100%;
+    	max-width: 100%;
+	}
+	.portfolio-single-style-9 .portfolio-col-right{
+		padding-left: 19px;
+		padding-top: 50px;
+	}
+	/* Blog detail */
+	.pbmit-accordian-content .accordion{
+		padding-bottom: 40px;
+	}
+	.portfolio-single .pbmit-portfolio-lines-wrapper .pbmit-portfolio-lines-ul{
+		grid-template-columns: repeat(2,1fr);
+	}
+	.contact-section-style-2 .form-wrapper{
+		padding: 45px 30px;
+	}
+	/** Footer **/
+	.pbmit-footer-widget-area .pbmit-footer-widget.pbmit-footer-widget-col-1{
+		flex: 100%;
+		max-width: 100%;
+		padding-right: calc(var(--bs-gutter-x) * .6);
+	}
+	.site-footer .pbmit-footer-widget.pbmit-footer-widget-col-2, 
+	.site-footer .pbmit-footer-widget.pbmit-footer-widget-col-3, 
+	.site-footer .pbmit-footer-widget.pbmit-footer-widget-col-4{
+		flex: 100%;
+		max-width: 100%;
+	}
+	.pbmit-footer-copyright-text-area{
+		text-align: center;
+		margin-top: 5px;
+	}
+	.pbmit-footer-menu-area {
+		text-align: center;
+	}
+	.pbmit-footer-big-area .pbmit-footer-left-box h3{
+		font-size: 35px;
+		line-height: 35px;
+	}
+	.pbmit-two-column-menu.widget ul>li{
+		width: 100%;
+	}
+	.pbmit-footer-big-area .pbmit-footer-right-box{
+		text-align: start;
+		padding-right: 15px;
+		padding-top: 30px;
+	}
+	/* Footer style 1 */
+	.footer-style-1 .pbmit-footer-text-inner .row{
+		flex-direction: initial;
+	}
+	.footer-style-1 .pbmit-footer-big-area .pbmit-footer-left-box h3{
+		font-size: 35px;
+		line-height: 35px;
+	}
+	.footer-style-4 .btn-arrow{
+		position: initial;
+		margin-top: 30px;
+	}
+	
+	/* Footer */
+	.pbmit-footer-text-area{
+		margin-top: 0px;
+    	padding: 0px 0 40px 0;
+	}
+	.pbmit-footer-text-inner{
+		text-align: center;
+	}
+	.pbmit-footer-text-inner .row{
+		flex-direction: column-reverse;
+	}
+	.site-footer .pbmit-footer-section .pbmit-footer-copyright-text-area{
+		padding-left: 0;
+		padding-bottom: 15px;
+	}
+	/* style 3 */
+	.footer-style-3 .pbmit-footer-big-area .swiper-slide h3 a{
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.footer-style-3 .pbmit-footer-big-area .swiper-slide h3 a:before{
+		font-size: 110px;
+		line-height: 110px;
+	}
+	.footer-style-3 .pbmit-footer-widget.pbmit-footer-widget-col-1 .logo-widget{
+		margin: 0;
+		border: 0;
+	}
+	.footer-style-3 .pbmit-footer-title{
+		padding: 0;
+	}
+	.footer-style-3 .pbmit-footer-text-area{
+		padding: 22px 0 52px;
+	}
+	/* style 4 */
+	.footer-style-4{
+		padding: 50px 0 40px;
+	}
+	.footer-style-4 .pbmit-footer-widget-area .pbmit-footer-widget .widget_text h3 {
+		padding-right: 0px;
+	}
+	.footer-style-4 .widget{
+		padding: 10px 0 30px;
+	}
+	.footer-style-4 .pbmit-footer-widget-area{
+		padding-bottom: 20px;
+	}
+}
+
+@media(max-width:600px) {
+	.digital-studio-about2 .imagre-wrapper img{
+		width: 100%;
+	}
+}
+
+@media(max-width:575px) {
+	/* Heading subheading */
+	.pbmit-heading-subheading-style-1 .pbmit-subtitle{
+		font-size: 70px;
+	}
+	/* Header */
+	.pbmit-burger-menu-area-inner{
+		display: block;
+		padding: 60px 0;
+	}
+	.pbmit-burger-menu-area .menu-main-menu-container{
+		padding: 0;
+	}
+	.pbmit-burger-menu-area .menu-main-menu-container ul > li > a{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.pbmit-burger-menu-area .menu-main-menu-container ul > li{
+		padding: 0 0 15px 0;
+	}
+	.pbmit-burger-menu-area .menu-main-menu-container .sub-menu-toggle{
+		font-size: 12px;
+	}
+	.pbmit-burger-menu-area .menu-main-menu-container ul ul .sub-menu-toggle{
+		font-size: 12px;
+	}
+	.pbmit-burger-content{
+		padding: 60px 0 0 0;
+	}
+	/* Digital Marketing */
+	.digital-marketing-welcome h1.big-title{
+		font-size: 70px;
+		line-height: 80px;
+	}
+	/* Creative Studio */
+	.creative-studio-welcome .pbmit-col-right::before,
+	.creative-studio-welcome .pbmit-col-left::before{
+		display: none;
+	}
+	.creative-studio-marqueeover .pbmit-marqueeover-text-inner{
+		padding: 20px 0px 0px 0px;
+	}
+	/* Development Agency */
+	.development-agency-tween-effect .pbmit-element-title{
+		font-size: 40px;
+		line-height: 50px;
+	}
+	/* Digital Marketing */
+	.marketing-sol-welcome h1.big-title{
+		font-size: 70px;
+		line-height: 80px;
+	}
+	/** Blog **/
+	.comments-box .media{
+		display: block;
+	}
+	.comment-author{
+		text-align: left;
+	}
+	.comments-box .media{
+		margin-bottom: 30px;
+	}
+	/** Blog Details **/
+	.portfolio-single .pbmit-single-project-details-list{
+		margin-bottom: 0;
+	}
+	.pbmit-blog-meta.pbmit-blog-meta-bottom {
+		display: block;
+	}
+	.pbmit-blog-meta-bottom-left{
+		width: 100%;
+		text-align: center;
+	}
+	.pbmit-blog-meta-bottom-right {
+		width: 100%;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.post-navigation .pbmit-post-nav-content .pbmit-post-nav.nav-title{
+		-webkit-line-clamp: 1;
+	}
+	.post-navigation .nav-links .nav-previous, 
+	.post-navigation .nav-links .nav-next {
+		width: 100%;
+	}
+	.pbmit-author-box {
+		display: block;
+		padding: 30px;
+	}
+	.pbmit-author-content {
+		margin-top: 20px;
+		padding-right: 0;
+		text-align: center;
+	}
+	.pbmit-author-image{
+		width: 100%;
+		height: 100%;
+	}
+	.pbmit-author-image img{
+		width: 100%;
+		height: 100%;
+		margin-right: 0;
+	}
+	.comment-reply-title{
+		font-size: 20px;
+		line-height: 30px;
+		padding-top: 20px;
+	}
+	.comment-meta{
+		margin-left:0;
+		margin-top: 25px
+	}
+	.comments-box .children .media.even.depth-2{
+		margin-left:0;
+		margin-top: 25px
+	}
+	/** Project Details **/
+	.portfolio-single .pbmit-portfolio-lines-wrapper .pbmit-portfolio-lines-ul{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.portfolio-single .pbmit-portfolio-lines-wrapper ul li{
+		padding: 25px 0 0 0;
+	}
+}
+
+@media (max-width:500px) {
+	/* header */
+	.site-header .pbmit-header-search-btn{
+		display: none;
+	}
+	/* Portfolio single */
+	.portfolio-left-col{
+		margin-top: 30px;
+	}
+}
+
+@media(max-width:1300px) {
+	.site-navigation ul.navigation > li > a{
+		margin: 0 15px;
+	}
+}
