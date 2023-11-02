@@ -1,0 +1,3998 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="profile" href="https://gmpg.org/xfn/11" />
+    <title>Nerko</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Nerko » Feed"
+      href="https://themegenix.net/nerko/feed/"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Nerko » Comments Feed"
+      href="https://themegenix.net/nerko/comments/feed/"
+    />
+    <script type="text/javascript">
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "https:\/\/themegenix.net\/nerko\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.2",
+        },
+      };
+      /*! This file is auto-generated */
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+          var t = new Uint32Array(
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+            ),
+            r =
+              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(
+                e,
+                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+              )
+                ? !1
+                : !n(
+                    e,
+                    "\ud83c\uddfa\ud83c\uddf3",
+                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                  ) &&
+                    !n(
+                      e,
+                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                    );
+            case "emoji":
+              return !n(
+                e,
+                "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff",
+                "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff"
+              );
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r =
+              "undefined" != typeof WorkerGlobalScope &&
+              self instanceof WorkerGlobalScope
+                ? new OffscreenCanvas(300, 150)
+                : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
+                try {
+                  var e =
+                      "postMessage(" +
+                      f.toString() +
+                      "(" +
+                      [JSON.stringify(s), u.toString(), p.toString()].join(
+                        ","
+                      ) +
+                      "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e)
+                (n.supports[t] = e[t]),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                    (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything ||
+                (n.readyCallback(),
+                (e = n.source || {}).concatemoji
+                  ? t(e.concatemoji)
+                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="css/style.min.css"
+      type="text/css"
+      media="all"
+    />
+    <style id="wp-block-library-theme-inline-css" type="text/css">
+      .wp-block-audio figcaption {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .wp-block-audio figcaption {
+        color: hsla(0, 0%, 100%, 0.65);
+      }
+      .wp-block-audio {
+        margin: 0 0 1em;
+      }
+      .wp-block-code {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: Menlo, Consolas, monaco, monospace;
+        padding: 0.8em 1em;
+      }
+      .wp-block-embed figcaption {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .wp-block-embed figcaption {
+        color: hsla(0, 0%, 100%, 0.65);
+      }
+      .wp-block-embed {
+        margin: 0 0 1em;
+      }
+      .blocks-gallery-caption {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .blocks-gallery-caption {
+        color: hsla(0, 0%, 100%, 0.65);
+      }
+      .wp-block-image figcaption {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .wp-block-image figcaption {
+        color: hsla(0, 0%, 100%, 0.65);
+      }
+      .wp-block-image {
+        margin: 0 0 1em;
+      }
+      .wp-block-pullquote {
+        border-bottom: 4px solid;
+        border-top: 4px solid;
+        color: currentColor;
+        margin-bottom: 1.75em;
+      }
+      .wp-block-pullquote cite,
+      .wp-block-pullquote footer,
+      .wp-block-pullquote__citation {
+        color: currentColor;
+        font-size: 0.8125em;
+        font-style: normal;
+        text-transform: uppercase;
+      }
+      .wp-block-quote {
+        border-left: 0.25em solid;
+        margin: 0 0 1.75em;
+        padding-left: 1em;
+      }
+      .wp-block-quote cite,
+      .wp-block-quote footer {
+        color: currentColor;
+        font-size: 0.8125em;
+        font-style: normal;
+        position: relative;
+      }
+      .wp-block-quote.has-text-align-right {
+        border-left: none;
+        border-right: 0.25em solid;
+        padding-left: 0;
+        padding-right: 1em;
+      }
+      .wp-block-quote.has-text-align-center {
+        border: none;
+        padding-left: 0;
+      }
+      .wp-block-quote.is-large,
+      .wp-block-quote.is-style-large,
+      .wp-block-quote.is-style-plain {
+        border: none;
+      }
+      .wp-block-search .wp-block-search__label {
+        font-weight: 700;
+      }
+      .wp-block-search__button {
+        border: 1px solid #ccc;
+        padding: 0.375em 0.625em;
+      }
+      :where(.wp-block-group.has-background) {
+        padding: 1.25em 2.375em;
+      }
+      .wp-block-separator.has-css-opacity {
+        opacity: 0.4;
+      }
+      .wp-block-separator {
+        border: none;
+        border-bottom: 2px solid;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .wp-block-separator.has-alpha-channel-opacity {
+        opacity: 1;
+      }
+      .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+        width: 100px;
+      }
+      .wp-block-separator.has-background:not(.is-style-dots) {
+        border-bottom: none;
+        height: 1px;
+      }
+      .wp-block-separator.has-background:not(.is-style-wide):not(
+          .is-style-dots
+        ) {
+        height: 2px;
+      }
+      .wp-block-table {
+        margin: 0 0 1em;
+      }
+      .wp-block-table td,
+      .wp-block-table th {
+        word-break: normal;
+      }
+      .wp-block-table figcaption {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .wp-block-table figcaption {
+        color: hsla(0, 0%, 100%, 0.65);
+      }
+      .wp-block-video figcaption {
+        color: #555;
+        font-size: 13px;
+        text-align: center;
+      }
+      .is-dark-theme .wp-block-video figcaption {
+        color: hsla(0, 0%, 100%, 0.65);
+      }
+      .wp-block-video {
+        margin: 0 0 1em;
+      }
+      .wp-block-template-part.has-background {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding: 1.25em 2.375em;
+      }
+    </style>
+    <style id="classic-theme-styles-inline-css" type="text/css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css" type="text/css">
+      body {
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body
+        .is-layout-constrained
+        > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      body .is-layout-flex > * {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      body .is-layout-grid > * {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="contact-form-7-css"
+      href="css/styles.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="nerko-custom-css"
+      href="css/nerko-custom.css"
+      type="text/css"
+      media="all"
+    />
+    <style id="nerko-custom-inline-css" type="text/css">
+      html:root {
+        --tg-theme-primary: #741ff5;
+      }
+      html:root {
+        --tg-theme-secondary: #e348ff;
+      }
+      html:root {
+        --tg-gradient-1: #2600fc;
+      }
+      html:root {
+        --tg-gradient-2: #ff00ea;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="bootstrap-css"
+      href="css/bootstrap.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="animate-css"
+      href="css/animate.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="nerko-fontAwesome-css"
+      href="css/fontawesome-all.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="swiper-bundle-css"
+      href="css/swiper-bundle.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="nerko-icons-css"
+      href="css/default-icons.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="unicons-css"
+      href="css/unicons_1.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="nerko-fonts-css"
+      href="css/fonts.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="nerko-spacing-css"
+      href="css/spacing.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="nerko-core-css"
+      href="css/nerko-core.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="nerko-unit-css"
+      href="css/nerko-unit.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="nerko-style-css"
+      href="css/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-icons-css"
+      href="css/elementor-icons.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-frontend-css"
+      href="css/frontend-lite.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="swiper-css"
+      href="css/swiper.min.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-post-6-css"
+      href="css/post-6.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-global-css"
+      href="css/global.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-post-24-css"
+      href="css/post-24.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="google-fonts-1-css"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.3.2"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-icons-tg-unicons-icons-css"
+      href="css/unicons.css"
+      type="text/css"
+      media="all"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <script
+      type="text/javascript"
+      src="js/jquery.min.js"
+      id="jquery-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/jquery-migrate.min.js"
+      id="jquery-migrate-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/tg-page-head.js"
+      id="tg-page-head-js"
+    ></script>
+    <link
+      rel="https://api.w.org/"
+      href="https://themegenix.net/nerko/wp-json/"
+    />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://themegenix.net/nerko/wp-json/wp/v2/pages/24"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="https://themegenix.net/nerko/xmlrpc.php?rsd"
+    />
+    <meta name="generator" content="WordPress 6.3.2" />
+    <link rel="canonical" href="https://themegenix.net/nerko/" />
+    <link rel="shortlink" href="https://themegenix.net/nerko/" />
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="https://themegenix.net/nerko/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemegenix.net%2Fnerko%2F"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="https://themegenix.net/nerko/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthemegenix.net%2Fnerko%2F&amp;format=xml"
+    />
+    <meta
+      name="generator"
+      content="Elementor 3.16.6; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap"
+    />
+    <link rel="icon" href="images/favicon.png" sizes="32x32" />
+    <link rel="icon" href="images/favicon.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="https://themegenix.net/nerko/wp-content/uploads/2022/12/favicon.png"
+    />
+    <style id="kirki-inline-styles"></style>
+    <script src="js/wp-emoji-release.min.js" defer=""></script>
+  </head>
+
+  <body
+    class="home page-template page-template-elementor_header_footer page page-id-24 wp-embed-responsive no-sidebar elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-24"
+  >
+    <!-- Dark/Light-toggle -->
+    <div class="darkmode-trigger d-none">
+      <label class="modeSwitch">
+        <input type="checkbox" />
+        <span class="icon"></span>
+      </label>
+    </div>
+    <!-- Dark/Light-toggle-end -->
+
+    <!-- header-area -->
+    <header>
+      <div id="sticky-header" class="tg-header__area transparent-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="mobile-nav-toggler">
+                <i class="flaticon-menu-1"></i>
+              </div>
+              <div class="tgmenu__wrap">
+                <nav class="tgmenu__nav">
+                  <div class="logo">
+                    <a class="light-logo" href="https://themegenix.net/nerko/">
+                      <img
+                        src="images/logo.svg"
+                        height="auto"
+                        style="max-width: 120px"
+                        alt="Logo"
+                      />
+                    </a>
+                    <a class="dark-logo" href="https://themegenix.net/nerko/">
+                      <img
+                        src="images/secondary_logo.svg"
+                        height="auto"
+                        style="max-width: 120px"
+                        alt="Logo"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex"
+                  >
+                    <ul id="menu-blog-page-menu" class="navigation">
+                      <li
+                        id="menu-item-86"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-24 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-86"
+                      >
+                        <a
+                          href="https://themegenix.net/nerko/"
+                          aria-current="page"
+                          >Home</a
+                        >
+                        <ul class="sub-menu">
+                          <li
+                            id="menu-item-90"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-24 current_page_item menu-item-90"
+                          >
+                            <a
+                              href="https://themegenix.net/nerko/"
+                              aria-current="page"
+                              >Home One</a
+                            >
+                          </li>
+                          <li
+                            id="menu-item-88"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"
+                          >
+                            <a href="https://themegenix.net/nerko/home-02/"
+                              >Home Two</a
+                            >
+                          </li>
+                          <li
+                            id="menu-item-87"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"
+                          >
+                            <a href="https://themegenix.net/nerko/home-03/"
+                              >Home Three</a
+                            >
+                          </li>
+                          <li
+                            id="menu-item-462"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"
+                          >
+                            <a href="https://themegenix.net/nerko/home-04/"
+                              >Home Four</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li
+                        id="menu-item-91"
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-91"
+                      >
+                        <a
+                          href="https://themegenix.net/nerko/#minting"
+                          aria-current="page"
+                          >Minting</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-92"
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-92"
+                      >
+                        <a
+                          href="https://themegenix.net/nerko/#about"
+                          aria-current="page"
+                          >About</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-93"
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-93"
+                      >
+                        <a
+                          href="https://themegenix.net/nerko/#collection"
+                          aria-current="page"
+                          >Collection</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-94"
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-94"
+                      >
+                        <a
+                          href="https://themegenix.net/nerko/#roadmap"
+                          aria-current="page"
+                          >Roadmap</a
+                        >
+                      </li>
+                      <li
+                        id="menu-item-89"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"
+                      >
+                        <a href="https://themegenix.net/nerko/blog/">Blog</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="tgmenu__action">
+                    <ul class="list-wrap">
+                      <li class="header-social">
+                        <a href="#" class="d-none d-sm-block"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+
+                        <a
+                          href="#"
+                          class="d-blcok d-xl-none"
+                          data-bs-toggle="modal"
+                          data-bs-target="#connectModal"
+                          ><i class="fas fa-wallet"></i
+                        ></a>
+                      </li>
+
+                      <li class="header-btn">
+                        <button
+                          class="btn border-btn"
+                          data-bs-toggle="modal"
+                          data-bs-target="#connectModal"
+                        >
+                          Connect wallet
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+
+              <!-- Mobile Menu  -->
+              <div class="tgmobile__menu">
+                <nav class="tgmobile__menu-box">
+                  <div class="close-btn"><i class="flaticon-close-1"></i></div>
+                  <div class="nav-logo">
+                    <a class="light-logo" href="https://themegenix.net/nerko/">
+                      <img
+                        src="images/logo.svg"
+                        height="auto"
+                        style="max-width: 120px"
+                        alt="Logo"
+                      />
+                    </a>
+
+                    <a class="dark-logo" href="https://themegenix.net/nerko/">
+                      <img
+                        src="images/secondary_logo.svg"
+                        height="auto"
+                        style="max-width: 120px"
+                        alt="Logo"
+                      />
+                    </a>
+                  </div>
+                  <div class="tgmobile__menu-outer">
+                    <ul id="menu-blog-page-menu-1" class="navigation">
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-24 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children has-children menu-item-86"
+                      >
+                        <a
+                          href="https://themegenix.net/nerko/"
+                          aria-current="page"
+                          >Home</a
+                        >
+                        <ul class="sub-menu">
+                          <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-24 current_page_item menu-item-90"
+                          >
+                            <a
+                              href="https://themegenix.net/nerko/"
+                              aria-current="page"
+                              >Home One</a
+                            >
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"
+                          >
+                            <a href="https://themegenix.net/nerko/home-02/"
+                              >Home Two</a
+                            >
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"
+                          >
+                            <a href="https://themegenix.net/nerko/home-03/"
+                              >Home Three</a
+                            >
+                          </li>
+                          <li
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"
+                          >
+                            <a href="https://themegenix.net/nerko/home-04/"
+                              >Home Four</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-91"
+                      >
+                        <a
+                          href="https://themegenix.net/nerko/#minting"
+                          aria-current="page"
+                          >Minting</a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-92"
+                      >
+                        <a
+                          href="https://themegenix.net/nerko/#about"
+                          aria-current="page"
+                          >About</a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-93"
+                      >
+                        <a
+                          href="https://themegenix.net/nerko/#collection"
+                          aria-current="page"
+                          >Collection</a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-94"
+                      >
+                        <a
+                          href="https://themegenix.net/nerko/#roadmap"
+                          aria-current="page"
+                          >Roadmap</a
+                        >
+                      </li>
+                      <li
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-89"
+                      >
+                        <a href="https://themegenix.net/nerko/blog/">Blog</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="social-links">
+                    <ul class="clearfix">
+                      <li class="facebook">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+
+                      <li class="twitter">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                      </li>
+
+                      <li class="instagram">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </li>
+
+                      <li class="discord">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                      </li>
+
+                      <li class="telegram">
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <div class="tgmobile__menu-backdrop"></div>
+              <!-- End Mobile Menu -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connect Wallet Modal -->
+      <div class="connect__modal">
+        <div
+          class="modal fade"
+          id="connectModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal__wrapper">
+                <div class="modal__header">
+                  <h2 class="title">Connect Wallet</h2>
+                  <button data-bs-dismiss="modal" aria-label="Close">
+                    <i class="flaticon-close-1"></i>
+                  </button>
+                </div>
+                <div class="modal__body text-center">
+                  <p>
+                    Please select a wallet to connect for start Minting your
+                    NFTs
+                  </p>
+                  <div class="connect__section">
+                    <ul class="list-wrap">
+                      <li>
+                        <a href="#" class="connect-meta"
+                          ><img
+                            src="images/metamask.svg"
+                            alt="MetaMask"
+                          />MetaMask</a
+                        >
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          ><img src="images/bitgo.svg" alt="BitGo" />BitGo</a
+                        >
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          ><img src="images/trust.svg" alt="Trust" />Trust
+                          Wallet</a
+                        >
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="images/coinbase.svg"
+                            alt="Coinbase"
+                          />Coinbase</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="privacy-text">
+                    By connecting your wallet, you agree to our Terms of Service
+                    and our Privacy Policy
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Connect Wallet Modal -->
+    </header>
+    <!-- header-area-end -->
+
+    <!-- main-area -->
+    <main class="fix">
+      <!-- gradient-position -->
+      <div class="gradient-position">
+        <img
+          src="images/gradient-circle.svg"
+          style="left: -4%; top: -4%"
+          width="500"
+          alt="Background Circle"
+        />
+        <img
+          src="images/gradient-circle.svg"
+          style="right: -4%; bottom: -4%"
+          width="500"
+          alt="Background Circle"
+        />
+      </div>
+      <!-- gradient-position-end -->
+
+      <div
+        data-elementor-type="wp-page"
+        data-elementor-id="24"
+        class="elementor elementor-24"
+      >
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-3a06ec7 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="3a06ec7"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-045d5be"
+              data-id="045d5be"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap"></div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-4956fbe elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="4956fbe"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cd51e57"
+              data-id="cd51e57"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-e0f2df0 elementor-widget elementor-widget-hero-banner"
+                  data-id="e0f2df0"
+                  data-element_type="widget"
+                  data-widget_type="hero-banner.default"
+                >
+                  <div class="elementor-widget-container">
+                    <script>
+                      jQuery(document).ready(function ($) {
+                        $("[data-background]").each(function () {
+                          $(this).css(
+                            "background-image",
+                            "url(" + $(this).attr("data-background") + ")"
+                          );
+                        });
+                      });
+                    </script>
+
+                    <!-- banner-area -->
+                    <section
+                      id="home"
+                      class="banner-area banner-padding position-relative"
+                    >
+                      <div class="banner__background-wrap">
+                        <div
+                          class="background"
+                          data-background="https://themegenix.net/nerko/wp-content/uploads/2022/12/gradient_bg01.png"
+                        ></div>
+                      </div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div
+                              class="banner__content"
+                              data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
+                            >
+                              <img
+                                decoding="async"
+                                src="images/ethereum-01.png"
+                                width="44"
+                                alt=""
+                                style="top: -25%; left: 38%"
+                                data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                              />
+
+                              <img
+                                decoding="async"
+                                src="images/circle-01.png"
+                                width="16"
+                                alt=""
+                                style="top: 14%; left: -12%"
+                                data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 420;"
+                              />
+
+                              <img
+                                decoding="async"
+                                src="images/circle-03.png"
+                                width="24"
+                                alt=""
+                                style="bottom: -16%; left: 12%"
+                                data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 440;"
+                              />
+
+                              <h2 class="title">
+                                Crypto Drainer  Alfa Drainer
+                              </h2>
+                              <p class="desc">
+                                Find the right NFT collections to buy within the
+                                platform.
+                              </p>
+
+                              <a
+                                href="https://opensea.io/"
+                                target="_blank"
+                                rel="nofollow"
+                                class="banner__btn btn gradient-btn"
+                              >
+                                <span>Buy Drainer</span>
+                                <i class="unicon-arrow-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div
+                              class="banner__images"
+                              data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;"
+                            >
+                              <img
+                                decoding="async"
+                                src="images/bitcoin-01.png"
+                                width="44"
+                                class="shape"
+                                alt=""
+                                style="top: 67%; left: -21%"
+                                data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 460;"
+                              />
+
+                              <img
+                                decoding="async"
+                                src="images/x.png"
+                                width="28"
+                                class="shape"
+                                alt=""
+                                style="top: -4%; right: 16%"
+                                data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 480;"
+                              />
+
+                              <img
+                                decoding="async"
+                                class="shape dashed-line has-active-light"
+                                width="300"
+                                src="images/blob-dashed.svg"
+                                alt="Blog dashed"
+                                style="
+                                  top: -10%;
+                                  right: 17%;
+                                  fill: transparent;
+                                  opacity: 0.1;
+                                "
+                              />
+
+                              <img
+                                decoding="async"
+                                class="shape dashed-line has-active-dark"
+                                width="300"
+                                src="images/blob-dashed-light.svg"
+                                alt="Blog dashed"
+                                style="
+                                  top: -10%;
+                                  right: 17%;
+                                  fill: transparent;
+                                  opacity: 0.1;
+                                "
+                              />
+
+                              <svg
+                                style="top: -17%; opacity: 0.3"
+                                class="shape"
+                                viewBox="0 0 200 200"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill="#F796FF"
+                                  d="M47.5,-67.2C55.9,-59.3,53.2,-37.9,56.7,-20.1C60.2,-2.3,69.9,11.8,70.8,27.3C71.7,42.9,63.8,59.9,50.6,64.4C37.3,68.9,18.6,60.8,-0.3,61.2C-19.3,61.6,-38.6,70.7,-53.5,66.7C-68.4,62.8,-78.9,45.9,-78.8,29.5C-78.7,13.2,-67.9,-2.7,-59.8,-16.8C-51.6,-31,-46,-43.3,-36.5,-50.9C-27,-58.4,-13.5,-61.1,3,-65.2C19.6,-69.4,39.1,-75.1,47.5,-67.2Z"
+                                  transform="translate(100 100)"
+                                ></path>
+                              </svg>
+
+                              <div class="banner__images-grid">
+                                <div class="left">
+                                  <img
+                                    decoding="async"
+                                    src="images/art_09.jpg"
+                                    alt=""
+                                  />
+                                </div>
+
+                                <div class="right">
+                                  <img
+                                    decoding="async"
+                                    src="images/art_06.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+
+                              <a
+                                href="https://opensea.io/"
+                                target="_blank"
+                                rel="nofollow"
+                                class="tg-circle-text"
+                              >
+                                <svg
+                                  class="tg-circle-text-path tg-animation-spin"
+                                  viewBox="0 0 100 100"
+                                  width="120"
+                                  height="120"
+                                >
+                                  <defs>
+                                    <path
+                                      id="circle"
+                                      d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
+                                    ></path>
+                                  </defs>
+                                  <text font-size="11.75">
+                                    <textPath xlink:href="#circle">
+                                      Buy Drainer • big sale • big sale •
+                                    </textPath>
+                                  </text>
+                                </svg>
+                                <i class="unicon-arrow-up-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- banner-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-fbdf678 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="fbdf678"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6616061"
+              data-id="6616061"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-82ba7b8 elementor-widget elementor-widget-brand"
+                  data-id="82ba7b8"
+                  data-element_type="widget"
+                  data-widget_type="brand.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- brand-area -->
+                    <div
+                      class="brand-area"
+                      data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 300;"
+                    >
+                      <div class="container">
+                        <div class="row justify-content-center">
+                          <div class="col-xl-10 col-12">
+                            <h6 class="brand__title">
+                              POWERED BY AMAZING INVESTORS:
+                            </h6>
+
+                            <div class="brand__list">
+                              <div class="brand__item">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/wallet-01.svg"
+                                    class="has-active-light"
+                                    alt=""
+                                /></a>
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/wallet-light-01.svg"
+                                    class="has-active-dark"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="brand__item">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/wallet-02.svg"
+                                    class="has-active-light"
+                                    alt=""
+                                /></a>
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/wallet-light-02.svg"
+                                    class="has-active-dark"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="brand__item">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/wallet-03.svg"
+                                    class="has-active-light"
+                                    alt=""
+                                /></a>
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/wallet-light-03.svg"
+                                    class="has-active-dark"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="brand__item">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/wallet-04.svg"
+                                    class="has-active-light"
+                                    alt=""
+                                /></a>
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/wallet-light-04.svg"
+                                    class="has-active-dark"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="brand__item">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/wallet-05.svg"
+                                    class="has-active-light"
+                                    alt=""
+                                /></a>
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/wallet-light-05.svg"
+                                    class="has-active-dark"
+                                    alt=""
+                                /></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- brand-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-61ba82e elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="61ba82e"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-36c28aa"
+              data-id="36c28aa"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-a90de43 elementor-widget elementor-widget-tg-separator"
+                  data-id="a90de43"
+                  data-element_type="widget"
+                  data-widget_type="tg-separator.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- section-divider -->
+                    <div
+                      class="section-divider"
+                      data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                    >
+                      <img
+                        decoding="async"
+                        src="images/divider-01.svg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- section-divider-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-acaa241 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="acaa241"
+          data-element_type="section"
+          id="minting"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e9b5133"
+              data-id="e9b5133"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-6ccf568 elementor-widget elementor-widget-features"
+                  data-id="6ccf568"
+                  data-element_type="widget"
+                  data-widget_type="features.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- mint-area -->
+                    <section class="mint-area">
+                      <div class="container">
+                        <div
+                          class="row justify-content-center"
+                          data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;"
+                        >
+                          <div class="col-xl-8 col-lg-10">
+                            <div class="section__title text-center title-mb-80">
+                              <h2 class="title">How to mint</h2>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="mint__lits-wrapper"
+                          data-anime="targets: > *; opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 300;"
+                        >
+                          <img
+                            decoding="async"
+                            class="shape"
+                            width="16"
+                            src="images/circle-01.png"
+                            alt=""
+                            style="top: -16%; left: 8%"
+                          />
+
+                          <img
+                            decoding="async"
+                            class="shape"
+                            width="28"
+                            src="images/circle-02.png"
+                            alt=""
+                            style="bottom: 16%; left: -8%"
+                          />
+
+                          <img
+                            decoding="async"
+                            class="shape"
+                            width="24"
+                            src="images/x.png"
+                            alt=""
+                            style="bottom: 16%; right: -8%"
+                          />
+
+                          <div
+                            class="row justify-content-center"
+                            data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: -250; delay: anime.stagger(100);"
+                          >
+                            <div class="col-md-6 col-sm-9">
+                              <div class="mint__item">
+                                <div class="mint__icon">
+                                  <img
+                                    decoding="async"
+                                    class="light"
+                                    src="images/mint-01.png"
+                                    alt=""
+                                  />
+                                </div>
+
+                                <div class="mint__content">
+                                  <h2 class="title">Connect your wallet</h2>
+
+                                  <p class="desc">
+                                    Use Trust Wallet, Metamask or any wallet to
+                                    connect to the app.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-sm-9">
+                              <div class="mint__item">
+                                <div class="mint__icon">
+                                  <img
+                                    decoding="async"
+                                    class="light"
+                                    src="images/mint-02.png"
+                                    alt=""
+                                  />
+                                </div>
+
+                                <div class="mint__content">
+                                  <h2 class="title">Select your quantity</h2>
+
+                                  <p class="desc">
+                                    Use Trust Wallet, Metamask or any wallet to
+                                    connect to the app.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-sm-9">
+                              <div class="mint__item">
+                                <div class="mint__icon">
+                                  <img
+                                    decoding="async"
+                                    class="light"
+                                    src="images/mint-03.png"
+                                    alt=""
+                                  />
+                                </div>
+
+                                <div class="mint__content">
+                                  <h2 class="title">Confirm transaction</h2>
+
+                                  <p class="desc">
+                                    Earn ETH and BIT for all your NFTs that you
+                                    sell on our marketplace.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-sm-9">
+                              <div class="mint__item">
+                                <div class="mint__icon">
+                                  <img
+                                    decoding="async"
+                                    class="light"
+                                    src="images/mint-04.png"
+                                    alt=""
+                                  />
+                                </div>
+
+                                <div class="mint__content">
+                                  <h2 class="title">Receive your NFTs</h2>
+
+                                  <p class="desc">
+                                    Latin professor at Hampden-Sydney College in
+                                    Virginia.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- mint-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-4f9e22e elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="4f9e22e"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2a09d4d"
+              data-id="2a09d4d"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-98fedc9 elementor-widget elementor-widget-tg-separator"
+                  data-id="98fedc9"
+                  data-element_type="widget"
+                  data-widget_type="tg-separator.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- section-divider -->
+                    <div
+                      class="section-divider"
+                      data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                    >
+                      <img
+                        decoding="async"
+                        src="images/divider-01.svg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- section-divider-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-f728a46 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="f728a46"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5541007"
+              data-id="5541007"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-8694488 elementor-widget elementor-widget-tp-fact"
+                  data-id="8694488"
+                  data-element_type="widget"
+                  data-widget_type="tp-fact.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- fact-area -->
+                    <section class="fact-area">
+                      <div class="container">
+                        <div class="fact__items-wrap position-relative">
+                          <img
+                            decoding="async"
+                            class="shape"
+                            src="images/bitcoin-01.png"
+                            width="32"
+                            alt=""
+                            style="bottom: -32%; left: 30%"
+                            data-anime="opacity:[0, 1]; scale:[0, 1]; onview: -250; delay: 200;"
+                          />
+
+                          <img
+                            decoding="async"
+                            class="shape"
+                            src="images/ethereum-01.png"
+                            width="24"
+                            alt=""
+                            style="top: -25%; right: 25%"
+                            data-anime="opacity:[0, 1]; scale:[0, 1]; onview: -250; delay: 200;"
+                          />
+
+                          <div
+                            class="row justify-content-center"
+                            data-anime="targets: > *; opacity:[0, 1]; scale:[0.5, 1]; onview: -250; delay: anime.stagger(100);"
+                          >
+                            <div class="col-lg-4 col-md-6 col-sm-8">
+                              <div class="fact__item text-center">
+                                <h2 class="fact__count tg-text-gradient">
+                                  4,000+
+                                </h2>
+
+                                <span class="meta">Wallets Connected</span>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-8">
+                              <div class="fact__item text-center">
+                                <h2 class="fact__count tg-text-gradient">
+                                  20,000+
+                                </h2>
+
+                                <span class="meta"
+                                  >Collections Indexed every 5 mins.</span
+                                >
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-8">
+                              <div class="fact__item text-center">
+                                <h2 class="fact__count tg-text-gradient">
+                                  2.5x
+                                </h2>
+
+                                <span class="meta"
+                                  >Difference in Floor &amp; Estimated
+                                  Value</span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- fact-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-a5fab69 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="a5fab69"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-789c964"
+              data-id="789c964"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-f78a15a elementor-widget elementor-widget-tg-separator"
+                  data-id="f78a15a"
+                  data-element_type="widget"
+                  data-widget_type="tg-separator.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- section-divider -->
+                    <div
+                      class="section-divider"
+                      data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                    >
+                      <img
+                        decoding="async"
+                        src="images/divider-01.svg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- section-divider-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-5b441aa elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="5b441aa"
+          data-element_type="section"
+          id="about"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e127129"
+              data-id="e127129"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-d87ac7a elementor-widget elementor-widget-about"
+                  data-id="d87ac7a"
+                  data-element_type="widget"
+                  data-widget_type="about.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- about-area -->
+                    <section class="about-area">
+                      <div class="container">
+                        <div
+                          class="row justify-content-center"
+                          data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
+                        >
+                          <div class="col-xl-8 col-lg-10">
+                            <div class="section__title text-center title-mb-80">
+                              <h2 class="title">About the platform</h2>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="about__row-reverse">
+                          <div class="row align-items-center">
+                            <div class="col-lg-6">
+                              <div
+                                class="about__img"
+                                data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 200;"
+                              >
+                                <img
+                                  decoding="async"
+                                  src="images/features-03.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div
+                                class="about__content"
+                                data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 300;"
+                              >
+                                <div class="section__title text-start">
+                                  <span class="sub-title tg-text-gradient"
+                                    >Create and Invest</span
+                                  >
+                                  <h2 class="title">Create your own NFT</h2>
+                                </div>
+
+                                <p>
+                                  Multiple Chains, One Home. Stack up all your
+                                  NFTs from across blockchains.
+                                </p>
+
+                                <div class="about__facts-list">
+                                  <div class="about__fact-item">
+                                    <h3 class="count">4,500+</h3>
+
+                                    <p>
+                                      Collections Indexed <br />
+                                      every 5mins.
+                                    </p>
+                                  </div>
+
+                                  <div class="about__fact-item">
+                                    <h3 class="count">2.5x</h3>
+
+                                    <p>
+                                      Difference in Floor &amp; Estimated NFT
+                                      Value
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row align-items-center">
+                            <div class="col-lg-6">
+                              <div
+                                class="about__img"
+                                data-anime="opacity:[0, 1]; translateX:[24, 0]; onview: -250; delay: 200;"
+                              >
+                                <img
+                                  decoding="async"
+                                  src="images/features-02.png"
+                                  alt=""
+                                />
+                              </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                              <div
+                                class="about__content"
+                                data-anime="opacity:[0, 1]; translateX:[-24, 0]; onview: -250; delay: 300;"
+                              >
+                                <div class="section__title text-start">
+                                  <span class="sub-title tg-text-gradient"
+                                    >Sync and Track</span
+                                  >
+                                  <h2 class="title">
+                                    Multiple Chains, One Home
+                                  </h2>
+                                </div>
+
+                                <p>
+                                  We make it easy to Discover, Invest and manage
+                                  all your NFTs at one place, looked up one of
+                                  the more obscure.Find the right NFT
+                                  collections to buy within the platform.
+                                </p>
+
+                                <div class="about__facts-list">
+                                  <div class="about__icon-box">
+                                    <div class="icon">
+                                      <i
+                                        aria-hidden="true"
+                                        class="tp unicon-select-02"
+                                      ></i>
+                                    </div>
+
+                                    <p>Collections Indexed every 5mins.</p>
+                                  </div>
+
+                                  <div class="about__icon-box">
+                                    <div class="icon">
+                                      <i
+                                        aria-hidden="true"
+                                        class="tp unicon-select-window"
+                                      ></i>
+                                    </div>
+
+                                    <p>
+                                      Difference in Floor &amp; Estimated Value
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- about-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-cd9240b elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="cd9240b"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6e4a168"
+              data-id="6e4a168"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-ed7ca1b elementor-widget elementor-widget-tg-separator"
+                  data-id="ed7ca1b"
+                  data-element_type="widget"
+                  data-widget_type="tg-separator.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- section-divider -->
+                    <div
+                      class="section-divider"
+                      data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                    >
+                      <img
+                        decoding="async"
+                        src="images/divider-01.svg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- section-divider-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-9b5979f elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="9b5979f"
+          data-element_type="section"
+          id="collection"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b637798"
+              data-id="b637798"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-468b79c elementor-widget elementor-widget-tg-collection"
+                  data-id="468b79c"
+                  data-element_type="widget"
+                  data-widget_type="tg-collection.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- collection-area -->
+                    <section class="collection-area">
+                      <div class="container">
+                        <div
+                          class="row justify-content-center"
+                          data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 200;"
+                        >
+                          <div class="col-xl-8 col-lg-10">
+                            <div class="section__title text-center title-mb-65">
+                              <h2 class="title">Latest artworks</h2>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="row collection__items-list"
+                          data-anime="targets: > * > *; opacity:[0, 1]; translateY:[48, 0]; onview: -100; delay: anime.stagger(100);"
+                        >
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-11">
+                            <div class="collection__item">
+                              <div class="collection__item-thumb">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/art_01.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+
+                              <div class="collection__item-content">
+                                <h4 class="name"><a href="#">#Metaverse</a></h4>
+
+                                <span class="author"
+                                  >By <a href="#">TheSalvare</a></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-11">
+                            <div class="collection__item">
+                              <div class="collection__item-thumb">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/art_02.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+
+                              <div class="collection__item-content">
+                                <h4 class="name">
+                                  <a href="#">#Polly Doll</a>
+                                </h4>
+
+                                <span class="author"
+                                  >By <a href="#">TheNative</a></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-11">
+                            <div class="collection__item">
+                              <div class="collection__item-thumb">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/art_03.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+
+                              <div class="collection__item-content">
+                                <h4 class="name"><a href="#">#Alec Art</a></h4>
+
+                                <span class="author"
+                                  >By <a href="#">GeorgZvic</a></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-11">
+                            <div class="collection__item">
+                              <div class="collection__item-thumb">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/art_04.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+
+                              <div class="collection__item-content">
+                                <h4 class="name">
+                                  <a href="#">#Toxic Poeth</a>
+                                </h4>
+
+                                <span class="author"
+                                  >By <a href="#">YazoiLup</a></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-11">
+                            <div class="collection__item">
+                              <div class="collection__item-thumb">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/art_05.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+
+                              <div class="collection__item-content">
+                                <h4 class="name"><a href="#">#Saphyre</a></h4>
+
+                                <span class="author"
+                                  >By <a href="#">CryptoX</a></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-11">
+                            <div class="collection__item">
+                              <div class="collection__item-thumb">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/art_06_1.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+
+                              <div class="collection__item-content">
+                                <h4 class="name">
+                                  <a href="#">#Charcuterie</a>
+                                </h4>
+
+                                <span class="author"
+                                  >By <a href="#">Texira</a></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-11">
+                            <div class="collection__item">
+                              <div class="collection__item-thumb">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/art_07.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+
+                              <div class="collection__item-content">
+                                <h4 class="name"><a href="#">#Paradise</a></h4>
+
+                                <span class="author"
+                                  >By <a href="#">CryptoX</a></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-11">
+                            <div class="collection__item">
+                              <div class="collection__item-thumb">
+                                <a href="#"
+                                  ><img
+                                    decoding="async"
+                                    src="images/art_08.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+
+                              <div class="collection__item-content">
+                                <h4 class="name"><a href="#">#HighTown</a></h4>
+
+                                <span class="author"
+                                  >By <a href="#">TheSalvare</a></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="collection__btn text-center"
+                          data-anime="opacity:[0, 1]; translateY:[-24, 0]; onview: true; delay: 200;"
+                        >
+                          <a
+                            href="#"
+                            target="_blank"
+                            rel="nofollow"
+                            class="btn gradient-btn"
+                            ><span>View more in OPENSEA</span>
+                            <i class="unicon-arrow-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- collection-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-d9c3e5b elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="d9c3e5b"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-871835b"
+              data-id="871835b"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-4550010 elementor-widget elementor-widget-tg-separator"
+                  data-id="4550010"
+                  data-element_type="widget"
+                  data-widget_type="tg-separator.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- section-divider -->
+                    <div
+                      class="section-divider"
+                      data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                    >
+                      <img
+                        decoding="async"
+                        src="images/divider-01.svg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- section-divider-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-ba1394c elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="ba1394c"
+          data-element_type="section"
+          id="roadmap"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3204e3c"
+              data-id="3204e3c"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-bced05e elementor-widget elementor-widget-roadmap"
+                  data-id="bced05e"
+                  data-element_type="widget"
+                  data-widget_type="roadmap.default"
+                >
+                  <div class="elementor-widget-container">
+                    <script>
+                      jQuery(document).ready(function ($) {
+                        /*=============================================
+                        =        RoadMap Active		      =
+                    =============================================*/
+                        var roadSwiper = new Swiper(".roadmap__active", {
+                          // Optional parameters
+                          loop: false,
+                          slidesPerView: 1,
+                          spaceBetween: 32,
+                          breakpoints: {
+                            1500: {
+                              slidesPerView: 1,
+                            },
+                            1200: {
+                              slidesPerView: 1,
+                            },
+                            992: {
+                              slidesPerView: 1,
+                            },
+                            768: {
+                              slidesPerView: 1,
+                            },
+                            576: {
+                              slidesPerView: 1,
+                            },
+                            0: {
+                              slidesPerView: 1,
+                            },
+                          },
+                          pagination: {
+                            el: ".tg-swiper-scrollbar",
+                            type: "progressbar",
+                          },
+                          // Navigation arrows
+                          navigation: {
+                            nextEl: ".tg-swiper-next",
+                            prevEl: ".tg-swiper-prev",
+                          },
+                        });
+                      });
+                    </script>
+
+                    <!-- roadmap-area -->
+                    <section class="roadmap-area">
+                      <div class="container">
+                        <div
+                          class="row justify-content-center"
+                          data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
+                        >
+                          <div class="col-xl-8 col-lg-10">
+                            <div class="section__title text-center title-mb-75">
+                              <h2 class="title">Nerko's Roadmap</h2>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="roadmap__wrapper"
+                          data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 200;"
+                        >
+                          <div class="swiper roadmap__active">
+                            <div
+                              class="swiper-wrapper"
+                              data-anime="targets: > * > *; opacity:[0, 1]; scale:[0.5, 1]; onview: -400; delay: anime.stagger(200);"
+                            >
+                              <div class="swiper-slide">
+                                <div class="roadmap__card">
+                                  <div class="roadmap__percent">
+                                    <span>0</span>%
+                                  </div>
+
+                                  <div class="roadmap__step">
+                                    <span class="tg-text-gradient d-inline-flex"
+                                      >Phase 01</span
+                                    >
+                                  </div>
+
+                                  <h3 class="roadmap__heading">Planning</h3>
+
+                                  <p>
+                                    Quality comes first. we took our time to
+                                    plan out everything and build our production
+                                    pipeline for a good quality artworks.
+                                  </p>
+
+                                  <ul class="roadmap__lists list-wrap">
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Release website and logo
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Grow community
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Launch the project
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="roadmap__card">
+                                  <div class="roadmap__percent">
+                                    <span>25</span>%
+                                  </div>
+
+                                  <div class="roadmap__step">
+                                    <span class="tg-text-gradient d-inline-flex"
+                                      >Phase 02</span
+                                    >
+                                  </div>
+
+                                  <h3 class="roadmap__heading">Production</h3>
+
+                                  <p>
+                                    Quality comes first. we took our time to
+                                    plan out everything and build our production
+                                    pipeline for a good quality artworks.
+                                  </p>
+
+                                  <ul class="roadmap__lists list-wrap">
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Release website and logo
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Grow community
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Launch the project
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="roadmap__card">
+                                  <div class="roadmap__percent">
+                                    <span>50</span>%
+                                  </div>
+
+                                  <div class="roadmap__step">
+                                    <span class="tg-text-gradient d-inline-flex"
+                                      >Phase 03</span
+                                    >
+                                  </div>
+
+                                  <h3 class="roadmap__heading">Launch</h3>
+
+                                  <p>
+                                    Quality comes first. we took our time to
+                                    plan out everything and build our production
+                                    pipeline for a good quality artworks.
+                                  </p>
+
+                                  <ul class="roadmap__lists list-wrap">
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Release website and logo
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Grow community
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Launch the project
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="roadmap__card">
+                                  <div class="roadmap__percent">
+                                    <span>75</span>%
+                                  </div>
+
+                                  <div class="roadmap__step">
+                                    <span class="tg-text-gradient d-inline-flex"
+                                      >Phase 04</span
+                                    >
+                                  </div>
+
+                                  <h3 class="roadmap__heading">Minting</h3>
+
+                                  <p>
+                                    Quality comes first. we took our time to
+                                    plan out everything and build our production
+                                    pipeline for a good quality artworks.
+                                  </p>
+
+                                  <ul class="roadmap__lists list-wrap">
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Release website and logo
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Grow community
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Launch the project
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="roadmap__card">
+                                  <div class="roadmap__percent">
+                                    <span>95</span>%
+                                  </div>
+
+                                  <div class="roadmap__step">
+                                    <span class="tg-text-gradient d-inline-flex"
+                                      >Phase 05</span
+                                    >
+                                  </div>
+
+                                  <h3 class="roadmap__heading">New Nfts</h3>
+
+                                  <p>
+                                    Quality comes first. we took our time to
+                                    plan out everything and build our production
+                                    pipeline for a good quality artworks.
+                                  </p>
+
+                                  <ul class="roadmap__lists list-wrap">
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Release website and logo
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Grow community
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Launch the project
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="roadmap__card">
+                                  <div class="roadmap__percent">
+                                    <span>100</span>%
+                                  </div>
+
+                                  <div class="roadmap__step">
+                                    <span class="tg-text-gradient d-inline-flex"
+                                      >Phase 06</span
+                                    >
+                                  </div>
+
+                                  <h3 class="roadmap__heading">Metaverse</h3>
+
+                                  <p>
+                                    Quality comes first. we took our time to
+                                    plan out everything and build our production
+                                    pipeline for a good quality artworks.
+                                  </p>
+
+                                  <ul class="roadmap__lists list-wrap">
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Release website and logo
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Grow community
+                                    </li>
+
+                                    <li>
+                                      <i
+                                        class="unicon-checkmark-outline tg-text-gradient d-inline-flex"
+                                      ></i>
+                                      Launch the project
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Pagination -->
+                          <div class="tg-swiper-scrollbar"></div>
+
+                          <!-- Navigation -->
+                          <a
+                            aria-label="Prev"
+                            href="#prev"
+                            class="tg-swiper-prev"
+                            ><i class="fas fa-chevron-left"></i
+                          ></a>
+                          <a
+                            aria-label="Next"
+                            href="#next"
+                            class="tg-swiper-next"
+                            ><i class="fas fa-chevron-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- roadmap-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-a2596a3 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="a2596a3"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bce6512"
+              data-id="bce6512"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-8a51db3 elementor-widget elementor-widget-tg-separator"
+                  data-id="8a51db3"
+                  data-element_type="widget"
+                  data-widget_type="tg-separator.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- section-divider -->
+                    <div
+                      class="section-divider"
+                      data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                    >
+                      <img
+                        decoding="async"
+                        src="images/divider-01.svg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- section-divider-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-270729e elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="270729e"
+          data-element_type="section"
+          id="team"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-794d4af"
+              data-id="794d4af"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-51aa2f7 elementor-widget elementor-widget-tg-team"
+                  data-id="51aa2f7"
+                  data-element_type="widget"
+                  data-widget_type="tg-team.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- style 2 -->
+
+                    <!-- team-area -->
+                    <section class="team-area">
+                      <div class="container">
+                        <div
+                          class="row justify-content-center"
+                          data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
+                        >
+                          <div class="col-xl-8 col-lg-10">
+                            <div class="section__title text-center title-mb-75">
+                              <h2 class="title">Meet the artists</h2>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div
+                          class="team__grid-wrapper"
+                          data-anime="targets: > *; opacity:[0, 1]; translateY:[24, 0]; onview: -400; delay: anime.stagger(100);"
+                        >
+                          <div class="team__item text-center">
+                            <div class="team__item-thumb">
+                              <img
+                                decoding="async"
+                                src="images/02.png"
+                                alt=""
+                              />
+                            </div>
+
+                            <div class="team__item-content">
+                              <h4 class="name">Steps Jobs</h4>
+
+                              <span class="designation">Artist</span>
+
+                              <ul class="team__social-list list-wrap">
+                                <li>
+                                  <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+
+                                <li>
+                                  <a href="#"><i class="fab fa-discord"></i></a>
+                                </li>
+
+                                <li>
+                                  <a href="#"
+                                    ><i class="fab fa-instagram"></i
+                                  ></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="team__item text-center">
+                            <div class="team__item-thumb">
+                              <img
+                                decoding="async"
+                                src="images/03.png"
+                                alt=""
+                              />
+                            </div>
+
+                            <div class="team__item-content">
+                              <h4 class="name">Andry Moray</h4>
+
+                              <span class="designation">Artist</span>
+
+                              <ul class="team__social-list list-wrap">
+                                <li>
+                                  <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+
+                                <li>
+                                  <a href="#"><i class="fab fa-discord"></i></a>
+                                </li>
+
+                                <li>
+                                  <a href="#"
+                                    ><i class="fab fa-instagram"></i
+                                  ></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="team__item text-center">
+                            <div class="team__item-thumb">
+                              <img
+                                decoding="async"
+                                src="images/01.png"
+                                alt=""
+                              />
+                            </div>
+
+                            <div class="team__item-content">
+                              <h4 class="name">Zaid Ed</h4>
+
+                              <span class="designation">Artist</span>
+
+                              <ul class="team__social-list list-wrap">
+                                <li>
+                                  <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+
+                                <li>
+                                  <a href="#"><i class="fab fa-discord"></i></a>
+                                </li>
+
+                                <li>
+                                  <a href="#"
+                                    ><i class="fab fa-instagram"></i
+                                  ></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="team__item text-center">
+                            <div class="team__item-thumb">
+                              <img
+                                decoding="async"
+                                src="images/04.png"
+                                alt=""
+                              />
+                            </div>
+
+                            <div class="team__item-content">
+                              <h4 class="name">Laila Ed</h4>
+
+                              <span class="designation">Artist</span>
+
+                              <ul class="team__social-list list-wrap">
+                                <li>
+                                  <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+
+                                <li>
+                                  <a href="#"><i class="fab fa-discord"></i></a>
+                                </li>
+
+                                <li>
+                                  <a href="#"
+                                    ><i class="fab fa-instagram"></i
+                                  ></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="team__item text-center">
+                            <div class="team__item-thumb">
+                              <img
+                                decoding="async"
+                                src="images/05.png"
+                                alt=""
+                              />
+                            </div>
+
+                            <div class="team__item-content">
+                              <h4 class="name">Almaktari</h4>
+
+                              <span class="designation">Artist</span>
+
+                              <ul class="team__social-list list-wrap">
+                                <li>
+                                  <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+
+                                <li>
+                                  <a href="#"><i class="fab fa-discord"></i></a>
+                                </li>
+
+                                <li>
+                                  <a href="#"
+                                    ><i class="fab fa-instagram"></i
+                                  ></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- team-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-301eeba elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="301eeba"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e29b8a"
+              data-id="9e29b8a"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-a9e5aa4 elementor-widget elementor-widget-tg-separator"
+                  data-id="a9e5aa4"
+                  data-element_type="widget"
+                  data-widget_type="tg-separator.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- section-divider -->
+                    <div
+                      class="section-divider"
+                      data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                    >
+                      <img
+                        decoding="async"
+                        src="images/divider-01.svg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- section-divider-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-9c9a94e elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="9c9a94e"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-24c40e2"
+              data-id="24c40e2"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-88d9e37 elementor-widget elementor-widget-tp-faq"
+                  data-id="88d9e37"
+                  data-element_type="widget"
+                  data-widget_type="tp-faq.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- faq-area -->
+                    <section class="faq-area">
+                      <div class="container">
+                        <div
+                          class="row justify-content-center"
+                          data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
+                        >
+                          <div class="col-xl-8 col-lg-10">
+                            <div class="section__title text-center title-mb-75">
+                              <h2 class="title">Asked Questions</h2>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                          <div class="col-xxl-7 col-xl-9 col-lg-10">
+                            <div
+                              class="faq__wrapper"
+                              data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
+                            >
+                              <div class="accordion" id="accordionFaq">
+                                <div class="accordion-item">
+                                  <h2
+                                    class="accordion-header"
+                                    id="headingOne-0"
+                                  >
+                                    <button
+                                      class="accordion-button"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapseOne-0"
+                                      aria-expanded="true"
+                                      aria-controls="collapseOne-0"
+                                    >
+                                      What is Nerko's NFT Collection?
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="collapseOne-0"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne-0"
+                                    data-bs-parent="#accordionFaq"
+                                  >
+                                    <div class="accordion-body">
+                                      <p>
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat proident.
+                                      </p>
+                                      <p>
+                                        Voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat proident.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2
+                                    class="accordion-header"
+                                    id="headingOne-1"
+                                  >
+                                    <button
+                                      class="accordion-button collapsed"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapseOne-1"
+                                      aria-expanded="true"
+                                      aria-controls="collapseOne-1"
+                                    >
+                                      How we can buy and invest NFT?
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="collapseOne-1"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne-1"
+                                    data-bs-parent="#accordionFaq"
+                                  >
+                                    <div class="accordion-body">
+                                      <p>
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat proident.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2
+                                    class="accordion-header"
+                                    id="headingOne-2"
+                                  >
+                                    <button
+                                      class="accordion-button collapsed"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapseOne-2"
+                                      aria-expanded="true"
+                                      aria-controls="collapseOne-2"
+                                    >
+                                      Why we should choose Nerko's NFT?
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="collapseOne-2"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne-2"
+                                    data-bs-parent="#accordionFaq"
+                                  >
+                                    <div class="accordion-body">
+                                      <p>
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat proident.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2
+                                    class="accordion-header"
+                                    id="headingOne-3"
+                                  >
+                                    <button
+                                      class="accordion-button collapsed"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapseOne-3"
+                                      aria-expanded="true"
+                                      aria-controls="collapseOne-3"
+                                    >
+                                      Where we can buy and sell NFts?
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="collapseOne-3"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne-3"
+                                    data-bs-parent="#accordionFaq"
+                                  >
+                                    <div class="accordion-body">
+                                      <p>
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat proident.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2
+                                    class="accordion-header"
+                                    id="headingOne-4"
+                                  >
+                                    <button
+                                      class="accordion-button collapsed"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapseOne-4"
+                                      aria-expanded="true"
+                                      aria-controls="collapseOne-4"
+                                    >
+                                      How secure is this token?
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="collapseOne-4"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne-4"
+                                    data-bs-parent="#accordionFaq"
+                                  >
+                                    <div class="accordion-body">
+                                      <p>
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat proident.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2
+                                    class="accordion-header"
+                                    id="headingOne-5"
+                                  >
+                                    <button
+                                      class="accordion-button collapsed"
+                                      type="button"
+                                      data-bs-toggle="collapse"
+                                      data-bs-target="#collapseOne-5"
+                                      aria-expanded="true"
+                                      aria-controls="collapseOne-5"
+                                    >
+                                      What is your contract address?
+                                    </button>
+                                  </h2>
+                                  <div
+                                    id="collapseOne-5"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne-5"
+                                    data-bs-parent="#accordionFaq"
+                                  >
+                                    <div class="accordion-body">
+                                      <p>
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat proident.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- faq-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-b660c28 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="b660c28"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-67ce644"
+              data-id="67ce644"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-8069a0f elementor-widget elementor-widget-tg-separator"
+                  data-id="8069a0f"
+                  data-element_type="widget"
+                  data-widget_type="tg-separator.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- section-divider -->
+                    <div
+                      class="section-divider"
+                      data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                    >
+                      <img
+                        decoding="async"
+                        src="images/divider-01.svg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- section-divider-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-199f5ed elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="199f5ed"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-78b175c"
+              data-id="78b175c"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-4265c51 elementor-widget elementor-widget-tp-cta"
+                  data-id="4265c51"
+                  data-element_type="widget"
+                  data-widget_type="tp-cta.default"
+                >
+                  <div class="elementor-widget-container">
+                    <script>
+                      jQuery(document).ready(function ($) {
+                        $("[data-background]").each(function () {
+                          $(this).css(
+                            "background-image",
+                            "url(" + $(this).attr("data-background") + ")"
+                          );
+                        });
+                      });
+                    </script>
+
+                    <!-- cta-area -->
+                    <section class="cta-area">
+                      <div
+                        class="cta-bg"
+                        data-background="https://themegenix.net/nerko/wp-content/uploads/2022/12/collection_cta.png"
+                      ></div>
+
+                      <div class="container">
+                        <div class="row justify-content-center">
+                          <div class="col-xl-6 col-lg-8">
+                            <div class="cta__content text-center">
+                              <img
+                                decoding="async"
+                                src="images/circle-01.png"
+                                width="24"
+                                alt=""
+                                style="top: 0%; left: -16%"
+                              />
+
+                              <img
+                                decoding="async"
+                                src="images/bitcoin-01.png"
+                                width="48"
+                                alt=""
+                                style="bottom: 16%; left: -8%"
+                              />
+
+                              <img
+                                decoding="async"
+                                src="images/ethereum-02.png"
+                                width="40"
+                                alt=""
+                                style="top: 0%; right: -16%"
+                              />
+
+                              <img
+                                decoding="async"
+                                src="images/x.png"
+                                width="24"
+                                alt=""
+                                style="bottom: 16%; right: -8%"
+                              />
+
+                              <h2 class="title">Let's start minting</h2>
+                              <a
+                                href="#"
+                                target="_blank"
+                                rel="nofollow"
+                                class="btn gradient-btn"
+                              >
+                                Join community
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-- cta-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-40fe03b elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="40fe03b"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1589518"
+              data-id="1589518"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-6df5371 elementor-widget elementor-widget-tg-separator"
+                  data-id="6df5371"
+                  data-element_type="widget"
+                  data-widget_type="tg-separator.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- section-divider -->
+                    <div
+                      class="section-divider"
+                      data-anime="opacity:[0, 1]; scale:[0, 1]; onview: true; delay: 400;"
+                    >
+                      <img
+                        decoding="async"
+                        src="images/divider-01.svg"
+                        alt=""
+                      />
+                    </div>
+                    <!-- section-divider-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="elementor-section elementor-top-section elementor-element elementor-element-a1a4c99 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+          data-id="a1a4c99"
+          data-element_type="section"
+        >
+          <div class="elementor-container elementor-column-gap-no">
+            <div
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-624e515"
+              data-id="624e515"
+              data-element_type="column"
+            >
+              <div class="elementor-widget-wrap elementor-element-populated">
+                <div
+                  class="elementor-element elementor-element-a77086b elementor-widget elementor-widget-tp-footer"
+                  data-id="a77086b"
+                  data-element_type="widget"
+                  data-widget_type="tp-footer.default"
+                >
+                  <div class="elementor-widget-container">
+                    <!-- footer-area -->
+                    <footer class="footer-area section-py-80">
+                      <div class="container">
+                        <div class="footer__wrapper">
+                          <img
+                            decoding="async"
+                            src="images/ethereum-01.png"
+                            width="32"
+                            alt=""
+                            style="top: 32%; left: 16%"
+                          />
+
+                          <img
+                            decoding="async"
+                            src="images/x.png"
+                            width="16"
+                            alt=""
+                            style="top: 8%; right: 16%"
+                          />
+
+                          <img
+                            decoding="async"
+                            src="images/circle-01.png"
+                            width="16"
+                            alt=""
+                            style="bottom: 24%; right: 40%"
+                          />
+
+                          <img
+                            decoding="async"
+                            src="images/circle-03.png"
+                            width="24"
+                            alt=""
+                            style="bottom: -8%; left: 30%"
+                          />
+
+                          <div class="row justify-content-center">
+                            <div class="col-xl-5 col-lg-7 col-md-9 col-sm-11">
+                              <div class="footer__info text-center">
+                                <div class="footer-logo">
+                                  <a href="https://themegenix.net/nerko/">
+                                    <img
+                                      decoding="async"
+                                      src="images/nerko.svg"
+                                      width="200"
+                                      alt="Logo"
+                                    />
+                                  </a>
+                                </div>
+
+                                <p>
+                                  We make it easy to Discover, Invest and manage
+                                  all your NFTs at one place.
+                                </p>
+
+                                <ul class="list-wrap footer__social">
+                                  <li>
+                                    <a href="#"
+                                      ><i class="fab fa-twitter"></i
+                                    ></a>
+                                  </li>
+
+                                  <li>
+                                    <a href="#"
+                                      ><i class="fab fa-discord"></i
+                                    ></a>
+                                  </li>
+
+                                  <li>
+                                    <a href="#"
+                                      ><i class="fab fa-instagram"></i
+                                    ></a>
+                                  </li>
+
+                                  <li>
+                                    <a href="#"
+                                      ><i class="fab fa-telegram-plane"></i
+                                    ></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="copyright__wrapper">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="copyright__text">
+                                  <p>© 2023 Nerko. All rights reserved.</p>
+                                </div>
+                              </div>
+
+                              <div class="col-md-6">
+                                <div class="copyright__menu">
+                                  <ul class="list-wrap">
+                                    <li><a href="#">Privacy policy</a></li>
+
+                                    <li><a href="#">Terms of use</a></li>
+
+                                    <li class="backTop">
+                                      <a
+                                        href="javascript:void(0)"
+                                        class="scroll-to-target"
+                                        data-target="html"
+                                        ><i class="flaticon-arrowhead-up"></i
+                                      ></a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                    <!-- footer-area-end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- main-area-end -->
+
+    <script>
+      jQuery(document).ready(function ($) {
+        /*=============================================
+                =    		DarkMode Active  	      =
+            =============================================*/
+        function tg_theme_toggler() {
+          $(".modeSwitch").on("change", function () {
+            toggleTheme();
+          });
+
+          // set toggle theme scheme
+          function tg_set_scheme(tg_theme) {
+            localStorage.setItem("nerko_theme_scheme", tg_theme);
+            document.documentElement.setAttribute("nerko-theme", tg_theme);
+          }
+
+          // toggle theme scheme
+          function toggleTheme() {
+            if (localStorage.getItem("nerko_theme_scheme") === "dark") {
+              tg_set_scheme("dark");
+            } else {
+              tg_set_scheme("dark");
+            }
+          }
+
+          // set the first theme scheme
+          function tg_init_theme() {
+            if (localStorage.getItem("nerko_theme_scheme") === "dark") {
+              tg_set_scheme("dark");
+              document.querySelector(".modeSwitch").checked = true;
+            } else {
+              tg_set_scheme("dark");
+              document.querySelector(".modeSwitch").checked = false;
+            }
+          }
+          tg_init_theme();
+        }
+        if ($(".modeSwitch").length > 0) {
+          tg_theme_toggler();
+        }
+      });
+    </script>
+
+    <script type="text/javascript" src="js/index.js" id="swv-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+      /* <![CDATA[ */
+      var wpcf7 = {
+        api: {
+          root: "https:\/\/themegenix.net\/nerko\/wp-json\/",
+          namespace: "contact-form-7\/v1",
+        },
+        cached: "1",
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="js/index_1.js"
+      id="contact-form-7-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/bootstrap.min.js"
+      id="bootstrap-bundle-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/swiper-bundle.min.js"
+      id="swiper-bundle-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/anime.min.js"
+      id="anime-main-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/anime-helper.js"
+      id="anime-helper-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/anime-helper-defined-timelines.js"
+      id="anime-defined-timelines-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/jquery.easing.js"
+      id="jquery-easing-js"
+    ></script>
+    <script type="text/javascript" src="js/main.js" id="nerko-main-js"></script>
+    <script
+      type="text/javascript"
+      src="js/hello-world.js"
+      id="tpcore-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/webpack.runtime.min.js"
+      id="elementor-webpack-runtime-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/frontend-modules.min.js"
+      id="elementor-frontend-modules-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/waypoints.min.js"
+      id="elementor-waypoints-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/core.min.js"
+      id="jquery-ui-core-js"
+    ></script>
+    <script id="elementor-frontend-js-before" type="text/javascript">
+      var elementorFrontendConfig = {
+        environmentMode: {
+          edit: false,
+          wpPreview: false,
+          isScriptDebug: false,
+        },
+        i18n: {
+          shareOnFacebook: "Share on Facebook",
+          shareOnTwitter: "Share on Twitter",
+          pinIt: "Pin it",
+          download: "Download",
+          downloadImage: "Download image",
+          fullscreen: "Fullscreen",
+          zoom: "Zoom",
+          share: "Share",
+          playVideo: "Play Video",
+          previous: "Previous",
+          next: "Next",
+          close: "Close",
+          a11yCarouselWrapperAriaLabel:
+            "Carousel | Horizontal scrolling: Arrow Left & Right",
+          a11yCarouselPrevSlideMessage: "Previous slide",
+          a11yCarouselNextSlideMessage: "Next slide",
+          a11yCarouselFirstSlideMessage: "This is the first slide",
+          a11yCarouselLastSlideMessage: "This is the last slide",
+          a11yCarouselPaginationBulletMessage: "Go to slide",
+        },
+        is_rtl: false,
+        breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
+        responsive: {
+          breakpoints: {
+            mobile: {
+              label: "Mobile Portrait",
+              value: 767,
+              default_value: 767,
+              direction: "max",
+              is_enabled: true,
+            },
+            mobile_extra: {
+              label: "Mobile Landscape",
+              value: 880,
+              default_value: 880,
+              direction: "max",
+              is_enabled: false,
+            },
+            tablet: {
+              label: "Tablet Portrait",
+              value: 1024,
+              default_value: 1024,
+              direction: "max",
+              is_enabled: true,
+            },
+            tablet_extra: {
+              label: "Tablet Landscape",
+              value: 1200,
+              default_value: 1200,
+              direction: "max",
+              is_enabled: false,
+            },
+            laptop: {
+              label: "Laptop",
+              value: 1366,
+              default_value: 1366,
+              direction: "max",
+              is_enabled: false,
+            },
+            widescreen: {
+              label: "Widescreen",
+              value: 2400,
+              default_value: 2400,
+              direction: "min",
+              is_enabled: false,
+            },
+          },
+        },
+        version: "3.16.6",
+        is_static: false,
+        experimentalFeatures: {
+          e_dom_optimization: true,
+          e_optimized_assets_loading: true,
+          e_optimized_css_loading: true,
+          additional_custom_breakpoints: true,
+          e_swiper_latest: true,
+          "landing-pages": true,
+        },
+        urls: {
+          assets:
+            "https:\/\/themegenix.net\/nerko\/wp-content\/plugins\/elementor\/assets\/",
+        },
+        swiperClass: "swiper",
+        settings: { page: [], editorPreferences: [] },
+        kit: {
+          active_breakpoints: ["viewport_mobile", "viewport_tablet"],
+          global_image_lightbox: "yes",
+          lightbox_enable_counter: "yes",
+          lightbox_enable_fullscreen: "yes",
+          lightbox_enable_zoom: "yes",
+          lightbox_enable_share: "yes",
+          lightbox_title_src: "title",
+          lightbox_description_src: "description",
+        },
+        post: { id: 24, title: "Nerko", excerpt: "", featuredImage: false },
+      };
+    </script>
+    <script
+      type="text/javascript"
+      src="js/frontend.min.js"
+      id="elementor-frontend-js"
+    ></script>
+  </body>
+</html>
