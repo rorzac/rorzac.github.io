@@ -1,0 +1,12 @@
+.search-results .blog-post-item.type-product {
+    max-width: 800px;
+}
+.search-results .blog-post-item.type-product .blog-post-content:not(.blog-details-content) .post-text {
+    margin: 0 0;
+}
+.search-results .blog-post-item.type-product .blog-post-content .post-text p {
+    margin: 0 0;
+}
+.search-results .blog-post-item.type-product .blog-post-content .title {
+    margin-bottom: 15px;
+}
