@@ -55,7 +55,7 @@
                     (this.delayedScripts = {
                         normal: [],
                         async: [],
-                        defer: []
+                        defer: [],
                     }),
                     (this.trash = []),
                     (this.allJQueries = []);
@@ -67,7 +67,7 @@
                 }
                 this.triggerEvents.forEach((e) =>
                         window.addEventListener(e, t.userEventHandler, {
-                            passive: !0
+                            passive: !0,
                         })
                     ),
                     window.addEventListener("touchstart", t.touchStartHandler, {
@@ -464,7 +464,7 @@
                     await this._littleBreath(),
                     window.rocketonpageshow &&
                     window.rocketonpageshow({
-                        persisted: this.persisted
+                        persisted: this.persisted,
                     });
             }
             _handleDocumentWrite() {
@@ -12806,9 +12806,10 @@
                             checkChildNodesRecursively: function(e, t, a, r) {
                                 for (var i, n = 0;
                                     (i = e[n]); n++)
-                                    a(i, t, r) && r.push({
+                                    a(i, t, r) &&
+                                    r.push({
                                         callback: t.callback,
-                                        elem: i
+                                        elem: i,
                                     }),
                                     0 < i.childNodes.length &&
                                     c.checkChildNodesRecursively(i.childNodes, t, a, r);
@@ -12870,7 +12871,7 @@
                             var l = new u(),
                                 o = this,
                                 s = {
-                                    fireOnAttributesModification: !1
+                                    fireOnAttributesModification: !1,
                                 };
                             return (
                                 l.beforeAdding(function(t) {
@@ -12963,7 +12964,7 @@
                                     var t = {
                                         attributes: !1,
                                         childList: !0,
-                                        subtree: !0
+                                        subtree: !0,
                                     };
                                     return (
                                         e.fireOnAttributesModification && (t.attributes = !0), t
@@ -12980,7 +12981,7 @@
                                             n(a, i) &&
                                             r.push({
                                                 callback: i.callback,
-                                                elem: a
+                                                elem: a,
                                             }),
                                             c.callCallbacks(r, i);
                                     });
@@ -12997,7 +12998,7 @@
                                             )
                                                 i.push({
                                                     callback: a,
-                                                    elem: l[o]
+                                                    elem: l[o],
                                                 });
                                         if (t.onceOnly && i.length)
                                             return a.call(i[0].elem, i[0].elem);
@@ -13018,7 +13019,7 @@
                                 function() {
                                     return {
                                         childList: !0,
-                                        subtree: !0
+                                        subtree: !0,
                                     };
                                 },
                                 function(e, r) {
@@ -15249,12 +15250,12 @@
                         </li>
                       </ul>
                     </li>
-                    <li
+                    <!-- <li
                       id="menu-item-15638"
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15638"
                     >
                       <a href="https://turbosto.com.ua/vacancies/">Вакансии</a>
-                                                            </li>
+                                                            </li> -->
                                                             <li id="menu-item-9843" class="menu_icon_14 menu-item menu-item-type-post_type menu-item-object-page menu-item-9843">
                                                                 <a href="https://turbosto.com.ua/garantiya/">Гарантия</a>
                                                             </li>
@@ -15437,15 +15438,20 @@
           <nav class="mobile__nav" role="navigation">
             <style type="text/css"></style>
             <ul class="headnav">
-              <li
+
+              <!-- <li
                 id="menu-item-16164"
                 class="icon-promo menu-item menu-item-type-post_type menu-item-object-page menu-item-16164"
               >
                 <a href="https://turbosto.com.ua/aktsii-i-predlozheniya/"
                   >Акции</a
                 >
-              </li>
-              <li
+              </li> -->
+
+
+
+
+              <!-- <li
                 id="menu-item-1205"
                 class="icon-turbin menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1205"
               >
@@ -15705,8 +15711,12 @@
                         >
                       </li>
                     </ul>
-                  </li>
-                  <li
+                  </li> -->
+
+
+
+
+                  <!-- <li
                     id="menu-item-76"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"
                   >
@@ -15714,7 +15724,9 @@
                       href="https://turbosto.com.ua/remonted-turbin/snyatie-i-ustanovka/"
                       >Снятие и установка</a
                     >
-                  </li>
+                  </li> -->
+
+
                   <li
                     id="menu-item-66"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"
@@ -15724,6 +15736,7 @@
                       >Диагностика турбин</a
                     >
                   </li>
+
                   <li
                     id="menu-item-77"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"
@@ -15733,6 +15746,7 @@
                       >Цены на ремонт турбин</a
                     >
                   </li>
+                  
                   <li
                     id="menu-item-86"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"
@@ -15768,6 +15782,10 @@
                   </li>
                 </ul>
               </li>
+
+
+
+
               <li
                 id="menu-item-8348"
                 class="icon-tnvd hideOnDesktop tnvd menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8348"
@@ -15967,7 +15985,8 @@
                   </li>
                 </ul>
               </li>
-              <li
+
+              <!-- <li
                 id="menu-item-8339"
                 class="hideOnMobile icon-pnvt menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8339"
               >
@@ -15987,8 +16006,9 @@
                     >
                   </li>
                 </ul>
-              </li>
-              <li
+              </li> -->
+
+              <!-- <li
                 id="menu-item-5800"
                 class="menu-item-hidden icon-generator menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5800"
               >
@@ -16007,7 +16027,9 @@
                     >
                   </li>
                 </ul>
-              </li>
+              </li> -->
+
+
               <li
                 id="menu-item-5855"
                 class="icon-forsunok force__mobile--menu menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-5855"
@@ -16016,7 +16038,8 @@
                   href="https://turbosto.com.ua/remont-diagnostica-tnvd/remont-nasos-forsunok/"
                   >Ремонт форсунок</a
                 >
-                <ul class="sub-menu">
+                
+                <!-- <ul class="sub-menu">
                   <li
                     id="menu-item-11405"
                     class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10932 current_page_item menu-item-11405"
@@ -16226,9 +16249,13 @@
                       >Кременчуг</a
                     >
                   </li>
-                </ul>
+                </ul> -->
+
               </li>
-              <li
+
+
+
+              <!-- <li
                 id="menu-item-6596"
                 class="icon-dpf clear_dpf cities-menu-list menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6596"
               >
@@ -16313,8 +16340,11 @@
                     >
                   </li>
                 </ul>
-              </li>
-              <li
+              </li> -->
+
+
+
+              <!-- <li
                 id="menu-item-11460"
                 class="icon-engine engine_repair menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11460"
               >
@@ -16452,8 +16482,10 @@
                     >
                   </li>
                 </ul>
-              </li>
-              <li
+              </li> -->
+
+
+              <!-- <li
                 id="menu-item-13755"
                 class="icon-mahovika remont-mahovika menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-13755"
               >
@@ -16594,8 +16626,11 @@
                     >
                   </li>
                 </ul>
-              </li>
-              <li
+              </li> -->
+
+
+
+              <!-- <li
                 id="menu-item-11751"
                 class="icon-steering-rack steering_rack menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11751"
               >
@@ -16818,8 +16853,11 @@
                     >
                   </li>
                 </ul>
-              </li>
-              <li
+              </li> -->
+
+
+
+              <!-- <li
                 id="menu-item-8897"
                 class="icon-catalyst catalyst-removal menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8897"
               >
@@ -16848,8 +16886,8 @@
                     >
                   </li>
                 </ul>
-              </li>
-              <li
+              </li> -->
+              <!-- <li
                 id="menu-item-15874"
                 class="icon-pnevma pnevma menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-15874"
               >
@@ -16876,9 +16914,9 @@
                       >Одесса</a
                     >
                   </li>
-                </ul>
+                </ul> -->
               </li>
-              <li
+              <!-- <li
                 id="menu-item-7165"
                 class="cities-menu-list icon-condition menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7165"
               >
@@ -16916,8 +16954,8 @@
                     >
                   </li>
                 </ul>
-              </li>
-              <li
+              </li> -->
+              <!-- <li
                 id="menu-item-17398"
                 class="icon-grm menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17398"
               >
@@ -16959,8 +16997,8 @@
                     >
                   </li>
                 </ul>
-              </li>
-              <li
+              </li> -->
+              <!-- <li
                 id="menu-item-116"
                 class="icon-about-us menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-116"
               >
@@ -17010,13 +17048,13 @@
                     >
                   </li>
                 </ul>
-              </li>
-              <li
+              </li> -->
+              <!-- <li
                 id="menu-item-15639"
                 class="link-vacancies icon-vacancies menu-item menu-item-type-post_type menu-item-object-page menu-item-15639"
               >
                 <a href="https://turbosto.com.ua/vacancies/">Вакансии</a>
-                                                                            </li>
+                                                                            </li> -->
                                                                             <li id="menu-item-16130" class="icon-contacts menu-item menu-item-type-post_type menu-item-object-page menu-item-16130">
                                                                                 <a href="https://turbosto.com.ua/kontakty/">Контакты</a>
                                                                             </li>
