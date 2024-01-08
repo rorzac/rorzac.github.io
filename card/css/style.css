@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alef", sans-serif;
+  position: relative;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: rgba(0, 21, 22, 1);
+  width: 100%;
+  height: 100vh;
+}
+
+.onion-web {
+  position: absolute;
+  top: -20px;
+  right: 30px;
+}
+
+.onion-web a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  background: radial-gradient(
+    84.53% 84.53% at 50% 36.86%,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.container {
+  z-index: 111;
+
+ 
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.text-logo {
+  text-align: center;
+  font-family: Alef;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128%; /* 61.44px */
+  letter-spacing: 1.68px;
+
+  background: radial-gradient(
+    115.28% 115.28% at 50% 50%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-text {
+  text-align: center;
+  font-family: Alef;
+  font-size: 125px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 128%; /* 160px */
+  letter-spacing: -2.5px;
+
+  background: radial-gradient(
+    84.53% 84.53% at 50% 36.86%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.submain-text {
+    text-align: center;
+  background: radial-gradient(
+    84.53% 84.53% at 50% 36.86%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Alef;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 197.5%;
+  letter-spacing: 74.52px;
+}
+
+.login {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
