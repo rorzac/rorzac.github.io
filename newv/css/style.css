@@ -1456,15 +1456,7 @@ iframe#youtubevideo {
     position: relative;
 }
 
-.how_it_inner .steps_block.step_border::after {
-    content: "";
-    position: absolute;
-    left: calc(50% + 45px);
-    bottom: 20px;
-    width: calc(100% - 60px);
-    height: 1px;
-    border-bottom: 1px dashed var(--dark-greay);
-}
+
 
 .how_it_inner .text-center .btn_block {
     margin-top: 35px;
