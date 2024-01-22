@@ -20,9 +20,38 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+
+
+   
+   
+
   </head>
 
   <body>
+
+
+
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <br>
+          <h5>Запишитесь на предварительную диагностику форсунок</h2>
+            <br>
+          <form action="telegram.php" method="post" id="callBackForm">
+              <input placeholder="Имя" name="name" id="name"  autocomplete="on" required type="text"><br><br>
+              <input placeholder="380_____" autocomplete="on" required type="name" name="telegram" id="telegram"><br><br>
+              <button id="form-submit" type="submit" style="outline: none; border: none; background: #14FF00; padding: 10px 25px;">Отправить</button>
+          </form>
+      </div>
+  </div>
+
+
+
+
+
+
     <!-- Page Wraper -->
     <div class="page_wrapper">
       <!-- Preloader -->
@@ -42,17 +71,17 @@
             <button
               class="navbar-toggler"
               type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
+              data-toggle=""
+              data-target=""
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon">
+              <span class="">
                 <!-- <i class="icofont-navigation-menu ico_menu"></i> -->
-                <span class="toggle-wrap">
+               
                   <a href="#">RU</a>
-                </span>
+                
               </span>
             </button>
 
@@ -145,6 +174,14 @@
                 <a href="">(066) 54-03-179</a>
                 
               </div>
+
+
+              <button style="outline: none; border: none; background: #14FF00; padding: 10px 25px;" id="openModalBtn">Замовити</button>
+
+         
+
+
+
             </div>
 
             <!-- banner slides start -->
@@ -280,15 +317,20 @@
             </div>
             <div class="text-center">
               <div class="btn_block">
-                <a id="openModalBtn" href="#" class="btn puprple_btn ml-0"
-                  >Замовити</a
-                >
+                
+
+
                 <div class="btn_bottom"></div>
+                
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
+     
+  
 
       <br />
 
@@ -334,9 +376,9 @@
             </div>
             <div class="text-center">
               <div class="btn_block">
-                <a id="openModalBtn" href="#" class="btn puprple_btn ml-0"
-                  >Замовити</a
-                >
+                
+
+
                 <div class="btn_bottom"></div>
               </div>
             </div>
@@ -346,6 +388,14 @@
       <!-- How It Work Section End -->
     </div>
     <!-- Wraper End -->
+
+
+ 
+
+
+
+
+
 
     <!-- Positive Reviews Section Start -->
     <section class="review_section row_am">
@@ -541,6 +591,16 @@
     </div>
     <!-- Page-wrapper-End -->
 
+
+
+
+
+
+
+
+
+    
+
     <!-- Jquery-js-Link -->
     <script src="js/jquery.js"></script>
     <!-- owl-js-Link -->
@@ -589,5 +649,12 @@
         });
       });
     </script>
+
+
+
+
+
+
+
   </body>
 </html>

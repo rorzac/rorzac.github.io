@@ -456,3 +456,37 @@ $(document).ready(function () {
 
 AOS.init();
 
+
+
+
+
+
+const openModalBtn = document.getElementById('openModalBtn');
+const modal = document.getElementById('myModal');
+const closeBtn = document.getElementsByClassName('close')[0];
+const callBtn = document.getElementById('callBtn');
+const callBackForm = document.getElementById('callBackForm');
+const nameInput = document.getElementById('name');
+const phoneInput = document.getElementById('phone');
+
+openModalBtn.addEventListener('click', function() {
+    modal.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+callBtn.addEventListener('click', function() {
+    // Здесь можно добавить код для обработки отправки данных
+    const name = nameInput.value;
+    const phone = phoneInput.value;
+    alert(`Вы запросили перезвонить вам.\nИмя: ${name}\nТелефон: ${phone}`);
+    modal.style.display = 'none';
+});

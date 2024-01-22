@@ -4208,3 +4208,59 @@ footer .download_side .app_btn li a img {
     transform: scale(0.8);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 50% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    
+}
+
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
