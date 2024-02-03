@@ -146,7 +146,8 @@ img {
 }
 
 .block .menu-click {
-  padding-top: 19px;
+  padding-top: 23px;
+  padding-right: 5px;
 }
 
 
@@ -188,9 +189,14 @@ height: 100%;
 
 
 @media screen and (max-width: 1000px) {
-    .menu {
-        padding: 0 20px;
-    }
+  .menu {
+    padding: 0 10px;
+    height: 7vh;
+  }
+
+  .main-menu {
+    height: 93vh;
+  }
 
     .support-link a {
         font-size: 20px;
@@ -212,6 +218,11 @@ height: 100%;
         width: 100%;
         height: 100vh;
         border: 0;
+    }
+
+    .menu img {
+      width: 15%;
+      height: 75%;
     }
 
     

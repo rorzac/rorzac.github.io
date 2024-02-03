@@ -207,10 +207,15 @@ img {
 @media screen and (max-width: 550px) {
   .menu {
     padding: 0 10px;
+    height: 7vh;
+  }
+
+  .main-menu {
+    height: 93vh;
   }
 
   .onion-link a {
-    font-size: 22px;
+    font-size: 18px;
   }
   .main-text h1 {
     font-size: 30px;
@@ -220,5 +225,10 @@ img {
   }
   .email, .password {
     width: 90%;
+  }
+
+  .menu img {
+    width: 15%;
+    height: 75%;
   }
 }
