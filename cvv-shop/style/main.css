@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alef", sans-serif;
+}
+
+#container {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background: radial-gradient(
+    107.45% 107.45% at 50% 50%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+img {
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(274deg, #000102 2.98%, #0f1b20 97.47%);
+}
+
+.menu {
+  padding: 0 50px;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    90deg,
+    #01171f -17.11%,
+    rgba(0, 0, 0, 0) 567.91%,
+    rgba(0, 0, 0, 0) 567.91%
+  );
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+}
+
+.container-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.onion-link a {
+  text-decoration: none;
+  text-align: center;
+  font-family: Alef;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 93%; /* 27.9px */
+
+  background: radial-gradient(
+    107.45% 107.45% at 50% 50%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.decor {
+  padding-bottom: 20px;
+}
+
+.main-text h1 {
+  text-align: center;
+  font-family: Alef;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sub-text h2 {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  text-align: center;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.5%; /* 24.5px */
+  letter-spacing: -0.4px;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+
+.email,
+.password {
+  width: 432px;
+  height: 40px;
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: #fff;
+  outline: none;
+
+  padding-left: 5px;
+
+  color: #fff;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 93%; /* 18.6px */
+}
+
+
+
+
+
+.btn {
+  margin-top: 50px;
+  width: 200px;
+  height: 40px;
+
+  border: 2.403px solid #0082bb;
+
+  cursor: pointer;
+
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.5%; /* 24.5px */
+  letter-spacing: -0.4px;
+
+  background: radial-gradient(
+    107.45% 107.45% at 50% 50%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover {
+  border: 2.403px solid #ffffff;
+  transition: 0.5s all ease-in-out;
+}
+
+.register {
+  padding-top: 20px;
+}
+
+.register a {
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.5%; /* 24.5px */
+  letter-spacing: -0.4px;
+  text-decoration-line: underline;
+
+  background: radial-gradient(
+    107.45% 107.45% at 50% 50%,
+    hsl(234, 100%, 50%) 0%,
+    rgba(247, 0, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+@media screen and (max-width: 550px) {
+  .menu {
+    padding: 0 10px;
+  }
+
+  .onion-link a {
+    font-size: 22px;
+  }
+  .main-text h1 {
+    font-size: 30px;
+  } 
+  .sub-text h2 {
+    font-size: 16px;
+  }
+  .email, .password {
+    width: 90%;
+  }
+}
