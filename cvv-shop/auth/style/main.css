@@ -226,4 +226,8 @@ img {
     width: 10%;
     height: 95%;
   }
+
+  .menu-click-text  {
+    display: none;
+  }
 }
