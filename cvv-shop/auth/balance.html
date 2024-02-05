@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/balance.css" />
+    <title>CVV - SHOP</title>
+  </head>
+  <body>
+    <div id="toggleableBlock" class="block">
+      <div class="menu-click">
+        <div class="menu-click-text">Menu</div>
+        <div class="menu-click-burger">
+          <div>
+            <a id="closeLink" href="#">
+              <img src="img/close.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-link">
+        <a href="#">Cvv fulz</a>
+      </div>
+      <div class="block-link">
+        <a href="#">Cvv fulz</a>
+      </div>
+      <div class="block-link">
+        <a href="#">Cvv fulz</a>
+      </div>
+      <div class="block-link">
+        <a href="#">Cvv fulz</a>
+      </div>
+      <div class="block-link">
+        <a href="#">Cvv fulz</a>
+      </div>
+      <div class="block-link">
+        <a href="#">Cvv fulz</a>
+      </div>
+      <div class="mobile block-link">
+        <a href="#">Cvv fulz</a>
+      </div>
+      <div class="mobile block-link">
+        <a href="#">Cvv fulz</a>
+      </div>
+      <div class="mobile block-link">
+        <a href="#">Cvv fulz</a>
+      </div>
+      <div class="mobile block-link">
+        <a href="#">Cvv fulz</a>
+      </div>
+    </div>
+
+    <header class="header">
+      <div id="container">
+        <nav class="nav-menu">
+          <div class="menu">
+            <img class="logo-img" src="img/logo.svg" alt="" />
+
+            <div class="menu-click">
+              <div class="menu-click-text">Menu</div>
+              <div class="menu-click-burger">
+                <div>
+                  <a id="toggleButton" href="#">
+                    <img src="img/burger.svg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-right-block">
+              <!-- <div class="support-link">
+                <a href="#">Support</a>
+              </div> -->
+              <div class="balance">
+                <div class="balance-text">
+                  <a href="">Your balance</a>
+                </div>
+                <div class="balance-sum">
+                  <a href="">$256.60</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="main-menu">
+        <div class="container-main">
+
+            <form id="paymentForm">
+          <div class="decor">
+            <img src="img/decor.svg" alt="" />
+            <div class="main-text">
+              <h1>ADD BALANCE</h1>
+            </div>
+            <div class="sub-text">
+              <h2>We payment only crypto coin for your security</h2>
+            </div>
+
+            <div>
+              <input
+                class="email"
+                type="text"
+                id="amount"
+                name="amount"
+                required
+                placeholder="Amount (min 100$)"
+              />
+            </div>
+            <div class="custom-select">
+              <select id="paymentMethod" name="paymentMethod" required>
+                <option value="bitcoin">Биткоин</option>
+                <option value="ethereum">Эфириум</option>
+                <option value="monero">Монеро</option>
+                <option value="litecoin">Лайткоин</option>
+                <option value="usdt">USDT</option>
+              </select>
+            </div>
+
+            <div class="button">
+              <button id="toggleButton" type="submit" class="btn">
+                PAYMENT
+              </button>
+            </div>
+
+            <!-- <div class="register">
+              <a href="#">Register account</a>
+            </div> -->
+          </div>
+
+        </form>
+
+        </div>
+      </div>
+    </header>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Время истекает через: <span id="timer">1:00:00</span></p>
+        <p>Номер кошелька: <span id="walletAddress"></span></p>
+        <p>Сумма в криптовалюте: <span id="cryptoAmount"></span></p>
+        <p>Сумма в долларах: <span id="usdAmount"></span></p>
+        <button id="paymentButton">Оплатить</button>
+      </div>
+    </div>
+
+    <script src="scripts/balance.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
