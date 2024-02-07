@@ -89,64 +89,113 @@
       <div class="main-menu">
         <div class="container-main">
 
+            <!-- Пример HTML-кода с добавленными идентификаторами -->
             <form id="paymentForm">
-          <div class="decor">
-            <img src="img/decor.svg" alt="" />
-            <div class="main-text">
-              <h1>ADD BALANCE</h1>
-            </div>
-            <div class="sub-text">
-              <h2>We payment only crypto coin for your security</h2>
-            </div>
+              <div class="decor">
+                  <img src="img/decor.svg" alt="" />
+                  <div class="main-text">
+                      <h1>ADD BALANCE</h1>
+                  </div>
+                  <div class="sub-text">
+                      <h2>We accept only cryptocurrency for your security</h2>
+                  </div>
+          
+                  <div>
+                      <input
+                          class="email"
+                          type="text"
+                          id="amount"
+                          name="amount"
+                          required
+                          placeholder="Amount (min 100$)"
+                      />
+                  </div>
+                  <div class="custom-select">
+                      <select id="paymentMethod" name="paymentMethod" required>
+                          <option value="bitcoin">Bitcoin</option>
+                          <option value="ethereum">Ethereum</option>
+                          <option value="monero">Monero</option>
+                          <option value="litecoin">Litecoin</option>
+                          <option value="usdt">USDT</option>
+                      </select>
+                  </div>
+          
+                  <div class="button">
+                      <button id="paymentButton" type="submit" class="btn">PAYMENT</button>
+                  </div>
+              </div>
+          </form>
 
-            <div>
-              <input
-                class="email"
-                type="text"
-                id="amount"
-                name="amount"
-                required
-                placeholder="Amount (min 100$)"
-              />
-            </div>
-            <div class="custom-select">
-              <select id="paymentMethod" name="paymentMethod" required>
-                <option value="bitcoin">Биткоин</option>
-                <option value="ethereum">Эфириум</option>
-                <option value="monero">Монеро</option>
-                <option value="litecoin">Лайткоин</option>
-                <option value="usdt">USDT</option>
-              </select>
-            </div>
-
-            <div class="button">
-              <button id="toggleButton" type="submit" class="btn">
-                PAYMENT
-              </button>
-            </div>
-
-            <!-- <div class="register">
-              <a href="#">Register account</a>
-            </div> -->
-          </div>
-
-        </form>
 
         </div>
       </div>
-    </header>
+    
 
     <div id="modal" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Время истекает через: <span id="timer">1:00:00</span></p>
-        <p>Номер кошелька: <span id="walletAddress"></span></p>
-        <p>Сумма в криптовалюте: <span id="cryptoAmount"></span></p>
-        <p>Сумма в долларах: <span id="usdAmount"></span></p>
-        <button id="paymentButton">Оплатить</button>
+        
+        <div class="decor-img">
+          <img src="img/decor.svg" alt="">
+        </div>
+        <div class="modal-text">
+          SEND COIN
+        </div>
+        <div class="modal-sub">
+          Your balance will be replenished automatically
+        </div>
+        <div class="modal-time">
+          <h1>Time is running out in: <span id="timer">1:00:00</span></h1>
+        </div>
+
+
+        <div class="container-modal">
+          <span id="usdAmount"></span>
+          <span id="copyButton" onclick="copyText('usdAmount')">
+          <img src="img/clipboard-text.svg" alt=""></span>
+        </div>
+
+        <div class="container-modal">
+          <span id="cryptoAmount"></span>
+          <span id="copyButton" onclick="copyText('cryptoAmount')">
+          <img src="img/clipboard-text.svg" alt=""></span>
+        </div>
+
+        <div class="container-modal">
+          <span id="walletAddress"></span>
+          <span id="copyButton" onclick="copyText('walletAddress')">
+          <img src="img/clipboard-text.svg" alt=""></span>
+        </div>
+
+        
+        
+
+  
+       
+          <button class="btn-close close">
+            CANCEL
+          </button>
+        
+
       </div>
     </div>
 
+
+  </header>
+
+
+   <script>
+
+    function copyText(id) {
+    var text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text).then(function() {
+        alert("Текст скопирован: " + text);
+    }, function(err) {
+        console.error('Ошибка копирования текста: ', err);
+    });
+}
+
+
+    </script> 
     <script src="scripts/balance.js"></script>
     <script src="scripts/main.js"></script>
   </body>

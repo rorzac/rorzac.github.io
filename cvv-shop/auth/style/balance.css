@@ -1,292 +1,423 @@
 .main-menu {
-    height: 90vh;
-  }
-  
-  .menu {
-    height: 10vh;
-    padding: 0 50px;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(
-      90deg,
-      #01171f -17.11%,
-      rgba(0, 0, 0, 0) 567.91%,
-      rgba(0, 0, 0, 0) 567.91%
-    );
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-menu {
-  }
-  
-  .container-main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  
-  }
-  
+  height: 90vh;
+}
 
-  
-  .decor {
-    padding-bottom: 20px;
-  }
-  
-  .main-text h1 {
-    text-align: center;
-    font-family: Alef;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-  }
-  
-  .sub-text h2 {
-    padding-top: 20px;
-    padding-bottom: 70px;
-    text-align: center;
-    -webkit-text-stroke-width: 1;
-    -webkit-text-stroke-color: #000;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 122.5%; /* 24.5px */
-    letter-spacing: -0.4px;
-  }
-  
-  .email {
-    margin-bottom: 20px;
-  }
-  
-  .email,
-  .password {
-    width: 432px;
-    height: 40px;
-    background-color: transparent;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-color: #fff;
-    outline: none;
-  
-    padding-left: 5px;
-  
-    color: #fff;
-  
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 93%; /* 18.6px */
-  }
-  
-  
-  
-  
-  
-  .btn {
-    margin-top: 50px;
-    width: 200px;
-    height: 40px;
-  
-    border: 2.403px solid #0082bb;
-  
-    cursor: pointer;
-  
-    text-align: center;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 122.5%; /* 24.5px */
-    letter-spacing: -0.4px;
-  
-    background: radial-gradient(
-      107.45% 107.45% at 50% 50%,
-      #fff 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .btn:hover {
-    border: 2.403px solid #ffffff;
-    transition: 0.5s all ease-in-out;
-  }
-  
-  .register {
-    padding-top: 20px;
-  }
-  
-  .register a {
-    text-align: center;
-    font-family: Arial;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 122.5%; /* 24.5px */
-    letter-spacing: -0.4px;
-    text-decoration-line: underline;
-  
-    background: radial-gradient(
-      107.45% 107.45% at 50% 50%,
-      hsl(234, 100%, 50%) 0%,
-      rgba(247, 0, 255, 0) 100%
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.menu {
+  height: 10vh;
+  padding: 0 50px;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    90deg,
+    #01171f -17.11%,
+    rgba(0, 0, 0, 0) 567.91%,
+    rgba(0, 0, 0, 0) 567.91%
+  );
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.nav-menu {
+}
 
+.container-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.decor {
+  padding-bottom: 20px;
+}
+
+.main-text h1 {
+  text-align: center;
+  font-family: Alef;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.sub-text h2 {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  text-align: center;
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.5%; /* 24.5px */
+  letter-spacing: -0.4px;
+}
+
+.email {
+  margin-bottom: 20px;
+}
+
+.email,
+.password {
+  width: 432px;
+  height: 40px;
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-color: #fff;
+  outline: none;
+
+  padding-left: 5px;
+
+  color: #fff;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 93%; /* 18.6px */
+}
+
+.btn {
+  margin-top: 50px;
+  width: 200px;
+  height: 40px;
+
+  border: 2.403px solid #0082bb;
+
+  cursor: pointer;
+
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.5%; /* 24.5px */
+  letter-spacing: -0.4px;
+
+  background: radial-gradient(
+    107.45% 107.45% at 50% 50%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn:hover {
+  border: 2.403px solid #ffffff;
+  transition: 0.5s all ease-in-out;
+}
+
+.register {
+  padding-top: 20px;
+}
+
+.register a {
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.5%; /* 24.5px */
+  letter-spacing: -0.4px;
+  text-decoration-line: underline;
+
+  background: radial-gradient(
+    107.45% 107.45% at 50% 50%,
+    hsl(234, 100%, 50%) 0%,
+    rgba(247, 0, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /* Reset default select styles */
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-bottom: 1px solid #ffffff; /* Добавим только нижнюю границу для эффекта разделения */
-    
-    width: 432px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ffffff; /* Добавим только нижнюю границу для эффекта разделения */
+
+  width: 432px;
   height: 40px;
-    outline: none;
-    background-color: transparent; /* Делаем фон прозрачным */
-    cursor: pointer;
-    color: #fff;
-  }
-  
-  /* Custom select container */
-  .custom-select {
-    position: relative;
-    display: inline-block;
-    color: #fff;
-  }
-  
-  /* Style the arrow inside the select */
-  .custom-select::after {
-    content: '\25BC'; /* down arrow */
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    pointer-events: none;
-    color: #fff; /* Цвет стрелки */
-  }
-  
-  /* Style the dropdown options */
-  select option {
-    background-color: #050A0D;
-    color: #fff;
-    
-  }
-  
-  /* Style the hover effect */
-  select option:hover {
-    background-color: #ffffff;
-  }
-  
-  /* Устанавливаем белый цвет границы */
-  select:focus {
-    border-color: #fff;
-  }
-  
+  outline: none;
+  background-color: transparent; /* Делаем фон прозрачным */
+  cursor: pointer;
+  color: #fff;
+}
 
+/* Custom select container */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
 
+/* Style the arrow inside the select */
+.custom-select::after {
+  content: "\25BC"; /* down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #fff; /* Цвет стрелки */
+}
 
+/* Style the dropdown options */
+select option {
+  background-color: #050a0d;
+  color: #fff;
+}
 
+/* Style the hover effect */
+select option:hover {
+  background-color: #ffffff;
+}
 
-
-
+/* Устанавливаем белый цвет границы */
+select:focus {
+  border-color: #fff;
+}
 
 /* modal */
 
 /* Стили для модального окна */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-   
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    
-    padding: 20px;
-    border: 1px solid #888;
-    width: 100%;
-    height: 100vh;
-  
+  background: linear-gradient(274deg, #000102 2.98%, #0f1b20 97.47%);
+
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Выравнивание текста по центру */
+  height: 100vh; /* Можно установить другую высоту в соответствии с вашими требованиями */
 }
 
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.modal-text {
+  text-align: center;
+
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 93%; /* 46.5px */
+
+  background: radial-gradient(
+    107.45% 107.45% at 50% 50%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+.modal-sub {
+  color: #fff;
+  text-align: center;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.5%; /* 24.5px */
+  letter-spacing: -0.4px;
 }
 
+.modal-time {
+  padding-top: 8px;
+  margin-bottom: 50px;
+}
+
+.modal-time h1 {
+  color: #fff;
+  text-align: center;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 122.5%; /* 24.5px */
+  letter-spacing: -0.4px;
+
+  color: #fff;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.5%;
+  letter-spacing: -0.4px;
+}
+
+.btn-close {
+  margin-top: 50px;
+  width: 200px;
+  height: 40px;
+
+  border: 2.403px solid #0082bb;
+
+  color: #fff;
+
+  text-align: center;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 122.5%; /* 24.5px */
+  letter-spacing: -0.4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* modal end */
 
+/* input modal */
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.editable-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+  min-width: 200px;
+  outline: none;
+  position: relative;
+}
+
+button {
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button img {
+  width: 24px;
+  height: 24px;
+}
+
+button:hover img {
+  filter: brightness(0.8);
+}
+
+button:focus {
+  outline: none;
+}
+
+.copy-icon {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.container-modal {
+  width: 400px;
+  height: 50px;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#textSpan {
+  margin-left: 10px;
+
+  text-align: center;
+  font-family: Alef;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 93%; /* 18.6px */
+
+  background: radial-gradient(
+    107.45% 107.45% at 50% 50%,
+    #fff 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#copyButton {
+  margin-right: 10px;
+  color: blue;
+  cursor: pointer;
+}
+
+/* input modal */
 
 
-
-
-
-
-  
-  
-  
-  @media screen and (max-width: 550px) {
-    .menu {
-      padding: 0 10px;
-      height: 7vh;
-    }
-  
-    .main-menu {
-      height: 93vh;
-    }
-  
-    .onion-link a {
-      font-size: 18px;
-    }
-    .main-text h1 {
-      font-size: 30px;
-    } 
-    .sub-text h2 {
-      font-size: 16px;
-    }
-    .email, .password {
-      width: 90%;
-    }
-
-    select {
-        width: 250px;
-    }
-
-  
+#walletAddress {
  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 550px) {
+  .menu {
+    padding: 0 10px;
+    height: 7vh;
   }
+
+  .main-menu {
+    height: 93vh;
+  }
+
+  .onion-link a {
+    font-size: 18px;
+  }
+  .main-text h1 {
+    font-size: 30px;
+  }
+  .sub-text h2 {
+    font-size: 16px;
+  }
+  .email,
+  .password {
+    width: 90%;
+  }
+
+  select {
+    width: 250px;
+  }
+
+  .container-modal {
+    width: 90%;
+  }
+}
