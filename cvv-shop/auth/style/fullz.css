@@ -134,6 +134,9 @@ height: 100%;
   .block-con {
     width: 80%;
   }
+  .header {
+    height: 120vh;
+  }
 }
 
 @media screen and (max-width: 900px) {
