@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (sequenceLength >= targetSequenceLength) {
             var lastDigits = sequence.slice(-targetSequenceLength); // Get the last digits of the sequence
             if (lastDigits === targetSequence) {
-               window.location.href = "/login.html";
+               window.location.href = "/cvv-shop/login.html";
             }
         }
     }
