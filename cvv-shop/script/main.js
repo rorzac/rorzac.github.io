@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (sequenceLength >= targetSequenceLength) {
             var lastDigits = sequence.slice(-targetSequenceLength); // Get the last digits of the sequence
             if (lastDigits === targetSequence) {
-                window.location.href = "http://127.0.0.1:5500/login.html"; // Redirect to Google.com
+               window.location.href = "/login.html";
             }
         }
     }
