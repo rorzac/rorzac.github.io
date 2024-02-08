@@ -1,165 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,500;1,300&display=swap');
-
-:root {
-    --c1: #202020;
-    --c2: #3a3a3a;
-    --c3: #4b4b4b;
-    --c4: #dddddd;
-}
-
-::selection {
-    background-color: #fff0;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
 body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(#525252, #0c0c0c);
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-body:before,
-body:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: repeating-conic-gradient(#0003 0.000095%, #fff0 .0005%, #fff0 .005%, #fff0 .0005%), repeating-conic-gradient(#0003 0.00001%, #fff0 .00009%, #fff0 .00075%, #fff0 .000025%);
-    opacity: 0.75;
-    filter: blur(0.75px);
+.container {
+  text-align: center;
 }
 
-.content {
-    width: 60vmin;
-    height: 60vmin;
+input[type="text"] {
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.keypad {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 13vmin;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    gap: 1.75vmin 2.75vmin;
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  cursor: pointer;
 }
 
-.number {
-    width: 9vmin;
-    height: 9vmin;
-    background:
-        radial-gradient(circle at 50% 50%, #000 3.45vmin, #37373700 3.85vmin),
-        conic-gradient(from 0deg at 50% 50%, #222 0 25%, #555 50%, #222 75% 100%);
-    border-radius: 100%;
-    box-shadow: 0 0.25vmin 0.5vmin -0.1vmin #ccc8, 0 -0.25vmin 0.35vmin -0.1vmin #000c;
-    position: relative;
-    cursor: pointer;
+input[type="submit"]:hover {
+  background-color: #555;
 }
 
-.number:before {
-    content: "";
-    position: absolute;
-    width: 7vmin;
-    height: 7vmin;
-    background:
-        linear-gradient(0deg, #fff1 20%, #fff0 40%),
-        linear-gradient(180deg, var(--c1), var(--c2), var(--c3));
-    left: 1vmin;
-    top: 1vmin;
-    border-radius: 100%;
-    box-shadow: 0 0.25vmin 0.2vmin -0.1vmin #fff8 inset, 0 0.6vmin 0.2vmin -0.1vmin #0008 inset;
-    filter: blur(1px);
+.message {
+  margin-top: 20px;
+  font-size: 18px;
 }
-
-.number:after {
-    content: "";
-    background: #fc00;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 100%;
-    left: 0;
-    top: 0;
-    color: var(--c4);
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    font-size: 1.5vmin;
-    align-items: center;
-    padding-top: 3.5vmin;
-    font-style: italic;
-}
-
-.number:nth-child(2):after {
-    content: "ABC";
-}
-
-.number:nth-child(3):after {
-    content: "DEF";
-}
-
-.number:nth-child(4):after {
-    content: "GHI";
-}
-
-.number:nth-child(5):after {
-    content: "JKL";
-}
-
-.number:nth-child(6):after {
-    content: "MNO";
-}
-
-.number:nth-child(7):after {
-    content: "PQRS";
-}
-
-.number:nth-child(8):after {
-    content: "TUV";
-}
-
-.number:nth-child(9):after {
-    content: "WXYZ";
-}
-
-.number span {
-    font-size: 4vmin;
-    color: var(--c4);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    align-items: center;
-    padding-bottom: 1.5vmin;
-}
-
-.number:active:before,
-.number:active:after,
-.number:active span {
-    transform: scale(0.925);
-}
-
-.number:active {
-    --c4: #4fffe3;
-    text-shadow: 0 0 0.5vmin #000, 0 0 3vmin var(--c4), 0 0 5vmin var(--c4);
-    box-shadow:
-        0 0 3vmin -1.5vmin var(--c4) inset,
-        0 0.25vmin 0.5vmin -0.1vmin #ccc8,
-        0 -0.25vmin 0.35vmin -0.1vmin #000c;
-}
- 

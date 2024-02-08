@@ -7,21 +7,13 @@
     <title>INDEX</title>
 </head>
 <body>
-    <div class="content">
-        <div class="keypad">
-            <div class="number"><span>1</span></div>
-            <div class="number"><span>2</span></div>
-            <div class="number"><span>3</span></div>
-            <div class="number"><span>4</span></div>
-            <div class="number"><span>5</span></div>
-            <div class="number"><span>6</span></div>
-            <div class="number"><span>7</span></div>
-            <div class="number"><span>8</span></div>
-            <div class="number"><span>9</span></div>
-            <div class="number"><span>*</span></div>
-            <div class="number"><span>0</span></div>
-            <div class="number"><span>#</span></div>
-        </div>
+    <div class="container">
+        <form id="loginForm">
+            <input type="text" id="passwordInput" placeholder="Введите код">
+            <br>
+            <input type="submit" value="Войти">
+        </form>
+        <div class="message" id="message"></div>
     </div>
 
     <script src="script/main.js"></script>
