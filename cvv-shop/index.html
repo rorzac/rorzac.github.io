@@ -7,15 +7,25 @@
     <title>INDEX</title>
 </head>
 <body>
-    <div class="container">
-        <form id="loginForm">
-            <input type="text" id="passwordInput" placeholder="Введите код">
-            <br>
-            <input type="submit" value="Войти">
-        </form>
-        <div class="message" id="message"></div>
-    </div>
+    <main></main>
+    <header>
+        
+            <a href="#" class="button">LOGIN</button>
+        
+    </header>
 
+    <script>
+        // Запрещаем выделение текста
+document.addEventListener('selectstart', function(e) {
+    e.preventDefault();
+});
+
+// Запрещаем контекстное меню для выделенного текста
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+    </script>
     <script src="script/main.js"></script>
 </body>
 </html>
