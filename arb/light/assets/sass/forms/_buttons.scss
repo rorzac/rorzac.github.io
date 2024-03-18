@@ -1,0 +1,112 @@
+.button,
+button:not([data-filter]):not(.mfp-arrow),
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  position: relative;
+  width: auto;
+  color: #fff;
+  background-color: $dark-color;
+  -moz-appearance: none;
+  border: none;
+  appearance: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 20px 41px;
+  margin-top: 0;
+  transition: background 0.3s, color 0.3s;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    background-color: rgba(54, 54, 54, 0.2);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+  }
+
+  @include v-light {
+    color: #fff;
+  }
+
+  &:hover {
+    &::before {
+      animation: hover-btn 0.8s cubic-bezier(0.77, 0, 0.175, 1) both;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes hover-btn {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.link-custom {
+  margin-top: 30px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 1px solid rgba(112, 112, 112, 0.1);
+    border-radius: 40px;
+    padding-right: 25px;
+    transition: background 0.2s linear;
+
+    @include v-light {
+      color: $heading-color-light;
+      border: 1px solid $border-color-light;
+    }
+
+    &:before {
+      content: "\f054";
+      font-family: "Font Awesome 5 Free";
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      border-radius: 50%;
+      font-size: 10px;
+      font-weight: 600;
+      height: 30px;
+      width: 30px;
+      line-height: 33px;
+      text-align: center;
+      margin: 12px 20px;
+      background-color: #fff;
+      color: #000;
+      transition: background 0.2s linear, color 0.2s linear;
+
+      @include v-light {
+        background-color: $bg-dark;
+        color: $heading-color;
+      }
+    }
+
+    span {
+      vertical-align: middle;
+      white-space: normal;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 4px;
+      transition: color 0.2s linear;
+    }
+  }
+}

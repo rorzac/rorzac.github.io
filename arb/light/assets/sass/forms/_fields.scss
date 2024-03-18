@@ -1,0 +1,53 @@
+input,
+textarea,
+.form-control,
+.form-box input,
+.form-box textarea {
+  background-color: transparent;
+  border: none;
+  flex: 1 1 auto;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $body-color;
+
+  @include v-light {
+    color: $body-color-light;
+  }
+
+  @include media_768 {
+    flex: unset;
+    display: block;
+    width: 100%;
+  }
+
+  &::placeholder {
+    color: $body-color;
+    font-weight: 400;
+    font-size: 14px;
+
+    @include v-light {
+      color: $body-color-light;
+    }
+  }
+
+  &:focus {
+    background: inherit;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+textarea,
+.form-control,
+.form-box textarea {
+  min-height: 120px;
+}
+
+
+input[type="search"] {
+  &::-webkit-search-decoration {
+    display: none;
+  }
+}
+
+select {}

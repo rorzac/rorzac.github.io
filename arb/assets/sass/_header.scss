@@ -1,0 +1,121 @@
+
+/* -------------------------------------------------------
+                   Header Blog Page And Work Page
+-------------------------------------------------------- */
+.header-single {
+    position: relative;
+    max-height: 100vh;
+    border-bottom: 1px solid $dark-color;
+    min-height: 0;
+
+    .caption {
+        text-align: center;
+
+        .title-header {
+            color: #fff;
+            font-size: 60px;
+            letter-spacing: 2px;
+            font-family: $secondary-font;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+
+        .des-header {
+            position: relative;
+            color: #fff;
+            font-family: $body-font;
+            font-size: 16px;
+            font-weight: 400;
+
+            &:before {
+                border-bottom: 4px solid $theme-color;
+                top: -30px;
+                content: "";
+                left: 50%;
+                position: absolute;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                transform: translateX(-50%);
+                width: 155px;
+            }
+        }
+    }
+}
+/* -------------------------------------------------------
+                   Header Project And Header About
+-------------------------------------------------------- */
+.header-project {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translateX(-50%) translateY(-50%);
+        background-size: cover;
+    }
+
+    .content {
+        position: relative;
+        width: 100%;
+
+        h3 {
+            font-size: 16px;
+            color: #fff;
+            letter-spacing: 4px;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 7vw;
+            line-height: 1.3em;
+            letter-spacing: 2px;
+            font-family: $secondary-font;
+
+            span {
+                color: transparent;
+                -webkit-text-stroke-color: #fff;
+                -webkit-text-stroke-width: 1px;
+            }
+        }
+    }       
+}
+
+.header-not {
+    .content__title {
+        font-size: 9vw !important;
+        font-family: $body-font !important;
+        margin-bottom: 30px;
+
+        span {
+            -webkit-text-stroke-width: 2px !important;
+        }
+    }
+
+    .des-header {
+        position: relative;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 2px;
+
+        &::before {
+            border-bottom: 4px solid #fd4145;
+            top: -30px;
+            content: "";
+            left: 50%;
+            position: absolute;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 155px;
+        }
+    }
+}
