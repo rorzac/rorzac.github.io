@@ -1,0 +1,190 @@
+/*******************************************************/
+/******************* ## Main Footer *******************/
+/*******************************************************/
+.bordered-top
+    border-top: 1px solid $border-color
+
+.footer-widget
+    margin-bottom: 50px
+        
+h5.footer-title
+    margin-bottom: 25px
+    text-transform: capitalize
+                
+h6.footer-title
+    color: #D1D1D1
+    font-size: 20px
+    margin-bottom: 25px
+        
+.widget-links ul li
+    font-weight: 500
+    &:not(:last-child)
+        margin-bottom: 9px
+    
+.widget-gallery
+    .gallery
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -5px -10px
+        > a
+            overflow: hidden
+            border-radius: 5px
+            margin: 0 5px 10px
+            filter: grayscale(1)
+            max-width: calc(33.333% - 10px)
+            &:hover
+                filter: grayscale(0)
+            
+.widget-newsletter
+    #condition
+        margin-right: 10px
+    .social
+        a
+            color: white
+            font-size: 16px
+            margin-right: 22px
+            &:hover
+                color: $primary-color
+        
+.newsletter-form
+    padding: 5px
+    display: flex
+    font-size: 15px
+    background: white
+    align-items: center
+    input
+        border: none
+        padding: 0 5px 0 15px
+        &::placeholder
+            color: $base-color
+    button
+        flex: none
+        +size(40px)
+        line-height: 40px
+        text-align: center
+        background: $primary-color
+        
+    
+.copyright-text
+    color: #B4B4B4
+    border-top: 1px solid rgba(242, 242, 242, 0.07)
+    +res-ab(xs)
+        font-size: 18px
+    a
+        color: #B4B4B4
+    span
+        color: $primary-color
+            
+/* Footer One */
+.footer-one
+    .footer-widget
+        p
+            color: rgba(255, 255, 255, 0.65)
+    .widget-about
+        max-width: 240px
+        p
+            line-height: 2.2
+            font-weight: 500
+    .widget-links ul li
+        font-size: 17px
+        a
+            color: #D1D1D1
+            &:hover
+                color: $primary-color
+    .widget-text
+        .text
+            line-height: 2
+            font-size: 22px
+            color: #D1D1D1
+            p
+                margin-bottom: 16px
+            a
+                color: #D1D1D1
+                margin-bottom: 14px
+                display: inline-block
+                text-decoration: underline
+                &:hover
+                    color: $primary-color
+                
+                
+/* Footer Two */
+.footer-two
+    .our-clients-two a
+        filter: brightness(0.25)
+        &:hover
+            filter: brightness(1)
+    .footer-logo
+        margin-top: -15px
+    +res-ab(xl)
+        .widget-about
+            margin-right: -15px
+        .widget-links
+            margin-left: 35px
+            
+            
+/* Footer Three */
+.footer-lets-talk
+    color: white
+    display: flex
+    font-size: 60px
+    font-weight: 700
+    line-height: 1.58
+    align-items: center
+    text-transform: uppercase
+    +res-bl(xl)
+        font-size: 50px
+    +res-bl(lg)
+        flex-wrap: wrap
+    +res-bl(lg)
+        font-size: 45px
+    +res-bl(md)
+        font-size: 35px
+    +res-bl(ms)
+        font-size: 30px
+    +res-bl(xs)
+        font-size: 26px
+    .text
+        span
+            font-weight: 900
+            color: $primary-color
+            font-family: $script-font
+    .details-btn
+        flex: none
+        font-size: 85px
+        color: $primary-color
+        +circle($lighter-color, 210px)
+        +res-bl(xl)
+            +size(150px)
+            font-size: 50px
+            line-height: 150px
+        +res-bl(md)
+            +size(100px)
+            font-size: 40px
+            line-height: 100px
+        
+.footer-menu
+    flex-wrap: wrap
+    align-items: center
+    display: inline-flex
+    +gapLR(margin, -25px)
+    li
+        +gapLR(margin, 25px)
+        text-transform: capitalize
+        
+.footer-text
+    text-transform: capitalize
+    
+.footer-social
+    flex-wrap: wrap
+    align-items: center
+    display: inline-flex
+    span
+        margin-right: 20px
+        margin-bottom: 10px
+    .social-style-one
+        margin-bottom: 10px
+        a
+            +size(42px)
+            line-height: 42px
+            &:not(:hover)
+                color: $base-color

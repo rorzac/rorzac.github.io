@@ -1,0 +1,85 @@
+/*******************************************************/
+/******************* ## Counter Area *******************/
+/*******************************************************/
+.counter-item
+    overflow: hidden
+    margin-top: 30px
+    padding: 55px 15px
+    position: relative
+    text-align: center
+    border: 1px solid $border-color
+    .count-text
+        line-height: 1
+        font-size: 50px
+        font-weight: 600
+        margin-bottom: 25px
+        color: transparent
+        display: inline-block
+        -webkit-text-stroke: 1px
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.5)
+        &.k
+            &:after
+                content: 'K'
+        &.plus
+            &:after
+                content: '+'
+        &.k-plus
+            &:after
+                content: 'K+'
+        &.dolar
+            &:before
+                content: '$'
+    .counter-title
+        font-weight: 600
+        text-transform: capitalize
+        +res-ab(ms)
+            font-size: 20px
+    &:after
+        content: ''
+        z-index: -1
+        +poRT(0, 50%)
+        +size(7px, 75px)
+        transition: 0.25s
+        background: $primary-color
+        transform: translate(100%, -50%)
+        clip-path: polygon(100% 0, 100% 100%, 8px 100%, 0 calc(100% - 8px), 0 8px, 8px 0)
+    &:hover:after
+        transform: translate(0, -50%)
+    &.style-two
+        text-align: left
+        border-radius: 15px
+        background: #0B0A0A
+        +gapLR(padding, 70px)
+        +res-bl(xl)
+            +gapLR(padding, 35px)
+        .count-text
+            color: white
+            text-transform: lowercase
+            -webkit-text-stroke-color: white
+            +res-ab(lp)
+                font-size: 85px
+        .counter-title
+            line-height: 1.55
+            letter-spacing: 0.66px
+            +res-ab(lp)
+                font-size: 22px
+    
+/* Counter Style Two */
+.counter-item-two
+    text-align: center
+    padding: 15px 15px 30px
+    border-bottom: 1px solid #16161A
+    +res-ab(xs)
+        border-right: 1px solid #16161A
+    .count-text
+        color: white
+        line-height: 1
+        font-size: 40px
+        font-weight: 600
+        margin-bottom: 15px
+        &.plus:after
+            content: '+'
+    .counter-title
+        font-weight: 500
+    &.no-border
+        border-right: none

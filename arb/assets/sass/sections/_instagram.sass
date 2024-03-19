@@ -1,0 +1,21 @@
+/*******************************************************/
+/**************** ## Instagram Area *****************/
+/*******************************************************/
+.instagram-item
+    position: relative
+    img
+        width: 100%
+        transition: 0.5s
+        filter: grayscale(1)
+    a
+        opacity: 0
+        +absmiddle()
+        color: white
+        font-size: 50px
+        +res-bl(ms)
+            font-size: 35px
+    &:hover
+        img
+            filter: grayscale(0)
+        a
+            opacity: 1

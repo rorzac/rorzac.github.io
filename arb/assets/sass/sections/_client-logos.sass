@@ -1,0 +1,43 @@
+/*******************************************************/
+/******************* ## Client Logos *******************/
+/*******************************************************/
+.our-clients
+    display: flex
+    flex-wrap: wrap
+    max-width: 510px
+    align-items: center
+    padding: 65px 38px 30px
+    background: $lighter-color
+    justify-content: space-between
+    +res-ab(xl)
+        margin-left: auto
+    +res-bl(xl)
+        +gapLR(padding, 30px)
+    +res-bl(ms)
+        padding: 45px 15px 10px
+    a
+        margin: 0 38px 40px
+        +res-bl(xl)
+            +gapLR(margin, 30px)
+        +res-bl(ms)
+            max-width: 40%
+            +gapLR(margin, 10px)
+            
+.client-area
+    .container
+        max-width: 1180px
+            
+.our-clients-two
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    border-bottom: 1px solid rgba(217, 217, 217, 0.14)
+    a
+        margin: 0 15px 30px
+        max-width: calc(50% - 30px)
+        
+.client-two-area
+    .our-clients-two
+        border-bottom: none
+        +gapLR(margin, -15px)

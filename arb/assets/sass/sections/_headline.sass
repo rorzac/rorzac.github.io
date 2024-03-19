@@ -1,0 +1,181 @@
+/*******************************************************/
+/******************* ## Headline Text *******************/
+/*******************************************************/        
+.marquee-wrap
+    display: flex
+    overflow: hidden
+    white-space: nowrap
+
+.marquee-inner
+    display: flex
+    &.left
+        animation: marquee_left 20s linear infinite
+    &.right
+        animation: marquee_right 20s linear infinite
+        
+/* Headline style One */
+.headline-wrap
+    color: white
+    font-size: 17px
+    font-weight: 600
+    line-height: 0.5px
+    text-transform: uppercase
+    .marquee-item
+        display: flex
+        align-items: center
+        span
+            color: $primary-color
+        b
+            font-weight: 600
+        i
+            font-size: 30px
+            +gapLR(margin, 65px)
+            color: $primary-color
+            
+.style-two
+    .marquee-item
+        i
+            font-size: 25px
+            +gapLR(margin, 20px)
+    &.color-black
+        .marquee-wrap,
+        .marquee-wrap i,
+        .marquee-wrap span
+            color: black
+            
+.style-three
+    .marquee-item
+        i
+            font-size: 25px
+            +gapLR(margin, 20px)
+    &.color-black
+        .marquee-wrap b
+            color: black
+            
+/* Headline Style Two */
+.marquee-heading-two
+    color: white
+    line-height: 1
+    font-size: 110px
+    font-weight: 700
+    text-transform: uppercase
+    +res-bl(xxl)
+        font-size: 7vw
+    .marquee-item
+        span
+            color: white
+            +gapLR(margin, 40px)
+        a
+            color: white
+            &:hover
+                color: $primary-color
+        .text-image
+            background-size: cover
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            &.grayscale
+                filter: grayscale(1)
+        img
+            width: 5%
+            max-width: none
+    &.style-two
+        .marquee-item
+            i
+                +res-ab(xxl)
+                    font-size: 35px
+            span
+                margin: 0
+                color: $primary-color
+                &.text-border
+                    color: transparent
+                    -webkit-text-stroke: 1px
+                    -webkit-text-stroke-color: rgba(255, 255, 255, 0.4)
+                    
+.headline-area-with-image
+    .marquee-heading-two
+        +res-ab(xxl)
+            font-size: 90px
+        .marquee-item
+            > *,
+            > span
+                +gapLR(margin, 50px)
+                +res-bl(xl)
+                    +gapLR(margin, 20px)
+                +res-bl(sm)
+                    +gapLR(margin, 10px)
+                    
+.headline-area-with-image-two
+    .marquee-inner
+        .marquee-item
+            span, b
+                +gapLR(margin, 25px)
+                +res-bl(md)
+                    +gapLR(margin, 15px)
+            
+/* Headline Style Three */
+.marquee-heading-three
+    line-height: 1
+    font-size: 100px
+    font-weight: 700
+    position: relative
+    text-transform: capitalize
+    +res-bl(xxl)
+        font-size: 7vw
+    .marquee-item
+        flex: none
+        +gapTB(padding, 50px)
+        background: radial-gradient(42.25% 8948.61% at 50.02% 64.91%, #FFFFFF, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        -webkit-text-stroke-color: transparent
+    .hover-box
+        +poLT(50%)
+        color: black
+        padding: 15px
+        font-size: 18px
+        font-weight: 500
+        line-height: 27px
+        text-align: center
+        background: $primary-color
+        transform: translateY(-50%) scale(0)
+        +res-ab(xl)
+            +size(180px)
+    &:hover
+        .hover-box
+            transform: translateY(-50%) scale(1) rotate(26.015deg)
+            
+/* Headline Hover Box */
+.hover-box
+    +size(148px)
+    color: white
+    transition: 0.5s
+    border-radius: 50%
+    +flexcenter(center)
+    flex-direction: column
+    background-size: cover
+    background-image: url(../images/shapes/hover-box.png)
+    +res-bl(xs)
+        +size(100px)
+        font-size: 10px
+
+.hover-box-wrap
+    position: relative
+    .hover-box
+        opacity: 0
+        +poRT(20%, 10%)
+        transform: scale(0)
+        span
+            font-weight: 500
+            text-transform: capitalize
+        i
+            margin-top: 10px
+    &:hover
+        .hover-box
+            opacity: 1
+            transform: scale(1) rotate(60deg)
+        
+.marquee-wrap.for-arrow-icon
+    .marquee-inner
+        i
+            transform: rotate(-45deg)
+        

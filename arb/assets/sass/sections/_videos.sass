@@ -1,0 +1,90 @@
+/*******************************************************/
+/****************** ## Videos Area ********************/
+/*******************************************************/ 
+/* Video Play */
+.video-play
+    +size(100px)
+    font-size: 20px
+    text-align: center
+    line-height: 100px
+    background: #2A2C38
+    display: inline-block
+    color: $primary-color
+    &:hover
+        color: white
+        background: $primary-color
+    +res-bl(md)
+        +size(80px)
+        font-size: 16px
+        line-height: 80px
+        
+.video-play-text
+    +size(130px)
+    padding: 10px
+    border-radius: 50%
+    text-align: center
+    display: inline-block
+    background: $primary-color
+    +res-bl(sm)
+        +size(100px)
+        
+/* Video Section */
+.video-top
+    border-top: 1px dashed $border-color
+    h5
+        font-weight: 500
+        +res-ab(xs)
+            font-size: 24px
+    a
+        text-decoration: underline
+    span
+        color: $primary-color
+        
+.video-inner
+    .play-intro
+        color: white
+        line-height: 1
+        font-weight: 700
+        font-size: 170px
+        text-transform: uppercase
+        +res-bl(xl)
+            font-size: 10vw
+        span
+            line-height: 1.15
+            display: inline-block
+            border-bottom: 6px solid
+            +res-bl(lg)
+                border-bottom-width: 3px
+    .video-text
+        font-size: 115px
+        font-weight: 600
+        color: $primary-color
+        font-family: $script-font
+        text-transform: capitalize
+        +res-bl(xl)
+            font-size: 6vw
+            
+/* Video Section Two */
+.video-inner-two
+    overflow: hidden
+    position: relative
+    .video-play-text
+        +size(170px)
+        padding: 18px
+        border-radius: 50%
+        display: inline-block
+        background: $primary-color
+        +res-bl(md)
+            +size(120px)
+            padding: 10px
+    .headline-wrap
+        +poLB(0)
+        width: 100%
+        transform: rotate(40deg) translate(-25%, 185px)
+        +res-bl(lg)
+            transform: rotate(40deg) translate(-25%, 85px)
+        +res-bl(sm)
+            transform: rotate(40deg) translate(-25%, 0)
+    .video-shape
+        +poRT(0)
+        max-width: 15%

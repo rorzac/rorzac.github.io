@@ -1,0 +1,303 @@
+/*******************************************************/
+/******************** ## Hero Area *********************/
+/*******************************************************/
+.hero-area
+    z-index: 1
+    position: relative
+    &:after
+        z-index: -1
+        content: ''
+        +poRT(0, -100px)
+        +size(350px, 250px)
+        filter: blur(350px)
+        animation: 5s zoomInOut infinite
+        background: linear-gradient(127deg, #C8F31D 23.12%, #C8F31D 58.49%, rgba(223, 40, 24, 0.00) 90.7%)
+    &:before
+        z-index: -1
+        content: ''
+        +poLB(-100px)
+        +size(780px, 480px)
+        filter: blur(800px)
+        animation: 5s zoomInOut infinite
+        background: linear-gradient(127deg, #C8F31D 23.12%, rgba(200, 243, 29, 0.62) 58.49%, rgba(80, 98, 10, 0.00) 90.7%)
+    
+.hero-shape
+    +poRB(5%)
+    z-index: -1
+    max-width: 10%
+    animation: 10s down-up-two infinite
+
+.hero-image-part
+    padding-right: 65px
+    position: relative
+    +res-bl(lg)
+        padding-right: 10%
+    .hero-main-img
+        position: relative
+        .hero-video-play
+            +absmiddle()
+            max-width: 25%
+    .mail-us
+        +poLB(0)
+        color: black
+        text-align: center
+        +size(188px, 172px)
+        +flexcenter(center)
+        flex-direction: column
+        background: $primary-color
+        i
+            font-size: 50px
+        span
+            margin-top: 10px
+            font-weight: 600
+            text-transform: uppercase
+        +res-bl(md)
+            +size(100px)
+            i
+                font-size: 25px
+            span
+                margin-top: 0
+                font-size: 10px
+    .hero-small-img
+        +poRB(-90px, -40px)
+        max-width: 37%
+        +res-bl(lg)
+            right: 0
+
+.hero-content-part
+    margin-top: -50px
+    h1
+        font-size: 170px
+        text-transform: uppercase
+        display: flex
+        align-items: center
+        i
+            font-size: 41%
+            margin-left: -5px
+            color: $primary-color
+        +res-bl(lb)
+            font-size: 120px
+        +res-bl(xl)
+            font-size: 100px
+        +res-bl(md)
+            font-size: 80px
+        +res-bl(ms)
+            font-size: 65px
+    .hero-sub-heading
+        display: flex
+        align-items: center
+        margin-top: 15px
+        img
+            max-width: 45%
+    .text
+        font-weight: 500
+        margin-top: 60px
+        max-width: 550px
+        +res-ab(lg)
+            margin-left: 150px
+            
+.agency-text
+    color: white
+    font-size: 115px
+    font-weight: 600
+    font-style: italic
+    line-height: 1
+    margin-top: -30px
+    font-family: $script-font
+    text-transform: capitalize
+    text-decoration: underline
+    text-decoration-thickness: 2px
+    text-underline-position: from-font
+    +res-bl(lb)
+        font-size: 90px
+    +res-bl(xl)
+        font-size: 70px
+    +res-bl(md)
+        font-size: 50px
+    +res-bl(ms)
+        font-size: 40px
+            
+/* Horo Two */
+.hero-area-two
+    +flexcenter(center)
+    +res-ab(lg)
+        min-height: calc(100vh - 40px)
+
+.hero-image-two
+    +poLT(0)
+    z-index: -1
+    +size(58%, 100%)
+    background-size: cover
+    
+.hero-contact-info
+    +poLB(0)
+    display: flex
+    font-weight: 500
+    padding: 90px 40px 60px 0
+    text-transform: capitalize
+    height: calc(100% - 100px)
+    transform: rotate(180deg)
+    justify-content: space-between
+    -webkit-writing-mode: vertical-lr
+    +res-bl(lp)
+        padding: 25px 15px
+    +res-bl(sm)
+        display: none
+    a
+        color: white
+.hero-content-two
+    h1
+        display: flex
+        font-size: 170px
+        margin-left: -12px
+        align-items: center
+        margin-bottom: 30px
+        text-transform: uppercase
+        +res-bl(lp)
+            font-size: 150px
+        +res-bl(xl)
+            font-size: 130px
+        +res-bl(xl)
+            font-size: 130px
+        +res-bl(lg)
+            font-size: 100px
+        +res-bl(md)
+            margin-left: 0
+            font-size: 75px
+        +res-bl(sm)
+            font-size: 13vw
+        span
+            color: $primary-color
+        i
+            font-size: 47%
+            margin-left: 40px
+            color: $primary-color
+            +res-bl(md)
+                margin-left: 20px
+    .hero-sub-heading
+        +res-ab(md)
+            display: flex
+            align-items: center
+        .text
+            color: white
+            font-weight: 500
+            max-width: 535px
+            padding-left: 18px
+            position: relative
+            +res-ab(md)
+                margin-right: 55px
+            &:before
+                content: ''
+                +poLT(0, 10px)
+                background: $primary-color
+                +size(2px, calc(100% - 20px))
+        .agency-text
+            display: inline-block
+            text-decoration: none
+            color: $primary-color
+            +res-bl(md)
+                margin-top: 25px
+                
+    .hero-scroll-down
+        a
+            +res-bl(md)
+                +poRB(0, 10px)
+                
+.hero-scroll-down
+    text-align: right
+    position: relative
+    a
+        color: black
+        font-size: 25px
+        display: inline-block
+        +circle($primary-color, 130px)
+        +res-bl(xl)
+            +size(100px)
+            line-height: 100px
+        +res-bl(md)
+            +size(80px)
+            line-height: 80px
+            
+.hero-shape-two
+    +poRT(0)
+    z-index: -2
+    max-width: 50%
+    
+/* Hero Three */
+.hero-area-three
+    .hero-scroll-down
+        +poRT(15px, -15px)
+        a
+            +res-bl(ms)
+                +size(60px)
+                font-size: 20px
+                line-height: 60px
+            +res-bl(xs)
+                +size(50px)
+                line-height: 50px
+
+.hero-content-three
+    > div
+        display: flex
+        align-items: center
+        &.hero-top
+            margin-bottom: 30px
+            +res-bl(lg)
+                flex-wrap: wrap
+                margin-bottom: 20px
+            .hero-heading
+                margin-right: 90px
+                +res-bl(xl)
+                    margin-right: 30px
+                +res-bl(lg)
+                    margin-bottom: 20px
+            .text
+                color: #787B89
+                max-width: 85%
+                padding-left: 18px
+                position: relative
+                +res-bl(ms)
+                    max-width: 95%
+                &:before
+                    content: ''
+                    +poLT(0, 8px)
+                    background: $primary-color
+                    +size(2px, calc(100% - 16px))
+    .hero-heading
+        color: white
+        line-height: 1
+        font-size: 105px
+        font-weight: 700
+        text-transform: uppercase
+        +res-bl(lp)
+            font-size: 8vw
+        +res-bl(xl)
+            font-size: 6vw
+        span
+            color: $primary-color
+    .video-play-text
+        flex: none
+        margin-right: 25px
+        text-align: center
+        background: $primary-color
+        +res-bl(xl)
+            +size(100px)
+        +res-bl(md)
+            +size(80px)
+            padding: 8px
+        +res-bl(ms)
+            +size(60px)
+            padding: 5px
+            
+.hero-three-shape
+    +poRT(5%, 20%)
+    max-width: 20%
+    
+.hero-lighting
+    z-index: -1
+    +poLB(50%, -10%)
+    +size(775px, 200px)
+    filter: blur(350px)
+    transform: translate(-50%)
+    background: linear-gradient(127deg, #C4EF17 23.12%, #C4EF17 58.49%, #C4EF17 90.7%)
+    

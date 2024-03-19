@@ -1,0 +1,160 @@
+/*******************************************************/
+/******************** ## Team Area ********************/
+/*******************************************************/
+.team-member
+    z-index: 2
+    overflow: hidden
+    position: relative
+    margin-bottom: 30px
+    .image
+        img
+            width: 100%
+            transition: 0.5s
+    .content
+        z-index: 1
+        +size(222px)
+        +poLB(50%, 0)
+        transition: 0.5s
+        border-radius: 50%
+        +flexcenter(center)
+        flex-direction: column
+        transform: translate(-50%, 25%) scale(1.2)
+        +res-ab(xxl)
+            transform: translate(-50%, 25%) scale(1.5)
+        &:after
+            +poLT(0)
+            content: ''
+            opacity: 0
+            +size(100%)
+            z-index: -1
+            transition: 0.5s
+            border-radius: 50%
+            background-size: cover
+            background-image: url(../images/shapes/hover-box-two.png)
+        .designation
+            opacity: 0
+            font-size: 12px
+            transition: 0.5s
+            text-transform: uppercase
+            color: rgba(255, 255, 255, 0.31)
+        h6
+            font-size: 18px
+            font-weight: 700
+            transition: 0.5s
+            letter-spacing: 0.9px
+            text-transform: uppercase
+        .social-style-two
+            opacity: 0
+    &:hover
+        .image img
+            filter: grayscale(1)
+        .content
+            transform: translate(-50%, 0) scale(1)
+            &:after
+                opacity: 1
+            .designation
+                opacity: 1
+            .social-style-two
+                opacity: 1
+    &.style-two
+        .image
+            margin-bottom: 24px
+            img
+                filter: grayscale(1)
+        .description
+            display: flex
+            position: relative
+            align-items: center
+            justify-content: space-between
+            h5
+                margin-bottom: 5px
+            .designation
+                transition: 0.5s
+                font-weight: 600
+                text-transform: capitalize
+            .details-btn
+                font-size: 30px
+                color: $primary-color
+            .social-media
+                +poLB(0)
+                opacity: 0
+                display: flex
+                transition: 0.5s
+                background: #090A0C
+                a
+                    margin-right: 25px
+        &:hover
+            .image img
+                filter: grayscale(0)
+            .social-media
+                opacity: 1
+            .designation
+                opacity: 0
+                
+.team-shapes
+    &:after
+        +poRB(0)
+        content: ''
+        opacity: 0.2
+        +size(656px, 456px)
+        filter: blur(350px)
+        background: linear-gradient(127deg, #C4EF17 23.12%, #C4EF17 58.49%, #C4EF17 90.7%)
+    .shape
+        z-index: -1
+        position: absolute
+        &.one
+            top: 14%
+            right: 0
+            max-width: 30%
+        &.two
+            top: 50%
+            right: 0
+            max-width: 10%
+            
+            
+            
+.team-member-two
+    text-align: center
+    margin-bottom: 50px
+    .image
+        position: relative
+        margin-bottom: 25px
+        > img
+            transition: 0.5s
+            border-radius: 50%
+        .arrow
+            opacity: 0
+            +absmiddle()
+    .content
+        h5
+            font-size: 20px
+        .designation
+            display: block
+            margin-bottom: 10px
+            text-transform: capitalize
+        .social-style-two
+            a
+                font-size: 18px
+                margin: 0 5px
+    &:hover
+        .image
+            > img
+                filter: grayscale(1) blur(1.5px)
+            .arrow
+                opacity: 1
+                
+                
+/* Team Details */
+.team-profile-content
+    h3
+        font-size: 36px
+        +res-bl(sm)
+            font-size: 30px
+    .social-style-one
+        display: flex
+        a
+            +res-ab(xl)
+                +size(45px)
+                line-height: 45px
+    .theme-btn
+        +gapTB(padding, 13px)

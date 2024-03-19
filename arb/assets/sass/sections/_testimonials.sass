@@ -1,0 +1,135 @@
+/*******************************************************/
+/**************** ## Testimonials Area *****************/
+/*******************************************************/
+.testimonials-image
+    +res-ab(lp)
+        margin-right: -100px
+        
+.testimonial-header
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    margin-bottom: 10px
+    h6
+        margin-right: 25px
+        +res-ab(sm)
+            font-size: 20px
+    .ratting
+        margin-bottom: 10px
+        i
+            color: #FF6107
+
+.author-speech
+    color: #A9ADB9
+    font-size: 24px
+    font-weight: 500
+    line-height: 1.96
+    +res-bl(xl)
+        font-size: 22px
+    +res-bl(ms)
+        font-size: 18px
+    +res-bl(xs)
+        font-size: 16px
+
+.testimonial-footer
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 30px
+    max-width: 520px
+    .ratting
+        margin-bottom: 15px
+
+.testimonial-author
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin-bottom: 15px
+    .author-image
+        font-size: 55px
+        margin-right: 25px
+        color: $primary-color
+        img
+            +size(72px)
+            border-radius: 50%
+    .author-info
+        +res-bl(xs)
+            width: 100%
+            margin-top: 10px
+        h6
+            font-size: 18px
+            margin-bottom: 0
+        .designation
+            color: $primary-color
+            
+            
+/* Testimonials Two */
+.testimonials-two-inner
+    padding: 80px
+    +res-ab(xl)
+        background-size: 100% 100%
+    +res-bl(md)
+        padding: 50px 35px
+    +res-bl(ms)
+        padding: 50px 25px
+    .author-speech
+        +res-bt(ms, md)
+            font-size: 20px
+    .testimonial-author
+        margin-top: 30px
+        margin-left: 1px
+        margin-bottom: 35px
+        .designation
+            color: $base-color
+    .slick-dots
+        justify-content: flex-start
+        
+/* Testimonials Three */
+.testimonials-three-area
+    background: #090A0C
+    
+.bg-primary-shape
+    overflow: hidden
+    &:after
+        +poRT(0)
+        content: ''
+        z-index: -1
+        +size(1000px, 165px)
+        border-radius: 100px
+        background: $primary-color
+        transform: translate(15%, 200px) rotate(-40deg)
+        +res-bl(lb)
+            transform: translate(40%, 200px) rotate(-40deg)
+        +res-bl(lg)
+            transform: translate(40%, 600px) rotate(-40deg)
+        +res-bl(sm)
+            transform: translate(40%, 800px) rotate(-40deg)
+        +res-bl(ms)
+            height: 80px
+    
+.style-two
+    .testimonial-author
+        margin-bottom: 30px
+        .author-image
+            img
+                +size(auto)
+        .author-info
+            h5
+                margin-bottom: 2px
+            .designation
+                color: $base-color
+    .author-speech
+        color: white
+        padding-top: 5px
+    .slick-dots
+        margin-top: 40px
+        justify-content: flex-start
+        li
+            margin-right: 20px
+        
+.testi-three-shape
+    line-height: 1
+    +poRB(5%, 10%)
+    font-size: 65px
+    color: $primary-color

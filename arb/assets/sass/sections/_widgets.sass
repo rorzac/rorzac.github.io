@@ -1,0 +1,311 @@
+/*******************************************************/
+/******************** ## Widgets ********************/
+/*******************************************************/
+.widget
+    padding: 35px 30px
+    background: $lighter-color
+    +res-bl(xs)
+        +gapLR(padding, 25px)
+    &:not(:last-child)
+        margin-bottom: 30px
+        
+.widget-title
+    line-height: 1
+    padding-left: 8px
+    margin-bottom: 25px
+    text-transform: capitalize
+    border-left: 2px solid $primary-color
+    
+        
+.widget-author
+    text-align: center
+    +gapTB(padding, 65px)
+    img
+        border-radius: 50%
+        margin-bottom: 15px
+    h6
+        margin-bottom: 5px
+        text-transform: uppercase
+    .designation
+        display: block
+        font-size: 14px
+        margin-bottom: 12px
+    p
+        +container(315px)
+        margin-bottom: 25px
+    .social-style-one
+        a
+            width: 45px
+            font-size: 12px
+            border-radius: 0
+            color: $base-color
+            &:hover
+                color: black
+    
+.widget-search
+    form
+        display: flex
+        padding: 12px 18px
+        align-items: center
+        background: $lighter-color
+        input
+            padding: 0
+            color: white
+            border: none
+            background: transparent
+            &::placeholder
+                text-transform: capitalize
+        button
+            flex: none
+            color: white
+            background: transparent
+            
+.widget-recent-news
+    ul
+        li
+            display: flex
+            align-items: center
+            &:not(:last-child)
+                margin-bottom: 25px
+            .image
+                flex: none
+                margin-top: 5px
+                max-width: 108px
+                margin-right: 25px
+                +res-bt(lg, xl)
+                    max-width: 85px
+                    margin-right: 15px
+                +res-bl(xs)
+                    max-width: 85px
+                    margin-right: 15px
+            h6
+                margin-bottom: 0
+                line-height: 1.6
+                font-weight: 600
+                +res-bt(lg, xl)
+                    font-size: 13px
+                +res-bl(ms)
+                    font-size: 14px
+            .date
+                line-height: 1
+                font-size: 15px
+                margin-bottom: 10px
+                display: inline-block
+                text-transform: capitalize
+                i
+                    margin-right: 7px
+                    color: $primary-color
+                    
+            
+.widget-category
+    ul
+        li
+            &:not(:last-child)
+                margin-bottom: 20px
+            a
+                display: flex
+                padding: 10px 17px
+                align-items: center
+                background: #151313
+                justify-content: space-between
+                border: 1px solid $border-color
+                span
+                    margin-left: 6px
+                &:hover
+                    color: black
+                    background: $primary-color
+
+.tag-coulds
+    display: flex
+    flex-wrap: wrap
+    margin: -14px -7px 0
+    a
+        font-size: 14px
+        padding: 3px 22px
+        margin: 14px 7px 0
+        background: #151313
+        text-transform: capitalize
+        &:hover
+            color: black
+            background: $primary-color
+                
+.widget-category-two
+    ul
+        padding-left: 20px
+        li
+            list-style: disc
+            a
+                font-size: 18px
+            &:not(:last-child)
+                margin-bottom: 20px
+            
+            
+.widget-colors
+    .colors
+        display: flex
+        flex-wrap: wrap
+        margin: -4px -2px 0
+        .color-item
+            +size(30px)
+            padding: 3px
+            margin: 4px 2px 0
+            border-radius: 3px
+            border: 1px solid $border-color
+            &.blue button
+                background: #0B5FB5
+            &.green button
+                background: #00A651
+            &.yellow button
+                background: #FEE496
+            &.light-green button
+                background: #25BFA3
+            &.black button
+                background: #000000
+            &.purple button
+                background: #8E7CFC
+            button
+                +size(22px)
+                border-radius: 3px
+            
+.widget-brands
+    ul
+        li
+            display: flex
+            font-size: 18px
+            align-items: center
+            input
+                display: none
+                + label
+                    transition: 0.5s
+                    position: relative
+                    padding-left: 30px
+                    &:before
+                        content: ''
+                        +size(15px)
+                        +poLT(0, 10px)
+                        transition: 0.25s
+                        border: 1px solid $border-color
+                &:checked
+                    background: $primary-color
+                    + label
+                        color: white
+                        &:before
+                            background: $primary-color
+                            border-color: $primary-color
+            &:not(:last-child)
+                margin-bottom: 18px
+            
+.widget-products
+    ul li
+        display: flex
+        align-items: center
+        .image
+            flex: none
+            max-width: 98px
+            margin-right: 20px
+        .content
+            .price
+                font-size: 12px
+                font-weight: 500
+                color: $primary-color
+                del
+                    color: $base-color
+            h6
+                font-size: 14px
+                margin-bottom: 0
+                font-weight: 500
+            .ratting i
+                margin-left: 0
+                font-size: 12px
+                margin-bottom: 0
+        &:not(:last-child)
+            margin-bottom: 10px
+        
+.price-filter-details
+    padding-top: 15px
+    position: relative
+    +flexcenter(space-between)
+    border-top: 6px solid white
+    .price
+        font-weight: 500
+    a
+        font-size: 12px
+        font-weight: 600
+        margin-left: 10px
+        padding: 1px 18px
+        text-transform: uppercase
+        background: $lighter-color
+        border: 1px solid $border-color
+    &:before
+        content: ''
+        +poLT(0, -6px)
+        +size(60%, 6px)
+        background: $primary-color
+            
+        
+/* Service Sidebar */
+.service-sidebar
+    .widget
+        padding: 40px 25px
+        &.widget-cta
+            text-align: center
+            .icon
+                color: black
+                font-size: 35px
+                +size(80px, 76px)
+                line-height: 75px
+                border-radius: 4px
+                margin: 0 auto 22px
+                background: $primary-color
+            .sub-title
+                color: white
+                display: block
+                font-size: 15px
+                font-weight: 500
+                margin-top: 40px
+                margin-bottom: 10px
+                letter-spacing: 1.95px
+                text-transform: uppercase
+            .theme-btn
+                letter-spacing: 0
+                border-radius: 25px
+                +gapTB(padding, 9px)
+        &.widget-form
+            +res-ab(xs)
+                padding: 55px 35px
+            input, textarea
+                font-size: 14px
+                padding: 12px 20px
+                border-radius: 4px
+                margin-bottom: 25px
+            .theme-btn
+                +res-ab(sm)
+                    +gapTB(padding, 18px)
+                
+        &:not(:last-child)
+            margin-bottom: 60px
+                
+    .service-title
+        margin-bottom: 25px
+        +res-ab(xs)
+            font-size: 28px
+            
+            
+/* Shop Sidebar */
+.shop-sidebar
+    +res-ab(xxl)
+        margin-left: -40px
+    padding: 45px 30px 45px 35px
+    background: $lighter-color
+    .widget
+        padding: 0
+        background: transparent
+        &:not(:last-child)
+            margin-bottom: 45px
+    .widget-title
+        font-size: 20px
+    .tag-coulds
+        margin: -10px -4px 0
+        a
+            margin: 10px 4px 0
+            +gapLR(padding, 16px)

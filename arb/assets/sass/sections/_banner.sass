@@ -1,0 +1,46 @@
+/*******************************************************/
+/******************* ## Page Banner *******************/
+/*******************************************************/
+.banner-inner
+    h1
+        text-transform: uppercase
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        -webkit-text-stroke-color: transparent
+        +res-ab(xl)
+            font-size: 90px
+        +res-bl(lg)
+            font-size: 55px
+        +res-bl(md)
+            font-size: 40px
+        +res-bl(sm)
+            font-size: 36px
+        &.style-two
+            -webkit-text-fill-color: white
+            +res-ab(xl)
+                font-size: 65px
+            
+.breadcrumb
+    padding: 0
+    font-size: 20px
+    background: transparent
+    text-transform: capitalize
+    +res-bl(sm)
+        font-size: 18px
+    +res-bl(xs)
+        font-size: 16px
+    .breadcrumb-item
+        padding: 0
+        font-weight: 400
+        +flexcenter(center)
+        a
+            color: $primary-color
+        &.active
+            color: $primary-color
+        &+.breadcrumb-item::before
+            flex: none
+            padding: 0
+            +gapLR(margin, 5px)
+            color: $primary-color
+            
+            

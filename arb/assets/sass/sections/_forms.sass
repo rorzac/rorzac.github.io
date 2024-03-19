@@ -1,0 +1,103 @@
+/*******************************************************/
+/****************** ## Contact Forms ******************/
+/*******************************************************/
+.contact-content-part
+    .form-group
+        display: flex
+        margin-bottom: 50px
+        padding-bottom: 14px
+        border-bottom: 1px solid $border-color
+        label
+            margin-bottom: 0
+            margin-right: 20px
+            color: rgba(255, 255, 255, 0.8)
+        input,
+        textarea
+            padding: 0
+            border: none
+            color: white
+            background: transparent
+            &::placeholder
+                font-size: 18px
+                font-weight: 400
+                color: rgba(255, 255, 255, 0.8)
+    .theme-btn
+        i
+            margin-right: 8px
+        +res-ab(sm)
+            +gapTB(padding, 20px)
+    &.style-two
+        padding: 50px 85px 53px 75px
+        background: #070708
+        +res-bl(sm)
+            +gapLR(padding, 35px)
+        +res-bl(xs)
+            +gapLR(padding, 25px)
+        h3
+            font-size: 38px
+            margin-bottom: 30px
+        p
+            color: #555
+        form
+            margin-top: 50px
+        .form-group label
+            color: $primary-color
+            
+.contact-info-part
+    font-size: 18px
+    padding: 60px 35px 30px
+    background: $lighter-color
+    +res-bl(xs)
+        padding: 40px 20px 20px
+    h3
+        margin-bottom: 30px
+        
+        
+.contact-info-part-two
+    font-size: 18px
+    .c-info-item .title
+        color: white
+    
+.c-info-item
+    margin-bottom: 45px
+    .title
+        display: block
+        margin-bottom: 15px
+    h6
+        +res-ab(xs)
+            font-size: 18px
+    .social-style-two a
+        +size(38px)
+        line-height: 38px
+        
+/* Contact Page */
+.our-location iframe
+    height: 500px
+    
+.contact-info-item
+    color: white
+    font-size: 18px
+    padding: 45px 35px
+    text-align: center
+    margin-bottom: 30px
+    border-radius: 15px
+    background: $lighter-color
+    border: 1px solid $border-color
+    .icon
+        margin-bottom: 25px
+    h5
+        margin-bottom: 20px
+    a
+        color: white
+        
+    
+/* Contact Form Validation */
+.has-error
+    .with-errors
+        color: red
+        margin-top: 5px
+        margin-bottom: -15px
+#msgSubmit
+    font-size: 20px
+    margin-bottom: 0
+    margin-top: 10px

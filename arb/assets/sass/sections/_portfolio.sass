@@ -1,0 +1,292 @@
+/*******************************************************/
+/****************** ## Protfolio Area *******************/
+/*******************************************************/
+.portfolio-masonry-active.style-one
+    +res-ab(xl)
+        .col-xl-6
+            width: 43%
+        .col-xl-3
+            width: 28.5%
+
+.portfolio-item
+    position: relative
+    margin-bottom: 30px
+    .portfolio-image
+        img
+            width: 100%
+            transition: 0.5s
+    .hover-box
+        +poLT(50%)
+        transform: translate(-50%, -50%) scale(0)
+        +res-bl(sm)
+            display: none
+        i
+            font-size: 40px
+            margin-top: 10px
+            margin-bottom: -10px
+            color: $primary-color
+    .portfolio-content
+        +poLB(0)
+        padding: 18px
+        h6
+            opacity: 0
+            color: black
+            transition: 0.5s
+            margin-bottom: 0
+            min-width: 240px
+            font-weight: 600
+            padding: 7px 15px
+            transform: translate(25px)
+            background: $primary-color
+            a
+                color: black
+            +res-ab(xs)
+                font-size: 20px
+        .tag-category
+            opacity: 0
+            font-weight: 500
+            padding: 5px 16px
+            background: #060708
+            display: inline-block
+            transform: translate(25px)
+            color: rgba(255, 255, 255, 0.60)
+    &:hover
+        .portfolio-image img
+            filter: grayscale(1)
+        .hover-box
+            transform: translate(-50%, -50%) scale(1) rotate(25deg)
+        .portfolio-content
+            h6
+                opacity: 1
+                transform: translate(0)
+            .tag-category
+                opacity: 1
+                transition-delay: 0.3s
+                transform: translate(0)
+                
+    &.style-two
+        .portfolio-image
+            position: relative img
+                filter: grayscale(1)
+        .hover-box
+            color: black
+            font-weight: 500
+            background: $primary-color
+        &:hover
+            .portfolio-image img
+                filter: grayscale(0)
+    &.style-three
+        .portfolio-image
+            &:after
+                +poLB(0)
+                content: ''
+                opacity: 0
+                transition: 0.5s
+                +size(100%, 80%)
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.98) 100%)
+        .portfolio-content
+            +res-ab(xs)
+                padding: 30px
+            h6
+                padding: 0 0 2px
+                background: transparent
+                +res-ab(lg)
+                    font-size: 28px
+                a
+                    color: white
+            .tag-category
+                padding: 0
+                background: transparent
+        .hover-box
+            backdrop-filter: blur(3.5px)
+            background: rgba(196, 239, 23, 0.38)
+            transform: translate(-50%, -50%) scale(0)
+            +res-bl(lg)
+                display: none
+            span
+                font-weight: 700
+                text-transform: uppercase
+            i
+                color: white
+                font-size: 16px
+                transform: rotate(-45deg)
+        &:hover
+            .portfolio-image:after
+                opacity: 1
+            .hover-box
+                transform: translate(-50%, -50%) scale(1)
+                
+/* Protfolio Page */
+.portfolio-page-two
+    .portfolio-item.style-two
+        margin-bottom: 70px
+        +res-bl(md)
+            margin-top: 0
+        .image
+            position: relative
+            margin-bottom: 45px
+            img
+                width: 100%
+        .content
+            h4
+                margin-bottom: 5px
+                text-transform: uppercase
+                +res-bl(ms)
+                    font-size: 22px
+                +res-bl(xs)
+                    font-size: 20px
+            .meta
+                color: white
+                +res-bl(xs)
+                    font-size: 14px
+            
+/* Protfolio Three */
+.portfolio-area-three
+    +gapLR(padding, 30px)
+            
+/* Protfolio Four */
+.portfolio-item-four
+    display: flex
+    align-items: center
+    margin-bottom: 85px
+    +res-bl(lg)
+        flex-wrap: wrap
+    .image
+        flex: none
+        max-width: 50%
+        +res-bl(lg)
+            order: 0
+            width: 100%
+            max-width: 100%
+            margin-bottom: 30px
+        img
+            width: 100%
+    .content
+        padding: 0 5.5%
+        +res-bl(lg)
+            order: 2
+        .category
+            font-weight: 600
+            margin-bottom: 5px
+            display: inline-block
+            color: $primary-color
+            text-transform: uppercase
+        h2
+            font-size: 55px
+            font-weight: 500
+            line-height: 1.2
+            margin-bottom: 30px
+            +res-bl(xl)
+                font-size: 45px
+            +res-bl(sm)
+                font-size: 40px
+            +res-bl(ms)
+                font-size: 35px
+            +res-bl(xs)
+                font-size: 30px
+        .details-btn
+            color: white
+            font-size: 25px
+            margin-top: 20px
+            +circle($lighter-color, 70px)
+            &:hover
+                color: black
+                background: $primary-color
+            
+/* Protfolio Details */
+.portfolio-meta
+    color: white
+    display: flex
+    flex-wrap: wrap
+    font-size: 18px
+    font-weight: 700
+    align-items: center
+    letter-spacing: 2.52px
+    text-transform: uppercase
+    +res-bl(xl)
+        font-size: 16px
+    li
+        +gapTB(margin, 10px)
+        span
+            letter-spacing: 0
+            color: $primary-color
+            text-transform: capitalize
+        .theme-btn
+            padding: 11px 25px
+            letter-spacing: 0.9px
+        &:not(:last-child)
+            &:after
+                +size(7px)
+                content: ''
+                +gapLR(margin, 45px)
+                display: inline-block
+                background: $primary-color
+                +res-bl(xl)
+                    +gapLR(margin, 22px)
+                +res-bl(md)
+                    +gapLR(margin, 15px)
+                
+.portfolio-content
+    font-weight: 700
+    +res-ab(ms)
+        font-size: 18px
+    h2
+        margin-bottom: 55px
+    h3
+        margin-bottom: 35px
+        +res-bl(md)
+            font-size: 35px
+        +res-bl(sm)
+            font-size: 30px
+    p
+        line-height: 1.95
+        margin-bottom: 70px
+    .sub-title
+        margin-bottom: 20px
+        display: inline-block
+        color: $primary-color
+        text-transform: capitalize
+        +res-ab(sm)
+            font-size: 20px
+    .list-style-one
+        li
+            margin-bottom: 14px
+            i
+                +res-ab(ms)
+                    font-size: 22px
+                    margin-right: 20px
+                    
+.related-portfolio-area
+    .portfolio-item.style-three
+        .portfolio-image
+            img
+                filter: grayscale(1)
+            &:after
+                height: 100%
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 32.1%, rgba(0, 0, 0, 0.53) 76.05%, rgba(0, 0, 0, 0.58) 100%)
+        .hover-box
+            top: 45%
+            +size(123px)
+            line-height: 123px
+            backdrop-filter: blur(0)
+            background: $primary-color
+            i
+                margin: 0
+                color: black
+                font-size: 55px
+        .portfolio-content
+            left: 50%
+            text-align: center
+            transform: translate(-50%)
+            h6
+                font-weight: 700
+                margin-bottom: 3px
+            .tag-category
+                color: white
+                font-weight: 700
+                +res-ab(md)
+                    font-size: 20px
+        &:hover
+            .portfolio-image
+                img
+                    filter: grayscale(0)

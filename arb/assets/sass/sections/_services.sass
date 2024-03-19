@@ -1,0 +1,267 @@
+/*******************************************************/
+/***************** ## Services style *******************/
+/*******************************************************/
+.service-item
+    margin-bottom: 65px
+    padding: 0 15px 20px
+    +flexcenter(space-between)
+    border-bottom: 1px solid $border-color
+    .content
+        h5
+            letter-spacing: 2px
+            +res-bl(xs)
+                font-size: 18px
+    .details-btn
+        margin-bottom: 10px
+        +res-bl(xs)
+            font-size: 40px
+    &:hover
+        .content
+            h5 a
+                text-decoration: underline
+        .details-btn
+            color: $primary-color
+            transform: rotate(0deg)
+            
+/*Service style Two*/
+.service-stye-two
+    display: flex
+    margin-top: 30px
+    align-items: center
+    .icon
+        flex: none
+        font-size: 50px
+        margin-right: 20px
+        color: $primary-color
+    h6
+        font-size: 20px
+        margin-bottom: 0
+        
+        
+/* Service Style Three */
+.services-area-three
+    background-position: 100% 100%
+
+.service-style-three
+    position: relative
+    margin-bottom: 30px
+    .details-btn
+        opacity: 0
+        +poRT(50px)
+        color: $primary-color
+    .image img
+        width: 100%
+        transition: 0.5s
+    .hover-content
+        +absmiddle()
+        +size(230px)
+        padding: 15px
+        transition: 0.5s
+        border-radius: 50%
+        +flexcenter(center)
+        background: url(../images/services/service-hover-bg.png) no-repeat center/cover
+        +res-bl(md)
+            +size(180px)
+        .icon
+            +poRT(15px, -6px)
+            +circle($primary-color, 60px)
+        h6
+            font-weight: 600
+            line-height: 1.6
+            margin-bottom: 0
+            text-align: center
+            letter-spacing: 1.8px
+            text-transform: uppercase
+            +res-ab(md)
+                font-size: 20px
+    .content
+        +poLB(0)
+        opacity: 0
+        padding: 35px
+        display: flex
+        min-height: 80%
+        transition: 0.5s
+        flex-direction: column
+        justify-content: flex-end
+        background: linear-gradient(180deg, rgba(4, 4, 4, 0.00) 0%, rgba(0, 0, 0, 0.50) 57.62%, #000 100%)
+        +res-bl(xxl)
+            +gapLR(padding, 25px)
+        h6
+            font-weight: 600
+            line-height: 1.6
+            margin-bottom: 16px
+            letter-spacing: 1.8px
+            text-transform: uppercase
+            +res-ab(md)
+                font-size: 20px
+        p
+            color: white
+    &:hover
+        .details-btn
+            opacity: 1
+            top: 25px
+            right: 25px
+        .image img
+            filter: grayscale(1)
+        .hover-content
+            opacity: 0
+            transform: translate(-50%, -50%) scale(0)
+        .content
+            opacity: 1
+            
+            
+.more-btn-with-text
+    flex-wrap: wrap
+    font-size: 15px
+    line-height: 1.6
+    text-align: center
+    +flexcenter(center)
+    letter-spacing: 2.2px
+    text-transform: uppercase
+    .read-more
+        margin-left: 5px
+        color: $primary-color
+        text-transform: uppercase
+        text-decoration: underline
+        i
+            flex: none
+            color: black
+            margin-left: 22px
+            +circle($primary-color, 20px)
+            
+/* Service Style Four */
+.services-area-four
+    &:before
+        content: ''
+        +size(15px)
+        +poLT(50%, 30%)
+        background: $primary-color
+        animation: zoomInOut 2s infinite
+    
+.service-item-four
+    &:not(:last-child)
+        margin-bottom: 100px
+        +res-bl(lg)
+            margin-bottom: 50px
+    h5
+        display: flex
+        max-width: 440px
+        margin-bottom: 15px
+        align-items: center
+        text-transform: uppercase
+        justify-content: space-between
+        +res-bl(xs)
+            font-size: 18px
+    .read-more-two
+        font-weight: 500
+        text-transform: capitalize
+        +res-bl(xs)
+            font-size: 14px
+        img
+            max-width: 30px
+            
+            
+/* Services style Five */
+.services-area-five
+    background: #070709
+    
+.service-item-five
+    margin-bottom: 40px
+    .image
+        margin-bottom: 25px
+        img
+            width: 100%
+    .content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        h5
+            margin-bottom: 0
+            +res-ab(xs)
+                font-size: 24px
+        .btn
+            padding: 0
+            border: none
+            font-size: 25px
+            border-radius: 0
+            +size(60px, 56px)
+            margin-left: 6px
+            line-height: 56px
+            text-align: center
+            background: rgba(255, 255, 255, 0.10)
+            i
+                color: white
+                transition: 0.5s
+                transform: rotate(-45deg)
+    &:hover
+        .content
+            .btn
+                background: $primary-color
+                i
+                    color: black
+                    transform: rotate(0)
+                
+/* Features Style */
+.feature-item
+    display: flex
+    padding: 27px 22px
+    align-items: center
+    margin-bottom: 40px
+    background: $lighter-color
+    justify-content: space-between
+    +res-bl(lg)
+        margin-bottom: 30px
+    h6
+        transition: 0.5s
+        margin-bottom: 0
+        +res-ab(xs)
+            font-size: 18px
+    > i
+        font-size: 25px
+        margin-left: 10px
+    &:hover
+        color: black
+        background: $primary-color
+        h6
+            color: black
+                
+/* Service Details */
+.service-images-area
+    img
+        transition: 0.5s
+        &:hover
+            filter: grayscale(1)
+
+.service-details-content
+    > h3
+        margin-bottom: 45px
+        +res-bl(md)
+            font-size: 35px
+        +res-bl(xs)
+            font-size: 30px
+    > .sub-title
+        font-size: 18px
+        margin-bottom: 45px
+    > h4
+        margin-bottom: 15px
+    > p
+        margin-bottom: 45px
+    > h5
+        margin-bottom: 20px
+    .accordion-item
+        margin-top: 15px
+        +gapLR(padding, 35px)
+        background: $lighter-color
+        +res-bl(xs)
+            padding-left: 25px
+            padding-right: 20px
+        .accordion-collapse
+            .accordion-body
+                +gapLR(padding, 0)
+            &:after
+                display: none
+        .accordion-button
+            +res-ab(md)
+                font-size: 18px
+            &:after
+                margin-right: 0

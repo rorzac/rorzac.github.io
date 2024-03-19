@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon_buildconis";
+  src: url("./flaticon_buildconis.ttf?6c6556e41d03c1a24072d1510a543de4") format("truetype"), url("./flaticon_buildconis.woff?6c6556e41d03c1a24072d1510a543de4") format("woff"), url("./flaticon_buildconis.woff2?6c6556e41d03c1a24072d1510a543de4") format("woff2"), url("./flaticon_buildconis.eot?6c6556e41d03c1a24072d1510a543de4#iefix") format("embedded-opentype"), url("./flaticon_buildconis.svg?6c6556e41d03c1a24072d1510a543de4#flaticon_buildconis") format("svg"); }
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon_buildconis !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.flaticon-roof:before {
+  content: ""; }
+
+.flaticon-milling-machine:before {
+  content: ""; }
+
+.flaticon-sketch:before {
+  content: ""; }
+
+.flaticon-manufacturing:before {
+  content: ""; }
+
+.flaticon-power-plant:before {
+  content: ""; }
+
+.flaticon-check-mark:before {
+  content: ""; }
+
+.flaticon-shape:before {
+  content: ""; }
+
+.flaticon-planing:before {
+  content: ""; }
+
+.flaticon-brickwall:before {
+  content: ""; }
+
+.flaticon-mechanic:before {
+  content: ""; }
+
+.flaticon-drafting:before {
+  content: ""; }
+
+.flaticon-stairs:before {
+  content: ""; }
+
+.flaticon-engineering:before {
+  content: ""; }
+
+.flaticon-helmet:before {
+  content: ""; }
+
+.flaticon-excavator:before {
+  content: ""; }
+
+.flaticon-blueprint:before {
+  content: ""; }
+
+.flaticon-welding:before {
+  content: ""; }
+
+.flaticon-concrete-mixer:before {
+  content: ""; }
+
+.flaticon-maintenance:before {
+  content: ""; }
+
+.flaticon-friendship:before {
+  content: ""; }
+
+.flaticon-favorites:before {
+  content: ""; }
+
+.flaticon-process:before {
+  content: ""; }
+
+.flaticon-wrench:before {
+  content: ""; }
+
+.flaticon-curve:before {
+  content: ""; }
+
+.flaticon-architect:before {
+  content: ""; }
+
+.flaticon-labor-day:before {
+  content: ""; }
+
+.flaticon-customer-support:before {
+  content: ""; }
+
+.flaticon-trophy:before {
+  content: ""; }
+
+.flaticon-manufacture:before {
+  content: ""; }
+
+.flaticon-maintenance-1:before {
+  content: ""; }
+
+.flaticon-under-construction:before {
+  content: ""; }
+
+.flaticon-tools:before {
+  content: ""; }

@@ -1,0 +1,49 @@
+/*******************************************************/
+/******************** ## Lets Talk *******************/
+/*******************************************************/
+.lets-talk-text
+    color: white
+    font-size: 170px
+    font-weight: 700
+    display: inline-block
+    text-transform: capitalize
+    span
+        color: $primary-color
+        text-decoration: underline
+        text-underline-offset: 30px
+        text-decoration-thickness: 7px
+        +res-bl(lg)
+            text-underline-offset: 15px
+            text-decoration-thickness: 3px
+    +res-bl(xl)
+        font-size: 140px
+    +res-bl(lg)
+        font-size: 110px
+    +res-bl(md)
+        font-size: 80px
+    +res-bl(sm)
+        font-size: 70px
+    +res-bl(ms)
+        font-size: 55px
+    +res-bl(xs)
+        font-size: 45px
+    i
+        color: $primary-color
+        transform: rotate(-45deg) translateX(-15px)
+        +res-bl(sm)
+            transform: rotate(-45deg) translateX(-10px)
+        +res-bl(xs)
+            transform: rotate(-45deg) translateX(-5px)
+            
+.talk-to-email
+    text-transform: capitalize
+    +res-ab(xl)
+        font-size: 24px
+    +res-bl(md)
+        font-size: 20px
+    +res-bl(ms)
+        font-size: 18px
+    a
+        text-decoration: underline
+    span
+        color: $primary-color

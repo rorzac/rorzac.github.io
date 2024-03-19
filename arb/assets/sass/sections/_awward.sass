@@ -1,0 +1,123 @@
+/*******************************************************/
+/******************* ## Awward Area ********************/
+/*******************************************************/
+.awward-item
+    display: flex
+    border-top: 1px solid #151516
+    &:last-child
+        border-bottom: 1px solid #151516
+    .year-website
+        flex: none
+        width: 26%
+        color: white
+        transition: 0.5s
+        font-weight: 600
+        position: relative
+        +flexcenter(center)
+        +res-bl(lg)
+            width: 30%
+        +res-bl(md)
+            width: 40%
+        +res-bl(ms)
+            width: 20%
+        .year
+            +absmiddle()
+            min-width: 75%
+            font-size: 22px
+            max-width: 100%
+            max-height: 100%
+            transition: 0.5s
+            padding: 10px 25px
+            text-align: center
+            border-radius: 25px
+            border: 1px dashed #18181A
+            +res-bl(md)
+                font-size: 18px
+            +res-bl(ms)
+                font-size: 16px
+                padding: 5px 10px
+                border-radius: 15px
+        .text
+            opacity: 0
+            padding: 15px
+            max-width: 80%
+            font-size: 20px
+            transition: 0.5s
+            +res-bl(md)
+                font-size: 16px
+                line-height: 1.6
+            +res-bl(ms)
+                display: none
+    .icon
+        flex: none
+        width: 16%
+        padding: 15px
+        +flexcenter(center)
+        border-left: 1px solid #151516
+        +res-bl(lg)
+            display: none
+    .content
+        width: 42%
+        padding: 15px 50px
+        +flexcenter(space-between)
+        border-left: 1px solid #151516
+        +res-bl(lg)
+            width: 50%
+        +res-bl(md)
+            width: 40%
+            padding: 15px
+        +res-bl(ms)
+            width: 60%
+        h5
+            margin-bottom: 0
+            +res-bl(md)
+                font-size: 16px
+                line-height: 1.6
+        .number
+            flex: none
+            +size(45px)
+            color: white
+            font-size: 14px
+            font-weight: 600
+            margin-left: 10px
+            line-height: 45px
+            text-align: center
+            border-radius: 50%
+            border: 1px solid #18181A
+            +res-bl(md)
+                display: none
+    .award-btn
+        flex: none
+        width: 16%
+        padding: 15px
+        min-height: 150px
+        +flexcenter(center)
+        border-left: 1px solid #151516
+        +res-bl(lg)
+            width: 20%
+        +res-bl(md)
+            min-height: auto
+        +res-bl(ms)
+            width: 20%
+            padding: 5px
+        .details-btn
+            color: white
+            font-size: 35px
+            +circle(#151516, 78px)
+            transform: rotate(-45deg)
+            +res-bl(md)
+                +size(55px)
+                font-size: 20px
+                line-height: 55px
+            
+    &:hover
+        .year-website
+            background: #151516
+            .year
+                +res-ab(ms)
+                    opacity: 0
+            .text
+                opacity: 1
+        .details-btn
+            color: black
+            background: $primary-color

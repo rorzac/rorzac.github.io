@@ -1,0 +1,332 @@
+/*******************************************************/
+/******************* ## About Area ********************/
+/*******************************************************/
+.about-content
+    +res-ab(xxl)
+        margin-right: -10px
+    .section-title
+        h2
+            font-weight: 600
+            +res-ab(lg)
+                font-size: 50px
+            
+.about-agency-content
+    p
+        color: #A9ACB9
+    h5
+        font-size: 20px
+        margin-top: 30px
+        color: $primary-color
+    .service-stye-two
+        max-width: 250px
+        
+/* Skillbar */
+.skillbar
+    height: 2px
+    margin-top: 70px
+    position: relative
+    border-radius: 7.5px
+    background: rgba(255, 255, 255, 0.14)
+    .skillbar-title,
+    .skill-bar-percent
+        top: -46px
+        color: white
+        font-size: 20px
+        font-weight: 600
+        position: absolute
+        font-family: $base-font
+    .skillbar-title
+        z-index: 2
+        background: #010101
+    .skill-bar-percent
+        top: -40px
+        right: -3px
+        color: #A9ACB9
+        font-size: 18px
+    .skillbar-bar
+        width: 0
+        height: 100%
+        position: relative
+        border-radius: 7.5px
+        background-image: none
+        overflow: inherit !important
+        background-color: $primary-color
+        &::after
+            content: ''
+            width: 13px
+            height: 12px
+            position: absolute
+            right: 0
+            bottom: 0
+            background: $primary-color
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
+        
+/* Skillbar Area */
+.skillbar-area
+    background: #070708
+        
+.skillbar-content
+    .section-title
+        h2
+            +res-ab(md)
+                font-size: 40px
+                line-height: 1.7
+        
+        
+/* About Two */
+.about-two-images
+    display: flex
+    position: relative
+    padding-bottom: 7%
+    .image
+        img
+            width: 100%
+        &.one
+            width: 50%
+            flex: none
+            margin-right: 23px
+        &.two
+            margin-top: 10%
+    .video-play-text
+        +absmiddle()
+        +res-bl(sm)
+            top: 25%
+    .experince-years
+        +poLB(13%, 0)
+        color: black
+        line-height: 1
+        text-align: center
+        padding: 35px 15px
+        +size(185px, 180px)
+        background: $primary-color
+        b
+            display: block
+            font-size: 75px
+            margin-bottom: 10px
+        &:after
+            content: ''
+            +poRT(100%, 0)
+            border-bottom: 20px solid transparent
+            border-right: 26px solid $primary-color
+        +res-bl(md)
+            padding: 26px 10px
+            +size(150px, 145px)
+            b
+                font-size: 45px
+        +res-bl(ms)
+            left: 8%
+            padding: 10px
+            +size(100px, 95px)
+            b
+                font-size: 30px
+            span
+                font-size: 14px
+            &:after
+                border-right-width: 16px
+                border-bottom-width: 12px
+            
+.about-two-content
+    max-width: 575px
+    .service-stye-two
+        max-width: 550px
+        h6
+            line-height: 1.5
+            +res-bl(ms)
+                font-size: 18px
+            +res-bl(xs)
+                font-size: 16px
+    > h5
+        margin-bottom: 20px
+        color: $primary-color
+    > p
+        max-width: 540px
+    .skillbar
+        height: 7px
+        background: #D9D9D9
+        border-radius: 3.5px
+        .skillbar-bar
+            &:after
+                display: none
+            .skill-bar-percent
+                color: white
+                
+    .service-item
+        margin-bottom: 25px
+        border-color: rgba(255, 255, 255, 0.06)
+        .content
+            h6
+                font-size: 18px
+                letter-spacing: 1.62px
+            p
+                color: #A9ADB9
+        .details-btn
+            font-size: 40px
+            &:not(:hover)
+                color: white
+                
+.author-name-btn
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    .author
+        +size(66px)
+        margin-top: 15px
+        border-radius: 50%
+        margin-right: 15px
+    .signature
+        margin-top: 15px
+        margin-right: 50px
+        +res-bl(sm)
+            margin-right: 25px
+    .theme-btn
+        margin-top: 15px
+        letter-spacing: 0.75px
+        +res-ab(sm)
+            +gapTB(padding, 15px)
+            
+/* Stratgy & Missoin */
+.stratgy-missoin-left
+    .first-letter-big
+        font-size: 20px
+        color: $primary-color
+        &:first-letter
+            font-size: 40px
+            text-transform: uppercase
+
+
+.stratgy-missoin-right
+    max-width: 570px
+    +res-ab(xl)
+        margin-left: auto
+        
+/* About Two Styles */
+.about-three-images
+    position: relative
+    .experience-corner
+        +poLT(0)
+        display: flex
+    .experience-circle
+        +poLB(0)
+        +size(270px)
+        border-radius: 50%
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        z-index: 1
+        +res-bl(lg)
+            +size(200px)
+        +res-bl(xs)
+            +size(150px)
+        &::before
+            content: ''
+            +poLT(0)
+            +size(100%)
+            background: $primary-color
+            border-radius: 50%
+            z-index: -1
+        &::after
+            content: ''
+            +size(100%)
+            +poLB(8px)
+            border: 1px solid white
+            border-radius: 50%
+            z-index: -2
+        span
+            color: #000
+            line-height: 1
+            font-size: 95px
+            font-weight: 700
+            +res-bl(lg)
+                font-size: 70px
+            +res-bl(xs)
+                font-size: 50px
+        p
+            color: #000
+            font-size: 18px
+            font-weight: 500
+            margin-bottom: 0
+            +res-bl(lg)
+                font-size: 16px
+            +res-bl(xs)
+                font-size: 14px
+        
+                
+/* About Page Hero */
+.about-page-hero
+    overflow: hidden
+    &.bg-primary-shape
+        &:after
+            transform: translate(28%, 270px) rotate(-40deg)
+            +res-bl(lb)
+                transform: translate(50%, 300px) rotate(-40deg)
+            +res-bl(lg)
+                display: none
+    .headline-wrap
+        +poLB(0)
+        z-index: -1
+        width: 100%
+        transform: rotate(40deg) translate(-25%, 400px)
+        +res-bt(lg, xxl)
+            transform: rotate(40deg) translate(-25%, 200px)
+        +res-bl(lg)
+            transform: rotate(40deg) translate(-25%, 85px)
+        +res-bl(sm)
+            transform: rotate(40deg) translate(-25%, 0)
+
+.about-hero-content
+    +res-ab(lg)
+        margin-right: -85px
+    h1
+        line-height: 1.38
+        margin-bottom: 35px
+        text-transform: uppercase
+        +res-bl(lp)
+            font-size: 70px
+        +res-bl(xl)
+            font-size: 60px
+        +res-bl(md)
+            font-size: 45px
+        +res-bl(sm)
+            font-size: 40px
+        +res-bl(ms)
+            font-size: 35px
+        +res-bl(xs)
+            font-size: 30px
+        span
+            color: $primary-color
+            font-family: $script-font
+    p
+        max-width: 685px
+        margin-bottom: 40px
+    .hero-scroll-down a
+        +size(110px)
+        line-height: 110px
+        
+.about-hero-image
+    margin-right: -180px
+    +res-bl(xl)
+        margin-right: -100px
+    +res-bl(lg)
+        display: none
+        
+/* About Page About */
+.our-experience-years
+    font-weight: 700
+    text-transform: capitalize
+    .years
+        display: block
+        line-height: 0.7
+        font-size: 285px
+        margin-bottom: 50px
+        color: $primary-color
+        +res-bl(md)
+            font-size: 30vw
+    .text
+        font-size: 58px
+        line-height: 1.2
+        color: transparent
+        -webkit-text-stroke: 1px
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.55)
+        +res-bl(md)
+            font-size: 8vw

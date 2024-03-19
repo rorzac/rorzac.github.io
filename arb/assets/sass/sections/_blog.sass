@@ -1,0 +1,386 @@
+/*******************************************************/
+/******************** ## Blog Area ********************/
+/*******************************************************/
+.blog-meta
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    li
+        font-weight: 500
+        line-height: 1.5
+        margin-bottom: 5px
+        &:not(:last-child)
+            margin-right: 25px
+        
+.blog-item
+    position: relative
+    padding-bottom: 30px
+    +flexcenter(space-between)
+    border-bottom: 1px dashed $border-color
+    &:not(:last-child)
+        margin-bottom: 42px
+    +res-bl(md)
+        flex-direction: column
+        align-items: flex-start
+    .content
+        .blog-meta
+            margin-bottom: 12px
+        h4
+            text-transform: capitalize
+            +res-ab(xl)
+                font-size: 28px
+            +res-bl(ms)
+                font-size: 20px
+    .image
+        opacity: 0
+        right: 280px
+        max-width: 24%
+        transition: 0.5s
+        transform: scale(0)
+        position: absolute
+        +res-bl(xl)
+            right: 220px
+        +res-bl(md)
+            right: 0
+    .read-more
+        color: white
+        font-size: 15px
+        font-weight: 600
+        text-align: right
+        letter-spacing: 2.5px
+        text-transform: uppercase
+        +res-bt(md, lg)
+            max-width: 140px
+        +res-bl(md)
+            font-size: 12px
+            margin-top: 10px
+        i
+            margin: 0 12px 0 0
+    &:hover
+        .content
+            h4 a
+                text-decoration: underline
+        .image
+            opacity: 1
+            transform: scale(1)
+        .read-more
+            color: $primary-color
+    &.style-two
+        +res-ab(xl)
+            +gapLR(padding, 80px)
+        .content
+            h4
+                +res-ab(xl)
+                    font-size: 30px
+                a
+                    text-decoration: none
+        .details-btn
+            color: white
+            font-size: 40px
+            +circle($lighter-color, 78px)
+            +res-bl(md)
+                +size(65px)
+                font-size: 25px
+                margin-top: 12px
+                line-height: 65px
+            +res-bl(ms)
+                +size(50px)
+                font-size: 20px
+                line-height: 50px
+        &:hover
+            .content
+                h4 a span
+                    font-style: italic
+                    color: $primary-color
+            .details-btn
+                color: black
+                background: $primary-color
+                
+/* Blog Style Two */
+.blog-two-area
+    background: #050607
+    
+.blog-item-two
+    margin-bottom: 40px
+    .image
+        position: relative
+        margin-bottom: 25px
+        img
+            width: 100%
+        .details-btn
+            opacity: 0
+            +absmiddle()
+            color: black
+            font-size: 45px
+            +circle($primary-color, 100px)
+            +res-bl(xs)
+                +size(60px)
+                font-size: 30px
+                line-height: 60px
+            i
+                transform: rotate(-45deg)
+    .blog-meta
+        margin-bottom: 10px
+        li
+            i
+                margin-right: 5px
+                color: $primary-color
+    .content
+        h4
+            margin-bottom: 20px
+            +res-bl(xs)
+                font-size: 22px
+    .read-more-two
+        font-size: 14px
+    &:hover
+        .details-btn
+            opacity: 1
+        
+    &.style-two
+        position: relative
+        margin-bottom: 60px
+        padding-bottom: 75px
+        .image
+            img
+                transition: 0.5s
+                filter: grayscale(1)
+        .content
+            +poLB(25px, 0)
+            padding: 25px 40px
+            background: #0B0A0A
+            min-width: calc(100% - 95px)
+            max-width: calc(100% - 50px)
+            +res-bl(ms)
+                +gapLR(padding, 25px)
+            +res-bl(xs)
+                left: 15px
+                +gapLR(padding, 20px)
+                max-width: calc(100% - 30px)
+            .blog-meta
+                +res-bl(ms)
+                    font-size: 14px
+                +res-bl(xs)
+                    i
+                        display: none
+            h5
+                +res-ab(xl)
+                    font-size: 24px
+                +res-bl(xs)
+                    font-size: 20px
+            .read-more
+                font-size: 15px
+                color: $primary-color
+                i
+                    font-size: 16px
+                    margin-left: 10px
+        &:hover
+            .image
+                img
+                    filter: grayscale(0)
+
+/* Blog Standard */    
+.blog-standard-item,
+.blog-details-content
+    margin-bottom: 60px
+    .image
+        position: relative
+        margin-bottom: 30px
+        .category
+            +poLT(15px)
+            color: black
+            font-size: 14px
+            font-weight: 700
+            padding: 3px 22px
+            border-radius: 4px
+            letter-spacing: 1.89px
+            text-transform: uppercase
+            background: $primary-color
+        img
+            width: 100%
+    .content
+        .blog-meta
+            padding-bottom: 15px
+            li
+                i
+                    margin-right: 8px
+                    color: $primary-color
+                &:not(:last-child)
+                    margin-right: 0
+                    &:after
+                        content: '/'
+                        +gapLR(margin, 10px)
+        h4
+            margin-bottom: 18px
+            +res-ab(md)
+                font-size: 32px
+            +res-bl(xs)
+                font-size: 22px
+                line-height: 1.5
+        p
+            margin-bottom: 30px
+            +res-ab(sm)
+                font-size: 18px
+        .read-more
+            font-size: 14px
+            font-weight: 700
+            letter-spacing: 2.52px
+            text-transform: uppercase
+            i
+                font-size: 20px
+                transform: rotate(-32.364deg)
+
+/* Blog Details */
+.blog-details-content
+    > h4
+        +res-ab(xl)
+            font-size: 28px
+        +res-bl(md)
+            font-size: 22px
+                
+blockquote
+    font-size: 22px
+    line-height: 1.9
+    font-weight: 600
+    margin-top: 55px
+    position: relative
+    margin-bottom: 50px
+    color: $heading-color
+    padding: 25px 35px 30px
+    background: $lighter-color
+    +res-bl(ms)
+        font-size: 20px
+    +res-bl(xs)
+        font-size: 18px
+        +gapLR(padding, 25px)
+    &:after
+        content: "\f10e"
+        line-height: 1
+        +poRB(33px)
+        font-size: 40px
+        font-weight: 900
+        color: $primary-color
+        font-family: "Font Awesome 5 Pro"
+    .blockquote-footer
+        color: white
+        display: block
+        font-size: 16px
+        font-weight: 400
+        margin-bottom: 0
+        margin-top: 20px
+        &:before
+            content: '——'
+            margin-right: 20px
+            color: $primary-color
+
+.tag-share
+    flex-wrap: wrap
+    +flexcenter(space-between)
+    .item
+        display: flex
+        margin-bottom: 25px
+        b
+            color: white
+            font-size: 20px
+            margin-right: 12px
+    .tag-coulds
+        a
+            font-weight: 500
+            text-transform: uppercase
+    .social-style-one
+        a
+            border: none
+            border-radius: 0
+            &:not(:hover)
+                background: $lighter-color
+        
+                
+/* Next Prev Blog */
+.next-prev-blog
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .item
+        display: flex
+        max-width: 310px
+        align-items: center
+        margin-bottom: 30px
+        .image
+            flex: none
+            max-width: 100px
+            margin-right: 30px
+            +res-bl(xs)
+                max-width: 90px
+        h6
+            line-height: 1.65
+            margin-bottom: 5px
+            +res-ab(xs)
+                font-size: 18px
+
+/* Comments */
+.comment-title
+    +res-ab(xl)
+        font-size: 28px
+.admin-comment
+    display: flex
+    max-width: 630px
+    padding: 45px 40px 35px
+    background: $lighter-color
+    +res-bl(sm)
+        +gapLR(padding, 25px)
+    +res-bl(ms)
+        flex-wrap: wrap
+    .author-thumb
+        flex: none
+        max-width: 100px
+        margin-right: 18px
+        margin-bottom: 18px
+        img
+            border-radius: 50%
+    .content
+        z-index: 1
+        position: relative
+        h6
+            font-weight: 500
+            margin-bottom: 0
+            +res-ab(xs)
+                font-size: 18px
+                text-transform: capitalize
+        .designation
+            display: block
+            margin-bottom: 12px
+            color: $primary-color
+        p
+            line-height: 2
+            +res-ab(xs)
+                font-size: 18px
+        &:after
+            +poRT(10px)
+            z-index: -1
+            opacity: 0.5
+            font-size: 45px
+            content: "\f10e"
+            font-weight: 300
+            color: $primary-color
+            font-family: "Font Awesome 5 Pro"
+            +res-bl(ms)
+                top: -100px
+                
+/* Comment Form */
+.comment-form
+    max-width: 630px
+    .condition
+        display: flex
+        margin-bottom: 50px
+        align-items: flex-start
+        input
+            margin-top: 10.6px
+            margin-right: 10px
+        label
+            +res-ab(xs)
+                font-size: 17px
+    &.style-two.contact-content-part
+        +res-ab(sm)
+            +gapLR(padding, 45px)
+        form
+            margin-top: 0
+    

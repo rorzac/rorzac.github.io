@@ -1,0 +1,55 @@
+/*******************************************************/
+/******************* ## Work Process *******************/
+/*******************************************************/
+.work-process-item
+    z-index: 1
+    transition: 0.5s
+    margin-top: 100px
+    position: relative
+    padding: 50px 40px
+    text-align: center
+    background: $lighter-color
+    +res-bl(xs)
+        padding: 40px 30px
+    .number
+        color: white
+        font-size: 18px
+        transition: 0.5s
+        font-weight: 500
+        +circle(#0E1012, 32px)
+        transform: translate(-50%)
+        +poLB(50%, calc(100% + 35px))
+    .icon
+        height: 100px
+        margin-bottom: 20px
+        +flexcenter(center)
+        img
+            transition: 0.5s
+    .content
+        h5
+            margin-bottom: 10px
+            text-transform: capitalize
+        p
+            margin-bottom: 5px
+            text-transform: capitalize
+    .shape
+        opacity: 0
+        +poLB(10px)
+        z-index: -1
+        transition: 0.5s
+    &:after
+        content: ''
+        z-index: -1
+        +poLT(-15px, -50px)
+        +size(calc(100% + 30px), 1px)
+        border-top: 1.5px dashed rgba(255, 255, 255, 0.17)
+    &:hover
+        background: black
+        .number
+            color: $primary-color
+        .icon img
+            filter: grayscale(1)
+        .shape
+            left: 0
+            bottom: 0
+            opacity: 1

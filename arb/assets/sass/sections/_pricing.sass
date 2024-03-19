@@ -1,0 +1,61 @@
+/*******************************************************/
+/******************* ## Pricing Area ********************/
+/*******************************************************/
+.pricing-area
+    background: #090A0C
+
+.pricing-item
+    padding: 50px
+    background: black
+    margin-bottom: 30px
+    border: 1px solid #090909
+    +res-bt(md, lg)
+        +gapLR(padding, 35px)
+    +res-bl(xs)
+        padding: 35px
+    .icon
+        color: white
+        line-height: 1
+        font-size: 60px
+        margin-bottom: 20px
+    h4
+        font-size: 25px
+        margin-bottom: 22px
+    .price
+        color: white
+        line-height: 1
+        font-size: 50px
+        font-weight: 600
+        margin-bottom: 45px
+        display: inline-block
+        letter-spacing: 1.5px
+        &:before
+            content: '$'
+            font-size: 22px
+            font-weight: 400
+        &:after
+            font-size: 15px
+            font-weight: 400
+            letter-spacing: 0
+            color: $base-color
+            content: '/ Monthly'
+    .list-style-two
+        li
+            +res-bl(xs)
+                font-size: 15px
+                &:before
+                    margin-right: 15px
+    .theme-btn
+        padding: 13px
+        display: block
+        font-size: 15px
+        font-weight: 500
+        margin-top: 45px
+        text-align: center
+        +gapLR(margin, -15px)
+        letter-spacing: 0.9px
+        border: 1px solid $border-color
+        
+#yearly .pricing-item .price:after
+    content: '/ Yearly'
+    

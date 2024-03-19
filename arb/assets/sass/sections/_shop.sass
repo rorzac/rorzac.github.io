@@ -1,0 +1,220 @@
+/*******************************************************/
+/******************** ## Shop Area *********************/
+/*******************************************************/
+.shop-shorter
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    padding: 8px 20px 8px 40px
+    border: 1px solid $border-color
+    +res-bl(sm)
+        +gapLR(padding, 15px)
+    +res-bl(xs)
+        font-size: 14px
+    .grid-list
+        margin-left: auto
+        margin-right: 70px
+        align-items: center
+        display: inline-flex
+        +res-bl(md)
+            margin-right: 15px
+        +res-bl(xs)
+            margin-right: 0
+        a
+            margin-right: 12px
+    .nice-select
+        border: none
+        padding: 0 22px 0 0
+        background: transparent
+        text-transform: capitalize
+        &:after
+            +size(8px)
+            right: 5px
+
+.shop-wrapper
+    max-width: 900px
+
+.product-item
+    text-align: center
+    margin-bottom: 55px
+    .image
+        position: relative
+        margin-bottom: 20px
+        .social-style-two
+            +absmiddle()
+            visibility: hidden
+            opacity: 0
+            flex-wrap: nowrap
+            transition: .4s
+            a
+                +size(37px)
+                color: black
+                line-height: 37px
+                +gapLR(margin, 6px)
+                &:not(:hover)
+                    background: white
+    .content
+        h6
+            margin-bottom: 0
+    &:hover
+        .social-style-two
+            visibility: visible
+            opacity: 1
+        
+/* Product Details */
+.product-details-images
+    +res-ab(xl)
+        max-width: 555px
+.preview-images
+    margin-bottom: 25px
+    .preview-item
+        position: relative
+        img
+            width: 100%
+        .pupup-btn
+            color: black
+            +absmiddle()
+            font-size: 25px
+            +circle($primary-color, 130px)
+.thumb-images
+    justify-content: space-between
+    .thumb-item
+        width: calc(25% - 15px)
+        img
+            width: 100%
+
+.product-details-content
+    h3
+        display: flex
+        font-size: 36px
+        align-items: center
+        +res-bl(md)
+            font-size: 33px
+        +res-bl(xs)
+            font-size: 28px
+        span
+            color: black
+            font-size: 14px
+            padding: 2px 6px
+            margin-left: 22px
+            background: $primary-color
+    .h5
+        font-size: 20px
+        font-weight: 500
+        
+    .brand-ratting
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        .brand
+            +res-bl(xs)
+                font-size: 16px
+        .ratting
+            margin-left: 25px
+            margin-right: 10px
+            i
+                margin: 3px
+                color: #FFB41B
+                font-size: 14px
+                +res-bl(sm)
+                    font-size: 12px
+        a
+            color: white
+    .product-size
+        max-width: 515px
+        .nice-select
+            padding: 4px 20px
+            background: transparent
+            &:after
+                +size(8px)
+                right: 18px
+    .price
+        color: white
+        display: block
+        font-size: 30px
+        font-weight: 700
+        +res-bl(xs)
+            font-size: 25px
+        del
+            font-size: 20px
+            font-weight: 500
+            color: $base-color
+    .add-to-cart
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        .theme-btn
+            +gapTB(padding, 15px)
+            margin: 15px 30px 0 0
+        .wishlist
+            margin-top: 15px
+            margin-right: 30px
+            color: $primary-color
+            background: transparent
+            +circle($lighter-color, 50px)
+        input
+            color: white
+            max-width: 130px
+            margin-top: 15px
+            padding: 10px 30px
+            background: transparent
+            
+.shop-details-tab-area
+    h4, h5
+        margin-bottom: 20px
+            
+.product-information-tab
+    li
+        margin-bottom: 15px
+        &:not(:last-child)
+            margin-right: 55px
+            +res-bl(lg)
+                margin-right: 15px
+        a
+            font-size: 14px
+            font-weight: 500
+            padding: 11px 45px
+            display: inline-block
+            color: $heading-color
+            text-transform: uppercase
+            border: 1px solid $border-color
+            +res-bl(lg)
+                padding: 6px 30px
+            &.active
+                color: black
+                background: $primary-color
+                
+.review-item
+    max-width: 650px
+    +res-ab(ms)
+        display: flex
+    &.child-review
+        margin-left: 80px
+        +res-bl(sm)
+            margin-left: 35px
+    .thumb
+        flex: none
+        max-width: 100px
+        margin-right: 25px
+        margin-bottom: 15px
+        img
+            border-radius: 50%
+    .content
+        .name-ratting
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            h6
+                margin-right: 25px
+                margin-bottom: 5px
+            .ratting
+                margin-right: 25px
+                margin-bottom: 5px
+                i
+                    font-size: 14px
+            .date
+                margin-bottom: 7px
+    &:not(:last-child)
+        margin-bottom: 30px
+    
+            

@@ -1,0 +1,82 @@
+/*******************************************************/
+/******************** ## FAQs Area ********************/
+/*******************************************************/
+.faq-image-part
+    +poLT(0)
+    z-index: -1
+    overflow: hidden
+    +size(44vw, 100%)
+    +res-bl(lg)
+        width: 100%
+        height: 500px
+        position: relative
+        margin-bottom: 65px
+    .headline-wrap
+        +poLT(0)
+        width: 100%
+        transform: rotate(-44deg) translate(-25%, -140px)
+        +res-bl(lg)
+            transform: rotate(-40deg) translate(-25%, -85px)
+        +res-bl(sm)
+            transform: rotate(-40deg) translate(-25%, 0)
+.faq-shape
+    z-index: -2
+    +poLT(50px, -48px)
+
+.accordion-item
+    z-index: 1
+    border: none
+    padding: 25px 0
+    border-radius: 0
+    position: relative
+    background: transparent
+    &:first-of-type
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+        .accordion-button
+            border-top-left-radius: 0
+            border-top-right-radius: 0
+    &:last-of-type
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+        .accordion-button
+            border-bottom-left-radius: 0
+            border-bottom-right-radius: 0
+    .accordion-button
+        padding: 0
+        border: none
+        font-weight: 500
+        box-shadow: none
+        color: $heading-color
+        background: transparent
+        +res-ab(md)
+            font-size: 20px
+        +res-bl(ms)
+            font-size: 14px
+        &:after
+            flex: none
+            +size(auto)
+            content: "\f068"
+            margin-right: 15px
+            background: transparent
+            font-family: "Font Awesome 5 Pro"
+        &.collapsed
+            &:after
+                content: "\f067"
+    .accordion-collapse
+        &:after
+            content: ''
+            opacity: 0
+            z-index: -1
+            +absmiddle()
+            transition: 0.5s
+            background: $lighter-color
+            +size(calc(100% + 70px), 100%)
+        &.show:after
+            opacity: 1
+        .accordion-body
+            padding: 20px 0 0
+            +res-bl(ms)
+                +gapLR(padding, 20px)
+            p:last-child
+                margin-bottom: 0

@@ -1,0 +1,153 @@
+$flaticon_buildconis-font: "flaticon_buildconis";
+
+@font-face {
+    font-family: $flaticon_buildconis-font;
+    src: url("./flaticon_buildconis.ttf?6c6556e41d03c1a24072d1510a543de4") format("truetype"),
+url("./flaticon_buildconis.woff?6c6556e41d03c1a24072d1510a543de4") format("woff"),
+url("./flaticon_buildconis.woff2?6c6556e41d03c1a24072d1510a543de4") format("woff2"),
+url("./flaticon_buildconis.eot?6c6556e41d03c1a24072d1510a543de4#iefix") format("embedded-opentype"),
+url("./flaticon_buildconis.svg?6c6556e41d03c1a24072d1510a543de4#flaticon_buildconis") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_buildconis !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_buildconis-map: (
+    "roof": "\f101",
+    "milling-machine": "\f102",
+    "sketch": "\f103",
+    "manufacturing": "\f104",
+    "power-plant": "\f105",
+    "check-mark": "\f106",
+    "shape": "\f107",
+    "planing": "\f108",
+    "brickwall": "\f109",
+    "mechanic": "\f10a",
+    "drafting": "\f10b",
+    "stairs": "\f10c",
+    "engineering": "\f10d",
+    "helmet": "\f10e",
+    "excavator": "\f10f",
+    "blueprint": "\f110",
+    "welding": "\f111",
+    "concrete-mixer": "\f112",
+    "maintenance": "\f113",
+    "friendship": "\f114",
+    "favorites": "\f115",
+    "process": "\f116",
+    "wrench": "\f117",
+    "curve": "\f118",
+    "architect": "\f119",
+    "labor-day": "\f11a",
+    "customer-support": "\f11b",
+    "trophy": "\f11c",
+    "manufacture": "\f11d",
+    "maintenance-1": "\f11e",
+    "under-construction": "\f11f",
+    "tools": "\f120",
+);
+
+.flaticon-roof:before {
+    content: map-get($flaticon_buildconis-map, "roof");
+}
+.flaticon-milling-machine:before {
+    content: map-get($flaticon_buildconis-map, "milling-machine");
+}
+.flaticon-sketch:before {
+    content: map-get($flaticon_buildconis-map, "sketch");
+}
+.flaticon-manufacturing:before {
+    content: map-get($flaticon_buildconis-map, "manufacturing");
+}
+.flaticon-power-plant:before {
+    content: map-get($flaticon_buildconis-map, "power-plant");
+}
+.flaticon-check-mark:before {
+    content: map-get($flaticon_buildconis-map, "check-mark");
+}
+.flaticon-shape:before {
+    content: map-get($flaticon_buildconis-map, "shape");
+}
+.flaticon-planing:before {
+    content: map-get($flaticon_buildconis-map, "planing");
+}
+.flaticon-brickwall:before {
+    content: map-get($flaticon_buildconis-map, "brickwall");
+}
+.flaticon-mechanic:before {
+    content: map-get($flaticon_buildconis-map, "mechanic");
+}
+.flaticon-drafting:before {
+    content: map-get($flaticon_buildconis-map, "drafting");
+}
+.flaticon-stairs:before {
+    content: map-get($flaticon_buildconis-map, "stairs");
+}
+.flaticon-engineering:before {
+    content: map-get($flaticon_buildconis-map, "engineering");
+}
+.flaticon-helmet:before {
+    content: map-get($flaticon_buildconis-map, "helmet");
+}
+.flaticon-excavator:before {
+    content: map-get($flaticon_buildconis-map, "excavator");
+}
+.flaticon-blueprint:before {
+    content: map-get($flaticon_buildconis-map, "blueprint");
+}
+.flaticon-welding:before {
+    content: map-get($flaticon_buildconis-map, "welding");
+}
+.flaticon-concrete-mixer:before {
+    content: map-get($flaticon_buildconis-map, "concrete-mixer");
+}
+.flaticon-maintenance:before {
+    content: map-get($flaticon_buildconis-map, "maintenance");
+}
+.flaticon-friendship:before {
+    content: map-get($flaticon_buildconis-map, "friendship");
+}
+.flaticon-favorites:before {
+    content: map-get($flaticon_buildconis-map, "favorites");
+}
+.flaticon-process:before {
+    content: map-get($flaticon_buildconis-map, "process");
+}
+.flaticon-wrench:before {
+    content: map-get($flaticon_buildconis-map, "wrench");
+}
+.flaticon-curve:before {
+    content: map-get($flaticon_buildconis-map, "curve");
+}
+.flaticon-architect:before {
+    content: map-get($flaticon_buildconis-map, "architect");
+}
+.flaticon-labor-day:before {
+    content: map-get($flaticon_buildconis-map, "labor-day");
+}
+.flaticon-customer-support:before {
+    content: map-get($flaticon_buildconis-map, "customer-support");
+}
+.flaticon-trophy:before {
+    content: map-get($flaticon_buildconis-map, "trophy");
+}
+.flaticon-manufacture:before {
+    content: map-get($flaticon_buildconis-map, "manufacture");
+}
+.flaticon-maintenance-1:before {
+    content: map-get($flaticon_buildconis-map, "maintenance-1");
+}
+.flaticon-under-construction:before {
+    content: map-get($flaticon_buildconis-map, "under-construction");
+}
+.flaticon-tools:before {
+    content: map-get($flaticon_buildconis-map, "tools");
+}

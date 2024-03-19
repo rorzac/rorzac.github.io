@@ -1,0 +1,487 @@
+/*******************************************************/
+/******************  ## Common Classes *****************/
+/*******************************************************/
+.page-wrapper
+    position: relative
+    z-index: 9
+    width: 100%
+    margin: 0 auto
+    overflow: hidden
+    min-width: 300px
+    
+.home-two
+    .container
+        +res-ab(xl)
+            max-width: 1330px
+    
+.container
+    +res-ab(xl)
+        max-width: $container
+        padding-left: $gutter/2
+        padding-right: $gutter/2
+        &.container-1695
+            max-width: 1725px
+        &.container-1530
+            max-width: 1560px
+        &.container-1450
+            max-width: 1480px
+        &.container-1280
+            max-width: 1310px
+        
+.container-fluid
+    +res-ab(sm)
+        +gapLR(padding, 25px)
+    +res-ab(xxl)
+        +gapLR(padding, 70px)
+      
+.row
+    --bs-gutter-x: 30px
+    
+.no-gap
+    --bs-gutter-x: 0
+    
+@for $i from 1 through 30
+    .gap-#{5 * $i}
+        +res-ab(xxl)
+            --bs-gutter-x: #{5px * $i}
+        
+.row-cols-xl-7
+    > *
+        +res-ab(xl)
+            width: 14.2857%
+            flex: 0 0 auto
+        
+.col-small
+    +res-bl(xs)
+        width: 100%
+    
+/** Section Title style **/
+.section-title
+    margin-top: -8px
+    position: relative
+    .sub-title
+        line-height: 1.3
+        font-weight: 500
+        padding-left: 8px
+        letter-spacing: 1px
+        align-items: center
+        display: inline-flex
+        color: $primary-color
+        border-left: 1.5px solid
+        text-transform: uppercase
+    h2
+        span
+            font-family: $script-font
+        i
+            color: $primary-color
+        +res-bl(lg)
+            font-size: 45px
+        +res-bl(md)
+            font-size: 40px
+        +res-bl(sm)
+            font-size: 35px
+            line-height: 1.35
+        +res-bl(xs)
+            font-size: 30px
+            
+.sub-title-style-two
+    color: white
+    display: flex
+    font-size: 20px
+    font-weight: 600
+    &:before
+        content: ''
+        +size(38px, 2px)
+        margin-top: 18px
+        margin-right: 8px
+        background: $primary-color
+   
+/** Button style **/
+.theme-btn,
+a.theme-btn
+    cursor: pointer
+    transition: 0.5s
+    font-size: 15px
+    font-weight: 700
+    text-align: center
+    padding: 22px 36px
+    align-items: center
+    display: inline-flex
+    letter-spacing: 2.5px
+    color: $heading-color
+    justify-content: center
+    text-transform: uppercase
+    background: $lighter-color
+    &:hover
+        color: black
+        background: $primary-color
+    &.style-two
+        color: black
+        background: $primary-color
+        &:hover
+            color: white
+            background: $lighter-color
+    +res-bl(sm)
+        padding: 10px 30px
+        
+    
+
+/* Details Btn */
+.details-btn
+    font-size: 55px
+    display: inline-block
+    transform: rotate(-45deg)
+    &:hover
+        color: $primary-color
+        transform: rotate(0deg)
+
+
+/* Read More */
+.read-more
+    font-size: 14px
+    font-weight: 600
+    align-items: center
+    display: inline-flex
+    font-family: $heading-font
+    text-transform: capitalize
+    i
+        float: right
+        font-weight: 400
+        transition: 0.5s
+        margin-left: 8px
+        margin-bottom: -2px
+    &:hover
+        color: $primary-color
+    
+/* Read More Two */
+.read-more-two
+    color: white
+    font-weight: 500
+    align-items: center
+    display: inline-flex
+    letter-spacing: 2.5px
+    text-transform: uppercase
+    img
+        margin-left: 22px
+      
+/* List style One */
+.list-style-one
+    li
+        display: flex
+        font-weight: 500
+        align-items: center
+        text-transform: capitalize
+        i
+            font-size: 14px
+            margin-right: 12px
+            color: $primary-color
+        &:not(:last-child)
+            margin-bottom: 8px
+        
+/* List style Two */
+.list-style-two
+    li
+        color: white
+        display: flex
+        font-size: 17px
+        align-items: center
+        text-transform: capitalize
+        &:not(:last-child)
+            margin-bottom: 15px
+        &:before
+            flex: none
+            color: black
+            font-size: 13px
+            content: "\f00c"
+            margin-top: 2px
+            margin-right: 20px
+            padding: 1px 0 0 2px
+            +circle($primary-color, 20px)
+            font-family: "Font Awesome 5 Pro"
+        
+/* List style Three */
+.list-style-three
+    li
+        display: flex
+        text-transform: capitalize
+        &:not(:last-child)
+            margin-bottom: 20px
+        &:before
+            flex: none
+            font-size: 18px
+            margin-top: 3px
+            content: "\f00c"
+            margin-right: 14px
+            color: $primary-color
+            font-family: "Font Awesome 5 Pro"
+        
+/** Social Link One **/
+.social-style-one
+    flex-wrap: wrap
+    display: inline-flex
+    +gapLR(margin, -6px)
+    a
+        +size(38px)
+        color: white
+        line-height: 38px
+        text-align: center
+        +gapLR(margin, 6px)
+        border-radius: 50%
+        border: 1px solid rgba(92, 99, 123, 0.4)
+        &:hover
+            color: black
+            background: $primary-color
+            border-color: $primary-color
+        
+/** Social Link Two **/
+.social-style-two
+    flex-wrap: wrap
+    display: inline-flex
+    a
+        +size(32px)
+        color: #9497A3
+        font-size: 14px
+        line-height: 32px
+        text-align: center
+        border-radius: 50%
+        &:hover
+            color: black
+            background: $primary-color
+        
+/** Social Link Three **/
+.social-style-three
+    flex-wrap: wrap
+    padding: 5px 20px
+    display: inline-flex
+    background: $lighter-color
+    a
+        +gapLR(margin, 10px)
+        &:hover
+            color: $primary-color
+        
+/** Tab Style One **/
+.tab-style-one
+    justify-content: center
+    .nav-link
+        color: white
+        font-size: 15px
+        font-weight: 700
+        border-radius: 0
+        padding: 15px 40px
+        background: transparent
+        text-transform: uppercase
+        +res-bl(xs)
+            padding: 12px 35px
+        &.active
+            color: black
+            background: $primary-color
+    .nav-item
+        &:not(:last-child)
+            margin-right: 40px
+            +res-bl(md)
+                margin-right: 20px
+        
+/*** Preloader style ** */
+.preloader
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 9999999
+    +flexcenter(center)
+    background-color: #010101
+    background-repeat: no-repeat
+    background-position: center center
+    .custom-loader
+        width: 75px
+        height: 75px
+        border-radius: 50%
+        background-color: transparent
+        border: 2px solid $heading-color
+        border-top: 2px solid $primary-color
+        border-bottom: 2px solid $primary-color
+        -webkit-animation: 1s preloader linear infinite
+        animation: 1s preloader linear infinite
+
+/* Pagination */    
+.pagination
+    align-items: center
+    +gapLR(margin, -6px)
+    li
+        margin: 12px 6px 0
+        a,
+        .page-link
+            padding: 0
+            +size(50px)
+            box-shadow: none
+            font-weight: 700
+            line-height: 50px
+            border-radius: 5px
+            text-align: center
+            color: $base-color
+            background: transparent
+            border: 1px solid $border-color
+            +res-bl(sm)
+                +size(45px)
+                line-height: 45px
+        &.disabled,
+        &:last-child
+            .page-link
+                border-radius: 5px
+                background: transparent
+                border: 1px solid $border-color
+        &.active,
+        &:hover:not(.disabled)
+            .page-link
+                color: black
+                background: $primary-color
+                border-color: $primary-color
+        
+/* Rating */
+.ratting
+    line-height: 1
+    align-items: center
+    display: inline-flex
+    i
+        margin: 5px
+        font-size: 18px
+        color: $primary-color
+    
+.slider-arrow
+    .slick-arrow
+        border: 1px solid $border-color
+        &:not(:last-child)
+            margin-right: 5px
+        &:focus,
+        &:hover
+            color: white
+            background: $primary-color
+            border-color: $primary-color
+                
+/*** Slick Dots ***/
+.slick-dots
+    flex-wrap: wrap
+    +flexcenter(center)
+    li
+        position: relative
+        cursor: pointer
+        +size(10px)
+        transition: 0.5s
+        margin: 0 10px
+        border-radius: 50%
+        background: $primary-color
+        button
+            opacity: 0
+        &:after
+            content: ''
+            +poLT(-8px)
+            +size(26px)
+            border-radius: 50%
+            border: 1px solid transparent
+            transition: .5s
+            transform: scale(0)
+        &.slick-active:after
+            border-color: $primary-color
+            transform: scale(1)
+
+/*** Scroll Top style ***/
+.scroll-top
+    position: fixed
+    bottom: 25px
+    right: 0
+    +size(40px)
+    z-index: 99
+    display: none
+    font-size: 16px
+    cursor: pointer
+    line-height: 44px
+    background: $primary-color
+    animation: pulse 2s infinite
+        
+/*Project Filter*/
+.filter-btns-one
+    display: flex
+    flex-wrap: wrap
+    +gapLR(margin, -5px)
+    li
+        cursor: pointer
+        transition: 0.5s
+        font-weight: 500
+        padding: 4px 20px
+        border-radius: 5px
+        margin: 0 5px 10px
+        color: $heading-color
+        +res-bl(xs)
+            +gapLR(padding, 15px)
+        &.current
+            background: white
+            color: $primary-color
+            text-decoration: underline
+            box-shadow: 10px 0 60px rgba(195, 195, 195, 0.5)
+            
+.filter-btns-two
+    display: flex
+    flex-wrap: wrap
+    font-weight: 500
+    +gapLR(margin, -18px)
+    +res-ab(md)
+        font-size: 18px
+    +res-bl(sm)
+        +gapLR(margin, -8px)
+    li
+        cursor: pointer
+        transition: 0.5s
+        margin: 0 18px 10px
+        border-bottom: 3px solid transparent
+        +res-bl(sm)
+            +gapLR(margin, 8px)
+        &.current
+            color: $primary-color
+            border-color: $primary-color
+
+/* Position */
+.rel
+    position: relative
+    
+@for $i from 0 through 5
+    .z-#{0 + $i}
+        z-index: 0 + $i
+    
+.overlay
+    +overlay(#2a2c38, 0.9)
+    &:before
+        mix-blend-mode: multiply
+    
+/* Backgruond Size */
+.bgs-cover
+    background-size: cover
+    background-position: center
+    
+/* Color + Background */
+.bgc-black
+    background-color: #010101
+.bgc-primary
+    background-color: $primary-color
+.bgc-lighter
+    background-color: $lighter-color
+    
+/* Border Radius */
+@for $i from 1 through 6
+    .br-#{5 * $i}
+        border-radius: 5px * $i
+    
+    
+/* Home One */
+.home-one
+    h2
+        +res-ab(xl)
+            font-size: 60px
+            line-height: 1.15
+            
+/* Home Three */ 
+.home-three
+    .section-title
+        h2
+            text-transform: uppercase
+    
