@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>8MA TR</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light only" />
+    <meta name="description" content="clark1" />
+    <meta property="og:site_name" content="8MA TR" />
+    <meta property="og:title" content="8MA TR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="clark1" />
+    <meta property="og:image" content="images/card.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:url" content="https://turk-oni.carrd.co" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://turk-oni.carrd.co" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <style>
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      body {
+        -webkit-text-size-adjust: none;
+      }
+      mark {
+        background-color: transparent;
+        color: inherit;
+      }
+      input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+      }
+      input[type="text"],
+      input[type="email"],
+      select,
+      textarea {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      body {
+        line-height: 1;
+        min-height: var(--viewport-height);
+        min-width: 320px;
+        overflow-x: hidden;
+        word-wrap: break-word;
+        background-color: #000000;
+      }
+      body:before {
+        background-attachment: scroll;
+        content: "";
+        display: block;
+        height: var(--background-height);
+        left: 0;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        transform: scale(1);
+        width: 100vw;
+        z-index: 0;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%22640%22%20height%3D%22480%22%20viewBox%3D%220%200%20640%20480%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20preserveAspectRatio%3D%22none%22%3E%20%3Cstyle%3E%20%3Aroot%20%7B%20opacity%3A%200.5%3B%20%7D%20path%20%7B%20fill%3A%20%23000000%3B%20stroke%3A%20none%3B%20stroke-width%3A%200%3B%20vector-effect%3A%20non-scaling-stroke%3B%20%7D%20path.z0%20%7B%20fill%3A%20%237f7f7f%20%7D%20path.z1%20%7B%20fill%3A%20%235e5e5e%20%7D%20path.z2%20%7B%20fill%3A%20%233d3d3d%20%7D%20path.z3%20%7B%20fill%3A%20%231c1c1c%20%7D%20%3C%2Fstyle%3E%20%3Cpath%20d%3D%22m%200%2C0%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%200%2C480%20l%20-800%2C0%22%20transform%3D%22translate%280%2C123.4286%29%22%20class%3D%22z0%22%3E%20%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22translate%22%20values%3D%220%20123.4286%3B-160%20123.4286%22%20dur%3D%2215000ms%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%20%3C%2Fpath%3E%20%3Cpath%20d%3D%22m%200%2C0%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%200%2C480%20l%20-960%2C0%22%20transform%3D%22translate%280%2C180.5714%29%22%20class%3D%22z1%22%3E%20%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22translate%22%20values%3D%220%20180.5714%3B-320%20180.5714%22%20dur%3D%2215000ms%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%20%3C%2Fpath%3E%20%3Cpath%20d%3D%22m%200%2C30%20l%2020%2C-45%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-45%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%200%2C450%20l%20-1280%2C0%22%20transform%3D%22translate%280%2C237.7143%29%22%20class%3D%22z2%22%3E%20%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22translate%22%20values%3D%220%20237.7143%3B-640%20237.7143%22%20dur%3D%2215000ms%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%20%3C%2Fpath%3E%20%3Cpath%20d%3D%22m%200%2C0%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%200%2C480%20l%20-1920%2C0%22%20transform%3D%22translate%280%2C294.8571%29%22%20class%3D%22z3%22%3E%20%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22translate%22%20values%3D%220%20294.8571%3B-1280%20294.8571%22%20dur%3D%2215000ms%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%20%3C%2Fpath%3E%20%3Cpath%20d%3D%22m%200%2C60%20l%2020%2C-45%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-45%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-45%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-45%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-45%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C15%20l%2020%2C-15%20l%2020%2C15%20l%2020%2C15%20l%200%2C420%20l%20-3200%2C0%22%20transform%3D%22translate%280%2C352%29%22%20class%3D%22z4%22%3E%20%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22translate%22%20values%3D%220%20352%3B-2560%20352%22%20dur%3D%2215000ms%22%20repeatCount%3D%22indefinite%22%3E%3C%2FanimateTransform%3E%20%3C%2Fpath%3E%3C%2Fsvg%3E");
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: repeat-x;
+      }
+      :root {
+        --background-height: 100vh;
+        --site-language-alignment: left;
+        --site-language-direction: ltr;
+        --site-language-flex-alignment: flex-start;
+        --site-language-indent-left: 1;
+        --site-language-indent-right: 0;
+        --viewport-height: 100vh;
+      }
+      html {
+        font-size: 18pt;
+      }
+      u {
+        text-decoration: underline;
+      }
+      strong {
+        color: inherit;
+        font-weight: bolder;
+      }
+      em {
+        font-style: italic;
+      }
+      code {
+        background-color: rgba(144, 144, 144, 0.25);
+        border-radius: 0.25em;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size: 0.9em;
+        font-weight: normal;
+        letter-spacing: 0;
+        margin: 0 0.25em;
+        padding: 0.25em 0.5em;
+        text-indent: 0;
+      }
+      mark {
+        background-color: rgba(144, 144, 144, 0.25);
+      }
+      spoiler-text {
+        -webkit-text-stroke: 0;
+        background-color: rgba(32, 32, 32, 0.75);
+        text-shadow: none;
+        text-stroke: 0;
+        color: transparent;
+        cursor: pointer;
+        transition: color 0.1s ease-in-out;
+      }
+      spoiler-text.active {
+        color: #ffffff;
+        cursor: text;
+      }
+      s {
+        text-decoration: line-through;
+      }
+      sub {
+        font-size: smaller;
+        vertical-align: sub;
+      }
+      sup {
+        font-size: smaller;
+        vertical-align: super;
+      }
+      a {
+        color: inherit;
+        text-decoration: underline;
+        transition: color 0.25s ease;
+      }
+      a[onclick]:not([href]) {
+        cursor: pointer;
+      }
+      deferred-script {
+        display: none;
+      }
+      #wrapper {
+        -webkit-overflow-scrolling: touch;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: var(--viewport-height);
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+      }
+      #main {
+        --alignment: center;
+        --flex-alignment: center;
+        --indent-left: 1;
+        --indent-right: 1;
+        --border-radius-tl: 0;
+        --border-radius-tr: 0;
+        --border-radius-br: 0;
+        --border-radius-bl: 0;
+        align-items: center;
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 0;
+        justify-content: center;
+        max-width: 100%;
+        position: relative;
+        text-align: var(--alignment);
+        z-index: 1;
+      }
+      #main > .inner {
+        --padding-horizontal: 3rem;
+        --padding-vertical: 3rem;
+        --spacing: 0.75rem;
+        --width: 40rem;
+        border-radius: var(--border-radius-tl) var(--border-radius-tr)
+          var(--border-radius-br) var(--border-radius-bl);
+        max-width: 100%;
+        position: relative;
+        width: var(--width);
+        z-index: 1;
+        padding: var(--padding-vertical) var(--padding-horizontal);
+      }
+      #main > .inner > * {
+        margin-top: var(--spacing);
+        margin-bottom: var(--spacing);
+      }
+      #main > .inner > :first-child {
+        margin-top: 0 !important;
+      }
+      #main > .inner > :last-child {
+        margin-bottom: 0 !important;
+      }
+      #main > .inner > .full {
+        margin-left: calc(var(--padding-horizontal) * -1);
+        max-width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
+        width: calc(100% + calc(var(--padding-horizontal) * 2) + 0.4725px);
+      }
+      #main > .inner > .full:first-child {
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        margin-top: calc(var(--padding-vertical) * -1) !important;
+      }
+      #main > .inner > .full:last-child {
+        border-bottom-left-radius: inherit;
+        border-bottom-right-radius: inherit;
+        margin-bottom: calc(var(--padding-vertical) * -1) !important;
+      }
+      #main > .inner > .full.screen {
+        border-radius: 0 !important;
+        max-width: 100vw;
+        position: relative;
+        width: 100vw;
+        left: 50%;
+        margin-left: -50vw;
+        right: auto;
+      }
+      body.is-instant #main,
+      body.is-instant #main > .inner > *,
+      body.is-instant #main > .inner > section > * {
+        transition: none !important;
+      }
+      body.is-instant:after {
+        display: none !important;
+        transition: none !important;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        direction: var(--site-language-direction);
+        position: relative;
+      }
+      h1 span.p,
+      h2 span.p,
+      h3 span.p,
+      p span.p {
+        display: block;
+        position: relative;
+      }
+      h1 span[style],
+      h2 span[style],
+      h3 span[style],
+      p span[style],
+      h1 strong,
+      h2 strong,
+      h3 strong,
+      p strong,
+      h1 a,
+      h2 a,
+      h3 a,
+      p a,
+      h1 code,
+      h2 code,
+      h3 code,
+      p code,
+      h1 mark,
+      h2 mark,
+      h3 mark,
+      p mark,
+      h1 spoiler-text,
+      h2 spoiler-text,
+      h3 spoiler-text,
+      p spoiler-text {
+        -webkit-text-fill-color: currentcolor;
+      }
+      #text06 {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+          "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        letter-spacing: 0.175rem;
+        width: calc(100% + 0.175rem);
+        font-size: 1.125em;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+      #text06 a {
+        text-decoration: underline;
+      }
+      #text06 a:hover {
+        text-decoration: none;
+      }
+      #text06 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      #text02 {
+        text-align: left;
+        text-transform: lowercase;
+        color: #c4c4c4;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+          "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        letter-spacing: 0.175rem;
+        width: calc(100% + 0.175rem);
+        font-size: 1.25em;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+      #text02 a {
+        text-decoration: underline;
+      }
+      #text02 a:hover {
+        text-decoration: none;
+      }
+      #text02 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      #text01 {
+        text-align: left;
+        text-transform: lowercase;
+        color: #ffffff;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+          "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        letter-spacing: 0.175rem;
+        width: calc(100% + 0.175rem);
+        font-size: 1.25em;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+      #text01 a {
+        text-decoration: underline;
+      }
+      #text01 a:hover {
+        text-decoration: none;
+      }
+      #text01 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      #text04 {
+        text-align: left;
+        text-transform: lowercase;
+        color: #ffffff;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+          "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        letter-spacing: 0.175rem;
+        width: calc(100% + 0.175rem);
+        font-size: 1.25em;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+      #text04 a {
+        text-decoration: underline;
+      }
+      #text04 a:hover {
+        text-decoration: none;
+      }
+      #text04 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      #text05 {
+        text-align: center;
+        font-variant: small-caps;
+        color: #ffffff;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+          "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        letter-spacing: 0.175rem;
+        width: calc(100% + 0.175rem);
+        font-size: 1.25em;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+      #text05 a {
+        text-decoration: underline;
+      }
+      #text05 a:hover {
+        text-decoration: none;
+      }
+      #text05 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      #text03 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #00e0ff;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+          "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        letter-spacing: 0.175rem;
+        width: calc(100% + 0.175rem);
+        font-size: 1.25em;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+      #text03 a {
+        text-decoration: underline;
+      }
+      #text03 a:hover {
+        text-decoration: none;
+      }
+      #text03 span.p:nth-child(n + 2) {
+        margin-top: 1rem;
+      }
+      .buttons {
+        cursor: default;
+        display: flex;
+        justify-content: var(--flex-alignment);
+        letter-spacing: 0;
+        padding: 0;
+      }
+      .buttons li {
+        max-width: 100%;
+        text-align: var(--alignment);
+      }
+      .buttons li a {
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+      #buttons01 {
+        gap: 0.75rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      #buttons01 li a {
+        display: inline-block;
+        width: 9.75rem;
+        height: 3rem;
+        line-height: 3rem;
+        padding: 0 0.5rem;
+        vertical-align: middle;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+          "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        letter-spacing: 0.2rem;
+        padding-left: calc(0.2rem + 0.5rem);
+        font-size: 1.25em;
+        font-weight: 400;
+        border-radius: 0rem;
+        direction: var(--site-language-direction);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: color 0.25s ease, background-color 0.25s ease,
+          border-color 0.25s ease;
+      }
+      #buttons01 .button {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      #buttons01 .n01 {
+        background-color: #046b59;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      #buttons01 .n01:hover {
+        background-color: #ffeded !important;
+      }
+      #buttons02 {
+        gap: 0.75rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      #buttons02 li a {
+        display: inline-block;
+        width: 9.75rem;
+        height: 3rem;
+        line-height: 3rem;
+        padding: 0 0.5rem;
+        vertical-align: middle;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+          "Helvetica Neue", "Arial", sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        letter-spacing: 0.2rem;
+        padding-left: calc(0.2rem + 0.5rem);
+        font-size: 1.25em;
+        font-weight: 400;
+        border-radius: 0rem;
+        direction: var(--site-language-direction);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: color 0.25s ease, background-color 0.25s ease,
+          border-color 0.25s ease;
+      }
+      #buttons02 .button {
+        background-color: #000000;
+        color: #ffffff;
+      }
+      #buttons02 .n01 {
+        background-color: #046b59;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      #buttons02 .n01:hover {
+        background-color: #ffeded !important;
+      }
+      hr {
+        align-items: center;
+        border: 0;
+        display: flex;
+        justify-content: var(--flex-alignment);
+        min-height: 1rem;
+        padding: 0;
+        position: relative;
+        width: 100%;
+      }
+      hr:before {
+        content: "";
+      }
+      #divider02:before {
+        width: 100%;
+        height: 1rem;
+        background-size: auto 30.1%;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%3E%3Cstyle%3Eline%20%7Bstroke-linecap%3A%20square%3Bstroke-width%3A%201px%3Bstroke%3A%20%23828282%3Bvector-effect%3A%20non-scaling-stroke%3B%7D%3C%2Fstyle%3E%3Cline%20x1%3D%22256%22%20y1%3D%220%22%20x2%3D%22512%22%20y2%3D%22256%22%20%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22256%22%20x2%3D%22256%22%20y2%3D%22512%22%20%2F%3E%3C%2Fsvg%3E");
+        background-position: center center;
+        background-repeat: repeat-x;
+      }
+      #divider01:before {
+        width: 100%;
+        height: 1rem;
+        background-size: auto 30.1%;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%3E%3Cstyle%3Eline%20%7Bstroke-linecap%3A%20square%3Bstroke-width%3A%201px%3Bstroke%3A%20%2300FFE0%3Bvector-effect%3A%20non-scaling-stroke%3B%7D%3C%2Fstyle%3E%3Cline%20x1%3D%22256%22%20y1%3D%220%22%20x2%3D%22512%22%20y2%3D%22256%22%20%2F%3E%3Cline%20x1%3D%220%22%20y1%3D%22256%22%20x2%3D%22256%22%20y2%3D%22512%22%20%2F%3E%3C%2Fsvg%3E");
+        background-position: center center;
+        background-repeat: repeat-x;
+      }
+      .gallery .inner {
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: middle;
+      }
+      .gallery ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: var(--flex-alignment);
+      }
+      .gallery ul li {
+        position: relative;
+      }
+      .gallery ul li .thumbnail {
+        border-radius: inherit;
+        position: relative;
+      }
+      .gallery ul li .frame {
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translate3d(0, 0, 0);
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: top;
+      }
+      .gallery ul li img {
+        margin: 0;
+        max-width: 100%;
+        vertical-align: top;
+        width: auto;
+      }
+      .gallery ul li .caption {
+        width: 100%;
+      }
+      .gallery ul li .caption p {
+        width: 100%;
+      }
+      .gallery ul li .caption a,
+      .gallery ul li .caption spoiler-text {
+        pointer-events: auto;
+      }
+      #gallery02 .inner {
+        max-width: 100%;
+      }
+      #gallery02 ul li {
+        border-radius: 0rem;
+        display: inline-block;
+      }
+      #gallery02 ul li .frame {
+        border-radius: 0rem;
+      }
+      #gallery02 ul {
+        gap: 0.5rem;
+      }
+      #gallery02 ul li .thumbnail {
+        display: block;
+        transition: none;
+      }
+      #gallery02 ul li img {
+        height: auto;
+        max-height: 15rem;
+      }
+      #gallery02 ul li .thumbnail img {
+        transition: none;
+      }
+      #gallery01 .inner {
+        max-width: 100%;
+      }
+      #gallery01 ul li {
+        border-radius: 0rem;
+        display: inline-block;
+      }
+      #gallery01 ul li .frame {
+        border-radius: 0rem;
+      }
+      #gallery01 ul {
+        gap: 0.5rem;
+      }
+      #gallery01 ul li .thumbnail {
+        display: block;
+        transition: none;
+      }
+      #gallery01 ul li img {
+        height: auto;
+        max-height: 15rem;
+      }
+      #gallery01 ul li .thumbnail img {
+        transition: none;
+      }
+      @media (max-width: 1920px) {
+      }
+      @media (max-width: 1680px) {
+        html {
+          font-size: 13pt;
+        }
+      }
+      @media (max-width: 1280px) {
+        html {
+          font-size: 13pt;
+        }
+      }
+      @media (max-width: 1024px) {
+      }
+      @media (max-width: 980px) {
+        html {
+          font-size: 11pt;
+        }
+      }
+      @media (max-width: 736px) {
+        html {
+          font-size: 11pt;
+        }
+        #main > .inner {
+          --padding-horizontal: 2rem;
+          --padding-vertical: 5.125rem;
+          --spacing: 0.75rem;
+        }
+        #text06 {
+          letter-spacing: 0.1rem;
+          width: calc(100% + 0.1rem);
+          font-size: 0.875em;
+          line-height: 1.125;
+        }
+        #text02:not(:first-child) {
+          margin-top: 0rem !important;
+        }
+        #text02:not(:last-child) {
+          margin-bottom: 0rem !important;
+        }
+        #text02 {
+          letter-spacing: 0.175rem;
+          width: calc(100% + 0.175rem);
+          font-size: 1.375em;
+          line-height: 1.125;
+        }
+        #text01:not(:first-child) {
+          margin-top: 0rem !important;
+        }
+        #text01:not(:last-child) {
+          margin-bottom: 0rem !important;
+        }
+        #text01 {
+          letter-spacing: 0.025rem;
+          width: calc(100% + 0.025rem);
+          font-size: 0.875em;
+          line-height: 1.125;
+        }
+        #text04:not(:first-child) {
+          margin-top: 0rem !important;
+        }
+        #text04:not(:last-child) {
+          margin-bottom: 0rem !important;
+        }
+        #text04 {
+          letter-spacing: 0.025rem;
+          width: calc(100% + 0.025rem);
+          font-size: 0.875em;
+          line-height: 1.125;
+        }
+        #text05:not(:first-child) {
+          margin-top: 0rem !important;
+        }
+        #text05:not(:last-child) {
+          margin-bottom: 0rem !important;
+        }
+        #text05 {
+          letter-spacing: 0.025rem;
+          width: calc(100% + 0.025rem);
+          font-size: 0.875em;
+          line-height: 1.125;
+        }
+        #text03:not(:first-child) {
+          margin-top: 0rem !important;
+        }
+        #text03:not(:last-child) {
+          margin-bottom: 0rem !important;
+        }
+        #text03 {
+          letter-spacing: -0.025rem;
+          width: 100%;
+          font-size: 1em;
+          line-height: 1.125;
+        }
+        #buttons01 {
+          gap: 0.75rem;
+        }
+        #buttons01 li a {
+          letter-spacing: 0.2rem;
+          padding-left: calc(0.2rem + 0.5rem);
+          font-size: 1.25em;
+        }
+        #buttons02 {
+          gap: 0.75rem;
+        }
+        #buttons02 li a {
+          letter-spacing: 0.2rem;
+          padding-left: calc(0.2rem + 0.5rem);
+          font-size: 1.25em;
+        }
+        #divider02:before {
+          width: 100rem;
+          height: 1rem;
+          background-size: auto 30.1%;
+        }
+        #divider01:before {
+          width: 100rem;
+          height: 1rem;
+          background-size: auto 30.1%;
+        }
+        #gallery02 ul li img {
+          max-height: 11.25rem;
+        }
+        #gallery01 ul li img {
+          max-height: 11.25rem;
+        }
+      }
+      @media (max-width: 480px) {
+        #main > .inner {
+          --spacing: 0.65625rem;
+        }
+        #buttons01 {
+          flex-direction: column;
+          flex-wrap: nowrap;
+        }
+        #buttons01 li a {
+          max-width: 32rem;
+          width: 100%;
+        }
+        #buttons02 {
+          flex-direction: column;
+          flex-wrap: nowrap;
+        }
+        #buttons02 li a {
+          max-width: 32rem;
+          width: 100%;
+        }
+      }
+      @media (max-width: 360px) {
+        #main > .inner {
+          --padding-horizontal: 1.5rem;
+          --padding-vertical: 3.84375rem;
+          --spacing: 0.5625rem;
+        }
+        #text06 {
+          font-size: 0.875em;
+        }
+        #text02 {
+          font-size: 1.375em;
+        }
+        #text01 {
+          font-size: 0.875em;
+        }
+        #text04 {
+          font-size: 0.875em;
+        }
+        #text05 {
+          font-size: 0.875em;
+        }
+        #text03 {
+          font-size: 1em;
+        }
+        #buttons01 {
+          gap: 0.5625rem;
+        }
+        #buttons02 {
+          gap: 0.5625rem;
+        }
+        #gallery02 ul {
+          gap: 0.375rem;
+        }
+        #gallery01 ul {
+          gap: 0.375rem;
+        }
+      }
+    </style>
+    <style></style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="main">
+        <div class="inner">
+          <p id="text06">
+            <strong
+              >Topluluğumuz, döviz kuru farkından ne kadar kazandı ve bize nasıl
+              katılabilirsiniz, diye sordun</strong
+            >
+          </p>
+          <h1 id="text02">Aşağıyı oku⬇️</h1>
+          <ul id="buttons01" class="buttons">
+            <li>
+              <a href="https://t.me/+8uWeXlNVtK5lOTA0" class="button n01"
+                >TELEGRAM</a
+              >
+            </li>
+          </ul>
+          <hr id="divider02" />
+          <h2 id="text01">
+            Tabloda, 24 saat boyunca tüm karımız kaydedildi ve bunu, LTC
+            tokeninin gönderim yapılan borsadan çok daha yüksek olduğu bir yere
+            kripto para dönüştürerek başardık
+          </h2>
+          <div id="gallery02" class="gallery">
+            <div class="inner">
+              <ul>
+                <li>
+                  <span class="frame"
+                    ><img src="images/d21ff0c9.jpg" alt="Untitled"
+                  /></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h2 id="text04">Örneğin: dün %7.6 farktan dolayı 2789$ kazandık</h2>
+          <div id="gallery01" class="gallery">
+            <div class="inner">
+              <ul>
+                <li>
+                  <span class="frame"
+                    ><img src="images/d25452c4.png" alt="Untitled"
+                  /></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <h2 id="text05">
+            Telegram kanalımız bu tür kur farklarını izliyor ve bu bilgiyi
+            ücretsiz olarak paylaşıyor!
+          </h2>
+          <hr id="divider01" />
+          <h2 id="text03">
+            Hemen şimdi topluluğumuza katıl, bağlantı aşağıda bulunmaktadır.⬇️
+          </h2>
+          <ul id="buttons02" class="buttons">
+            <li>
+              <a href="https://t.me/+8uWeXlNVtK5lOTA0" class="button n01"
+                >TELEGRAM</a
+              >
+            </li>
+          </ul>
+          <div id="embed01">
+      
+  </body>
+</html>
