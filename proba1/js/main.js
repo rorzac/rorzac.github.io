@@ -1,3 +1,0 @@
-$(function () {
-  $(".header-slider").slick();
-});
