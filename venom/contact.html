@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <header>
+        <nav class="navbar">
+          <div class="container-nav">
+              <div class="logo-block">
+                  <div><img src="img/logo.svg" alt=""></div>
+              </div>
+              <div class="text-block">
+                  <ul class="nav-menu">
+                     
+                          <li><a href="index.html">HOME</a></li>
+                    
+                      
+                          <li class="active"><a href="#">PRODUCTS</a></li>
+                  
+                     
+                          <li><a href="contact.html">CONTACT</a></li>
+                  
+                  </ul>
+              </div>
+              <div class="menu-block">
+                  <a href="#">
+                      <img src="img/telegram.svg" alt="">
+                  </a>
+              </div>
+              
+              <div class="burger" id="burger-menu">
+                  <div class="burger-bar"></div>
+                  <div class="burger-bar"></div>
+                  <div class="burger-bar"></div>
+              </div>
+  
+  
+  
+  
+          </div>
+        </nav>
+  
+        <div class="mobile-menu" id="mobile-menu">
+          <button class="close-btn" id="close-btn" aria-label="Close menu">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 18L18 6M6 6L18 18" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+          </button>
+          <div class="menu-content">
+              <a href="index.html" class="menu-item">Home</a>
+              <a href="product.html" class="menu-item">Products</a>
+              <a href="contact.html" class="menu-item">Contact</a>
+              <a href="https://t.me/VenomControl" class="telegram-btn">
+                  <img src="img/telegram.svg" alt="Telegram" class="telegram-icon">
+              </a>
+          </div>
+      </div>
+  
+  
+      </header>
+
+
+
+
+
+
+
+
+
+
+      <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <p>Use the form below to get in touch with our support team. Please give us up to 48 hours to respond to your ticket.</p>
+        <div class="telegram-link">
+           
+            <a href="https://t.me/yourtelegram" target="_blank">Telegram</a>
+        </div>
+        <form action="#" method="post">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="e.g Requesting support for a product I purchased">
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+    
+            <label for="invoice-id">Invoice ID</label>
+            <input type="text" id="invoice-id" name="invoice-id" placeholder="Input your 32-digit invoice id (optional)">
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="I’d like to ask about..."></textarea>
+    
+            <button type="submit" class="submit-btn">Create Ticket</button>
+        </form>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+      <script src="script.js"></script>
+
+      <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+      const videoContainer = document.querySelector('.video-container');
+  
+      // Добавление класса при наведении курсора
+      videoContainer.addEventListener('mouseenter', () => {
+          videoContainer.classList.add('hovered');
+      });
+  
+      // Удаление класса при уходе курсора
+      videoContainer.addEventListener('mouseleave', () => {
+          videoContainer.classList.remove('hovered');
+      });
+  
+      // Дополнительный эффект мерцания
+      setInterval(() => {
+          if (videoContainer.classList.contains('hovered')) {
+              videoContainer.style.boxShadow = `
+                  0 0 30px ${Math.random() * 15 + 10}px rgba(0, 255, 255, ${Math.random() * 0.5 + 0.5}),
+                  0 0 60px ${Math.random() * 30 + 30}px rgba(0, 255, 255, ${Math.random() * 0.3 + 0.3})
+              `;
+          } else {
+              videoContainer.style.boxShadow = `
+                  0 0 20px rgba(0, 255, 255, 0.7),
+                  0 0 30px rgba(0, 255, 255, 0.6)
+              `;
+          }
+      }, 100); // Каждые 100 миллисекунд обновлять эффект
+  });
+  
+  
+  
+  document.addEventListener('DOMContentLoaded', () => {
+      const burgerMenu = document.getElementById('burger-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const closeBtn = document.getElementById('close-btn');
+  
+      burgerMenu.addEventListener('click', () => {
+          mobileMenu.classList.toggle('open');
+          burgerMenu.classList.toggle('active');
+      });
+  
+      closeBtn.addEventListener('click', () => {
+          mobileMenu.classList.remove('open');
+          burgerMenu.classList.remove('active');
+      });
+  
+      // Закрытие меню при клике вне его
+      document.addEventListener('click', (event) => {
+          if (!mobileMenu.contains(event.target) && !burgerMenu.contains(event.target)) {
+              if (mobileMenu.classList.contains('open')) {
+                  mobileMenu.classList.remove('open');
+                  burgerMenu.classList.remove('active');
+              }
+          }
+      });
+  });
+  
+  
+    
+        </script>
+  
+  
+  </body>
+  </html>
