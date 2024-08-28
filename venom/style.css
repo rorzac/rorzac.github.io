@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    
+    background: #121212;
+
+    font-family: "Karantina", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.navbar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 60%;
+    height: 90px;
+    background: #1B1B1B;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-block {
+    margin-left: 30px;
+
+}
+
+.text-block {
+
+}
+
+.menu-block {
+    margin-right: 30px;
+    
+}
+
+.menu-block img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+.nav-menu li + li {
+    padding-left: 75px;
+    
+}
+
+.nav-menu .active {
+    
+   background: red;
+   padding: 10px 60px;
+}
+
+.nav-menu a {
+    color: #fff;
+   text-decoration: none;
+
+
+
+
+
+font-family: Karantina;
+font-size: 20px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0px;
+
+
+}
+
+/* menu block */
+
+
+main {
+    text-align: center;
+}
+
+.center-block {
+    margin-top: 70px;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-family: Karantina;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: 0px;
+    padding-bottom: 30px;
+
+}
+
+.subtitle {
+    color: rgb(137, 137, 137);
+    font-family: Karantina;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0px;
+
+    padding-bottom: 40px;
+
+}
+
+.button-shop {
+    border-radius: 5px;
+}
+
+.button-shop a {
+    display: inline-block; /* Чтобы размеры width и height применились корректно */
+    
+    background: red;
+    padding: 0px 30px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center; /* Центрирование текста по горизонтали */
+    line-height: 60px; /* Центрирование текста по вертикали */
+}
+
+
+
+
+/* video */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.video-container {
+    margin-top: 50px;
+    width: 60%;
+    height: 200px;
+    background-color: #020202; /* Черный цвет фона для блока */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Скрыть любые элементы за пределами блока */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавный переход при трансформации и смене тени */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* Начальная тень */
+    border-radius: 20px; /* Округленные углы для более мягкого вида */
+}
+
+video {
+    max-width: 100%; /* Видео не будет превышать ширину контейнера */
+    max-height: 100%; /* Видео не будет превышать высоту контейнера */
+    object-fit: contain; /* Сохранить исходные пропорции видео */
+    position: relative; /* Видео будет расположено относительно контейнера */
+    transition: transform 0.3s ease; /* Плавный переход при трансформации */
+}
+
+/* Эффекты при наведении курсора */
+.video-container.hovered {
+    transform: scale(1.05); /* Увеличение контейнера */
+    box-shadow: 0 0 30px 15px rgba(0, 255, 255, 0.9), 0 0 60px 30px rgba(0, 255, 255, 0.6); /* Эффект неонового свечения */
+}
+
+.video-container.hovered video {
+    transform: scale(1.05); /* Легкое увеличение видео */
+}
+
+/* Анимация неонового свечения */
+@keyframes neonGlow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.7), 0 0 5px rgba(0, 255, 255, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 5x 5px rgba(0, 255, 255, 0.9), 0 0 5px 5px rgba(0, 255, 255, 0.6);
+    }
+}
+
+.video-container {
+    animation: neonGlow 2s infinite alternate; /* Применение анимации свечения */
+}
+
+
+
+
+.burger {
+    display: none; /* Скрыть бургер-меню по умолчанию */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    margin-right: 30px;
+    position: relative;
+}
+
+.burger-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+/* Анимация для бургер-меню при открытии */
+.burger.active .burger-bar:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.burger.active .burger-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active .burger-bar:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -10px;
+}
+
+/* Мобильное меню */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw; /* Ширина меню - половина экрана */
+    height: 100vh;
+    background: #000; 
+    
+    transform: translateX(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: 999; /* Обеспечиваем, что меню поверх других элементов */
+}
+
+/* Стили для открытого меню */
+.mobile-menu.open {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Кнопка закрытия меню */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.close-btn:before {
+    content: '×'; /* Символ закрытия */
+    font-size: 24px;
+    color: #333;
+    line-height: 1;
+}
+
+/* Контент меню */
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Убедитесь, что меню занимает всю ширину */
+    padding: 40px; /* Увеличенные отступы для лучшего восприятия */
+    box-sizing: border-box; /* Включите отступы в общую ширину */
+    text-align: center; /* Выравнивание текста по центру */
+    z-index: 1000; /* Текст поверх фона */
+}
+
+.menu-item {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 40px; /* Увеличение размера текста */
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #ff0000; /* Цвет при наведении */
+}
+
+.telegram-btn {
+    margin-top: auto; /* Поместить кнопку Telegram снизу */
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.telegram-icon {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1110px) {
+    .navbar {
+        width: 90%;
+      
+        box-shadow: none;
+    }
+
+
+
+    .burger {
+        display: flex; /* Показать бургер-меню на мобильных устройствах */
+    }
+
+    .mobile-menu {
+        display: flex; /* Показать мобильное меню на мобильных устройствах */
+    }
+
+
+
+
+  
+
+    .text-block {
+        display: none;
+    }
+
+    .menu-block {
+        display: none;
+    }
+
+    .video-container {
+        width: 90%;
+    }
+
+
+
+}
+
+@media (max-width: 1110px) {
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw; /* Ширина меню - половина экрана */
+        height: 100vh;
+        background: #000; 
+        
+        transform: translateX(100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        z-index: 999; /* Обеспечиваем, что меню поверх других элементов */
+    }
+
+    .video-container {
+        width: 90%;
+    }
+}

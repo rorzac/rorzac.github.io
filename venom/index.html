@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venom Script</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="container-nav">
+            <div class="logo-block">
+                <div><img src="img/logo.svg" alt=""></div>
+            </div>
+            <div class="text-block">
+                <ul class="nav-menu">
+                   
+                        <li class="active"><a href="#">HOME</a></li>
+                  
+                    
+                        <li><a href="#">PRODUCTS</a></li>
+                
+                   
+                        <li><a href="#">CONTACT</a></li>
+                
+                </ul>
+            </div>
+            <div class="menu-block">
+                <a href="#">
+                    <img src="img/telegram.svg" alt="">
+                </a>
+            </div>
+            
+            <div class="burger" id="burger-menu">
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+            </div>
+
+
+
+
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <button class="close-btn" id="close-btn"></button>
+        <div class="menu-content">
+            <a href="#" class="menu-item">Home</a>
+            <a href="#" class="menu-item">Products</a>
+            <a href="#" class="menu-item">Contact</a>
+            <a href="https://t.me/VenomControl" class="telegram-btn">
+                <img src="img/telegram.svg" alt="Telegram" class="telegram-icon">
+            </a>
+        </div>
+    </div>
+
+
+    </header>
+
+    <main>
+        <div class="center-block">
+            <h1 class="title">Venom RAT + hVNC + Stealer</h1>
+            <h4 class="subtitle">For fast support please PM me here: @VenomControl</h4>
+            <div class="button-shop">
+                <a href="">GO SHOPPING</a> <!-- Здесь заменил закрывающий тег на </a> -->
+            </div>
+            
+
+
+           
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="cloud.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+      
+      document.addEventListener('DOMContentLoaded', () => {
+    const videoContainer = document.querySelector('.video-container');
+
+    // Добавление класса при наведении курсора
+    videoContainer.addEventListener('mouseenter', () => {
+        videoContainer.classList.add('hovered');
+    });
+
+    // Удаление класса при уходе курсора
+    videoContainer.addEventListener('mouseleave', () => {
+        videoContainer.classList.remove('hovered');
+    });
+
+    // Дополнительный эффект мерцания
+    setInterval(() => {
+        if (videoContainer.classList.contains('hovered')) {
+            videoContainer.style.boxShadow = `
+                0 0 30px ${Math.random() * 15 + 10}px rgba(0, 255, 255, ${Math.random() * 0.5 + 0.5}),
+                0 0 60px ${Math.random() * 30 + 30}px rgba(0, 255, 255, ${Math.random() * 0.3 + 0.3})
+            `;
+        } else {
+            videoContainer.style.boxShadow = `
+                0 0 20px rgba(0, 255, 255, 0.7),
+                0 0 30px rgba(0, 255, 255, 0.6)
+            `;
+        }
+    }, 100); // Каждые 100 миллисекунд обновлять эффект
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const burgerMenu = document.getElementById('burger-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeBtn = document.getElementById('close-btn');
+
+    burgerMenu.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+        burgerMenu.classList.toggle('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        burgerMenu.classList.remove('active');
+    });
+
+    // Закрытие меню при клике вне его
+    document.addEventListener('click', (event) => {
+        if (!mobileMenu.contains(event.target) && !burgerMenu.contains(event.target)) {
+            if (mobileMenu.classList.contains('open')) {
+                mobileMenu.classList.remove('open');
+                burgerMenu.classList.remove('active');
+            }
+        }
+    });
+});
+
+
+
+  
+  
+      </script>
+</body>
+</html>
