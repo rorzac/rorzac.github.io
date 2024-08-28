@@ -64,13 +64,16 @@ body {
 
 .nav-menu li + li {
     padding-left: 75px;
+   
     
 }
 
 .nav-menu .active {
     
-   background: red;
-   padding: 10px 60px;
+    text-decoration: underline; /* Включаем подчеркивание */
+    text-decoration-thickness: 4px; /* Толщина подчеркивания */
+    text-decoration-color: #ffffff; /* Цвет подчеркивания */
+    text-decoration-skip-ink: auto; /* Подчеркивание будет обходить спуски и подъемы букв */
 }
 
 .nav-menu a {
@@ -82,7 +85,7 @@ body {
 
 
 font-family: Karantina;
-font-size: 20px;
+font-size: 23px;
 font-weight: 700;
 line-height: 20px;
 letter-spacing: 0px;

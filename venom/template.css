@@ -1,0 +1,101 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Обеспечивает перенос элементов на новую строку */
+    justify-content: space-between; /* Пространство между карточками */
+    max-width: 1200px; /* Ограничение максимальной ширины контейнера */
+    margin: 40px auto; /* Центрирование контейнера с отступами сверху и снизу */
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #1e1e1e; /* Темный фон для блока */
+    border-radius: 10px; /* Округленные углы */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для глубины */
+    text-align: center; /* Центрирование текста */
+    color: #ffffff; /* Белый цвет текста */
+    transition: box-shadow 0.3s ease; /* Плавный переход тени */
+    width: calc(33.333% - 20px); /* Ширина карточки с учетом отступов */
+    margin-bottom: 20px; /* Отступ снизу для каждой карточки */
+}
+
+.product-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Более глубокая тень при наведении */
+}
+
+.product-card img {
+    max-width: 100%; /* Ограничение размера изображения, чтобы оно вписывалось в карточку */
+    border-radius: 10px; /* Округленные углы изображения */
+    margin-bottom: 15px; /* Отступ снизу от изображения до текста */
+}
+
+.product-card h3 {
+    margin: 10px 0; /* Отступы сверху и снизу */
+    font-family: Karantina;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+}
+
+.product-card p {
+    margin-bottom: 10px; /* Отступ снизу */
+    color: #bbbbbb; /* Более светлый цвет для описания */
+    font-family: Karantina;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0px;
+}
+
+.product-card .price {
+    font-size: 36px; /* Размер текста с ценой */
+    color: #ff4b2b; /* Цвет текста цены */
+    font-weight: 700; /* Жирный текст */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.product-card .buy-btn {
+    display: inline-block;
+    padding: 5px 40px; /* Внутренние отступы для кнопки */
+    background-color: #ff4b2b; /* Красный фон кнопки */
+    color: #ffffff; /* Белый цвет текста кнопки */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    margin-bottom: 25px;
+    font-size: 26px; /* Размер текста кнопки */
+    font-weight: 600; /* Полужирный текст */
+    transition: background-color 0.3s ease; /* Плавный переход фона при наведении */
+}
+
+.product-card .buy-btn:hover {
+    background-color: #e43f2b; /* Более темный красный фон при наведении */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .product-card {
+        width: 90%; /* Увеличиваем ширину карточки до 90% на мобильных устройствах */
+        margin: 20px auto; /* Центрируем карточки и добавляем отступы */
+    }
+
+    .product-container {
+        justify-content: center; /* Центрирование карточек в контейнере */
+    }
+
+    .product-card h3 {
+        font-size: 28px; /* Уменьшаем размер заголовка для мобильных */
+    }
+
+    .product-card p {
+        font-size: 20px; /* Уменьшаем размер текста описания для мобильных */
+    }
+
+    .product-card .price {
+        font-size: 28px; /* Уменьшаем размер цены для мобильных */
+    }
+
+    .product-card .buy-btn {
+        font-size: 22px; /* Уменьшаем размер текста кнопки для мобильных */
+        padding: 10px 30px; /* Корректируем отступы для кнопки */
+    }
+}
