@@ -3,9 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="../style.css">
+
     <title>Document</title>
+
+    <style>
+        .product-details-container {
+    display: flex;
+    justify-content: space-between; /* Пространство между левым и правым блоком */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.product-details-left {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 65%; /* Ширина левой части */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.product-details-left h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: Karantina;
+    font-weight: 700;
+}
+
+.product-details-left p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.product-details-left img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.product-details-right {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%; /* Ширина правой части */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-info p {
+    font-size: 16px;
+    color: #bbbbbb;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.price {
+    font-size: 28px;
+    color: #ff4b2b;
+    font-weight: 700;
+}
+
+.delivery-time, .stock-status {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.contact-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #008cba; /* Цвет кнопки контактов */
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #0072a3; /* Темнее при наведении */
+}
+
+.buy-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ff4b2b; /* Красная кнопка */
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #e43f2b; /* Темнее при наведении */
+}
+
+    </style>
+
+
+
 </head>
 <body>
     
@@ -17,24 +133,24 @@
         <nav class="navbar">
           <div class="container-nav">
               <div class="logo-block">
-                  <div><img src="img/logo.svg" alt=""></div>
+                  <div><img src="../img/logo.svg" alt=""></div>
               </div>
               <div class="text-block">
                   <ul class="nav-menu">
                      
-                          <li><a href="index.html">HOME</a></li>
+                          <li><a href="../index.html">HOME</a></li>
                     
                       
                           <li class="active"><a href="#">PRODUCTS</a></li>
                   
                      
-                          <li><a href="contact.html">CONTACT</a></li>
+                          <li><a href="../contact.html">CONTACT</a></li>
                   
                   </ul>
               </div>
               <div class="menu-block">
                   <a href="#">
-                      <img src="img/telegram.svg" alt="">
+                      <img src="../img/telegram.svg" alt="">
                   </a>
               </div>
               
@@ -74,53 +190,35 @@
 
 
 
-      <div class="product-container">
-        <div class="product-card">
-            <img src="img/1.png" alt="Product Image 1">
-            <h3>Product Name 1</h3>
-            <p>Short description of the product goes here.</p>
-            <div class="price">$150</div>
-            <a href="product/telegram-prime.html" class="buy-btn">Buy Now</a>
+      <div class="product-details-container">
+        <div class="product-details-left">
+            <h2>Venom RAT + HVNC 1 Month</h2>
+            <p>Venom Software Official</p>
+            <p>Website: <a href="https://venomcontrol.com/" target="_blank">https://venomcontrol.com/</a></p>
+            <p>Video: <a href="https://vimeo.com/642549399" target="_blank">https://vimeo.com/642549399</a></p>
+            <p>Telegram Group: <a href="https://t.me/venomrat" target="_blank">https://t.me/venomrat</a></p>
+            <p>PM me here: <a href="https://t.me/VenomControl" target="_blank">https://t.me/VenomControl</a></p>
+            <p>Jabber: venomrat@jabber.ru</p>
+            <img src="img/venom-rat.png" alt="Venom RAT">
         </div>
-        <div class="product-card">
-            <img src="img/1.png" alt="Product Image 2">
-            <h3>Product Name 2</h3>
-            <p>Short description of the product goes here.</p>
-            <div class="price">$200</div>
-            <a href="product/telegram-prime.html" class="buy-btn">Buy Now</a>
-        </div>
-        <div class="product-card">
-            <img src="img/1.png" alt="Product Image 3">
-            <h3>Product Name 3</h3>
-            <p>Short description of the product goes here.</p>
-            <div class="price">$250</div>
-            <a href="product/telegram-prime.html" class="buy-btn">Buy Now</a>
-        </div>
-        <div class="product-card">
-            <img src="img/1.png" alt="Product Image 4">
-            <h3>Product Name 4</h3>
-            <p>Short description of the product goes here.</p>
-            <div class="price">$300</div>
-            <a href="product/telegram-prime.html" class="buy-btn">Buy Now</a>
-        </div>
-        <div class="product-card">
-            <img src="img/1.png" alt="Product Image 5">
-            <h3>Product Name 5</h3>
-            <p>Short description of the product goes here.</p>
-            <div class="price">$350</div>
-            <a href="product/telegram-prime.html" class="buy-btn">Buy Now</a>
-        </div>
-        <div class="product-card">
-            <img src="img/1.png" alt="Product Image 6">
-            <h3>Product Name 6</h3>
-            <p>Short description of the product goes here.</p>
-            <div class="price">$400</div>
-            <a href="product/telegram-prime.html" class="buy-btn">Buy Now</a>
+        <div class="product-details-right">
+            <div class="product-info">
+                <p>Price</p>
+                <div class="price">$350</div>
+            </div>
+            <div class="product-info">
+                <p>Delivery Time</p>
+                <div class="delivery-time">Instant</div>
+            </div>
+            <div class="product-info">
+                <p>In Stock</p>
+                <div class="stock-status">Yes</div>
+            </div>
+            <a href="https://t.me/VenomControl" class="contact-btn">Telegram Contact</a>
+            <a href="#" class="buy-btn">Buy Now</a>
         </div>
     </div>
     
-    
-    
 
 
 
@@ -132,9 +230,8 @@
 
 
 
-
-
-    <script src="script.js"></script>
+      
+    <script src="../script.js"></script>
 
     <script>
       
