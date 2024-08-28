@@ -148,6 +148,7 @@ main {
 footer {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 
@@ -260,29 +261,35 @@ video {
     opacity: 1;
 }
 
-/* Кнопка закрытия меню */
 .close-btn {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
+    width: 40px; /* Размер кнопки */
+    height: 40px;
+    background-color: #ffffff; /* Белый фон */
     border: none;
-    border-radius: 50%;
+    border-radius: 50%; /* Круглая форма */
     cursor: pointer;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Легкая тень */
     z-index: 1000;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Плавный переход */
 }
 
-.close-btn:before {
-    content: '×'; /* Символ закрытия */
-    font-size: 24px;
-    color: #333;
-    line-height: 1;
+.close-btn:hover {
+    background-color: #f0f0f0; /* Светло-серый фон при наведении */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Увеличенная тень при наведении */
+    transform: scale(1.1); /* Увеличение кнопки при наведении */
 }
+
+
+
+
+
+
 
 /* Контент меню */
 .menu-content {
