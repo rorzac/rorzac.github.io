@@ -8,21 +8,28 @@
     <title>Document</title>
 
     <style>
-        .product-details-container {
+
+
+
+
+
+.product-details-container {
     display: flex;
     justify-content: space-between; /* Пространство между левым и правым блоком */
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
+    flex-wrap: wrap; /* Позволяет блокам переноситься на новую строку при необходимости */
 }
 
 .product-details-left {
     background-color: #1e1e1e;
     border-radius: 10px;
     padding: 20px;
-    width: 65%; /* Ширина левой части */
+    flex-grow: 1; /* Позволяет левой части расширяться */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #ffffff;
+    margin-right: 20px; /* Отступ справа от левого блока */
 }
 
 .product-details-left h2 {
@@ -48,13 +55,12 @@
     background-color: #1e1e1e;
     border-radius: 10px;
     padding: 20px;
-    width: 30%; /* Ширина правой части */
+    width: 300px; /* Фиксированная ширина правого блока */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: sticky; /* Фиксируем блок при скролле */
+    top: 20px; /* Расстояние от верхней части экрана при скролле */
+    align-self: flex-start; /* Выровнять по началу контейнера */
 }
 
 .product-info {
@@ -117,6 +123,31 @@
 .buy-btn:hover {
     background-color: #e43f2b; /* Темнее при наведении */
 }
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .product-details-container {
+        flex-direction: column; /* Блоки выстраиваются в колонку */
+        padding: 10px;
+    }
+
+    .product-details-left {
+        width: 100%; /* Левая часть занимает всю ширину */
+        margin-right: 0; /* Убираем отступ справа */
+        margin-bottom: 20px; /* Добавляем отступ снизу */
+    }
+
+    .product-details-right {
+        width: 100%; /* Правая часть также занимает всю ширину */
+        position: relative; /* Убираем фиксированное позиционирование */
+        top: 0; /* Сбрасываем значение top */
+    }
+}
+
+
+
+
+
 
     </style>
 
@@ -199,6 +230,42 @@
             <p>Telegram Group: <a href="https://t.me/venomrat" target="_blank">https://t.me/venomrat</a></p>
             <p>PM me here: <a href="https://t.me/VenomControl" target="_blank">https://t.me/VenomControl</a></p>
             <p>Jabber: venomrat@jabber.ru</p>
+            <img src="../img/2.png" alt="Venom RAT">
+
+            <h2>Venom RAT + HVNC 1 Month</h2>
+            <p>Venom Software Official</p>
+            <p>Website: <a href="https://venomcontrol.com/" target="_blank">https://venomcontrol.com/</a></p>
+            <p>Video: <a href="https://vimeo.com/642549399" target="_blank">https://vimeo.com/642549399</a></p>
+            <p>Telegram Group: <a href="https://t.me/venomrat" target="_blank">https://t.me/venomrat</a></p>
+            <p>PM me here: <a href="https://t.me/VenomControl" target="_blank">https://t.me/VenomControl</a></p>
+            <p>Jabber: venomrat@jabber.ru</p>
+            <img src="../img/1.png" alt="Venom RAT">
+
+            <h2>Venom RAT + HVNC 1 Month</h2>
+            <p>Venom Software Official</p>
+            <p>Website: <a href="https://venomcontrol.com/" target="_blank">https://venomcontrol.com/</a></p>
+            <p>Video: <a href="https://vimeo.com/642549399" target="_blank">https://vimeo.com/642549399</a></p>
+            <p>Telegram Group: <a href="https://t.me/venomrat" target="_blank">https://t.me/venomrat</a></p>
+            <p>PM me here: <a href="https://t.me/VenomControl" target="_blank">https://t.me/VenomControl</a></p>
+            <p>Jabber: venomrat@jabber.ru</p>
+            <img src="img/venom-rat.png" alt="Venom RAT">
+
+            <h2>Venom RAT + HVNC 1 Month</h2>
+            <p>Venom Software Official</p>
+            <p>Website: <a href="https://venomcontrol.com/" target="_blank">https://venomcontrol.com/</a></p>
+            <p>Video: <a href="https://vimeo.com/642549399" target="_blank">https://vimeo.com/642549399</a></p>
+            <p>Telegram Group: <a href="https://t.me/venomrat" target="_blank">https://t.me/venomrat</a></p>
+            <p>PM me here: <a href="https://t.me/VenomControl" target="_blank">https://t.me/VenomControl</a></p>
+            <p>Jabber: venomrat@jabber.ru</p>
+            <img src="img/venom-rat.png" alt="Venom RAT">
+
+            <h2>Venom RAT + HVNC 1 Month</h2>
+            <p>Venom Software Official</p>
+            <p>Website: <a href="https://venomcontrol.com/" target="_blank">https://venomcontrol.com/</a></p>
+            <p>Video: <a href="https://vimeo.com/642549399" target="_blank">https://vimeo.com/642549399</a></p>
+            <p>Telegram Group: <a href="https://t.me/venomrat" target="_blank">https://t.me/venomrat</a></p>
+            <p>PM me here: <a href="https://t.me/VenomControl" target="_blank">https://t.me/VenomControl</a></p>
+            <p>Jabber: venomrat@jabber.ru</p>
             <img src="img/venom-rat.png" alt="Venom RAT">
         </div>
         <div class="product-details-right">
@@ -218,6 +285,7 @@
             <a href="#" class="buy-btn">Buy Now</a>
         </div>
     </div>
+    
     
 
 
