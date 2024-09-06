@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="76px" viewBox="0 0 76 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>play_circle_filled_white_24dp</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop/-02--Who-we-are---Executive-Leadership" transform="translate(-613.000000, -3291.000000)">
+            <g id="play_circle_filled_white_24dp" transform="translate(613.000000, 3291.000000)">
+                <polygon id="Path" points="0 0 76 0 76 76 0 76"></polygon>
+                <path d="M37.5,7 C20.112,7 6,21.112 6,38.5 C6,55.888 20.112,70 37.5,70 C54.888,70 69,55.888 69,38.5 C69,21.112 54.888,7 37.5,7 Z M31.2,52.675 L31.2,24.325 L50.1,38.5 L31.2,52.675 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

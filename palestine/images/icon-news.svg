@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-news</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-news" transform="translate(2.000000, 2.000000)">
+            <g id="folder" stroke-linecap="round" stroke-linejoin="round" transform="translate(0.333333, 0.500000)" stroke="#ED8B00" stroke-width="2.33333333">
+                <path d="M16.3333333,17.6666667 C16.3333333,18.9553311 15.2886644,20 14,20 L2.33333333,20 C1.04466892,20 0,18.9553311 0,17.6666667 L0,2.33333333 C0,1.04466892 1.04466892,0 2.33333333,0 L10.4730632,0 C14.3799099,3.02977928 16.3333333,3.97422372 16.3333333,4.83333333 L16.3333333,17.6666667 Z" id="Path"></path>
+            </g>
+            <rect id="Rectangle" fill="#ED8B00" fill-rule="nonzero" x="3.99999967" y="8" width="9" height="2"></rect>
+            <rect id="Rectangle" fill="#ED8B00" fill-rule="nonzero" x="3.99999967" y="4" width="7" height="2"></rect>
+            <rect id="Rectangle" fill="#ED8B00" fill-rule="nonzero" x="3.99999967" y="12" width="9" height="2"></rect>
+            <rect id="Rectangle" fill="#ED8B00" fill-rule="nonzero" x="3.99999967" y="16" width="5" height="2"></rect>
+            <path d="M19.9999997,6 L22.0000099,6 L22.0000099,17.6182866 C21.99103,18.1149497 21.8461557,18.5993829 21.5653869,19.0715863 C21.2846181,19.5437896 20.7628224,19.8532609 19.9999997,20 L19.9999997,6 Z" id="Rectangle" fill="#ED8B00" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

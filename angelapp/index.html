@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Drainer Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="menuWrapper">
+            <aside class="sidebar" id="sidebar">
+                <button class="close-menu" id="closeMenu">✖</button>
+                <div class="profile-card">
+                    <div class="profile-left">
+                        <div class="profile-icon">US</div>
+                        <div class="profile-details">
+                            <span class="profile-name">ANGEL DRAINER</span>
+                            <span class="profile-profit">$13</span>
+                        </div>
+                    </div>
+                    <div class="profile-score">85%</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Ether Drainer</li>
+                        <li>Auto-Transfer Settings</li>
+                        <li>My Configs</li>
+                        <li>My Invites</li>
+                        <li>Settings</li>
+                        <li>Log out</li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+
+        <div class="content">
+            <header class="navbar">
+                <h1>Angel Drainer</h1>
+                <button class="burger-menu" id="burgerMenu">
+                    <svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="4" width="24" height="2" fill="currentColor"/>
+                        <rect y="11" width="24" height="2" fill="currentColor"/>
+                        <rect y="18" width="24" height="2" fill="currentColor"/>
+                    </svg>
+                </button>
+            </header>
+
+            <main class="dashboard">
+                <div class="card">
+                    <h3>Connections</h3>
+                    <p>60</p>
+                </div>
+                <div class="card">
+                    <h3>Approvals</h3>
+                    <p>0</p>
+                </div>
+                <div class="card">
+                    <h3>Conversion</h3>
+                    <p>0%</p>
+                </div>
+                <div class="card">
+                    <h3>Domains</h3>
+                    <p>5</p>
+                </div>
+                <div class="card">
+                    <h3>Total profit</h3>
+                    <p>$13</p>
+                </div>
+                <div class="card">
+                    <h3>Season profit</h3>
+                    <p>$0</p>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+  document.getElementById('burgerMenu').addEventListener('click', function() {
+    var sidebar = document.getElementById('sidebar');
+    var menuWrapper = document.getElementById('menuWrapper');
+    var burgerMenu = document.getElementById('burgerMenu');
+    var closeMenu = document.getElementById('closeMenu');
+    
+    // Переходы для плавности
+    sidebar.style.transition = 'left 0.5s ease';
+    menuWrapper.style.transition = 'opacity 0.5s ease, backdrop-filter 0.5s ease';
+    burgerMenu.style.transition = 'opacity 0.5s ease';
+    closeMenu.style.transition = 'opacity 0.5s ease';
+
+    // Открытие меню
+    sidebar.classList.add('active');
+    sidebar.style.left = '0'; // Перемещаем меню в видимую область
+    
+    menuWrapper.style.display = 'block';
+    setTimeout(function() {
+        menuWrapper.style.opacity = '1'; // Плавно показываем затемнение
+        menuWrapper.style.backdropFilter = 'blur(5px)'; // Добавляем размытие
+    }, 10);
+
+    burgerMenu.style.opacity = '0';
+    setTimeout(function() {
+        burgerMenu.style.display = 'none'; // Скрываем бургер-меню
+    }, 500);
+    
+    closeMenu.style.display = 'block';
+    setTimeout(function() {
+        closeMenu.style.opacity = '1'; // Плавно показываем кнопку закрытия
+    }, 10);
+});
+
+document.getElementById('closeMenu').addEventListener('click', function() {
+    var sidebar = document.getElementById('sidebar');
+    var menuWrapper = document.getElementById('menuWrapper');
+    var burgerMenu = document.getElementById('burgerMenu');
+    var closeMenu = document.getElementById('closeMenu');
+    
+    // Закрытие меню
+    sidebar.style.left = '-250px'; // Возвращаем меню в скрытую область
+    menuWrapper.style.opacity = '0'; // Плавно скрываем затемнение
+    menuWrapper.style.backdropFilter = 'blur(0px)'; // Убираем размытие
+    
+    setTimeout(function() {
+        menuWrapper.style.display = 'none';
+    }, 500);
+
+    closeMenu.style.opacity = '0'; // Плавно скрываем кнопку закрытия
+    setTimeout(function() {
+        closeMenu.style.display = 'none';
+        burgerMenu.style.display = 'block'; // Показываем бургер-меню
+        setTimeout(function() {
+            burgerMenu.style.opacity = '1';
+        }, 10);
+    }, 500);
+});
+
+document.getElementById('menuWrapper').addEventListener('click', function(event) {
+    if (event.target === document.getElementById('menuWrapper')) {
+        var sidebar = document.getElementById('sidebar');
+        var burgerMenu = document.getElementById('burgerMenu');
+        var closeMenu = document.getElementById('closeMenu');
+        
+        // Закрытие меню при клике на затемнение
+        sidebar.style.left = '-250px'; // Возвращаем меню в скрытую область
+        document.getElementById('menuWrapper').style.opacity = '0'; // Плавно скрываем затемнение
+        document.getElementById('menuWrapper').style.backdropFilter = 'blur(0px)'; // Убираем размытие
+        
+        setTimeout(function() {
+            document.getElementById('menuWrapper').style.display = 'none';
+        }, 500);
+
+        closeMenu.style.opacity = '0'; // Плавно скрываем кнопку закрытия
+        setTimeout(function() {
+            closeMenu.style.display = 'none';
+            burgerMenu.style.display = 'block'; // Показываем бургер-меню
+            setTimeout(function() {
+                burgerMenu.style.opacity = '1';
+            }, 10);
+        }, 500);
+    }
+});
+
+
+    </script>
+</body>
+</html>
