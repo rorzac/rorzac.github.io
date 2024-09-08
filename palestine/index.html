@@ -568,11 +568,11 @@
 /* Общий стиль для формы */
 .donation-form {
     background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Ширина на компьютерах */
-    margin: 50px auto; /* Центрирование формы */
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 50px auto;
     font-family: 'Arial', sans-serif;
     width: 100%;
 }
@@ -580,20 +580,22 @@
 /* Адаптивная ширина формы */
 @media (max-width: 768px) {
     .donation-form {
-        width: 90%; /* Ширина на мобильных устройствах */
+        width: 90%;
+        padding: 20px;
     }
 }
 
-/* Стиль для текста поддержки */
+/* Стиль заголовка поддержки */
 .support-text {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     color: #333;
-    margin-bottom: 30px; /* Увеличен отступ снизу */
+    margin-bottom: 30px;
     font-weight: bold;
+    line-height: 1.2;
 }
 
-/* Стиль для кнопок суммы */
+/* Стиль для кнопок выбора суммы */
 .amount-options {
     display: flex;
     flex-wrap: wrap;
@@ -603,14 +605,16 @@
 
 .amount-btn {
     width: 32%;
+    padding: 15px;
     margin-bottom: 10px;
-    padding: 10px;
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    font-size: 1.2rem;
     text-align: center;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 .amount-btn.active {
@@ -629,17 +633,20 @@
 }
 
 .custom-amount label {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .custom-amount input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Стили для выбора криптовалюты */
@@ -648,16 +655,21 @@
 }
 
 .crypto-select label {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .crypto-select select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Кнопка пожертвования */
@@ -667,17 +679,17 @@
     background-color: #ff9800;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .donate-btn:hover {
-    background-color: #e68900;
+    background-color: #e67e00;
 }
 
-/* Состояние кнопки cancel */
 .donate-btn.cancel {
     background-color: #ff4c4c;
 }
@@ -686,68 +698,62 @@
     background-color: #d63b3b;
 }
 
-/* Увеличенный отступ после Cancel */
-.donate-btn.cancel + .wallet-address {
-    margin-top: 40px; /* Увеличенный отступ сверху */
+/* Стиль для блока с информацией о кошельке */
+.wallet-info {
+    margin-top: 40px;
+    text-align: left;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
 }
 
-/* Стиль для блока с адресом кошелька */
-.wallet-address {
-    margin-top: 20px;
+.wallet-info p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-/* Поля ввода */
+/* Стиль для групп ввода */
 .input-group {
     display: flex;
     align-items: center;
-    margin-bottom: 20px; /* Увеличен отступ */
-    width: 100%;
+    margin-bottom: 20px;
 }
 
-.label-group {
-    font-weight: bold;
-    color: #333;
+.input-group label {
     font-size: 1rem;
-    margin-right: 20px; /* Увеличен отступ справа */
-    white-space: nowrap;
-    width: 150px;
-    text-align: left; /* Выравнивание текста слева */
-}
-
-/* Отступы для заголовка Send your donation */
-.wallet-address p {
     font-weight: bold;
-    color: #333;
-    margin-top: 20px; /* Отступ сверху */
-    margin-bottom: 20px; /* Отступ снизу */
+    margin-right: 20px;
+    width: 150px;
     text-align: left;
+    color: #333;
 }
 
 .styled-input {
     flex-grow: 1;
-    padding: 15px; /* Увеличен размер поля ввода */
-    font-size: 16px;
+    padding: 15px;
+    font-size: 1.1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
+    border-radius: 8px;
     background-color: #f9f9f9;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
 }
 
 .copy-btn {
-    padding: 12px 20px; /* Увеличен размер кнопки копирования */
+    padding: 12px 20px;
     background-color: #f7941e;
     color: white;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    white-space: nowrap;
 }
 
 .copy-btn:hover {
-    background-color: #e6830d;
+    background-color: #e67a00;
 }
 
 /* Адаптивные стили */
@@ -765,10 +771,9 @@
         align-items: flex-start;
     }
 
-    .label-group {
+    .input-group label {
         width: 100%;
         margin-bottom: 5px;
-        text-align: left;
     }
 
     .styled-input {
@@ -782,15 +787,16 @@
 
     .custom-amount input, 
     .crypto-select select {
-        font-size: 14px;
+        font-size: 1rem;
         padding: 12px;
     }
 
     .donate-btn {
-        font-size: 16px;
+        font-size: 1.2rem;
         padding: 12px;
     }
 }
+
 
 
           </style>
