@@ -174,54 +174,54 @@
       <style>
 
 .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 40px;
-        max-width: 1200px;
-        margin: 0 auto;
-        margin-bottom: 60px; /* Добавляем отступ снизу */
-        margin-top: 60px; /* Добавляем отступ снизу */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 60px auto 60px auto; /* Добавляем отступы сверху и снизу */
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Для мобильных устройств делаем карусель */
+@media (max-width: 768px) {
+    .gallery {
+        display: flex;
+        overflow-x: auto;
+        padding: 20px;
+        margin-bottom: 40px;
+        scroll-behavior: smooth; /* Плавная прокрутка */
     }
 
     .gallery-item {
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        height: 250px;
+        flex: 0 0 80%; /* Каждое изображение будет занимать 80% ширины экрана */
+        margin-right: 15px;
     }
 
     .gallery-item img {
-        width: 100%;
-        height: 100%;
         object-fit: cover;
-        transition: transform 0.3s ease;
-        cursor: pointer;
     }
+}
 
-    .gallery-item img:hover {
-        transform: scale(1.05);
-    }
-
-    /* Для мобильных устройств делаем карусель */
-    @media (max-width: 768px) {
-        .gallery {
-            display: flex;
-            overflow-x: auto;
-            padding: 20px;
-            margin-bottom: 40px; /* Добавляем отступ снизу для мобильных */
-        }
-
-        .gallery-item {
-            flex: 0 0 80%; /* Каждое изображение будет занимать 80% ширины экрана */
-            margin-right: 15px;
-        }
-
-        .gallery-item img {
-            object-fit: cover;
-        }
-    }
       </style>
 
 
@@ -254,6 +254,26 @@
   </div>
 </div>
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const gallery = document.querySelector('.gallery');
+    
+    // Устанавливаем интервал для автопрокрутки вправо
+    let scrollAmount = 0;
+    const autoScroll = setInterval(() => {
+        if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth) {
+            // Если достигнут конец карусели, начинаем с начала
+            gallery.scrollLeft = 0;
+        } else {
+            // Прокручиваем вправо
+            scrollAmount += gallery.clientWidth / 2; // Прокручиваем на половину видимой ширины
+            gallery.scrollLeft = scrollAmount;
+        }
+    }, 2000); // Интервал прокрутки (2 секунды)
+});
+
+</script>
 
 
 
