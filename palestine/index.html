@@ -564,7 +564,9 @@
 
 
           <style>
- /* Общий стиль для формы */
+
+
+/* Общий стиль для формы */
 .donation-form {
     background-color: #f9f9f9;
     border-radius: 10px;
@@ -701,6 +703,45 @@
     background-color: #0056b3;
 }
 
+/* Стиль для формы с суммой в биткоинах */
+.wallet-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.styled-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.copy-btn {
+    padding: 10px 20px;
+    background-color: #f7941e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #e6830d;
+}
+
 /* Адаптивные стили */
 @media (max-width: 768px) {
     .amount-options {
@@ -710,10 +751,37 @@
     .amount-btn {
         width: 100%;
     }
+
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .styled-input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .copy-btn {
+        width: 100%;
+    }
+
+    .custom-amount input, 
+    .crypto-select select {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .donate-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
 }
 
 
+
           </style>
+
 
 
 
@@ -756,15 +824,17 @@
 
       <div class="wallet-info" id="walletSection" style="display: none;">
           <p>Send your donation to the following address:</p>
-          <div>
+
+          <div class="input-group">
               <label>Amount in Bitcoin:</label>
-              <input type="text" id="cryptoAmount" readonly>
-              <button onclick="copyCryptoAmount()">Copy Amount</button>
+              <input type="text" id="cryptoAmount" class="styled-input" readonly>
+              <button class="copy-btn" onclick="copyCryptoAmount()">Copy Amount</button>
           </div>
-          <div>
+
+          <div class="input-group">
               <label>Wallet Address:</label>
-              <input type="text" id="walletAddress" readonly>
-              <button onclick="copyWalletAddress()">Copy Address</button>
+              <input type="text" id="walletAddress" class="styled-input" readonly>
+              <button class="copy-btn" onclick="copyWalletAddress()">Copy Address</button>
           </div>
       </div>
   </div>
@@ -1204,9 +1274,19 @@ function showSlides(n) {
 
 
 
-
 let selectedAmount = null;
 let exchangeRates = {};
+let walletAddresses = {
+    BTC: '1BitcoinWalletAddressHere',
+    ETH: '0xEthereumWalletAddressHere',
+    'USDT-ERC20': '0xUSDT-ERC20-WalletAddressHere',
+    'USDT-TRC20': 'TUSDT-TRC20-WalletAddressHere',
+    BNB: 'bnbBinanceWalletAddressHere',
+    TON: 'tonWalletAddressHere',
+    SOL: 'solanaWalletAddressHere',
+    ADA: 'cardanoWalletAddressHere',
+    DOT: 'polkadotWalletAddressHere'
+};
 let donateBtnState = 'donate'; // donate or cancel
 
 // Функция для получения курсов криптовалют
@@ -1258,17 +1338,18 @@ function confirmDonation() {
     }
 
     const cryptoAmount = convertToCrypto(amount, crypto.split('-')[0]);
+    const walletAddress = walletAddresses[crypto]; // Вытягиваем адрес кошелька из переменной
 
     if (donateBtnState === 'donate') {
-        if (cryptoAmount) {
+        if (cryptoAmount && walletAddress) {
             document.getElementById('walletSection').style.display = 'block';
             document.getElementById('cryptoAmount').value = `${cryptoAmount} ${crypto.split('-')[0]}`;
-            document.getElementById('walletAddress').value = 'Your-Wallet-Address-Here'; // подставьте реальный кошелек
-            document.getElementById('donateBtn').textContent = 'Cancel'; // изменяем текст кнопки
-            document.getElementById('donateBtn').style.backgroundColor = 'red'; // меняем цвет на красный
-            donateBtnState = 'cancel'; // изменяем состояние кнопки
+            document.getElementById('walletAddress').value = walletAddress; // Устанавливаем правильный кошелек
+            document.getElementById('donateBtn').textContent = 'Cancel';
+            document.getElementById('donateBtn').classList.add('cancel');
+            donateBtnState = 'cancel';
         } else {
-            alert('Conversion rate not available. Please try again later.');
+            alert('Conversion rate or wallet address not available. Please try again later.');
         }
     } else {
         cancelDonation();
@@ -1278,9 +1359,9 @@ function confirmDonation() {
 // Функция для отмены доната
 function cancelDonation() {
     document.getElementById('walletSection').style.display = 'none';
-    document.getElementById('donateBtn').textContent = 'Donate Now'; // возвращаем текст кнопки
-    document.getElementById('donateBtn').style.backgroundColor = '#f7941e'; // возвращаем цвет
-    donateBtnState = 'donate'; // изменяем состояние кнопки обратно
+    document.getElementById('donateBtn').textContent = 'Donate Now';
+    document.getElementById('donateBtn').classList.remove('cancel');
+    donateBtnState = 'donate';
 }
 
 // Функция для копирования суммы
