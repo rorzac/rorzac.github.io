@@ -46,182 +46,7 @@
 
 
 
-    <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    padding: 20px;
-    justify-items: center;
-}
-
-.gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-}
-
-.overlay {
-    position: relative;
-}
-
-.zoom-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .zoom-icon {
-    opacity: 1;
-}
-
-/* Адаптивные стили */
-@media (max-width: 1200px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-/* Стили для модального окна */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Затемнение фона */
-    overflow: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal.show {
-    display: flex;
-}
-
-.modal-content {
-    position: relative;
-    margin: auto;
-    padding: 0;
-    width: 80%;
-    max-width: 900px;
-    text-align: center;
-    background: #fff;
-    border-radius: 10px;
-}
-
-.mySlides {
-    display: none;
-}
-
-.mySlides img {
-    width: 100%;
-    height: auto;
-}
-
-.mySlides.active {
-    display: block;
-}
-
-.thumbnail-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-}
-
-.thumbnail {
-    width: 100px;
-    height: auto;
-    cursor: pointer;
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
-}
-
-.thumbnail:hover {
-    opacity: 1;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    cursor: pointer;
-}
-
-/* Кнопки навигации */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    background: none;
-    border: none;
-    transition: 0.6s ease;
-}
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.prev:hover, .next:hover {
-    opacity: 0.8;
-}
-
-
-
-
-
-
-
-
-
-
-
-      </style>
-
-
-
-
-
+   
 
 
 
@@ -346,6 +171,56 @@
 
 
 
+      <style>
+
+.gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 250px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Для мобильных устройств делаем карусель */
+        @media (max-width: 768px) {
+            .gallery {
+                display: flex;
+                overflow-x: auto;
+                padding: 20px;
+            }
+
+            .gallery-item {
+                flex: 0 0 80%; /* Каждое изображение будет занимать 80% ширины экрана */
+                margin-right: 15px;
+            }
+
+            .gallery-item img {
+                object-fit: cover;
+            }
+        }
+      </style>
+
 
 
 
@@ -360,77 +235,19 @@
 
       <div class="gallery">
         <div class="gallery-item">
-            <div class="overlay">
-                <img src="images/Desktop Banner (14)_7.png" alt="Фото 1" onclick="openModal();currentSlide(1)">
-                <div class="zoom-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </div>
-            </div>
+            <img src="images/Desktop Banner (14)_7.png" alt="Фото 1">
         </div>
         <div class="gallery-item">
-            <div class="overlay">
-                <img src="images/Desktop Banner (14)_7.png" alt="Фото 2" onclick="openModal();currentSlide(2)">
-                <div class="zoom-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </div>
-            </div>
+            <img src="images/Desktop Banner (14)_7.png" alt="Фото 2">
         </div>
         <div class="gallery-item">
-            <div class="overlay">
-                <img src="images/Desktop Banner (14)_7.png" alt="Фото 3" onclick="openModal();currentSlide(3)">
-                <div class="zoom-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </div>
-            </div>
+            <img src="images/Desktop Banner (14)_7.png" alt="Фото 3">
         </div>
-    </div>
-    
-    <!-- Модальное окно слайдера -->
-    <div id="myModal" class="modal" onclick="closeModal(event)">
-        <span class="close" onclick="closeModal(event)">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-        </span>
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <div class="mySlides">
-                <img src="images/Desktop Banner (14)_7.png" alt="Фото 1">
-            </div>
-            <div class="mySlides">
-                <img src="images/Desktop Banner (14)_7.png" alt="Фото 2">
-            </div>
-            <div class="mySlides">
-                <img src="images/Desktop Banner (14)_7.png" alt="Фото 3">
-            </div>
-    
-            <!-- Кнопки навигации -->
-            <a class="prev" onclick="plusSlides(-1)">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
-                    <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-            </a>
-            <a class="next" onclick="plusSlides(1)">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-            </a>
-    
-            <!-- Миниатюры (thumbnails) -->
-            <div class="thumbnail-container">
-                <img class="thumbnail" src="images/Desktop Banner (14)_7.png" onclick="currentSlide(1)">
-                <img class="thumbnail" src="images/Desktop Banner (14)_7.png" onclick="currentSlide(2)">
-                <img class="thumbnail" src="images/Desktop Banner (14)_7.png" onclick="currentSlide(3)">
-            </div>
+        <div class="gallery-item">
+            <img src="images/Desktop Banner (14)_7.png" alt="Фото 4">
+        </div>
+        <div class="gallery-item">
+            <img src="images/Desktop Banner (14)_7.png" alt="Фото 5">
         </div>
     </div>
 
@@ -649,39 +466,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
           <style>
-            /* Стили для секции с текстом */
+
+/* Основные стили для секции с текстом */
 .content-dnt {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Секция занимает полный экран по высоте */
-    padding: 40px; /* Отступы для текста */
-    background-color: #f9f9f9; /* Цвет фона */
+    min-height: 100vh;
+    padding: 40px 0; /* Убираем отступы слева и справа, оставляем только сверху и снизу */
+    background-color: #f9f9f9;
     box-sizing: border-box;
 }
 
 .center-text {
     max-width: 800px;
-    text-align: center; /* Центровка текста */
+    text-align: center;
     font-family: 'Arial', sans-serif;
-    color: #333; /* Цвет текста */
+    color: #333;
+    padding-bottom: 30px;
 }
 
 .center-text h1 {
-    font-size: 2.5rem; /* Размер заголовка */
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #f7941e; /* Цвет заголовка */
+    color: #f77f00;
 }
 
 .center-text p {
     font-size: 1.2rem;
-    line-height: 1.6; /* Межстрочный интервал */
-    margin-bottom: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    padding: 0 20px; /* Добавлены отступы слева и справа для параграфов */
 }
 
 .center-text strong {
     font-size: 1.4rem;
-    color: #d4351b; /* Цвет для выделенного текста */
+    color: #d4351b;
 }
 
 /* Адаптивные стили для мобильных устройств */
@@ -691,10 +511,35 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     .center-text p {
         font-size: 1rem;
+        line-height: 1.6;
+        padding: 0 15px; /* Отступы уменьшаются на мобильных устройствах */
+    }
+    .center-text strong {
+        font-size: 1.2rem;
     }
 }
 
-          </style>
+/* Адаптивные стили для очень маленьких экранов */
+@media (max-width: 480px) {
+    .center-text h1 {
+        font-size: 1.6rem;
+    }
+    .center-text p {
+        font-size: 0.9rem;
+        padding: 0 10px; /* Еще меньшие отступы на очень маленьких экранах */
+    }
+    .center-text strong {
+        font-size: 1rem;
+    }
+}
+</style>
+
+
+
+
+
+
+         
 
 
 
@@ -1427,51 +1272,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     <script>
-function openModal() {
-    const modal = document.getElementById("myModal");
-    modal.classList.add("show");
-    showSlides(slideIndex);
-}
-
-function closeModal(event) {
-    const modal = document.getElementById("myModal");
-    if (event.target.classList.contains('modal') || event.target.classList.contains('close')) {
-        modal.classList.remove("show");
-    }
-}
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let thumbnails = document.getElementsByClassName("thumbnail");
-
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].classList.remove("active");
-    }
-
-    for (i = 0; i < thumbnails.length; i++) {
-        thumbnails[i].style.opacity = "0.6";
-    }
-
-    slides[slideIndex-1].classList.add("active");
-    thumbnails[slideIndex-1].style.opacity = "1";
-}
-
-
 
 
 
