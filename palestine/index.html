@@ -174,51 +174,54 @@
       <style>
 
 .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 60px; /* Добавляем отступ снизу */
+        margin-top: 60px; /* Добавляем отступ снизу */
+    }
+
+    .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 250px;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .gallery-item img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Для мобильных устройств делаем карусель */
+    @media (max-width: 768px) {
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px;
+            margin-bottom: 40px; /* Добавляем отступ снизу для мобильных */
         }
 
         .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            height: 250px;
+            flex: 0 0 80%; /* Каждое изображение будет занимать 80% ширины экрана */
+            margin-right: 15px;
         }
 
         .gallery-item img {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
-            transition: transform 0.3s ease;
-            cursor: pointer;
         }
-
-        .gallery-item img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Для мобильных устройств делаем карусель */
-        @media (max-width: 768px) {
-            .gallery {
-                display: flex;
-                overflow-x: auto;
-                padding: 20px;
-            }
-
-            .gallery-item {
-                flex: 0 0 80%; /* Каждое изображение будет занимать 80% ширины экрана */
-                margin-right: 15px;
-            }
-
-            .gallery-item img {
-                object-fit: cover;
-            }
-        }
+    }
       </style>
 
 
@@ -233,23 +236,23 @@
 
 
 
-      <div class="gallery">
-        <div class="gallery-item">
-            <img src="images/Desktop Banner (14)_7.png" alt="Фото 1">
-        </div>
-        <div class="gallery-item">
-            <img src="images/Desktop Banner (14)_7.png" alt="Фото 2">
-        </div>
-        <div class="gallery-item">
-            <img src="images/Desktop Banner (14)_7.png" alt="Фото 3">
-        </div>
-        <div class="gallery-item">
-            <img src="images/Desktop Banner (14)_7.png" alt="Фото 4">
-        </div>
-        <div class="gallery-item">
-            <img src="images/Desktop Banner (14)_7.png" alt="Фото 5">
-        </div>
-    </div>
+<div class="gallery">
+  <div class="gallery-item">
+      <img src="images/Desktop Banner (14)_7.png" alt="Фото 1">
+  </div>
+  <div class="gallery-item">
+      <img src="images/Desktop Banner (14)_7.png" alt="Фото 2">
+  </div>
+  <div class="gallery-item">
+      <img src="images/Desktop Banner (14)_7.png" alt="Фото 3">
+  </div>
+  <div class="gallery-item">
+      <img src="images/Desktop Banner (14)_7.png" alt="Фото 4">
+  </div>
+  <div class="gallery-item">
+      <img src="images/Desktop Banner (14)_7.png" alt="Фото 5">
+  </div>
+</div>
 
 
 
@@ -270,35 +273,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh; /* Высота 50% экрана */
+    height: auto; /* Автоматическая высота на телефонах */
+    padding: 20px;
 }
 
 /* Основной блок */
 .fundraising-content {
     background-color: white;
     border-radius: 20px;
-    padding: 30px;
-    width: 80%; /* Используем 80% ширины экрана */
-    max-width: 600px;
+    padding: 20px; /* Уменьшены отступы */
+    width: 90%; /* 90% ширины экрана */
+    max-width: 500px; /* Максимальная ширина блока */
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 /* Заголовок */
 .fundraising-title {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Уменьшенный размер шрифта для телефона */
     font-weight: bold;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Уменьшены отступы */
     line-height: 1.3;
 }
 
 /* Описание */
 .fundraising-description {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Уменьшен шрифт для мобильных */
     color: #555;
-    margin-bottom: 30px;
-    line-height: 1.5;
+    margin-bottom: 20px;
+    line-height: 1.4;
     font-family: 'Helvetica Neue', sans-serif;
 }
 
@@ -306,10 +310,10 @@
 .progress-bar {
     position: relative;
     background-color: #e0e0e0;
-    height: 25px;
+    height: 20px; /* Уменьшена высота прогресс-бара */
     border-radius: 50px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
 }
 
@@ -322,10 +326,10 @@
 /* Прогресс */
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #4caf50, #81c784); /* Зеленый градиент для прогресса */
+    background: linear-gradient(90deg, #4caf50, #81c784);
     border-radius: 50px;
-    transition: width 1s ease-in-out; /* Плавная анимация */
-    width: 0; /* Начальная ширина */
+    transition: width 1s ease-in-out;
+    width: 0;
 }
 
 /* Лейбл прогресса */
@@ -334,44 +338,43 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1rem;
+    font-size: 0.9rem; /* Уменьшен шрифт */
     color: #333;
     font-weight: bold;
 }
 
 /* Текст для собранных средств */
 .donation-message {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #666;
     margin-top: 10px;
     font-family: 'Arial', sans-serif;
-    padding-top: 20px;
+    padding-top: 10px;
     border-top: 1px solid #ddd;
 }
 
 /* Адаптивность */
 @media (max-width: 768px) {
     .fundraising-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .fundraising-description {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .progress-bar {
-        height: 20px;
+        height: 18px; /* Уменьшена высота для мобильных устройств */
     }
 
     .progress-label {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .donation-message {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
-
 
     </style>
 
@@ -396,6 +399,7 @@
       </p>
   </div>
 </div>
+
 
 
 
