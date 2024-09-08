@@ -565,24 +565,31 @@
 
           <style>
 
-
 /* Общий стиль для формы */
 .donation-form {
     background-color: #f9f9f9;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 50px auto; /* Добавлены отступы сверху и снизу */
+    max-width: 800px; /* Ширина на компьютерах */
+    margin: 50px auto; /* Центрирование формы */
     font-family: 'Arial', sans-serif;
+    width: 100%;
+}
+
+/* Адаптивная ширина формы */
+@media (max-width: 768px) {
+    .donation-form {
+        width: 90%; /* Ширина на мобильных устройствах */
+    }
 }
 
 /* Стиль для текста поддержки */
 .support-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Увеличен отступ снизу */
     font-weight: bold;
 }
 
@@ -595,7 +602,7 @@
 }
 
 .amount-btn {
-    width: 48%;
+    width: 32%;
     margin-bottom: 10px;
     padding: 10px;
     background-color: #f5f5f5;
@@ -603,6 +610,7 @@
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    text-align: center;
 }
 
 .amount-btn.active {
@@ -669,56 +677,55 @@
     background-color: #e68900;
 }
 
+/* Состояние кнопки cancel */
+.donate-btn.cancel {
+    background-color: #ff4c4c;
+}
+
+.donate-btn.cancel:hover {
+    background-color: #d63b3b;
+}
+
+/* Увеличенный отступ после Cancel */
+.donate-btn.cancel + .wallet-address {
+    margin-top: 40px; /* Увеличенный отступ сверху */
+}
+
 /* Стиль для блока с адресом кошелька */
 .wallet-address {
     margin-top: 20px;
 }
 
-.wallet-address p {
-    font-weight: bold;
-    color: #333;
-}
-
-.wallet-address input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.wallet-address button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.wallet-address button:hover {
-    background-color: #0056b3;
-}
-
-/* Стиль для формы с суммой в биткоинах */
-.wallet-info {
-    margin-top: 20px;
-    text-align: left;
-}
-
+/* Поля ввода */
 .input-group {
     display: flex;
     align-items: center;
-    margin: 15px 0;
+    margin-bottom: 20px; /* Увеличен отступ */
     width: 100%;
+}
+
+.label-group {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+    margin-right: 20px; /* Увеличен отступ справа */
+    white-space: nowrap;
+    width: 150px;
+    text-align: left; /* Выравнивание текста слева */
+}
+
+/* Отступы для заголовка Send your donation */
+.wallet-address p {
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px; /* Отступ сверху */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-align: left;
 }
 
 .styled-input {
     flex-grow: 1;
-    padding: 10px;
+    padding: 15px; /* Увеличен размер поля ввода */
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -728,7 +735,7 @@
 }
 
 .copy-btn {
-    padding: 10px 20px;
+    padding: 12px 20px; /* Увеличен размер кнопки копирования */
     background-color: #f7941e;
     color: white;
     border: none;
@@ -736,6 +743,7 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    white-space: nowrap;
 }
 
 .copy-btn:hover {
@@ -755,6 +763,12 @@
     .input-group {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .label-group {
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: left;
     }
 
     .styled-input {
@@ -777,7 +791,6 @@
         padding: 12px;
     }
 }
-
 
 
           </style>
@@ -1369,7 +1382,26 @@ function copyCryptoAmount() {
     const cryptoAmount = document.getElementById('cryptoAmount');
     cryptoAmount.select();
     document.execCommand('copy');
-    alert('Amount copied to clipboard');
+
+    // Отображение уведомления
+    const notification = document.createElement('div');
+    notification.classList.add('copy-notification');
+    notification.textContent = 'Amount Copied!';
+    document.body.appendChild(notification);
+    
+    // Позиционирование уведомления рядом с кнопкой
+    const rect = cryptoAmount.getBoundingClientRect();
+    notification.style.top = `${rect.top - 40}px`;
+    notification.style.left = `${rect.left}px`;
+    notification.style.display = 'block';
+    
+    // Плавное исчезновение уведомления
+    setTimeout(() => {
+        notification.style.opacity = '0';
+        setTimeout(() => {
+            notification.remove();
+        }, 500);
+    }, 1500);
 }
 
 // Функция для копирования адреса кошелька
@@ -1377,7 +1409,26 @@ function copyWalletAddress() {
     const walletAddress = document.getElementById('walletAddress');
     walletAddress.select();
     document.execCommand('copy');
-    alert('Address copied to clipboard');
+
+    // Отображение уведомления
+    const notification = document.createElement('div');
+    notification.classList.add('copy-notification');
+    notification.textContent = 'Address Copied!';
+    document.body.appendChild(notification);
+    
+    // Позиционирование уведомления рядом с кнопкой
+    const rect = walletAddress.getBoundingClientRect();
+    notification.style.top = `${rect.top - 40}px`;
+    notification.style.left = `${rect.left}px`;
+    notification.style.display = 'block';
+    
+    // Плавное исчезновение уведомления
+    setTimeout(() => {
+        notification.style.opacity = '0';
+        setTimeout(() => {
+            notification.remove();
+        }, 500);
+    }, 1500);
 }
 
 // Получить курсы криптовалют при загрузке страницы
