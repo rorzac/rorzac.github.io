@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Text File</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            // Создаем содержимое для текстового файла
+            let content = "Это содержимое вашего текстового файла.";
+
+            // Создаем объект Blob из текста
+            let blob = new Blob([content], { type: 'text/plain' });
+
+            // Создаем ссылку для скачивания
+            let link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'file.txt'; // Имя скачиваемого файла
+
+            // Добавляем ссылку на страницу и кликаем по ней автоматически
+            document.body.appendChild(link);
+            link.click();
+
+            // Удаляем ссылку после скачивания
+            document.body.removeChild(link);
+        };
+    </script>
+</body>
+</html>
