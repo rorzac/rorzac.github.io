@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraken Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;700&display=swap');
+
+        :root {
+            --primary-color: #ff0000; /* Red */
+            --secondary-color: #8b0000; /* Dark Red */
+            --bg-color: #000000; /* Black */
+            --text-color: #ffffff; /* White */
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Jura', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow: hidden;
+        }
+
+        #canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Header styling */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 10px var(--secondary-color);
+            z-index: 1;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: var(--primary-color);
+            text-shadow: 0 0 10px var(--secondary-color);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            perspective: 1000px;
+            padding: 1rem;
+           
+        }
+
+        .login-container {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 0 20px var(--primary-color), 0 0 40px var(--secondary-color);
+            width: 100%;
+            max-width: 400px;
+            transform-style: preserve-3d;
+            animation: float 6s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateZ(0px) rotateX(0deg) rotateY(0deg); }
+            25% { transform: translateZ(20px) rotateX(5deg) rotateY(5deg); }
+            75% { transform: translateZ(20px) rotateX(-5deg) rotateY(-5deg); }
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 20px var(--primary-color), 0 0 40px var(--secondary-color); }
+            to { box-shadow: 0 0 40px var(--primary-color), 0 0 80px var(--secondary-color); }
+        }
+
+        /* Unique form styling */
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, transparent, rgba(255, 0, 0, 0.2));
+            animation: rotateBg 20s linear infinite;
+        }
+
+        @keyframes rotateBg {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 1rem;
+            background: rgba(255, 0, 0, 0.1);
+            border: none;
+            
+            color: var(--text-color);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            background: rgba(255, 0, 0, 0.2);
+        }
+
+        .input-group label {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            pointer-events: none;
+           
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label {
+            top: -10px;
+            left: 15px;
+            font-size: 0.9rem;
+            color: var(--primary-color);
+        }
+
+        .input-group::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .input-group input:focus ~ ::after {
+            transform: scaleX(1);
+        }
+
+        button {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: var(--bg-color);
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 15px var(--primary-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 0, 0, 0.2);
+            transform: rotate(45deg);
+            transition: all 0.3s ease;
+        }
+
+        button:hover::before {
+            left: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 30px var(--secondary-color);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        button:active {
+            animation: pulse 0.3s linear;
+        }
+
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            .login-container {
+                padding: 1.5rem;
+            }
+            .input-group input {
+                padding: 0.8rem;
+                font-size: 0.9rem;
+            }
+            button {
+                padding: 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <!-- Moved Kraken Project to header -->
+    <header>
+        <h1>Kraken Project</h1>
+    </header>
+    <div class="container">
+        <div class="login-container">
+            <!-- Removed h1 from here -->
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="username" required autocomplete="off" placeholder=" ">
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required autocomplete="off" placeholder=" ">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="key" required autocomplete="off" placeholder=" ">
+                    <label for="key">Access Key</label>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Animated background
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const particles = [];
+        const properties = {
+            bgColor: 'rgba(0, 0, 0, 1)',
+            particleColor: 'rgba(255, 0, 0, 0.5)',
+            particleRadius: 3,
+            particleCount: 60,
+            particleMaxVelocity: 0.5,
+            lineLength: 150,
+            particleLife: 6,
+        }
+
+        window.onresize = function() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.velocityX = Math.random() * (properties.particleMaxVelocity * 2) - properties.particleMaxVelocity;
+                this.velocityY = Math.random() * (properties.particleMaxVelocity * 2) - properties.particleMaxVelocity;
+                this.life = Math.random() * properties.particleLife * 60;
+            }
+
+            position() {
+                if ((this.x + this.velocityX > canvas.width && this.velocityX > 0) || (this.x + this.velocityX < 0 && this.velocityX < 0)) {
+                    this.velocityX *= -1;
+                }
+                if ((this.y + this.velocityY > canvas.height && this.velocityY > 0) || (this.y + this.velocityY < 0 && this.velocityY < 0)) {
+                    this.velocityY *= -1;
+                }
+                this.x += this.velocityX;
+                this.y += this.velocityY;
+            }
+
+            reDraw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, properties.particleRadius, 0, Math.PI * 2);
+                ctx.closePath();
+                ctx.fillStyle = properties.particleColor;
+                ctx.fill();
+            }
+
+            reCalculateLife() {
+                if (this.life < 1) {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.velocityX = Math.random() * (properties.particleMaxVelocity * 2) - properties.particleMaxVelocity;
+                    this.velocityY = Math.random() * (properties.particleMaxVelocity * 2) - properties.particleMaxVelocity;
+                    this.life = Math.random() * properties.particleLife * 60;
+                }
+                this.life--;
+            }
+        }
+
+        function reDrawBackground() {
+            ctx.fillStyle = properties.bgColor;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function drawLines() {
+            let x1, y1, x2, y2, length, opacity;
+            for (let i in particles) {
+                for (let j in particles) {
+                    x1 = particles[i].x;
+                    y1 = particles[i].y;
+                    x2 = particles[j].x;
+                    y2 = particles[j].y;
+                    length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+                    if (length < properties.lineLength) {
+                        opacity = 1 - length / properties.lineLength;
+                        ctx.lineWidth = '0.5';
+                        ctx.strokeStyle = 'rgba(255, 0, 0, ' + opacity + ')';
+                        ctx.beginPath();
+                        ctx.moveTo(x1, y1);
+                        ctx.lineTo(x2, y2);
+                        ctx.closePath();
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function reDrawParticles() {
+            for (let i in particles) {
+                particles[i].reCalculateLife();
+                particles[i].position();
+                particles[i].reDraw();
+            }
+        }
+
+        function loop() {
+            reDrawBackground();
+            reDrawParticles();
+            drawLines();
+            requestAnimationFrame(loop);
+        }
+
+        function init() {
+            for (let i = 0; i < properties.particleCount; i++) {
+                particles.push(new Particle());
+            }
+            loop();
+        }
+
+        init();
+
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Login validation logic here
+            window.location.href = 'dashboard.html';
+        });
+    </script>
+</body>
+</html>

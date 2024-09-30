@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #1f1f1f;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo .yellow {
+    color: #f9ca24;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a.active {
+    color: #f9ca24;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.user-circle {
+    background-color: #f9ca24;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #121212;
+    font-weight: bold;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.welcome-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    color: #999;
+}
+
+.main-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.profit-card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 45%;
+}
+
+.profit-card p {
+    color: #999;
+    font-size: 14px;
+}
+
+.profit-card h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.stats-section {
+    margin-top: 40px;
+}
+
+.statistics h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.statistics p {
+    text-align: center;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-item p {
+    color: #999;
+    font-size: 14px;
+}
+
+.stat-item h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.logs-section {
+    margin-top: 40px;
+}
+
+.logs-section h4 {
+    font-size: 18px;
+}
+
+.logs-section p {
+    color: #999;
+    margin-top: 10px;
+    font-size: 14px;
+}
