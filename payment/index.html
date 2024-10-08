@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Выбор способа оплаты</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Оплата Криптовалютой</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #1a1a1a;
-            color: #ffffff;
+            background-color: #121212;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
             display: flex;
@@ -18,66 +17,142 @@
             height: 100vh;
         }
 
-        h1 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
         .container {
-            background-color: #2a2a2a;
-            padding: 20px;
-            border-radius: 10px;
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 100%;
         }
 
-        .payment-options {
+        h1 {
+            color: #4caf50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        label, select, input {
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
         }
 
         button {
-            padding: 20px;
-            width: 100px;
-            margin: 0 10px;
+            padding: 12px;
             background-color: #4caf50;
             color: #fff;
             border: none;
-            border-radius: 10px;
+            border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #43a047;
+        }
+
+        #payment-details {
+            margin-top: 20px;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            label, select, input {
+                font-size: 16px;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Выберите способ оплаты</h1>
-        <div class="payment-options">
-            <button id="crypto-btn">Криптовалюта</button>
-            <button id="card-btn">Карта</button>
-            <button id="paypal-btn">PayPal</button>
-            <button id="other-btn">Другие</button>
+        <h1>Оплата криптовалютой</h1>
+        <form id="crypto-form">
+            <label for="currency">Криптовалюта:</label>
+            <select id="currency" name="currency">
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="USDT">Tether (USDT)</option>
+            </select>
+
+            <label for="amount">Сумма (в криптовалюте):</label>
+            <input type="number" id="amount" name="amount" placeholder="Введите сумму">
+
+            <label for="converted-amount">Сумма (в USD):</label>
+            <input type="text" id="converted-amount" name="converted-amount" disabled>
+
+            <button type="submit">Оплатить</button>
+        </form>
+
+        <div id="payment-details">
+            <h2>Информация для оплаты</h2>
+            <p>Отправьте средства на следующий адрес:</p>
+            <p id="wallet-address">1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
+            <button onclick="copyWallet()">Скопировать адрес</button>
+
+            <p>Время для оплаты: <span id="timer">10:00</span></p>
+            <img src="qrcode.png" alt="QR код" id="qrcode">
+
+            <button id="cancel-btn">Отменить</button>
         </div>
     </div>
 
     <script>
-        document.getElementById('crypto-btn').addEventListener('click', function() {
-            window.location.href = 'crypto.html';
+        document.getElementById('crypto-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('payment-details').style.display = 'block';
+            startTimer();
         });
 
-        document.getElementById('card-btn').addEventListener('click', function() {
-            window.location.href = 'card.html';
-        });
+        function copyWallet() {
+            var copyText = document.getElementById('wallet-address').textContent;
+            navigator.clipboard.writeText(copyText).then(function() {
+                alert('Адрес скопирован');
+            });
+        }
 
-        document.getElementById('paypal-btn').addEventListener('click', function() {
-            alert('PayPal платежи временно недоступны.');
-        });
+        function startTimer() {
+            var timer = document.getElementById('timer');
+            var time = 600;
+            var interval = setInterval(function() {
+                var minutes = Math.floor(time / 60);
+                var seconds = time % 60;
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+                timer.textContent = minutes + ':' + seconds;
+                time--;
+                if (time < 0) {
+                    clearInterval(interval);
+                    alert('Время для оплаты истекло');
+                }
+            }, 1000);
+        }
 
-        document.getElementById('other-btn').addEventListener('click', function() {
-            alert('Другие методы будут добавлены позже.');
+        document.getElementById('cancel-btn').addEventListener('click', function() {
+            window.location.href = 'index.html';
         });
     </script>
 </body>
