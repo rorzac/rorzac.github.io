@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата картой</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 400px;
+        }
+
+        label, select {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        select {
+            padding: 10px;
+            background-color: #3a3a3a;
+            color: #fff;
+            border: 1px solid #4caf50;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Оплата картой</h1>
+        <form>
+            <label for="bank">Выберите банк:</label>
+            <select id="bank" name="bank">
+                <option value="bank1">Банк 1</option>
+                <option value="bank2">Банк 2</option>
+                <option value="bank3">Банк 3</option>
+            </select>
+
+            <p>Номер карты: <span id="card-number">1234 5678 9012 3456</span></p>
+            <button type="button" onclick="copyCard()">Скопировать карту</button>
+        </form>
+    </div>
+
+    <script>
+        function copyCard() {
+            var copyText = document.getElementById('card-number').textContent;
+            navigator.clipboard.writeText(copyText).then(function() {
+                alert('Номер карты скопирован');
+            });
+        }
+    </script>
+</body>
+</html>

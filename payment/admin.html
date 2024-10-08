@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ Панель</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form, table {
+            margin-top: 20px;
+        }
+
+        label, input {
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        input {
+            padding: 10px;
+            background-color: #3a3a3a;
+            color: #fff;
+            border: 1px solid #4caf50;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            background-color: #3a3a3a;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #4caf50;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .edit-btn, .delete-btn {
+            padding: 5px 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .edit-btn {
+            background-color: #2196F3;
+        }
+
+        .edit-btn:hover, .delete-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Админ Панель</h1>
+
+        <!-- Форма для добавления криптовалютного кошелька -->
+        <h2>Добавить криптовалютный кошелек</h2>
+        <form id="crypto-form">
+            <label for="crypto-name">Название криптовалюты:</label>
+            <input type="text" id="crypto-name" required>
+
+            <label for="crypto-wallet">Адрес кошелька:</label>
+            <input type="text" id="crypto-wallet" required>
+
+            <button type="submit">Добавить криптовалюту</button>
+        </form>
+
+        <table id="crypto-table">
+            <thead>
+                <tr>
+                    <th>Название криптовалюты</th>
+                    <th>Адрес кошелька</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Кошельки будут добавлены сюда -->
+            </tbody>
+        </table>
+
+        <!-- Форма для добавления банковской карты -->
+        <h2>Добавить банковскую карту</h2>
+        <form id="card-form">
+            <label for="bank-name">Название банка:</label>
+            <input type="text" id="bank-name" required>
+
+            <label for="card-number">Номер карты:</label>
+            <input type="text" id="card-number" required>
+
+            <button type="submit">Добавить карту</button>
+        </form>
+
+        <table id="card-table">
+            <thead>
+                <tr>
+                    <th>Название банка</th>
+                    <th>Номер карты</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Карты будут добавлены сюда -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const cryptoForm = document.getElementById('crypto-form');
+        const cardForm = document.getElementById('card-form');
+        const cryptoTable = document.getElementById('crypto-table').getElementsByTagName('tbody')[0];
+        const cardTable = document.getElementById('card-table').getElementsByTagName('tbody')[0];
+
+        // Сохранение в LocalStorage
+        const saveToLocalStorage = (key, value) => {
+            localStorage.setItem(key, JSON.stringify(value));
+        };
+
+        // Загрузка из LocalStorage
+        const loadFromLocalStorage = (key) => {
+            return JSON.parse(localStorage.getItem(key)) || [];
+        };
+
+        // Обновление таблицы криптовалют
+        const updateCryptoTable = () => {
+            const wallets = loadFromLocalStorage('cryptoWallets');
+            cryptoTable.innerHTML = '';
+            wallets.forEach((wallet, index) => {
+                const row = cryptoTable.insertRow();
+                row.innerHTML = `
+                    <td>${wallet.name}</td>
+                    <td>${wallet.wallet}</td>
+                    <td>
+                        <button class="edit-btn" onclick="editCrypto(${index})">Редактировать</button>
+                        <button class="delete-btn" onclick="deleteCrypto(${index})">Удалить</button>
+                    </td>
+                `;
+            });
+        };
+
+        // Обновление таблицы карт
+        const updateCardTable = () => {
+            const cards = loadFromLocalStorage('bankCards');
+            cardTable.innerHTML = '';
+            cards.forEach((card, index) => {
+                const row = cardTable.insertRow();
+                row.innerHTML = `
+                    <td>${card.bank}</td>
+                    <td>${card.number}</td>
+                    <td>
+                        <button class="edit-btn" onclick="editCard(${index})">Редактировать</button>
+                        <button class="delete-btn" onclick="deleteCard(${index})">Удалить</button>
+                    </td>
+                `;
+            });
+        };
+
+        // Добавление нового криптовалютного кошелька
+        cryptoForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('crypto-name').value;
+            const wallet = document.getElementById('crypto-wallet').value;
+
+            const wallets = loadFromLocalStorage('cryptoWallets');
+            wallets.push({ name, wallet });
+            saveToLocalStorage('cryptoWallets', wallets);
+            updateCryptoTable();
+            cryptoForm.reset();
+        });
+
+        // Добавление новой банковской карты
+        cardForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const bank = document.getElementById('bank-name').value;
+            const number = document.getElementById('card-number').value;
+
+            const cards = loadFromLocalStorage('bankCards');
+            cards.push({ bank, number });
+            saveToLocalStorage('bankCards', cards);
+            updateCardTable();
+            cardForm.reset();
+        });
+
+        // Удаление криптовалютного кошелька
+        const deleteCrypto = (index) => {
+            const wallets = loadFromLocalStorage('cryptoWallets');
+            wallets.splice(index, 1);
+            saveToLocalStorage('cryptoWallets', wallets);
+            updateCryptoTable();
+        };
+
+        // Удаление банковской карты
+        const deleteCard = (index) => {
+            const cards = loadFromLocalStorage('bankCards');
+            cards.splice(index, 1);
+            saveToLocalStorage('bankCards', cards);
+            updateCardTable();
+        };
+
+        // Инициализация таблиц при загрузке страницы
+        updateCryptoTable();
+        updateCardTable();
+    </script>
+</body>
+</html>
