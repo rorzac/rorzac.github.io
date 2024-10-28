@@ -1,6 +1,4 @@
-
-
-.contact-form-container {
+.contact-container {
     background-color: #1e1e1e;
     border-radius: 10px;
     padding: 30px;
@@ -9,16 +7,17 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     color: #ffffff;
     font-family: 'Arial', sans-serif;
+    text-align: center;
 }
 
-.contact-form-container h2 {
+.contact-container h2 {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 15px;
     font-family: Karantina, sans-serif;
 }
 
-.contact-form-container p {
+.contact-container p {
     font-size: 16px;
     margin-bottom: 20px;
     color: #bbbbbb;
@@ -35,86 +34,20 @@
     font-size: 18px;
     text-decoration: none;
     font-weight: 600;
-    border-bottom: 2px solid #ffffff; /* Нижняя линия */
-    padding-bottom: 2px; /* Отступ снизу для гармоничного размещения линии */
-}
-
-form {
     display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-size: 14px;
-    color: #ffffff;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-input[type="text"], input[type="email"], textarea {
-    background-color: #2a2a2a;
-    border: none;
+    align-items: center;
+    gap: 10px;
+    background-color: #0088cc;
+    padding: 10px 20px;
     border-radius: 5px;
-    padding: 15px;
-    color: #ffffff;
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-family: 'Arial', sans-serif;
-}
-
-input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
-    color: #777777;
-}
-
-textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
-.submit-btn {
-    background-color: #00a651;
-    color: #ffffff;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.submit-btn:hover {
-    background-color: #008f44;
+.telegram-link a:hover {
+    background-color: #0077b6;
 }
 
-/* Адаптация для мобильных устройств */
-@media (max-width: 768px) {
-    .contact-form-container {
-        padding: 20px;
-        margin: 20px 10px;
-        max-width: 100%; /* Увеличиваем ширину до 100% */
-        box-shadow: none; /* Убираем тень для меньших экранов */
-    }
-
-    .contact-form-container h2 {
-        font-size: 28px; /* Уменьшаем размер заголовка */
-    }
-
-    .contact-form-container p {
-        font-size: 14px; /* Уменьшаем размер текста описания */
-    }
-
-    .telegram-link a {
-        font-size: 16px; /* Уменьшаем размер текста ссылки */
-    }
-
-    input[type="text"], input[type="email"], textarea {
-        padding: 12px; /* Уменьшаем внутренние отступы для полей */
-        font-size: 14px; /* Уменьшаем размер текста в полях */
-    }
-
-    .submit-btn {
-        font-size: 16px; /* Уменьшаем размер текста кнопки */
-        padding: 12px; /* Уменьшаем отступы кнопки */
-    }
+.telegram-btn-icon {
+    width: 24px;
+    height: 24px;
 }

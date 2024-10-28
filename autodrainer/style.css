@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #121212;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #2a2a2a;
+    transition: all 0.3s ease;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #29a329;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.menu li a i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: #29a329;
+}
+
+.team {
+    margin-top: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.framed-box {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.team a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team a i {
+    margin-right: 10px;
+}
+
+.dashboard {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.header .user-info {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    color: #29a329;
+}
+
+.right-box {
+    width: auto;
+    max-width: 200px;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.stats-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+
+.stats-item h2 {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.stats-item p {
+    font-size: 24px;
+    color: #29a329;
+}
+
+.table-section {
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+table th {
+    color: #999999;
+}
+
+table td a {
+    color: #29a329;
+    text-decoration: none;
+}
+
+.table-section tr:hover {
+    background-color: #1a1a1a;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+        padding: 10px;
+    }
+
+    .menu li a {
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .menu li a i {
+        margin-right: 0;
+    }
+
+    .dashboard {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .stats-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .right-box {
+        max-width: 100%;
+    }
+}
