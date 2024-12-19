@@ -14,6 +14,88 @@
 
 
 
+		<style>
+			.contact-block {
+				max-width: 500px;
+				width: 100%;
+				border: 3px solid #00AEEF;
+				border-radius: 16px;
+				padding: 30px;
+				background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+				text-align: center;
+				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+				margin: auto;
+				font-family: Arial, sans-serif;
+			}
+	
+			.contact-block p {
+				margin: 0 0 15px;
+				font-size: 18px;
+				color: #333;
+				font-weight: 500;
+			}
+	
+			.contact-block .phone {
+				font-size: 24px;
+				font-weight: bold;
+				color: #007BFF;
+				margin-bottom: 25px;
+			}
+	
+			.social-icons {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+			}
+	
+			.social-icons a {
+				text-decoration: none;
+				width: 50px;
+				height: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 50%;
+				background-color: #f4f4f4;
+				box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+				transition: background-color 0.3s ease, transform 0.3s ease;
+			}
+	
+			.social-icons a:hover {
+				background-color: #007BFF;
+				transform: scale(1.1);
+			}
+	
+			.social-icons img {
+				width: 24px;
+				height: 24px;
+			}
+	
+			@media (max-width: 480px) {
+				.contact-block {
+					padding: 20px;
+				}
+	
+				.contact-block p {
+					font-size: 16px;
+				}
+	
+				.contact-block .phone {
+					font-size: 20px;
+				}
+	
+				.social-icons a {
+					width: 40px;
+					height: 40px;
+				}
+	
+				.social-icons img {
+					width: 20px;
+					height: 20px;
+				}
+			}
+		</style>
+
 
 	<link href="css/theme.css" rel="stylesheet">
 </head>
@@ -150,7 +232,8 @@
 
 
 				<div class="nav__right">
-					<div class="nav__phone"><a href="tel:0990003320" class="phone__link"><svg class="icon"
+					<div class="nav__phone"><a href="tel:0990003320" class="phone__link">
+						<!-- <svg class="icon"
 								viewBox="0 0 24 24" fill="currentColor">
 								<path
 									d="M15 22.75H9C4.59 22.75 3.25 21.41 3.25 17V7C3.25 2.59 4.59 1.25 9 1.25H15C19.41 1.25 20.75 2.59 20.75 7V17C20.75 21.41 19.41 22.75 15 22.75ZM9 2.75C5.42 2.75 4.75 3.43 4.75 7V17C4.75 20.57 5.42 21.25 9 21.25H15C18.58 21.25 19.25 20.57 19.25 17V7C19.25 3.43 18.58 2.75 15 2.75H9Z">
@@ -161,7 +244,11 @@
 								<path
 									d="M12.0002 19.86C10.7302 19.86 9.7002 18.83 9.7002 17.56C9.7002 16.29 10.7302 15.26 12.0002 15.26C13.2702 15.26 14.3002 16.29 14.3002 17.56C14.3002 18.83 13.2702 19.86 12.0002 19.86ZM12.0002 16.75C11.5602 16.75 11.2002 17.11 11.2002 17.55C11.2002 17.99 11.5602 18.35 12.0002 18.35C12.4402 18.35 12.8002 17.99 12.8002 17.55C12.8002 17.11 12.4402 16.75 12.0002 16.75Z">
 								</path>
-							</svg><span>+38 099 000-33-20</span></a></div>
+							</svg> -->
+							<span>+38 099 000-33-20</span></a>
+						</div>
+							
+
 				</div>
 			</div>
 		</div><!-- Основное меню end --><!-- Мобильное меню -->
@@ -245,6 +332,41 @@
 
 
 
+			<section class="is-section is-bg-section">
+				<div class="support">
+					<div class="is-container-large">
+						<div class="support-box">
+							<div class="support-content is-bg-white-02">
+								<div>
+									<div class="text">Переконайтеся в нaшій єкcпepтнocті особисто, пpocтo зателефонувавши нам:
+									</div><a href="tel:0990003320" onclick="plausible('Support Phone Clicked');"
+										class="phone">+38 099 000-33-20</a>
+								</div>
+							</div><svg class="is-icon is-hidden-xs">
+								<use xlink:href="#icon-smartphone"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<div class="contact-block">
+				<p>Убедитесь в нашей экспертизе, просто позвонив нам:</p>
+				<div class="phone">+38 099 000-33-20</div>
+				<div class="social-icons">
+					<a href="https://www.instagram.com" target="_blank">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+					</a>
+					<a href="https://www.tiktok.com" target="_blank">
+						<img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok">
+					</a>
+				</div>
+			</div>
+
+
+
 
 
 
@@ -293,6 +415,84 @@
 			</div>
 		</div>
 	</section>
+
+
+
+	<section id="order" class="is-section is-bg-section">
+		<div class="is-container-large">
+			<div class="order-header">
+				<h2 class="h2 h-smaller">Замовте прибирання у кращих клінерів в Києві</h2>
+				<div class="separator">
+					<div class="separator__first"></div>
+					<div class="separator__second"></div>
+				</div>
+			</div>
+			<div class="order">
+				<form id="35418" method="post" data-freeform=""
+					data-id="ed2510-form-JB08X1ej5-Ojb2Ya2Pp-oP2tgrWRYvXbLw1zGc3sSmhJzQy2sf3g8WXlzLup"
+					data-handle="bottom" data-ajax="" data-disable-submit=""
+					data-success-message="Form has been submitted successfully!"
+					data-error-message="Sorry, there was an error submitting the form. Please try again."
+					data-scripts-js-mask=""><input class="" name="pages" type="hidden" id="whatever-form-input-pages"
+						value="Главная"><input class="" name="browser" type="hidden" id="whatever-form-input-browser"
+						value="Mac"><input type="hidden" name="CRAFT_CSRF_TOKEN"
+						value="FPiL4WSc9Z5W8v9s5TGI6hMgq4Y-9LlswO1fQEIwbz-t2Yhw4cc4PEu6yNUJqJr0BLPPXrpCuLVWS5vxDpfQK7myahgdAytaxL3xGKv2Yg8="><input
+						type="hidden" name="action" value="freeform/submit">
+					<div id="ed2510-form-JB08X1ej5-Ojb2Ya2Pp-oP2tgrWRYvXbLw1zGc3sSmhJzQy2sf3g8WXlzLup"
+						data-scroll-anchor="" style="display: none;"></div><input type="hidden" name="freeform-action"
+						value="submit"><input type="hidden" name="freeform_payload"
+						value="0TdaTIOF0SWL9sdt8+ZkOmU3MmMzODY4NDM1MGExNjM1ODQ4MWQ1MGYzNWFhMWRhMmE4ZjFhNzA5ZGM4NDgyNTQ4ZjUxYjM5MmEzMDBjMDHA2duoTcqjQR2ZLrJtyJiIF6E9QXA2Mtv24TbvC7DAVH3kR8gPB4AgAegJxaTSlUuw6jvLxTsUJpKk075tM5RprWPG/L2P/rpG54JWY87ut8SUQUUivnTXdu6GVjigVg0WBEyG2zb+q00xEeZ7I4fs2jsaqVB8xNEC9OOkWtiX9gJ0yZ1UIsN+yZuZXb3alVHzt0AQMEeTB0224c8lTSn9PUcMD49CLC9Dpivv1JKhPLZPOD9L26X2kZNxM24RtRdEpeel3iMjlVOqxl371c++hYoqHwxJcSZfZpmJdvyKt1h/0o+Q8FXrQWakWccI8HeRt0kvXttq93ooCinl8YAsiemqSGQBy9rLq4oSBHTcNGwrVfKQ1tYaWFrmUaMqtTMWoOlRah94TXIz64svvEDDLLcm3XQHwBwLhkfHkcIua6yQsc6nIh9Y+WgsT9E3oN9WBJNVhTuJ30pf29YAsJbcqKs4Hr73h/TvcnCHkZdu2UKWJSZ2xjz4gK/uFNZIvBBXTxgB815nHtoeEAB/9iOg"><input
+						type="hidden" name="formHash"
+						value="JB08X1ej5-Ojb2Ya2Pp-oP2tgrWRYvXbLw1zGc3sSmhJzQy2sf3g8WXlzLup">
+					<div class="freeform-body-ed2510-form-JB08X1ej5-Ojb2Ya2Pp-oP2tgrWRYvXbLw1zGc3sSmhJzQy2sf3g8WXlzLup">
+						<div class="freeform-row ">
+							<div class="freeform-column "><label for="whatever-form-input-names"
+									class="is-hidden freeform-label">Имя</label><input class="freeform-input "
+									name="names" type="text" id="whatever-form-input-names" placeholder="Як вас звати?">
+							</div>
+							<div class="freeform-column "><label for="whatever-form-input-is-phone"
+									class="is-hidden freeform-label freeform-required">Телефон</label><input type="tel"
+									class="form-phone-pattern-field freeform-input "
+									data-masked-input="+38 (000) 000-00-00" data-pattern="+38 (000) 000-00-00"
+									name="is-phone" id="whatever-form-input-is-phone" placeholder="Ваш номер телефону"
+									data-required=""></div>
+							<div class="freeform-column  freeform-column-content-align-left"><button
+									class="btn btn--secondary btn--full" data-freeform-action="submit" type="submit"
+									name="form_page_submit">Замовити</button></div>
+						</div>
+					</div>
+				</form>
+				<div class="order-border"></div>
+				<div class="order-footer">
+					<div class="h4 order-footer-title">№1 в прибиранні приміщень</div>
+					<div class="order-items">
+						<div class="order-item"><svg>
+								<use xlink:href="#icon-checkbox"></use>
+							</svg>
+							<div class="order-item-text">12 мобільних бригад досвідчених клинерів</div>
+						</div>
+						<div class="order-item"><svg>
+								<use xlink:href="#icon-checkbox"></use>
+							</svg>
+							<div class="order-item-text">Працюємо по суворим стандартам компанії</div>
+						</div>
+						<div class="order-item"><svg>
+								<use xlink:href="#icon-checkbox"></use>
+							</svg>
+							<div class="order-item-text">Повна відповідальність</div>
+						</div>
+						<div class="order-item"><svg>
+								<use xlink:href="#icon-checkbox"></use>
+							</svg>
+							<div class="order-item-text">Гарантія якості послуг</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
 
 	<section class="about">
 		<div class="is-container-large">
@@ -565,7 +765,7 @@
 
 
 
-	<section class="is-section is-bg-section">
+	<!-- <section class="is-section is-bg-section">
 		<div class="support">
 			<div class="is-container-large">
 				<div class="support-box">
@@ -581,7 +781,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 
@@ -805,7 +1005,10 @@
 			</div>
 		</div>
 	</section>
-	<section id="order" class="is-section is-bg-section">
+
+
+
+	<!-- <section id="order" class="is-section is-bg-section">
 		<div class="is-container-large">
 			<div class="order-header">
 				<h2 class="h2 h-smaller">Замовте прибирання у кращих клінерів в Києві</h2>
@@ -877,7 +1080,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
 
