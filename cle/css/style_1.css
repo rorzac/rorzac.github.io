@@ -328,7 +328,7 @@ nav a {
 
 /*intro*/
 .intro{
-    min-height: 670px;
+  
     /*background: url(images/intro/bg_intro.png);
     background-position: center;
     background-size: cover;
@@ -2138,6 +2138,7 @@ z-index: 10;
 	
 	.header .phone .ph_block {
        margin-left: 0;
+       text-align: center;
     }
 	
 	.header .phone {
