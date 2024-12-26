@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bxslider -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style_1.css">
+
+    <meta name="robots" content="max-image-preview:large">
+
+   
+    <script src="js/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
+
+    <link rel="dns-prefetch" href="https://s.w.org/">
+    <style id="global-styles-inline-css" type="text/css">
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--duotone--dark-grayscale: url('index_1.html');
+            --wp--preset--duotone--grayscale: url('index_1.html');
+            --wp--preset--duotone--purple-yellow: url('index_1.html');
+            --wp--preset--duotone--blue-red: url('index_1.html');
+            --wp--preset--duotone--midnight: url('index_1.html');
+            --wp--preset--duotone--magenta-yellow: url('index_1.html');
+            --wp--preset--duotone--purple-green: url('index_1.html');
+            --wp--preset--duotone--blue-orange: url('index_1.html');
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+    </style>
+
+    <link rel="stylesheet" id="popup-maker-site-css"
+        href="css/pum-site-styles.css%40generated%3D1623073697%26ver%3D1.16.1.css" type="text/css" media="all">
+    <link rel="stylesheet" id="cf7cc-style-css" href="css/style.css%40ver%3D1.1.css" type="text/css" media="all">
+
+    <script type="text/javascript" src="frontend.js%40ver%3D5.9" id="jquery.cf7cc-js"></script>
+
+    <!--<script src="//code-eu1.jivosite.com/widget/qk2glrL7qF" async></script>-->
+
+    <link rel="icon" type="image/x-icon" href="images/cropped-cat-32x32.png">
+
+
+
+
+
+    <title>Клінінгова компанія</title>
+
+    <!-- All in One SEO Pack 2.6 by Michael Torbert of Semper Fi Web Design[10328,10401] -->
+
+    <!-- /all in one seo pack -->
+    <link rel="stylesheet" id="sbi_styles-css" href="css/sbi-styles.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css" media="all">
+    <link rel="stylesheet" id="nachisto-style-css" href="css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+    <style type="text/css">
+        .qtranxs_flag_ua {
+            background-image: url(images/ua.png);
+            background-repeat: no-repeat;
+        }
+
+        .qtranxs_flag_ru {
+            background-image: url(images/ru.png);
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+
+
+
+    <style>
+        .plashka {
+            display: block;
+            background: #41667E;
+            width: 100%;
+            text-align: center;
+
+            color: white;
+            font-size: 16px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            font-weight: bold;
+        }
+
+        @media(max-width:600px) {
+            .plashka {
+                font-size: 13px;
+            }
+        }
+    </style>
+
+  
+</head>
+
+<body data-rsssl="1">
+    <a class="plashka" href="https://nachysto.com.ua" target="_blank"><span style="font-size:20px;"></span> Професійні
+        послуги хімчистки м'яких меблів <span style="font-size:20px;">☚</span></a>
+ 
+
+
+    <div class="page">
+
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="inner">
+
+                    <div class="logo">
+                        <a href="/">
+                            <img src="images/logo-circle-ua-1-2.png" alt="#" class="logo_img1">
+                        </a>
+                    </div>
+
+                    <nav class="nav" id="nav">
+                        <ul class="topmenu">
+                            <li>
+                                <a href="/" class="nav_link">
+                                    <span>Головна</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/about" class="nav_link">
+                                    <span>Про компанію</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#services" class="nav_link">
+                                    <span>Послуги</span>
+                                </a>
+                                <ul class="submenu">
+                                    <li><a href="/general-cleaning" class="nav_link">Генеральне прибирання</a></li>
+                                    <li><a href="/pidtrimuyuche-pribirannya" class="nav_link">Підтримуюче прибирання</a>
+                                    </li>
+                                    <li><a href="/pribirannya-pislya-remontu" class="nav_link">Прибирання після
+                                            ремонту</a></li>
+                                    <li><a href="/odnokimnatna-kvartyra/" class="nav_link">Однокімнатна квартира</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/contacts" class="nav_link">
+                                    <span>Контакти</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="mob_menu">
+
+
+                            <a href="/" class="nav_link">
+                                <span>Головна</span>
+                            </a>
+                            <a href="/about" class="nav_link">
+                                <span>Про компанію</span>
+                            </a>
+                            <a href="/general-cleaning" class="nav_link">Генеральне прибирання</a>
+                            <a href="/pidtrimuyuche-pribirannya" class="nav_link">Підтримуюче прибирання</a>
+                            <a href="/pribirannya-pislya-remontu" class="nav_link">Прибирання після ремонту</a>
+                            <a href="/odnokimnatna-kvartyra/" class="nav_link">Однокімнатна квартира</a>
+                            <a href="/contacts" class="nav_link">
+                                <span>Контакти</span>
+                            </a>
+                 
+                        </div>
+                    </nav>
+
+
+                    <div class="phone">
+                    
+                        <img src="images/24hours.png" alt="#" class="img24">
+                        <div class="ph_block">
+                            <a href="tel:380992733239" class="phone_link1">+38 (099) 273-32-39</a>
+                            <a href="tel:380732733239" class="phone_link2">+38 (073) 273-32-39</a>
+                        </div>
+                        <div style="margin-top:10px;"><a href="https://t.me/nachysto" target="_blank"><img
+                                    style="width:25px;" src="images/telegram.png"></a> <a
+                                href="viber://chat?number=380992733239" target="_blank"><img style="width:25px;"
+                                    src="images/viber.png"></a>
+                            <a href="https://instagram.com/nachysto" target="_blank"><img style="width:25px;"
+                                    src="images/instagram.png"></a> <a href="https://www.facebook.com/nachysto"
+                                target="_blank"><img style="width:25px;" src="images/facebook.png"></a>
+                        </div>
+                        <!-- <a href="#" class="callback_link popmake-37"><span><img src="images/swarm.png" alt="#"
+                                    class="swarm_img">Замовити дзвінок</span></a> -->
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- intro -->
+        <div class="intro">
+
+            <img src="images/img2.png" alt="#" class="img2">
+
+            <div class="text">
+                <div class="inn">
+                    <img src="images/clock.png" alt="#" class="clock_img">
+                    <div class="txt">
+                        <p>Наш співробітник<br>
+                            приїде прибирати вже сьогодні</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bx-slider1" style="">
+
+
+                <div class="intro_slide"
+                    style="background: url(images/klining-servis.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                    <div class="container">
+                        <div class="inner">
+
+                            <div class="item" style="width: 100%;">
+                                <div class="col_1">
+                                    <div class="block_title">
+                                        <div class="title">
+                                            <p><span style="color: #41667E;">Новим клієнтам знижка 10%</span></p>
+
+
+                                        </div>
+                                        <div class="suptitle">
+                                            <p><span style="color: #41667E;"><strong>ПРАЦЮЄМО БЕЗ
+                                                        ПРЕДОПЛАТ!</strong> </span><br>
+                                                <span style="color: #6FB5CF;"><b>Оплата тільки по факту
+                                                        прибирання.</b></span><br>
+                                                Розрахунок прибирання на протязі <b>5 хвилин.</b><br>
+                                                Дзвоніть та замовляйте!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col_2">
+                                    <div role="form" class="wpcf7" id="wpcf7-f122-o1" lang="uk" dir="ltr">
+                                        <div class="screen-reader-response"></div>
+                                        <form action="/#wpcf7-f122-o1" method="post" class="wpcf7-form"
+                                            novalidate="novalidate">
+                                            <div style="display: none;">
+                                                <input type="hidden" name="_wpcf7" value="122">
+                                                <input type="hidden" name="_wpcf7_version" value="5.0.2">
+                                                <input type="hidden" name="_wpcf7_locale" value="uk">
+                                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f122-o1">
+                                                <input type="hidden" name="_wpcf7_container_post" value="0">
+                                            </div>
+                                            <div class="row">
+
+                                                <span class="wpcf7-form-control-wrap text-27"><input type="text"
+                                                        name="text-27" value="" size="40"
+                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                        aria-required="true" aria-invalid="false"
+                                                        placeholder="Ваше ім'я"></span>
+                                            </div>
+                                            <div class="row phone">
+                                                <img alt="#" class="row_img" src="images/phone.png">
+                                                <span class="wpcf7-form-control-wrap text-665"><input type="text"
+                                                        name="text-665" value="" size="40"
+                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                        aria-required="true" aria-invalid="false"
+                                                        placeholder="Ваш телефон"></span>
+                                            </div>
+                                            <div class="row">
+                                                <span class="wpcf7-form-control-wrap text-28"><input type="text"
+                                                        name="text-28" value="" size="40"
+                                                        class="wpcf7-form-control wpcf7-text" aria-invalid="false"
+                                                        placeholder="Коментар до заявки"></span>
+                                            </div>
+                                            <p><input class="wpcf7-form-control wpcf7-submit" type="submit"
+                                                    value="Замовити прибирання"></p>
+                                            <div>Ми працюємо в Києві та областi</div>
+                                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- /intro -->
+
+
+
+        <!-- /contacts -->
+        <style>
+            @media (min-width: 600px) {
+                .serv>.container {
+                    max-width: 100%;
+                }
+
+                .serv>.container .item {
+                    width: 25%;
+                }
+            }
+        </style>
+        <!-- clean -->
+        <div class="clean">
+
+            <!-- serv -->
+            <div class="serv" id="services">
+                <div class="container">
+                    <div class="inner">
+
+                        <div class="title">Види прибирань <span>на будь-який смак</span>
+                        </div>
+
+                        <div class="item"
+                            style="background: url(images/it1.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                            <div class="ttl">Однокімнатна квартира (до 50 м2)</div>
+                            <p>Вологе прибирання підлог та плінтусів, меблів (доступні поверхні)</p>
+                            <p>Видалення пилу з побутової техніки, витяжки</p>
+                            <p>Очищення підлог пилососом</p>
+                            <p>Миття панелей кухонного «фартуха», протирання обіднього столу</p>
+                            <p>Вологе прибирання підвіконь, радіаторів, труб</p>
+                            <p>Протирання дзеркал та скляних поверхонь</p>
+                            <p>Складання взуття, вологе прибирання фасадів шаф</p>
+                            <p>Миття унітазу, душової кабіни, ванни, біде</p>
+                            <div class="price">від 2 499 грн</div>
+                            <a href="/odnokimnatna-kvartyra/" class="pdr_btn">Детальніше</a>
+                            <a href="index.html#" class="apply_btn popmake-52">Замовити прибирання</a>
+                        </div>
+                        <div class="item"
+                            style="background: url(images/it2.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                            <div class="ttl">Підтримуюча</div>
+                            <p>Вологе прибирання підлог та плінтусів, меблів (доступні поверхні)</p>
+                            <p>Видалення пилу з побутової техніки, витяжки</p>
+                            <p>Очищення підлог пилососом</p>
+                            <p>Миття панелей кухонного «фартуха», протирання обіднього столу</p>
+                            <p>Вологе прибирання підвіконь, радіаторів, труб</p>
+                            <p>Протирання дзеркал та скляних поверхонь</p>
+                            <p>Складання взуття, вологе прибирання фасадів шаф.</p>
+                            <p>Миття унітазу, душової кабіни, ванни, біде</p>
+                            <div class="price">від 2 500 грн</div>
+                            <a href="/pidtrimuyuche-pribirannya/" class="pdr_btn">Детальніше</a>
+                            <a href="index.html#" class="apply_btn popmake-52">Замовити прибирання</a>
+                        </div>
+                        <div class="item"
+                            style="background: url(images/it3.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                            <div class="ttl">Генеральне прибирання</div>
+                            <p>Сухе та вологе прибирання підлоги, стелі, плінтусів (миється за меблями та під нею)</p>
+                            <p>Сухе та вологе прибирання торшерів, бра, дверей, дверних ручок</p>
+                            <p>Видаляє пил з освітлювальних приладів, предметів інтер'єру.</p>
+                            <p>Чищення килимів, вологе чищення меблів.</p>
+                            <p>Видалення забруднень та жирових плям з кухонного «фартуха», витяжки</p>
+                            <p>Глибоке очищення підлогових та настінних плиткових швів</p>
+                            <p>Чищення та дезінфекція всієї сантехніки</p>
+                            <div class="price">від 3 000 грн</div>
+                            <a href="/general-cleaning" class="pdr_btn">Детальніше</a>
+                            <a href="index.html#" class="apply_btn popmake-52">Замовити прибирання</a>
+                        </div>
+                        <div class="item"
+                            style="background: url(/wp-content/themes/nachisto/wp-content/themes/pchelki_th/images/clean/it4.png); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                            <div class="ttl">Після ремонту</div>
+                            <p>Сухе та вологе прибирання від будівельного пилу з усіх поверхонь професійним пилососом
+                            </p>
+                            <p>Знепилення стін шваброю, видалення пилу з підвіконь, радіаторів, меблів та освітлення</p>
+                            <p>Видалення будівельних забруднень, плям шпаклівки, лаку, фарби, скотчу, побілки, цементу,
+                                гіпсу тощо.</p>
+                            <p>Вологе прибирання побутових приладів та техніки зовні та всередині, видалення наклейок;
+                            </p>
+                            <p>Миття підлог та плінтусів</p>
+                            <p>Чищення сантехніки від будівельних забруднень;</p>
+                            <div class="price">від 4 000 грн</div>
+                            <a href="/pribirannya-pislya-remontu/" class="pdr_btn">Детальніше</a>
+                            <a href="index.html#" class="apply_btn popmake-52">Замовити прибирання</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /serv -->
+
+
+            <!-- why_choose_us -->
+            <div class="why_choose">
+
+                <div class="container">
+                    <div class="title">Чому Вам варто <span>звернутись до нас</span>
+                    </div>
+                    <div class="inner">
+                        <div class="text">
+
+                            <div class="item">
+                                <img src="images/house.png" alt="#" class="wh_img">
+                                <div class="ttl">
+                                    Клінінг - це не просто прибрати квартиру </div>
+                                <div class="txt">
+                                    <p>Клінінг – це не банальне прибирання. Насправді це широка сфера з дуже великою
+                                        кількістю напрямків, з якими працюють наші професіонали: миття вікон та фасадів,
+                                        хімчистка текстилю (від м’яких іграшок та дитячих матраців, де необхідний
+                                        делікатний підхід, до м’яких меблів та килимів), прибирання актових залів,
+                                        ресторанів , кафе. Нам довіряють прибирання медичні, торгові та фітнес центри,
+                                        салони краси. Особливий підхід наших клінерів – прибирання будинків та квартир
+                                        після ремонту та будівництва.</p>
+                                    <p>Професіоналізм наших клінерів відрізняється тим, що вони розуміють, який засіб і
+                                        який інвентар використовувати в кожному конкретному випадку.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/smiling.png" alt="#" class="wh_img">
+                                <div class="ttl">
+                                    Клінер - ваш надійний помічник </div>
+                                <div class="txt">
+                                    <p>Клінінг зараз входить у наше життя як потреба. Ви звільняєте так багато часу, що
+                                        можете перебудувати розпорядок свого життя і внести куди більше приємних справ:
+                                        продовжувати займатися своєю улюбленою роботою, відпочивати, проводити час з
+                                        дітьми та займатися багатьма іншими приємними справами, поки ваші квартири та
+                                        будинки в надійних руках дівчат з гордим та гарною назвою – клінер! Багато хто
+                                        хоче не того прибирання, яке вони роблять щотижня, а героїчного вчинку, після
+                                        якого квартира буде блищати. Професіоналізм клінерів не залишає наших клієнтів
+                                        байдужими. Про нас розповідають друзям, знайомим, діляться публікаціями у
+                                        instagram. Ми отримуємо безліч теплих відгуків із подяками. Для зручності
+                                        клієнтів передбачаємо систему безконтактної оплати, подарункові сертифікації та
+                                        знижкові картки.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/cleaning-tools.png" alt="#" class="wh_img">
+                                <div class="ttl">
+                                    Тільки кращі засоби </div>
+                                <div class="txt">
+                                    <p>Клінінг – це не просто набір домашніх справ, з яким може впоратися будь-яка
+                                        господиня, це справді професія і впоратися з цим може тільки професіонал, який
+                                        не до дірок тертиме ділянку бруду або сліди від торішнього жиру на фасаді кухні,
+                                        а делікатно видалить бруд, жир або слід від фломастера засобом, який завжди під
+                                        рукою у досвідченого професіонала.<br>
+                                        Клінер знає основи сервісу та розуміє як поводитися з різними засобами на різних
+                                        поверхнях.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="index.html#" class="apply_btn popmake-52">Замовити прибирання</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /why_choose_us -->
+
+            <!-- dop_serv -->
+            <div class="dop_serv">
+                <div class="container">
+                    <div class="inner">
+
+                        <div class="dop_title">Додаткові послуги</div>
+                        <div class="item">
+                            <span class="sp" style="line-height: 16px;">250 грн/год</span>
+                            <img src="images/1.png" alt="#" class="dserv_img">
+                            <div class="ttl">Прасування білизни</div>
+                        </div>
+                        <div class="item">
+                            <span class="sp" style="line-height: 16px;">120-150 грн.</span>
+                            <img src="images/2.png" alt="#" class="dserv_img">
+                            <div class="ttl">Миття вікон, м2.</div>
+                        </div>
+                        <div class="item">
+                            <span class="sp" style="">100 грн.</span>
+                            <img src="images/3.png" alt="#" class="dserv_img">
+                            <div class="ttl">Миття всередині шаф та гардеробів</div>
+                        </div>
+                        <div class="item">
+                            <span class="sp" style="">200 грн.</span>
+                            <img src="images/4.png" alt="#" class="dserv_img">
+                            <div class="ttl">Миття всередині холодильника</div>
+                        </div>
+                        <div class="item">
+                            <span class="sp" style="">170 грн.</span>
+                            <img src="images/5.png" alt="#" class="dserv_img">
+                            <div class="ttl">Миття всередині духовки</div>
+                        </div>
+                        <div class="item">
+                            <span class="sp" style="">80 грн.</span>
+                            <img src="images/6.png" alt="#" class="dserv_img">
+                            <div class="ttl">Миття всередині мікрохвильової печі</div>
+                        </div>
+                        <div class="item">
+                            <span class="sp" style="">600 грн.</span>
+                            <img src="images/7.png" alt="#" class="dserv_img">
+                            <div class="ttl">Прибирання балкону</div>
+                        </div>
+                        <div class="item">
+                            <span class="sp" style="">90 грн.</span>
+                            <img src="images/8.png" alt="#" class="dserv_img">
+                            <div class="ttl">Прибирання лотка тварин</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /dop_serv -->
+
+            <!-- quality -->
+            <div class="quality">
+                <div class="container">
+                    <div class="inner">
+
+                        <div class="col_1">
+                            <img src="images/img1-1.png" alt="#" class="vbg_img1">
+                        </div>
+
+                        <div class="col_2">
+                            <div class="ttl">
+                                Прибираємо якісно <span>і оперативно</span>
+                            </div>
+                            <p>Наша компанія виїжджає на роботу в призначену годину і після проведення всіх робіт
+                                проводить озонацію квартири або будинку.</p>
+                            <p>Наші клінери знають підхід до будь-якої поверхні, розуміються на пропорціях того чи
+                                іншого засобу.</p>
+                            <p>Ми використовуємо тільки якісні та гіпоалергенні засоби, які не зашкодять Вам та Вашому
+                                будинку.</p>
+                            <p>Наші клінери забезпечені всіма необхідними миючими засобами, що чистять, інвентарем, а
+                                також обладнанням.</p>
+                            <p>Набір обладнання залежить від виду збирання. Наша компанія приділяє особливу увагу якості
+                                послуг та Вашої безпеки, і ми повністю зацікавлені в клієнті.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /quality -->
+
+        </div>
+        <!-- /clean -->
+
+        <style>
+            .ourother_works .sl {
+                padding: 8px;
+            }
+
+            .ourother_works .sl img {
+                max-width: 100%;
+            }
+        </style>
+
+
+
+        <div class="faq">
+            <img src="images/img1_1.png" alt="#" class="img1">
+            <div class="container">
+                <div class="inner">
+
+                    <div class="col_1">
+                        <div class="title">
+                            Залишились питання? <span>Ми Вам передзвонимо і на все відповімо</span>
+
+                        </div>
+                        <div class="text">
+                        </div>
+                        <div role="form" class="wpcf7" id="wpcf7-f120-o2" lang="ru-RU" dir="ltr">
+                            <div class="screen-reader-response"></div>
+                            <form action="/#wpcf7-f120-o2" method="post" class="wpcf7-form" novalidate="novalidate">
+                                <div style="display: none;">
+                                    <input type="hidden" name="_wpcf7" value="120">
+                                    <input type="hidden" name="_wpcf7_version" value="5.0.2">
+                                    <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f120-o2">
+                                    <input type="hidden" name="_wpcf7_container_post" value="0">
+                                </div>
+                                <div class="row phone">
+                                    <img alt="#" class="row_img" src="images/phone.png">
+                                    <span class="wpcf7-form-control-wrap text-665"><input type="text" name="text-665"
+                                            value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                            aria-required="true" aria-invalid="false" placeholder="Ваш телефон"></span>
+                                </div>
+                                <div class="row_submit" style="width: 48%;">
+                                    <input class="wpcf7-form-control wpcf7-submit" type="submit" value="Відправити">
+                                </div>
+                                <div class="wpcf7-response-output wpcf7-display-none"></div>
+                            </form>
+                        </div>
+                        <div>
+                            Київ, Запоріжжя, Полтава, Одеса - безкоштовний коллбек 24\7 </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- /faq -->
+        <!-- steps -->
+        <div class="steps" id="about">
+            <img src="images/chist.png" alt="#" class="img1">
+            <div class="container">
+                <div class="inner">
+                    <div class="title">
+                        3 кроки <span>до чистоти</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="num">01</div>
+                        <img src="images/img1.png" alt="#" class="step_img">
+                        <div class="ttl">Замовте прибирання</div>
+                        <div class="txt">
+                            <p>Виберіть зручний для Вас день і час і дочекайтеся клінера</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="num">02</div>
+                        <img src="images/img2_1.png" alt="#" class="step_img">
+                        <div class="ttl">Ми наведемо порядок</div>
+                        <div class="txt">
+                            <p>У нас великий досвід та професійний інвентар</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="num">03</div>
+                        <img src="images/img3.png" alt="#" class="step_img">
+                        <div class="ttl">Насолоджуйтесь чистотою</div>
+                        <div class="txt">
+                            <p>Прийміть нашу роботу та насолоджуйтесь</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /steps -->
+
+        <style>
+            .calculator {
+                padding-bottom: 50px;
+                padding-top: 50px;
+            }
+
+            .form-group label {
+                width: 100%;
+                display: block;
+
+                color: #41667E !important;
+
+                font-family: 'Gilroy-Regular';
+                font-size: 16px;
+                color: #000;
+                margin-bottom: 5px;
+            }
+
+            .form-group {
+                font-family: 'Gilroy-Regular';
+                font-size: 16px;
+                color: #000;
+
+                margin-bottom: 20px;
+            }
+
+            .form-group input[type="text"],
+            .form-group input[type="tel"],
+            .form-group input[type="date"],
+            .form-group input[type="number"],
+            .form-group select {
+                width: 100%;
+                height: 60px;
+
+                border-width: 1px;
+                border-color: rgb(230, 232, 230);
+                border-style: solid;
+
+                border-radius: 20px;
+
+                line-height: 60px;
+
+                background: white;
+
+                padding-left: 30px;
+                padding-right: 30px;
+
+                font-family: 'Gilroy-Regular';
+                font-size: 16px;
+                color: #000;
+            }
+
+            .form-group .form-div-50 {
+                width: 49%;
+                display: inline-block;
+                vertical-align: top;
+            }
+
+            .calculator h2 {
+                font-size: 35px;
+                font-family: 'Gilroy-Regular';
+                color: #57941d;
+                font-weight: bold;
+                line-height: 1.2;
+                text-align: center;
+                margin-bottom: 60px;
+                width: 100%;
+
+                color: #41667E;
+                margin-bottom: 20px;
+            }
+
+            .calculator p {
+                font-size: 17px;
+                font-family: 'Gilroy-Regular';
+                color: rgb(0, 0, 0);
+                line-height: 1.2;
+                text-align: center;
+
+                max-width: 600px;
+                margin: 0 auto;
+                display: block;
+                margin-bottom: 30px;
+            }
+
+            .calculator button {
+                background: #6FB5CF;
+                border: 0 !important;
+
+                color: white;
+
+                font-family: 'Gilroy-Regular';
+                font-size: 17px;
+                padding: 20px 15px;
+
+                cursor: pointer;
+                border-radius: 20px;
+
+                transition: 0.3s;
+            }
+
+            .calculator button:hover {
+                background: #41667E;
+            }
+
+            .wpcf7 form.invalid .wpcf7-response-output,
+            .wpcf7 form.sent .wpcf7-response-output {
+                width: 100%;
+                text-align: center;
+                padding: 15px;
+
+                background: rgba(65, 102, 126, 0.3);
+                color: white;
+
+                margin-top: 10px;
+                bottom: -8%;
+            }
+
+            span.wpcf7-not-valid-tip {
+                top: 45px;
+            }
+
+            .calculator .container>div {
+                padding: 15px;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                border-radius: 20px;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            @media(max-width: 600px) {
+                .calculator {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+
+                .form-group .form-div-50 {
+                    width: 100%;
+                    display: block;
+                }
+
+                .calculator h2 {
+                    font-size: 24px;
+                }
+
+                .calculator p {
+                    font-size: 15px;
+                }
+            }
+        </style>
+        <div class="calculator">
+            <div class="container">
+                <h2>�&nbsp;ОЗ�&nbsp;АХУВАТИ ВА�&nbsp;ТІСТЬ</h2>
+                <p>Ми зателефонуємо вам у зручний час і запропонуємо оптимальний вибір послуг, враховуючи ваш бюджет,
+                    додаткові послуги та терміни. Просто розкажіть нам про ваші потреби та зручну дату виконання
+                    замовлення і Ви будете приємно здивовані нашим сервісом!</p>
+                <div role="form" class="wpcf7" id="wpcf7-f230-o3" lang="uk" dir="ltr">
+                    <div class="screen-reader-response"></div>
+                    <form action="/#wpcf7-f230-o3" method="post" class="wpcf7-form" novalidate="novalidate">
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="230">
+                            <input type="hidden" name="_wpcf7_version" value="5.0.2">
+                            <input type="hidden" name="_wpcf7_locale" value="uk">
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f230-o3">
+                            <input type="hidden" name="_wpcf7_container_post" value="0">
+                        </div>
+                        <div class="form-group">
+                            <label>Вид прибирання <span>*</span></label>
+                            <span class="wpcf7-form-control-wrap cleaning_type"><select name="cleaning_type"
+                                    class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                    aria-required="true" aria-invalid="false">
+                                    <option value="Однокімнатна квартира">Однокімнатна квартира</option>
+                                    <option value="Генеральне прибирання">Генеральне прибирання</option>
+                                    <option value="Підтримуюче прибирання">Підтримуюче прибирання</option>
+                                    <option value="Прибирання після ремонту">Прибирання після ремонту</option>
+                                </select></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Тип приміщення <span>*</span></label>
+                            <span class="wpcf7-form-control-wrap room_type"><select name="room_type"
+                                    class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                    aria-required="true" aria-invalid="false">
+                                    <option value="Квартира">Квартира</option>
+                                    <option value="Будинок">Будинок</option>
+                                    <option value="Офіс">Офіс</option>
+                                    <option value="Інший">Інший</option>
+                                </select></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Додаткові послуги</label>
+                            <div class="form-div-50">
+                                <span class="wpcf7-form-control-wrap additional"><span
+                                        class="wpcf7-form-control wpcf7-checkbox"><span
+                                            class="wpcf7-list-item first last"><input type="checkbox"
+                                                name="additional[]" value="Хімчистка м'яких меблів або матрацу"><span
+                                                class="wpcf7-list-item-label">Хімчистка м'яких меблів або
+                                                матрацу</span></span></span></span><br>
+                                <span class="wpcf7-form-control-wrap additional"><span
+                                        class="wpcf7-form-control wpcf7-checkbox"><span
+                                            class="wpcf7-list-item first last"><input type="checkbox"
+                                                name="additional[]" value="Прасування білизни"><span
+                                                class="wpcf7-list-item-label">Прасування
+                                                білизни</span></span></span></span><br>
+                                <span class="wpcf7-form-control-wrap additional"><span
+                                        class="wpcf7-form-control wpcf7-checkbox"><span
+                                            class="wpcf7-list-item first last"><input type="checkbox"
+                                                name="additional[]" value="Миття вікон"><span
+                                                class="wpcf7-list-item-label">Миття
+                                                вікон</span></span></span></span><br>
+                                <span class="wpcf7-form-control-wrap additional"><span
+                                        class="wpcf7-form-control wpcf7-checkbox"><span
+                                            class="wpcf7-list-item first last"><input type="checkbox"
+                                                name="additional[]" value="Миття всередині шаф та гардеробів"><span
+                                                class="wpcf7-list-item-label">Миття всередині шаф та
+                                                гардеробів</span></span></span></span><br>
+                                <span class="wpcf7-form-control-wrap additional"><span
+                                        class="wpcf7-form-control wpcf7-checkbox"><span
+                                            class="wpcf7-list-item first last"><input type="checkbox"
+                                                name="additional[]" value="Миття всередині холодильника"><span
+                                                class="wpcf7-list-item-label">Миття всередині
+                                                холодильника</span></span></span></span>
+                            </div>
+                            <div class="form-div-50">
+                                <span class="wpcf7-form-control-wrap additional"><span
+                                        class="wpcf7-form-control wpcf7-checkbox"><span
+                                            class="wpcf7-list-item first last"><input type="checkbox"
+                                                name="additional[]" value="Миття всередині духовки"><span
+                                                class="wpcf7-list-item-label">Миття всередині
+                                                духовки</span></span></span></span><br>
+                                <span class="wpcf7-form-control-wrap additional"><span
+                                        class="wpcf7-form-control wpcf7-checkbox"><span
+                                            class="wpcf7-list-item first last"><input type="checkbox"
+                                                name="additional[]" value="Миття всередині мікрохвильової печі"><span
+                                                class="wpcf7-list-item-label">Миття всередині мікрохвильової
+                                                печі</span></span></span></span><br>
+                                <span class="wpcf7-form-control-wrap additional"><span
+                                        class="wpcf7-form-control wpcf7-checkbox"><span
+                                            class="wpcf7-list-item first last"><input type="checkbox"
+                                                name="additional[]" value="Прибирання балкону"><span
+                                                class="wpcf7-list-item-label">Прибирання
+                                                балкону</span></span></span></span><br>
+                                <span class="wpcf7-form-control-wrap additional"><span
+                                        class="wpcf7-form-control wpcf7-checkbox"><span
+                                            class="wpcf7-list-item first last"><input type="checkbox"
+                                                name="additional[]" value="Прибирання лотка у тварин"><span
+                                                class="wpcf7-list-item-label">Прибирання лотка у
+                                                тварин</span></span></span></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Скільки кв.м у вашому приміщенні?</label>
+                            <span class="wpcf7-form-control-wrap sq_metters"><input type="number" name="sq_metters"
+                                    value="" class="wpcf7-form-control wpcf7-number wpcf7-validates-as-number"
+                                    aria-invalid="false"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Зручний для вас день в який потрібне прибирання</label>
+                            <span class="wpcf7-form-control-wrap cleaning_date"><input type="date" name="cleaning_date"
+                                    value="2024-12-21" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-date"
+                                    min="2024-12-21" aria-invalid="false"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Ваше і'мя</label>
+                            <span class="wpcf7-form-control-wrap your_name"><input type="text" name="your_name" value=""
+                                    size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                    aria-required="true" aria-invalid="false"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Ваш телефон</label>
+                            <span class="wpcf7-form-control-wrap phone"><input type="tel" name="phone" value=""
+                                    size="40"
+                                    class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel phone-input"
+                                    aria-required="true" aria-invalid="false"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Зручний час для дзвінка</label>
+                            <span class="wpcf7-form-control-wrap ordertime"><select name="ordertime"
+                                    class="wpcf7-form-control wpcf7-select" aria-invalid="false">
+                                    <option value="будь який час">будь який час</option>
+                                    <option value="з 7-00 до 9-00">з 7-00 до 9-00</option>
+                                    <option value="з 9-00 до 11-00">з 9-00 до 11-00</option>
+                                    <option value="з 11-00 до 13-00">з 11-00 до 13-00</option>
+                                    <option value="з 13-00 до 15-00">з 13-00 до 15-00</option>
+                                    <option value="з 15-00 до 17-00">з 15-00 до 17-00</option>
+                                    <option value="з 17-00 до 19-00">з 17-00 до 19-00</option>
+                                    <option value="з 19-00 до 21-00">з 19-00 до 21-00</option>
+                                </select></span>
+                        </div>
+                        <center><button type="submit">�&nbsp;ОЗ�&nbsp;АХУВАТИ ВА�&nbsp;ТІСТЬ</button></center>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+     
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="inner">
+
+                    <div class="logo">
+                        <a href="/" class="logo_link">
+                            <img src="images/logo-circle-ua-1-white-2.png" alt="#" class="logo_img">
+                        </a>
+                    </div>
+
+                    <div class="services">
+                        <div class="cl_1">
+                            <a href="#services">Усі послуги</a>
+                            <a href="/about">Про компанію</a>
+                            <a href="/contacts">Контакти</a>
+                            <a href="/privacy-policy/">Політика конфіденційності</a>
+                        </div>
+                        <div class="cl_1">
+                            <a href="/general-cleaning">Генеральне прибирання</a>
+                            <a href="/pidtrimuyuche-pribirannya">Підтримуюче прибирання</a>
+                            <a href="/pribirannya-pislya-remontu">Прибирання після ремонту</a>
+                        </div>
+                    </div>
+
+                    <div class="phone">
+
+                        <a href="tel:380936778858" class="ph_link">+38 (093) 677-88-58</a>
+                        <a href="tel:380686778858" class="ph_link">+38 (068) 677-88-58</a>
+                        <a href="#" class="callback_link popmake-37">
+                            <span>Замовити дзвінок</span>
+                        </a>
+                        <div class="callback_link">Київ | Запоріжжя | Полтава | Одеса
+                        </div>
+                        <br><br>
+                        <a href="https://t.me/nachysto" target="_blank"><img src="images/telegram.png"></a> <a
+                            href="viber://chat?number=380936778858" target="_blank"><img src="images/viber.png"></a>
+                        <a href="https://instagram.com/nachysto" target="_blank"><img src="images/instagram.png"></a> <a
+                            href="https://www.facebook.com/nachysto" target="_blank"><img src="images/facebook.png"></a>
+                    </div>
+
+                    <div class="copyright">Усі права захищено 2024</div>
+
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+        <!-- /footer -->
+
+    </div><!-- /page -->
+
+    <script src="js/jquery.min.js"></script>
+  
+    <style type="text/css">
+        .rezult_normal {
+            text-align: center;
+            margin-top: -5px;
+            padding-bottom: 3px;
+            margin-bottom: 7px;
+            border-bottom: solid 1px #e46b12;
+        }
+
+        .pdr_btn {
+            text-align: center;
+            margin-top: -10px;
+            padding-bottom: 10px;
+            display: block;
+            text-decoration: underline;
+            font-size: 19px;
+            color: #57951d;
+            font-weight: 600;
+        }
+    </style>
+    <script type="text/javascript">
+
+
+        jQuery(document).ready(function () {
+            $(".intro_slide, .up, .down, .down1, .up1").bind('click change focus active', function () {
+
+                setTimeout(function () {
+
+                    var value = jQuery("#vidy").children(":selected").attr("value");
+                    var komnat = $(".komnat").val();
+                    var sanuzel = $(".sanuzel").val();
+
+
+                    if (value == 'normal' & komnat == '1' & sanuzel == '1') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>2400</b> руб.");
+
+                    };
+
+                    if (value == 'normal' & komnat == '1' & sanuzel == '2') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>2400</b> руб.");
+
+                    };
+
+                    if (value == 'normal' & komnat == '2' & sanuzel == '1') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>2900</b> руб.");
+
+                    };
+
+
+                    if (value == 'normal' & komnat == '2' & sanuzel == '2') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>3300</b> руб.");
+
+                    };
+
+
+                    if (value == 'normal' & komnat == '3' & sanuzel == '1') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>3400</b> руб.");
+
+                    };
+
+                    if (value == 'normal' & komnat == '3' & sanuzel == '2') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>3800</b> руб.");
+
+                    };
+
+                    if (value == 'normal' & komnat == '4' & sanuzel == '1') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>3900</b> руб.");
+
+                    };
+
+                    if (value == 'normal' & komnat == '4' & sanuzel == '2') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>4300</b> руб.");
+
+                    };
+
+
+                    if (value == 'normal' & komnat == '4' & sanuzel == '3') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>4700</b> руб.");
+
+                    };
+                    if (value == 'normal' & komnat == '5' & sanuzel == '1') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>4500</b> руб.");
+
+                    };
+                    if (value == 'normal' & komnat == '5' & sanuzel == '2') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>4900</b> руб.");
+
+                    };
+                    if (value == 'normal' & komnat == '5' & sanuzel == '3') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>4300</b> руб.");
+
+                    };
+
+                    if (value == 'general' & komnat == '1' & sanuzel == '1') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>5000</b> руб.");
+
+                    };
+                    if (value == 'general' & komnat == '1' & sanuzel == '2') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>5000</b> руб.");
+
+                    };
+                    if (value == 'general' & komnat == '2' & sanuzel == '1') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>6000</b> руб.");
+
+                    };
+
+                    if (value == 'general' & komnat == '2' & sanuzel == '2') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>7000</b> руб.");
+
+                    };
+
+                    if (value == 'general' & komnat == '3' & sanuzel == '1') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>7000</b> руб.");
+
+                    };
+
+                    if (value == 'general' & komnat == '3' & sanuzel == '2') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>8000</b> руб.");
+
+                    };
+                    if (value == 'general' & komnat == '4' & sanuzel == '1') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>8000</b> руб.");
+
+                    };
+                    if (value == 'general' & komnat == '4' & sanuzel == '2') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>9000</b> руб.");
+
+                    };
+
+                    if (value == 'general' & komnat == '4' & sanuzel == '3') {
+
+                        $('.rezult_normal').html("Предварительная цена: <b>10000</b> руб.");
+
+                    };
+
+                });
+            })
+
+        }, 800);
+    </script>
+
+
+
+    <!-- bxslider -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/app.js"></script>
+    <div id="pum-52" class="pum pum-overlay pum-theme-11 pum-theme-lightbox popmake-overlay click_open" data-popmake="{"
+        id":52,"slug":"zakaz-uborki","theme_id":11,"cookies":[],"triggers":[{"type":"click_open","settings":{"extra_selectors":"","cookie_name":null}}],"mobile_disabled":null,"tablet_disabled":null,"meta":{"display":{"stackable":false,"overlay_disabled":false,"scrollable_content":false,"disable_reposition":false,"size":"tiny","responsive_min_width":"0%","responsive_min_width_unit":false,"responsive_max_width":"345px","responsive_max_width_unit":false,"custom_width":"640px","custom_width_unit":false,"custom_height":"380px","custom_height_unit":false,"custom_height_auto":false,"location":"center=""
+        top","position_from_trigger":false,"position_top":"100","position_left":"0","position_bottom":"0","position_right":"0","position_fixed":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center=""
+        top","overlay_zindex":false,"zindex":"1999999999"},"close":{"text":"","button_delay":"0","overlay_click":false,"esc_press":false,"f4_press":false},"click_open":[]}}"=""
+        role="dialog" aria-hidden="true">
+
+        <div id="popmake-52"
+            class="pum-container popmake theme-11 pum-responsive pum-responsive-tiny responsive size-tiny">
+
+
+
+
+
+
+
+            <div class="pum-content popmake-content">
+                <div role="form" class="wpcf7" id="wpcf7-f121-o4" lang="ru-RU" dir="ltr">
+                    <div class="screen-reader-response"></div>
+                    <form action="/#wpcf7-f121-o4" method="post" class="wpcf7-form" novalidate="novalidate">
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="121">
+                            <input type="hidden" name="_wpcf7_version" value="5.0.2">
+                            <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f121-o4">
+                            <input type="hidden" name="_wpcf7_container_post" value="0">
+                        </div>
+                        <div class="title">
+                            Залиште свої контакти, <span>і ми Вам зателефонуємо</span>
+                        </div>
+                        <div class="row phone" style="width: 100%;">
+                            <img alt="#" class="row_img" src="images/phone.png">
+                            <span class="wpcf7-form-control-wrap text-665"><input type="text" name="text-665" value=""
+                                    size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                    aria-required="true" aria-invalid="false" placeholder="Ваш телефон"></span>
+                        </div>
+                        <div class="row_submit" style="width: 100%;">
+                            <input class="wpcf7-form-control wpcf7-submit" type="submit" value="Відправити">
+                        </div>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+            <button type="button" class="pum-close popmake-close" aria-label="Закрыть">
+                × </button>
+
+        </div>
+
+    </div>
+    <div id="pum-37" class="pum pum-overlay pum-theme-11 pum-theme-lightbox popmake-overlay click_open" data-popmake="{"
+        id":37,"slug":"zakazat-obratnyj-zvonok","theme_id":11,"cookies":[],"triggers":[{"type":"click_open","settings":{"extra_selectors":"","cookie_name":null}}],"mobile_disabled":null,"tablet_disabled":null,"meta":{"display":{"stackable":false,"overlay_disabled":false,"scrollable_content":false,"disable_reposition":false,"size":"tiny","responsive_min_width":"0%","responsive_min_width_unit":false,"responsive_max_width":"340px","responsive_max_width_unit":false,"custom_width":"640px","custom_width_unit":false,"custom_height":"380px","custom_height_unit":false,"custom_height_auto":false,"location":"center=""
+        top","position_from_trigger":false,"position_top":"100","position_left":"0","position_bottom":"0","position_right":"0","position_fixed":false,"animation_type":"fade","animation_speed":"350","animation_origin":"center=""
+        top","overlay_zindex":false,"zindex":"1999999999"},"close":{"text":"","button_delay":"0","overlay_click":false,"esc_press":false,"f4_press":false},"click_open":[]}}"=""
+        role="dialog" aria-hidden="true">
+
+        <div id="popmake-37"
+            class="pum-container popmake theme-11 pum-responsive pum-responsive-tiny responsive size-tiny">
+
+
+
+
+
+
+
+            <div class="pum-content popmake-content">
+                <div role="form" class="wpcf7" id="wpcf7-f121-o5" lang="ru-RU" dir="ltr">
+                    <div class="screen-reader-response"></div>
+                    <form action="/#wpcf7-f121-o5" method="post" class="wpcf7-form" novalidate="novalidate">
+                        <div style="display: none;">
+                            <input type="hidden" name="_wpcf7" value="121">
+                            <input type="hidden" name="_wpcf7_version" value="5.0.2">
+                            <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f121-o5">
+                            <input type="hidden" name="_wpcf7_container_post" value="0">
+                        </div>
+                        <div class="title">
+                            Залиште свої контакти, <span>і ми Вам зателефонуємо</span>
+                        </div>
+                        <div class="row phone" style="width: 100%;">
+                            <img alt="#" class="row_img" src="images/phone.png">
+                            <span class="wpcf7-form-control-wrap text-665"><input type="text" name="text-665" value=""
+                                    size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                    aria-required="true" aria-invalid="false" placeholder="Ваш телефон"></span>
+                        </div>
+                        <div class="row_submit" style="width: 100%;">
+                            <input class="wpcf7-form-control wpcf7-submit" type="submit" value="Відправити">
+                        </div>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+            <button type="button" class="pum-close popmake-close" aria-label="Закрыть">
+                × </button>
+
+        </div>
+
+    </div>
+
+  
+
+
+
+</body>
+
+</html>

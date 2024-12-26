@@ -1,0 +1,188 @@
+@font-face {
+	font-family: 'Gilroy-Black';
+    src: url('../fonts/Gilroy-Black.ttf'); 
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-BlackItalic';
+    src: url('../fonts/Gilroy-Black.ttf'); 
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.ttf'); 
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-BoldItalic';
+    /*src: url('https://www.olivia-cleaning.ru/wp-content/themes/pchelki_th/fonts/Gilroy-BoldItalic');*/
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gilroy-Extrabold';
+    src: url('../fonts/Gilroy-Extrabold.ttf'); 
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-ExtraboldItalic';
+    src: url('../fonts/Gilroy-ExtraboldItalic.ttf'); 
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gilroy-Black';
+    /*src: url('https://www.olivia-cleaning.ru/wp-content/themes/pchelki_th/fonts/Gilroy-Black');*/
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-Heavy';
+    src: url('../fonts/Gilroy-Heavy.ttf'); 
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-HeavyItalic';
+    src: url('../fonts/Gilroy-HeavyItalic.ttf'); 
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gilroy-Light';
+    src: url('../fonts/Gilroy-Light.ttf'); 
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-LightItalic';
+    src: url('../fonts/Gilroy-LightItalic.ttf'); 
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gilroy-Medium';
+    src: url('../fonts/Gilroy-Medium.ttf'); 
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-MediumItalic';
+    src: url('../fonts/Gilroy-MediumItalic.ttf'); 
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.ttf'); 
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-RegularItalic';
+    src: url('../fonts/Gilroy-RegularItalic.ttf'); 
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gilroy-Semibold';
+    src: url('../fonts/Gilroy-Semibold.ttf'); 
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-SemiboldItalic';
+    src: url('../fonts/Gilroy-SemiboldItalic.ttf'); 
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gilroy-Thin';
+    src: url('../fonts/Gilroy-Thin.ttf'); 
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-ThinItalic';
+    src: url('../fonts/Gilroy-ThinItalic.ttf'); 
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gilroy-UltraLight';
+    src: url('../fonts/Gilroy-UltraLight.ttf'); 
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy-UltraLightItalic';
+    src: url('../fonts/Gilroy-UltraLightItalic.ttf'); 
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay-Black';
+    src: url('../PlayfairDisplay-Black.otf.html'); 
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay-BlackItalic';
+    src: url('../PlayfairDisplay-BlackItalic.otf.html'); 
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay-Bold';
+    src: url('../PlayfairDisplay-Bold.otf.html'); 
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay-BoldItalic';
+    src: url('../PlayfairDisplay-BoldItalic.otf.html'); 
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay-Italic';
+    src: url('../PlayfairDisplay-Italic.otf.html'); 
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay-Regular';
+    src: url('../PlayfairDisplay-Regular.otf.html'); 
+	font-weight: 400;
+	font-style: normal;
+}
