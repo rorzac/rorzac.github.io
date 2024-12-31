@@ -149,66 +149,66 @@ div.languages{
 }
 
 .header .nav .nav_link span::after {
-    background-color: #6FB5CF;
+    background-color: #8151CF;
 }
 .header .nav .nav_link:hover {
-    color: #6FB5CF;
+    color: #8151CF;
     transition: all 0.3s linear;
 }
 .header .nav .nav_link span::before {
-    background: #6FB5CF;
+    background: #8151CF;
 }
 .intro .col_2 form input[type="submit"]{
-    border-color: #6FB5CF;
-    background: #6FB5CF;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 .intro .col_2 form input[type="submit"]:hover{
-    border-color: #41667E;
-    background: #41667E;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 
 .clean .serv .item::before {
-    background: #6FB5CF;
+    background: #8151CF;
 }
 .clean .serv .item:nth-child(3)::before {
-    background: #41667E;
+    background: #8151CF;
 }
 .clean .serv .item:nth-child(4)::before {
-    background: #6FB5CF;
+    background: #8151CF;
 }
 .clean .serv .title{
-    color: #41667E;
+    color: #8151CF;
 }
 .clean .serv .item .ttl{
-    color: #6FB5CF;
+    color: #8151CF;
 }
 .clean .serv .item:nth-child(3) .ttl {
-    color: #41667E;
+    color: #8151CF;
 }
 .clean .serv .item:nth-child(4) .ttl {
-    color: #6FB5CF;
+    color: #8151CF;
 }
 .clean .serv .item .price {
-    color: #41667E;
+    color: #8151CF;
 }
 
 .clean .serv .item .apply_btn{
-    border-color: #6FB5CF;
-    background: #6FB5CF;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 .clean .serv .item .apply_btn:hover{
-    border-color: #41667E;
-    background: #41667E;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 .pdr_btn {
-    color: #41667E!important;
+    color: #8151CF!important;
 }
 .intro .col_1 .suptitle::before{
-    color: #6FB5CF;
+    color: #8151CF;
 }
 
 .intro .col_1 .suptitle::before{
-    background: #6FB5CF;
+    background: #8151CF;
 }
 .clean .why_choose .title{
     color: #41667E!important;
@@ -218,33 +218,33 @@ div.languages{
 }
 
 .clean .why_choose .apply_btn{
-    border-color: #6FB5CF;
-    background: #6FB5CF;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 .clean .why_choose .apply_btn:hover{
-    border-color: #41667E;
-    background: #41667E;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 .header .phone .callback_link{
-    color: #41667E;
+    color: #8151CF;
 }
 
 .clean .dop_serv .dop_title{
-    color: #41667E;
+    color: #8151CF;
 }
 .clean .dop_serv .item .sp {
-    background: #41667E;
+    background: #8151CF;
 }
 
 .clean .quality .col_2 .ttl span{
-    color: #41667E;
+    color: #8151CF;
 }
 .faq .title span {
-    color: #41667E;
+    color: #8151CF;
 }
 .faq form input[type="submit"]{
-    border-color: #6FB5CF;
-    background: #6FB5CF;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 .faq form input[type="submit"]:hover{
     border-color: #41667E;
@@ -257,8 +257,8 @@ div.languages{
     color: #41667E;
 }
 .steps .apply_btn{
-    border-color: #6FB5CF;
-    background: #6FB5CF;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 .steps .apply_btn:hover {
     border-color: #41667E;
@@ -269,11 +269,11 @@ div.languages{
     color: white;
 }
 #popmake-37 form .title span, #popmake-52 form .title span{
-    color: #41667E;
+    color: #8151CF;
 }
 #popmake-37 form input[type="submit"], #popmake-52 form input[type="submit"]{
-    border-color: #6FB5CF;
-    background: #6FB5CF;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 #popmake-37 form input[type="submit"]:hover, #popmake-52 form input[type="submit"]:hover{
     border-color: #41667E;
@@ -283,14 +283,14 @@ div.languages{
     color: #41667E;
 }
 .serv_slide .title::after {
-    background: #6FB5CF;
+    background: #8151CF;
 }
 .serv_bg .serv_items .item .sttl {
     color: #41667E!important;
 }
 .serv_bg .serv_ftext .col_1 .price .call_serv .btn{
-    border-color: #6FB5CF;
-    background: #6FB5CF;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 .serv_bg .serv_ftext .col_1 .price .call_serv .btn:hover{
     border-color: #41667E;
@@ -307,17 +307,17 @@ div.languages{
     color: #41667E!important;
 }
 .serv_akzii .item::before {
-    background: #6FB5CF;
+    background: #8151CF;
 }
 .serv_akzii .item:nth-child(3)::before {
-    background: #41667E;
+    background: #8151CF;
 }
 .serv_akzii .item:nth-child(4)::before {
-    background: #6FB5CF;
+    background: #8151CF;
 }
 .serv_akzii .s_btns .btn.skidka{
-    border-color: #6FB5CF;
-    background: #6FB5CF;
+    border-color: #8151CF;
+    background: #8151CF;
 }
 
 .other_serv .title{
@@ -327,13 +327,13 @@ div.languages{
     background: #41667E;
 }
 .other_serv .item:hover::before {
-    background: #6FB5CF;
+    background: #8151CF;
 }
 .other_serv .item:hover .ttl{
     color: #41667E;
 }
 .other_serv .item .price {
-    color:#6FB5CF;
+    color:#8151CF;
 }
 .ourother_works .title{
     color: #41667E;

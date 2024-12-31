@@ -1015,7 +1015,7 @@ z-index: 10;
 
 .clean .serv .item .ttl{
     font-size: 22px;
-  font-family: 'Playfair Display';
+  /* font-family: 'Playfair Display'; */
   color: rgb(242, 21, 21);
   font-weight: bold;
   font-style: italic;
@@ -1265,7 +1265,7 @@ z-index: 10;
 
 .clean .dop_serv .dop_title{
   font-size: 35px;
-  font-family: 'Playfair Display';
+  /* font-family: 'Playfair Display'; */
   color: #57941d;
   font-weight: bold;
   font-style: italic;
@@ -1491,7 +1491,7 @@ z-index: 10;
 .faq .title span{
     display: block;
     color: #57941d;
-    font-family: 'Playfair Display';
+    /* font-family: 'Playfair Display'; */
     font-style: italic;
 }
 
