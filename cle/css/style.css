@@ -299,7 +299,7 @@ div.languages{
     align-items: center; 
     flex-wrap: wrap; /* Позволяет переносить изображения, если не хватает места */
     
-    width: 60%; 
+    width: 70%; 
     margin: 0 auto; /* Центрируем по горизонтали */
 }
 
