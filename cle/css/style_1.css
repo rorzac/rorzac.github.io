@@ -269,6 +269,8 @@ nav a {
 .header .phone{
    width: 20%;
     position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .header .phone .img24{
@@ -421,7 +423,7 @@ nav a {
 .intro .text{
     position: absolute;
     bottom: -130px;
-    left: 15%;
+    left: 70%;
     background: url(../images/bg.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -989,6 +991,7 @@ z-index: 10;
   box-shadow: -1.717px 8.835px 49px 0px rgba(62, 21, 7, 0.19);
     position: relative;
     z-index: 9;
+    margin: 40px;
 }
 
 .clean .serv .item::before{
