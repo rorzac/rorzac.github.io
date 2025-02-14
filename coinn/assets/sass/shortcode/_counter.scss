@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+  13. Counter
+----------------------------------------------------------------*/
+.cs_counter.cs_style_1 {
+  display: flex;
+  flex-direction: column;
+
+  .cs_counter_number {
+    font-size: 48px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    line-height: 1.2em;
+    margin-bottom: 4px;
+  }
+
+  .cs_counter_title {
+    font-size: 24px;
+    line-height: 1.41em;
+  }
+}
+
+.cs_counter_1_wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

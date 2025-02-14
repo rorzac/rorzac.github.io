@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+  12. CTA
+----------------------------------------------------------------*/
+.cs_cta.cs_style_1 {
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 24, 255, 0.1) 0%,
+    rgba(130, 63, 255, 0.1) 100%
+  );
+  padding: 60px;
+  position: relative;
+  .cs_cta_title {
+    font-size: 36px;
+    line-height: 1.44em;
+    margin-bottom: 20px;
+    max-width: 600px;
+  }
+  .cs_cta_subtitle {
+    font-size: 20px;
+    line-height: 1.33em;
+    max-width: 490px;
+    margin-bottom: 30px;
+  }
+  .cs_cta_in {
+    position: relative;
+    z-index: 2;
+  }
+  .cs_cta_img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &.cs_type_1 {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .cs_cta_title {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cs_cta_subtitle {
+      font-weight: 500;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

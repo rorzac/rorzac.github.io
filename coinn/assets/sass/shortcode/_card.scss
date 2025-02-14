@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+  15. Card
+----------------------------------------------------------------*/
+.cs_card.cs_style_1 {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+
+  .cs_card_thumbnail {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &.cs_type_1 {
+      border-radius: 50%;
+    }
+
+    img {
+      border-radius: inherit;
+      transition: all 0.7s ease;
+    }
+    &:hover {
+      img {
+        transform: scale(1.03);
+      }
+    }
+  }
+
+  .cs_card_text {
+    padding: 0 1px 1px 1px;
+    background: var(
+      --linear,
+      linear-gradient(
+        90deg,
+        rgba(224, 24, 255, 0.8) 0%,
+        rgba(130, 63, 255, 0.8) 100%
+      )
+    );
+    border-radius: 0px 0px 8px 8px;
+    position: relative;
+    z-index: 1;
+
+    &.cs_type_1 {
+      border-radius: 40px;
+      text-align: center;
+    }
+  }
+
+  .cs_card_text_inner {
+    background: #191618;
+    border-radius: 0px 0px 8px 8px;
+    padding: 12px;
+    border-radius: inherit;
+  }
+
+  .cs_card_title {
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+}

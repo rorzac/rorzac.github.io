@@ -1,0 +1,211 @@
+/*--------------------------------------------------------------
+  9. Hero
+----------------------------------------------------------------*/
+.cs_hero.cs_style_1 {
+  padding: 176px 0 146px;
+  min-height: 800px;
+  @media (max-width: 991px) {
+    padding: 150px 0 100px;
+    min-height: initial;
+  }
+  .cs_hero_title {
+    font-size: 60px;
+    line-height: 1.26em;
+    max-width: 700px;
+    margin-bottom: 40px;
+    @media (max-width: 1199px) {
+      font-size: 54px;
+    }
+    @media (max-width: 767px) {
+      font-size: 44px;
+      margin-bottom: 22px;
+    }
+  }
+  .cs_hero_subtitle {
+    color: var(--heading-color);
+    max-width: 580px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    @media (max-width: 1199px) {
+      max-width: 430px;
+    }
+  }
+  .cs_hero_btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
+  .container,
+  .cs_hero_in {
+    position: relative;
+    z-index: 6;
+  }
+  .cs_hero_thumb {
+    position: absolute;
+    right: 80px;
+    top: 52%;
+    transform: translateY(-50%);
+    @media (max-width: 1400px) {
+      right: -9%;
+    }
+    @media (max-width: 1199px) {
+      right: -14%;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  .cs_hero_shape {
+    position: absolute;
+    top: 120px;
+    left: 24%;
+  }
+  .cs_hero_circle {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -70px;
+    left: 43%;
+    box-shadow: 7px 7px 0px #150a16;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    @media (max-width: 1199px) {
+      left: 50%;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+    > img {
+      animation: rotate360 30s linear infinite;
+    }
+  }
+  .cs_hero_circle_in {
+    background: linear-gradient(90deg, #e018ff 0%, #823fff 100%);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &::before {
+      content: '';
+      position: absolute;
+      height: calc(100% - 16px);
+      width: calc(100% - 16px);
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      border-radius: 50%;
+    }
+  }
+}
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.cs_hero.cs_style_2 {
+  height: 680px;
+  position: relative;
+  @media (max-width: 767px) {
+    height: initial;
+    padding: 170px 0 160px;
+  }
+  .cs_hero_title_up {
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .cs_hero_title {
+    font-size: 40px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    @media (max-width: 767px) {
+      font-size: 32px;
+      margin-bottom: 20px;
+      br {
+        display: none;
+      }
+    }
+  }
+  .cs_hero_subtitle {
+    font-weight: 400;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+  }
+  .cs_hero_in {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+  }
+  .cs_hero_btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+  }
+  .container {
+    position: relative;
+  }
+  .cs_hero_img_1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media (max-width: 1400px) {
+      left: -5%;
+    }
+    @media (max-width: 1199px) {
+      left: -18%;
+    }
+    @media (max-width: 991px) {
+      left: -40%;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .cs_hero_img_2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    @media (max-width: 1400px) {
+      right: -5%;
+    }
+    @media (max-width: 1199px) {
+      right: -18%;
+    }
+    @media (max-width: 991px) {
+      right: -40%;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  .cs_hero_shape_1 {
+    position: absolute;
+    bottom: 60px;
+    left: 42%;
+  }
+  .cs_hero_shape_2 {
+    position: absolute;
+    bottom: 95px;
+    left: 57%;
+  }
+  .cs_shape {
+    height: 780px;
+    width: 780px;
+    opacity: 0.5;
+  }
+}

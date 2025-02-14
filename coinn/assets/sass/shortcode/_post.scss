@@ -1,0 +1,215 @@
+/*--------------------------------------------------------------
+  11. Posts
+----------------------------------------------------------------*/
+.cs_post.cs_style_1 {
+  background: var(
+    --linear,
+    linear-gradient(
+      90deg,
+      rgba(224, 24, 255, 0.2) 0%,
+      rgba(130, 63, 255, 0.2) 100%
+    )
+  );
+  padding: 1px;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+
+  .cs_post_inner {
+    background-color: var(--web-wash);
+    padding: 15px 15px 30px;
+    border-radius: 8px;
+  }
+
+  .cs_post_thumbnail {
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
+
+    img {
+      border-radius: inherit;
+    }
+  }
+
+  .cs_post_content {
+    padding: 20px 0px 0px 16px;
+
+    @media (max-width: 575px) {
+      padding: 20px 0px 0px 0;
+    }
+  }
+
+  .cs_post_meta_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: var(--heading-color);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .cs_post_meta_separator {
+    width: 24px;
+    height: 1px;
+    background: var(--linear, linear-gradient(90deg, #e018ff 0%, #823fff 100%));
+  }
+
+  .cs_post_title {
+    font-size: 24px;
+    line-height: 1.41em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .cs_post_subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-top: 15px;
+  }
+
+  .cs_post_btn {
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    transition: all 0.4s ease;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  &:hover {
+    background: var(
+      --linear,
+      linear-gradient(
+        90deg,
+        rgba(224, 24, 255, 1) 0%,
+        rgba(130, 63, 255, 1) 100%
+      )
+    );
+
+    .cs_post_btn {
+      gap: 15px;
+    }
+  }
+}
+
+/* ------------------------------------
+ Post Details
+----------------------------------------*/
+.cs_blog_details {
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .cs_posted_by {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+  }
+
+  blockquote {
+    font-size: 22px;
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--heading-color);
+  }
+
+  img {
+    margin-bottom: 30px;
+  }
+
+  ol {
+    margin-bottom: 20px;
+    font-weight: 400;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+/* ------------------------------------
+ Breadcumb
+----------------------------------------*/
+.breadcrumb {
+  .breadcrumb-item {
+    font-weight: 400;
+    color: var(--heading-color);
+
+    &.active,
+    &::before {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+/* ------------------------------------
+ Pagination
+----------------------------------------*/
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.page-item {
+  background: linear-gradient(90deg, #e018ff 0%, #823fff 100%);
+  padding: 1px;
+  border-radius: 1px;
+
+  &:not(:first-child) .page-link {
+    margin-left: 0;
+  }
+}
+
+.page-link {
+  display: inline-block;
+  padding: 14px 24px;
+  background-color: var(--web-wash);
+  border: 0;
+  border-radius: 0 !important;
+  color: var(--heading-color);
+
+  &:hover {
+    background: linear-gradient(90deg, #e018ff 0%, #823fff 100%);
+    color: var(--heading-color);
+  }
+}
+
+.page-item.active {
+  .page-link {
+    pointer-events: none;
+    background: linear-gradient(90deg, #e018ff 0%, #823fff 100%);
+  }
+}

@@ -1,0 +1,131 @@
+/*--------------------------------------------------------------
+  8. Footer
+----------------------------------------------------------------*/
+.cs_footer {
+  padding-top: 1px;
+  margin-top: 252px;
+  background-position: top center;
+  .cs_cta.cs_style_1 {
+    margin-top: -195px;
+  }
+}
+
+.cs_footer_widget_title {
+  font-family: var(--body-font);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.cs_text_widget {
+  img {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.55em;
+  }
+}
+.cs_footer_menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+.cs_social_btns {
+  display: flex;
+  gap: 15px;
+  a {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: var(--heading-color);
+    font-size: 14px;
+    &:hover {
+      background-color: var(--heading-color);
+      border-color: var(--heading-color);
+      color: var(--web-wash);
+    }
+  }
+}
+.cs_newsletter {
+  position: relative;
+  .cs_newsletter_input {
+    display: block;
+    width: 100%;
+    border: 1px solid #e018ff;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 5px 15px;
+    outline: none;
+  }
+  .cs_newsletter_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: linear-gradient(90deg, #e018ff 0%, #823fff 100%);
+    border-radius: 0 8px 8px 0;
+    color: #fff;
+    i {
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      i {
+        transform: rotate(8deg) scale(1.05);
+      }
+    }
+  }
+}
+.cs_footer_row {
+  display: flex;
+  gap: 50px 70px;
+  padding: 80px 0 60px;
+  @media (max-width: 1199px) {
+    gap: 50px 30px;
+  }
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+  .cs_footer_col {
+    flex: 1;
+    &:first-child,
+    &:last-child {
+      flex: 1.7;
+    }
+    @media (max-width: 991px) {
+      width: calc(50% - 15px);
+      flex: none !important;
+    }
+    @media (max-width: 575px) {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+}
+.cs_footer_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 23px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  .cs_footer_menu {
+    display: flex;
+    li {
+      margin: 0;
+      &:not(:last-child) {
+        &::after {
+          content: '/';
+          margin: 7px;
+        }
+      }
+    }
+  }
+}

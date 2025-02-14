@@ -1,0 +1,158 @@
+/*--------------------------------------------------------------
+  14. Team
+----------------------------------------------------------------*/
+.cs_team.cs_style_1 {
+  background: var(--linear, linear-gradient(90deg, #e018ff 0%, #823fff 100%));
+  border-radius: 8px;
+  padding: 1px;
+
+  &.cs_type_1 {
+    width: 100%;
+    border-radius: 160px;
+    margin: 0 auto;
+
+    @media (max-width: 767px) {
+      max-width: 306px;
+    }
+
+    .cs_team_inner {
+      background-color: var(--web-wash);
+      border-radius: inherit;
+    }
+
+    .cs_team_thumbnail_wrapper {
+      background: var(
+        --linear,
+        linear-gradient(90deg, #e018ff 0%, #823fff 100%)
+      );
+      border-radius: 50%;
+      padding-bottom: 1px;
+    }
+
+    .cs_team_thumbnail {
+      width: 100%;
+      height: 300px;
+      border-radius: 50%;
+      margin-bottom: 0px;
+
+      @media (max-width: 1399px) {
+        height: 263px;
+      }
+
+      @media (max-width: 1199px) {
+        height: 300px;
+      }
+
+      @media (max-width: 991px) {
+        height: 330px;
+      }
+
+      @media (max-width: 767px) {
+        height: 302px;
+      }
+    }
+
+    .cs_team_bio {
+      text-align: center;
+      border-radius: 0 0 140px 140px;
+      padding: 20px 0 37px;
+      background-color: transparent;
+    }
+
+    .cs_team_title {
+      font-size: 20px;
+      line-height: 1.3em;
+      margin-bottom: 7px;
+    }
+
+    .cs_social_btns.cs_style_1 {
+      top: 140px;
+    }
+  }
+
+  .cs_team_thumbnail {
+    width: 100%;
+    height: 283px;
+    background: var(
+      --linear,
+      linear-gradient(
+        90deg,
+        rgba(224, 24, 255, 0.11) 0%,
+        rgba(130, 63, 255, 0.11) 100%
+      )
+    );
+    background-color: var(--web-wash);
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    margin-bottom: 1px;
+
+    img {
+      border-radius: inherit;
+    }
+  }
+
+  .cs_team_bio {
+    background-color: var(--web-wash);
+    padding: 30px;
+    border-radius: 0 0 8px 8px;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+      padding: 24px 20px;
+    }
+  }
+
+  .cs_team_title {
+    font-size: 24px;
+    margin-bottom: 2px;
+    line-height: 1.25em;
+  }
+
+  .cs_team_subtitle {
+    line-height: 1.31em;
+  }
+
+  .cs_social_btns.cs_style_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    top: 20px;
+    right: 30px;
+    z-index: 5;
+    transition: all 0.4s ease;
+
+    a {
+      border-color: rgba(255, 255, 255, 0.1);
+      color: var(--heading-color);
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.2s ease;
+
+      &:first-child {
+        background-color: var(--heading-color);
+        color: var(--web-wash);
+        visibility: visible;
+        opacity: 1;
+      }
+
+      &:not(:first-child):hover {
+        background: var(
+          --linear,
+          linear-gradient(90deg, #e018ff 0%, #823fff 100%)
+        );
+      }
+    }
+  }
+
+  &:hover {
+    .cs_social_btns.cs_style_1 {
+      gap: 15px;
+
+      a {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
