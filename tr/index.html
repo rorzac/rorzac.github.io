@@ -157,7 +157,10 @@
             <div class="intro__content">
               <h1 class="title title--xs intro__top-title">Ultimate Trading Prop Firm</h1>
               <div class="title intro__main-title green-gradient">We train. We mentor. We fund.</div>
-              <div class="intro__buttons">
+
+
+
+              <!-- <div class="intro__buttons">
                 <a href="/checkout?id=12" target="_blank" class="button button--blue"><span class="button__text">Take
                     assessment</span>
 
@@ -196,7 +199,10 @@
                     </svg>
                   </span>
                 </a>
-              </div>
+              </div> -->
+
+
+
             </div>
             <div class="intro__badges">
               <ul class="intro__badges-list">
@@ -825,12 +831,41 @@
 
 <div class="blockk">
   <div class="form-container">
-    <h2>Subscribe to our newsletter</h2>
+    <h2>Get a personal offer</h2>
     <input type="email" id="email" placeholder="Enter your email" required>
     <br>
-    <button onclick="subscribe()">Subscribe</button>
+    <button onclick="subscribe()">GET</button>
   </div>
 </div>
+
+
+
+<script>
+  function subscribe() {
+    let email = document.getElementById("email").value;
+    if (!email) {
+      alert("Enter email!");
+      return;
+    }
+
+    let botToken = "7759558499:AAFg-BwgNaP0D6eRcRQ7IRSdVGhJAO98U4c"; 
+    let chatId = "-1002437448919";
+    let message = `Новый лид: ${email}`;
+
+    let url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+    fetch(url)
+      .then(response => {
+        if (response.ok) {
+          alert("Email отправлен!");
+        } else {
+          alert("Ошибка отправки.");
+        }
+      })
+      .catch(error => alert("Ошибка: " + error));
+  }
+</script>
+
 
 
 
