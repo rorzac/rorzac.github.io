@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSE - Elite Job Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Animated gradient background */
+        .gradient-bg {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            background: 
+                radial-gradient(ellipse at 10% 20%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at 90% 80%, rgba(236, 72, 153, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 60%);
+            animation: gradientShift 20s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Cursor Glow Effect */
+        .cursor-glow {
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, rgba(236, 72, 153, 0.2) 40%, transparent 70%);
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.12s ease-out;
+            mix-blend-mode: screen;
+        }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 2rem 5vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(139, 92, 246, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            background: linear-gradient(135deg, #fff 0%, #8B5CF6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+            color: #fff;
+            padding: 0.9rem 2rem;
+            border-radius: 12px;
+            border: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            align-items: center;
+            padding: 8rem 5vw 4rem;
+            gap: 5rem;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.6rem 1.5rem;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .badge-icon {
+            color: #8B5CF6;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(4rem, 10vw, 9rem);
+            line-height: 0.95;
+            font-weight: 900;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #fff 20%, #8B5CF6 60%, #EC4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: clamp(1.15rem, 2vw, 1.5rem);
+            line-height: 1.8;
+            color: #9CA3AF;
+            max-width: 650px;
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        .windows-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 1.8rem;
+            padding: 2rem 3.5rem;
+            background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+            border: none;
+            border-radius: 18px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 20px 60px rgba(139, 92, 246, 0.5);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .windows-download::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+
+        .windows-download:hover::before {
+            left: 100%;
+        }
+
+        .windows-download:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 30px 80px rgba(139, 92, 246, 0.7);
+        }
+
+        .windows-icon {
+            font-size: 2.5rem;
+        }
+
+        /* Hero Image Section */
+        .hero-visual {
+            position: relative;
+            z-index: 2;
+            perspective: 1500px;
+        }
+
+        .floating-card {
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.3s ease;
+        }
+
+        .floating-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(0, 0, 0, 0.3) 0%,
+                transparent 30%,
+                transparent 70%,
+                rgba(0, 0, 0, 0.3) 100%
+            );
+            border-radius: 32px;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 650px;
+            object-fit: cover;
+            border-radius: 32px;
+            box-shadow: 
+                0 50px 100px rgba(0, 0, 0, 0.8),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: 3;
+            filter: brightness(0.9) contrast(1.05);
+        }
+
+        .floating-badge {
+            position: absolute;
+            background: rgba(5, 5, 5, 0.98);
+            backdrop-filter: blur(40px);
+            border: 2px solid rgba(139, 92, 246, 0.6);
+            border-radius: 24px;
+            padding: 2rem 2.5rem;
+            box-shadow: 
+                0 30px 80px rgba(0, 0, 0, 0.9),
+                0 0 0 1px rgba(139, 92, 246, 0.3),
+                inset 0 1px 0 rgba(139, 92, 246, 0.2);
+            animation: float 4s ease-in-out infinite;
+            z-index: 100;
+        }
+
+        .badge-1 {
+            top: 5%;
+            right: -15%;
+            animation-delay: 0s;
+        }
+
+        .badge-2 {
+            bottom: 8%;
+            left: -20%;
+            animation-delay: 1.5s;
+        }
+
+        .badge-icon-large {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #8B5CF6;
+        }
+
+        .badge-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #8B5CF6, #EC4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            line-height: 1;
+            text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+        }
+
+        .badge-label {
+            font-size: 1rem;
+            color: #D1D5DB;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-25px) rotate(2deg); }
+        }
+
+        /* Salary Spotlight Section */
+        .salary-spotlight {
+            position: relative;
+            padding: 10rem 5vw;
+            background: 
+                linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, transparent 100%),
+                url('https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1600') center/cover;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .salary-spotlight::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1;
+        }
+
+        .salary-container {
+            position: relative;
+            z-index: 2;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .salary-content {
+            text-align: left;
+        }
+
+        .salary-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 0.95rem;
+            color: #8B5CF6;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .salary-amount {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(5rem, 14vw, 12rem);
+            font-weight: 900;
+            line-height: 0.85;
+            background: linear-gradient(135deg, #fff 0%, #8B5CF6 40%, #EC4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 2rem;
+        }
+
+        .salary-text {
+            font-size: 1.4rem;
+            color: #D1D5DB;
+            line-height: 1.9;
+            margin-bottom: 3rem;
+        }
+
+        .salary-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .stat-mini {
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-mini-icon {
+            font-size: 2rem;
+            color: #8B5CF6;
+            margin-bottom: 1rem;
+        }
+
+        .stat-mini-value {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-mini-label {
+            color: #9CA3AF;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Features Grid - Enhanced Bento */
+        .features-section {
+            padding: 10rem 5vw;
+            background: #000;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 6rem;
+        }
+
+        .section-subtitle {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 0.9rem;
+            color: #8B5CF6;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 7vw, 6.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-description {
+            font-size: 1.3rem;
+            color: #9CA3AF;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 350px);
+            gap: 2rem;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .bento-item {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(236, 72, 153, 0.08) 100%);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            border-radius: 32px;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            cursor: pointer;
+        }
+
+        .bento-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .bento-item:hover::before {
+            opacity: 1;
+        }
+
+        .bento-item:hover {
+            transform: translateY(-12px);
+            border-color: #8B5CF6;
+            box-shadow: 0 40px 100px rgba(139, 92, 246, 0.4);
+        }
+
+        .bento-item-1 {
+            grid-column: span 2;
+            grid-row: span 2;
+            background: 
+                linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.3) 100%),
+                url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=900') center/cover;
+            background-size: cover;
+        }
+
+        .bento-item-2 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .bento-item-3 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .bento-item-4 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .bento-item-5 {
+            grid-column: span 2;
+            grid-row: span 2;
+            background: 
+                linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.3) 100%),
+                url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900') center/cover;
+            background-size: cover;
+        }
+
+        .bento-item-6 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .bento-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .bento-icon {
+            font-size: 3rem;
+            color: #8B5CF6;
+            margin-bottom: 1.5rem;
+        }
+
+        .bento-number {
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 0.8rem;
+            background: linear-gradient(135deg, #8B5CF6, #EC4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bento-label {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+
+        .bento-desc {
+            font-size: 1.05rem;
+            color: #9CA3AF;
+            line-height: 1.7;
+        }
+
+        /* Testimonial Parallax */
+        .testimonial-parallax {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .parallax-bg {
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600') center/cover;
+            transform: scale(1.2);
+            filter: brightness(0.2);
+        }
+
+        .parallax-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(139, 92, 246, 0.3));
+        }
+
+        .parallax-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 1000px;
+            padding: 0 2rem;
+        }
+
+        .testimonial-icon {
+            font-size: 4rem;
+            color: #8B5CF6;
+            margin-bottom: 2rem;
+        }
+
+        .parallax-quote {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+
+        .parallax-author {
+            font-size: 1.2rem;
+            color: #9CA3AF;
+        }
+
+        .author-role {
+            color: #8B5CF6;
+            font-weight: 600;
+        }
+
+        /* Stats Carousel */
+        .stats-carousel {
+            padding: 8rem 0;
+            background: linear-gradient(135deg, #0F0F0F 0%, #1a0a2e 100%);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .stats-carousel::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+        }
+
+        .stats-track {
+            display: flex;
+            gap: 3rem;
+            animation: scroll 40s linear infinite;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .stat-card {
+            min-width: 450px;
+            background: rgba(15, 15, 15, 0.8);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 28px;
+            padding: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            backdrop-filter: blur(20px);
+        }
+
+        .stat-card-icon {
+            font-size: 3rem;
+            color: #8B5CF6;
+        }
+
+        .stat-value {
+            font-size: 4.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #8B5CF6, #EC4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1;
+        }
+
+        .stat-description {
+            font-size: 1.2rem;
+            color: #D1D5DB;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 12rem 5vw;
+            background: 
+                radial-gradient(ellipse at center, rgba(139, 92, 246, 0.15) 0%, #000 60%),
+                url('https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600') center/cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        .cta-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(10, 10, 10, 0.6);
+            backdrop-filter: blur(40px);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            border-radius: 40px;
+            padding: 7rem 5rem;
+            text-align: center;
+            box-shadow: 0 50px 120px rgba(0, 0, 0, 0.8);
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.7rem 1.8rem;
+            background: rgba(139, 92, 246, 0.15);
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            color: #8B5CF6;
+        }
+
+        .cta-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 7vw, 6.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.6rem;
+            color: #D1D5DB;
+            margin-bottom: 5rem;
+            line-height: 1.7;
+        }
+
+        .app-buttons-grid {
+            display: flex;
+            gap: 2.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .app-btn {
+            background: #fff;
+            color: #000;
+            padding: 2rem 3.5rem;
+            border-radius: 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 20px 60px rgba(255, 255, 255, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .app-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.2), transparent);
+            transition: left 0.6s;
+        }
+
+        .app-btn:hover::before {
+            left: 100%;
+        }
+
+        .app-btn:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 30px 80px rgba(255, 255, 255, 0.25);
+        }
+
+        .app-icon-large {
+            font-size: 3rem;
+        }
+
+        .app-details {
+            text-align: left;
+        }
+
+        .app-label-small {
+            font-size: 0.8rem;
+            font-weight: 500;
+            opacity: 0.7;
+            margin-bottom: 0.3rem;
+        }
+
+        .app-name-large {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            border-top: 1px solid rgba(139, 92, 246, 0.2);
+            padding: 5rem 5vw 3rem;
+        }
+
+        .footer-grid {
+            max-width: 1400px;
+            margin: 0 auto 3rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .footer-brand {
+            max-width: 350px;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, #8B5CF6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer-tagline {
+            color: #6B7280;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        .footer-section h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            color: #8B5CF6;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-links a {
+            color: #9CA3AF;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(139, 92, 246, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #6B7280;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8B5CF6;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-icon:hover {
+            background: rgba(139, 92, 246, 0.2);
+            transform: translateY(-3px);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1200px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 6rem 3rem 4rem;
+                gap: 4rem;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .badge-1 {
+                right: 2%;
+                top: 3%;
+            }
+
+            .badge-2 {
+                left: 2%;
+                bottom: 3%;
+            }
+
+            .floating-badge {
+                padding: 1.5rem 2rem;
+            }
+
+            .badge-number {
+                font-size: 2.5rem;
+            }
+
+            .salary-container {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+
+            .salary-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .bento-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .bento-item-1,
+            .bento-item-2,
+            .bento-item-3,
+            .bento-item-4,
+            .bento-item-5,
+            .bento-item-6 {
+                grid-column: span 1;
+                grid-row: span 1;
+                height: 350px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 2rem;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.5rem 2rem;
+            }
+
+            .hero {
+                padding: 5rem 2rem 3rem;
+            }
+
+            .main-image {
+                height: 400px;
+            }
+
+            .floating-badge {
+                padding: 1.5rem 2rem;
+            }
+
+            .badge-number {
+                font-size: 2rem;
+            }
+
+            .cta-container {
+                padding: 4rem 2rem;
+            }
+
+            .app-buttons-grid {
+                flex-direction: column;
+            }
+
+            .app-btn {
+                width: 100%;
+            }
+        }
+
+        /* Scroll Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Floating Particles Effect */
+        .particles {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: rgba(139, 92, 246, 0.4);
+            border-radius: 50%;
+            animation: particleFloat 20s linear infinite;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) translateX(0) scale(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(100px) scale(1);
+                opacity: 0;
+            }
+        }
+
+        /* Glowing orbs effect */
+        .orb {
+            position: fixed;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+            filter: blur(80px);
+            animation: orbFloat 15s ease-in-out infinite;
+        }
+
+        .orb-1 {
+            width: 600px;
+            height: 600px;
+            background: rgba(139, 92, 246, 0.15);
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .orb-2 {
+            width: 500px;
+            height: 500px;
+            background: rgba(236, 72, 153, 0.15);
+            bottom: 20%;
+            right: 10%;
+            animation-delay: 5s;
+        }
+
+        .orb-3 {
+            width: 400px;
+            height: 400px;
+            background: rgba(59, 130, 246, 0.12);
+            top: 60%;
+            left: 50%;
+            animation-delay: 10s;
+        }
+
+        @keyframes orbFloat {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+            }
+            33% {
+                transform: translate(50px, -80px) scale(1.1);
+            }
+            66% {
+                transform: translate(-30px, 60px) scale(0.9);
+            }
+        }
+
+        /* Hover glow effect on cards */
+        .bento-item::after {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, #8B5CF6, #EC4899);
+            border-radius: 32px;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.3s;
+            filter: blur(20px);
+        }
+
+        .bento-item:hover::after {
+            opacity: 0.4;
+        }
+
+        /* Floating animation for badges with rotation */
+        @keyframes floatRotate {
+            0%, 100% { 
+                transform: translateY(0px) rotate(0deg); 
+            }
+            25% {
+                transform: translateY(-15px) rotate(1deg);
+            }
+            50% { 
+                transform: translateY(-30px) rotate(-1deg); 
+            }
+            75% {
+                transform: translateY(-15px) rotate(1deg);
+            }
+        }
+
+        .floating-badge {
+            animation: floatRotate 6s ease-in-out infinite;
+        }
+
+        /* Shimmer effect on buttons */
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        .windows-download::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(255, 255, 255, 0.1) 50%,
+                transparent 100%
+            );
+            background-size: 1000px 100%;
+            animation: shimmer 3s infinite;
+        }
+
+        /* Ripple effect on hero section */
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 200px;
+            background: linear-gradient(to top, #000, transparent);
+            z-index: 3;
+        }
+
+        /* Scan line effect */
+        .scan-line {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(139, 92, 246, 0.8) 50%, 
+                transparent 100%
+            );
+            z-index: 9999;
+            pointer-events: none;
+            animation: scan 4s ease-in-out infinite;
+        }
+
+        @keyframes scan {
+            0%, 100% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        /* Magnetic hover effect for images */
+        .main-image {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        /* Neon glow on hover for stat cards */
+        .stat-card {
+            position: relative;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            background: linear-gradient(135deg, #8B5CF6, #EC4899);
+            border-radius: 28px;
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.3s;
+            filter: blur(15px);
+        }
+
+        .stat-card:hover::before {
+            opacity: 0.6;
+        }
+
+        .stat-card:hover {
+            transform: scale(1.05);
+            border-color: #8B5CF6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="gradient-bg"></div>
+
+    <!-- Floating Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Scan Line Effect -->
+    <div class="scan-line"></div>
+
+    <!-- Particles Container -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">PULSE</div>
+        <a href="#download" class="nav-cta">
+            <i class="fas fa-download"></i> Download App
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content reveal">
+            <div class="hero-badge">
+                <i class="fas fa-star badge-icon"></i>
+                <span>Trusted by 2.8M+ Professionals</span>
+            </div>
+            <h1 class="hero-title">Careers That Change Everything</h1>
+            <p class="hero-description">
+                Stop settling for mediocre offers. Connect with elite companies offering six-figure 
+                salaries, comprehensive benefits, and unlimited growth potential. Your dream job is waiting.
+            </p>
+            <a href="#" class="windows-download">
+                <i class="fab fa-windows windows-icon"></i>
+                <div>
+                    <div style="font-size: 0.85rem; opacity: 0.95;">Download for</div>
+                    <div>Windows</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="hero-visual reveal">
+            <div class="floating-card">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=900" 
+                     alt="Professional Success" class="main-image">
+                
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-dollar-sign badge-icon-large"></i>
+                    <div class="badge-number">$235K</div>
+                    <div class="badge-label">Avg. Package</div>
+                </div>
+                
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-clock badge-icon-large"></i>
+                    <div class="badge-number">6 Days</div>
+                    <div class="badge-label">To Offer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salary Spotlight -->
+    <section class="salary-spotlight reveal">
+        <div class="salary-container">
+            <div class="salary-content">
+                <div class="salary-label">
+                    <i class="fas fa-chart-line"></i>
+                    Average Compensation
+                </div>
+                <div class="salary-amount">$195K</div>
+                <p class="salary-text">
+                    Every position on PULSE offers competitive six-figure salaries, equity packages, 
+                    and comprehensive benefits. We work exclusively with companies that value talent 
+                    and pay accordingly.
+                </p>
+            </div>
+
+            <div class="salary-stats">
+                <div class="stat-mini">
+                    <i class="fas fa-briefcase stat-mini-icon"></i>
+                    <div class="stat-mini-value">92K+</div>
+                    <div class="stat-mini-label">Active Positions</div>
+                </div>
+                <div class="stat-mini">
+                    <i class="fas fa-building stat-mini-icon"></i>
+                    <div class="stat-mini-value">3,200</div>
+                    <div class="stat-mini-label">Elite Companies</div>
+                </div>
+                <div class="stat-mini">
+                    <i class="fas fa-globe-americas stat-mini-icon"></i>
+                    <div class="stat-mini-value">145</div>
+                    <div class="stat-mini-label">Countries</div>
+                </div>
+                <div class="stat-mini">
+                    <i class="fas fa-rocket stat-mini-icon"></i>
+                    <div class="stat-mini-value">98%</div>
+                    <div class="stat-mini-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bento Grid -->
+    <section class="features-section">
+        <div class="section-header reveal">
+            <div class="section-subtitle">
+                <i class="fas fa-bolt"></i>
+                Why PULSE
+            </div>
+            <h2 class="section-title">Built for Ambitious Professionals</h2>
+            <p class="section-description">
+                Every feature designed to accelerate your career and connect you with opportunities 
+                that match your ambition.
+            </p>
+        </div>
+
+        <div class="bento-grid">
+            <div class="bento-item bento-item-1 reveal">
+                <div class="bento-content">
+                    <i class="fas fa-users bento-icon"></i>
+                    <div class="bento-label">Direct Access to Decision Makers</div>
+                    <p class="bento-desc">
+                        Skip recruiters. Connect directly with hiring managers and founders for faster, 
+                        more transparent conversations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bento-item bento-item-2 reveal">
+                <div class="bento-content">
+                    <div class="bento-number">85K+</div>
+                    <div class="bento-label">Premium Opportunities</div>
+                    <p class="bento-desc">
+                        From Fortune 500 to Series A startups — exclusive access to roles you won't find elsewhere
+                    </p>
+                </div>
+            </div>
+
+            <div class="bento-item bento-item-3 reveal">
+                <div class="bento-content">
+                    <i class="fas fa-shield-alt bento-icon"></i>
+                    <div class="bento-number">100%</div>
+                    <div class="bento-label">Verified</div>
+                </div>
+            </div>
+
+            <div class="bento-item bento-item-4 reveal">
+                <div class="bento-content">
+                    <i class="fas fa-bolt bento-icon"></i>
+                    <div class="bento-number">48h</div>
+                    <div class="bento-label">Response</div>
+                </div>
+            </div>
+
+            <div class="bento-item bento-item-5 reveal">
+                <div class="bento-content">
+                    <i class="fas fa-laptop-code bento-icon"></i>
+                    <div class="bento-label">Work From Anywhere</div>
+                    <p class="bento-desc">
+                        Thousands of remote-first positions with companies embracing distributed teams globally
+                    </p>
+                </div>
+            </div>
+
+            <div class="bento-item bento-item-6 reveal">
+                <div class="bento-content">
+                    <i class="fas fa-chart-line bento-icon"></i>
+                    <div class="bento-number">97%</div>
+                    <div class="bento-label">Career Satisfaction</div>
+                    <p class="bento-desc">
+                        Professionals who found roles through PULSE report exceptional career satisfaction
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Parallax -->
+    <section class="testimonial-parallax">
+        <div class="parallax-bg"></div>
+        <div class="parallax-content reveal">
+            <i class="fas fa-quote-left testimonial-icon"></i>
+            <h2 class="parallax-quote">
+                "PULSE helped me land a $280K offer at a Series B startup. The process was 
+                transparent, fast, and completely changed my career trajectory."
+            </h2>
+            <p class="parallax-author">
+                Sarah Chen — <span class="author-role">Senior Product Manager</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Stats Carousel -->
+    <section class="stats-carousel">
+        <div class="stats-track">
+            <div class="stat-card">
+                <i class="fas fa-users stat-card-icon"></i>
+                <div class="stat-value">2.8M</div>
+                <div class="stat-description">Active professionals on the platform</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-briefcase stat-card-icon"></i>
+                <div class="stat-value">52K</div>
+                <div class="stat-description">Companies actively hiring</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-dollar-sign stat-card-icon"></i>
+                <div class="stat-value">$195K</div>
+                <div class="stat-description">Average salary offered</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-globe stat-card-icon"></i>
+                <div class="stat-value">145</div>
+                <div class="stat-description">Countries represented</div>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="stat-card">
+                <i class="fas fa-users stat-card-icon"></i>
+                <div class="stat-value">2.8M</div>
+                <div class="stat-description">Active professionals on the platform</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-briefcase stat-card-icon"></i>
+                <div class="stat-value">52K</div>
+                <div class="stat-description">Companies actively hiring</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-dollar-sign stat-card-icon"></i>
+                <div class="stat-value">$195K</div>
+                <div class="stat-description">Average salary offered</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-globe stat-card-icon"></i>
+                <div class="stat-value">145</div>
+                <div class="stat-description">Countries represented</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="download">
+        <div class="cta-container reveal">
+            <div class="cta-badge">
+                <i class="fas fa-star"></i>
+                <span>Start Your Journey Today</span>
+            </div>
+            <h2 class="cta-title">Ready to Transform Your Career?</h2>
+            <p class="cta-subtitle">
+                Download PULSE now and get instant access to thousands of premium opportunities 
+                with transparent compensation and rapid hiring.
+            </p>
+            
+            <div class="app-buttons-grid">
+                <a href="#" class="app-btn">
+                    <i class="fab fa-windows app-icon-large"></i>
+                    <div class="app-details">
+                        <div class="app-label-small">Download for</div>
+                        <div class="app-name-large">Windows</div>
+                    </div>
+                </a>
+                <a href="#" class="app-btn">
+                    <i class="fab fa-apple app-icon-large"></i>
+                    <div class="app-details">
+                        <div class="app-label-small">Download on</div>
+                        <div class="app-name-large">App Store</div>
+                    </div>
+                </a>
+                <a href="#" class="app-btn">
+                    <i class="fab fa-google-play app-icon-large"></i>
+                    <div class="app-details">
+                        <div class="app-label-small">Get it on</div>
+                        <div class="app-name-large">Google Play</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">PULSE</div>
+                <p class="footer-tagline">
+                    The premium platform connecting ambitious professionals with career-defining 
+                    opportunities at the world's best companies.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Product</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>© 2025 PULSE. Redefining professional success.</div>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Generate particles
+        const particlesContainer = document.getElementById('particles');
+        const particleCount = 30;
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 20 + 's';
+            particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // Enhanced cursor glow effect
+        const cursorGlow = document.querySelector('.cursor-glow');
+        let mouseX = 0, mouseY = 0;
+        let currentX = 0, currentY = 0;
+        
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        function animateCursor() {
+            currentX += (mouseX - currentX) * 0.1;
+            currentY += (mouseY - currentY) * 0.1;
+            cursorGlow.style.transform = `translate(${currentX}px, ${currentY}px)`;
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        // Parallax effect for multiple sections
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            
+            // Testimonial parallax
+            const parallaxBg = document.querySelector('.parallax-bg');
+            const parallaxSection = document.querySelector('.testimonial-parallax');
+            
+            if (parallaxBg && parallaxSection) {
+                const sectionTop = parallaxSection.offsetTop;
+                const offset = scrolled - sectionTop;
+                if (offset > -window.innerHeight && offset < window.innerHeight) {
+                    parallaxBg.style.transform = `scale(1.2) translateY(${offset * 0.4}px)`;
+                }
+            }
+
+            // Salary section parallax
+            const salarySection = document.querySelector('.salary-spotlight');
+            if (salarySection) {
+                const sectionTop = salarySection.offsetTop;
+                const offset = scrolled - sectionTop;
+                if (offset > -window.innerHeight && offset < window.innerHeight) {
+                    salarySection.style.backgroundPositionY = `${offset * 0.3}px`;
+                }
+            }
+
+            // Move orbs on scroll
+            const orbs = document.querySelectorAll('.orb');
+            orbs.forEach((orb, index) => {
+                const speed = 0.5 + (index * 0.2);
+                orb.style.transform = `translateY(${scrolled * speed * 0.1}px)`;
+            });
+        });
+
+        // 3D card tilt effect with magnetic attraction
+        const floatingCard = document.querySelector('.floating-card');
+        const mainImage = document.querySelector('.main-image');
+        
+        if (floatingCard && mainImage) {
+            floatingCard.addEventListener('mousemove', (e) => {
+                const rect = floatingCard.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 25;
+                const rotateY = (centerX - x) / 25;
+                
+                floatingCard.style.transform = `perspective(1500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+                
+                // Magnetic effect on image
+                const moveX = (x - centerX) / 30;
+                const moveY = (y - centerY) / 30;
+                mainImage.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.05)`;
+            });
+            
+            floatingCard.addEventListener('mouseleave', () => {
+                floatingCard.style.transform = 'perspective(1500px) rotateX(0) rotateY(0) scale(1)';
+                mainImage.style.transform = 'translate(0, 0) scale(1)';
+            });
+        }
+
+        // Magnetic effect for bento items
+        const bentoItems = document.querySelectorAll('.bento-item');
+        bentoItems.forEach(item => {
+            item.addEventListener('mousemove', (e) => {
+                const rect = item.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const moveX = (x - centerX) / 20;
+                const moveY = (y - centerY) / 20;
+                
+                item.style.transform = `translateY(-12px) translate(${moveX}px, ${moveY}px)`;
+            });
+            
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'translateY(0) translate(0, 0)';
+            });
+        });
+
+        // Scroll reveal animations
+        const reveals = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -80px 0px'
+        });
+        
+        reveals.forEach(reveal => {
+            revealObserver.observe(reveal);
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add hover sound effect simulation (visual feedback)
+        const interactiveElements = document.querySelectorAll('.windows-download, .app-btn, .nav-cta, .bento-item, .stat-card');
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                el.style.transition = 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
+            });
+        });
+
+        // Typing effect for hero title
+        const heroTitle = document.querySelector('.hero-title');
+        if (heroTitle) {
+            const text = heroTitle.textContent;
+            heroTitle.textContent = '';
+            let index = 0;
+            
+            function typeText() {
+                if (index < text.length) {
+                    heroTitle.textContent += text.charAt(index);
+                    index++;
+                    setTimeout(typeText, 50);
+                }
+            }
+            
+            setTimeout(typeText, 500);
+        }
+
+        // Add ripple effect on click
+        document.addEventListener('click', (e) => {
+            const ripple = document.createElement('div');
+            ripple.style.position = 'fixed';
+            ripple.style.width = '20px';
+            ripple.style.height = '20px';
+            ripple.style.borderRadius = '50%';
+            ripple.style.background = 'rgba(139, 92, 246, 0.3)';
+            ripple.style.left = e.clientX - 10 + 'px';
+            ripple.style.top = e.clientY - 10 + 'px';
+            ripple.style.pointerEvents = 'none';
+            ripple.style.zIndex = '9999';
+            ripple.style.animation = 'rippleEffect 0.6s ease-out';
+            
+            document.body.appendChild(ripple);
+            
+            setTimeout(() => ripple.remove(), 600);
+        });
+
+        // Ripple animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes rippleEffect {
+                to {
+                    transform: scale(20);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
