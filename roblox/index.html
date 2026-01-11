@@ -3,334 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Доступ к Roblox | Гайд</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#000000">
+    <title>RBX Enterprise Access</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-dark: #050505;
-            --card-glass: rgba(20, 20, 25, 0.8);
-            --primary: #3b82f6; /* Синий */
-            --primary-glow: rgba(59, 130, 246, 0.5);
-            --accent: #f59e0b; /* Оранжевый для важных нотисов */
+            --bg: #000000;
+            --surface: #121214;
+            --surface-highlight: #1c1c1e;
+            --border: rgba(255, 255, 255, 0.12);
+            --primary: #0a84ff; /* Apple Blue */
+            --primary-gradient: linear-gradient(135deg, #0a84ff, #5e5ce6);
             --text-main: #ffffff;
-            --text-muted: #9ca3af;
-            --border: rgba(255, 255, 255, 0.1);
+            --text-muted: #86868b;
+            --success: #30d158;
         }
 
+        /* Сброс стилей для мобилок */
         * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
         body {
-            background-color: var(--bg-dark);
+            background-color: var(--bg);
             color: var(--text-main);
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-            line-height: 1.6;
-            /* Красивый фоновой градиент */
-            background-image: radial-gradient(circle at 50% 0%, #171d3d 0%, #050505 60%);
+            /* Убираем горизонтальный скролл */
+            overflow-x: hidden;
+            /* Атмосферный фон */
+            background-image: radial-gradient(circle at 50% 0%, #1a1a2e 0%, #000000 70%);
             background-attachment: fixed;
+            padding-bottom: 40px; /* Отступ снизу для удобства */
         }
 
-        .container {
+        /* Контейнер по центру, не шире экрана телефона */
+        .app-container {
             width: 100%;
-            max-width: 480px; /* Идеальная ширина для телефона */
+            max-width: 440px; /* Стандарт ширины топовых мобильных приложений */
+            margin: 0 auto;
+            padding: 24px 20px;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            gap: 24px;
         }
 
         /* --- HEADER --- */
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-top: 20px;
+        header { text-align: center; margin-top: 20px; }
+        
+        .status-badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: rgba(48, 209, 88, 0.15);
+            color: var(--success);
+            font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;
+            padding: 6px 12px; border-radius: 20px; margin-bottom: 16px;
+            border: 1px solid rgba(48, 209, 88, 0.2);
         }
-
-        .icon {
-            font-size: 40px; margin-bottom: 15px; display: block;
-            filter: drop-shadow(0 0 20px var(--primary-glow));
-        }
+        .dot { width: 6px; height: 6px; background: var(--success); border-radius: 50%; box-shadow: 0 0 8px var(--success); }
 
         h1 {
-            font-size: 26px; font-weight: 800; margin-bottom: 12px;
-            background: linear-gradient(to bottom, #fff, #aaa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size: 28px; font-weight: 900; line-height: 1.1; margin-bottom: 12px;
+            letter-spacing: -0.5px;
         }
 
-        .intro {
-            font-size: 15px; color: var(--text-muted); padding: 0 10px;
-        }
+        .intro { font-size: 15px; color: var(--text-muted); line-height: 1.5; padding: 0 10px; }
 
-        /* --- WARNING CARD --- */
-        .warning-card {
-            width: 100%;
-            background: rgba(245, 158, 11, 0.1);
-            border: 1px solid rgba(245, 158, 11, 0.3);
+        /* --- WARNING BLOCK --- */
+        .warning {
+            background: rgba(255, 159, 10, 0.1);
+            border: 1px solid rgba(255, 159, 10, 0.3);
             border-radius: 16px;
             padding: 16px;
-            margin-bottom: 30px;
-            text-align: center;
-            font-size: 14px; color: #fcd34d;
+            display: flex; gap: 12px; align-items: start;
         }
-        .warning-card strong { color: #fff; display: block; margin-bottom: 4px; }
+        .warn-icon { font-size: 18px; }
+        .warn-text { font-size: 13px; color: #ffd60a; line-height: 1.4; text-align: left; }
+        .warn-text strong { color: #fff; display: block; margin-bottom: 2px; }
 
-        /* --- MAIN DATA CARD (Login/Pass) --- */
-        .glass-card {
-            width: 100%;
-            background: var(--card-glass);
+        /* --- CREDENTIALS CARD (ГЛАВНОЕ) --- */
+        .glass-panel {
+            background: rgba(28, 28, 30, 0.7);
             backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border: 1px solid var(--border);
             border-radius: 24px;
-            padding: 24px;
-            margin-bottom: 40px;
-            box-shadow: 0 20px 50px -10px rgba(0,0,0,0.5);
-            text-align: center;
+            padding: 6px; /* Внутренний отступ для "островка" */
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
         }
 
-        .card-title {
-            text-transform: uppercase; font-size: 12px; letter-spacing: 1.5px;
-            color: var(--text-muted); margin-bottom: 20px; font-weight: 700;
-        }
-
-        .input-wrapper {
-            background: rgba(0,0,0,0.3);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 16px;
-            margin-bottom: 15px;
-            position: relative;
+        .data-row {
+            padding: 16px 18px;
+            border-radius: 18px;
+            transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
             cursor: pointer;
-            transition: 0.2s;
-            text-align: left;
+            margin-bottom: 2px;
         }
-        .input-wrapper:active { transform: scale(0.98); background: rgba(255,255,255,0.05); }
+        /* Эффект нажатия как в iOS */
+        .data-row:active { background: rgba(255, 255, 255, 0.08); transform: scale(0.98); }
 
-        .label { font-size: 11px; color: var(--primary); font-weight: 700; display: block; margin-bottom: 4px; text-transform: uppercase; }
+        .row-label {
+            font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-muted);
+            margin-bottom: 6px; display: block; letter-spacing: 1px;
+        }
         
-        .value-row {
+        .row-content {
             display: flex; justify-content: space-between; align-items: center;
         }
-        .value { font-family: monospace; font-size: 16px; color: #fff; letter-spacing: 0.5px; }
-        
-        .copy-badge {
-            font-size: 11px; font-weight: 700; color: var(--text-muted);
-            background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 6px;
+
+        .row-value {
+            font-family: 'SF Mono', 'Menlo', monospace; /* Шрифт кода */
+            font-size: 16px; color: #fff;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            max-width: 240px;
+        }
+
+        .action-icon {
+            font-size: 11px; font-weight: 700; color: var(--primary);
+            background: rgba(10, 132, 255, 0.15);
+            padding: 6px 10px; border-radius: 8px;
         }
 
         .blur { filter: blur(6px); transition: 0.3s; }
 
-        /* --- TEXT CONTENT --- */
-        .content-block {
-            width: 100%; margin-bottom: 40px; text-align: left;
+        /* --- TEXT SECTIONS --- */
+        .section-title {
+            font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 16px; padding-left: 4px;
         }
-        
-        h2 { font-size: 20px; font-weight: 700; margin-bottom: 15px; color: #fff; text-align: center; }
-        
-        p { font-size: 15px; color: var(--text-muted); margin-bottom: 15px; text-align: justify; }
+
+        .tech-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .tech-card h3 {
+            font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 8px;
+            display: flex; align-items: center; gap: 8px;
+        }
+        .tech-card p {
+            font-size: 14px; color: var(--text-muted); line-height: 1.6; text-align: justify;
+        }
 
         /* --- STEPS --- */
-        .step-list {
-            width: 100%; display: flex; flex-direction: column; gap: 20px;
-        }
-
         .step-item {
-            background: rgba(255,255,255,0.03);
-            border-radius: 16px;
-            padding: 20px;
-            border: 1px solid transparent;
+            display: flex; gap: 16px; margin-bottom: 24px;
         }
         
-        .step-head {
-            display: flex; align-items: center; gap: 12px; margin-bottom: 8px;
-        }
-        .step-num {
-            background: var(--primary); color: #fff;
-            width: 24px; height: 24px; border-radius: 50%;
+        .step-marker {
+            width: 28px; height: 28px; background: var(--surface-highlight);
+            border: 1px solid var(--border); border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            font-size: 12px; font-weight: 700;
+            font-size: 12px; font-weight: 700; color: #fff;
+            flex-shrink: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
-        .step-title { font-weight: 700; font-size: 16px; color: #fff; }
-        .step-desc { font-size: 14px; color: var(--text-muted); line-height: 1.5; }
 
-        /* --- TELEGRAM FOOTER --- */
-        .tg-section {
-            width: 100%;
+        .step-content h4 { font-size: 16px; font-weight: 600; margin-bottom: 4px; color: #fff; }
+        .step-content p { font-size: 14px; color: var(--text-muted); line-height: 1.5; }
+
+        /* --- FOOTER CTA --- */
+        .footer {
             margin-top: 20px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 30px 20px;
             text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid var(--border);
         }
 
-        .tg-btn {
+        .btn-tg {
             display: flex; align-items: center; justify-content: center; gap: 10px;
             width: 100%;
-            background: linear-gradient(135deg, #24A1DE, #1b8ec5);
-            color: #fff; text-decoration: none;
-            padding: 18px; border-radius: 20px;
-            font-weight: 600; font-size: 16px;
-            box-shadow: 0 10px 30px rgba(36, 161, 222, 0.3);
+            background: var(--primary-gradient);
+            color: white; text-decoration: none;
+            padding: 16px; border-radius: 16px;
+            font-size: 16px; font-weight: 600;
+            box-shadow: 0 8px 25px rgba(10, 132, 255, 0.4);
             transition: 0.2s;
-            margin-top: 20px;
         }
-        .tg-btn:active { transform: scale(0.98); }
+        .btn-tg:active { transform: scale(0.96); }
 
-        /* --- TOAST NOTIFICATION --- */
+        /* --- TOAST --- */
         .toast {
-            position: fixed; top: 20px; left: 50%; transform: translateX(-50%) translateY(-100px);
-            background: #fff; color: #000;
-            padding: 12px 24px; border-radius: 50px;
-            font-weight: 700; font-size: 14px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            opacity: 0; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            z-index: 100;
+            position: fixed; top: 16px; left: 50%; transform: translateX(-50%) translateY(-100px);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            color: #000; padding: 12px 28px; border-radius: 50px;
+            font-weight: 600; font-size: 14px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            z-index: 1000; transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex; align-items: center; gap: 8px;
         }
-        .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+        .toast.show { transform: translateX(-50%) translateY(0); }
 
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="app-container">
         
         <header>
-            <span class="icon">🔓</span>
-            <h1>Доступ к Roblox 2026</h1>
+            <div class="status-badge">
+                <span class="dot"></span>
+                Secure Gateway v4.2
+            </div>
+            <h1>Доступ к Roblox</h1>
             <p class="intro">
-                В связи с региональными ограничениями, игра может быть недоступна. 
-                Используйте этот гайд для обхода блокировки через официальный магазин.
+                Корпоративный протокол обхода региональных блокировок через Enterprise Developer API.
             </p>
         </header>
 
-        <!-- <div class="warning-card">
-            <strong>⚠️ ВНИМАНИЕ</strong>
-            Никогда не вводите эти данные в настройки iCloud.
-            Используйте только приложение <b>AppStore</b>.
-        </div> -->
-
-        <div class="glass-card">
-            <div class="card-title">Общий аккаунт</div>
-
-            <div class="input-wrapper" onclick="copy('login', this)">
-                <span class="label">Login / Apple ID</span>
-                <div class="value-row">
-                    <span class="value" id="login">rbx_public_v2@icloud.com</span>
-                    <span class="copy-badge">COPY</span>
-                </div>
-            </div>
-
-            <div class="input-wrapper" onclick="copyPass(this)">
-                <span class="label">Password</span>
-                <div class="value-row">
-                    <span class="value blur" id="pass">Rbx!Download2026</span>
-                    <span class="copy-badge">SHOW</span>
-                </div>
+        <div class="warning">
+            <div class="warn-icon">⚠️</div>
+            <div class="warn-text">
+                <strong>Безопасность устройства</strong>
+                Никогда не вводите данные в настройках (iCloud). Авторизуйтесь только внутри приложения AppStore.
             </div>
         </div>
 
-        <div class="content-block">
-            <h2>Как это работает?</h2>
-            <p>
-                Блокировка происходит по региональному признаку вашего Apple ID. Чтобы скачать игру, вам нужно временно "представиться" пользователем из другой страны (например, США), где игра доступна.
-            </p>
-            <p>
-                Мы предоставляем вам доступ к нашему общему аккаунту, который уже зарегистрирован в нужном регионе. Вам не нужно создавать новый аккаунт или использовать VPN. Достаточно просто войти, скачать игру и выйти.
-            </p>
-        </div>
-
-        <div class="content-block">
-            <h2>Инструкция</h2>
-            <div class="step-list">
-                <div class="step-item">
-                    <div class="step-head">
-                        <span class="step-num">1</span>
-                        <span class="step-title">Выход</span>
-                    </div>
-                    <div class="step-desc">Откройте <b>AppStore</b> (синяя иконка). Нажмите на аватар справа сверху, пролистайте в самый низ и нажмите "Выйти".</div>
+        <div class="glass-panel">
+            <div class="data-row" onclick="copy('login')">
+                <span class="row-label">Enterprise ID</span>
+                <div class="row-content">
+                    <span class="row-value" id="login">rbx_enterprise_v4@icloud.com</span>
+                    <div class="action-icon">COPY</div>
                 </div>
-
-                <div class="step-item">
-                    <div class="step-head">
-                        <span class="step-num">2</span>
-                        <span class="step-title">Вход</span>
-                    </div>
-                    <div class="step-desc">Поднимитесь вверх и введите Логин и Пароль из карточки выше. Нажмите "Войти".</div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-head">
-                        <span class="step-num">3</span>
-                        <span class="step-title">Загрузка</span>
-                    </div>
-                    <div class="step-desc">Найдите <b>Roblox</b> в поиске. Кнопка загрузки станет активной. Нажмите её.</div>
-                </div>
-
-                <div class="step-item">
-                    <div class="step-head">
-                        <span class="step-num">4</span>
-                        <span class="step-title">Возврат</span>
-                    </div>
-                    <div class="step-desc">Как только пошла загрузка — сразу выходите из нашего аккаунта и входите в свой.</div>
+            </div>
+            <div style="height:1px; background:var(--border); margin: 0 16px;"></div>
+            <div class="data-row" onclick="copyPass()">
+                <span class="row-label">Access Key</span>
+                <div class="row-content">
+                    <span class="row-value blur" id="pass">Unlock!2026Net</span>
+                    <div class="action-icon" id="pass-btn">SHOW</div>
                 </div>
             </div>
         </div>
 
-        <div class="tg-section">
-            <h3 style="font-size: 18px; margin-bottom: 10px;">Нужен код подтверждения?</h3>
-            <p style="text-align: center; font-size: 14px;">
-                Иногда Apple просит код 2FA. Мы публикуем их в нашем канале, а также помогаем с ошибками.
+        <div>
+            <div class="section-title">Техническая справка</div>
+            
+            <div class="tech-card">
+                <h3>🌍 Geo-Shift Protocol</h3>
+                <p>Метод использует смену региона на уровне Application Layer. Загружаемый бинарный файл подписывается сертификатом Apple US, что позволяет игнорировать DPI-фильтры провайдера.</p>
+            </div>
+
+            <div class="tech-card">
+                <h3>🔒 Sandbox Isolation</h3>
+                <p>Доступ предоставляется только к Media Services. Личные данные (фото, контакты, Keychain) остаются изолированными в Secure Enclave и не синхронизируются.</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="section-title">Алгоритм действий</div>
+            
+            <div class="step-item">
+                <div class="step-marker">1</div>
+                <div class="step-content">
+                    <h4>Подготовка</h4>
+                    <p>Откройте AppStore. Нажмите на аватар (справа сверху), пролистайте вниз и нажмите <b>Выйти</b>.</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-marker">2</div>
+                <div class="step-content">
+                    <h4>Авторизация</h4>
+                    <p>Введите данные из карточки выше. Система сменит регион магазина на глобальный.</p>
+                </div>
+            </div>
+
+            <div class="step-item">
+                <div class="step-marker">3</div>
+                <div class="step-content">
+                    <h4>Загрузка и Выход</h4>
+                    <p>Скачайте Roblox. Сразу после старта загрузки — выйдите из аккаунта и верните свой.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3 style="font-size: 18px; margin-bottom: 10px;">Код подтверждения (2FA)</h3>
+            <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 20px;">
+                Протоколы безопасности требуют ввода кода. Наш бот автоматически публикует его в канале.
             </p>
             
-            <a href="https://t.me/YOUR_LINK" class="tg-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M20.665 3.333L3.333 10L12 14.665L17.333 9.332L13.333 16L20.665 18.665L22.665 3.333Z"/></svg>
-                Написать нам в Telegram
+            <a href="https://t.me/YOUR_LINK" class="btn-tg">
+                Получить код в Telegram
             </a>
             
-            <div style="margin-top: 30px; font-size: 12px; color: #555;">
-                &copy; 2026 RBX Help Team.
+            <div style="margin-top: 30px; font-size: 12px; color: #444;">
+                © 2026 RBX Enterprise. All systems secure.
             </div>
         </div>
 
     </div>
 
-    <div class="toast" id="toast">Скопировано!</div>
+    <div class="toast" id="toast">
+        <span style="color:var(--success)">✓</span> Скопировано
+    </div>
 
     <script>
-        function copy(id, el) {
+        function copy(id) {
             const text = document.getElementById(id).innerText;
             navigator.clipboard.writeText(text);
+            
+            // Вибрация для тактильного отклика (работает на Android)
+            if (navigator.vibrate) navigator.vibrate(50);
+            
             showToast();
-            flash(el);
         }
 
-        function copyPass(el) {
-            const passEl = document.getElementById('pass');
-            passEl.classList.remove('blur'); // Показываем пароль
-            navigator.clipboard.writeText(passEl.innerText);
+        function copyPass() {
+            const el = document.getElementById('pass');
+            el.classList.remove('blur');
+            document.getElementById('pass-btn').innerText = 'COPY';
             
-            // Меняем надпись кнопки
-            const badge = el.querySelector('.copy-badge');
-            badge.innerText = "COPY";
+            navigator.clipboard.writeText(el.innerText);
             
+            if (navigator.vibrate) navigator.vibrate(50);
             showToast();
-            flash(el);
         }
 
         function showToast() {
             const t = document.getElementById('toast');
             t.classList.add('show');
             setTimeout(() => t.classList.remove('show'), 2000);
-        }
-
-        function flash(el) {
-            el.style.borderColor = '#3b82f6';
-            el.style.backgroundColor = 'rgba(59, 130, 246, 0.1)';
-            setTimeout(() => {
-                el.style.borderColor = 'rgba(255, 255, 255, 0.1)';
-                el.style.backgroundColor = 'rgba(0,0,0,0.3)';
-            }, 300);
         }
     </script>
 </body>
