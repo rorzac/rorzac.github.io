@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>NEXUS PROTOCOL // ULTIMATE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800;900&family=Syncopate:wght@700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #010101;
+            /* Новая палитра: Электрический Оранжевый + Глубокий Синий */
+            --neon-orange: #ff6b00;
+            --neon-blue: #0044ff;
+            --neon-cyan: #00eaff;
+            --glass: rgba(255, 255, 255, 0.01);
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+
+        body {
+            margin: 0; background: var(--bg); color: #fff;
+            font-family: 'Inter', sans-serif; overflow-x: hidden;
+        }
+
+        /* --- МЕГА ЭФФЕКТЫ ФОНА --- */
+        /* 1. Canvas для интерактивных частиц (вставляется через JS) */
+        #particle-canvas {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -3; pointer-events: none; opacity: 0.6;
+        }
+
+        /* 2. Глубокое фоновое свечение */
+        .deep-glow {
+            position: fixed; inset: 0; z-index: -4;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 68, 255, 0.2) 0%, #000 80%);
+        }
+
+        /* 3. Эффект Скан-линий (CRT TV) */
+        .scanlines {
+            position: fixed; inset: 0; z-index: 100; pointer-events: none;
+            background: repeating-linear-gradient(to bottom, transparent 0px, transparent 2px, rgba(0,0,0,0.2) 3px);
+            opacity: 0.7; mix-blend-mode: overlay;
+        }
+        /* Зерно */
+        body::before {
+            content: ""; position: fixed; inset: 0; z-index: 99;
+            background: url('https://grainy-gradients.vercel.app/noise.svg');
+            opacity: 0.04; pointer-events: none;
+        }
+
+        /* --- LAYOUT (СТРУКТУРА СОХРАНЕНА) --- */
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 50px; position: relative; z-index: 10; }
+
+        /* Анимация появления "Кибер-вылет" */
+        .reveal {
+            opacity: 0; filter: blur(20px) hue-rotate(90deg); transform: translateY(100px) scale(0.9);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active { opacity: 1; filter: blur(0) hue-rotate(0deg); transform: translateY(0) scale(1); }
+
+        @media (min-width: 1025px) {
+            .hero { height: 100vh; display: grid; grid-template-columns: 1fr 1.1fr; align-items: center; gap: 100px; }
+            .mobile-only { display: none !important; }
+            /* Кибер-рамка для видео */
+            .video-wrapper { 
+                height: 65vh; position: relative; z-index: 2;
+                border-radius: 30px; padding: 3px; /* Отступ для рамки */
+                background: linear-gradient(45deg, var(--neon-orange), var(--neon-blue), var(--neon-cyan));
+                background-size: 200% 200%; animation: borderRotate 5s linear infinite;
+                box-shadow: 0 0 100px rgba(0, 68, 255, 0.3);
+            }
+            .video-inner {
+                width: 100%; height: 100%; border-radius: 28px; overflow: hidden;
+                background: #000; position: relative; z-index: 3;
+            }
+        }
+        @keyframes borderRotate { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+
+        @media (max-width: 1024px) {
+            .container { padding: 0 25px; }
+            .hero { padding-top: 120px; text-align: center; }
+            .pc-only { display: none !important; }
+            h1 { font-size: 48px !important; }
+            .video-wrapper { 
+                width: 100%; aspect-ratio: 9/16; margin: 50px 0; 
+                border-radius: 24px; padding: 2px;
+                background: linear-gradient(45deg, var(--neon-orange), var(--neon-blue));
+            }
+            .video-inner { width: 100%; height: 100%; border-radius: 22px; overflow: hidden; background: #000; }
+            .floating-btn {
+                position: fixed; bottom: 25px; left: 20px; right: 20px;
+                background: linear-gradient(90deg, var(--neon-orange), #ff0055); color: #fff; 
+                text-align: center; padding: 24px; border-radius: 20px; font-family: 'Unbounded';
+                font-weight: 900; text-decoration: none; z-index: 1000; letter-spacing: 2px;
+                box-shadow: 0 10px 50px rgba(255, 107, 0, 0.4), inset 0 0 20px rgba(255,255,255,0.2);
+            }
+        }
+
+        /* --- ТИПОГРАФИКА И ЭФФЕКТЫ --- */
+        /* Эффект "Жидкого Хрома" на тексте */
+        h1 {
+            font-family: 'Unbounded', sans-serif; font-size: 90px;
+            line-height: 0.85; margin: 0; letter-spacing: -5px; text-transform: uppercase;
+            background: linear-gradient(135deg, #fff 20%, var(--neon-cyan) 50%, #fff 80%);
+            background-size: 200% auto;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            animation: shine 5s linear infinite;
+            filter: drop-shadow(0 0 20px rgba(0, 234, 255, 0.2));
+        }
+        @keyframes shine { to { background-position: 200% center; } }
+
+        .tag {
+            font-family: 'Syncopate'; font-size: 12px; color: var(--neon-orange);
+            letter-spacing: 6px; text-transform: uppercase; margin-bottom: 30px;
+            display: inline-block; text-shadow: 0 0 10px var(--neon-orange);
+            position: relative;
+        }
+        .tag::before { content: '[ '; color: #fff; opacity: 0.5; }
+        .tag::after { content: ' ] // SYS_READY'; color: #fff; opacity: 0.5; }
+
+        video { width: 100%; height: 100%; object-fit: cover; transform: scale(1.01); }
+
+        /* --- ХОЛОГРАФИЧЕСКИЕ КАРТОЧКИ --- */
+        .bento {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px; margin: 150px 0;
+        }
+
+        .glass-card {
+            background: var(--glass); backdrop-filter: blur(50px);
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 40px; padding: 50px;
+            position: relative; overflow: hidden; transition: 0.5s;
+            box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+        }
+        /* Голографический блик при наведении */
+        .glass-card:hover {
+            border-color: rgba(255,255,255,0.4); transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 70px rgba(0, 68, 255, 0.2), inset 0 0 30px rgba(255, 255, 255, 0.05);
+        }
+        .glass-card::after {
+            content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+            background: conic-gradient(transparent, rgba(255,255,255,0.1), transparent);
+            animation: rotateCard 10s linear infinite; opacity: 0; transition: 0.5s;
+        }
+        .glass-card:hover::after { opacity: 1; }
+        @keyframes rotateCard { 100% { transform: rotate(360deg); } }
+
+        .cta-btn-pc {
+            display: inline-block; margin-top: 60px; padding: 30px 80px;
+            background: linear-gradient(90deg, var(--neon-orange), #ff0044);
+            color: #fff; font-family: 'Unbounded'; font-size: 20px; font-weight: 900;
+            text-decoration: none; border-radius: 24px;
+            transition: 0.4s; box-shadow: 0 20px 50px rgba(255, 107, 0, 0.3);
+            position: relative; overflow: hidden;
+        }
+        .cta-btn-pc:hover { transform: scale(1.05); box-shadow: 0 30px 80px rgba(255, 107, 0, 0.6); }
+        .cta-btn-pc::before {
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+            transition: 0.5s;
+        }
+        .cta-btn-pc:hover::before { left: 100%; }
+
+        /* ДЕТАЛИ */
+        .rev-meta { color: var(--neon-cyan); font-family: 'Unbounded'; letter-spacing: 2px; font-size: 12px; text-shadow: 0 0 10px var(--neon-cyan); }
+
+    </style>
+</head>
+<body>
+
+<div class="deep-glow"></div>
+<canvas id="particle-canvas"></canvas>
+<div class="scanlines"></div>
+
+<div class="container">
+    <section class="hero reveal">
+        <div class="hero-content">
+            <span class="tag">NEXUS_CORE v.2.6</span>
+            <h1>МЫ<br>ПОСТАВИМ<br>ТЕБЯ.</h1>
+            <p style="font-size: 22px; opacity: 0.7; margin-top: 40px; line-height: 1.7; max-width: 500px; font-weight: 300; text-shadow: 0 0 10px rgba(0,0,0,0.5);">
+                Если ты запутался в шуме и хочешь начать — это твоя точка входа. Никакой теории. Только чистый протокол действий.
+            </p>
+            <a href="https://t.me/ТВОЯ_ССЫЛКА" class="cta-btn-pc pc-only">ДОСТУП К СИСТЕМЕ →</a>
+        </div>
+        
+        <div class="video-wrapper">
+            <div class="video-inner">
+                <video autoplay muted loop playsinline id="mainVideo">
+                    <source src="2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <div class="bento">
+        <div class="glass-card reveal" style="border-top: 3px solid var(--neon-cyan);">
+            <h2 style="font-family: 'Unbounded'; color: var(--neon-cyan); font-size: 18px; letter-spacing: 2px;">[ 01 // DECODE ]</h2>
+            <p style="font-size: 22px; font-weight: 300; margin-top: 25px; line-height: 1.5;">Убираем информационный мусор. Ты получаешь только проверенную механику.</p>
+        </div>
+        <div class="glass-card reveal" style="border-top: 3px solid var(--neon-orange);">
+            <h2 style="font-family: 'Unbounded'; color: var(--neon-orange); font-size: 18px; letter-spacing: 2px;">[ 02 // EXECUTE ]</h2>
+            <p style="font-size: 22px; font-weight: 300; margin-top: 25px; line-height: 1.5;">Полный цикл внедрения и ведение до первых фундаментальных цифр.</p>
+        </div>
+    </div>
+
+    <section class="reveal" style="padding-bottom: 250px;">
+        <div class="glass-card" style="border-left: 4px solid var(--neon-orange); background: linear-gradient(90deg, rgba(255, 107, 0, 0.05), transparent);">
+            <div class="rev-meta">/// ENCRYPTED_USER_KZ</div>
+            <p style="font-style: italic; opacity: 0.8; font-size: 20px; margin-top: 20px;">"Это не обучение. Это боевая система. Интерфейс, подход, инструменты — другой уровень. Зашел неделю назад, уже отбил вход."</p>
+        </div>
+    </section>
+</div>
+
+<a href="https://t.me/ТВОЯ_ССЫЛКА" class="floating-btn mobile-only">ВСТУПИТЬ В СИСТЕМУ</a>
+
+<script>
+    // 1. ИНТЕРАКТИВНЫЙ ФОН (PARTICLES)
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    let particlesArray;
+    let mouse = { x: null, y: null, radius: 150 }
+    window.addEventListener('mousemove', (event) => { mouse.x = event.x; mouse.y = event.y; });
+
+    class Particle {
+        constructor(x, y, directionX, directionY, size, color) {
+            this.x = x; this.y = y; this.directionX = directionX; this.directionY = directionY;
+            this.size = size; this.color = color; this.baseX = x; this.baseY = y;
+        }
+        draw() { ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false); ctx.fillStyle = this.color; ctx.fill(); }
+        update() {
+            if (mouse.x) {
+                let dx = mouse.x - this.x; let dy = mouse.y - this.y; let distance = Math.sqrt(dx*dx + dy*dy);
+                if (distance < mouse.radius + this.size){
+                    if(mouse.x < this.x && this.x < canvas.width - this.size * 10) this.x += 3;
+                    if(mouse.x > this.x && this.x > this.size * 10) this.x -= 3;
+                    if(mouse.y < this.y && this.y < canvas.height - this.size * 10) this.y += 3;
+                    if(mouse.y > this.y && this.y > this.size * 10) this.y -= 3;
+                } else {
+                    if(this.x !== this.baseX) this.x -= (this.x - this.baseX)/10;
+                    if(this.y !== this.baseY) this.y -= (this.y - this.baseY)/10;
+                }
+            }
+            this.draw();
+        }
+    }
+    function init() {
+        particlesArray = [];
+        let numberOfParticles = (canvas.height * canvas.width) / 9000;
+        for (let i=0; i<numberOfParticles; i++){
+            let size = (Math.random() * 2) + 1;
+            let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
+            let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+            let directionX = (Math.random() * 2) - 1; let directionY = (Math.random() * 2) - 1;
+            let color = Math.random() > 0.5 ? '#0044ff' : '#ff6b00';
+            particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+        }
+    }
+    function connect(){
+        for (let a = 0; a < particlesArray.length; a++) {
+            for (let b = a; b < particlesArray.length; b++) {
+                let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x)) + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
+                if (distance < (canvas.width/7) * (canvas.height/7)) {
+                    ctx.strokeStyle = 'rgba(0, 68, 255, 0.1)'; ctx.lineWidth = 1;
+                    ctx.beginPath(); ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                    ctx.lineTo(particlesArray[b].x, particlesArray[b].y); ctx.stroke();
+                }
+            }
+        }
+    }
+    function animate() {
+        ctx.clearRect(0, 0, innerWidth, innerHeight);
+        for (let i = 0; i < particlesArray.length; i++) particlesArray[i].update();
+        connect(); requestAnimationFrame(animate);
+    }
+    init(); animate();
+    window.addEventListener('resize', () => { canvas.width = innerWidth; canvas.height = innerHeight; init(); });
+
+    // 2. REVEAL ON SCROLL
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // 3. VIDEO SPEED
+    document.getElementById('mainVideo').playbackRate = 0.9;
+</script>
+
+</body>
+</html>
