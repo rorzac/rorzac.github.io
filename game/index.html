@@ -1,13 +1,466 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Бесплатные Игры iOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-main: #0a0a0c;
+            --card-bg: rgba(32, 32, 35, 0.6);
+            --accent-blue: #0A84FF;
+            --accent-telegram: #229ED9;
+            --text-primary: #ffffff;
+            --text-secondary: #98989d;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding-bottom: 80px;
+        }
+
+        /* Живой задний фон */
+        .ambient-bg {
+            position: fixed;
+            top: -30%; left: -20%;
+            width: 150%; height: 150%;
+            background: radial-gradient(circle at center, rgba(10, 132, 255, 0.15) 0%, rgba(0,0,0,0) 60%),
+                        radial-gradient(circle at 80% 30%, rgba(191, 90, 242, 0.15) 0%, rgba(0,0,0,0) 50%);
+            z-index: -1;
+            filter: blur(80px);
+            opacity: 0.8;
+            pointer-events: none;
+        }
+
+        /* --- Хедер --- */
+        .header-section {
+            padding: 60px 20px 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #fff 30%, #a1a1a6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.05rem;
+            max-width: 500px;
+            margin: 0 auto 30px;
+            line-height: 1.5;
+        }
+
+        /* Красивая кнопка Telegram */
+        .tg-btn-wrapper {
+            display: inline-block;
+            filter: drop-shadow(0 0 15px rgba(34, 158, 217, 0.4));
+        }
+
+        .tg-btn {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 40px;
+            background: linear-gradient(90deg, #2AABEE, #229ED9);
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(34, 158, 217, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(34, 158, 217, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 158, 217, 0); }
+        }
+
+        .tg-btn:hover {
+            transform: translateY(-2px) scale(1.02);
+            color: white;
+            background: linear-gradient(90deg, #229ED9, #1e8bbd);
+        }
+
+        /* --- Поиск --- */
+        .search-sticky-container {
+            position: sticky;
+            top: 20px;
+            z-index: 100;
+            padding: 0 15px;
+            margin-bottom: 40px;
+        }
+
+        .search-input {
+            width: 100%;
+            max-width: 550px;
+            margin: 0 auto;
+            display: block;
+            background: rgba(44, 44, 46, 0.7);
+            backdrop-filter: blur(25px) saturate(180%);
+            -webkit-backdrop-filter: blur(25px) saturate(180%);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 18px 25px 18px 55px;
+            color: white;
+            font-size: 1.1rem;
+            outline: none;
+            box-shadow: 0 15px 40px -10px rgba(0,0,0,0.5);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%2398989d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: 20px center;
+            transition: all 0.3s;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-blue);
+            background: rgba(55, 55, 60, 0.8);
+            box-shadow: 0 15px 40px -10px rgba(10, 132, 255, 0.2);
+        }
+
+        /* --- Карточка игры --- */
+        .game-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 26px;
+            padding: 14px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        .game-img-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1/1;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 14px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+        }
+
+        .game-img-container::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.6) 100%);
+            pointer-events: none;
+        }
+
+        .game-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: contrast(1.1) saturate(1.2);
+            transition: transform 0.4s;
+        }
+        
+        .game-card:hover .game-img {
+            transform: scale(1.08);
+        }
+
+        .game-info {
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game-title {
+            font-weight: 800;
+            font-size: 1rem;
+            margin-bottom: 6px;
+            line-height: 1.25;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .game-genre {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin-bottom: 12px;
+        }
+
+        .price-block {
+            margin-top: auto;
+            background: rgba(0,0,0,0.25);
+            padding: 8px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .free-price {
+            color: #2ADB5F;
+            font-weight: 900;
+            font-size: 1.2rem;
+            text-shadow: 0 0 15px rgba(42, 219, 95, 0.4);
+        }
+
+        .btn-get {
+            margin-top: 12px;
+            background: rgba(255,255,255,0.9);
+            color: black;
+            border: none;
+            border-radius: 16px;
+            padding: 10px;
+            width: 100%;
+            font-weight: 800;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        .btn-get:hover { background: white; transform: scale(1.02); }
+
+        @media (max-width: 576px) {
+            .row { --bs-gutter-x: 10px; --bs-gutter-y: 10px; }
+            .col-mobile-6 { width: 50%; }
+            .game-card { padding: 10px; border-radius: 22px; }
+            .game-img-container { border-radius: 16px; margin-bottom: 10px; }
+            .game-title { font-size: 0.9rem; }
+            .free-price { font-size: 1.1rem; }
+        }
+    </style>
 </head>
 <body>
-    <canvas id="canvas"></canvas>
-    <script src="main.js"></script>
+
+<div class="ambient-bg"></div>
+
+<header class="header-section">
+    <h1>Выдаем все платные игры</h1>
+    <p class="subtitle">
+        Мы выдаем общий аккаунт со всеми 100+ платными играми из списка ниже абсолютно <b>бесплатно</b> за выполнение заданий.
+    </p>
+    
+    <div class="tg-btn-wrapper">
+        <a href="#" id="headerTgBtn" class="tg-btn">
+          
+            Получить аккаунт в телеграм
+        </a>
+    </div>
+</header>
+
+<div class="search-sticky-container">
+    <input type="text" id="searchInput" class="search-input" placeholder="Поиск среди 100 игр (GTA, Minecraft...)">
+</div>
+
+<div class="container">
+    <div class="row" id="gamesGrid">
+        </div>
+</div>
+
+<script>
+    // ==========================================
+    // НАСТРОЙКИ (МЕНЯТЬ ТОЛЬКО ТУТ)
+    // ==========================================
+    
+    // Вставь сюда ссылку на твой телеграм канал или ЛС
+    const TG_LINK = "https://t.me/ВАШ_НИК"; 
+
+    // ==========================================
+
+
+    // Применяем ссылку к верхней кнопке
+    document.getElementById('headerTgBtn').href = TG_LINK;
+
+    // База игр
+    const rawGamesList = [
+        {n: "Minecraft", p: "$6.99", g: "Adventure"},
+        {n: "Grand Theft Auto: San Andreas", p: "$6.99", g: "Action"},
+        {n: "Bloons TD 6", p: "$6.99", g: "Strategy"},
+        {n: "Geometry Dash", p: "$1.99", g: "Arcade"},
+        {n: "Stardew Valley", p: "$4.99", g: "RPG"},
+        {n: "Terraria", p: "$4.99", g: "Adventure"},
+        {n: "Plague Inc.", p: "$0.99", g: "Simulation"},
+        {n: "Monopoly", p: "$3.99", g: "Board"},
+        {n: "Five Nights at Freddy's", p: "$2.99", g: "Horror"},
+        {n: "Five Nights at Freddy's 2", p: "$2.99", g: "Horror"},
+        {n: "Five Nights at Freddy's 3", p: "$2.99", g: "Horror"},
+        {n: "Five Nights at Freddy's 4", p: "$2.99", g: "Horror"},
+        {n: "Five Nights at Freddy's: SL", p: "$2.99", g: "Horror"},
+        {n: "Ultimate Custom Night", p: "$2.99", g: "Horror"},
+        {n: "Grand Theft Auto: Vice City", p: "$4.99", g: "Action"},
+        {n: "Grand Theft Auto III", p: "$4.99", g: "Action"},
+        {n: "GTA: Chinatown Wars", p: "$4.99", g: "Action"},
+        {n: "Bully: Anniversary Edition", p: "$6.99", g: "Action"},
+        {n: "Max Payne Mobile", p: "$2.99", g: "Action"},
+        {n: "Hitman Sniper", p: "$0.99", g: "Action"},
+        {n: "Dead Cells", p: "$8.99", g: "Action Rogue"},
+        {n: "Slay the Spire", p: "$9.99", g: "Card"},
+        {n: "Papers, Please", p: "$4.99", g: "Simulation"},
+        {n: "60 Seconds! Atomic Adventure", p: "$3.99", g: "Strategy"},
+        {n: "Don't Starve: Pocket Edition", p: "$4.99", g: "Adventure"},
+        {n: "Don't Starve: Shipwrecked", p: "$4.99", g: "Adventure"},
+        {n: "Limbo", p: "$3.99", g: "Puzzle"},
+        {n: "Inside", p: "$6.99", g: "Puzzle"},
+        {n: "The Room", p: "$0.99", g: "Puzzle"},
+        {n: "The Room Two", p: "$1.99", g: "Puzzle"},
+        {n: "The Room Three", p: "$3.99", g: "Puzzle"},
+        {n: "The Room: Old Sins", p: "$4.99", g: "Puzzle"},
+        {n: "Monument Valley", p: "$3.99", g: "Puzzle"},
+        {n: "Monument Valley 2", p: "$4.99", g: "Puzzle"},
+        {n: "Pocket City 2", p: "$4.99", g: "Simulation"},
+        {n: "Farming Simulator 23", p: "$7.99", g: "Simulation"},
+        {n: "Construction Simulator 3", p: "$3.99", g: "Simulation"},
+        {n: "Truck Simulator PRO USA", p: "$5.99", g: "Simulation"},
+        {n: "RFS - Real Flight Simulator", p: "$0.99", g: "Simulation"},
+        {n: "XCOM 2 Collection", p: "$14.99", g: "Strategy"},
+        {n: "Company of Heroes Collection", p: "$13.99", g: "Strategy"},
+        {n: "Tropico", p: "$11.99", g: "Strategy"},
+        {n: "Civilization VI", p: "$9.99", g: "Strategy"},
+        {n: "Northgard", p: "$7.99", g: "Strategy"},
+        {n: "Bad North: Jotunn Edition", p: "$3.99", g: "Strategy"},
+        {n: "Kingdom Rush Vengeance", p: "$4.99", g: "Strategy"},
+        {n: "Kingdom Rush Frontiers", p: "$1.99", g: "Strategy"},
+        {n: "Kingdom Rush Origins", p: "$2.99", g: "Strategy"},
+        {n: "Iron Marines", p: "$2.99", g: "Strategy"},
+        {n: "NBA 2K24 Arcade Edition", p: "$9.99", g: "Sports"},
+        {n: "GRID Autosport", p: "$9.99", g: "Racing"},
+        {n: "Need for Speed Most Wanted", p: "$4.99", g: "Racing"},
+        {n: "Wreckfest", p: "$9.99", g: "Racing"},
+        {n: "Descenders", p: "$9.99", g: "Sports"},
+        {n: "Skate City", p: "$4.99", g: "Sports"},
+        {n: "True Skate", p: "$1.99", g: "Sports"},
+        {n: "Grand Mountain Adventure", p: "$4.99", g: "Sports"},
+        {n: "Alto's Adventure", p: "$4.99", g: "Arcade"},
+        {n: "Alto's Odyssey", p: "$4.99", g: "Arcade"},
+        {n: "Leo's Fortune", p: "$4.99", g: "Adventure"},
+        {n: "Oddmar", p: "$4.99", g: "Action"},
+        {n: "Grimvalor", p: "$6.99", g: "Action"},
+        {n: "Pascal's Wager", p: "$6.99", g: "Action RPG"},
+        {n: "Titan Quest: Legendary", p: "$17.99", g: "RPG"},
+        {n: "Star Wars: KOTOR", p: "$9.99", g: "RPG"},
+        {n: "Star Wars: KOTOR II", p: "$14.99", g: "RPG"},
+        {n: "Baldur's Gate II", p: "$9.99", g: "RPG"},
+        {n: "Neverwinter Nights", p: "$9.99", g: "RPG"},
+        {n: "Final Fantasy", p: "$7.99", g: "RPG"},
+        {n: "Final Fantasy II", p: "$7.99", g: "RPG"},
+        {n: "Final Fantasy III", p: "$14.99", g: "RPG"},
+        {n: "Final Fantasy IV", p: "$14.99", g: "RPG"},
+        {n: "Final Fantasy V", p: "$14.99", g: "RPG"},
+        {n: "Final Fantasy VI", p: "$17.99", g: "RPG"},
+        {n: "Final Fantasy VII", p: "$15.99", g: "RPG"},
+        {n: "Chrono Trigger", p: "$9.99", g: "RPG"},
+        {n: "Dragon Quest", p: "$2.99", g: "RPG"},
+        {n: "Dragon Quest II", p: "$4.99", g: "RPG"},
+        {n: "Dragon Quest III", p: "$9.99", g: "RPG"},
+        {n: "Dragon Quest IV", p: "$14.99", g: "RPG"},
+        {n: "Dragon Quest V", p: "$14.99", g: "RPG"},
+        {n: "Dragon Quest VI", p: "$14.99", g: "RPG"},
+        {n: "Dragon Quest VIII", p: "$19.99", g: "RPG"},
+        {n: "Valkyrie Profile: Lenneth", p: "$17.99", g: "RPG"},
+        {n: "Castlevania: SotN", p: "$2.99", g: "Action"},
+        {n: "Getting Over It", p: "$4.99", g: "Action"},
+        {n: "Human: Fall Flat", p: "$4.99", g: "Puzzle"},
+        {n: "Goat Simulator", p: "$2.99", g: "Simulation"},
+        {n: "Goat Simulator Waste of Space", p: "$2.99", g: "Simulation"},
+        {n: "Goat Simulator MMO", p: "$2.99", g: "Simulation"},
+        {n: "Goat Simulator GoatZ", p: "$2.99", g: "Simulation"},
+        {n: "Goat Simulator Payday", p: "$2.99", g: "Simulation"},
+        {n: "Surgeon Simulator", p: "$4.99", g: "Simulation"},
+        {n: "I am Bread", p: "$4.99", g: "Action"},
+        {n: "Octodad: Dadliest Catch", p: "$4.99", g: "Adventure"},
+        {n: "SpongeBob SquarePants: BFBB", p: "$9.99", g: "Action"},
+        {n: "Bendy and the Ink Machine", p: "$6.99", g: "Horror"},
+        {n: "Hello Neighbor Hide & Seek", p: "$4.99", g: "Action"},
+        {n: "Very Little Nightmares", p: "$6.99", g: "Puzzle"}
+    ];
+
+    function getGameImage(title, genre) {
+        const colors = ['3b82f6', '8b5cf6', 'ec4899', 'f43f5e', 'f97316', 'eab308', '22c55e', '06b6d4', '10b981'];
+        let hash = 0;
+        for (let i = 0; i < title.length; i++) hash = title.charCodeAt(i) + ((hash << 5) - hash);
+        const color = colors[Math.abs(hash) % colors.length];
+        const encodedTitle = encodeURIComponent(title.replace(/[:]/g, '').substring(0, 15));
+        return `https://placehold.co/400x400/${color}/ffffff.png?text=${encodedTitle}&font=montserrat`;
+    }
+
+    const grid = document.getElementById('gamesGrid');
+    const searchInput = document.getElementById('searchInput');
+
+    function renderGames(filter = "") {
+        grid.innerHTML = "";
+        const lowerFilter = filter.toLowerCase();
+        
+        const filtered = rawGamesList.filter(game => game.n.toLowerCase().includes(lowerFilter));
+
+        if (filtered.length === 0) {
+            grid.innerHTML = `<div class="text-center w-100 py-5" style="color: var(--text-secondary);">Игры не найдены</div>`;
+            return;
+        }
+
+        filtered.forEach(game => {
+            const imgSrc = getGameImage(game.n, game.g);
+            const col = document.createElement('div');
+            col.className = 'col-6 col-md-4 col-lg-3 col-xl-2 mb-4 col-mobile-6';
+            
+            // Здесь кнопка берет ссылку из TG_LINK
+            col.innerHTML = `
+                <div class="game-card">
+                    <div class="game-img-container">
+                        <img src="${imgSrc}" class="game-img" alt="${game.n}" loading="lazy">
+                    </div>
+                    <div class="game-info">
+                        <div class="game-title">${game.n}</div>
+                        <div class="game-genre">${game.g}</div>
+                        <div class="price-block">
+                            <span class="old-price">${game.p}</span>
+                            <span class="free-price">0$</span>
+                        </div>
+                        <button class="btn-get" onclick="window.location.href='${TG_LINK}'">ПОЛУЧИТЬ</button>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(col);
+        });
+    }
+
+    let timeout = null;
+    searchInput.addEventListener('input', (e) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            renderGames(e.target.value);
+        }, 100);
+    });
+
+    renderGames();
+</script>
 </body>
 </html>
